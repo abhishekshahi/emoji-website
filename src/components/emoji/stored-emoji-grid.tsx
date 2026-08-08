@@ -6,7 +6,7 @@ import { EmojiGrid } from "@/components/emoji/emoji-grid";
 import { getEmojisByHexcodes } from "@/lib/emoji/data";
 
 interface StoredEmojiGridProps {
-  hexcodes: string[];
+  hexcodes: readonly string[];
   emptyTitle: string;
   emptyDescription: string;
 }
@@ -35,7 +35,7 @@ export function FavoritesGrid() {
 
   return (
     <StoredEmojiGrid
-      hexcodes={[...favorites]}
+      hexcodes={favorites}
       emptyTitle="No favorites yet"
       emptyDescription="Tap the star on any emoji card to save it here."
     />
@@ -47,7 +47,7 @@ export function RecentGrid() {
 
   return (
     <StoredEmojiGrid
-      hexcodes={[...recent]}
+      hexcodes={recent}
       emptyTitle="No recent emojis yet"
       emptyDescription="Copy or view emojis and they will appear here."
     />

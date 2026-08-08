@@ -28,9 +28,13 @@ export function createPageMetadata({
   return {
     title,
     description,
-    alternates: {
-      canonical: url,
-    },
+    ...(noIndex
+      ? {}
+      : {
+          alternates: {
+            canonical: url,
+          },
+        }),
     robots: noIndex
       ? {
           index: false,

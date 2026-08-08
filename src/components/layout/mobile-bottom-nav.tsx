@@ -29,6 +29,7 @@ export function MobileBottomNav() {
             <li key={item.href}>
               <Link
                 href={item.href}
+                aria-current={isActive ? "page" : undefined}
                 className={`flex min-h-11 flex-col items-center justify-center rounded-2xl px-2 py-2 text-[11px] font-semibold ${
                   isActive
                     ? "bg-accent-soft text-accent-strong"

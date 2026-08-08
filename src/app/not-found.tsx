@@ -6,6 +6,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Page not found",
   description: "The requested emoji page could not be found.",
   path: "/404",
+  noIndex: true,
 });
 
 export default function NotFound() {

@@ -42,6 +42,11 @@ export function EmojiDetailActions({ emoji }: EmojiDetailActionsProps) {
           type="button"
           onClick={() => toggleFavorite(emoji.hexcode)}
           className="min-h-11 rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold transition hover:bg-surface-muted"
+          aria-label={
+            favorite
+              ? `Remove ${emoji.name} from favorites`
+              : `Add ${emoji.name} to favorites`
+          }
           aria-pressed={favorite}
         >
           {favorite ? "Remove favorite" : "Add to favorites"}

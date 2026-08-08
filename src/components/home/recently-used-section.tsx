@@ -9,7 +9,7 @@ import { useMemo } from "react";
 export function RecentlyUsedSection() {
   const { recent } = useEmojiActions();
   const emojis = useMemo(
-    () => getEmojisByHexcodes([...recent]).slice(0, 12),
+    () => getEmojisByHexcodes(recent).slice(0, 12),
     [recent],
   );
 

@@ -32,7 +32,12 @@ export function SearchResults() {
 
   if (!isReady) {
     return (
-      <div className="card-surface px-6 py-12 text-center text-muted">
+      <div
+        className="card-surface px-6 py-12 text-center text-muted"
+        role="status"
+        aria-live="polite"
+        aria-busy="true"
+      >
         Loading emoji search index...
       </div>
     );

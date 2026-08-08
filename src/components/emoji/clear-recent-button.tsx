@@ -7,7 +7,7 @@ export function ClearRecentButton() {
     <button
       type="button"
       onClick={() => clearRecentHexcodes()}
-      className="rounded-full border border-border bg-surface px-4 py-2 text-sm font-semibold transition hover:bg-surface-muted"
+      className="min-h-11 rounded-full border border-border bg-surface px-4 py-2 text-sm font-semibold transition hover:bg-surface-muted"
     >
       Clear recent history
     </button>

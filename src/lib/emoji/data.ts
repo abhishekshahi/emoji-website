@@ -100,7 +100,7 @@ export function getEmojiByHexcode(hexcode: string): EmojiRecord | undefined {
   return emojiByHexcode.get(hexcode);
 }
 
-export function getEmojisByHexcodes(hexcodes: string[]): EmojiRecord[] {
+export function getEmojisByHexcodes(hexcodes: readonly string[]): EmojiRecord[] {
   return hexcodes
     .map((hexcode) => getEmojiByHexcode(hexcode))
     .filter((emoji): emoji is EmojiRecord => Boolean(emoji));

@@ -48,6 +48,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light dark;
 }
 
 body {
@@ -134,6 +135,25 @@ input {
   overflow: visible;
   clip: auto;
   white-space: normal;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 70;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  padding: 0.65rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transform: translateY(-200%);
+  transition: transform 0.15s ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 .pill-link:hover {

@@ -44,7 +44,8 @@ export function EmojiGrid({
           <button
             type="button"
             onClick={() => setVisibleCount((count) => count + pageSize)}
-            className="rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold transition hover:bg-surface-muted"
+            className="min-h-11 rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold transition hover:bg-surface-muted"
+            aria-label={`Load more emojis, ${emojis.length - visibleCount} remaining`}
           >
             Load more ({emojis.length - visibleCount} remaining)
           </button>
