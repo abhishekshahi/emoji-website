@@ -1,0 +1,10 @@
+{
+  "emojiVersion": "17.0",
+  "source": "https://www.unicode.org/Public/emoji/17.0/",
+  "files": [
+    "emoji-test.txt",
+    "emoji-sequences.txt",
+    "emoji-zwj-sequences.txt"
+  ],
+  "license": "https://www.unicode.org/terms_of_use.html"
+}

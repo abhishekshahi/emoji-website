@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EmojiFind">
+  <rect width="64" height="64" rx="16" fill="#d97706"/>
+  <circle cx="32" cy="32" r="20" fill="#fbbf24"/>
+  <circle cx="24" cy="28" r="3" fill="#171411"/>
+  <circle cx="40" cy="28" r="3" fill="#171411"/>
+  <path d="M22 38c3 4 17 4 20 0" fill="none" stroke="#171411" stroke-width="3" stroke-linecap="round"/>
+</svg>

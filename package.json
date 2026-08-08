@@ -6,10 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "data:build": "tsx scripts/build-emoji-data.ts",
+    "artwork:import": "tsx scripts/import-openmoji-assets.ts",
+    "prebuild": "npm run artwork:import"
   },
   "dependencies": {
+    "emojibase": "^17.0.0",
+    "emojibase-data": "^17.0.0",
     "next": "16.3.0",
+    "openmoji": "^17.0.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
@@ -21,6 +28,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
     "tailwindcss": "^4",
+    "tsx": "^4.23.11",
     "typescript": "^5"
   }
 }
