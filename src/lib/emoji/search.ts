@@ -1,4 +1,4 @@
-import type { EmojiRecord } from "./types";
+import type { BrowsableEmoji } from "./types";
 
 export interface SearchableEmoji {
   id: string;
@@ -23,6 +23,7 @@ interface SearchIndex {
 }
 
 let searchIndex: SearchIndex | null = null;
+let searchIndexSize = 0;
 
 function normalizeQuery(query: string): string {
   return query.trim().toLowerCase();
@@ -35,7 +36,7 @@ function tokenize(value: string): string[] {
     .filter((token) => token.length > 0);
 }
 
-function toSearchableEmoji(emoji: EmojiRecord): SearchableEmoji {
+function toSearchableEmoji(emoji: BrowsableEmoji): SearchableEmoji {
   return {
     id: emoji.id,
     emoji: emoji.emoji,
@@ -97,7 +98,7 @@ function buildTokenMap(entries: SearchableEmoji[]): Map<string, Set<number>> {
   return tokenMap;
 }
 
-export function createSearchIndex(emojis: EmojiRecord[]): SearchIndex {
+export function createSearchIndex(emojis: BrowsableEmoji[]): SearchIndex {
   const entries = emojis.map(toSearchableEmoji);
   return {
     entries,
@@ -105,9 +106,10 @@ export function createSearchIndex(emojis: EmojiRecord[]): SearchIndex {
   };
 }
 
-export function getSearchIndex(emojis: EmojiRecord[]): SearchIndex {
-  if (!searchIndex) {
+export function getSearchIndex(emojis: BrowsableEmoji[]): SearchIndex {
+  if (!searchIndex || searchIndexSize !== emojis.length) {
     searchIndex = createSearchIndex(emojis);
+    searchIndexSize = emojis.length;
   }
 
   return searchIndex;
@@ -172,7 +174,7 @@ function scoreEntry(entry: SearchableEmoji, query: string, tokens: string[]): nu
 }
 
 export function searchEmojis(
-  emojis: EmojiRecord[],
+  emojis: BrowsableEmoji[],
   query: string,
   limit = 120,
 ): SearchResult[] {

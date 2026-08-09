@@ -8,6 +8,7 @@ import {
 
 const FOOTER_LINKS = [
   { href: "/emoji", label: "Browse Emojis" },
+  { href: "/extras", label: "OpenMoji Extras" },
   { href: "/search", label: "Search" },
   { href: "/popular", label: "Popular" },
   { href: "/category/smileys-emotion", label: "Categories" },
@@ -42,7 +43,7 @@ export function SiteFooter() {
             Emojibase.
           </p>
           <p>
-            Emoji artwork provided by{" "}
+            Emoji artwork and OpenMoji Extras provided by{" "}
             <Link href={OPENMOJI_PROJECT_URL} className="underline">
               OpenMoji
             </Link>{" "}

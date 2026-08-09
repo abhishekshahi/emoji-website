@@ -70,6 +70,34 @@ export default function HomePage() {
       <section className="space-y-4">
         <div className="flex items-end justify-between gap-4">
           <div>
+            <h2 className="section-title">OpenMoji Extras</h2>
+            <p className="section-subtitle">
+              Additional OpenMoji symbols beyond the standard Unicode emoji set.
+            </p>
+          </div>
+          <Link href="/extras" className="pill-link">
+            Browse extras
+          </Link>
+        </div>
+        <div className="card-surface flex flex-col items-start gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-lg font-semibold">Community-designed symbols</p>
+            <p className="mt-1 text-sm text-muted">
+              Brands, healthcare, climate, queer symbols, and more — licensed under CC BY-SA 4.0.
+            </p>
+          </div>
+          <Link
+            href="/extras"
+            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-strong"
+          >
+            Explore OpenMoji Extras
+          </Link>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <div className="flex items-end justify-between gap-4">
+          <div>
             <h2 className="section-title">Recently Added</h2>
             <p className="section-subtitle">Fresh emojis from the latest Unicode releases.</p>
           </div>

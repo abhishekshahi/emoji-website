@@ -2,11 +2,11 @@
 
 import { useMemo, useState } from "react";
 import { EMOJI_GRID_PAGE_SIZE } from "@/lib/emoji/constants";
-import type { EmojiRecord } from "@/lib/emoji/types";
+import type { BrowsableEmoji } from "@/lib/emoji/types";
 import { EmojiCard } from "./emoji-card";
 
 interface EmojiGridProps {
-  emojis: EmojiRecord[];
+  emojis: BrowsableEmoji[];
   pageSize?: number;
   emptyMessage?: string;
 }

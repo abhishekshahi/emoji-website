@@ -1,23 +1,31 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { EmojiRecord } from "@/lib/emoji/types";
+import type { BrowsableEmoji, EmojiRecord } from "@/lib/emoji/types";
 import { searchEmojis } from "@/lib/emoji/search";
 
-let emojiCache: EmojiRecord[] | null = null;
+let emojiCache: BrowsableEmoji[] | null = null;
 
-async function loadEmojis(): Promise<EmojiRecord[]> {
+async function loadEmojis(): Promise<BrowsableEmoji[]> {
   if (emojiCache) {
     return emojiCache;
   }
 
-  const emojiModule = await import("@/data/emojis.json");
-  emojiCache = emojiModule.default as EmojiRecord[];
+  const [standardModule, extrasModule] = await Promise.all([
+    import("@/data/emojis.json"),
+    import("@/data/openmoji-extras.json"),
+  ]);
+
+  emojiCache = [
+    ...(standardModule.default as BrowsableEmoji[]),
+    ...(extrasModule.default as BrowsableEmoji[]),
+  ];
+
   return emojiCache;
 }
 
 export function useEmojiSearch(query: string, limit = 120) {
-  const [emojis, setEmojis] = useState<EmojiRecord[]>([]);
+  const [emojis, setEmojis] = useState<BrowsableEmoji[]>([]);
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
@@ -53,9 +61,9 @@ export function useEmojiDataset() {
   useEffect(() => {
     let cancelled = false;
 
-    loadEmojis().then((data) => {
+    import("@/data/emojis.json").then((emojiModule) => {
       if (!cancelled) {
-        setEmojis(data);
+        setEmojis(emojiModule.default as EmojiRecord[]);
         setIsReady(true);
       }
     });

@@ -9,8 +9,10 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "data:build": "tsx scripts/build-emoji-data.ts",
+    "extras:build": "tsx scripts/build-openmoji-extras.ts",
     "artwork:import": "tsx scripts/import-openmoji-assets.ts",
-    "prebuild": "npm run artwork:import"
+    "extras:import": "tsx scripts/import-openmoji-extras-assets.ts",
+    "prebuild": "npm run artwork:import && npm run extras:import"
   },
   "dependencies": {
     "emojibase": "^17.0.0",

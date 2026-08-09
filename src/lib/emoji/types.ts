@@ -93,3 +93,49 @@ export interface EmojiDataset {
   manifest: EmojiDatasetManifest;
   emojis: EmojiRecord[];
 }
+
+export type OpenMojiExtraGroup = "extras-openmoji" | "extras-unicode";
+
+export interface OpenMojiExtraRecord {
+  id: string;
+  emoji: string;
+  name: string;
+  slug: string;
+  category: string;
+  subcategory: string;
+  keywords: string[];
+  shortcodes: string[];
+  unicodeVersion: string;
+  codePoints: string[];
+  codePointsDecimal: number[];
+  codePointString: string;
+  hexcode: string;
+  sequence: EmojiSequenceInfo;
+  openmojiGroup: OpenMojiExtraGroup;
+  openmojiAuthor: string;
+  openmojiDate: string;
+  isOpenMojiExtra: true;
+}
+
+export interface OpenMojiExtrasManifest {
+  generatedAt: string;
+  openmojiVersion: string;
+  recordCount: number;
+  categoryCount: number;
+  openmojiGroupCounts: Record<OpenMojiExtraGroup, number>;
+  categories: EmojiCategory[];
+  subgroupLabels: Record<string, string>;
+  subgroupEmojis: Record<string, string>;
+  indexes: {
+    bySlug: Record<string, string>;
+    byHexcode: Record<string, string>;
+  };
+}
+
+export type BrowsableEmoji = EmojiRecord | OpenMojiExtraRecord;
+
+export function isOpenMojiExtra(
+  emoji: BrowsableEmoji,
+): emoji is OpenMojiExtraRecord {
+  return "isOpenMojiExtra" in emoji && emoji.isOpenMojiExtra === true;
+}

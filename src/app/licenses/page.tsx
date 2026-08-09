@@ -53,6 +53,27 @@ export default function LicensesPage() {
       </section>
 
       <section className="card-surface space-y-4 p-6">
+        <h2 className="text-xl font-semibold">OpenMoji Extras artwork</h2>
+        <p className="text-muted">
+          OpenMoji Extras are additional symbols and designs beyond the standard
+          Unicode emoji set. They are provided by{" "}
+          <Link href={OPENMOJI_PROJECT_URL} className="text-accent-strong underline">
+            OpenMoji
+          </Link>{" "}
+          under{" "}
+          <Link href={OPENMOJI_LICENSE_URL} className="text-accent-strong underline">
+            {OPENMOJI_LICENSE}
+          </Link>
+          .
+        </p>
+        <p className="text-muted">
+          Individual OpenMoji Extra designs credit their authors on each emoji
+          detail page. When sharing or redistributing OpenMoji artwork, you must
+          provide attribution and share under the same license.
+        </p>
+      </section>
+
+      <section className="card-surface space-y-4 p-6">
         <h2 className="text-xl font-semibold">Unicode & Emojibase metadata</h2>
         <p className="text-muted">
           Emoji names, categories, keywords, and Unicode information are derived

@@ -1,11 +1,25 @@
 import emojis from "@/data/emojis.json";
 import manifest from "@/data/manifest.json";
 import {
+  CATEGORY_EMOJIS,
   CATEGORY_LABELS,
   EMOJI_VERSION_ORDER,
   POPULAR_EMOJI_SLUGS,
 } from "./constants";
-import type { EmojiCategory, EmojiDatasetManifest, EmojiRecord } from "./types";
+import {
+  getAllOpenMojiExtraCategorySlugs,
+  getOpenMojiExtraCategoryEmoji,
+  getOpenMojiExtraCategoryLabel,
+  getOpenMojiExtrasByCategory,
+  getOpenMojiExtraByHexcode,
+  isOpenMojiExtraCategory,
+} from "./extras-data";
+import type {
+  BrowsableEmoji,
+  EmojiCategory,
+  EmojiDatasetManifest,
+  EmojiRecord,
+} from "./types";
 
 const emojiList = emojis as EmojiRecord[];
 const emojiManifest = manifest as EmojiDatasetManifest;
@@ -38,12 +52,35 @@ export function getEmojisByCategory(categoryId: string): EmojiRecord[] {
   return emojiList.filter((emoji) => emoji.category === categoryId);
 }
 
+export function getRecordsByCategory(categoryId: string): BrowsableEmoji[] {
+  if (isOpenMojiExtraCategory(categoryId)) {
+    return getOpenMojiExtrasByCategory(categoryId);
+  }
+
+  return getEmojisByCategory(categoryId);
+}
+
 export function getAllCategorySlugs(): string[] {
-  return emojiManifest.categories.map((category) => category.id);
+  return [
+    ...emojiManifest.categories.map((category) => category.id),
+    ...getAllOpenMojiExtraCategorySlugs(),
+  ];
 }
 
 export function getCategoryLabel(categoryId: string): string {
+  if (isOpenMojiExtraCategory(categoryId)) {
+    return getOpenMojiExtraCategoryLabel(categoryId);
+  }
+
   return CATEGORY_LABELS[categoryId] ?? formatLabel(categoryId);
+}
+
+export function getCategoryEmoji(categoryId: string): string {
+  if (isOpenMojiExtraCategory(categoryId)) {
+    return getOpenMojiExtraCategoryEmoji(categoryId);
+  }
+
+  return CATEGORY_EMOJIS[categoryId] ?? "✨";
 }
 
 export function getPopularEmojis(limit = POPULAR_EMOJI_SLUGS.length): EmojiRecord[] {
@@ -100,10 +137,10 @@ export function getEmojiByHexcode(hexcode: string): EmojiRecord | undefined {
   return emojiByHexcode.get(hexcode);
 }
 
-export function getEmojisByHexcodes(hexcodes: readonly string[]): EmojiRecord[] {
+export function getEmojisByHexcodes(hexcodes: readonly string[]): BrowsableEmoji[] {
   return hexcodes
-    .map((hexcode) => getEmojiByHexcode(hexcode))
-    .filter((emoji): emoji is EmojiRecord => Boolean(emoji));
+    .map((hexcode) => getEmojiByHexcode(hexcode) ?? getOpenMojiExtraByHexcode(hexcode))
+    .filter((emoji): emoji is BrowsableEmoji => Boolean(emoji));
 }
 
 export function getEmojisByIds(ids: string[]): EmojiRecord[] {

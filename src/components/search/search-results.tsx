@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { useEmojiSearch } from "@/hooks/use-emoji-search";
-import { getEmojiById } from "@/lib/emoji/data";
+import { getBrowsableEmojiById } from "@/lib/emoji/browsable-data";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 
 export function SearchResults() {
@@ -14,7 +14,7 @@ export function SearchResults() {
   const emojis = useMemo(
     () =>
       results
-        .map((result) => getEmojiById(result.emoji.id))
+        .map((result) => getBrowsableEmojiById(result.emoji.id))
         .filter((emoji): emoji is NonNullable<typeof emoji> => Boolean(emoji)),
     [results],
   );

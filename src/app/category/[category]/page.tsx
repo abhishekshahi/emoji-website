@@ -3,12 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 import { PageHeader } from "@/components/layout/page-header";
-import { CATEGORY_EMOJIS } from "@/lib/emoji/constants";
-import {
-  getAllCategorySlugs,
-  getCategoryLabel,
-  getEmojisByCategory,
-} from "@/lib/emoji/data";
+import { getCategoryEmoji, getCategoryLabel, getRecordsByCategory } from "@/lib/emoji/data";
+import { isOpenMojiExtraCategory } from "@/lib/emoji/extras-data";
 import { createCategoryPageMetadata } from "@/lib/seo/metadata";
 
 interface CategoryPageProps {
@@ -16,6 +12,7 @@ interface CategoryPageProps {
 }
 
 export async function generateStaticParams() {
+  const { getAllCategorySlugs } = await import("@/lib/emoji/data");
   return getAllCategorySlugs().map((category) => ({ category }));
 }
 
@@ -23,7 +20,7 @@ export async function generateMetadata({
   params,
 }: CategoryPageProps): Promise<Metadata> {
   const { category } = await params;
-  const emojis = getEmojisByCategory(category);
+  const emojis = getRecordsByCategory(category);
 
   if (emojis.length === 0) {
     return { title: "Category not found" };
@@ -38,7 +35,7 @@ export async function generateMetadata({
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { category } = await params;
-  const emojis = getEmojisByCategory(category);
+  const emojis = getRecordsByCategory(category);
 
   if (emojis.length === 0) {
     notFound();
@@ -50,13 +47,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <div className="page-shell space-y-8">
       <PageHeader
         eyebrow="Category"
-        title={`${CATEGORY_EMOJIS[category] ?? "✨"} ${label}`}
-        description={`${emojis.length.toLocaleString()} emojis in this category.`}
+        title={`${getCategoryEmoji(category)} ${label}`}
+        description={`${emojis.length.toLocaleString()} ${isOpenMojiExtraCategory(category) ? "OpenMoji extras" : "emojis"} in this category.`}
       />
 
       <div className="flex flex-wrap gap-2">
-        <Link href="/emoji" className="pill-link">
-          Browse all
+        <Link href={isOpenMojiExtraCategory(category) ? "/extras" : "/emoji"} className="pill-link">
+          {isOpenMojiExtraCategory(category) ? "All extras" : "Browse all"}
         </Link>
         <Link href="/search" className="pill-link">
           Search emojis

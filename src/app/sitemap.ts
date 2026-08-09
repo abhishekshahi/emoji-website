@@ -1,14 +1,18 @@
 import type { MetadataRoute } from "next";
-import {
-  getAllCategorySlugs,
-  getAllEmojiSlugs,
-  getManifest,
-} from "@/lib/emoji/data";
+import { getAllBrowsableSlugs } from "@/lib/emoji/browsable-data";
+import { getAllCategorySlugs, getManifest } from "@/lib/emoji/data";
+import { getOpenMojiExtrasManifest } from "@/lib/emoji/extras-data";
 import { absoluteUrl } from "@/lib/seo/metadata";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const manifest = getManifest();
-  const generatedAt = new Date(manifest.generatedAt);
+  const extrasManifest = getOpenMojiExtrasManifest();
+  const generatedAt = new Date(
+    Math.max(
+      new Date(manifest.generatedAt).getTime(),
+      new Date(extrasManifest.generatedAt).getTime(),
+    ),
+  );
 
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -22,6 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/extras"),
+      lastModified: generatedAt,
+      changeFrequency: "weekly",
+      priority: 0.85,
     },
     {
       url: absoluteUrl("/popular"),
@@ -58,7 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  const emojiPages: MetadataRoute.Sitemap = getAllEmojiSlugs().map((slug) => ({
+  const emojiPages: MetadataRoute.Sitemap = getAllBrowsableSlugs().map((slug) => ({
     url: absoluteUrl(`/emoji/${slug}`),
     lastModified: generatedAt,
     changeFrequency: "monthly" as const,

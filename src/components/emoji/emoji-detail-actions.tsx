@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 import { CopyButton } from "@/components/emoji/copy-button";
 import { useEmojiActions } from "@/components/providers/emoji-actions-provider";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
-import type { EmojiRecord } from "@/lib/emoji/types";
+import type { BrowsableEmoji } from "@/lib/emoji/types";
 
 interface EmojiDetailActionsProps {
-  emoji: EmojiRecord;
+  emoji: BrowsableEmoji;
 }
 
 export function EmojiDetailActions({ emoji }: EmojiDetailActionsProps) {
@@ -87,7 +87,7 @@ export function EmojiDetailActions({ emoji }: EmojiDetailActionsProps) {
 }
 
 interface RelatedEmojiGridProps {
-  emojis: EmojiRecord[];
+  emojis: BrowsableEmoji[];
 }
 
 export function RelatedEmojiGrid({ emojis }: RelatedEmojiGridProps) {

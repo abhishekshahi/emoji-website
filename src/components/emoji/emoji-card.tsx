@@ -4,10 +4,10 @@ import Link from "next/link";
 import { memo, useCallback } from "react";
 import { useEmojiActions } from "@/components/providers/emoji-actions-provider";
 import { EmojiArtwork } from "@/components/emoji/emoji-artwork";
-import type { EmojiRecord } from "@/lib/emoji/types";
+import type { BrowsableEmoji } from "@/lib/emoji/types";
 
 interface EmojiCardProps {
-  emoji: Pick<EmojiRecord, "id" | "emoji" | "name" | "slug" | "hexcode">;
+  emoji: Pick<BrowsableEmoji, "id" | "emoji" | "name" | "slug" | "hexcode">;
   showName?: boolean;
 }
 

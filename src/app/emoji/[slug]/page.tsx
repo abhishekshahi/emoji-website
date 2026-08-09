@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getOpenMojiArtworkPath } from "@/lib/artwork/openmoji";
 import {
@@ -9,27 +10,33 @@ import { EmojiArtwork } from "@/components/emoji/emoji-artwork";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
 import {
-  getAllEmojiSlugs,
-  getCategoryLabel,
-  getEmojiBySlug,
-  getRelatedEmojis,
-} from "@/lib/emoji/data";
+  getBrowsableEmojiBySlug,
+  getAllBrowsableSlugs,
+  getRelatedBrowsableEmojis,
+} from "@/lib/emoji/browsable-data";
+import { getCategoryLabel } from "@/lib/emoji/data";
+import { isOpenMojiExtra } from "@/lib/emoji/types";
 import { buildEmojiPageJsonLd } from "@/lib/seo/json-ld";
 import { createEmojiPageMetadata } from "@/lib/seo/metadata";
+import {
+  OPENMOJI_LICENSE,
+  OPENMOJI_LICENSE_URL,
+  OPENMOJI_PROJECT_URL,
+} from "@/lib/site/config";
 
 interface EmojiPageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return getAllEmojiSlugs().map((slug) => ({ slug }));
+  return getAllBrowsableSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
   params,
 }: EmojiPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const emoji = getEmojiBySlug(slug);
+  const emoji = getBrowsableEmojiBySlug(slug);
 
   if (!emoji) {
     return {
@@ -49,15 +56,18 @@ export async function generateMetadata({
 
 export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   const { slug } = await params;
-  const emoji = getEmojiBySlug(slug);
+  const emoji = getBrowsableEmojiBySlug(slug);
 
   if (!emoji) {
     notFound();
   }
 
-  const relatedEmojis = getRelatedEmojis(emoji);
+  const relatedEmojis = getRelatedBrowsableEmojis(emoji);
   const categoryLabel = getCategoryLabel(emoji.category);
-  const description = `Copy ${emoji.name} ${emoji.emoji}. Unicode ${emoji.codePointString}. Keywords: ${emoji.keywords.slice(0, 8).join(", ")}.`;
+  const extra = isOpenMojiExtra(emoji);
+  const description = extra
+    ? `Copy ${emoji.name}. OpenMoji Extra (${emoji.codePointString}). Keywords: ${emoji.keywords.slice(0, 8).join(", ")}.`
+    : `Copy ${emoji.name} ${emoji.emoji}. Unicode ${emoji.codePointString}. Keywords: ${emoji.keywords.slice(0, 8).join(", ")}.`;
 
   const jsonLd = buildEmojiPageJsonLd({
     name: emoji.name,
@@ -90,8 +100,9 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
           {emoji.name} {emoji.emoji}
         </h1>
         <p className="max-w-2xl text-muted">
-          Copy {emoji.name} instantly, explore Unicode details, and browse related
-          emojis.
+          {extra
+            ? `Copy ${emoji.name}, explore OpenMoji artwork details, and browse related extras.`
+            : `Copy ${emoji.name} instantly, explore Unicode details, and browse related emojis.`}
         </p>
       </header>
 
@@ -116,6 +127,7 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
             <h2 className="text-lg font-semibold">What does {emoji.name} mean?</h2>
             <p className="text-muted">
               {emoji.name} is listed in the {categoryLabel.toLowerCase()} category
+              {extra ? " as an OpenMoji Extra" : ""}
               {emoji.keywords.length > 0
                 ? ` and is commonly associated with ${emoji.keywords.slice(0, 5).join(", ")}.`
                 : "."}
@@ -151,13 +163,32 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
               </dd>
             </div>
             <div>
-              <dt className="text-sm font-semibold text-muted">Unicode version</dt>
+              <dt className="text-sm font-semibold text-muted">
+                {extra ? "Source" : "Unicode version"}
+              </dt>
               <dd className="mt-1">{emoji.unicodeVersion}</dd>
             </div>
-            <div>
-              <dt className="text-sm font-semibold text-muted">Sequence type</dt>
-              <dd className="mt-1 capitalize">{emoji.sequence.kind.replace(/-/g, " ")}</dd>
-            </div>
+            {!extra ? (
+              <div>
+                <dt className="text-sm font-semibold text-muted">Sequence type</dt>
+                <dd className="mt-1 capitalize">
+                  {emoji.sequence.kind.replace(/-/g, " ")}
+                </dd>
+              </div>
+            ) : (
+              <div>
+                <dt className="text-sm font-semibold text-muted">OpenMoji group</dt>
+                <dd className="mt-1 capitalize">
+                  {emoji.openmojiGroup.replace(/-/g, " ")}
+                </dd>
+              </div>
+            )}
+            {extra ? (
+              <div>
+                <dt className="text-sm font-semibold text-muted">OpenMoji author</dt>
+                <dd className="mt-1">{emoji.openmojiAuthor}</dd>
+              </div>
+            ) : null}
           </dl>
 
           {emoji.keywords.length > 0 ? (
@@ -191,11 +222,29 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
               </ul>
             </div>
           ) : null}
+
+          {extra ? (
+            <div className="rounded-[1rem] border border-border bg-surface-muted/60 p-4 text-sm text-muted">
+              <p>
+                Artwork by {emoji.openmojiAuthor} via{" "}
+                <Link href={OPENMOJI_PROJECT_URL} className="text-accent-strong underline">
+                  OpenMoji
+                </Link>{" "}
+                (
+                <Link href={OPENMOJI_LICENSE_URL} className="text-accent-strong underline">
+                  {OPENMOJI_LICENSE}
+                </Link>
+                ).
+              </p>
+            </div>
+          ) : null}
         </div>
       </section>
 
       <section className="space-y-4">
-        <h2 className="section-title">Related Emojis</h2>
+        <h2 className="section-title">
+          {extra ? "Related Extras" : "Related Emojis"}
+        </h2>
         <RelatedEmojiGrid emojis={relatedEmojis} />
       </section>
     </div>
