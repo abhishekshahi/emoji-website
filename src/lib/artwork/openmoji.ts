@@ -1,20 +1,29 @@
 import manifest from "@/data/openmoji-manifest.json";
 import extrasArtworkManifest from "@/data/openmoji-extras-artwork-manifest.json";
 
+export type OpenMojiCollection =
+  | "standard"
+  | "extras-openmoji"
+  | "extras-unicode";
+
+export interface OpenMojiArtworkEntry {
+  path: string;
+  sourceHexcode: string;
+}
+
+export interface OpenMojiExtraArtworkEntry extends OpenMojiArtworkEntry {
+  collection: "extras-openmoji" | "extras-unicode";
+}
+
 export interface OpenMojiArtworkManifest {
   generatedAt: string;
   openmojiVersion: string;
   format: "svg";
+  collection: "standard";
   imported: number;
   missing: number;
   totalEmojis: number;
-  artwork: Record<
-    string,
-    {
-      path: string;
-      sourceHexcode: string;
-    }
-  >;
+  artwork: Record<string, OpenMojiArtworkEntry>;
 }
 
 export interface OpenMojiExtrasArtworkManifest {
@@ -24,13 +33,19 @@ export interface OpenMojiExtrasArtworkManifest {
   imported: number;
   missing: number;
   totalExtras: number;
-  artwork: Record<
-    string,
-    {
-      path: string;
-      sourceHexcode: string;
-    }
-  >;
+  collections: {
+    "extras-openmoji": {
+      imported: number;
+      missing: number;
+      expected: number;
+    };
+    "extras-unicode": {
+      imported: number;
+      missing: number;
+      expected: number;
+    };
+  };
+  artwork: Record<string, OpenMojiExtraArtworkEntry>;
 }
 
 const openMojiManifest = manifest as OpenMojiArtworkManifest;
@@ -53,11 +68,20 @@ export function getOpenMojiArtworkPath(hexcode: string): string | null {
   );
 }
 
+export function getOpenMojiArtworkCollection(
+  hexcode: string,
+): OpenMojiCollection | null {
+  if (openMojiManifest.artwork[hexcode]) {
+    return "standard";
+  }
+
+  return openMojiExtrasArtworkManifest.artwork[hexcode]?.collection ?? null;
+}
+
 export function hasOpenMojiArtwork(hexcode: string): boolean {
-  return Boolean(openMojiManifest.artwork[hexcode]);
+  return Boolean(getOpenMojiArtworkPath(hexcode));
 }
 
 export function getOpenMojiArtworkUrl(hexcode: string): string | null {
-  const path = getOpenMojiArtworkPath(hexcode);
-  return path;
+  return getOpenMojiArtworkPath(hexcode);
 }

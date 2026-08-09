@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-08-09T04:53:43.150Z",
+  "phase": "8.10",
+  "totalFiles": 40071,
+  "missingFiles": 0,
+  "checksumFailures": 0,
+  "providers": {
+    "openmoji": {
+      "fileCount": 4495,
+      "checksumVerified": 4495
+    },
+    "noto": {
+      "fileCount": 19673,
+      "checksumVerified": 19673
+    },
+    "twemoji": {
+      "fileCount": 8018,
+      "checksumVerified": 8018
+    },
+    "fluent": {
+      "fileCount": 7885,
+      "checksumVerified": 7885
+    }
+  },
+  "status": "frozen",
+  "checksumReference": "src/data/master/artwork/artwork-checksums.json",
+  "artworkAssetRoot": "src/data/master/raw/artwork/"
+}

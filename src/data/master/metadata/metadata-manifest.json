@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-08-09T04:21:23.791Z",
+  "phase": "8.6",
+  "recordCount": 42910,
+  "files": {
+    "rawMetadataIndex": "master/metadata/raw-metadata-index.json",
+    "metadataSourceIndex": "master/metadata/metadata-source-index.json",
+    "canonicalMetadataIndex": "master/metadata/canonical-metadata-index.json",
+    "metadataNameConflicts": "master/metadata/metadata-name-conflicts.json",
+    "metadataKeywordIndex": "master/metadata/metadata-keyword-index.json",
+    "shortcodeSourceIndex": "master/metadata/shortcode-source-index.json",
+    "metadataCoverageReport": "master/metadata/metadata-coverage-report.json",
+    "metadataProviderAvailability": "master/metadata/metadata-provider-availability.json",
+    "metadataAuditReport": "master/metadata/metadata-audit-report.json"
+  }
+}

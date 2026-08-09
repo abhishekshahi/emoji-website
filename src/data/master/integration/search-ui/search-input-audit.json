@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-08-09T15:16:54.063Z",
+  "phase": "8.11H",
+  "releaseId": "master-8.10-20260809",
+  "debounceMs": 150,
+  "checks": {
+    "roleSearch": true,
+    "accessibleLabel": true,
+    "searchIcon": true,
+    "placeholder": true,
+    "clearButton": true,
+    "escapeClears": true,
+    "debounce": true,
+    "liveMode": true,
+    "focusRing": true,
+    "minTouchTarget": true
+  },
+  "status": "PASS"
+}

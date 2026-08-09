@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-08-09T04:03:17.898Z",
+  "phase": "8.3a",
+  "baselines": {
+    "rawRecords": 72228,
+    "artwork": 40071,
+    "metadata": 34784,
+    "semantic": 15183,
+    "nonUnicode": 734
+  },
+  "counts": {
+    "rawSourceMappings": 72228,
+    "artworkMappings": 40071,
+    "metadataMappings": 34784,
+    "uniqueUnicodeIdentities": 5540,
+    "uniqueSourceSpecificIdentities": 1415,
+    "privateUseIdentities": 366,
+    "metadataOnlyIdentities": 34419,
+    "artworkOnlyIdentities": 39706,
+    "semanticOnlyIdentities": 15183,
+    "unmatchedIdentities": 0,
+    "potentialConflicts": 2335
+  },
+  "identityCategories": {
+    "unicode-canonical": 5673,
+    "unicode-sequence": 13156,
+    "private-use": 728,
+    "metadata-only": 1914,
+    "artwork-only": 35573,
+    "source-specific": 1,
+    "semantic-only": 15183
+  },
+  "emojinet": {
+    "total": 17572,
+    "matched": 17572,
+    "unmatched": 0,
+    "unicodeMappings": 17572,
+    "nonUnicodeRecords": 0
+  },
+  "emojiTime": {
+    "total": 24,
+    "mapped": 24
+  },
+  "openmojiExtras": {
+    "total": 542,
+    "privateUse": 363,
+    "unicode": 179
+  },
+  "existingDataCheck": {
+    "standardRecords": 3944,
+    "extrasRecords": 542,
+    "standardRecordsExpected": 3944,
+    "extrasRecordsExpected": 542,
+    "intact": true
+  },
+  "note": "Phase 8.3a identity-normalization audit. Not the final emoji count."
+}

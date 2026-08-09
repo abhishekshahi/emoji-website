@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-08-09T05:06:10.905Z",
+  "phase": "8.11B",
+  "releaseId": "master-8.10-20260809",
+  "totals": {
+    "masterArtworkRecords": 40071,
+    "openmoji": 4495,
+    "noto": 19673,
+    "twemoji": 8018,
+    "fluent": 7885,
+    "svg": 20741,
+    "png": 19330,
+    "duplicateBinaryRecords": 723,
+    "duplicateBinaryGroups": 304,
+    "missingFiles": 0,
+    "checksumFailures": 0,
+    "pathCollisions": 0
+  },
+  "status": "PASS"
+}

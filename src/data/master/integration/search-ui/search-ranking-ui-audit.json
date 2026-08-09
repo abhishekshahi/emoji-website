@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-09T15:16:54.154Z",
+  "phase": "8.11H",
+  "releaseId": "master-8.10-20260809",
+  "entries": [
+    {
+      "query": "fire",
+      "topHexcode": "1F525",
+      "expected": "1F525",
+      "pass": true
+    },
+    {
+      "query": ":fire:",
+      "topHexcode": "1F525",
+      "expected": "1F525",
+      "pass": true
+    },
+    {
+      "query": "U+1F525",
+      "topHexcode": "1F525",
+      "expected": "1F525",
+      "pass": true
+    },
+    {
+      "query": "1F525",
+      "topHexcode": "1F525",
+      "expected": "1F525",
+      "pass": true
+    },
+    {
+      "query": "flame",
+      "topHexcode": "1F525",
+      "expected": "1F525",
+      "pass": true
+    },
+    {
+      "query": "thumbs up",
+      "topHexcode": "1F44D",
+      "expected": "1F44D",
+      "pass": true
+    },
+    {
+      "query": "India",
+      "topHexcode": "1F1EE-1F1F3",
+      "expected": "1F1EE-1F1F3",
+      "pass": true
+    },
+    {
+      "query": "pride flag",
+      "topHexcode": "1F3F3-FE0F-200D-1F308",
+      "expected": "1F3F3-FE0F-200D-1F308",
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

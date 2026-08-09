@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-08-09T04:37:41.731Z",
+  "phase": "8.8",
+  "counts": {
+    "totalSemanticTerms": 151467,
+    "safeSearchTerms": 29468,
+    "safeSeoTerms": 11738,
+    "searchOnlyTerms": 6608,
+    "sourceOnlyTerms": 6608,
+    "ambiguousTerms": 115387,
+    "rejectedPublicSeoTerms": 121995,
+    "unresolvedTerms": 1171,
+    "semanticDifferenceConflicts": 676,
+    "aliasAudits": 4015,
+    "safeAliases": 3580,
+    "restrictedAliases": 435
+  },
+  "preservation": {
+    "emojinetSenses": 15183,
+    "emojinetDefinitions": 17572,
+    "allEmojilibKeywordsPreserved": true,
+    "allEmojibaseTagsPreserved": true,
+    "allSourceNamesPreserved": true,
+    "allSourceAliasesPreserved": true,
+    "allSourceShortcodesPreserved": true
+  },
+  "constraints": {
+    "allSourceSemanticsPreserved": true,
+    "noRawDataModified": true,
+    "noArtworkModified": true,
+    "noCanonicalIdentitiesModified": true,
+    "productionDataUnchanged": true
+  },
+  "note": "Semantic enrichment layer. Not connected to production search or SEO."
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "source": "openmoji",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "appliesTo": "both"
+  },
+  {
+    "source": "noto",
+    "license": "Apache-2.0",
+    "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0",
+    "appliesTo": "artwork"
+  },
+  {
+    "source": "twemoji",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+    "appliesTo": "artwork"
+  },
+  {
+    "source": "fluent",
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "appliesTo": "both"
+  },
+  {
+    "source": "emojinet",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "appliesTo": "semantic"
+  },
+  {
+    "source": "unicode",
+    "license": "Unicode Terms of Use",
+    "licenseURL": "https://www.unicode.org/copyright.html",
+    "appliesTo": "metadata"
+  },
+  {
+    "source": "unicode-emoji-data",
+    "license": "Unicode Terms of Use",
+    "licenseURL": "https://www.unicode.org/copyright.html",
+    "appliesTo": "metadata"
+  },
+  {
+    "source": "emojibase",
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "appliesTo": "metadata"
+  },
+  {
+    "source": "emojilib",
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "appliesTo": "metadata"
+  },
+  {
+    "source": "emoji-time",
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "appliesTo": "metadata"
+  }
+]

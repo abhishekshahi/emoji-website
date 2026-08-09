@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-09T04:12:57.687Z",
+  "phase": "8.5",
+  "recordCount": 40071,
+  "files": {
+    "artworkMasterIndex": "master/artwork/artwork-master-index.json",
+    "artworkChecksums": "master/artwork/artwork-checksums.json",
+    "canonicalArtworkIndex": "master/artwork/canonical-artwork-index.json",
+    "artworkCoverageReport": "master/artwork/artwork-coverage-report.json",
+    "artworkLicenseIndex": "master/artwork/artwork-license-index.json",
+    "artworkAttributionIndex": "master/artwork/artwork-attribution-index.json",
+    "artworkIntegrityReport": "master/artwork/artwork-integrity-report.json"
+  }
+}

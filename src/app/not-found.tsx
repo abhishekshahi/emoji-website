@@ -23,7 +23,7 @@ export default function NotFound() {
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <Link
             href="/"
-            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white"
+            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-on-accent"
           >
             Go home
           </Link>

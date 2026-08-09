@@ -1,0 +1,227 @@
+{
+  "generatedAt": "2026-08-09T02:12:06.042Z",
+  "phase": "8.1",
+  "lockFile": "src/data/master-source-lock.json",
+  "existingProject": {
+    "standardRecords": 3944,
+    "extrasRecords": 542,
+    "searchableItems": 4486,
+    "openmojiArtwork": {
+      "standard": 3944,
+      "extrasOpenmoji": 405,
+      "extrasUnicode": 137
+    }
+  },
+  "sources": [
+    {
+      "source": "openmoji",
+      "status": "installed",
+      "versionExpected": "17.0.0",
+      "versionInstalled": "17.0.0",
+      "rawRecords": 4486,
+      "rawArtwork": 4486,
+      "rawMetadata": 4486,
+      "uniqueUnicode": 3944,
+      "uniqueNonUnicode": 542,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "CC BY-SA 4.0",
+      "commitOrChecksum": null,
+      "notes": [
+        "Standard: 3944",
+        "Extras: 542",
+        "Artwork standard/extras-openmoji/extras-unicode: 3944/405/137"
+      ]
+    },
+    {
+      "source": "unicode-emoji-data",
+      "status": "installed",
+      "versionExpected": "17.0.0",
+      "versionInstalled": "17.0",
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": 3,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "Unicode Terms of Use",
+      "commitOrChecksum": null,
+      "notes": [
+        "Unicode source files present: emoji-test.txt, emoji-sequences.txt, emoji-zwj-sequences.txt",
+        "emoji-data.txt not yet vendored locally (planned 8.2)."
+      ]
+    },
+    {
+      "source": "unicode",
+      "status": "installed",
+      "versionExpected": "17.0.0",
+      "versionInstalled": "17.0",
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": 3,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "Unicode Terms of Use",
+      "commitOrChecksum": null,
+      "notes": [
+        "Unicode source files present: emoji-test.txt, emoji-sequences.txt, emoji-zwj-sequences.txt",
+        "emoji-data.txt not yet vendored locally (planned 8.2).",
+        "Unicode TR51 identity rules apply in 8.3."
+      ]
+    },
+    {
+      "source": "emojibase",
+      "status": "installed",
+      "versionExpected": "17.0.0",
+      "versionInstalled": "17.0.0",
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": 3944,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "MIT",
+      "commitOrChecksum": null,
+      "notes": [
+        "Generated metadata matched 3944 standard records."
+      ]
+    },
+    {
+      "source": "emojilib",
+      "status": "pending",
+      "versionExpected": "4.0.3",
+      "versionInstalled": null,
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": null,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "MIT",
+      "commitOrChecksum": null,
+      "notes": [
+        "Expected emojilib@4.0.3, found not installed."
+      ]
+    },
+    {
+      "source": "emojinet",
+      "status": "pending",
+      "versionExpected": "1.0.0",
+      "versionInstalled": null,
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": null,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "CC BY-NC-SA 4.0",
+      "commitOrChecksum": null,
+      "notes": [
+        "Locked commit: pending",
+        "Awaiting 8.2 raw source ingestion.",
+        "EmojiNet dataset commit to be locked during 8.2 ingestion."
+      ]
+    },
+    {
+      "source": "emoji-time",
+      "status": "pending",
+      "versionExpected": "2.2.5",
+      "versionInstalled": null,
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": null,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "MIT",
+      "commitOrChecksum": null,
+      "notes": [
+        "Expected emoji-time@2.2.5, found not installed.",
+        "Utility source: clock/time mapping preserved separately."
+      ]
+    },
+    {
+      "source": "twemoji",
+      "status": "pending",
+      "versionExpected": "17.0.3",
+      "versionInstalled": null,
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": null,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "CC BY 4.0",
+      "commitOrChecksum": "b6b55fef1e8636b540a6d016a4729ca8cdf2e60b",
+      "notes": [
+        "Expected @twemoji/api@17.0.3, found not installed."
+      ]
+    },
+    {
+      "source": "noto",
+      "status": "pending",
+      "versionExpected": "17.0.0",
+      "versionInstalled": null,
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": null,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "Apache-2.0",
+      "commitOrChecksum": "8998f5dd683424a73e2314a8c1f1e359c19e8742",
+      "notes": [
+        "Locked commit: 8998f5dd683424a73e2314a8c1f1e359c19e8742",
+        "Awaiting 8.2 raw source ingestion."
+      ]
+    },
+    {
+      "source": "fluent",
+      "status": "pending",
+      "versionExpected": "main",
+      "versionInstalled": null,
+      "rawRecords": null,
+      "rawArtwork": null,
+      "rawMetadata": null,
+      "uniqueUnicode": null,
+      "uniqueNonUnicode": null,
+      "duplicates": null,
+      "merged": null,
+      "newRecords": null,
+      "unmatched": null,
+      "license": "MIT",
+      "commitOrChecksum": "62ecdc0d7ca5c6df32148c169556bc8d3782fca4",
+      "notes": [
+        "Locked commit: 62ecdc0d7ca5c6df32148c169556bc8d3782fca4",
+        "Awaiting 8.2 raw source ingestion."
+      ]
+    }
+  ]
+}

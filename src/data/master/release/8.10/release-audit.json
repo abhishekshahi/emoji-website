@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-08-09T04:53:43.150Z",
+  "phase": "8.10",
+  "status": "PASS",
+  "baselines": {
+    "rawRecordCount": 72228,
+    "canonicalIdentityCount": 6955,
+    "artworkCount": 40071,
+    "metadataCount": 42910,
+    "semanticCount": 15183,
+    "definitionCount": 17572,
+    "aliasCount": 4015,
+    "safeAliases": 3580,
+    "restrictedAliases": 435,
+    "keywordCount": 43977,
+    "shortcodeCount": 14304,
+    "shortcodeIdentityEntries": 5333,
+    "safeSearchTerms": 29468,
+    "safeSeoTerms": 11738,
+    "ambiguousTerms": 115387,
+    "seoRecords": 6955,
+    "nameConflicts": 4187,
+    "semanticDifferenceConflicts": 676,
+    "testCount": 126,
+    "productionEmojis": 3944,
+    "productionExtras": 542
+  },
+  "verified": {
+    "rawRecordCount": 72228,
+    "canonicalIdentityCount": 6955,
+    "artworkCount": 40071,
+    "metadataCount": 42910,
+    "semanticCount": 15183,
+    "definitionCount": 17572,
+    "aliasCount": 4015,
+    "keywordCount": 43977,
+    "shortcodeCount": 14304,
+    "safeSearchTerms": 29468,
+    "safeSeoTerms": 11738,
+    "seoRecords": 6955
+  },
+  "mismatches": [],
+  "phase89AuditPassed": true,
+  "productionSafety": {
+    "emojisJson": 3944,
+    "openmojiExtras": 542,
+    "status": "PASS"
+  }
+}

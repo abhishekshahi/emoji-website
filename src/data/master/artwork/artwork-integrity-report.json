@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-08-09T04:12:57.627Z",
+  "phase": "8.5",
+  "totals": {
+    "rawArtworkRecords": 40071,
+    "artworkMasterRecords": 40071,
+    "utilitySupportExcludedFromCanonical": 1,
+    "missingFiles": 0,
+    "checksumFailures": 0,
+    "checksumVerified": 40071,
+    "duplicateBinaryGroups": 304,
+    "duplicateBinaryRecords": 723,
+    "pathCollisions": 0
+  },
+  "providerCounts": {
+    "openmoji": 4495,
+    "noto": 19673,
+    "twemoji": 8018,
+    "fluent": 7885
+  },
+  "formatCounts": {
+    "svg": 20741,
+    "png": 19330
+  },
+  "variantCounts": {
+    "openmoji:svg": 4495,
+    "twemoji:png": 4009,
+    "twemoji:svg": 4009,
+    "noto:png": 360,
+    "noto:png-128": 3768,
+    "noto:png-32": 3731,
+    "noto:png-512": 3731,
+    "noto:png-72": 3731,
+    "noto:svg": 4352,
+    "fluent:color": 3143,
+    "fluent:flat": 3149,
+    "fluent:high-contrast": 1593
+  },
+  "classificationCounts": {
+    "unicodeLinked": 39171,
+    "sourceSpecific": 899,
+    "artworkOnly": 0,
+    "utilitySupport": 1
+  },
+  "canonicalCoverage": {
+    "totalCanonicalIdentities": 6955,
+    "withOpenmoji": 4495,
+    "withNoto": 1999,
+    "withTwemoji": 4009,
+    "withFluent": 1594,
+    "withTwoOrMoreProviders": 3969,
+    "withOneProvider": 1361,
+    "withNoArtwork": 1625
+  },
+  "constraints": {
+    "rawArtworkUnchanged": true,
+    "noArtworkDeleted": true,
+    "productionDataUnchanged": true,
+    "canonicalIdentitiesUnmodified": true
+  }
+}

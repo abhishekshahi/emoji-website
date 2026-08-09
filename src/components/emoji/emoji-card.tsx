@@ -4,14 +4,16 @@ import Link from "next/link";
 import { memo, useCallback } from "react";
 import { useEmojiActions } from "@/components/providers/emoji-actions-provider";
 import { EmojiArtwork } from "@/components/emoji/emoji-artwork";
+import { getSearchHighlightSegments } from "@/lib/emoji/search-highlight";
 import type { BrowsableEmoji } from "@/lib/emoji/types";
 
 interface EmojiCardProps {
   emoji: Pick<BrowsableEmoji, "id" | "emoji" | "name" | "slug" | "hexcode">;
   showName?: boolean;
+  highlightQuery?: string;
 }
 
-function EmojiCardComponent({ emoji, showName = true }: EmojiCardProps) {
+function EmojiCardComponent({ emoji, showName = true, highlightQuery }: EmojiCardProps) {
   const { isFavorite, toggleFavorite, copyEmoji } = useEmojiActions();
   const favorite = isFavorite(emoji.hexcode);
 
@@ -40,7 +42,20 @@ function EmojiCardComponent({ emoji, showName = true }: EmojiCardProps) {
           />
           {showName ? (
             <span className="line-clamp-2 text-center text-sm font-medium text-foreground">
-              {emoji.name}
+              {highlightQuery
+                ? getSearchHighlightSegments(emoji.name, highlightQuery).map((segment, index) =>
+                    segment.highlight ? (
+                      <mark
+                        key={`${segment.text}-${index}`}
+                        className="rounded bg-accent-soft px-0.5 text-foreground"
+                      >
+                        {segment.text}
+                      </mark>
+                    ) : (
+                      <span key={`${segment.text}-${index}`}>{segment.text}</span>
+                    ),
+                  )
+                : emoji.name}
             </span>
           ) : null}
         </button>

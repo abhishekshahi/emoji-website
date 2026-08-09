@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-08-09T06:29:54.187Z",
+  "phase": "8.11F",
+  "defaultFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "rollbackRequired": true,
+  "productionSearchUnchanged": true,
+  "bridgedSearchMatchesProduction": true,
+  "masterSeoInactive": true,
+  "hotAmbiguous": true,
+  "seoTitlePresent": true,
+  "status": "PASS"
+}

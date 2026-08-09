@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-09T05:20:06.248Z",
+  "phase": "8.11C",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false
+  },
+  "outputs": {
+    "searchProductionCoverage": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/search/search-production-coverage.json",
+    "searchRankingAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/search/search-ranking-audit.json",
+    "searchIntegrationAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/search/search-integration-audit.json"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-08-09T05:57:43.530Z",
+  "phase": "8.11E",
+  "releaseId": "master-8.10-20260809",
+  "canonicalIdentities": 6955,
+  "masterMetadataRecords": 42910,
+  "fireCanonicalName": "fire",
+  "fireSourcePanels": [
+    {
+      "source": "unicode",
+      "available": true
+    },
+    {
+      "source": "cldr",
+      "available": true
+    },
+    {
+      "source": "openmoji",
+      "available": true
+    },
+    {
+      "source": "emojibase",
+      "available": true
+    },
+    {
+      "source": "emojilib",
+      "available": true
+    },
+    {
+      "source": "emojinet",
+      "available": true
+    },
+    {
+      "source": "fluent",
+      "available": true
+    },
+    {
+      "source": "emoji-time",
+      "available": false
+    },
+    {
+      "source": "noto",
+      "available": false
+    },
+    {
+      "source": "twemoji",
+      "available": false
+    }
+  ],
+  "status": "PASS"
+}

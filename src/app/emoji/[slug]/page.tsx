@@ -23,6 +23,7 @@ import {
   OPENMOJI_LICENSE_URL,
   OPENMOJI_PROJECT_URL,
 } from "@/lib/site/config";
+import { MasterEmojiPanelsGate } from "@/components/master/master-emoji-panels-gate";
 
 interface EmojiPageProps {
   params: Promise<{ slug: string }>;
@@ -240,6 +241,8 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
           ) : null}
         </div>
       </section>
+
+      <MasterEmojiPanelsGate emoji={emoji} />
 
       <section className="space-y-4">
         <h2 className="section-title">

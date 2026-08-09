@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-08-09T06:29:52.642Z",
+  "phase": "8.11F",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "checks": {
+    "fourProviders": true,
+    "modelLoaded": true,
+    "notoVariants": true,
+    "twemojiVariants": true,
+    "fluentVariants": true,
+    "providerSwitching": true,
+    "licenses": true,
+    "localPathsOnly": true,
+    "fallbackSafe": true,
+    "identityStable": true,
+    "skinTonesDistinct": true,
+    "zwjDistinct": true,
+    "variationDistinct": true,
+    "flagIdentity": true,
+    "prideFlag": true,
+    "puaSourceSpecific": true,
+    "utilityBlocked": true,
+    "extrasUnchanged": true,
+    "canonicalScopedLoad": true
+  },
+  "status": "PASS",
+  "providers": [
+    "openmoji",
+    "noto",
+    "twemoji",
+    "fluent"
+  ],
+  "frozenRelease": "PASS",
+  "productionData": {
+    "emojis": 3944,
+    "extras": 542,
+    "status": "PASS"
+  },
+  "routesChanged": false,
+  "searchChanged": false,
+  "seoChanged": false,
+  "externalRuntimeDependencies": false
+}

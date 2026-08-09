@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-08-09T05:57:43.530Z",
+  "phase": "8.11E",
+  "releaseId": "master-8.10-20260809",
+  "licenses": [
+    {
+      "provider": "openmoji",
+      "providerLabel": "OpenMoji",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0",
+      "sourceVersion": "17.0.0"
+    },
+    {
+      "provider": "noto",
+      "providerLabel": "Noto",
+      "license": "Apache-2.0",
+      "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0",
+      "attribution": "Google Noto Emoji project",
+      "sourceVersion": "2.051"
+    },
+    {
+      "provider": "twemoji",
+      "providerLabel": "Twemoji",
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Copyright 2025 Twitter, Inc and other contributors",
+      "sourceVersion": "17.0.3"
+    },
+    {
+      "provider": "fluent",
+      "providerLabel": "Fluent",
+      "license": "MIT",
+      "licenseURL": "https://opensource.org/licenses/MIT",
+      "attribution": "Microsoft Corporation",
+      "sourceVersion": "UNRESOLVED"
+    }
+  ],
+  "status": "PASS"
+}

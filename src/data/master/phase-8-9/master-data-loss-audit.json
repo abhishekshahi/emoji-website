@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-08-09T04:48:56.272Z",
+  "phase": "8.9",
+  "transitions": [
+    {
+      "from": "8.2",
+      "to": "8.6",
+      "metric": "rawMetadataManifest",
+      "before": 34784,
+      "after": 34784,
+      "acceptable": true,
+      "status": "PASS",
+      "detail": "Raw metadata manifest must remain 34,784"
+    },
+    {
+      "from": "8.5",
+      "to": "8.9",
+      "metric": "artworkMasterRecords",
+      "before": 40071,
+      "after": 40071,
+      "acceptable": true,
+      "status": "PASS",
+      "detail": "Artwork master records must remain 40,071"
+    },
+    {
+      "from": "8.6",
+      "to": "8.8",
+      "metric": "emojinetSenses",
+      "before": 15183,
+      "after": 15183,
+      "acceptable": true,
+      "status": "PASS",
+      "detail": "EmojiNet senses must remain 15,183"
+    },
+    {
+      "from": "8.6",
+      "to": "8.8",
+      "metric": "emojinetDefinitions",
+      "before": 17572,
+      "after": 17572,
+      "acceptable": true,
+      "status": "PASS",
+      "detail": "EmojiNet definitions must remain 17,572"
+    },
+    {
+      "from": "8.7",
+      "to": "8.8",
+      "metric": "canonicalKeywordTerms",
+      "before": 43977,
+      "after": 43977,
+      "acceptable": true,
+      "status": "PASS",
+      "detail": "Canonical keywords preserved (derived layer only enriches)"
+    }
+  ],
+  "status": "PASS"
+}

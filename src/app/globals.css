@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-:root {
+:root,
+[data-theme="light"] {
+  color-scheme: light;
   --background: #f7f4ef;
   --foreground: #171411;
   --surface: #ffffff;
@@ -10,7 +12,23 @@
   --accent-strong: #b45309;
   --accent-soft: #fff7ed;
   --muted: #6f675f;
+  --on-accent: #ffffff;
   --shadow: 0 18px 50px rgba(23, 20, 17, 0.08);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #11100f;
+  --foreground: #f6f1ea;
+  --surface: #1a1816;
+  --surface-muted: #221f1c;
+  --border: #342f2a;
+  --accent: #f59e0b;
+  --accent-strong: #fbbf24;
+  --accent-soft: #2a2118;
+  --muted: #b4aaa0;
+  --on-accent: #171411;
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
 }
 
 @theme inline {
@@ -23,23 +41,9 @@
   --color-accent-strong: var(--accent-strong);
   --color-accent-soft: var(--accent-soft);
   --color-muted: var(--muted);
+  --color-on-accent: var(--on-accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #11100f;
-    --foreground: #f6f1ea;
-    --surface: #1a1816;
-    --surface-muted: #221f1c;
-    --border: #342f2a;
-    --accent: #f59e0b;
-    --accent-strong: #fbbf24;
-    --accent-soft: #2a2118;
-    --muted: #b4aaa0;
-    --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
-  }
 }
 
 * {
@@ -48,7 +52,6 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light dark;
 }
 
 body {
@@ -56,6 +59,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 a {
@@ -98,6 +102,8 @@ input {
   border: 1px solid var(--border);
   border-radius: 1.25rem;
   box-shadow: var(--shadow);
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .pill-link {
@@ -111,7 +117,7 @@ input {
   font-size: 0.92rem;
   font-weight: 600;
   transition: background-color 0.15s ease, border-color 0.15s ease,
-    transform 0.15s ease;
+    transform 0.15s ease, color 0.15s ease;
 }
 
 .sr-only {
@@ -144,7 +150,7 @@ input {
   z-index: 70;
   border-radius: 999px;
   background: var(--accent);
-  color: white;
+  color: var(--on-accent);
   padding: 0.65rem 1rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -163,4 +169,22 @@ input {
 
 .pill-link:active {
   transform: translateY(1px);
+}
+
+.btn-accent {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--accent);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--on-accent);
+  transition: background-color 0.15s ease;
+}
+
+.btn-accent:hover {
+  background: var(--accent-strong);
 }

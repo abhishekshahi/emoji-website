@@ -1,0 +1,139 @@
+{
+  "releaseId": "master-8.10-20260809",
+  "releaseDate": "2026-08-09T04:53:43.150Z",
+  "phase": "8.10",
+  "status": "frozen",
+  "sourceCount": 10,
+  "rawRecordCount": 72228,
+  "canonicalIdentityCount": 6955,
+  "artworkCount": 40071,
+  "metadataCount": 42910,
+  "semanticCount": 15183,
+  "definitionCount": 17572,
+  "aliasCount": 4015,
+  "keywordCount": 43977,
+  "shortcodeCount": 14304,
+  "searchTermCount": 29468,
+  "seoTermCount": 11738,
+  "testCount": 126,
+  "sources": [
+    {
+      "name": "openmoji",
+      "source": "openmoji",
+      "version": "17.0.0",
+      "tag": "17.0.0",
+      "commit": null,
+      "checksum": "b4c11fb13582fcee05371a128fe55f175c0a5e1c3d20cfe4e011a5922274a078",
+      "license": "CC BY-SA 4.0",
+      "sourceURL": "https://openmoji.org/",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "name": "unicode-emoji-data",
+      "source": "unicode-emoji-data",
+      "version": "17.0.0",
+      "tag": null,
+      "commit": null,
+      "checksum": "addc9005c84737ae85c0654fcb80056b857a8dc7ed2a70fade0b266a83fd5520",
+      "license": "Unicode Terms of Use",
+      "sourceURL": "https://www.unicode.org/Public/emoji/17.0/",
+      "licenseURL": "https://www.unicode.org/copyright.html"
+    },
+    {
+      "name": "unicode",
+      "source": "unicode",
+      "version": "17.0.0",
+      "tag": null,
+      "commit": null,
+      "checksum": null,
+      "license": "Unicode Terms of Use",
+      "sourceURL": "https://www.unicode.org/reports/tr51/",
+      "licenseURL": "https://www.unicode.org/copyright.html"
+    },
+    {
+      "name": "emojibase",
+      "source": "emojibase",
+      "version": "17.0.0",
+      "tag": "17.0.0",
+      "commit": null,
+      "checksum": "bf331a49d67b4264914cbedc0a226a64e970c76bf9adfecbd37beb8e521baecc",
+      "license": "MIT",
+      "sourceURL": "https://github.com/milesj/emojibase",
+      "licenseURL": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "name": "emojilib",
+      "source": "emojilib",
+      "version": "4.0.3",
+      "tag": "v4.0.3",
+      "commit": null,
+      "checksum": null,
+      "license": "MIT",
+      "sourceURL": "https://github.com/muan/emojilib",
+      "licenseURL": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "name": "emojinet",
+      "source": "emojinet",
+      "version": "2017-11-02",
+      "tag": "kaggle-v1",
+      "commit": null,
+      "checksum": "9d8890bc21cd2391d84a6a1092bc94a3dfd78ca1dd991b2a2cfb5010ad193a95",
+      "license": "CC BY-NC-SA 4.0",
+      "sourceURL": "http://emojinet.knoesis.org/",
+      "licenseURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    },
+    {
+      "name": "emoji-time",
+      "source": "emoji-time",
+      "version": "2.2.5",
+      "tag": null,
+      "commit": null,
+      "checksum": null,
+      "license": "MIT",
+      "sourceURL": "https://www.npmjs.com/package/emoji-time",
+      "licenseURL": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "name": "twemoji",
+      "source": "twemoji",
+      "version": "17.0.3",
+      "tag": "v17.0.3",
+      "commit": "b6b55fef1e8636b540a6d016a4729ca8cdf2e60b",
+      "checksum": null,
+      "license": "CC BY 4.0",
+      "sourceURL": "https://github.com/jdecked/twemoji",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "name": "noto",
+      "source": "noto",
+      "version": "2.051",
+      "tag": null,
+      "commit": "8998f5dd683424a73e2314a8c1f1e359c19e8742",
+      "checksum": null,
+      "license": "Apache-2.0",
+      "sourceURL": "https://github.com/googlefonts/noto-emoji",
+      "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "name": "fluent",
+      "source": "fluent",
+      "version": "UNRESOLVED",
+      "tag": null,
+      "commit": "62ecdc0d7ca5c6df32148c169556bc8d3782fca4",
+      "checksum": null,
+      "license": "MIT",
+      "sourceURL": "https://github.com/microsoft/fluentui-emoji",
+      "licenseURL": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "assetLocations": {
+    "canonicalDatabase": "src/data/master/canonical-emojis.json",
+    "artworkFiles": "src/data/master/raw/artwork/",
+    "rawStaging": "src/data/master/raw/",
+    "metadataLayer": "src/data/master/metadata/",
+    "semanticLayer": "src/data/master/semantic/",
+    "releasePackage": "src/data/master/release/8.10/"
+  }
+}

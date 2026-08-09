@@ -1,0 +1,145 @@
+[
+  {
+    "emoji": "🔥",
+    "label": "fire",
+    "canonicalId": "unicode:1F525",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "👍",
+    "label": "thumbs up",
+    "canonicalId": "unicode:1F44D",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "👍🏻",
+    "label": "thumbs up light skin tone",
+    "canonicalId": "unicode:1F44D-1F3FB",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "👍🏿",
+    "label": "thumbs up dark skin tone",
+    "canonicalId": "unicode:1F44D-1F3FF",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "👨‍💻",
+    "label": "man technologist",
+    "canonicalId": "unicode:1F468-200D-1F4BB",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "👩‍💻",
+    "label": "woman technologist",
+    "canonicalId": "unicode:1F469-200D-1F4BB",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "🇮🇳",
+    "label": "India flag",
+    "canonicalId": "unicode:1F1EE-1F1F3",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "❤️",
+    "label": "red heart",
+    "canonicalId": "unicode:2764-FE0F",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "☺",
+    "label": "text smiley",
+    "canonicalId": "unicode:263A",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "☺️",
+    "label": "emoji smiley",
+    "canonicalId": "unicode:263A-FE0F",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "🏳️‍🌈",
+    "label": "rainbow flag",
+    "canonicalId": "unicode:1F3F3-FE0F-200D-1F308",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "PUA",
+    "label": "OpenMoji private-use",
+    "canonicalId": "source:openmoji:E000",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  {
+    "emoji": "noto",
+    "label": "Noto artwork-only",
+    "canonicalId": "source:noto:-CA",
+    "identity": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "semantics": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  }
+]

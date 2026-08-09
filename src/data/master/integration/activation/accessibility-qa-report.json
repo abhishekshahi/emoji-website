@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-09T06:29:54.184Z",
+  "phase": "8.11F",
+  "checks": {
+    "imageAltUsesName": true,
+    "providerTablist": true,
+    "providerTabs": true,
+    "ariaSelected": true,
+    "expandButton": true,
+    "noFilenameAlt": true,
+    "keyboardButtons": true
+  },
+  "status": "PASS"
+}

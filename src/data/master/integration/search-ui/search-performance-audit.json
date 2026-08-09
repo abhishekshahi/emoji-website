@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-08-09T15:16:54.370Z",
+  "phase": "8.11H",
+  "releaseId": "master-8.10-20260809",
+  "timings": [
+    {
+      "label": "first-query-fire",
+      "durationMs": 8.002
+    },
+    {
+      "label": "second-query-flame",
+      "durationMs": 8.212
+    },
+    {
+      "label": "repeated-query-fire",
+      "durationMs": 189.957
+    },
+    {
+      "label": "production-search-fire",
+      "durationMs": 0.403
+    },
+    {
+      "label": "empty-query",
+      "durationMs": 0.003
+    },
+    {
+      "label": "long-query",
+      "durationMs": 9.089
+    }
+  ],
+  "checks": {
+    "firstQueryUnderOneSecond": true,
+    "productionSearchUnderOneSecond": true,
+    "staticIndexCached": true,
+    "clientLoadsProductionOnly": true
+  },
+  "status": "PASS"
+}

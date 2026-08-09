@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-08-09T05:20:06.040Z",
+  "phase": "8.11C",
+  "releaseId": "master-8.10-20260809",
+  "entries": [
+    {
+      "query": "🔥",
+      "topCanonicalId": "unicode:1F525",
+      "topProductionHexcode": "1F525",
+      "resultCount": 1,
+      "ambiguous": false
+    },
+    {
+      "query": "fire",
+      "topCanonicalId": "unicode:1F525",
+      "topProductionHexcode": "1F525",
+      "resultCount": 10,
+      "ambiguous": true
+    },
+    {
+      "query": "flame",
+      "topCanonicalId": "unicode:1F525",
+      "topProductionHexcode": "1F525",
+      "resultCount": 10,
+      "ambiguous": true
+    },
+    {
+      "query": "burn",
+      "topCanonicalId": "unicode:1F525",
+      "topProductionHexcode": "1F525",
+      "resultCount": 4,
+      "ambiguous": true
+    },
+    {
+      "query": ":fire:",
+      "topCanonicalId": "unicode:1F525",
+      "topProductionHexcode": "1F525",
+      "resultCount": 1,
+      "ambiguous": false
+    },
+    {
+      "query": "U+1F525",
+      "topCanonicalId": "unicode:1F525",
+      "topProductionHexcode": "1F525",
+      "resultCount": 1,
+      "ambiguous": false
+    },
+    {
+      "query": "1F525",
+      "topCanonicalId": "unicode:1F525",
+      "topProductionHexcode": "1F525",
+      "resultCount": 1,
+      "ambiguous": false
+    },
+    {
+      "query": "👍",
+      "topCanonicalId": "unicode:1F44D",
+      "topProductionHexcode": "1F44D",
+      "resultCount": 1,
+      "ambiguous": false
+    },
+    {
+      "query": "thumbs up",
+      "topCanonicalId": "unicode:1F44D",
+      "topProductionHexcode": "1F44D",
+      "resultCount": 6,
+      "ambiguous": false
+    },
+    {
+      "query": "🇮🇳",
+      "topCanonicalId": "unicode:1F1EE-1F1F3",
+      "topProductionHexcode": "1F1EE-1F1F3",
+      "resultCount": 1,
+      "ambiguous": false
+    },
+    {
+      "query": "technologist",
+      "topCanonicalId": "unicode:1F9D1-200D-1F4BB",
+      "topProductionHexcode": "1F9D1-200D-1F4BB",
+      "resultCount": 10,
+      "ambiguous": true
+    },
+    {
+      "query": "❤️",
+      "topCanonicalId": "unicode:2764-FE0F",
+      "topProductionHexcode": "2764-FE0F",
+      "resultCount": 2,
+      "ambiguous": false
+    }
+  ],
+  "status": "PASS"
+}

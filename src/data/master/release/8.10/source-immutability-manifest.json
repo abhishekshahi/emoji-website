@@ -1,0 +1,72 @@
+[
+  {
+    "source": "openmoji",
+    "version": "17.0.0",
+    "commitOrTag": "17.0.0",
+    "checksum": "b4c11fb13582fcee05371a128fe55f175c0a5e1c3d20cfe4e011a5922274a078",
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "unicode-emoji-data",
+    "version": "17.0.0",
+    "commitOrTag": null,
+    "checksum": "addc9005c84737ae85c0654fcb80056b857a8dc7ed2a70fade0b266a83fd5520",
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "unicode",
+    "version": "17.0.0",
+    "commitOrTag": null,
+    "checksum": null,
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "emojibase",
+    "version": "17.0.0",
+    "commitOrTag": "17.0.0",
+    "checksum": "bf331a49d67b4264914cbedc0a226a64e970c76bf9adfecbd37beb8e521baecc",
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "emojilib",
+    "version": "4.0.3",
+    "commitOrTag": "v4.0.3",
+    "checksum": null,
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "emojinet",
+    "version": "2017-11-02",
+    "commitOrTag": "kaggle-v1",
+    "checksum": "9d8890bc21cd2391d84a6a1092bc94a3dfd78ca1dd991b2a2cfb5010ad193a95",
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "emoji-time",
+    "version": "2.2.5",
+    "commitOrTag": null,
+    "checksum": null,
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "twemoji",
+    "version": "17.0.3",
+    "commitOrTag": "b6b55fef1e8636b540a6d016a4729ca8cdf2e60b",
+    "checksum": null,
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "noto",
+    "version": "2.051",
+    "commitOrTag": "8998f5dd683424a73e2314a8c1f1e359c19e8742",
+    "checksum": null,
+    "status": "IMMUTABLE"
+  },
+  {
+    "source": "fluent",
+    "version": "UNRESOLVED",
+    "commitOrTag": "62ecdc0d7ca5c6df32148c169556bc8d3782fca4",
+    "checksum": null,
+    "status": "IMMUTABLE"
+  }
+]

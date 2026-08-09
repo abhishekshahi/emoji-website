@@ -1,0 +1,792 @@
+{
+  "generatedAt": "2026-08-09T02:17:30.572Z",
+  "phase": "8.1",
+  "targetUnicodeVersion": "17.0",
+  "baseline": {
+    "standardRecords": 3944,
+    "openmojiExtras": 405,
+    "unicodeExtras": 137,
+    "totalExtras": 542,
+    "searchableItems": 4486,
+    "verified": {
+      "standardRecords": 3944,
+      "totalExtras": 542,
+      "searchableItems": 4486
+    },
+    "openmojiArtwork": {
+      "standard": 3944,
+      "extrasOpenmoji": 405,
+      "extrasUnicode": 137
+    },
+    "emojibaseMetadataMatched": 3944
+  },
+  "sources": [
+    {
+      "source": "openmoji",
+      "officialName": "OpenMoji",
+      "version": "17.0.0",
+      "tag": "17.0.0",
+      "commit": null,
+      "checksum": "b4c11fb13582fcee05371a128fe55f175c0a5e1c3d20cfe4e011a5922274a078",
+      "package": "openmoji",
+      "sourceURL": "https://openmoji.org/",
+      "repositoryURL": "https://github.com/hfg-gmuend/openmoji",
+      "downloadURL": "https://www.npmjs.com/package/openmoji/v/17.0.0",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0",
+      "copyright": "OpenMoji Contributors",
+      "unicodeVersion": "17.0",
+      "dataFormat": "openmoji.json + SVG",
+      "artworkFormat": "SVG",
+      "metadataFormat": "JSON (openmoji.json fields)",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "locked",
+      "lockNotes": [
+        "npm package openmoji@17.0.0 installed and verified."
+      ],
+      "artwork": {
+        "containsArtwork": true,
+        "formats": [
+          "SVG"
+        ],
+        "assetCount": 4486,
+        "uniqueUnicodeIdentities": 3944,
+        "nonUnicodeAssets": 405,
+        "variants": [
+          "color SVG"
+        ],
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "notes": [
+          "Project artwork: 3944 standard + 405 extras-openmoji + 137 extras-unicode",
+          "Package SVG directory: 4495 files"
+        ]
+      },
+      "metadata": {
+        "recordCount": 4486,
+        "names": 4486,
+        "aliases": null,
+        "keywords": 4486,
+        "tags": 4486,
+        "shortcodes": null,
+        "descriptions": null,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": null,
+        "notes": [
+          "OpenMoji JSON includes annotation, tags, author, date, group, subgroup fields.",
+          "openmoji.json in package: 0 records"
+        ]
+      },
+      "records": {
+        "emojiRecordCount": 4486,
+        "officialStandardDataCount": 3944,
+        "additionalSourceSpecificCount": 542,
+        "unicodeIdentities": 4081,
+        "nonUnicodeIdentities": 405,
+        "unmatchedData": 0,
+        "notes": [
+          "405 OpenMoji extras (private-use / source-specific)",
+          "137 Unicode extras"
+        ]
+      },
+      "contributions": [
+        "artwork",
+        "metadata",
+        "standard Unicode emoji records",
+        "OpenMoji extras",
+        "Unicode extras",
+        "source identifiers"
+      ]
+    },
+    {
+      "source": "unicode-emoji-data",
+      "officialName": "Unicode Emoji Data",
+      "version": "17.0.0",
+      "tag": null,
+      "commit": null,
+      "checksum": "addc9005c84737ae85c0654fcb80056b857a8dc7ed2a70fade0b266a83fd5520",
+      "package": null,
+      "sourceURL": "https://www.unicode.org/Public/emoji/17.0/",
+      "repositoryURL": "https://www.unicode.org/Public/emoji/17.0/",
+      "downloadURL": "https://www.unicode.org/Public/emoji/17.0/",
+      "license": "Unicode Terms of Use",
+      "licenseURL": "https://www.unicode.org/copyright.html",
+      "attribution": "Unicode, Inc.",
+      "copyright": "Unicode, Inc.",
+      "unicodeVersion": "17.0",
+      "dataFormat": "UTS #51 text data files",
+      "artworkFormat": null,
+      "metadataFormat": "emoji-test.txt sequence/name/status fields",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "partial",
+      "lockNotes": [
+        "Local vendored snapshot at data/unicode-source/.",
+        "emoji-data.txt not yet vendored locally."
+      ],
+      "artwork": {
+        "containsArtwork": false,
+        "formats": [],
+        "assetCount": 0,
+        "uniqueUnicodeIdentities": null,
+        "nonUnicodeAssets": 0,
+        "variants": [],
+        "license": "Unicode Terms of Use",
+        "licenseURL": "https://www.unicode.org/copyright.html",
+        "notes": [
+          "Official standard data only. No artwork."
+        ]
+      },
+      "metadata": {
+        "recordCount": 5225,
+        "names": 5225,
+        "aliases": null,
+        "keywords": null,
+        "tags": null,
+        "shortcodes": null,
+        "descriptions": 5225,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": null,
+        "notes": [
+          "CLDR annotations supplied via Emojibase/Unicode CLDR, not in local txt files."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": 5225,
+        "officialStandardDataCount": 8280,
+        "additionalSourceSpecificCount": 0,
+        "unicodeIdentities": 5225,
+        "nonUnicodeIdentities": 0,
+        "unmatchedData": null,
+        "notes": [
+          "emoji-test.txt entries: 5225",
+          "emoji-sequences.txt entries: 1441",
+          "emoji-zwj-sequences.txt entries: 1614"
+        ]
+      },
+      "contributions": [
+        "emoji-test data",
+        "emoji-sequences",
+        "emoji-zwj-sequences",
+        "qualification status",
+        "Unicode version",
+        "canonical sequence identity"
+      ]
+    },
+    {
+      "source": "unicode",
+      "officialName": "Unicode / CLDR",
+      "version": "17.0.0",
+      "tag": null,
+      "commit": null,
+      "checksum": null,
+      "package": null,
+      "sourceURL": "https://www.unicode.org/reports/tr51/",
+      "repositoryURL": "https://www.unicode.org/Public/17.0.0/",
+      "downloadURL": "https://www.unicode.org/Public/17.0.0/",
+      "license": "Unicode Terms of Use",
+      "licenseURL": "https://www.unicode.org/copyright.html",
+      "attribution": "Unicode, Inc. / CLDR",
+      "copyright": "Unicode, Inc.",
+      "unicodeVersion": "17.0",
+      "dataFormat": "TR51 + CLDR annotations via Emojibase mirror",
+      "artworkFormat": null,
+      "metadataFormat": "CLDR annotations, short names, keywords",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "partial",
+      "lockNotes": [
+        "CLDR emoji annotations accessed via emojibase-data@17.0.0 (CLDR 48).",
+        "Direct CLDR XML files not separately vendored."
+      ],
+      "artwork": {
+        "containsArtwork": false,
+        "formats": [],
+        "assetCount": 0,
+        "uniqueUnicodeIdentities": null,
+        "nonUnicodeAssets": 0,
+        "variants": [],
+        "license": "Unicode Terms of Use",
+        "licenseURL": "https://www.unicode.org/copyright.html",
+        "notes": [
+          "Official naming and annotation authority. No artwork."
+        ]
+      },
+      "metadata": {
+        "recordCount": 3979,
+        "names": 3979,
+        "aliases": null,
+        "keywords": 3953,
+        "tags": 3953,
+        "shortcodes": 3979,
+        "descriptions": 3979,
+        "groups": 10,
+        "subgroups": 100,
+        "semanticRecords": null,
+        "notes": [
+          "CLDR short names and annotations mirrored via emojibase-data labels/tags.",
+          "Localization UI strings: 10 groups, 101 subgroups."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": 3979,
+        "officialStandardDataCount": 8280,
+        "additionalSourceSpecificCount": 0,
+        "unicodeIdentities": 3979,
+        "nonUnicodeIdentities": 0,
+        "unmatchedData": null,
+        "notes": [
+          "Unicode defines canonical identity for Unicode emoji sequences."
+        ]
+      },
+      "contributions": [
+        "CLDR short names",
+        "CLDR annotations/keywords",
+        "Unicode properties",
+        "TR51 sequence rules",
+        "variation sequences"
+      ]
+    },
+    {
+      "source": "emojibase",
+      "officialName": "Emojibase",
+      "version": "17.0.0",
+      "tag": "17.0.0",
+      "commit": null,
+      "checksum": "bf331a49d67b4264914cbedc0a226a64e970c76bf9adfecbd37beb8e521baecc",
+      "package": "emojibase-data",
+      "sourceURL": "https://github.com/milesj/emojibase",
+      "repositoryURL": "https://github.com/milesj/emojibase",
+      "downloadURL": "https://www.npmjs.com/package/emojibase-data/v/17.0.0",
+      "license": "MIT",
+      "licenseURL": "https://opensource.org/licenses/MIT",
+      "attribution": "Miles Johnson / Emojibase",
+      "copyright": "Emojibase contributors",
+      "unicodeVersion": "17.0",
+      "dataFormat": "JSON datasets",
+      "artworkFormat": null,
+      "metadataFormat": "JSON (labels, tags, shortcodes, groups, versions)",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "locked",
+      "lockNotes": [
+        "emojibase@17.0.0 and emojibase-data@17.0.0 installed.",
+        "Supports Emoji 17.0 / Unicode 17.0 / CLDR 48."
+      ],
+      "artwork": {
+        "containsArtwork": false,
+        "formats": [],
+        "assetCount": 0,
+        "uniqueUnicodeIdentities": 3979,
+        "nonUnicodeAssets": 0,
+        "variants": [],
+        "license": "MIT",
+        "licenseURL": "https://opensource.org/licenses/MIT",
+        "notes": [
+          "Metadata/search enrichment layer. No artwork."
+        ]
+      },
+      "metadata": {
+        "recordCount": 3979,
+        "names": 3979,
+        "aliases": null,
+        "keywords": 3953,
+        "tags": 3953,
+        "shortcodes": 3979,
+        "descriptions": 3979,
+        "groups": 10,
+        "subgroups": 100,
+        "semanticRecords": null,
+        "notes": [
+          "Tree records: 1949",
+          "Flattened records: 3979",
+          "Hexcode index: 3944",
+          "Project metadata snapshot matched: 3944"
+        ]
+      },
+      "records": {
+        "emojiRecordCount": 3979,
+        "officialStandardDataCount": 3979,
+        "additionalSourceSpecificCount": 0,
+        "unicodeIdentities": 3979,
+        "nonUnicodeIdentities": 0,
+        "unmatchedData": 0,
+        "notes": [
+          "All 3,944 standard EmojiFind records match Emojibase by hexcode."
+        ]
+      },
+      "contributions": [
+        "labels",
+        "tags",
+        "shortcodes",
+        "groups",
+        "subgroups",
+        "emoji versions",
+        "skin tones",
+        "gender",
+        "CLDR annotations mirror",
+        "localization structure"
+      ]
+    },
+    {
+      "source": "emojilib",
+      "officialName": "Emojilib",
+      "version": "4.0.3",
+      "tag": "v4.0.3",
+      "commit": null,
+      "checksum": null,
+      "package": "emojilib",
+      "sourceURL": "https://github.com/muan/emojilib",
+      "repositoryURL": "https://github.com/muan/emojilib",
+      "downloadURL": "https://www.npmjs.com/package/emojilib/v/4.0.3",
+      "license": "MIT",
+      "licenseURL": "https://opensource.org/licenses/MIT",
+      "attribution": "Mu-An Chiou / Emojilib contributors",
+      "copyright": "Emojilib contributors",
+      "unicodeVersion": "UNRESOLVED",
+      "dataFormat": "JSON (emoji-en-US.json)",
+      "artworkFormat": null,
+      "metadataFormat": "JSON keyword arrays keyed by emoji character",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "locked",
+      "lockNotes": [
+        "Package version 4.0.3 locked. Not installed in project node_modules (audit via npm registry).",
+        "Emojilib 4.x uses dist/emoji-en-US.json format."
+      ],
+      "artwork": {
+        "containsArtwork": false,
+        "formats": [],
+        "assetCount": 0,
+        "uniqueUnicodeIdentities": null,
+        "nonUnicodeAssets": 0,
+        "variants": [],
+        "license": "MIT",
+        "licenseURL": "https://opensource.org/licenses/MIT",
+        "notes": [
+          "Keyword metadata only. No artwork."
+        ]
+      },
+      "metadata": {
+        "recordCount": 1914,
+        "names": null,
+        "aliases": null,
+        "keywords": 15412,
+        "tags": 15412,
+        "shortcodes": null,
+        "descriptions": null,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": null,
+        "notes": [
+          "1914 emoji keyword records in v4.0.3 dist/emoji-en-US.json (npm registry audit).",
+          "15,412 total keywords across all records.",
+          "Each record is emoji character → keyword array."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": 1914,
+        "officialStandardDataCount": 0,
+        "additionalSourceSpecificCount": 1914,
+        "unicodeIdentities": 1914,
+        "nonUnicodeIdentities": 0,
+        "unmatchedData": null,
+        "notes": [
+          "Full Emojilib records required, not keyword supplement only."
+        ]
+      },
+      "contributions": [
+        "emoji keyword records",
+        "search aliases",
+        "English keywords"
+      ]
+    },
+    {
+      "source": "emojinet",
+      "officialName": "EmojiNet",
+      "version": "UNRESOLVED",
+      "tag": null,
+      "commit": null,
+      "checksum": null,
+      "package": null,
+      "sourceURL": "https://www.emojinet.org/",
+      "repositoryURL": "https://github.com/usc-isi-i2/emojinet",
+      "downloadURL": null,
+      "license": "CC BY-NC-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "attribution": "USC Information Sciences Institute (ISI)",
+      "copyright": "USC ISI",
+      "unicodeVersion": "UNRESOLVED",
+      "dataFormat": "CSV/JSON sense lexicon (expected)",
+      "artworkFormat": null,
+      "metadataFormat": "Sense/meaning/definition records",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "unresolved",
+      "lockNotes": [
+        "Official GitHub repository usc-isi-i2/emojinet returned 404 during audit.",
+        "Official download endpoint returned HTTP 500 during audit.",
+        "Exact dataset version and commit SHA could NOT be established.",
+        "DO NOT GUESS — must be resolved before 8.2 ingestion."
+      ],
+      "artwork": {
+        "containsArtwork": false,
+        "formats": [],
+        "assetCount": 0,
+        "uniqueUnicodeIdentities": null,
+        "nonUnicodeAssets": 0,
+        "variants": [],
+        "license": "CC BY-NC-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "notes": [
+          "Semantic lexicon source. No artwork expected."
+        ]
+      },
+      "metadata": {
+        "recordCount": null,
+        "names": null,
+        "aliases": null,
+        "keywords": null,
+        "tags": null,
+        "shortcodes": null,
+        "descriptions": null,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": null,
+        "notes": [
+          "Expected: emoji senses, meanings, definitions, contexts, semantic labels.",
+          "Counts unavailable until dataset access is restored."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": null,
+        "officialStandardDataCount": 0,
+        "additionalSourceSpecificCount": null,
+        "unicodeIdentities": null,
+        "nonUnicodeIdentities": null,
+        "unmatchedData": null,
+        "notes": [
+          "Repository and download unavailable at audit time."
+        ]
+      },
+      "contributions": [
+        "semantic senses",
+        "meanings",
+        "definitions",
+        "contexts",
+        "related concepts"
+      ]
+    },
+    {
+      "source": "emoji-time",
+      "officialName": "Emoji Time",
+      "version": "2.2.5",
+      "tag": null,
+      "commit": null,
+      "checksum": null,
+      "package": "emoji-time",
+      "sourceURL": "https://www.npmjs.com/package/emoji-time",
+      "repositoryURL": "https://github.com/caub/emoji-time",
+      "downloadURL": "https://www.npmjs.com/package/emoji-time/v/2.2.5",
+      "license": "MIT",
+      "licenseURL": "https://opensource.org/licenses/MIT",
+      "attribution": "caub / emoji-time contributors",
+      "copyright": "emoji-time contributors",
+      "unicodeVersion": "N/A",
+      "dataFormat": "JavaScript utility module",
+      "artworkFormat": null,
+      "metadataFormat": "Time-to-clock-emoji mapping functions",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "locked",
+      "lockNotes": [
+        "Utility library mapping clock times to clock-face emoji (U+1F550–U+1F567).",
+        "Not a full emoji dataset. Preserved as source mapping in 8.2."
+      ],
+      "artwork": {
+        "containsArtwork": false,
+        "formats": [],
+        "assetCount": 0,
+        "uniqueUnicodeIdentities": 24,
+        "nonUnicodeAssets": 0,
+        "variants": [],
+        "license": "MIT",
+        "licenseURL": "https://opensource.org/licenses/MIT",
+        "notes": [
+          "References 24 clock-face Unicode emoji. Does not ship artwork."
+        ]
+      },
+      "metadata": {
+        "recordCount": 24,
+        "names": null,
+        "aliases": null,
+        "keywords": null,
+        "tags": null,
+        "shortcodes": null,
+        "descriptions": null,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": 24,
+        "notes": [
+          "Time→emoji mapping utility, not standalone emoji records."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": 24,
+        "officialStandardDataCount": 0,
+        "additionalSourceSpecificCount": 24,
+        "unicodeIdentities": 24,
+        "nonUnicodeIdentities": 0,
+        "unmatchedData": null,
+        "notes": [
+          "Utility mappings to existing Unicode clock emoji."
+        ]
+      },
+      "contributions": [
+        "time-to-emoji utility mappings",
+        "clock-face emoji references"
+      ]
+    },
+    {
+      "source": "twemoji",
+      "officialName": "Twemoji",
+      "version": "17.0.3",
+      "tag": "v17.0.3",
+      "commit": "b6b55fef1e8636b540a6d016a4729ca8cdf2e60b",
+      "checksum": null,
+      "package": "@twemoji/api",
+      "sourceURL": "https://github.com/jdecked/twemoji",
+      "repositoryURL": "https://github.com/jdecked/twemoji",
+      "downloadURL": "https://www.npmjs.com/package/@twemoji/api/v/17.0.3",
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Copyright 2025 Twitter, Inc and other contributors",
+      "copyright": "Twitter, Inc and contributors",
+      "unicodeVersion": "17.0",
+      "dataFormat": "JavaScript API + SVG assets in git repo",
+      "artworkFormat": "SVG, PNG",
+      "metadataFormat": "SVG filenames (hexcode) + API metadata",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "locked",
+      "lockNotes": [
+        "npm @twemoji/api@17.0.3 available.",
+        "Git tag v17.0.3 → commit b6b55fef1e8636b540a6d016a4729ca8cdf2e60b.",
+        "Not installed in project node_modules (audit via registry + GitHub)."
+      ],
+      "artwork": {
+        "containsArtwork": true,
+        "formats": [
+          "SVG",
+          "PNG"
+        ],
+        "assetCount": null,
+        "uniqueUnicodeIdentities": null,
+        "nonUnicodeAssets": 0,
+        "variants": [
+          "SVG",
+          "PNG",
+          "72x72 assets"
+        ],
+        "license": "CC BY 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "notes": [
+          "Git tree SVG count at v17.0.3: UNRESOLVED",
+          "@twemoji/api npm package is API wrapper; artwork in git repository."
+        ]
+      },
+      "metadata": {
+        "recordCount": null,
+        "names": null,
+        "aliases": null,
+        "keywords": null,
+        "tags": null,
+        "shortcodes": null,
+        "descriptions": null,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": null,
+        "notes": [
+          "Artwork keyed by Unicode hexcode filename."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": null,
+        "officialStandardDataCount": 0,
+        "additionalSourceSpecificCount": 0,
+        "unicodeIdentities": null,
+        "nonUnicodeIdentities": 0,
+        "unmatchedData": null,
+        "notes": [
+          "Artwork provider for Unicode emoji identities."
+        ]
+      },
+      "contributions": [
+        "SVG artwork",
+        "PNG artwork",
+        "hexcode-keyed assets"
+      ]
+    },
+    {
+      "source": "noto",
+      "officialName": "Google Noto Emoji",
+      "version": "2.051",
+      "tag": null,
+      "commit": "8998f5dd683424a73e2314a8c1f1e359c19e8742",
+      "checksum": null,
+      "package": null,
+      "sourceURL": "https://github.com/googlefonts/noto-emoji",
+      "repositoryURL": "https://github.com/googlefonts/noto-emoji",
+      "downloadURL": "https://github.com/googlefonts/noto-emoji/archive/8998f5dd683424a73e2314a8c1f1e359c19e8742.zip",
+      "license": "Apache-2.0",
+      "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0",
+      "attribution": "Google Noto Emoji project",
+      "copyright": "Google LLC",
+      "unicodeVersion": "17.0",
+      "dataFormat": "SVG/PNG/font assets + build metadata",
+      "artworkFormat": "SVG, PNG, COLR/CPAL fonts",
+      "metadataFormat": "Filename hexcode + build scripts",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "locked",
+      "lockNotes": [
+        "Commit 8998f5dd683424a73e2314a8c1f1e359c19e8742 is merge PR #515 (v2.051, Unicode 17 / e17 branch).",
+        "No npm package. Git commit SHA locked."
+      ],
+      "artwork": {
+        "containsArtwork": true,
+        "formats": [
+          "SVG",
+          "PNG",
+          "CBDT/CBLC",
+          "COLR/CPAL"
+        ],
+        "assetCount": null,
+        "uniqueUnicodeIdentities": null,
+        "nonUnicodeAssets": null,
+        "variants": [
+          "color SVG",
+          "PNG sizes",
+          "font glyphs"
+        ],
+        "license": "Apache-2.0",
+        "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0",
+        "notes": [
+          "Git tree SVG count at locked commit: UNRESOLVED",
+          "Includes font-based emoji delivery in addition to SVG/PNG."
+        ]
+      },
+      "metadata": {
+        "recordCount": null,
+        "names": null,
+        "aliases": null,
+        "keywords": null,
+        "tags": null,
+        "shortcodes": null,
+        "descriptions": null,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": null,
+        "notes": [
+          "Primarily artwork; metadata via hexcode filenames."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": null,
+        "officialStandardDataCount": 0,
+        "additionalSourceSpecificCount": 0,
+        "unicodeIdentities": null,
+        "nonUnicodeIdentities": 0,
+        "unmatchedData": null,
+        "notes": [
+          "Unicode 17.0 artwork release v2.051."
+        ]
+      },
+      "contributions": [
+        "SVG artwork",
+        "PNG artwork",
+        "font emoji assets"
+      ]
+    },
+    {
+      "source": "fluent",
+      "officialName": "Microsoft Fluent Emoji",
+      "version": "UNRESOLVED",
+      "tag": null,
+      "commit": "62ecdc0d7ca5c6df32148c169556bc8d3782fca4",
+      "checksum": null,
+      "package": null,
+      "sourceURL": "https://github.com/microsoft/fluentui-emoji",
+      "repositoryURL": "https://github.com/microsoft/fluentui-emoji",
+      "downloadURL": "https://github.com/microsoft/fluentui-emoji/archive/62ecdc0d7ca5c6df32148c169556bc8d3782fca4.zip",
+      "license": "MIT",
+      "licenseURL": "https://opensource.org/licenses/MIT",
+      "attribution": "Microsoft Corporation",
+      "copyright": "Microsoft Corporation",
+      "unicodeVersion": "UNRESOLVED",
+      "dataFormat": "SVG assets + metadata JSON in repository",
+      "artworkFormat": "SVG (3D, Color, Flat, High Contrast variants)",
+      "metadataFormat": "JSON metadata per emoji in assets/",
+      "auditedAt": "2026-08-09T02:17:30.572Z",
+      "lockStatus": "partial",
+      "lockNotes": [
+        "Commit 62ecdc0d7ca5c6df32148c169556bc8d3782fca4 locked (2025-01-30).",
+        "No semver release tag matched at audit time — commit SHA used instead of 'main'.",
+        "Unicode version coverage for this commit not explicitly labeled."
+      ],
+      "artwork": {
+        "containsArtwork": true,
+        "formats": [
+          "SVG"
+        ],
+        "assetCount": null,
+        "uniqueUnicodeIdentities": null,
+        "nonUnicodeAssets": null,
+        "variants": [
+          "3D",
+          "Color",
+          "Flat",
+          "High Contrast"
+        ],
+        "license": "MIT",
+        "licenseURL": "https://opensource.org/licenses/MIT",
+        "notes": [
+          "Git tree SVG count at locked commit: UNRESOLVED",
+          "Multiple style variants per emoji identity."
+        ]
+      },
+      "metadata": {
+        "recordCount": null,
+        "names": null,
+        "aliases": null,
+        "keywords": null,
+        "tags": null,
+        "shortcodes": null,
+        "descriptions": null,
+        "groups": null,
+        "subgroups": null,
+        "semanticRecords": null,
+        "notes": [
+          "Per-emoji metadata JSON files in assets/ directories."
+        ]
+      },
+      "records": {
+        "emojiRecordCount": null,
+        "officialStandardDataCount": 0,
+        "additionalSourceSpecificCount": null,
+        "unicodeIdentities": null,
+        "nonUnicodeIdentities": null,
+        "unmatchedData": null,
+        "notes": [
+          "Artwork + metadata provider. Exact record count pending 8.2 ingestion."
+        ]
+      },
+      "contributions": [
+        "SVG artwork (3D, Color, Flat, High Contrast)",
+        "per-emoji metadata JSON",
+        "unicode codepoint in filenames"
+      ]
+    }
+  ],
+  "summary": {
+    "totalSources": 10,
+    "locked": 6,
+    "partial": 3,
+    "unresolved": 1
+  }
+}

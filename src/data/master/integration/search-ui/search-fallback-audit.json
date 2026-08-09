@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-08-09T15:16:54.420Z",
+  "phase": "8.11H",
+  "releaseId": "master-8.10-20260809",
+  "checks": {
+    "disabledMatchesProduction": true,
+    "enabledUsesMasterLayer": true,
+    "masterSearchFlagDefaultFalse": true
+  },
+  "status": "PASS"
+}

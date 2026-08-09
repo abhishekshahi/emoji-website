@@ -1,0 +1,191 @@
+{
+  "generatedAt": "2026-08-09T03:41:26.202Z",
+  "phase": "8.2",
+  "lockFile": "src/data/master-source-lock.json",
+  "resolutionFile": "src/data/emojinet-source-resolution.json",
+  "reproducible": true,
+  "success": true,
+  "sources": [
+    {
+      "source": "openmoji",
+      "success": true,
+      "rawRecordCount": 5037,
+      "rawArtworkCount": 4495,
+      "rawMetadataCount": 4495,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 734,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "openmoji/data",
+        "artwork/openmoji"
+      ]
+    },
+    {
+      "source": "unicode-emoji-data",
+      "success": true,
+      "rawRecordCount": 8126,
+      "rawArtworkCount": 0,
+      "rawMetadataCount": 1226,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "unicode-emoji-data"
+      ]
+    },
+    {
+      "source": "unicode",
+      "success": true,
+      "rawRecordCount": 3979,
+      "rawArtworkCount": 0,
+      "rawMetadataCount": 3979,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [
+        "CLDR annotations ingested via emojibase-data@17.0.0 mirror; direct CLDR XML not separately vendored."
+      ],
+      "errors": [],
+      "stagingPaths": [
+        "unicode"
+      ]
+    },
+    {
+      "source": "emojibase",
+      "success": true,
+      "rawRecordCount": 3979,
+      "rawArtworkCount": 0,
+      "rawMetadataCount": 3979,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "emojibase"
+      ]
+    },
+    {
+      "source": "emojilib",
+      "success": true,
+      "rawRecordCount": 1914,
+      "rawArtworkCount": 0,
+      "rawMetadataCount": 1914,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "emojilib"
+      ]
+    },
+    {
+      "source": "emoji-time",
+      "success": true,
+      "rawRecordCount": 24,
+      "rawArtworkCount": 0,
+      "rawMetadataCount": 24,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "emoji-time/emoji-time.js",
+        "emoji-time/index.mjs",
+        "emoji-time/package.json",
+        "emoji-time/readme.md"
+      ]
+    },
+    {
+      "source": "twemoji",
+      "success": true,
+      "rawRecordCount": 8018,
+      "rawArtworkCount": 8018,
+      "rawMetadataCount": 0,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "artwork/twemoji",
+        "vendor/twemoji/twemoji-b6b55fef1e8636b540a6d016a4729ca8cdf2e60b.zip"
+      ]
+    },
+    {
+      "source": "noto",
+      "success": true,
+      "rawRecordCount": 19673,
+      "rawArtworkCount": 19673,
+      "rawMetadataCount": 0,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "artwork/noto",
+        "vendor/noto/noto-8998f5dd683424a73e2314a8c1f1e359c19e8742.zip"
+      ]
+    },
+    {
+      "source": "fluent",
+      "success": true,
+      "rawRecordCount": 7885,
+      "rawArtworkCount": 7885,
+      "rawMetadataCount": 1595,
+      "rawSemanticCount": 0,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [],
+      "errors": [],
+      "stagingPaths": [
+        "artwork/fluent",
+        "vendor/fluent/fluent-62ecdc0d7ca5c6df32148c169556bc8d3782fca4.zip",
+        "fluent"
+      ]
+    },
+    {
+      "source": "emojinet",
+      "success": true,
+      "rawRecordCount": 17572,
+      "rawArtworkCount": 0,
+      "rawMetadataCount": 17572,
+      "rawSemanticCount": 15183,
+      "unmatchedCount": 0,
+      "nonUnicodeRecordCount": 0,
+      "warnings": [
+        "EmojiNet ingested from verified Kaggle mirror (kaggle:rtatman/emojinet@1) with bundle checksum 9d8890bc21cd2391d84a6a1092bc94a3dfd78ca1dd991b2a2cfb5010ad193a95.",
+        "emojis.json checksum: 5342d56cd4700876ff661c921adc52e6276d8d667a4cadbaa2a05379a468e633.",
+        "Phase 8.1 incorrectly locked emojinet.org and usc-isi-i2/emojinet — neither is the Wright State EmojiNet project. The original project is hosted at http://emojinet.knoesis.org/ (currently offline). The author-endorsed reproducible public mirror is Kaggle rtatman/emojinet version 1 (2017-11-02), linked from the author's homepage. Identity verified via author attribution, ICWSM 2017 metadata match (2,389 emoji / 12,904 sense labels), and post-download structural verification of emojis.json (SHA-256 5342d56cd4700876ff661c921adc52e6276d8d667a4cadbaa2a05379a468e633). Original bulk URL http://emojinet.knoesis.org/dataset/emojidata.zip is documented on archived dataset.php but is not currently downloadable and has no Internet Archive binary capture."
+      ],
+      "errors": [],
+      "stagingPaths": [
+        "emojinet",
+        "vendor/emojinet/kaggle-emojinet-v1.zip",
+        "emojinet/emojis.json"
+      ]
+    }
+  ],
+  "totals": {
+    "rawRecords": 72228,
+    "rawArtwork": 40071,
+    "rawMetadata": 34784,
+    "rawSemantic": 15183,
+    "nonUnicodeRecords": 734
+  },
+  "previousBaseline": {
+    "rawRecords": 54656,
+    "rawArtwork": 40071,
+    "rawMetadata": 17212,
+    "nonUnicodeRecords": 734,
+    "note": "Prior Phase 8.2 run before EmojiNet resolution; EmojiNet previously contributed 0 records."
+  },
+  "failures": []
+}

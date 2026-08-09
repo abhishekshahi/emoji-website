@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-08-09T04:21:18.950Z",
+  "phase": "8.6",
+  "baselines": {
+    "rawMetadataManifest": 34784,
+    "rawSemanticRecords": 15183,
+    "unicodeEmojiDataSourceRecords": 8126,
+    "totalMetadataMasterRecords": 42910
+  },
+  "perSource": {
+    "openmoji": {
+      "recordCount": 4495,
+      "canonicalMappings": 4495,
+      "unmappedRecords": 0,
+      "nameRecords": 4495,
+      "keywordRecords": 2345,
+      "shortcodeRecords": 0,
+      "semanticRecords": 0,
+      "definitionRecords": 0,
+      "senseRecords": 0,
+      "aliasRecords": 0,
+      "fieldCount": 43606
+    },
+    "unicode-emoji-data": {
+      "recordCount": 9352,
+      "canonicalMappings": 9352,
+      "unmappedRecords": 0,
+      "nameRecords": 9352,
+      "keywordRecords": 0,
+      "shortcodeRecords": 0,
+      "semanticRecords": 0,
+      "definitionRecords": 0,
+      "senseRecords": 0,
+      "aliasRecords": 0,
+      "fieldCount": 74039
+    },
+    "unicode": {
+      "recordCount": 3979,
+      "canonicalMappings": 3979,
+      "unmappedRecords": 0,
+      "nameRecords": 3979,
+      "keywordRecords": 3953,
+      "shortcodeRecords": 0,
+      "semanticRecords": 0,
+      "definitionRecords": 0,
+      "senseRecords": 0,
+      "aliasRecords": 0,
+      "fieldCount": 43639
+    },
+    "emojibase": {
+      "recordCount": 3979,
+      "canonicalMappings": 3979,
+      "unmappedRecords": 0,
+      "nameRecords": 3979,
+      "keywordRecords": 3953,
+      "shortcodeRecords": 3979,
+      "semanticRecords": 0,
+      "definitionRecords": 0,
+      "senseRecords": 0,
+      "aliasRecords": 0,
+      "fieldCount": 37789
+    },
+    "emojilib": {
+      "recordCount": 1914,
+      "canonicalMappings": 1914,
+      "unmappedRecords": 0,
+      "nameRecords": 1914,
+      "keywordRecords": 1914,
+      "shortcodeRecords": 0,
+      "semanticRecords": 0,
+      "definitionRecords": 0,
+      "senseRecords": 0,
+      "aliasRecords": 0,
+      "fieldCount": 11484
+    },
+    "emoji-time": {
+      "recordCount": 24,
+      "canonicalMappings": 24,
+      "unmappedRecords": 0,
+      "nameRecords": 24,
+      "keywordRecords": 0,
+      "shortcodeRecords": 0,
+      "semanticRecords": 0,
+      "definitionRecords": 0,
+      "senseRecords": 0,
+      "aliasRecords": 0,
+      "fieldCount": 120
+    },
+    "fluent": {
+      "recordCount": 1595,
+      "canonicalMappings": 1595,
+      "unmappedRecords": 0,
+      "nameRecords": 1595,
+      "keywordRecords": 1595,
+      "shortcodeRecords": 0,
+      "semanticRecords": 0,
+      "definitionRecords": 0,
+      "senseRecords": 0,
+      "aliasRecords": 0,
+      "fieldCount": 17448
+    },
+    "emojinet": {
+      "recordCount": 17572,
+      "canonicalMappings": 17572,
+      "unmappedRecords": 0,
+      "nameRecords": 17572,
+      "keywordRecords": 17572,
+      "shortcodeRecords": 7397,
+      "semanticRecords": 15183,
+      "definitionRecords": 17572,
+      "senseRecords": 15183,
+      "aliasRecords": 0,
+      "fieldCount": 193514
+    }
+  },
+  "counts": {
+    "uniqueMetadataRecords": 42910,
+    "canonicalIdentitiesWithMetadata": 5824,
+    "canonicalIdentitiesWithOneMetadataSource": 1637,
+    "canonicalIdentitiesWithTwoOrMoreMetadataSources": 4187,
+    "canonicalIdentitiesWithNoMetadata": 1131,
+    "nameConflicts": 4187,
+    "keywordIndexEntries": 4308,
+    "shortcodeIndexEntries": 5333,
+    "semanticRecords": 15183,
+    "definitions": 17572,
+    "senses": 15183,
+    "aliases": 0
+  },
+  "constraints": {
+    "allSourceMetadataPreserved": true,
+    "noMetadataDeleted": true,
+    "noCanonicalIdentityModified": true,
+    "noArtworkModified": true,
+    "productionDataUnchanged": true
+  },
+  "note": "Metadata layer before canonical name/keyword/SEO resolution. Not final SEO counts."
+}

@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-08-09T15:16:54.154Z",
+  "phase": "8.11H",
+  "releaseId": "master-8.10-20260809",
+  "checks": {
+    "searchRole": true,
+    "inputLabel": true,
+    "clearLabel": true,
+    "statusLiveRegion": true,
+    "loadingBusy": true,
+    "copyLabel": true,
+    "favoriteLabel": true,
+    "favoritePressed": true,
+    "detailsLabel": true,
+    "focusVisible": true
+  },
+  "status": "PASS"
+}

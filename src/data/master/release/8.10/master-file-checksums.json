@@ -1,0 +1,219 @@
+[
+  {
+    "path": "master/canonical-emojis.json",
+    "sha256": "bca8100e8e97e6368e9abe504ad607632cdcab36abc848b01ceb4337b2348856",
+    "sizeBytes": 44019891,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/canonical-audit-report.json",
+    "sha256": "8dd4ae049a60badbe44a46c19a87011391facd62413d9c247f8b5345931560a9",
+    "sizeBytes": 1267,
+    "recordCount": null,
+    "status": "verified"
+  },
+  {
+    "path": "master/cross-source-coverage.json",
+    "sha256": "5d321e050882342da496dd643a2d80ca2722e85a943d119b12dbb89dd785677e",
+    "sizeBytes": 1772399,
+    "recordCount": 5540,
+    "status": "verified"
+  },
+  {
+    "path": "master/source-only-records.json",
+    "sha256": "fbf459561eb1cf0a5918677c1028761d298afc259c708e3c49d8f845f0e4c65a",
+    "sizeBytes": 632278,
+    "recordCount": 2763,
+    "status": "verified"
+  },
+  {
+    "path": "master/canonical-manifest.json",
+    "sha256": "ee3f1505015ac9a2dbade4219747c12f28547a254e8bdb06dd4e6207478e96f6",
+    "sizeBytes": 351,
+    "recordCount": null,
+    "status": "verified"
+  },
+  {
+    "path": "master/artwork/artwork-master-index.json",
+    "sha256": "9316a0b50914b709817c07c7a463be7f12e3f36df7c73b790ad4273a963ea953",
+    "sizeBytes": 37878779,
+    "recordCount": 40071,
+    "status": "verified"
+  },
+  {
+    "path": "master/artwork/artwork-checksums.json",
+    "sha256": "310f0e0bf3e75a9050a6e2f94d50e8fafdc34840eeb9c881e2030e869d2e4f64",
+    "sizeBytes": 14950049,
+    "recordCount": 40071,
+    "status": "verified"
+  },
+  {
+    "path": "master/artwork/canonical-artwork-index.json",
+    "sha256": "aad9ab03d658ad122fbcf544a438af411ec616a4bc2cb8e8339e88f69c632aa6",
+    "sizeBytes": 4116538,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/artwork/artwork-coverage-report.json",
+    "sha256": "704cd169937651883c12678a97c04a7442485b58753415f8f225cf13b92724f9",
+    "sizeBytes": 968176,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/artwork/artwork-license-index.json",
+    "sha256": "447099c559858cc4a2f4a19f4c2a9b98d8e8faf54862af84efd81f15ea41bbd6",
+    "sizeBytes": 1224,
+    "recordCount": 4,
+    "status": "verified"
+  },
+  {
+    "path": "master/artwork/artwork-attribution-index.json",
+    "sha256": "8a59492012294376dfe3f3d7b319641705c06fcb07a6bfa3538d24f6f8d9cac5",
+    "sizeBytes": 1157,
+    "recordCount": 4,
+    "status": "verified"
+  },
+  {
+    "path": "master/artwork/artwork-integrity-report.json",
+    "sha256": "59afd8b125309c9ba74c2c816b0cc1f7710f1450e55e7bbb7875f4e19a7e0673",
+    "sizeBytes": 1427,
+    "recordCount": null,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/raw-metadata-index.json",
+    "sha256": "4c7cd02681545d0b0b328fc1c7b60c620833a2d2f7b93a6a557cb527620df0db",
+    "sizeBytes": 116324686,
+    "recordCount": 42910,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/metadata-source-index.json",
+    "sha256": "c23c7b979b7c22f0c0e12cb1de9cbaba4d5cc55ceeea8fce0c0594b5a3934a9e",
+    "sizeBytes": 10656800,
+    "recordCount": 42910,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/canonical-metadata-index.json",
+    "sha256": "ffbe39baaba10682e6559ac618d3b64130118cccfad49e0bcd8a1e448071b38b",
+    "sizeBytes": 5186419,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/metadata-name-conflicts.json",
+    "sha256": "a7021292d49e6b931bd431f447d34a0b3ba4aadecf551c1babef3fb303394f0c",
+    "sizeBytes": 1493652,
+    "recordCount": 4187,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/metadata-keyword-index.json",
+    "sha256": "3ff898de0256a03bc2176f62fad65c9934359b162ea5ea58b59f427fadc491f8",
+    "sizeBytes": 2534816,
+    "recordCount": 4308,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/shortcode-source-index.json",
+    "sha256": "5a3fd37d4e4fa74299baf1d834d59a802db62e637fc97f9a6fe893ce55fbb7b0",
+    "sizeBytes": 2142517,
+    "recordCount": 5333,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/canonical-name-records.json",
+    "sha256": "0acef3df13bc80ae7c297d6d8f5514da60c8c7c558172665170b8071839ca2b2",
+    "sizeBytes": 8592022,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/canonical-keywords.json",
+    "sha256": "41d54290ec025a156259d126ae093779fd7b9341ef7485a31167ae1db7aca744",
+    "sizeBytes": 14927565,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/canonical-shortcodes.json",
+    "sha256": "02caf561753fd76bad7e4b758651e20710f348b36c5bf4da4989bfe462e7a775",
+    "sizeBytes": 3542520,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/canonical-seo-records.json",
+    "sha256": "18840adea03c3e77dcead75b71f06c49a6e9faf69fdcf35771a36414d71863e1",
+    "sizeBytes": 3995999,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/canonical-search-index.json",
+    "sha256": "9eed4a628b21b5eab62fac19c31c620463de2391529590b18ad8cd79b6b531dc",
+    "sizeBytes": 19520988,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/metadata/seo-conflicts.json",
+    "sha256": "d9306f34e733fc1cf2ec4c565fb53d4c78d1e2538c9d8e000fff002ca25ecfaf",
+    "sizeBytes": 857439,
+    "recordCount": 2929,
+    "status": "verified"
+  },
+  {
+    "path": "master/semantic/canonical-semantic-index.json",
+    "sha256": "bf571e50c2927a539f9c183709179b1678d70bcd4686555d7be10a2567bed7dc",
+    "sizeBytes": 148540627,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/semantic/canonical-semantic-search.json",
+    "sha256": "1ac22ffd64480562109993e25fbccf3b4b651731193c62b99c96c12d1ed11c71",
+    "sizeBytes": 143546832,
+    "recordCount": 6955,
+    "status": "verified"
+  },
+  {
+    "path": "master/semantic/semantic-search-terms.json",
+    "sha256": "b553fabc2dc544adf09ba9935ee21429f6be766819cbeb4cbd85b615fa89d1f3",
+    "sizeBytes": 4099990,
+    "recordCount": 9127,
+    "status": "verified"
+  },
+  {
+    "path": "master/semantic/semantic-definitions-index.json",
+    "sha256": "24331abdae44d171fee0d6e840ea0db27e4c4ff4430be07c782775befda15ee4",
+    "sizeBytes": 11398994,
+    "recordCount": 17572,
+    "status": "verified"
+  },
+  {
+    "path": "master/semantic/semantic-conflicts.json",
+    "sha256": "4d856d1645320b0dbf15b07aee3746975f29930d81f9584f0548c6a0ab80fca2",
+    "sizeBytes": 254590,
+    "recordCount": 676,
+    "status": "verified"
+  },
+  {
+    "path": "master/semantic/semantic-coverage-report.json",
+    "sha256": "aee4e7db53718d08e6c494d37ac86e47ad17461abf8faeba513bbaa1322e8bed",
+    "sizeBytes": 2337581,
+    "recordCount": null,
+    "status": "verified"
+  },
+  {
+    "path": "master/semantic/semantic-seo-policy-report.json",
+    "sha256": "a8f46d50d3b95c9541af6868f957519863b2bb5991eae4d74e4547641ca3bf61",
+    "sizeBytes": 1025,
+    "recordCount": null,
+    "status": "verified"
+  }
+]

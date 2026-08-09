@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { BrowsableEmoji, EmojiRecord } from "@/lib/emoji/types";
 import { searchEmojis } from "@/lib/emoji/search";
+import { SEARCH_UI_CONTRACT } from "@/lib/emoji/search-ui-contract";
 
 let emojiCache: BrowsableEmoji[] | null = null;
 
@@ -27,6 +28,11 @@ async function loadEmojis(): Promise<BrowsableEmoji[]> {
 export function useEmojiSearch(query: string, limit = 120) {
   const [emojis, setEmojis] = useState<BrowsableEmoji[]>([]);
   const [isReady, setIsReady] = useState(false);
+  const latestQueryRef = useRef(query);
+
+  useEffect(() => {
+    latestQueryRef.current = query;
+  }, [query]);
 
   useEffect(() => {
     let cancelled = false;
@@ -48,10 +54,16 @@ export function useEmojiSearch(query: string, limit = 120) {
       return [];
     }
 
+    if (emojis.length > SEARCH_UI_CONTRACT.maxClientEmojiRecords) {
+      return [];
+    }
+
     return searchEmojis(emojis, query, limit);
   }, [emojis, isReady, limit, query]);
 
-  return { results, isReady };
+  const stableResults = latestQueryRef.current === query ? results : [];
+
+  return { results: stableResults, isReady };
 }
 
 export function useEmojiDataset() {

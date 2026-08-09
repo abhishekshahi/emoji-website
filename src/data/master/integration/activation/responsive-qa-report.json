@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-08-09T06:29:54.183Z",
+  "phase": "8.11F",
+  "checks": [
+    {
+      "path": "src/components/master/artwork/artwork-gallery.tsx",
+      "responsive": true,
+      "noFixedWidthOverflow": true
+    },
+    {
+      "path": "src/components/master/provider/artwork-provider-selector.tsx",
+      "responsive": true,
+      "noFixedWidthOverflow": true
+    },
+    {
+      "path": "src/components/master/artwork/artwork-variant-selector.tsx",
+      "responsive": true,
+      "noFixedWidthOverflow": true
+    },
+    {
+      "path": "src/components/master/provider/artwork-attribution.tsx",
+      "responsive": true,
+      "noFixedWidthOverflow": true
+    },
+    {
+      "path": "src/components/master/metadata/canonical-metadata-panel.tsx",
+      "responsive": true,
+      "noFixedWidthOverflow": true
+    },
+    {
+      "path": "src/components/master/metadata/source-metadata-panel.tsx",
+      "responsive": true,
+      "noFixedWidthOverflow": true
+    }
+  ],
+  "mobile": "PASS",
+  "desktop": "PASS",
+  "lightMode": "PASS",
+  "darkMode": "PASS",
+  "status": "PASS"
+}

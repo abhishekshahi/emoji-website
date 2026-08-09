@@ -1,0 +1,102 @@
+[
+  {
+    "provider": "openmoji",
+    "metadataAvailable": true,
+    "recordCount": 4495,
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0",
+    "version": "17.0.0",
+    "locale": "en"
+  },
+  {
+    "provider": "unicode",
+    "metadataAvailable": true,
+    "recordCount": 9352,
+    "license": "Unicode Terms of Use",
+    "licenseURL": "https://www.unicode.org/copyright.html",
+    "attribution": "Unicode, Inc.",
+    "version": "17.0.0",
+    "locale": "en"
+  },
+  {
+    "provider": "cldr",
+    "metadataAvailable": true,
+    "recordCount": 3979,
+    "license": "Unicode Terms of Use",
+    "licenseURL": "https://www.unicode.org/copyright.html",
+    "attribution": "Unicode, Inc. / CLDR",
+    "version": "17.0.0",
+    "locale": "en"
+  },
+  {
+    "provider": "emojibase",
+    "metadataAvailable": true,
+    "recordCount": 3979,
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "attribution": "Miles Johnson / Emojibase",
+    "version": "17.0.0",
+    "locale": "en"
+  },
+  {
+    "provider": "emojilib",
+    "metadataAvailable": true,
+    "recordCount": 1914,
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "attribution": "Mu-An Chiou / Emojilib contributors",
+    "version": "4.0.3",
+    "locale": "en"
+  },
+  {
+    "provider": "emojinet",
+    "metadataAvailable": true,
+    "recordCount": 17572,
+    "license": "CC BY-NC-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Sanjaya Wijeratne, Lakshika Balasuriya, Amit Sheth, Derek Doran (Wright State / Kno.e.sis); Kaggle mirror uploaded by Rachael Tatman",
+    "version": "2017-11-02",
+    "locale": "en"
+  },
+  {
+    "provider": "fluent",
+    "metadataAvailable": true,
+    "recordCount": 1595,
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "attribution": "Microsoft Corporation",
+    "version": "UNRESOLVED",
+    "locale": "en"
+  },
+  {
+    "provider": "emojiTime",
+    "metadataAvailable": true,
+    "recordCount": 24,
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "attribution": "caub / emoji-time contributors",
+    "version": "2.2.5",
+    "locale": "en"
+  },
+  {
+    "provider": "noto",
+    "metadataAvailable": false,
+    "recordCount": 0,
+    "license": "Apache-2.0",
+    "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0",
+    "attribution": "Google Noto Emoji project",
+    "version": "2.051",
+    "locale": "en"
+  },
+  {
+    "provider": "twemoji",
+    "metadataAvailable": false,
+    "recordCount": 0,
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Copyright 2025 Twitter, Inc and other contributors",
+    "version": "17.0.3",
+    "locale": "en"
+  }
+]

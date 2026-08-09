@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SITE_NAME } from "@/lib/emoji/constants";
 import { SearchBar } from "@/components/search/search-bar";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 const NAV_ITEMS = [
   { href: "/emoji", label: "Browse" },
@@ -37,10 +38,12 @@ export function SiteHeader() {
             </span>
           </Link>
 
-          <nav
-            aria-label="Primary"
-            className="hidden items-center gap-1 md:flex"
-          >
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <nav
+              aria-label="Primary"
+              className="hidden items-center gap-1 md:flex"
+            >
             {NAV_ITEMS.map((item) => {
               const isActive =
                 pathname === item.href || pathname.startsWith(`${item.href}/`);
@@ -60,7 +63,8 @@ export function SiteHeader() {
                 </Link>
               );
             })}
-          </nav>
+            </nav>
+          </div>
         </div>
 
         <SearchBar size="compact" />

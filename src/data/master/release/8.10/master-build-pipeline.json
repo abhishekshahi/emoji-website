@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-09T04:53:43.150Z",
+  "phase": "8.10",
+  "commands": [
+    "npm run master:ingest-raw",
+    "npm run master:build-identity",
+    "npm run master:build-canonical",
+    "npm run master:build-artwork",
+    "npm run master:build-metadata",
+    "npm run master:build-reconciliation",
+    "npm run master:build-semantic",
+    "npm run master:audit-8-9"
+  ],
+  "note": "Frozen release checksums captured from Phase 8.9-passed database. Re-running pipeline may update generatedAt timestamps; byte-identical reproduction requires matching build environment and locked sources."
+}

@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-08-09T06:29:54.181Z",
+  "phase": "8.11F",
+  "canonicalId": "unicode:1F525",
+  "providers": [
+    {
+      "provider": "openmoji",
+      "label": "OpenMoji",
+      "variantCount": 1,
+      "variants": [
+        "svg"
+      ],
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "pathsLocal": true
+    },
+    {
+      "provider": "noto",
+      "label": "Noto",
+      "variantCount": 15,
+      "variants": [
+        "png-72",
+        "png-72",
+        "png-72",
+        "png-72",
+        "svg",
+        "png-72",
+        "png-72",
+        "png-72",
+        "png-72",
+        "svg",
+        "png-72",
+        "png-72",
+        "png-72",
+        "png-72",
+        "svg"
+      ],
+      "license": "Apache-2.0",
+      "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0",
+      "pathsLocal": true
+    },
+    {
+      "provider": "twemoji",
+      "label": "Twemoji",
+      "variantCount": 2,
+      "variants": [
+        "png",
+        "svg"
+      ],
+      "license": "CC BY 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+      "pathsLocal": true
+    },
+    {
+      "provider": "fluent",
+      "label": "Fluent",
+      "variantCount": 3,
+      "variants": [
+        "color",
+        "flat",
+        "high-contrast"
+      ],
+      "license": "MIT",
+      "licenseURL": "https://opensource.org/licenses/MIT",
+      "pathsLocal": true
+    }
+  ],
+  "providerPreferenceScope": "localStorage-only",
+  "urlImpact": false,
+  "favoriteImpact": false,
+  "recentImpact": false,
+  "status": "PASS"
+}

@@ -1,2178 +1,2732 @@
 {
-  "generatedAt": "2026-08-09T00:13:38.701Z",
+  "generatedAt": "2026-08-09T00:39:41.401Z",
   "openmojiVersion": "17.0.0",
   "format": "svg",
   "imported": 542,
   "missing": 0,
   "totalExtras": 542,
+  "collections": {
+    "extras-openmoji": {
+      "imported": 405,
+      "missing": 0,
+      "expected": 405
+    },
+    "extras-unicode": {
+      "imported": 137,
+      "missing": 0,
+      "expected": 137
+    }
+  },
   "artwork": {
     "2117": {
-      "path": "/openmoji-extras/2117.svg",
-      "sourceHexcode": "2117"
+      "path": "/openmoji/extras-unicode/2117.svg",
+      "sourceHexcode": "2117",
+      "collection": "extras-unicode"
     },
     "2120": {
-      "path": "/openmoji-extras/2120.svg",
-      "sourceHexcode": "2120"
+      "path": "/openmoji/extras-unicode/2120.svg",
+      "sourceHexcode": "2120",
+      "collection": "extras-unicode"
     },
     "2605": {
-      "path": "/openmoji-extras/2605.svg",
-      "sourceHexcode": "2605"
+      "path": "/openmoji/extras-unicode/2605.svg",
+      "sourceHexcode": "2605",
+      "collection": "extras-unicode"
     },
     "2654": {
-      "path": "/openmoji-extras/2654.svg",
-      "sourceHexcode": "2654"
+      "path": "/openmoji/extras-unicode/2654.svg",
+      "sourceHexcode": "2654",
+      "collection": "extras-unicode"
     },
     "2655": {
-      "path": "/openmoji-extras/2655.svg",
-      "sourceHexcode": "2655"
+      "path": "/openmoji/extras-unicode/2655.svg",
+      "sourceHexcode": "2655",
+      "collection": "extras-unicode"
     },
     "2656": {
-      "path": "/openmoji-extras/2656.svg",
-      "sourceHexcode": "2656"
+      "path": "/openmoji/extras-unicode/2656.svg",
+      "sourceHexcode": "2656",
+      "collection": "extras-unicode"
     },
     "2657": {
-      "path": "/openmoji-extras/2657.svg",
-      "sourceHexcode": "2657"
+      "path": "/openmoji/extras-unicode/2657.svg",
+      "sourceHexcode": "2657",
+      "collection": "extras-unicode"
     },
     "2658": {
-      "path": "/openmoji-extras/2658.svg",
-      "sourceHexcode": "2658"
+      "path": "/openmoji/extras-unicode/2658.svg",
+      "sourceHexcode": "2658",
+      "collection": "extras-unicode"
     },
     "2659": {
-      "path": "/openmoji-extras/2659.svg",
-      "sourceHexcode": "2659"
+      "path": "/openmoji/extras-unicode/2659.svg",
+      "sourceHexcode": "2659",
+      "collection": "extras-unicode"
     },
     "E25F": {
-      "path": "/openmoji-extras/E25F.svg",
-      "sourceHexcode": "E25F"
+      "path": "/openmoji/extras-openmoji/E25F.svg",
+      "sourceHexcode": "E25F",
+      "collection": "extras-openmoji"
     },
     "E268": {
-      "path": "/openmoji-extras/E268.svg",
-      "sourceHexcode": "E268"
+      "path": "/openmoji/extras-openmoji/E268.svg",
+      "sourceHexcode": "E268",
+      "collection": "extras-openmoji"
     },
     "E431": {
-      "path": "/openmoji-extras/E431.svg",
-      "sourceHexcode": "E431"
+      "path": "/openmoji/extras-openmoji/E431.svg",
+      "sourceHexcode": "E431",
+      "collection": "extras-openmoji"
     },
     "E1DA": {
-      "path": "/openmoji-extras/E1DA.svg",
-      "sourceHexcode": "E1DA"
-    },
-    "1F3F4-E0075-E0073-E0061-E006C-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0075-E0073-E0061-E006C-E007F.svg",
-      "sourceHexcode": "1F3F4-E0075-E0073-E0061-E006C-E007F"
-    },
-    "1F3F4-E0065-E0073-E0061-E006E-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0061-E006E-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0061-E006E-E007F"
+      "path": "/openmoji/extras-openmoji/E1DA.svg",
+      "sourceHexcode": "E1DA",
+      "collection": "extras-openmoji"
     },
     "E047": {
-      "path": "/openmoji-extras/E047.svg",
-      "sourceHexcode": "E047"
+      "path": "/openmoji/extras-openmoji/E047.svg",
+      "sourceHexcode": "E047",
+      "collection": "extras-openmoji"
     },
     "E283": {
-      "path": "/openmoji-extras/E283.svg",
-      "sourceHexcode": "E283"
-    },
-    "2B8F": {
-      "path": "/openmoji-extras/2B8F.svg",
-      "sourceHexcode": "2B8F"
+      "path": "/openmoji/extras-openmoji/E283.svg",
+      "sourceHexcode": "E283",
+      "collection": "extras-openmoji"
     },
     "F8FF": {
-      "path": "/openmoji-extras/F8FF.svg",
-      "sourceHexcode": "F8FF"
-    },
-    "1F3F4-E0065-E0073-E0061-E0072-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0061-E0072-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0061-E0072-E007F"
+      "path": "/openmoji/extras-openmoji/F8FF.svg",
+      "sourceHexcode": "F8FF",
+      "collection": "extras-openmoji"
     },
     "E260": {
-      "path": "/openmoji-extras/E260.svg",
-      "sourceHexcode": "E260"
+      "path": "/openmoji/extras-openmoji/E260.svg",
+      "sourceHexcode": "E260",
+      "collection": "extras-openmoji"
     },
     "E1D3": {
-      "path": "/openmoji-extras/E1D3.svg",
-      "sourceHexcode": "E1D3"
+      "path": "/openmoji/extras-openmoji/E1D3.svg",
+      "sourceHexcode": "E1D3",
+      "collection": "extras-openmoji"
     },
     "E141": {
-      "path": "/openmoji-extras/E141.svg",
-      "sourceHexcode": "E141"
+      "path": "/openmoji/extras-openmoji/E141.svg",
+      "sourceHexcode": "E141",
+      "collection": "extras-openmoji"
     },
     "E429": {
-      "path": "/openmoji-extras/E429.svg",
-      "sourceHexcode": "E429"
+      "path": "/openmoji/extras-openmoji/E429.svg",
+      "sourceHexcode": "E429",
+      "collection": "extras-openmoji"
     },
     "E42A": {
-      "path": "/openmoji-extras/E42A.svg",
-      "sourceHexcode": "E42A"
+      "path": "/openmoji/extras-openmoji/E42A.svg",
+      "sourceHexcode": "E42A",
+      "collection": "extras-openmoji"
     },
     "E0A7": {
-      "path": "/openmoji-extras/E0A7.svg",
-      "sourceHexcode": "E0A7"
+      "path": "/openmoji/extras-openmoji/E0A7.svg",
+      "sourceHexcode": "E0A7",
+      "collection": "extras-openmoji"
     },
     "F77A": {
-      "path": "/openmoji-extras/F77A.svg",
-      "sourceHexcode": "F77A"
+      "path": "/openmoji/extras-openmoji/F77A.svg",
+      "sourceHexcode": "F77A",
+      "collection": "extras-openmoji"
     },
     "E425": {
-      "path": "/openmoji-extras/E425.svg",
-      "sourceHexcode": "E425"
+      "path": "/openmoji/extras-openmoji/E425.svg",
+      "sourceHexcode": "E425",
+      "collection": "extras-openmoji"
     },
     "E081": {
-      "path": "/openmoji-extras/E081.svg",
-      "sourceHexcode": "E081"
+      "path": "/openmoji/extras-openmoji/E081.svg",
+      "sourceHexcode": "E081",
+      "collection": "extras-openmoji"
     },
     "E080": {
-      "path": "/openmoji-extras/E080.svg",
-      "sourceHexcode": "E080"
-    },
-    "1F3F4-E0065-E0073-E0061-E0073-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0061-E0073-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0061-E0073-E007F"
+      "path": "/openmoji/extras-openmoji/E080.svg",
+      "sourceHexcode": "E080",
+      "collection": "extras-openmoji"
     },
     "E2DA": {
-      "path": "/openmoji-extras/E2DA.svg",
-      "sourceHexcode": "E2DA"
+      "path": "/openmoji/extras-openmoji/E2DA.svg",
+      "sourceHexcode": "E2DA",
+      "collection": "extras-openmoji"
     },
     "E1C6": {
-      "path": "/openmoji-extras/E1C6.svg",
-      "sourceHexcode": "E1C6"
+      "path": "/openmoji/extras-openmoji/E1C6.svg",
+      "sourceHexcode": "E1C6",
+      "collection": "extras-openmoji"
     },
     "E08F": {
-      "path": "/openmoji-extras/E08F.svg",
-      "sourceHexcode": "E08F"
+      "path": "/openmoji/extras-openmoji/E08F.svg",
+      "sourceHexcode": "E08F",
+      "collection": "extras-openmoji"
     },
     "E093": {
-      "path": "/openmoji-extras/E093.svg",
-      "sourceHexcode": "E093"
+      "path": "/openmoji/extras-openmoji/E093.svg",
+      "sourceHexcode": "E093",
+      "collection": "extras-openmoji"
     },
     "E082": {
-      "path": "/openmoji-extras/E082.svg",
-      "sourceHexcode": "E082"
+      "path": "/openmoji/extras-openmoji/E082.svg",
+      "sourceHexcode": "E082",
+      "collection": "extras-openmoji"
     },
     "E1C2": {
-      "path": "/openmoji-extras/E1C2.svg",
-      "sourceHexcode": "E1C2"
+      "path": "/openmoji/extras-openmoji/E1C2.svg",
+      "sourceHexcode": "E1C2",
+      "collection": "extras-openmoji"
     },
     "E09E": {
-      "path": "/openmoji-extras/E09E.svg",
-      "sourceHexcode": "E09E"
+      "path": "/openmoji/extras-openmoji/E09E.svg",
+      "sourceHexcode": "E09E",
+      "collection": "extras-openmoji"
     },
     "E347": {
-      "path": "/openmoji-extras/E347.svg",
-      "sourceHexcode": "E347"
+      "path": "/openmoji/extras-openmoji/E347.svg",
+      "sourceHexcode": "E347",
+      "collection": "extras-openmoji"
     },
     "E321": {
-      "path": "/openmoji-extras/E321.svg",
-      "sourceHexcode": "E321"
-    },
-    "1F3F4-E0065-E0073-E0069-E0062-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0069-E0062-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0069-E0062-E007F"
+      "path": "/openmoji/extras-openmoji/E321.svg",
+      "sourceHexcode": "E321",
+      "collection": "extras-openmoji"
     },
     "E31B": {
-      "path": "/openmoji-extras/E31B.svg",
-      "sourceHexcode": "E31B"
+      "path": "/openmoji/extras-openmoji/E31B.svg",
+      "sourceHexcode": "E31B",
+      "collection": "extras-openmoji"
     },
     "E325": {
-      "path": "/openmoji-extras/E325.svg",
-      "sourceHexcode": "E325"
+      "path": "/openmoji/extras-openmoji/E325.svg",
+      "sourceHexcode": "E325",
+      "collection": "extras-openmoji"
     },
     "E1D9": {
-      "path": "/openmoji-extras/E1D9.svg",
-      "sourceHexcode": "E1D9"
-    },
-    "1F3F4-E0069-E0074-E0062-E0061-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0069-E0074-E0062-E0061-E007F.svg",
-      "sourceHexcode": "1F3F4-E0069-E0074-E0062-E0061-E007F"
+      "path": "/openmoji/extras-openmoji/E1D9.svg",
+      "sourceHexcode": "E1D9",
+      "collection": "extras-openmoji"
     },
     "E185": {
-      "path": "/openmoji-extras/E185.svg",
-      "sourceHexcode": "E185"
-    },
-    "1F3F4-E0065-E0073-E0070-E0076-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0070-E0076-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0070-E0076-E007F"
-    },
-    "1F3F4-E0064-E0065-E0062-E0079-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0064-E0065-E0062-E0079-E007F.svg",
-      "sourceHexcode": "1F3F4-E0064-E0065-E0062-E0079-E007F"
+      "path": "/openmoji/extras-openmoji/E185.svg",
+      "sourceHexcode": "E185",
+      "collection": "extras-openmoji"
     },
     "E42C": {
-      "path": "/openmoji-extras/E42C.svg",
-      "sourceHexcode": "E42C"
+      "path": "/openmoji/extras-openmoji/E42C.svg",
+      "sourceHexcode": "E42C",
+      "collection": "extras-openmoji"
     },
     "E31A": {
-      "path": "/openmoji-extras/E31A.svg",
-      "sourceHexcode": "E31A"
+      "path": "/openmoji/extras-openmoji/E31A.svg",
+      "sourceHexcode": "E31A",
+      "collection": "extras-openmoji"
     },
     "E007": {
-      "path": "/openmoji-extras/E007.svg",
-      "sourceHexcode": "E007"
+      "path": "/openmoji/extras-openmoji/E007.svg",
+      "sourceHexcode": "E007",
+      "collection": "extras-openmoji"
     },
     "1F3F3-200D-1F7E6-200D-1F7E9-200D-1F7E8": {
-      "path": "/openmoji-extras/1F3F3-200D-1F7E6-200D-1F7E9-200D-1F7E8.svg",
-      "sourceHexcode": "1F3F3-200D-1F7E6-200D-1F7E9-200D-1F7E8"
-    },
-    "1F3F4-E0064-E0065-E0062-E0065-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0064-E0065-E0062-E0065-E007F.svg",
-      "sourceHexcode": "1F3F4-E0064-E0065-E0062-E0065-E007F"
+      "path": "/openmoji/extras-openmoji/1F3F3-200D-1F7E6-200D-1F7E9-200D-1F7E8.svg",
+      "sourceHexcode": "1F3F3-200D-1F7E6-200D-1F7E9-200D-1F7E8",
+      "collection": "extras-openmoji"
     },
     "E435": {
-      "path": "/openmoji-extras/E435.svg",
-      "sourceHexcode": "E435"
+      "path": "/openmoji/extras-openmoji/E435.svg",
+      "sourceHexcode": "E435",
+      "collection": "extras-openmoji"
     },
     "E423": {
-      "path": "/openmoji-extras/E423.svg",
-      "sourceHexcode": "E423"
-    },
-    "265D": {
-      "path": "/openmoji-extras/265D.svg",
-      "sourceHexcode": "265D"
-    },
-    "265A": {
-      "path": "/openmoji-extras/265A.svg",
-      "sourceHexcode": "265A"
-    },
-    "265E": {
-      "path": "/openmoji-extras/265E.svg",
-      "sourceHexcode": "265E"
-    },
-    "265B": {
-      "path": "/openmoji-extras/265B.svg",
-      "sourceHexcode": "265B"
-    },
-    "265C": {
-      "path": "/openmoji-extras/265C.svg",
-      "sourceHexcode": "265C"
-    },
-    "2B22": {
-      "path": "/openmoji-extras/2B22.svg",
-      "sourceHexcode": "2B22"
+      "path": "/openmoji/extras-openmoji/E423.svg",
+      "sourceHexcode": "E423",
+      "collection": "extras-openmoji"
     },
     "E20D": {
-      "path": "/openmoji-extras/E20D.svg",
-      "sourceHexcode": "E20D"
-    },
-    "2B24": {
-      "path": "/openmoji-extras/2B24.svg",
-      "sourceHexcode": "2B24"
-    },
-    "2BC4": {
-      "path": "/openmoji-extras/2BC4.svg",
-      "sourceHexcode": "2BC4"
-    },
-    "2B1F": {
-      "path": "/openmoji-extras/2B1F.svg",
-      "sourceHexcode": "2B1F"
-    },
-    "25AC": {
-      "path": "/openmoji-extras/25AC.svg",
-      "sourceHexcode": "25AC"
-    },
-    "2B2E": {
-      "path": "/openmoji-extras/2B2E.svg",
-      "sourceHexcode": "2B2E"
-    },
-    "25AE": {
-      "path": "/openmoji-extras/25AE.svg",
-      "sourceHexcode": "25AE"
+      "path": "/openmoji/extras-openmoji/E20D.svg",
+      "sourceHexcode": "E20D",
+      "collection": "extras-openmoji"
     },
     "E30D": {
-      "path": "/openmoji-extras/E30D.svg",
-      "sourceHexcode": "E30D"
+      "path": "/openmoji/extras-openmoji/E30D.svg",
+      "sourceHexcode": "E30D",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7E6": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7E6.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7E6"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7E6.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7E6",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F7E6": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F7E6.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F7E6"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F7E6.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F7E6",
+      "collection": "extras-openmoji"
     },
     "E070": {
-      "path": "/openmoji-extras/E070.svg",
-      "sourceHexcode": "E070"
+      "path": "/openmoji/extras-openmoji/E070.svg",
+      "sourceHexcode": "E070",
+      "collection": "extras-openmoji"
     },
     "E0CA": {
-      "path": "/openmoji-extras/E0CA.svg",
-      "sourceHexcode": "E0CA"
+      "path": "/openmoji/extras-openmoji/E0CA.svg",
+      "sourceHexcode": "E0CA",
+      "collection": "extras-openmoji"
     },
     "E319": {
-      "path": "/openmoji-extras/E319.svg",
-      "sourceHexcode": "E319"
-    },
-    "1F3F4-E0066-E0072-E0062-E0072-E0065-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0066-E0072-E0062-E0072-E0065-E007F.svg",
-      "sourceHexcode": "1F3F4-E0066-E0072-E0062-E0072-E0065-E007F"
+      "path": "/openmoji/extras-openmoji/E319.svg",
+      "sourceHexcode": "E319",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7EB": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7EB.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7EB"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7EB.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7EB",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F7EB": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F7EB.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F7EB"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F7EB.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F7EB",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7E9-200D-2B50": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7E9-200D-2B50.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7E9-200D-2B50"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7E9-200D-2B50.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7E9-200D-2B50",
+      "collection": "extras-openmoji"
     },
     "E062": {
-      "path": "/openmoji-extras/E062.svg",
-      "sourceHexcode": "E062"
+      "path": "/openmoji/extras-openmoji/E062.svg",
+      "sourceHexcode": "E062",
+      "collection": "extras-openmoji"
     },
     "E1CB": {
-      "path": "/openmoji-extras/E1CB.svg",
-      "sourceHexcode": "E1CB"
+      "path": "/openmoji/extras-openmoji/E1CB.svg",
+      "sourceHexcode": "E1CB",
+      "collection": "extras-openmoji"
     },
     "E200": {
-      "path": "/openmoji-extras/E200.svg",
-      "sourceHexcode": "E200"
+      "path": "/openmoji/extras-openmoji/E200.svg",
+      "sourceHexcode": "E200",
+      "collection": "extras-openmoji"
     },
     "E0C7": {
-      "path": "/openmoji-extras/E0C7.svg",
-      "sourceHexcode": "E0C7"
-    },
-    "1F3F4-E0075-E0073-E0063-E0061-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0075-E0073-E0063-E0061-E007F.svg",
-      "sourceHexcode": "1F3F4-E0075-E0073-E0063-E0061-E007F"
-    },
-    "1F3F4-E0065-E0073-E0063-E006E-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0063-E006E-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E006E-E007F"
-    },
-    "1F3F4-E0065-E0073-E0063-E0062-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0063-E0062-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E0062-E007F"
-    },
-    "1F3F4-E0065-E0073-E0063-E006C-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0063-E006C-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E006C-E007F"
-    },
-    "1F3F4-E0065-E0073-E0063-E006D-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0063-E006D-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E006D-E007F"
-    },
-    "1F3F4-E0065-E0073-E0063-E0074-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0063-E0074-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E0074-E007F"
-    },
-    "1F3F4-E0065-E0073-E0063-E0065-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0063-E0065-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E0065-E007F"
+      "path": "/openmoji/extras-openmoji/E0C7.svg",
+      "sourceHexcode": "E0C7",
+      "collection": "extras-openmoji"
     },
     "E0C8": {
-      "path": "/openmoji-extras/E0C8.svg",
-      "sourceHexcode": "E0C8"
+      "path": "/openmoji/extras-openmoji/E0C8.svg",
+      "sourceHexcode": "E0C8",
+      "collection": "extras-openmoji"
     },
     "E0C9": {
-      "path": "/openmoji-extras/E0C9.svg",
-      "sourceHexcode": "E0C9"
+      "path": "/openmoji/extras-openmoji/E0C9.svg",
+      "sourceHexcode": "E0C9",
+      "collection": "extras-openmoji"
     },
     "E097": {
-      "path": "/openmoji-extras/E097.svg",
-      "sourceHexcode": "E097"
+      "path": "/openmoji/extras-openmoji/E097.svg",
+      "sourceHexcode": "E097",
+      "collection": "extras-openmoji"
     },
     "E248": {
-      "path": "/openmoji-extras/E248.svg",
-      "sourceHexcode": "E248"
+      "path": "/openmoji/extras-openmoji/E248.svg",
+      "sourceHexcode": "E248",
+      "collection": "extras-openmoji"
     },
     "E054": {
-      "path": "/openmoji-extras/E054.svg",
-      "sourceHexcode": "E054"
+      "path": "/openmoji/extras-openmoji/E054.svg",
+      "sourceHexcode": "E054",
+      "collection": "extras-openmoji"
     },
     "E065": {
-      "path": "/openmoji-extras/E065.svg",
-      "sourceHexcode": "E065"
+      "path": "/openmoji/extras-openmoji/E065.svg",
+      "sourceHexcode": "E065",
+      "collection": "extras-openmoji"
     },
     "E053": {
-      "path": "/openmoji-extras/E053.svg",
-      "sourceHexcode": "E053"
-    },
-    "25D0": {
-      "path": "/openmoji-extras/25D0.svg",
-      "sourceHexcode": "25D0"
-    },
-    "25D1": {
-      "path": "/openmoji-extras/25D1.svg",
-      "sourceHexcode": "25D1"
-    },
-    "1F10E": {
-      "path": "/openmoji-extras/1F10E.svg",
-      "sourceHexcode": "1F10E"
-    },
-    "1F16E": {
-      "path": "/openmoji-extras/1F16E.svg",
-      "sourceHexcode": "1F16E"
-    },
-    "1F16D": {
-      "path": "/openmoji-extras/1F16D.svg",
-      "sourceHexcode": "1F16D"
-    },
-    "1F10F": {
-      "path": "/openmoji-extras/1F10F.svg",
-      "sourceHexcode": "1F10F"
-    },
-    "229C": {
-      "path": "/openmoji-extras/229C.svg",
-      "sourceHexcode": "229C"
-    },
-    "1F16F": {
-      "path": "/openmoji-extras/1F16F.svg",
-      "sourceHexcode": "1F16F"
-    },
-    "1F10D": {
-      "path": "/openmoji-extras/1F10D.svg",
-      "sourceHexcode": "1F10D"
+      "path": "/openmoji/extras-openmoji/E053.svg",
+      "sourceHexcode": "E053",
+      "collection": "extras-openmoji"
     },
     "E1D7": {
-      "path": "/openmoji-extras/E1D7.svg",
-      "sourceHexcode": "E1D7"
+      "path": "/openmoji/extras-openmoji/E1D7.svg",
+      "sourceHexcode": "E1D7",
+      "collection": "extras-openmoji"
     },
     "E324": {
-      "path": "/openmoji-extras/E324.svg",
-      "sourceHexcode": "E324"
+      "path": "/openmoji/extras-openmoji/E324.svg",
+      "sourceHexcode": "E324",
+      "collection": "extras-openmoji"
     },
     "E24E": {
-      "path": "/openmoji-extras/E24E.svg",
-      "sourceHexcode": "E24E"
+      "path": "/openmoji/extras-openmoji/E24E.svg",
+      "sourceHexcode": "E24E",
+      "collection": "extras-openmoji"
     },
     "E1C1": {
-      "path": "/openmoji-extras/E1C1.svg",
-      "sourceHexcode": "E1C1"
+      "path": "/openmoji/extras-openmoji/E1C1.svg",
+      "sourceHexcode": "E1C1",
+      "collection": "extras-openmoji"
     },
     "E156": {
-      "path": "/openmoji-extras/E156.svg",
-      "sourceHexcode": "E156"
+      "path": "/openmoji/extras-openmoji/E156.svg",
+      "sourceHexcode": "E156",
+      "collection": "extras-openmoji"
     },
     "E249": {
-      "path": "/openmoji-extras/E249.svg",
-      "sourceHexcode": "E249"
-    },
-    "1F3F4-E0075-E0073-E0063-E006F-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0075-E0073-E0063-E006F-E007F.svg",
-      "sourceHexcode": "1F3F4-E0075-E0073-E0063-E006F-E007F"
+      "path": "/openmoji/extras-openmoji/E249.svg",
+      "sourceHexcode": "E249",
+      "collection": "extras-openmoji"
     },
     "E210": {
-      "path": "/openmoji-extras/E210.svg",
-      "sourceHexcode": "E210"
-    },
-    "20E3": {
-      "path": "/openmoji-extras/20E3.svg",
-      "sourceHexcode": "20E3"
+      "path": "/openmoji/extras-openmoji/E210.svg",
+      "sourceHexcode": "E210",
+      "collection": "extras-openmoji"
     },
     "E263": {
-      "path": "/openmoji-extras/E263.svg",
-      "sourceHexcode": "E263"
+      "path": "/openmoji/extras-openmoji/E263.svg",
+      "sourceHexcode": "E263",
+      "collection": "extras-openmoji"
     },
     "E267": {
-      "path": "/openmoji-extras/E267.svg",
-      "sourceHexcode": "E267"
+      "path": "/openmoji/extras-openmoji/E267.svg",
+      "sourceHexcode": "E267",
+      "collection": "extras-openmoji"
     },
     "E256": {
-      "path": "/openmoji-extras/E256.svg",
-      "sourceHexcode": "E256"
+      "path": "/openmoji/extras-openmoji/E256.svg",
+      "sourceHexcode": "E256",
+      "collection": "extras-openmoji"
     },
     "E255": {
-      "path": "/openmoji-extras/E255.svg",
-      "sourceHexcode": "E255"
-    },
-    "1F12F": {
-      "path": "/openmoji-extras/1F12F.svg",
-      "sourceHexcode": "1F12F"
+      "path": "/openmoji/extras-openmoji/E255.svg",
+      "sourceHexcode": "E255",
+      "collection": "extras-openmoji"
     },
     "E063": {
-      "path": "/openmoji-extras/E063.svg",
-      "sourceHexcode": "E063"
+      "path": "/openmoji/extras-openmoji/E063.svg",
+      "sourceHexcode": "E063",
+      "collection": "extras-openmoji"
     },
     "E326": {
-      "path": "/openmoji-extras/E326.svg",
-      "sourceHexcode": "E326"
+      "path": "/openmoji/extras-openmoji/E326.svg",
+      "sourceHexcode": "E326",
+      "collection": "extras-openmoji"
     },
     "E064": {
-      "path": "/openmoji-extras/E064.svg",
-      "sourceHexcode": "E064"
+      "path": "/openmoji/extras-openmoji/E064.svg",
+      "sourceHexcode": "E064",
+      "collection": "extras-openmoji"
     },
     "E329": {
-      "path": "/openmoji-extras/E329.svg",
-      "sourceHexcode": "E329"
+      "path": "/openmoji/extras-openmoji/E329.svg",
+      "sourceHexcode": "E329",
+      "collection": "extras-openmoji"
     },
     "E258": {
-      "path": "/openmoji-extras/E258.svg",
-      "sourceHexcode": "E258"
+      "path": "/openmoji/extras-openmoji/E258.svg",
+      "sourceHexcode": "E258",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7E6": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7E6.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7E6"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7E6.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7E6",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7EB": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7EB.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7EB"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7EB.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7EB",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7E9": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7E9.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7E9"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7E9.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7E9",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7E7": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7E7.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7E7"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7E7.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7E7",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7EA": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7EA.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7EA"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7EA.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7EA",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7E5": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7E5.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7E5"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7E5.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7E5",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F7E8": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F7E8.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F7E8"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F7E8.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F7E8",
+      "collection": "extras-openmoji"
     },
     "E282": {
-      "path": "/openmoji-extras/E282.svg",
-      "sourceHexcode": "E282"
+      "path": "/openmoji/extras-openmoji/E282.svg",
+      "sourceHexcode": "E282",
+      "collection": "extras-openmoji"
     },
     "E262": {
-      "path": "/openmoji-extras/E262.svg",
-      "sourceHexcode": "E262"
+      "path": "/openmoji/extras-openmoji/E262.svg",
+      "sourceHexcode": "E262",
+      "collection": "extras-openmoji"
     },
     "E433": {
-      "path": "/openmoji-extras/E433.svg",
-      "sourceHexcode": "E433"
+      "path": "/openmoji/extras-openmoji/E433.svg",
+      "sourceHexcode": "E433",
+      "collection": "extras-openmoji"
     },
     "E434": {
-      "path": "/openmoji-extras/E434.svg",
-      "sourceHexcode": "E434"
+      "path": "/openmoji/extras-openmoji/E434.svg",
+      "sourceHexcode": "E434",
+      "collection": "extras-openmoji"
     },
     "E432": {
-      "path": "/openmoji-extras/E432.svg",
-      "sourceHexcode": "E432"
+      "path": "/openmoji/extras-openmoji/E432.svg",
+      "sourceHexcode": "E432",
+      "collection": "extras-openmoji"
     },
     "E426": {
-      "path": "/openmoji-extras/E426.svg",
-      "sourceHexcode": "E426"
+      "path": "/openmoji/extras-openmoji/E426.svg",
+      "sourceHexcode": "E426",
+      "collection": "extras-openmoji"
     },
     "E259": {
-      "path": "/openmoji-extras/E259.svg",
-      "sourceHexcode": "E259"
+      "path": "/openmoji/extras-openmoji/E259.svg",
+      "sourceHexcode": "E259",
+      "collection": "extras-openmoji"
     },
     "E061": {
-      "path": "/openmoji-extras/E061.svg",
-      "sourceHexcode": "E061"
+      "path": "/openmoji/extras-openmoji/E061.svg",
+      "sourceHexcode": "E061",
+      "collection": "extras-openmoji"
     },
     "E0AE": {
-      "path": "/openmoji-extras/E0AE.svg",
-      "sourceHexcode": "E0AE"
+      "path": "/openmoji/extras-openmoji/E0AE.svg",
+      "sourceHexcode": "E0AE",
+      "collection": "extras-openmoji"
     },
     "1F9D1-200D-1FAA9": {
-      "path": "/openmoji-extras/1F9D1-200D-1FAA9.svg",
-      "sourceHexcode": "1F9D1-200D-1FAA9"
+      "path": "/openmoji/extras-openmoji/1F9D1-200D-1FAA9.svg",
+      "sourceHexcode": "1F9D1-200D-1FAA9",
+      "collection": "extras-openmoji"
     },
     "1F468-200D-1FAA9": {
-      "path": "/openmoji-extras/1F468-200D-1FAA9.svg",
-      "sourceHexcode": "1F468-200D-1FAA9"
+      "path": "/openmoji/extras-openmoji/1F468-200D-1FAA9.svg",
+      "sourceHexcode": "1F468-200D-1FAA9",
+      "collection": "extras-openmoji"
     },
     "1F469-200D-1FAA9": {
-      "path": "/openmoji-extras/1F469-200D-1FAA9.svg",
-      "sourceHexcode": "1F469-200D-1FAA9"
+      "path": "/openmoji/extras-openmoji/1F469-200D-1FAA9.svg",
+      "sourceHexcode": "1F469-200D-1FAA9",
+      "collection": "extras-openmoji"
     },
     "E003": {
-      "path": "/openmoji-extras/E003.svg",
-      "sourceHexcode": "E003"
+      "path": "/openmoji/extras-openmoji/E003.svg",
+      "sourceHexcode": "E003",
+      "collection": "extras-openmoji"
     },
     "E001": {
-      "path": "/openmoji-extras/E001.svg",
-      "sourceHexcode": "E001"
+      "path": "/openmoji/extras-openmoji/E001.svg",
+      "sourceHexcode": "E001",
+      "collection": "extras-openmoji"
     },
     "E04C": {
-      "path": "/openmoji-extras/E04C.svg",
-      "sourceHexcode": "E04C"
+      "path": "/openmoji/extras-openmoji/E04C.svg",
+      "sourceHexcode": "E04C",
+      "collection": "extras-openmoji"
     },
     "E101": {
-      "path": "/openmoji-extras/E101.svg",
-      "sourceHexcode": "E101"
+      "path": "/openmoji/extras-openmoji/E101.svg",
+      "sourceHexcode": "E101",
+      "collection": "extras-openmoji"
     },
     "E252": {
-      "path": "/openmoji-extras/E252.svg",
-      "sourceHexcode": "E252"
+      "path": "/openmoji/extras-openmoji/E252.svg",
+      "sourceHexcode": "E252",
+      "collection": "extras-openmoji"
     },
     "E155": {
-      "path": "/openmoji-extras/E155.svg",
-      "sourceHexcode": "E155"
+      "path": "/openmoji/extras-openmoji/E155.svg",
+      "sourceHexcode": "E155",
+      "collection": "extras-openmoji"
     },
     "E1D2": {
-      "path": "/openmoji-extras/E1D2.svg",
-      "sourceHexcode": "E1D2"
+      "path": "/openmoji/extras-openmoji/E1D2.svg",
+      "sourceHexcode": "E1D2",
+      "collection": "extras-openmoji"
     },
     "E084": {
-      "path": "/openmoji-extras/E084.svg",
-      "sourceHexcode": "E084"
+      "path": "/openmoji/extras-openmoji/E084.svg",
+      "sourceHexcode": "E084",
+      "collection": "extras-openmoji"
     },
     "E181": {
-      "path": "/openmoji-extras/E181.svg",
-      "sourceHexcode": "E181"
+      "path": "/openmoji/extras-openmoji/E181.svg",
+      "sourceHexcode": "E181",
+      "collection": "extras-openmoji"
     },
     "E25B": {
-      "path": "/openmoji-extras/E25B.svg",
-      "sourceHexcode": "E25B"
+      "path": "/openmoji/extras-openmoji/E25B.svg",
+      "sourceHexcode": "E25B",
+      "collection": "extras-openmoji"
     },
     "E31E": {
-      "path": "/openmoji-extras/E31E.svg",
-      "sourceHexcode": "E31E"
+      "path": "/openmoji/extras-openmoji/E31E.svg",
+      "sourceHexcode": "E31E",
+      "collection": "extras-openmoji"
     },
     "E09C": {
-      "path": "/openmoji-extras/E09C.svg",
-      "sourceHexcode": "E09C"
+      "path": "/openmoji/extras-openmoji/E09C.svg",
+      "sourceHexcode": "E09C",
+      "collection": "extras-openmoji"
     },
     "E308": {
-      "path": "/openmoji-extras/E308.svg",
-      "sourceHexcode": "E308"
+      "path": "/openmoji/extras-openmoji/E308.svg",
+      "sourceHexcode": "E308",
+      "collection": "extras-openmoji"
     },
     "E06F": {
-      "path": "/openmoji-extras/E06F.svg",
-      "sourceHexcode": "E06F"
+      "path": "/openmoji/extras-openmoji/E06F.svg",
+      "sourceHexcode": "E06F",
+      "collection": "extras-openmoji"
     },
     "E057": {
-      "path": "/openmoji-extras/E057.svg",
-      "sourceHexcode": "E057"
+      "path": "/openmoji/extras-openmoji/E057.svg",
+      "sourceHexcode": "E057",
+      "collection": "extras-openmoji"
     },
     "E25D": {
-      "path": "/openmoji-extras/E25D.svg",
-      "sourceHexcode": "E25D"
+      "path": "/openmoji/extras-openmoji/E25D.svg",
+      "sourceHexcode": "E25D",
+      "collection": "extras-openmoji"
     },
     "E205": {
-      "path": "/openmoji-extras/E205.svg",
-      "sourceHexcode": "E205"
+      "path": "/openmoji/extras-openmoji/E205.svg",
+      "sourceHexcode": "E205",
+      "collection": "extras-openmoji"
     },
     "E154": {
-      "path": "/openmoji-extras/E154.svg",
-      "sourceHexcode": "E154"
+      "path": "/openmoji/extras-openmoji/E154.svg",
+      "sourceHexcode": "E154",
+      "collection": "extras-openmoji"
     },
     "E0AA": {
-      "path": "/openmoji-extras/E0AA.svg",
-      "sourceHexcode": "E0AA"
+      "path": "/openmoji/extras-openmoji/E0AA.svg",
+      "sourceHexcode": "E0AA",
+      "collection": "extras-openmoji"
     },
     "E05E": {
-      "path": "/openmoji-extras/E05E.svg",
-      "sourceHexcode": "E05E"
+      "path": "/openmoji/extras-openmoji/E05E.svg",
+      "sourceHexcode": "E05E",
+      "collection": "extras-openmoji"
     },
     "E204": {
-      "path": "/openmoji-extras/E204.svg",
-      "sourceHexcode": "E204"
+      "path": "/openmoji/extras-openmoji/E204.svg",
+      "sourceHexcode": "E204",
+      "collection": "extras-openmoji"
     },
     "E201": {
-      "path": "/openmoji-extras/E201.svg",
-      "sourceHexcode": "E201"
+      "path": "/openmoji/extras-openmoji/E201.svg",
+      "sourceHexcode": "E201",
+      "collection": "extras-openmoji"
     },
     "E0A8": {
-      "path": "/openmoji-extras/E0A8.svg",
-      "sourceHexcode": "E0A8"
+      "path": "/openmoji/extras-openmoji/E0A8.svg",
+      "sourceHexcode": "E0A8",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7E9-200D-2B50-200D-1F7E9": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7E9-200D-2B50-200D-1F7E9.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7E9-200D-2B50-200D-1F7E9"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7E9-200D-2B50-200D-1F7E9.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7E9-200D-2B50-200D-1F7E9",
+      "collection": "extras-openmoji"
     },
     "E150": {
-      "path": "/openmoji-extras/E150.svg",
-      "sourceHexcode": "E150"
+      "path": "/openmoji/extras-openmoji/E150.svg",
+      "sourceHexcode": "E150",
+      "collection": "extras-openmoji"
     },
     "E147": {
-      "path": "/openmoji-extras/E147.svg",
-      "sourceHexcode": "E147"
+      "path": "/openmoji/extras-openmoji/E147.svg",
+      "sourceHexcode": "E147",
+      "collection": "extras-openmoji"
     },
     "E085": {
-      "path": "/openmoji-extras/E085.svg",
-      "sourceHexcode": "E085"
+      "path": "/openmoji/extras-openmoji/E085.svg",
+      "sourceHexcode": "E085",
+      "collection": "extras-openmoji"
     },
     "E087": {
-      "path": "/openmoji-extras/E087.svg",
-      "sourceHexcode": "E087"
+      "path": "/openmoji/extras-openmoji/E087.svg",
+      "sourceHexcode": "E087",
+      "collection": "extras-openmoji"
     },
     "E08B": {
-      "path": "/openmoji-extras/E08B.svg",
-      "sourceHexcode": "E08B"
+      "path": "/openmoji/extras-openmoji/E08B.svg",
+      "sourceHexcode": "E08B",
+      "collection": "extras-openmoji"
     },
     "E088": {
-      "path": "/openmoji-extras/E088.svg",
-      "sourceHexcode": "E088"
+      "path": "/openmoji/extras-openmoji/E088.svg",
+      "sourceHexcode": "E088",
+      "collection": "extras-openmoji"
     },
     "E086": {
-      "path": "/openmoji-extras/E086.svg",
-      "sourceHexcode": "E086"
+      "path": "/openmoji/extras-openmoji/E086.svg",
+      "sourceHexcode": "E086",
+      "collection": "extras-openmoji"
     },
     "E2CF": {
-      "path": "/openmoji-extras/E2CF.svg",
-      "sourceHexcode": "E2CF"
+      "path": "/openmoji/extras-openmoji/E2CF.svg",
+      "sourceHexcode": "E2CF",
+      "collection": "extras-openmoji"
     },
     "E2CC": {
-      "path": "/openmoji-extras/E2CC.svg",
-      "sourceHexcode": "E2CC"
+      "path": "/openmoji/extras-openmoji/E2CC.svg",
+      "sourceHexcode": "E2CC",
+      "collection": "extras-openmoji"
     },
     "E280": {
-      "path": "/openmoji-extras/E280.svg",
-      "sourceHexcode": "E280"
+      "path": "/openmoji/extras-openmoji/E280.svg",
+      "sourceHexcode": "E280",
+      "collection": "extras-openmoji"
     },
     "E10D": {
-      "path": "/openmoji-extras/E10D.svg",
-      "sourceHexcode": "E10D"
-    },
-    "1F3F4-E0065-E0073-E0065-E0078-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0065-E0078-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0065-E0078-E007F"
+      "path": "/openmoji/extras-openmoji/E10D.svg",
+      "sourceHexcode": "E10D",
+      "collection": "extras-openmoji"
     },
     "E31C": {
-      "path": "/openmoji-extras/E31C.svg",
-      "sourceHexcode": "E31C"
+      "path": "/openmoji/extras-openmoji/E31C.svg",
+      "sourceHexcode": "E31C",
+      "collection": "extras-openmoji"
     },
     "E042": {
-      "path": "/openmoji-extras/E042.svg",
-      "sourceHexcode": "E042"
+      "path": "/openmoji/extras-openmoji/E042.svg",
+      "sourceHexcode": "E042",
+      "collection": "extras-openmoji"
     },
     "E06E": {
-      "path": "/openmoji-extras/E06E.svg",
-      "sourceHexcode": "E06E"
+      "path": "/openmoji/extras-openmoji/E06E.svg",
+      "sourceHexcode": "E06E",
+      "collection": "extras-openmoji"
     },
     "E300": {
-      "path": "/openmoji-extras/E300.svg",
-      "sourceHexcode": "E300"
+      "path": "/openmoji/extras-openmoji/E300.svg",
+      "sourceHexcode": "E300",
+      "collection": "extras-openmoji"
     },
     "E302": {
-      "path": "/openmoji-extras/E302.svg",
-      "sourceHexcode": "E302"
+      "path": "/openmoji/extras-openmoji/E302.svg",
+      "sourceHexcode": "E302",
+      "collection": "extras-openmoji"
     },
     "E257": {
-      "path": "/openmoji-extras/E257.svg",
-      "sourceHexcode": "E257"
+      "path": "/openmoji/extras-openmoji/E257.svg",
+      "sourceHexcode": "E257",
+      "collection": "extras-openmoji"
     },
     "E10C": {
-      "path": "/openmoji-extras/E10C.svg",
-      "sourceHexcode": "E10C"
+      "path": "/openmoji/extras-openmoji/E10C.svg",
+      "sourceHexcode": "E10C",
+      "collection": "extras-openmoji"
     },
     "E050": {
-      "path": "/openmoji-extras/E050.svg",
-      "sourceHexcode": "E050"
+      "path": "/openmoji/extras-openmoji/E050.svg",
+      "sourceHexcode": "E050",
+      "collection": "extras-openmoji"
     },
     "E066": {
-      "path": "/openmoji-extras/E066.svg",
-      "sourceHexcode": "E066"
+      "path": "/openmoji/extras-openmoji/E066.svg",
+      "sourceHexcode": "E066",
+      "collection": "extras-openmoji"
     },
     "E067": {
-      "path": "/openmoji-extras/E067.svg",
-      "sourceHexcode": "E067"
+      "path": "/openmoji/extras-openmoji/E067.svg",
+      "sourceHexcode": "E067",
+      "collection": "extras-openmoji"
     },
     "E090": {
-      "path": "/openmoji-extras/E090.svg",
-      "sourceHexcode": "E090"
+      "path": "/openmoji/extras-openmoji/E090.svg",
+      "sourceHexcode": "E090",
+      "collection": "extras-openmoji"
     },
     "E309": {
-      "path": "/openmoji-extras/E309.svg",
-      "sourceHexcode": "E309"
+      "path": "/openmoji/extras-openmoji/E309.svg",
+      "sourceHexcode": "E309",
+      "collection": "extras-openmoji"
     },
     "E140": {
-      "path": "/openmoji-extras/E140.svg",
-      "sourceHexcode": "E140"
-    },
-    "25C9": {
-      "path": "/openmoji-extras/25C9.svg",
-      "sourceHexcode": "25C9"
+      "path": "/openmoji/extras-openmoji/E140.svg",
+      "sourceHexcode": "E140",
+      "collection": "extras-openmoji"
     },
     "E092": {
-      "path": "/openmoji-extras/E092.svg",
-      "sourceHexcode": "E092"
+      "path": "/openmoji/extras-openmoji/E092.svg",
+      "sourceHexcode": "E092",
+      "collection": "extras-openmoji"
     },
     "E091": {
-      "path": "/openmoji-extras/E091.svg",
-      "sourceHexcode": "E091"
+      "path": "/openmoji/extras-openmoji/E091.svg",
+      "sourceHexcode": "E091",
+      "collection": "extras-openmoji"
     },
     "E2C1": {
-      "path": "/openmoji-extras/E2C1.svg",
-      "sourceHexcode": "E2C1"
+      "path": "/openmoji/extras-openmoji/E2C1.svg",
+      "sourceHexcode": "E2C1",
+      "collection": "extras-openmoji"
     },
     "E2C2": {
-      "path": "/openmoji-extras/E2C2.svg",
-      "sourceHexcode": "E2C2"
+      "path": "/openmoji/extras-openmoji/E2C2.svg",
+      "sourceHexcode": "E2C2",
+      "collection": "extras-openmoji"
     },
     "E09F": {
-      "path": "/openmoji-extras/E09F.svg",
-      "sourceHexcode": "E09F"
+      "path": "/openmoji/extras-openmoji/E09F.svg",
+      "sourceHexcode": "E09F",
+      "collection": "extras-openmoji"
     },
     "E20E": {
-      "path": "/openmoji-extras/E20E.svg",
-      "sourceHexcode": "E20E"
+      "path": "/openmoji/extras-openmoji/E20E.svg",
+      "sourceHexcode": "E20E",
+      "collection": "extras-openmoji"
     },
     "E318": {
-      "path": "/openmoji-extras/E318.svg",
-      "sourceHexcode": "E318"
+      "path": "/openmoji/extras-openmoji/E318.svg",
+      "sourceHexcode": "E318",
+      "collection": "extras-openmoji"
     },
     "E24F": {
-      "path": "/openmoji-extras/E24F.svg",
-      "sourceHexcode": "E24F"
+      "path": "/openmoji/extras-openmoji/E24F.svg",
+      "sourceHexcode": "E24F",
+      "collection": "extras-openmoji"
     },
     "E31F": {
-      "path": "/openmoji-extras/E31F.svg",
-      "sourceHexcode": "E31F"
+      "path": "/openmoji/extras-openmoji/E31F.svg",
+      "sourceHexcode": "E31F",
+      "collection": "extras-openmoji"
     },
     "E151": {
-      "path": "/openmoji-extras/E151.svg",
-      "sourceHexcode": "E151"
-    },
-    "1F3F4-E0065-E0073-E0067-E0061-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0067-E0061-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0067-E0061-E007F"
+      "path": "/openmoji/extras-openmoji/E151.svg",
+      "sourceHexcode": "E151",
+      "collection": "extras-openmoji"
     },
     "E340": {
-      "path": "/openmoji-extras/E340.svg",
-      "sourceHexcode": "E340"
+      "path": "/openmoji/extras-openmoji/E340.svg",
+      "sourceHexcode": "E340",
+      "collection": "extras-openmoji"
     },
     "E341": {
-      "path": "/openmoji-extras/E341.svg",
-      "sourceHexcode": "E341"
+      "path": "/openmoji/extras-openmoji/E341.svg",
+      "sourceHexcode": "E341",
+      "collection": "extras-openmoji"
     },
     "E342": {
-      "path": "/openmoji-extras/E342.svg",
-      "sourceHexcode": "E342"
+      "path": "/openmoji/extras-openmoji/E342.svg",
+      "sourceHexcode": "E342",
+      "collection": "extras-openmoji"
     },
     "E422": {
-      "path": "/openmoji-extras/E422.svg",
-      "sourceHexcode": "E422"
+      "path": "/openmoji/extras-openmoji/E422.svg",
+      "sourceHexcode": "E422",
+      "collection": "extras-openmoji"
     },
     "E2D6": {
-      "path": "/openmoji-extras/E2D6.svg",
-      "sourceHexcode": "E2D6"
+      "path": "/openmoji/extras-openmoji/E2D6.svg",
+      "sourceHexcode": "E2D6",
+      "collection": "extras-openmoji"
     },
     "E42F": {
-      "path": "/openmoji-extras/E42F.svg",
-      "sourceHexcode": "E42F"
+      "path": "/openmoji/extras-openmoji/E42F.svg",
+      "sourceHexcode": "E42F",
+      "collection": "extras-openmoji"
     },
     "E430": {
-      "path": "/openmoji-extras/E430.svg",
-      "sourceHexcode": "E430"
+      "path": "/openmoji/extras-openmoji/E430.svg",
+      "sourceHexcode": "E430",
+      "collection": "extras-openmoji"
     },
     "E045": {
-      "path": "/openmoji-extras/E045.svg",
-      "sourceHexcode": "E045"
+      "path": "/openmoji/extras-openmoji/E045.svg",
+      "sourceHexcode": "E045",
+      "collection": "extras-openmoji"
     },
     "E059": {
-      "path": "/openmoji-extras/E059.svg",
-      "sourceHexcode": "E059"
+      "path": "/openmoji/extras-openmoji/E059.svg",
+      "sourceHexcode": "E059",
+      "collection": "extras-openmoji"
     },
     "E0CB": {
-      "path": "/openmoji-extras/E0CB.svg",
-      "sourceHexcode": "E0CB"
+      "path": "/openmoji/extras-openmoji/E0CB.svg",
+      "sourceHexcode": "E0CB",
+      "collection": "extras-openmoji"
     },
     "E04D": {
-      "path": "/openmoji-extras/E04D.svg",
-      "sourceHexcode": "E04D"
+      "path": "/openmoji/extras-openmoji/E04D.svg",
+      "sourceHexcode": "E04D",
+      "collection": "extras-openmoji"
     },
     "E000": {
-      "path": "/openmoji-extras/E000.svg",
-      "sourceHexcode": "E000"
+      "path": "/openmoji/extras-openmoji/E000.svg",
+      "sourceHexcode": "E000",
+      "collection": "extras-openmoji"
     },
     "E1CD": {
-      "path": "/openmoji-extras/E1CD.svg",
-      "sourceHexcode": "E1CD"
+      "path": "/openmoji/extras-openmoji/E1CD.svg",
+      "sourceHexcode": "E1CD",
+      "collection": "extras-openmoji"
     },
     "E20F": {
-      "path": "/openmoji-extras/E20F.svg",
-      "sourceHexcode": "E20F"
+      "path": "/openmoji/extras-openmoji/E20F.svg",
+      "sourceHexcode": "E20F",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7E9": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7E9.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7E9"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7E9.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7E9",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F7E9": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F7E9.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F7E9"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F7E9.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F7E9",
+      "collection": "extras-openmoji"
     },
     "E188": {
-      "path": "/openmoji-extras/E188.svg",
-      "sourceHexcode": "E188"
+      "path": "/openmoji/extras-openmoji/E188.svg",
+      "sourceHexcode": "E188",
+      "collection": "extras-openmoji"
     },
     "E427": {
-      "path": "/openmoji-extras/E427.svg",
-      "sourceHexcode": "E427"
+      "path": "/openmoji/extras-openmoji/E427.svg",
+      "sourceHexcode": "E427",
+      "collection": "extras-openmoji"
     },
     "E145": {
-      "path": "/openmoji-extras/E145.svg",
-      "sourceHexcode": "E145"
-    },
-    "1F431-200D-1F4BB": {
-      "path": "/openmoji-extras/1F431-200D-1F4BB.svg",
-      "sourceHexcode": "1F431-200D-1F4BB"
+      "path": "/openmoji/extras-openmoji/E145.svg",
+      "sourceHexcode": "E145",
+      "collection": "extras-openmoji"
     },
     "25C9-FE0F-200D-1F534-200D-25AE-FE0F": {
-      "path": "/openmoji-extras/25C9-FE0F-200D-1F534-200D-25AE-FE0F.svg",
-      "sourceHexcode": "25C9-FE0F-200D-1F534-200D-25AE-FE0F"
+      "path": "/openmoji/extras-openmoji/25C9-FE0F-200D-1F534-200D-25AE-FE0F.svg",
+      "sourceHexcode": "25C9-FE0F-200D-1F534-200D-25AE-FE0F",
+      "collection": "extras-openmoji"
     },
     "E0C0": {
-      "path": "/openmoji-extras/E0C0.svg",
-      "sourceHexcode": "E0C0"
+      "path": "/openmoji/extras-openmoji/E0C0.svg",
+      "sourceHexcode": "E0C0",
+      "collection": "extras-openmoji"
     },
     "E250": {
-      "path": "/openmoji-extras/E250.svg",
-      "sourceHexcode": "E250"
+      "path": "/openmoji/extras-openmoji/E250.svg",
+      "sourceHexcode": "E250",
+      "collection": "extras-openmoji"
     },
     "E211": {
-      "path": "/openmoji-extras/E211.svg",
-      "sourceHexcode": "E211"
+      "path": "/openmoji/extras-openmoji/E211.svg",
+      "sourceHexcode": "E211",
+      "collection": "extras-openmoji"
     },
     "E31D": {
-      "path": "/openmoji-extras/E31D.svg",
-      "sourceHexcode": "E31D"
-    },
-    "2B58": {
-      "path": "/openmoji-extras/2B58.svg",
-      "sourceHexcode": "2B58"
+      "path": "/openmoji/extras-openmoji/E31D.svg",
+      "sourceHexcode": "E31D",
+      "collection": "extras-openmoji"
     },
     "E083": {
-      "path": "/openmoji-extras/E083.svg",
-      "sourceHexcode": "E083"
+      "path": "/openmoji/extras-openmoji/E083.svg",
+      "sourceHexcode": "E083",
+      "collection": "extras-openmoji"
     },
     "E25A": {
-      "path": "/openmoji-extras/E25A.svg",
-      "sourceHexcode": "E25A"
+      "path": "/openmoji/extras-openmoji/E25A.svg",
+      "sourceHexcode": "E25A",
+      "collection": "extras-openmoji"
     },
     "E25E": {
-      "path": "/openmoji-extras/E25E.svg",
-      "sourceHexcode": "E25E"
-    },
-    "2B23": {
-      "path": "/openmoji-extras/2B23.svg",
-      "sourceHexcode": "2B23"
-    },
-    "2BC3": {
-      "path": "/openmoji-extras/2BC3.svg",
-      "sourceHexcode": "2BC3"
+      "path": "/openmoji/extras-openmoji/E25E.svg",
+      "sourceHexcode": "E25E",
+      "collection": "extras-openmoji"
     },
     "E157": {
-      "path": "/openmoji-extras/E157.svg",
-      "sourceHexcode": "E157"
+      "path": "/openmoji/extras-openmoji/E157.svg",
+      "sourceHexcode": "E157",
+      "collection": "extras-openmoji"
     },
     "E184": {
-      "path": "/openmoji-extras/E184.svg",
-      "sourceHexcode": "E184"
+      "path": "/openmoji/extras-openmoji/E184.svg",
+      "sourceHexcode": "E184",
+      "collection": "extras-openmoji"
     },
     "E30F": {
-      "path": "/openmoji-extras/E30F.svg",
-      "sourceHexcode": "E30F"
-    },
-    "002D": {
-      "path": "/openmoji-extras/002D.svg",
-      "sourceHexcode": "002D"
+      "path": "/openmoji/extras-openmoji/E30F.svg",
+      "sourceHexcode": "E30F",
+      "collection": "extras-openmoji"
     },
     "E1D0": {
-      "path": "/openmoji-extras/E1D0.svg",
-      "sourceHexcode": "E1D0"
+      "path": "/openmoji/extras-openmoji/E1D0.svg",
+      "sourceHexcode": "E1D0",
+      "collection": "extras-openmoji"
     },
     "E2C4": {
-      "path": "/openmoji-extras/E2C4.svg",
-      "sourceHexcode": "E2C4"
+      "path": "/openmoji/extras-openmoji/E2C4.svg",
+      "sourceHexcode": "E2C4",
+      "collection": "extras-openmoji"
     },
     "E2C6": {
-      "path": "/openmoji-extras/E2C6.svg",
-      "sourceHexcode": "E2C6"
+      "path": "/openmoji/extras-openmoji/E2C6.svg",
+      "sourceHexcode": "E2C6",
+      "collection": "extras-openmoji"
     },
     "E2C7": {
-      "path": "/openmoji-extras/E2C7.svg",
-      "sourceHexcode": "E2C7"
+      "path": "/openmoji/extras-openmoji/E2C7.svg",
+      "sourceHexcode": "E2C7",
+      "collection": "extras-openmoji"
     },
     "E2C0": {
-      "path": "/openmoji-extras/E2C0.svg",
-      "sourceHexcode": "E2C0"
+      "path": "/openmoji/extras-openmoji/E2C0.svg",
+      "sourceHexcode": "E2C0",
+      "collection": "extras-openmoji"
     },
     "E058": {
-      "path": "/openmoji-extras/E058.svg",
-      "sourceHexcode": "E058"
+      "path": "/openmoji/extras-openmoji/E058.svg",
+      "sourceHexcode": "E058",
+      "collection": "extras-openmoji"
     },
     "E266": {
-      "path": "/openmoji-extras/E266.svg",
-      "sourceHexcode": "E266"
+      "path": "/openmoji/extras-openmoji/E266.svg",
+      "sourceHexcode": "E266",
+      "collection": "extras-openmoji"
     },
     "E281": {
-      "path": "/openmoji-extras/E281.svg",
-      "sourceHexcode": "E281"
+      "path": "/openmoji/extras-openmoji/E281.svg",
+      "sourceHexcode": "E281",
+      "collection": "extras-openmoji"
     },
     "E043": {
-      "path": "/openmoji-extras/E043.svg",
-      "sourceHexcode": "E043"
+      "path": "/openmoji/extras-openmoji/E043.svg",
+      "sourceHexcode": "E043",
+      "collection": "extras-openmoji"
     },
     "E056": {
-      "path": "/openmoji-extras/E056.svg",
-      "sourceHexcode": "E056"
+      "path": "/openmoji/extras-openmoji/E056.svg",
+      "sourceHexcode": "E056",
+      "collection": "extras-openmoji"
     },
     "E42D": {
-      "path": "/openmoji-extras/E42D.svg",
-      "sourceHexcode": "E42D"
+      "path": "/openmoji/extras-openmoji/E42D.svg",
+      "sourceHexcode": "E42D",
+      "collection": "extras-openmoji"
     },
     "E24A": {
-      "path": "/openmoji-extras/E24A.svg",
-      "sourceHexcode": "E24A"
+      "path": "/openmoji/extras-openmoji/E24A.svg",
+      "sourceHexcode": "E24A",
+      "collection": "extras-openmoji"
     },
     "E315": {
-      "path": "/openmoji-extras/E315.svg",
-      "sourceHexcode": "E315"
+      "path": "/openmoji/extras-openmoji/E315.svg",
+      "sourceHexcode": "E315",
+      "collection": "extras-openmoji"
     },
     "E24B": {
-      "path": "/openmoji-extras/E24B.svg",
-      "sourceHexcode": "E24B"
-    },
-    "1FAD9-200D-1F7E6": {
-      "path": "/openmoji-extras/1FAD9-200D-1F7E6.svg",
-      "sourceHexcode": "1FAD9-200D-1F7E6"
-    },
-    "1FAD9-200D-1F7EB": {
-      "path": "/openmoji-extras/1FAD9-200D-1F7EB.svg",
-      "sourceHexcode": "1FAD9-200D-1F7EB"
-    },
-    "1FAD9-200D-1F7E9": {
-      "path": "/openmoji-extras/1FAD9-200D-1F7E9.svg",
-      "sourceHexcode": "1FAD9-200D-1F7E9"
-    },
-    "1FAD9-200D-1F7E7": {
-      "path": "/openmoji-extras/1FAD9-200D-1F7E7.svg",
-      "sourceHexcode": "1FAD9-200D-1F7E7"
-    },
-    "1FAD9-200D-1F7EA": {
-      "path": "/openmoji-extras/1FAD9-200D-1F7EA.svg",
-      "sourceHexcode": "1FAD9-200D-1F7EA"
-    },
-    "1FAD9-200D-1F7E5": {
-      "path": "/openmoji-extras/1FAD9-200D-1F7E5.svg",
-      "sourceHexcode": "1FAD9-200D-1F7E5"
-    },
-    "1FAD9-200D-1F7E8": {
-      "path": "/openmoji-extras/1FAD9-200D-1F7E8.svg",
-      "sourceHexcode": "1FAD9-200D-1F7E8"
+      "path": "/openmoji/extras-openmoji/E24B.svg",
+      "sourceHexcode": "E24B",
+      "collection": "extras-openmoji"
     },
     "E068": {
-      "path": "/openmoji-extras/E068.svg",
-      "sourceHexcode": "E068"
+      "path": "/openmoji/extras-openmoji/E068.svg",
+      "sourceHexcode": "E068",
+      "collection": "extras-openmoji"
     },
     "E05F": {
-      "path": "/openmoji-extras/E05F.svg",
-      "sourceHexcode": "E05F"
+      "path": "/openmoji/extras-openmoji/E05F.svg",
+      "sourceHexcode": "E05F",
+      "collection": "extras-openmoji"
     },
     "E322": {
-      "path": "/openmoji-extras/E322.svg",
-      "sourceHexcode": "E322"
+      "path": "/openmoji/extras-openmoji/E322.svg",
+      "sourceHexcode": "E322",
+      "collection": "extras-openmoji"
     },
     "E148": {
-      "path": "/openmoji-extras/E148.svg",
-      "sourceHexcode": "E148"
+      "path": "/openmoji/extras-openmoji/E148.svg",
+      "sourceHexcode": "E148",
+      "collection": "extras-openmoji"
     },
     "E1D1": {
-      "path": "/openmoji-extras/E1D1.svg",
-      "sourceHexcode": "E1D1"
+      "path": "/openmoji/extras-openmoji/E1D1.svg",
+      "sourceHexcode": "E1D1",
+      "collection": "extras-openmoji"
     },
     "E316": {
-      "path": "/openmoji-extras/E316.svg",
-      "sourceHexcode": "E316"
+      "path": "/openmoji/extras-openmoji/E316.svg",
+      "sourceHexcode": "E316",
+      "collection": "extras-openmoji"
     },
     "E320": {
-      "path": "/openmoji-extras/E320.svg",
-      "sourceHexcode": "E320"
+      "path": "/openmoji/extras-openmoji/E320.svg",
+      "sourceHexcode": "E320",
+      "collection": "extras-openmoji"
     },
     "E04E": {
-      "path": "/openmoji-extras/E04E.svg",
-      "sourceHexcode": "E04E"
-    },
-    "1F3F4-E0065-E0073-E0072-E0069-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0072-E0069-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0072-E0069-E007F"
+      "path": "/openmoji/extras-openmoji/E04E.svg",
+      "sourceHexcode": "E04E",
+      "collection": "extras-openmoji"
     },
     "E314": {
-      "path": "/openmoji-extras/E314.svg",
-      "sourceHexcode": "E314"
+      "path": "/openmoji/extras-openmoji/E314.svg",
+      "sourceHexcode": "E314",
+      "collection": "extras-openmoji"
     },
     "E0C5": {
-      "path": "/openmoji-extras/E0C5.svg",
-      "sourceHexcode": "E0C5"
+      "path": "/openmoji/extras-openmoji/E0C5.svg",
+      "sourceHexcode": "E0C5",
+      "collection": "extras-openmoji"
     },
     "E343": {
-      "path": "/openmoji-extras/E343.svg",
-      "sourceHexcode": "E343"
+      "path": "/openmoji/extras-openmoji/E343.svg",
+      "sourceHexcode": "E343",
+      "collection": "extras-openmoji"
     },
     "E1C7": {
-      "path": "/openmoji-extras/E1C7.svg",
-      "sourceHexcode": "E1C7"
-    },
-    "2B0C": {
-      "path": "/openmoji-extras/2B0C.svg",
-      "sourceHexcode": "2B0C"
+      "path": "/openmoji/extras-openmoji/E1C7.svg",
+      "sourceHexcode": "E1C7",
+      "collection": "extras-openmoji"
     },
     "E0C2": {
-      "path": "/openmoji-extras/E0C2.svg",
-      "sourceHexcode": "E0C2"
+      "path": "/openmoji/extras-openmoji/E0C2.svg",
+      "sourceHexcode": "E0C2",
+      "collection": "extras-openmoji"
     },
     "E421": {
-      "path": "/openmoji-extras/E421.svg",
-      "sourceHexcode": "E421"
+      "path": "/openmoji/extras-openmoji/E421.svg",
+      "sourceHexcode": "E421",
+      "collection": "extras-openmoji"
     },
     "E143": {
-      "path": "/openmoji-extras/E143.svg",
-      "sourceHexcode": "E143"
+      "path": "/openmoji/extras-openmoji/E143.svg",
+      "sourceHexcode": "E143",
+      "collection": "extras-openmoji"
     },
     "E212": {
-      "path": "/openmoji-extras/E212.svg",
-      "sourceHexcode": "E212"
+      "path": "/openmoji/extras-openmoji/E212.svg",
+      "sourceHexcode": "E212",
+      "collection": "extras-openmoji"
     },
     "E269": {
-      "path": "/openmoji-extras/E269.svg",
-      "sourceHexcode": "E269"
+      "path": "/openmoji/extras-openmoji/E269.svg",
+      "sourceHexcode": "E269",
+      "collection": "extras-openmoji"
     },
     "E046": {
-      "path": "/openmoji-extras/E046.svg",
-      "sourceHexcode": "E046"
+      "path": "/openmoji/extras-openmoji/E046.svg",
+      "sourceHexcode": "E046",
+      "collection": "extras-openmoji"
     },
     "E312": {
-      "path": "/openmoji-extras/E312.svg",
-      "sourceHexcode": "E312"
+      "path": "/openmoji/extras-openmoji/E312.svg",
+      "sourceHexcode": "E312",
+      "collection": "extras-openmoji"
     },
     "E242": {
-      "path": "/openmoji-extras/E242.svg",
-      "sourceHexcode": "E242"
+      "path": "/openmoji/extras-openmoji/E242.svg",
+      "sourceHexcode": "E242",
+      "collection": "extras-openmoji"
     },
     "E0A9": {
-      "path": "/openmoji-extras/E0A9.svg",
-      "sourceHexcode": "E0A9"
+      "path": "/openmoji/extras-openmoji/E0A9.svg",
+      "sourceHexcode": "E0A9",
+      "collection": "extras-openmoji"
     },
     "E244": {
-      "path": "/openmoji-extras/E244.svg",
-      "sourceHexcode": "E244"
+      "path": "/openmoji/extras-openmoji/E244.svg",
+      "sourceHexcode": "E244",
+      "collection": "extras-openmoji"
     },
     "E010": {
-      "path": "/openmoji-extras/E010.svg",
-      "sourceHexcode": "E010"
-    },
-    "1F3F4-E0065-E0073-E006D-E0064-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E006D-E0064-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E006D-E0064-E007F"
+      "path": "/openmoji/extras-openmoji/E010.svg",
+      "sourceHexcode": "E010",
+      "collection": "extras-openmoji"
     },
     "E301": {
-      "path": "/openmoji-extras/E301.svg",
-      "sourceHexcode": "E301"
+      "path": "/openmoji/extras-openmoji/E301.svg",
+      "sourceHexcode": "E301",
+      "collection": "extras-openmoji"
     },
     "E303": {
-      "path": "/openmoji-extras/E303.svg",
-      "sourceHexcode": "E303"
+      "path": "/openmoji/extras-openmoji/E303.svg",
+      "sourceHexcode": "E303",
+      "collection": "extras-openmoji"
     },
     "E186": {
-      "path": "/openmoji-extras/E186.svg",
-      "sourceHexcode": "E186"
+      "path": "/openmoji/extras-openmoji/E186.svg",
+      "sourceHexcode": "E186",
+      "collection": "extras-openmoji"
     },
     "E0AD-200D-2642-FE0F": {
-      "path": "/openmoji-extras/E0AD-200D-2642-FE0F.svg",
-      "sourceHexcode": "E0AD-200D-2642-FE0F"
+      "path": "/openmoji/extras-openmoji/E0AD-200D-2642-FE0F.svg",
+      "sourceHexcode": "E0AD-200D-2642-FE0F",
+      "collection": "extras-openmoji"
     },
     "E0AC-200D-2642-FE0F": {
-      "path": "/openmoji-extras/E0AC-200D-2642-FE0F.svg",
-      "sourceHexcode": "E0AC-200D-2642-FE0F"
+      "path": "/openmoji/extras-openmoji/E0AC-200D-2642-FE0F.svg",
+      "sourceHexcode": "E0AC-200D-2642-FE0F",
+      "collection": "extras-openmoji"
     },
     "E240": {
-      "path": "/openmoji-extras/E240.svg",
-      "sourceHexcode": "E240"
+      "path": "/openmoji/extras-openmoji/E240.svg",
+      "sourceHexcode": "E240",
+      "collection": "extras-openmoji"
     },
     "E06C": {
-      "path": "/openmoji-extras/E06C.svg",
-      "sourceHexcode": "E06C"
+      "path": "/openmoji/extras-openmoji/E06C.svg",
+      "sourceHexcode": "E06C",
+      "collection": "extras-openmoji"
     },
     "E05A": {
-      "path": "/openmoji-extras/E05A.svg",
-      "sourceHexcode": "E05A"
+      "path": "/openmoji/extras-openmoji/E05A.svg",
+      "sourceHexcode": "E05A",
+      "collection": "extras-openmoji"
     },
     "E0C1": {
-      "path": "/openmoji-extras/E0C1.svg",
-      "sourceHexcode": "E0C1"
+      "path": "/openmoji/extras-openmoji/E0C1.svg",
+      "sourceHexcode": "E0C1",
+      "collection": "extras-openmoji"
     },
     "E213": {
-      "path": "/openmoji-extras/E213.svg",
-      "sourceHexcode": "E213"
+      "path": "/openmoji/extras-openmoji/E213.svg",
+      "sourceHexcode": "E213",
+      "collection": "extras-openmoji"
     },
     "E2CE": {
-      "path": "/openmoji-extras/E2CE.svg",
-      "sourceHexcode": "E2CE"
+      "path": "/openmoji/extras-openmoji/E2CE.svg",
+      "sourceHexcode": "E2CE",
+      "collection": "extras-openmoji"
     },
     "E0B4": {
-      "path": "/openmoji-extras/E0B4.svg",
-      "sourceHexcode": "E0B4"
+      "path": "/openmoji/extras-openmoji/E0B4.svg",
+      "sourceHexcode": "E0B4",
+      "collection": "extras-openmoji"
     },
     "E307": {
-      "path": "/openmoji-extras/E307.svg",
-      "sourceHexcode": "E307"
-    },
-    "1F3F4-E0065-E0073-E006D-E006C-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E006D-E006C-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E006D-E006C-E007F"
+      "path": "/openmoji/extras-openmoji/E307.svg",
+      "sourceHexcode": "E307",
+      "collection": "extras-openmoji"
     },
     "E011": {
-      "path": "/openmoji-extras/E011.svg",
-      "sourceHexcode": "E011"
+      "path": "/openmoji/extras-openmoji/E011.svg",
+      "sourceHexcode": "E011",
+      "collection": "extras-openmoji"
     },
     "E153": {
-      "path": "/openmoji-extras/E153.svg",
-      "sourceHexcode": "E153"
+      "path": "/openmoji/extras-openmoji/E153.svg",
+      "sourceHexcode": "E153",
+      "collection": "extras-openmoji"
     },
     "E216": {
-      "path": "/openmoji-extras/E216.svg",
-      "sourceHexcode": "E216"
+      "path": "/openmoji/extras-openmoji/E216.svg",
+      "sourceHexcode": "E216",
+      "collection": "extras-openmoji"
     },
     "E095": {
-      "path": "/openmoji-extras/E095.svg",
-      "sourceHexcode": "E095"
+      "path": "/openmoji/extras-openmoji/E095.svg",
+      "sourceHexcode": "E095",
+      "collection": "extras-openmoji"
     },
     "E096": {
-      "path": "/openmoji-extras/E096.svg",
-      "sourceHexcode": "E096"
+      "path": "/openmoji/extras-openmoji/E096.svg",
+      "sourceHexcode": "E096",
+      "collection": "extras-openmoji"
     },
     "E152": {
-      "path": "/openmoji-extras/E152.svg",
-      "sourceHexcode": "E152"
+      "path": "/openmoji/extras-openmoji/E152.svg",
+      "sourceHexcode": "E152",
+      "collection": "extras-openmoji"
     },
     "E264": {
-      "path": "/openmoji-extras/E264.svg",
-      "sourceHexcode": "E264"
+      "path": "/openmoji/extras-openmoji/E264.svg",
+      "sourceHexcode": "E264",
+      "collection": "extras-openmoji"
     },
     "E1C8": {
-      "path": "/openmoji-extras/E1C8.svg",
-      "sourceHexcode": "E1C8"
+      "path": "/openmoji/extras-openmoji/E1C8.svg",
+      "sourceHexcode": "E1C8",
+      "collection": "extras-openmoji"
     },
     "E14A": {
-      "path": "/openmoji-extras/E14A.svg",
-      "sourceHexcode": "E14A"
+      "path": "/openmoji/extras-openmoji/E14A.svg",
+      "sourceHexcode": "E14A",
+      "collection": "extras-openmoji"
     },
     "E103": {
-      "path": "/openmoji-extras/E103.svg",
-      "sourceHexcode": "E103"
-    },
-    "1F3F4-E0065-E0073-E006D-E0063-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E006D-E0063-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E006D-E0063-E007F"
+      "path": "/openmoji/extras-openmoji/E103.svg",
+      "sourceHexcode": "E103",
+      "collection": "extras-openmoji"
     },
     "E048": {
-      "path": "/openmoji-extras/E048.svg",
-      "sourceHexcode": "E048"
+      "path": "/openmoji/extras-openmoji/E048.svg",
+      "sourceHexcode": "E048",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F4CC-200D-2699-FE0F": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F4CC-200D-2699-FE0F.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F4CC-200D-2699-FE0F"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F4CC-200D-2699-FE0F.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F4CC-200D-2699-FE0F",
+      "collection": "extras-openmoji"
     },
     "E006": {
-      "path": "/openmoji-extras/E006.svg",
-      "sourceHexcode": "E006"
-    },
-    "1F3F4-E0065-E0073-E006E-E0063-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E006E-E0063-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E006E-E0063-E007F"
+      "path": "/openmoji/extras-openmoji/E006.svg",
+      "sourceHexcode": "E006",
+      "collection": "extras-openmoji"
     },
     "E055": {
-      "path": "/openmoji-extras/E055.svg",
-      "sourceHexcode": "E055"
+      "path": "/openmoji/extras-openmoji/E055.svg",
+      "sourceHexcode": "E055",
+      "collection": "extras-openmoji"
     },
     "E380": {
-      "path": "/openmoji-extras/E380.svg",
-      "sourceHexcode": "E380"
+      "path": "/openmoji/extras-openmoji/E380.svg",
+      "sourceHexcode": "E380",
+      "collection": "extras-openmoji"
     },
     "E0A4": {
-      "path": "/openmoji-extras/E0A4.svg",
-      "sourceHexcode": "E0A4"
+      "path": "/openmoji/extras-openmoji/E0A4.svg",
+      "sourceHexcode": "E0A4",
+      "collection": "extras-openmoji"
     },
     "E42E": {
-      "path": "/openmoji-extras/E42E.svg",
-      "sourceHexcode": "E42E"
+      "path": "/openmoji/extras-openmoji/E42E.svg",
+      "sourceHexcode": "E42E",
+      "collection": "extras-openmoji"
     },
     "E0A0": {
-      "path": "/openmoji-extras/E0A0.svg",
-      "sourceHexcode": "E0A0"
+      "path": "/openmoji/extras-openmoji/E0A0.svg",
+      "sourceHexcode": "E0A0",
+      "collection": "extras-openmoji"
     },
     "E2D4": {
-      "path": "/openmoji-extras/E2D4.svg",
-      "sourceHexcode": "E2D4"
+      "path": "/openmoji/extras-openmoji/E2D4.svg",
+      "sourceHexcode": "E2D4",
+      "collection": "extras-openmoji"
     },
     "E2D5": {
-      "path": "/openmoji-extras/E2D5.svg",
-      "sourceHexcode": "E2D5"
+      "path": "/openmoji/extras-openmoji/E2D5.svg",
+      "sourceHexcode": "E2D5",
+      "collection": "extras-openmoji"
     },
     "E2D9": {
-      "path": "/openmoji-extras/E2D9.svg",
-      "sourceHexcode": "E2D9"
+      "path": "/openmoji/extras-openmoji/E2D9.svg",
+      "sourceHexcode": "E2D9",
+      "collection": "extras-openmoji"
     },
     "E2D7": {
-      "path": "/openmoji-extras/E2D7.svg",
-      "sourceHexcode": "E2D7"
+      "path": "/openmoji/extras-openmoji/E2D7.svg",
+      "sourceHexcode": "E2D7",
+      "collection": "extras-openmoji"
     },
     "E2D8": {
-      "path": "/openmoji-extras/E2D8.svg",
-      "sourceHexcode": "E2D8"
+      "path": "/openmoji/extras-openmoji/E2D8.svg",
+      "sourceHexcode": "E2D8",
+      "collection": "extras-openmoji"
     },
     "E2CB": {
-      "path": "/openmoji-extras/E2CB.svg",
-      "sourceHexcode": "E2CB"
+      "path": "/openmoji/extras-openmoji/E2CB.svg",
+      "sourceHexcode": "E2CB",
+      "collection": "extras-openmoji"
     },
     "E0A3": {
-      "path": "/openmoji-extras/E0A3.svg",
-      "sourceHexcode": "E0A3"
-    },
-    "1F3F4-E0063-E0061-E006F-E006E-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0063-E0061-E006F-E006E-E007F.svg",
-      "sourceHexcode": "1F3F4-E0063-E0061-E006F-E006E-E007F"
+      "path": "/openmoji/extras-openmoji/E0A3.svg",
+      "sourceHexcode": "E0A3",
+      "collection": "extras-openmoji"
     },
     "E049": {
-      "path": "/openmoji-extras/E049.svg",
-      "sourceHexcode": "E049"
+      "path": "/openmoji/extras-openmoji/E049.svg",
+      "sourceHexcode": "E049",
+      "collection": "extras-openmoji"
     },
     "E04A": {
-      "path": "/openmoji-extras/E04A.svg",
-      "sourceHexcode": "E04A"
+      "path": "/openmoji/extras-openmoji/E04A.svg",
+      "sourceHexcode": "E04A",
+      "collection": "extras-openmoji"
     },
     "E052": {
-      "path": "/openmoji-extras/E052.svg",
-      "sourceHexcode": "E052"
+      "path": "/openmoji/extras-openmoji/E052.svg",
+      "sourceHexcode": "E052",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7E7": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7E7.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7E7"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7E7.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7E7",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F7E7": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F7E7.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F7E7"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F7E7.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F7E7",
+      "collection": "extras-openmoji"
     },
     "E144": {
-      "path": "/openmoji-extras/E144.svg",
-      "sourceHexcode": "E144"
-    },
-    "2BBC": {
-      "path": "/openmoji-extras/2BBC.svg",
-      "sourceHexcode": "2BBC"
-    },
-    "2BBB": {
-      "path": "/openmoji-extras/2BBB.svg",
-      "sourceHexcode": "2BBB"
-    },
-    "2BBA": {
-      "path": "/openmoji-extras/2BBA.svg",
-      "sourceHexcode": "2BBA"
+      "path": "/openmoji/extras-openmoji/E144.svg",
+      "sourceHexcode": "E144",
+      "collection": "extras-openmoji"
     },
     "E261": {
-      "path": "/openmoji-extras/E261.svg",
-      "sourceHexcode": "E261"
+      "path": "/openmoji/extras-openmoji/E261.svg",
+      "sourceHexcode": "E261",
+      "collection": "extras-openmoji"
     },
     "E107": {
-      "path": "/openmoji-extras/E107.svg",
-      "sourceHexcode": "E107"
+      "path": "/openmoji/extras-openmoji/E107.svg",
+      "sourceHexcode": "E107",
+      "collection": "extras-openmoji"
     },
     "E424": {
-      "path": "/openmoji-extras/E424.svg",
-      "sourceHexcode": "E424"
+      "path": "/openmoji/extras-openmoji/E424.svg",
+      "sourceHexcode": "E424",
+      "collection": "extras-openmoji"
     },
     "E206": {
-      "path": "/openmoji-extras/E206.svg",
-      "sourceHexcode": "E206"
+      "path": "/openmoji/extras-openmoji/E206.svg",
+      "sourceHexcode": "E206",
+      "collection": "extras-openmoji"
     },
     "E30B": {
-      "path": "/openmoji-extras/E30B.svg",
-      "sourceHexcode": "E30B"
+      "path": "/openmoji/extras-openmoji/E30B.svg",
+      "sourceHexcode": "E30B",
+      "collection": "extras-openmoji"
     },
     "E30A": {
-      "path": "/openmoji-extras/E30A.svg",
-      "sourceHexcode": "E30A"
+      "path": "/openmoji/extras-openmoji/E30A.svg",
+      "sourceHexcode": "E30A",
+      "collection": "extras-openmoji"
     },
     "E05B": {
-      "path": "/openmoji-extras/E05B.svg",
-      "sourceHexcode": "E05B"
+      "path": "/openmoji/extras-openmoji/E05B.svg",
+      "sourceHexcode": "E05B",
+      "collection": "extras-openmoji"
     },
     "E246": {
-      "path": "/openmoji-extras/E246.svg",
-      "sourceHexcode": "E246"
+      "path": "/openmoji/extras-openmoji/E246.svg",
+      "sourceHexcode": "E246",
+      "collection": "extras-openmoji"
     },
     "E0AD": {
-      "path": "/openmoji-extras/E0AD.svg",
-      "sourceHexcode": "E0AD"
+      "path": "/openmoji/extras-openmoji/E0AD.svg",
+      "sourceHexcode": "E0AD",
+      "collection": "extras-openmoji"
     },
     "E182": {
-      "path": "/openmoji-extras/E182.svg",
-      "sourceHexcode": "E182"
+      "path": "/openmoji/extras-openmoji/E182.svg",
+      "sourceHexcode": "E182",
+      "collection": "extras-openmoji"
     },
     "E0AC": {
-      "path": "/openmoji-extras/E0AC.svg",
-      "sourceHexcode": "E0AC"
+      "path": "/openmoji/extras-openmoji/E0AC.svg",
+      "sourceHexcode": "E0AC",
+      "collection": "extras-openmoji"
     },
     "E142": {
-      "path": "/openmoji-extras/E142.svg",
-      "sourceHexcode": "E142"
+      "path": "/openmoji/extras-openmoji/E142.svg",
+      "sourceHexcode": "E142",
+      "collection": "extras-openmoji"
     },
     "E009": {
-      "path": "/openmoji-extras/E009.svg",
-      "sourceHexcode": "E009"
+      "path": "/openmoji/extras-openmoji/E009.svg",
+      "sourceHexcode": "E009",
+      "collection": "extras-openmoji"
     },
     "E305": {
-      "path": "/openmoji-extras/E305.svg",
-      "sourceHexcode": "E305"
+      "path": "/openmoji/extras-openmoji/E305.svg",
+      "sourceHexcode": "E305",
+      "collection": "extras-openmoji"
     },
     "E041": {
-      "path": "/openmoji-extras/E041.svg",
-      "sourceHexcode": "E041"
+      "path": "/openmoji/extras-openmoji/E041.svg",
+      "sourceHexcode": "E041",
+      "collection": "extras-openmoji"
     },
     "E05C": {
-      "path": "/openmoji-extras/E05C.svg",
-      "sourceHexcode": "E05C"
+      "path": "/openmoji/extras-openmoji/E05C.svg",
+      "sourceHexcode": "E05C",
+      "collection": "extras-openmoji"
     },
     "E306": {
-      "path": "/openmoji-extras/E306.svg",
-      "sourceHexcode": "E306"
+      "path": "/openmoji/extras-openmoji/E306.svg",
+      "sourceHexcode": "E306",
+      "collection": "extras-openmoji"
     },
     "E0CC": {
-      "path": "/openmoji-extras/E0CC.svg",
-      "sourceHexcode": "E0CC"
+      "path": "/openmoji/extras-openmoji/E0CC.svg",
+      "sourceHexcode": "E0CC",
+      "collection": "extras-openmoji"
     },
     "E2C8": {
-      "path": "/openmoji-extras/E2C8.svg",
-      "sourceHexcode": "E2C8"
+      "path": "/openmoji/extras-openmoji/E2C8.svg",
+      "sourceHexcode": "E2C8",
+      "collection": "extras-openmoji"
     },
     "E2C9": {
-      "path": "/openmoji-extras/E2C9.svg",
-      "sourceHexcode": "E2C9"
+      "path": "/openmoji/extras-openmoji/E2C9.svg",
+      "sourceHexcode": "E2C9",
+      "collection": "extras-openmoji"
     },
     "E2CA": {
-      "path": "/openmoji-extras/E2CA.svg",
-      "sourceHexcode": "E2CA"
+      "path": "/openmoji/extras-openmoji/E2CA.svg",
+      "sourceHexcode": "E2CA",
+      "collection": "extras-openmoji"
     },
     "E2C3": {
-      "path": "/openmoji-extras/E2C3.svg",
-      "sourceHexcode": "E2C3"
+      "path": "/openmoji/extras-openmoji/E2C3.svg",
+      "sourceHexcode": "E2C3",
+      "collection": "extras-openmoji"
     },
     "E42B": {
-      "path": "/openmoji-extras/E42B.svg",
-      "sourceHexcode": "E42B"
+      "path": "/openmoji/extras-openmoji/E42B.svg",
+      "sourceHexcode": "E42B",
+      "collection": "extras-openmoji"
     },
     "E428": {
-      "path": "/openmoji-extras/E428.svg",
-      "sourceHexcode": "E428"
+      "path": "/openmoji/extras-openmoji/E428.svg",
+      "sourceHexcode": "E428",
+      "collection": "extras-openmoji"
     },
     "E0C4": {
-      "path": "/openmoji-extras/E0C4.svg",
-      "sourceHexcode": "E0C4"
+      "path": "/openmoji/extras-openmoji/E0C4.svg",
+      "sourceHexcode": "E0C4",
+      "collection": "extras-openmoji"
     },
     "E002": {
-      "path": "/openmoji-extras/E002.svg",
-      "sourceHexcode": "E002"
+      "path": "/openmoji/extras-openmoji/E002.svg",
+      "sourceHexcode": "E002",
+      "collection": "extras-openmoji"
     },
     "E008": {
-      "path": "/openmoji-extras/E008.svg",
-      "sourceHexcode": "E008"
+      "path": "/openmoji/extras-openmoji/E008.svg",
+      "sourceHexcode": "E008",
+      "collection": "extras-openmoji"
     },
     "E1D5": {
-      "path": "/openmoji-extras/E1D5.svg",
-      "sourceHexcode": "E1D5"
-    },
-    "23FC": {
-      "path": "/openmoji-extras/23FC.svg",
-      "sourceHexcode": "23FC"
-    },
-    "23FD": {
-      "path": "/openmoji-extras/23FD.svg",
-      "sourceHexcode": "23FD"
-    },
-    "23FE": {
-      "path": "/openmoji-extras/23FE.svg",
-      "sourceHexcode": "23FE"
-    },
-    "23FB": {
-      "path": "/openmoji-extras/23FB.svg",
-      "sourceHexcode": "23FB"
+      "path": "/openmoji/extras-openmoji/E1D5.svg",
+      "sourceHexcode": "E1D5",
+      "collection": "extras-openmoji"
     },
     "E0C3": {
-      "path": "/openmoji-extras/E0C3.svg",
-      "sourceHexcode": "E0C3"
+      "path": "/openmoji/extras-openmoji/E0C3.svg",
+      "sourceHexcode": "E0C3",
+      "collection": "extras-openmoji"
     },
     "E420": {
-      "path": "/openmoji-extras/E420.svg",
-      "sourceHexcode": "E420"
+      "path": "/openmoji/extras-openmoji/E420.svg",
+      "sourceHexcode": "E420",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7EA": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7EA.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7EA"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7EA.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7EA",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F7EA": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F7EA.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F7EA"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F7EA.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F7EA",
+      "collection": "extras-openmoji"
     },
     "E1D8": {
-      "path": "/openmoji-extras/E1D8.svg",
-      "sourceHexcode": "E1D8"
+      "path": "/openmoji/extras-openmoji/E1D8.svg",
+      "sourceHexcode": "E1D8",
+      "collection": "extras-openmoji"
     },
     "E0AF": {
-      "path": "/openmoji-extras/E0AF.svg",
-      "sourceHexcode": "E0AF"
-    },
-    "1F3F4-E0063-E0061-E0071-E0063-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0063-E0061-E0071-E0063-E007F.svg",
-      "sourceHexcode": "1F3F4-E0063-E0061-E0071-E0063-E007F"
-    },
-    "1F3F4-E006D-E0078-E0071-E0075-E0065-E007F": {
-      "path": "/openmoji-extras/1F3F4-E006D-E0078-E0071-E0075-E0065-E007F.svg",
-      "sourceHexcode": "1F3F4-E006D-E0078-E0071-E0075-E0065-E007F"
+      "path": "/openmoji/extras-openmoji/E0AF.svg",
+      "sourceHexcode": "E0AF",
+      "collection": "extras-openmoji"
     },
     "E2D3": {
-      "path": "/openmoji-extras/E2D3.svg",
-      "sourceHexcode": "E2D3"
+      "path": "/openmoji/extras-openmoji/E2D3.svg",
+      "sourceHexcode": "E2D3",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F308": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F308.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F308"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F308.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F308",
+      "collection": "extras-openmoji"
     },
     "E1C9": {
-      "path": "/openmoji-extras/E1C9.svg",
-      "sourceHexcode": "E1C9"
+      "path": "/openmoji/extras-openmoji/E1C9.svg",
+      "sourceHexcode": "E1C9",
+      "collection": "extras-openmoji"
     },
     "1F3F4-FE0F-200D-1F170-FE0F": {
-      "path": "/openmoji-extras/1F3F4-FE0F-200D-1F170-FE0F.svg",
-      "sourceHexcode": "1F3F4-FE0F-200D-1F170-FE0F"
+      "path": "/openmoji/extras-openmoji/1F3F4-FE0F-200D-1F170-FE0F.svg",
+      "sourceHexcode": "1F3F4-FE0F-200D-1F170-FE0F",
+      "collection": "extras-openmoji"
     },
     "25C9-FE0F-200D-1F534": {
-      "path": "/openmoji-extras/25C9-FE0F-200D-1F534.svg",
-      "sourceHexcode": "25C9-FE0F-200D-1F534"
+      "path": "/openmoji/extras-openmoji/25C9-FE0F-200D-1F534.svg",
+      "sourceHexcode": "25C9-FE0F-200D-1F534",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7E5": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7E5.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7E5"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7E5.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7E5",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F7E5": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F7E5.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F7E5"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F7E5.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F7E5",
+      "collection": "extras-openmoji"
     },
     "E060": {
-      "path": "/openmoji-extras/E060.svg",
-      "sourceHexcode": "E060"
-    },
-    "1F1E6": {
-      "path": "/openmoji-extras/1F1E6.svg",
-      "sourceHexcode": "1F1E6"
-    },
-    "1F1E7": {
-      "path": "/openmoji-extras/1F1E7.svg",
-      "sourceHexcode": "1F1E7"
-    },
-    "1F1E8": {
-      "path": "/openmoji-extras/1F1E8.svg",
-      "sourceHexcode": "1F1E8"
-    },
-    "1F1E9": {
-      "path": "/openmoji-extras/1F1E9.svg",
-      "sourceHexcode": "1F1E9"
-    },
-    "1F1EA": {
-      "path": "/openmoji-extras/1F1EA.svg",
-      "sourceHexcode": "1F1EA"
-    },
-    "1F1EB": {
-      "path": "/openmoji-extras/1F1EB.svg",
-      "sourceHexcode": "1F1EB"
-    },
-    "1F1EC": {
-      "path": "/openmoji-extras/1F1EC.svg",
-      "sourceHexcode": "1F1EC"
-    },
-    "1F1ED": {
-      "path": "/openmoji-extras/1F1ED.svg",
-      "sourceHexcode": "1F1ED"
-    },
-    "1F1EE": {
-      "path": "/openmoji-extras/1F1EE.svg",
-      "sourceHexcode": "1F1EE"
-    },
-    "1F1EF": {
-      "path": "/openmoji-extras/1F1EF.svg",
-      "sourceHexcode": "1F1EF"
-    },
-    "1F1F0": {
-      "path": "/openmoji-extras/1F1F0.svg",
-      "sourceHexcode": "1F1F0"
-    },
-    "1F1F1": {
-      "path": "/openmoji-extras/1F1F1.svg",
-      "sourceHexcode": "1F1F1"
-    },
-    "1F1F2": {
-      "path": "/openmoji-extras/1F1F2.svg",
-      "sourceHexcode": "1F1F2"
-    },
-    "1F1F3": {
-      "path": "/openmoji-extras/1F1F3.svg",
-      "sourceHexcode": "1F1F3"
-    },
-    "1F1F4": {
-      "path": "/openmoji-extras/1F1F4.svg",
-      "sourceHexcode": "1F1F4"
-    },
-    "1F1F5": {
-      "path": "/openmoji-extras/1F1F5.svg",
-      "sourceHexcode": "1F1F5"
-    },
-    "1F1F6": {
-      "path": "/openmoji-extras/1F1F6.svg",
-      "sourceHexcode": "1F1F6"
-    },
-    "1F1F7": {
-      "path": "/openmoji-extras/1F1F7.svg",
-      "sourceHexcode": "1F1F7"
-    },
-    "1F1F8": {
-      "path": "/openmoji-extras/1F1F8.svg",
-      "sourceHexcode": "1F1F8"
-    },
-    "1F1F9": {
-      "path": "/openmoji-extras/1F1F9.svg",
-      "sourceHexcode": "1F1F9"
-    },
-    "1F1FA": {
-      "path": "/openmoji-extras/1F1FA.svg",
-      "sourceHexcode": "1F1FA"
-    },
-    "1F1FB": {
-      "path": "/openmoji-extras/1F1FB.svg",
-      "sourceHexcode": "1F1FB"
-    },
-    "1F1FC": {
-      "path": "/openmoji-extras/1F1FC.svg",
-      "sourceHexcode": "1F1FC"
-    },
-    "1F1FD": {
-      "path": "/openmoji-extras/1F1FD.svg",
-      "sourceHexcode": "1F1FD"
-    },
-    "1F1FE": {
-      "path": "/openmoji-extras/1F1FE.svg",
-      "sourceHexcode": "1F1FE"
-    },
-    "1F1FF": {
-      "path": "/openmoji-extras/1F1FF.svg",
-      "sourceHexcode": "1F1FF"
+      "path": "/openmoji/extras-openmoji/E060.svg",
+      "sourceHexcode": "E060",
+      "collection": "extras-openmoji"
     },
     "E24D": {
-      "path": "/openmoji-extras/E24D.svg",
-      "sourceHexcode": "E24D"
+      "path": "/openmoji/extras-openmoji/E24D.svg",
+      "sourceHexcode": "E24D",
+      "collection": "extras-openmoji"
     },
     "E2D2": {
-      "path": "/openmoji-extras/E2D2.svg",
-      "sourceHexcode": "E2D2"
+      "path": "/openmoji/extras-openmoji/E2D2.svg",
+      "sourceHexcode": "E2D2",
+      "collection": "extras-openmoji"
     },
     "E0C6": {
-      "path": "/openmoji-extras/E0C6.svg",
-      "sourceHexcode": "E0C6"
-    },
-    "1F265": {
-      "path": "/openmoji-extras/1F265.svg",
-      "sourceHexcode": "1F265"
-    },
-    "1F260": {
-      "path": "/openmoji-extras/1F260.svg",
-      "sourceHexcode": "1F260"
-    },
-    "1F261": {
-      "path": "/openmoji-extras/1F261.svg",
-      "sourceHexcode": "1F261"
-    },
-    "1F262": {
-      "path": "/openmoji-extras/1F262.svg",
-      "sourceHexcode": "1F262"
-    },
-    "1F264": {
-      "path": "/openmoji-extras/1F264.svg",
-      "sourceHexcode": "1F264"
-    },
-    "1F263": {
-      "path": "/openmoji-extras/1F263.svg",
-      "sourceHexcode": "1F263"
+      "path": "/openmoji/extras-openmoji/E0C6.svg",
+      "sourceHexcode": "E0C6",
+      "collection": "extras-openmoji"
     },
     "E04F": {
-      "path": "/openmoji-extras/E04F.svg",
-      "sourceHexcode": "E04F"
+      "path": "/openmoji/extras-openmoji/E04F.svg",
+      "sourceHexcode": "E04F",
+      "collection": "extras-openmoji"
     },
     "E051": {
-      "path": "/openmoji-extras/E051.svg",
-      "sourceHexcode": "E051"
+      "path": "/openmoji/extras-openmoji/E051.svg",
+      "sourceHexcode": "E051",
+      "collection": "extras-openmoji"
     },
     "E247": {
-      "path": "/openmoji-extras/E247.svg",
-      "sourceHexcode": "E247"
+      "path": "/openmoji/extras-openmoji/E247.svg",
+      "sourceHexcode": "E247",
+      "collection": "extras-openmoji"
     },
     "E30C": {
-      "path": "/openmoji-extras/E30C.svg",
-      "sourceHexcode": "E30C"
+      "path": "/openmoji/extras-openmoji/E30C.svg",
+      "sourceHexcode": "E30C",
+      "collection": "extras-openmoji"
     },
     "E0B1": {
-      "path": "/openmoji-extras/E0B1.svg",
-      "sourceHexcode": "E0B1"
+      "path": "/openmoji/extras-openmoji/E0B1.svg",
+      "sourceHexcode": "E0B1",
+      "collection": "extras-openmoji"
     },
     "E25C": {
-      "path": "/openmoji-extras/E25C.svg",
-      "sourceHexcode": "E25C"
+      "path": "/openmoji/extras-openmoji/E25C.svg",
+      "sourceHexcode": "E25C",
+      "collection": "extras-openmoji"
     },
     "E348": {
-      "path": "/openmoji-extras/E348.svg",
-      "sourceHexcode": "E348"
+      "path": "/openmoji/extras-openmoji/E348.svg",
+      "sourceHexcode": "E348",
+      "collection": "extras-openmoji"
     },
     "E243": {
-      "path": "/openmoji-extras/E243.svg",
-      "sourceHexcode": "E243"
+      "path": "/openmoji/extras-openmoji/E243.svg",
+      "sourceHexcode": "E243",
+      "collection": "extras-openmoji"
     },
     "E32B": {
-      "path": "/openmoji-extras/E32B.svg",
-      "sourceHexcode": "E32B"
+      "path": "/openmoji/extras-openmoji/E32B.svg",
+      "sourceHexcode": "E32B",
+      "collection": "extras-openmoji"
     },
     "E207": {
-      "path": "/openmoji-extras/E207.svg",
-      "sourceHexcode": "E207"
+      "path": "/openmoji/extras-openmoji/E207.svg",
+      "sourceHexcode": "E207",
+      "collection": "extras-openmoji"
     },
     "E208": {
-      "path": "/openmoji-extras/E208.svg",
-      "sourceHexcode": "E208"
+      "path": "/openmoji/extras-openmoji/E208.svg",
+      "sourceHexcode": "E208",
+      "collection": "extras-openmoji"
     },
     "E209": {
-      "path": "/openmoji-extras/E209.svg",
-      "sourceHexcode": "E209"
+      "path": "/openmoji/extras-openmoji/E209.svg",
+      "sourceHexcode": "E209",
+      "collection": "extras-openmoji"
     },
     "E104": {
-      "path": "/openmoji-extras/E104.svg",
-      "sourceHexcode": "E104"
+      "path": "/openmoji/extras-openmoji/E104.svg",
+      "sourceHexcode": "E104",
+      "collection": "extras-openmoji"
     },
     "E106": {
-      "path": "/openmoji-extras/E106.svg",
-      "sourceHexcode": "E106"
+      "path": "/openmoji/extras-openmoji/E106.svg",
+      "sourceHexcode": "E106",
+      "collection": "extras-openmoji"
     },
     "E2D0": {
-      "path": "/openmoji-extras/E2D0.svg",
-      "sourceHexcode": "E2D0"
+      "path": "/openmoji/extras-openmoji/E2D0.svg",
+      "sourceHexcode": "E2D0",
+      "collection": "extras-openmoji"
     },
     "E253": {
-      "path": "/openmoji-extras/E253.svg",
-      "sourceHexcode": "E253"
+      "path": "/openmoji/extras-openmoji/E253.svg",
+      "sourceHexcode": "E253",
+      "collection": "extras-openmoji"
     },
     "E098": {
-      "path": "/openmoji-extras/E098.svg",
-      "sourceHexcode": "E098"
+      "path": "/openmoji/extras-openmoji/E098.svg",
+      "sourceHexcode": "E098",
+      "collection": "extras-openmoji"
     },
     "E05D": {
-      "path": "/openmoji-extras/E05D.svg",
-      "sourceHexcode": "E05D"
+      "path": "/openmoji/extras-openmoji/E05D.svg",
+      "sourceHexcode": "E05D",
+      "collection": "extras-openmoji"
     },
     "E094": {
-      "path": "/openmoji-extras/E094.svg",
-      "sourceHexcode": "E094"
+      "path": "/openmoji/extras-openmoji/E094.svg",
+      "sourceHexcode": "E094",
+      "collection": "extras-openmoji"
     },
     "E24C": {
-      "path": "/openmoji-extras/E24C.svg",
-      "sourceHexcode": "E24C"
+      "path": "/openmoji/extras-openmoji/E24C.svg",
+      "sourceHexcode": "E24C",
+      "collection": "extras-openmoji"
     },
     "E1CE": {
-      "path": "/openmoji-extras/E1CE.svg",
-      "sourceHexcode": "E1CE"
+      "path": "/openmoji/extras-openmoji/E1CE.svg",
+      "sourceHexcode": "E1CE",
+      "collection": "extras-openmoji"
     },
     "E0B0": {
-      "path": "/openmoji-extras/E0B0.svg",
-      "sourceHexcode": "E0B0"
+      "path": "/openmoji/extras-openmoji/E0B0.svg",
+      "sourceHexcode": "E0B0",
+      "collection": "extras-openmoji"
     },
     "E1D6": {
-      "path": "/openmoji-extras/E1D6.svg",
-      "sourceHexcode": "E1D6"
+      "path": "/openmoji/extras-openmoji/E1D6.svg",
+      "sourceHexcode": "E1D6",
+      "collection": "extras-openmoji"
     },
     "E2CD": {
-      "path": "/openmoji-extras/E2CD.svg",
-      "sourceHexcode": "E2CD"
+      "path": "/openmoji/extras-openmoji/E2CD.svg",
+      "sourceHexcode": "E2CD",
+      "collection": "extras-openmoji"
     },
     "E265": {
-      "path": "/openmoji-extras/E265.svg",
-      "sourceHexcode": "E265"
+      "path": "/openmoji/extras-openmoji/E265.svg",
+      "sourceHexcode": "E265",
+      "collection": "extras-openmoji"
     },
     "E0A2": {
-      "path": "/openmoji-extras/E0A2.svg",
-      "sourceHexcode": "E0A2"
+      "path": "/openmoji/extras-openmoji/E0A2.svg",
+      "sourceHexcode": "E0A2",
+      "collection": "extras-openmoji"
     },
     "E20B": {
-      "path": "/openmoji-extras/E20B.svg",
-      "sourceHexcode": "E20B"
+      "path": "/openmoji/extras-openmoji/E20B.svg",
+      "sourceHexcode": "E20B",
+      "collection": "extras-openmoji"
     },
     "E345": {
-      "path": "/openmoji-extras/E345.svg",
-      "sourceHexcode": "E345"
+      "path": "/openmoji/extras-openmoji/E345.svg",
+      "sourceHexcode": "E345",
+      "collection": "extras-openmoji"
     },
     "E146": {
-      "path": "/openmoji-extras/E146.svg",
-      "sourceHexcode": "E146"
+      "path": "/openmoji/extras-openmoji/E146.svg",
+      "sourceHexcode": "E146",
+      "collection": "extras-openmoji"
     },
     "E004": {
-      "path": "/openmoji-extras/E004.svg",
-      "sourceHexcode": "E004"
-    },
-    "25E7": {
-      "path": "/openmoji-extras/25E7.svg",
-      "sourceHexcode": "25E7"
-    },
-    "25EA": {
-      "path": "/openmoji-extras/25EA.svg",
-      "sourceHexcode": "25EA"
-    },
-    "25E8": {
-      "path": "/openmoji-extras/25E8.svg",
-      "sourceHexcode": "25E8"
-    },
-    "25E9": {
-      "path": "/openmoji-extras/25E9.svg",
-      "sourceHexcode": "25E9"
+      "path": "/openmoji/extras-openmoji/E004.svg",
+      "sourceHexcode": "E004",
+      "collection": "extras-openmoji"
     },
     "E202": {
-      "path": "/openmoji-extras/E202.svg",
-      "sourceHexcode": "E202"
-    },
-    "2BEA": {
-      "path": "/openmoji-extras/2BEA.svg",
-      "sourceHexcode": "2BEA"
-    },
-    "2BEB": {
-      "path": "/openmoji-extras/2BEB.svg",
-      "sourceHexcode": "2BEB"
+      "path": "/openmoji/extras-openmoji/E202.svg",
+      "sourceHexcode": "E202",
+      "collection": "extras-openmoji"
     },
     "E214": {
-      "path": "/openmoji-extras/E214.svg",
-      "sourceHexcode": "E214"
-    },
-    "1FBC5": {
-      "path": "/openmoji-extras/1FBC5.svg",
-      "sourceHexcode": "1FBC5"
-    },
-    "1FBC7": {
-      "path": "/openmoji-extras/1FBC7.svg",
-      "sourceHexcode": "1FBC7"
-    },
-    "1FBC8": {
-      "path": "/openmoji-extras/1FBC8.svg",
-      "sourceHexcode": "1FBC8"
-    },
-    "1FBC6": {
-      "path": "/openmoji-extras/1FBC6.svg",
-      "sourceHexcode": "1FBC6"
-    },
-    "1FBC9": {
-      "path": "/openmoji-extras/1FBC9.svg",
-      "sourceHexcode": "1FBC9"
+      "path": "/openmoji/extras-openmoji/E214.svg",
+      "sourceHexcode": "E214",
+      "collection": "extras-openmoji"
     },
     "1FBC6-200D-1F457": {
-      "path": "/openmoji-extras/1FBC6-200D-1F457.svg",
-      "sourceHexcode": "1FBC6-200D-1F457"
+      "path": "/openmoji/extras-openmoji/1FBC6-200D-1F457.svg",
+      "sourceHexcode": "1FBC6-200D-1F457",
+      "collection": "extras-openmoji"
     },
     "1FBC7-200D-1F457": {
-      "path": "/openmoji-extras/1FBC7-200D-1F457.svg",
-      "sourceHexcode": "1FBC7-200D-1F457"
+      "path": "/openmoji/extras-openmoji/1FBC7-200D-1F457.svg",
+      "sourceHexcode": "1FBC7-200D-1F457",
+      "collection": "extras-openmoji"
     },
     "1FBC8-200D-1F457": {
-      "path": "/openmoji-extras/1FBC8-200D-1F457.svg",
-      "sourceHexcode": "1FBC8-200D-1F457"
+      "path": "/openmoji/extras-openmoji/1FBC8-200D-1F457.svg",
+      "sourceHexcode": "1FBC8-200D-1F457",
+      "collection": "extras-openmoji"
     },
     "E313": {
-      "path": "/openmoji-extras/E313.svg",
-      "sourceHexcode": "E313"
+      "path": "/openmoji/extras-openmoji/E313.svg",
+      "sourceHexcode": "E313",
+      "collection": "extras-openmoji"
     },
     "E328": {
-      "path": "/openmoji-extras/E328.svg",
-      "sourceHexcode": "E328"
+      "path": "/openmoji/extras-openmoji/E328.svg",
+      "sourceHexcode": "E328",
+      "collection": "extras-openmoji"
     },
     "E089": {
-      "path": "/openmoji-extras/E089.svg",
-      "sourceHexcode": "E089"
+      "path": "/openmoji/extras-openmoji/E089.svg",
+      "sourceHexcode": "E089",
+      "collection": "extras-openmoji"
     },
     "E20A": {
-      "path": "/openmoji-extras/E20A.svg",
-      "sourceHexcode": "E20A"
+      "path": "/openmoji/extras-openmoji/E20A.svg",
+      "sourceHexcode": "E20A",
+      "collection": "extras-openmoji"
     },
     "E1C4": {
-      "path": "/openmoji-extras/E1C4.svg",
-      "sourceHexcode": "E1C4"
+      "path": "/openmoji/extras-openmoji/E1C4.svg",
+      "sourceHexcode": "E1C4",
+      "collection": "extras-openmoji"
     },
     "E06B": {
-      "path": "/openmoji-extras/E06B.svg",
-      "sourceHexcode": "E06B"
+      "path": "/openmoji/extras-openmoji/E06B.svg",
+      "sourceHexcode": "E06B",
+      "collection": "extras-openmoji"
     },
     "E30E": {
-      "path": "/openmoji-extras/E30E.svg",
-      "sourceHexcode": "E30E"
+      "path": "/openmoji/extras-openmoji/E30E.svg",
+      "sourceHexcode": "E30E",
+      "collection": "extras-openmoji"
     },
     "E105": {
-      "path": "/openmoji-extras/E105.svg",
-      "sourceHexcode": "E105"
+      "path": "/openmoji/extras-openmoji/E105.svg",
+      "sourceHexcode": "E105",
+      "collection": "extras-openmoji"
     },
     "E10B": {
-      "path": "/openmoji-extras/E10B.svg",
-      "sourceHexcode": "E10B"
+      "path": "/openmoji/extras-openmoji/E10B.svg",
+      "sourceHexcode": "E10B",
+      "collection": "extras-openmoji"
     },
     "E108": {
-      "path": "/openmoji-extras/E108.svg",
-      "sourceHexcode": "E108"
+      "path": "/openmoji/extras-openmoji/E108.svg",
+      "sourceHexcode": "E108",
+      "collection": "extras-openmoji"
     },
     "E10A": {
-      "path": "/openmoji-extras/E10A.svg",
-      "sourceHexcode": "E10A"
+      "path": "/openmoji/extras-openmoji/E10A.svg",
+      "sourceHexcode": "E10A",
+      "collection": "extras-openmoji"
     },
     "E109": {
-      "path": "/openmoji-extras/E109.svg",
-      "sourceHexcode": "E109"
+      "path": "/openmoji/extras-openmoji/E109.svg",
+      "sourceHexcode": "E109",
+      "collection": "extras-openmoji"
     },
     "E1C3": {
-      "path": "/openmoji-extras/E1C3.svg",
-      "sourceHexcode": "E1C3"
+      "path": "/openmoji/extras-openmoji/E1C3.svg",
+      "sourceHexcode": "E1C3",
+      "collection": "extras-openmoji"
     },
     "E1CC": {
-      "path": "/openmoji-extras/E1CC.svg",
-      "sourceHexcode": "E1CC"
+      "path": "/openmoji/extras-openmoji/E1CC.svg",
+      "sourceHexcode": "E1CC",
+      "collection": "extras-openmoji"
     },
     "E100": {
-      "path": "/openmoji-extras/E100.svg",
-      "sourceHexcode": "E100"
+      "path": "/openmoji/extras-openmoji/E100.svg",
+      "sourceHexcode": "E100",
+      "collection": "extras-openmoji"
     },
     "E149": {
-      "path": "/openmoji-extras/E149.svg",
-      "sourceHexcode": "E149"
+      "path": "/openmoji/extras-openmoji/E149.svg",
+      "sourceHexcode": "E149",
+      "collection": "extras-openmoji"
     },
     "E0B3": {
-      "path": "/openmoji-extras/E0B3.svg",
-      "sourceHexcode": "E0B3"
+      "path": "/openmoji/extras-openmoji/E0B3.svg",
+      "sourceHexcode": "E0B3",
+      "collection": "extras-openmoji"
     },
     "E215": {
-      "path": "/openmoji-extras/E215.svg",
-      "sourceHexcode": "E215"
-    },
-    "1F3F4-E0075-E0073-E0074-E0078-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0075-E0073-E0074-E0078-E007F.svg",
-      "sourceHexcode": "1F3F4-E0075-E0073-E0074-E0078-E007F"
+      "path": "/openmoji/extras-openmoji/E215.svg",
+      "sourceHexcode": "E215",
+      "collection": "extras-openmoji"
     },
     "E102": {
-      "path": "/openmoji-extras/E102.svg",
-      "sourceHexcode": "E102"
+      "path": "/openmoji/extras-openmoji/E102.svg",
+      "sourceHexcode": "E102",
+      "collection": "extras-openmoji"
     },
     "E0AB": {
-      "path": "/openmoji-extras/E0AB.svg",
-      "sourceHexcode": "E0AB"
+      "path": "/openmoji/extras-openmoji/E0AB.svg",
+      "sourceHexcode": "E0AB",
+      "collection": "extras-openmoji"
     },
     "E241": {
-      "path": "/openmoji-extras/E241.svg",
-      "sourceHexcode": "E241"
+      "path": "/openmoji/extras-openmoji/E241.svg",
+      "sourceHexcode": "E241",
+      "collection": "extras-openmoji"
     },
     "E245": {
-      "path": "/openmoji-extras/E245.svg",
-      "sourceHexcode": "E245"
+      "path": "/openmoji/extras-openmoji/E245.svg",
+      "sourceHexcode": "E245",
+      "collection": "extras-openmoji"
     },
     "E203": {
-      "path": "/openmoji-extras/E203.svg",
-      "sourceHexcode": "E203"
+      "path": "/openmoji/extras-openmoji/E203.svg",
+      "sourceHexcode": "E203",
+      "collection": "extras-openmoji"
     },
     "E0A1": {
-      "path": "/openmoji-extras/E0A1.svg",
-      "sourceHexcode": "E0A1"
+      "path": "/openmoji/extras-openmoji/E0A1.svg",
+      "sourceHexcode": "E0A1",
+      "collection": "extras-openmoji"
     },
     "E346": {
-      "path": "/openmoji-extras/E346.svg",
-      "sourceHexcode": "E346"
+      "path": "/openmoji/extras-openmoji/E346.svg",
+      "sourceHexcode": "E346",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F9CA-200D-1F48E": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F9CA-200D-1F48E.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F9CA-200D-1F48E"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F9CA-200D-1F48E.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F9CA-200D-1F48E",
+      "collection": "extras-openmoji"
     },
     "E183": {
-      "path": "/openmoji-extras/E183.svg",
-      "sourceHexcode": "E183"
+      "path": "/openmoji/extras-openmoji/E183.svg",
+      "sourceHexcode": "E183",
+      "collection": "extras-openmoji"
     },
     "E09B": {
-      "path": "/openmoji-extras/E09B.svg",
-      "sourceHexcode": "E09B"
+      "path": "/openmoji/extras-openmoji/E09B.svg",
+      "sourceHexcode": "E09B",
+      "collection": "extras-openmoji"
     },
     "E040": {
-      "path": "/openmoji-extras/E040.svg",
-      "sourceHexcode": "E040"
+      "path": "/openmoji/extras-openmoji/E040.svg",
+      "sourceHexcode": "E040",
+      "collection": "extras-openmoji"
     },
     "E069": {
-      "path": "/openmoji-extras/E069.svg",
-      "sourceHexcode": "E069"
+      "path": "/openmoji/extras-openmoji/E069.svg",
+      "sourceHexcode": "E069",
+      "collection": "extras-openmoji"
     },
     "E0FF": {
-      "path": "/openmoji-extras/E0FF.svg",
-      "sourceHexcode": "E0FF"
+      "path": "/openmoji/extras-openmoji/E0FF.svg",
+      "sourceHexcode": "E0FF",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7E6-200D-1F30C": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7E6-200D-1F30C.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7E6-200D-1F30C"
-    },
-    "2B0D": {
-      "path": "/openmoji-extras/2B0D.svg",
-      "sourceHexcode": "2B0D"
-    },
-    "25ED": {
-      "path": "/openmoji-extras/25ED.svg",
-      "sourceHexcode": "25ED"
-    },
-    "25EE": {
-      "path": "/openmoji-extras/25EE.svg",
-      "sourceHexcode": "25EE"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7E6-200D-1F30C.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7E6-200D-1F30C",
+      "collection": "extras-openmoji"
     },
     "E251": {
-      "path": "/openmoji-extras/E251.svg",
-      "sourceHexcode": "E251"
-    },
-    "1F3F4-E0065-E0073-E0076-E0063-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0065-E0073-E0076-E0063-E007F.svg",
-      "sourceHexcode": "1F3F4-E0065-E0073-E0076-E0063-E007F"
+      "path": "/openmoji/extras-openmoji/E251.svg",
+      "sourceHexcode": "E251",
+      "collection": "extras-openmoji"
     },
     "E20C": {
-      "path": "/openmoji-extras/E20C.svg",
-      "sourceHexcode": "E20C"
+      "path": "/openmoji/extras-openmoji/E20C.svg",
+      "sourceHexcode": "E20C",
+      "collection": "extras-openmoji"
     },
     "E1CA": {
-      "path": "/openmoji-extras/E1CA.svg",
-      "sourceHexcode": "E1CA"
+      "path": "/openmoji/extras-openmoji/E1CA.svg",
+      "sourceHexcode": "E1CA",
+      "collection": "extras-openmoji"
     },
     "E09A": {
-      "path": "/openmoji-extras/E09A.svg",
-      "sourceHexcode": "E09A"
+      "path": "/openmoji/extras-openmoji/E09A.svg",
+      "sourceHexcode": "E09A",
+      "collection": "extras-openmoji"
     },
     "E099": {
-      "path": "/openmoji-extras/E099.svg",
-      "sourceHexcode": "E099"
+      "path": "/openmoji/extras-openmoji/E099.svg",
+      "sourceHexcode": "E099",
+      "collection": "extras-openmoji"
     },
     "E08E": {
-      "path": "/openmoji-extras/E08E.svg",
-      "sourceHexcode": "E08E"
+      "path": "/openmoji/extras-openmoji/E08E.svg",
+      "sourceHexcode": "E08E",
+      "collection": "extras-openmoji"
     },
     "E0A5": {
-      "path": "/openmoji-extras/E0A5.svg",
-      "sourceHexcode": "E0A5"
+      "path": "/openmoji/extras-openmoji/E0A5.svg",
+      "sourceHexcode": "E0A5",
+      "collection": "extras-openmoji"
     },
     "E0A6": {
-      "path": "/openmoji-extras/E0A6.svg",
-      "sourceHexcode": "E0A6"
+      "path": "/openmoji/extras-openmoji/E0A6.svg",
+      "sourceHexcode": "E0A6",
+      "collection": "extras-openmoji"
     },
     "E08C": {
-      "path": "/openmoji-extras/E08C.svg",
-      "sourceHexcode": "E08C"
+      "path": "/openmoji/extras-openmoji/E08C.svg",
+      "sourceHexcode": "E08C",
+      "collection": "extras-openmoji"
     },
     "E08D": {
-      "path": "/openmoji-extras/E08D.svg",
-      "sourceHexcode": "E08D"
+      "path": "/openmoji/extras-openmoji/E08D.svg",
+      "sourceHexcode": "E08D",
+      "collection": "extras-openmoji"
     },
     "E0B2": {
-      "path": "/openmoji-extras/E0B2.svg",
-      "sourceHexcode": "E0B2"
+      "path": "/openmoji/extras-openmoji/E0B2.svg",
+      "sourceHexcode": "E0B2",
+      "collection": "extras-openmoji"
     },
     "E1CF": {
-      "path": "/openmoji-extras/E1CF.svg",
-      "sourceHexcode": "E1CF"
-    },
-    "1F3F4-E0075-E0073-E0064-E0063-E007F": {
-      "path": "/openmoji-extras/1F3F4-E0075-E0073-E0064-E0063-E007F.svg",
-      "sourceHexcode": "1F3F4-E0075-E0073-E0064-E0063-E007F"
+      "path": "/openmoji/extras-openmoji/E1CF.svg",
+      "sourceHexcode": "E1CF",
+      "collection": "extras-openmoji"
     },
     "E381": {
-      "path": "/openmoji-extras/E381.svg",
-      "sourceHexcode": "E381"
+      "path": "/openmoji/extras-openmoji/E381.svg",
+      "sourceHexcode": "E381",
+      "collection": "extras-openmoji"
     },
     "E06A": {
-      "path": "/openmoji-extras/E06A.svg",
-      "sourceHexcode": "E06A"
+      "path": "/openmoji/extras-openmoji/E06A.svg",
+      "sourceHexcode": "E06A",
+      "collection": "extras-openmoji"
     },
     "E327": {
-      "path": "/openmoji-extras/E327.svg",
-      "sourceHexcode": "E327"
+      "path": "/openmoji/extras-openmoji/E327.svg",
+      "sourceHexcode": "E327",
+      "collection": "extras-openmoji"
     },
     "E344": {
-      "path": "/openmoji-extras/E344.svg",
-      "sourceHexcode": "E344"
+      "path": "/openmoji/extras-openmoji/E344.svg",
+      "sourceHexcode": "E344",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-2B1C": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-2B1C.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-2B1C"
-    },
-    "2B21": {
-      "path": "/openmoji-extras/2B21.svg",
-      "sourceHexcode": "2B21"
-    },
-    "2B20": {
-      "path": "/openmoji-extras/2B20.svg",
-      "sourceHexcode": "2B20"
-    },
-    "25AD": {
-      "path": "/openmoji-extras/25AD.svg",
-      "sourceHexcode": "25AD"
-    },
-    "25A1": {
-      "path": "/openmoji-extras/25A1.svg",
-      "sourceHexcode": "25A1"
-    },
-    "2B2F": {
-      "path": "/openmoji-extras/2B2F.svg",
-      "sourceHexcode": "2B2F"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-2B1C.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-2B1C",
+      "collection": "extras-openmoji"
     },
     "E254": {
-      "path": "/openmoji-extras/E254.svg",
-      "sourceHexcode": "E254"
+      "path": "/openmoji/extras-openmoji/E254.svg",
+      "sourceHexcode": "E254",
+      "collection": "extras-openmoji"
     },
     "E04B": {
-      "path": "/openmoji-extras/E04B.svg",
-      "sourceHexcode": "E04B"
+      "path": "/openmoji/extras-openmoji/E04B.svg",
+      "sourceHexcode": "E04B",
+      "collection": "extras-openmoji"
     },
     "E08A": {
-      "path": "/openmoji-extras/E08A.svg",
-      "sourceHexcode": "E08A"
+      "path": "/openmoji/extras-openmoji/E08A.svg",
+      "sourceHexcode": "E08A",
+      "collection": "extras-openmoji"
     },
     "E2D1": {
-      "path": "/openmoji-extras/E2D1.svg",
-      "sourceHexcode": "E2D1"
+      "path": "/openmoji/extras-openmoji/E2D1.svg",
+      "sourceHexcode": "E2D1",
+      "collection": "extras-openmoji"
     },
     "F000": {
-      "path": "/openmoji-extras/F000.svg",
-      "sourceHexcode": "F000"
+      "path": "/openmoji/extras-openmoji/F000.svg",
+      "sourceHexcode": "F000",
+      "collection": "extras-openmoji"
     },
     "E189": {
-      "path": "/openmoji-extras/E189.svg",
-      "sourceHexcode": "E189"
+      "path": "/openmoji/extras-openmoji/E189.svg",
+      "sourceHexcode": "E189",
+      "collection": "extras-openmoji"
     },
     "E06D": {
-      "path": "/openmoji-extras/E06D.svg",
-      "sourceHexcode": "E06D"
+      "path": "/openmoji/extras-openmoji/E06D.svg",
+      "sourceHexcode": "E06D",
+      "collection": "extras-openmoji"
     },
     "E1D4": {
-      "path": "/openmoji-extras/E1D4.svg",
-      "sourceHexcode": "E1D4"
+      "path": "/openmoji/extras-openmoji/E1D4.svg",
+      "sourceHexcode": "E1D4",
+      "collection": "extras-openmoji"
     },
     "E1C0": {
-      "path": "/openmoji-extras/E1C0.svg",
-      "sourceHexcode": "E1C0"
+      "path": "/openmoji/extras-openmoji/E1C0.svg",
+      "sourceHexcode": "E1C0",
+      "collection": "extras-openmoji"
     },
     "E187": {
-      "path": "/openmoji-extras/E187.svg",
-      "sourceHexcode": "E187"
+      "path": "/openmoji/extras-openmoji/E187.svg",
+      "sourceHexcode": "E187",
+      "collection": "extras-openmoji"
     },
     "E0AD-200D-2640-FE0F": {
-      "path": "/openmoji-extras/E0AD-200D-2640-FE0F.svg",
-      "sourceHexcode": "E0AD-200D-2640-FE0F"
+      "path": "/openmoji/extras-openmoji/E0AD-200D-2640-FE0F.svg",
+      "sourceHexcode": "E0AD-200D-2640-FE0F",
+      "collection": "extras-openmoji"
     },
     "E0AC-200D-2640-FE0F": {
-      "path": "/openmoji-extras/E0AC-200D-2640-FE0F.svg",
-      "sourceHexcode": "E0AC-200D-2640-FE0F"
+      "path": "/openmoji/extras-openmoji/E0AC-200D-2640-FE0F.svg",
+      "sourceHexcode": "E0AC-200D-2640-FE0F",
+      "collection": "extras-openmoji"
     },
     "1F3F3-FE0F-200D-1F7E8": {
-      "path": "/openmoji-extras/1F3F3-FE0F-200D-1F7E8.svg",
-      "sourceHexcode": "1F3F3-FE0F-200D-1F7E8"
+      "path": "/openmoji/extras-openmoji/1F3F3-FE0F-200D-1F7E8.svg",
+      "sourceHexcode": "1F3F3-FE0F-200D-1F7E8",
+      "collection": "extras-openmoji"
     },
     "2B21-FE0F-200D-1F7E8": {
-      "path": "/openmoji-extras/2B21-FE0F-200D-1F7E8.svg",
-      "sourceHexcode": "2B21-FE0F-200D-1F7E8"
+      "path": "/openmoji/extras-openmoji/2B21-FE0F-200D-1F7E8.svg",
+      "sourceHexcode": "2B21-FE0F-200D-1F7E8",
+      "collection": "extras-openmoji"
     },
     "E044": {
-      "path": "/openmoji-extras/E044.svg",
-      "sourceHexcode": "E044"
+      "path": "/openmoji/extras-openmoji/E044.svg",
+      "sourceHexcode": "E044",
+      "collection": "extras-openmoji"
+    },
+    "1F3F4-E0075-E0073-E0061-E006C-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0075-E0073-E0061-E006C-E007F.svg",
+      "sourceHexcode": "1F3F4-E0075-E0073-E0061-E006C-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0061-E006E-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0061-E006E-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0061-E006E-E007F",
+      "collection": "extras-unicode"
+    },
+    "2B8F": {
+      "path": "/openmoji/extras-unicode/2B8F.svg",
+      "sourceHexcode": "2B8F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0061-E0072-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0061-E0072-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0061-E0072-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0061-E0073-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0061-E0073-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0061-E0073-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0069-E0062-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0069-E0062-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0069-E0062-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0069-E0074-E0062-E0061-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0069-E0074-E0062-E0061-E007F.svg",
+      "sourceHexcode": "1F3F4-E0069-E0074-E0062-E0061-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0070-E0076-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0070-E0076-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0070-E0076-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0064-E0065-E0062-E0079-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0064-E0065-E0062-E0079-E007F.svg",
+      "sourceHexcode": "1F3F4-E0064-E0065-E0062-E0079-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0064-E0065-E0062-E0065-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0064-E0065-E0062-E0065-E007F.svg",
+      "sourceHexcode": "1F3F4-E0064-E0065-E0062-E0065-E007F",
+      "collection": "extras-unicode"
+    },
+    "265D": {
+      "path": "/openmoji/extras-unicode/265D.svg",
+      "sourceHexcode": "265D",
+      "collection": "extras-unicode"
+    },
+    "265A": {
+      "path": "/openmoji/extras-unicode/265A.svg",
+      "sourceHexcode": "265A",
+      "collection": "extras-unicode"
+    },
+    "265E": {
+      "path": "/openmoji/extras-unicode/265E.svg",
+      "sourceHexcode": "265E",
+      "collection": "extras-unicode"
+    },
+    "265B": {
+      "path": "/openmoji/extras-unicode/265B.svg",
+      "sourceHexcode": "265B",
+      "collection": "extras-unicode"
+    },
+    "265C": {
+      "path": "/openmoji/extras-unicode/265C.svg",
+      "sourceHexcode": "265C",
+      "collection": "extras-unicode"
+    },
+    "2B22": {
+      "path": "/openmoji/extras-unicode/2B22.svg",
+      "sourceHexcode": "2B22",
+      "collection": "extras-unicode"
+    },
+    "2B24": {
+      "path": "/openmoji/extras-unicode/2B24.svg",
+      "sourceHexcode": "2B24",
+      "collection": "extras-unicode"
+    },
+    "2BC4": {
+      "path": "/openmoji/extras-unicode/2BC4.svg",
+      "sourceHexcode": "2BC4",
+      "collection": "extras-unicode"
+    },
+    "2B1F": {
+      "path": "/openmoji/extras-unicode/2B1F.svg",
+      "sourceHexcode": "2B1F",
+      "collection": "extras-unicode"
+    },
+    "25AC": {
+      "path": "/openmoji/extras-unicode/25AC.svg",
+      "sourceHexcode": "25AC",
+      "collection": "extras-unicode"
+    },
+    "2B2E": {
+      "path": "/openmoji/extras-unicode/2B2E.svg",
+      "sourceHexcode": "2B2E",
+      "collection": "extras-unicode"
+    },
+    "25AE": {
+      "path": "/openmoji/extras-unicode/25AE.svg",
+      "sourceHexcode": "25AE",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0066-E0072-E0062-E0072-E0065-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0066-E0072-E0062-E0072-E0065-E007F.svg",
+      "sourceHexcode": "1F3F4-E0066-E0072-E0062-E0072-E0065-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0075-E0073-E0063-E0061-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0075-E0073-E0063-E0061-E007F.svg",
+      "sourceHexcode": "1F3F4-E0075-E0073-E0063-E0061-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0063-E006E-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0063-E006E-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E006E-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0063-E0062-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0063-E0062-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E0062-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0063-E006C-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0063-E006C-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E006C-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0063-E006D-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0063-E006D-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E006D-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0063-E0074-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0063-E0074-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E0074-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0063-E0065-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0063-E0065-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0063-E0065-E007F",
+      "collection": "extras-unicode"
+    },
+    "25D0": {
+      "path": "/openmoji/extras-unicode/25D0.svg",
+      "sourceHexcode": "25D0",
+      "collection": "extras-unicode"
+    },
+    "25D1": {
+      "path": "/openmoji/extras-unicode/25D1.svg",
+      "sourceHexcode": "25D1",
+      "collection": "extras-unicode"
+    },
+    "1F10E": {
+      "path": "/openmoji/extras-unicode/1F10E.svg",
+      "sourceHexcode": "1F10E",
+      "collection": "extras-unicode"
+    },
+    "1F16E": {
+      "path": "/openmoji/extras-unicode/1F16E.svg",
+      "sourceHexcode": "1F16E",
+      "collection": "extras-unicode"
+    },
+    "1F16D": {
+      "path": "/openmoji/extras-unicode/1F16D.svg",
+      "sourceHexcode": "1F16D",
+      "collection": "extras-unicode"
+    },
+    "1F10F": {
+      "path": "/openmoji/extras-unicode/1F10F.svg",
+      "sourceHexcode": "1F10F",
+      "collection": "extras-unicode"
+    },
+    "229C": {
+      "path": "/openmoji/extras-unicode/229C.svg",
+      "sourceHexcode": "229C",
+      "collection": "extras-unicode"
+    },
+    "1F16F": {
+      "path": "/openmoji/extras-unicode/1F16F.svg",
+      "sourceHexcode": "1F16F",
+      "collection": "extras-unicode"
+    },
+    "1F10D": {
+      "path": "/openmoji/extras-unicode/1F10D.svg",
+      "sourceHexcode": "1F10D",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0075-E0073-E0063-E006F-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0075-E0073-E0063-E006F-E007F.svg",
+      "sourceHexcode": "1F3F4-E0075-E0073-E0063-E006F-E007F",
+      "collection": "extras-unicode"
+    },
+    "20E3": {
+      "path": "/openmoji/extras-unicode/20E3.svg",
+      "sourceHexcode": "20E3",
+      "collection": "extras-unicode"
+    },
+    "1F12F": {
+      "path": "/openmoji/extras-unicode/1F12F.svg",
+      "sourceHexcode": "1F12F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0065-E0078-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0065-E0078-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0065-E0078-E007F",
+      "collection": "extras-unicode"
+    },
+    "25C9": {
+      "path": "/openmoji/extras-unicode/25C9.svg",
+      "sourceHexcode": "25C9",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0067-E0061-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0067-E0061-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0067-E0061-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F431-200D-1F4BB": {
+      "path": "/openmoji/extras-unicode/1F431-200D-1F4BB.svg",
+      "sourceHexcode": "1F431-200D-1F4BB",
+      "collection": "extras-unicode"
+    },
+    "2B58": {
+      "path": "/openmoji/extras-unicode/2B58.svg",
+      "sourceHexcode": "2B58",
+      "collection": "extras-unicode"
+    },
+    "2B23": {
+      "path": "/openmoji/extras-unicode/2B23.svg",
+      "sourceHexcode": "2B23",
+      "collection": "extras-unicode"
+    },
+    "2BC3": {
+      "path": "/openmoji/extras-unicode/2BC3.svg",
+      "sourceHexcode": "2BC3",
+      "collection": "extras-unicode"
+    },
+    "002D": {
+      "path": "/openmoji/extras-unicode/002D.svg",
+      "sourceHexcode": "002D",
+      "collection": "extras-unicode"
+    },
+    "1FAD9-200D-1F7E6": {
+      "path": "/openmoji/extras-unicode/1FAD9-200D-1F7E6.svg",
+      "sourceHexcode": "1FAD9-200D-1F7E6",
+      "collection": "extras-unicode"
+    },
+    "1FAD9-200D-1F7EB": {
+      "path": "/openmoji/extras-unicode/1FAD9-200D-1F7EB.svg",
+      "sourceHexcode": "1FAD9-200D-1F7EB",
+      "collection": "extras-unicode"
+    },
+    "1FAD9-200D-1F7E9": {
+      "path": "/openmoji/extras-unicode/1FAD9-200D-1F7E9.svg",
+      "sourceHexcode": "1FAD9-200D-1F7E9",
+      "collection": "extras-unicode"
+    },
+    "1FAD9-200D-1F7E7": {
+      "path": "/openmoji/extras-unicode/1FAD9-200D-1F7E7.svg",
+      "sourceHexcode": "1FAD9-200D-1F7E7",
+      "collection": "extras-unicode"
+    },
+    "1FAD9-200D-1F7EA": {
+      "path": "/openmoji/extras-unicode/1FAD9-200D-1F7EA.svg",
+      "sourceHexcode": "1FAD9-200D-1F7EA",
+      "collection": "extras-unicode"
+    },
+    "1FAD9-200D-1F7E5": {
+      "path": "/openmoji/extras-unicode/1FAD9-200D-1F7E5.svg",
+      "sourceHexcode": "1FAD9-200D-1F7E5",
+      "collection": "extras-unicode"
+    },
+    "1FAD9-200D-1F7E8": {
+      "path": "/openmoji/extras-unicode/1FAD9-200D-1F7E8.svg",
+      "sourceHexcode": "1FAD9-200D-1F7E8",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0072-E0069-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0072-E0069-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0072-E0069-E007F",
+      "collection": "extras-unicode"
+    },
+    "2B0C": {
+      "path": "/openmoji/extras-unicode/2B0C.svg",
+      "sourceHexcode": "2B0C",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E006D-E0064-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E006D-E0064-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E006D-E0064-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E006D-E006C-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E006D-E006C-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E006D-E006C-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E006D-E0063-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E006D-E0063-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E006D-E0063-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E006E-E0063-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E006E-E0063-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E006E-E0063-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0063-E0061-E006F-E006E-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0063-E0061-E006F-E006E-E007F.svg",
+      "sourceHexcode": "1F3F4-E0063-E0061-E006F-E006E-E007F",
+      "collection": "extras-unicode"
+    },
+    "2BBC": {
+      "path": "/openmoji/extras-unicode/2BBC.svg",
+      "sourceHexcode": "2BBC",
+      "collection": "extras-unicode"
+    },
+    "2BBB": {
+      "path": "/openmoji/extras-unicode/2BBB.svg",
+      "sourceHexcode": "2BBB",
+      "collection": "extras-unicode"
+    },
+    "2BBA": {
+      "path": "/openmoji/extras-unicode/2BBA.svg",
+      "sourceHexcode": "2BBA",
+      "collection": "extras-unicode"
+    },
+    "23FC": {
+      "path": "/openmoji/extras-unicode/23FC.svg",
+      "sourceHexcode": "23FC",
+      "collection": "extras-unicode"
+    },
+    "23FD": {
+      "path": "/openmoji/extras-unicode/23FD.svg",
+      "sourceHexcode": "23FD",
+      "collection": "extras-unicode"
+    },
+    "23FE": {
+      "path": "/openmoji/extras-unicode/23FE.svg",
+      "sourceHexcode": "23FE",
+      "collection": "extras-unicode"
+    },
+    "23FB": {
+      "path": "/openmoji/extras-unicode/23FB.svg",
+      "sourceHexcode": "23FB",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0063-E0061-E0071-E0063-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0063-E0061-E0071-E0063-E007F.svg",
+      "sourceHexcode": "1F3F4-E0063-E0061-E0071-E0063-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E006D-E0078-E0071-E0075-E0065-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E006D-E0078-E0071-E0075-E0065-E007F.svg",
+      "sourceHexcode": "1F3F4-E006D-E0078-E0071-E0075-E0065-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F1E6": {
+      "path": "/openmoji/extras-unicode/1F1E6.svg",
+      "sourceHexcode": "1F1E6",
+      "collection": "extras-unicode"
+    },
+    "1F1E7": {
+      "path": "/openmoji/extras-unicode/1F1E7.svg",
+      "sourceHexcode": "1F1E7",
+      "collection": "extras-unicode"
+    },
+    "1F1E8": {
+      "path": "/openmoji/extras-unicode/1F1E8.svg",
+      "sourceHexcode": "1F1E8",
+      "collection": "extras-unicode"
+    },
+    "1F1E9": {
+      "path": "/openmoji/extras-unicode/1F1E9.svg",
+      "sourceHexcode": "1F1E9",
+      "collection": "extras-unicode"
+    },
+    "1F1EA": {
+      "path": "/openmoji/extras-unicode/1F1EA.svg",
+      "sourceHexcode": "1F1EA",
+      "collection": "extras-unicode"
+    },
+    "1F1EB": {
+      "path": "/openmoji/extras-unicode/1F1EB.svg",
+      "sourceHexcode": "1F1EB",
+      "collection": "extras-unicode"
+    },
+    "1F1EC": {
+      "path": "/openmoji/extras-unicode/1F1EC.svg",
+      "sourceHexcode": "1F1EC",
+      "collection": "extras-unicode"
+    },
+    "1F1ED": {
+      "path": "/openmoji/extras-unicode/1F1ED.svg",
+      "sourceHexcode": "1F1ED",
+      "collection": "extras-unicode"
+    },
+    "1F1EE": {
+      "path": "/openmoji/extras-unicode/1F1EE.svg",
+      "sourceHexcode": "1F1EE",
+      "collection": "extras-unicode"
+    },
+    "1F1EF": {
+      "path": "/openmoji/extras-unicode/1F1EF.svg",
+      "sourceHexcode": "1F1EF",
+      "collection": "extras-unicode"
+    },
+    "1F1F0": {
+      "path": "/openmoji/extras-unicode/1F1F0.svg",
+      "sourceHexcode": "1F1F0",
+      "collection": "extras-unicode"
+    },
+    "1F1F1": {
+      "path": "/openmoji/extras-unicode/1F1F1.svg",
+      "sourceHexcode": "1F1F1",
+      "collection": "extras-unicode"
+    },
+    "1F1F2": {
+      "path": "/openmoji/extras-unicode/1F1F2.svg",
+      "sourceHexcode": "1F1F2",
+      "collection": "extras-unicode"
+    },
+    "1F1F3": {
+      "path": "/openmoji/extras-unicode/1F1F3.svg",
+      "sourceHexcode": "1F1F3",
+      "collection": "extras-unicode"
+    },
+    "1F1F4": {
+      "path": "/openmoji/extras-unicode/1F1F4.svg",
+      "sourceHexcode": "1F1F4",
+      "collection": "extras-unicode"
+    },
+    "1F1F5": {
+      "path": "/openmoji/extras-unicode/1F1F5.svg",
+      "sourceHexcode": "1F1F5",
+      "collection": "extras-unicode"
+    },
+    "1F1F6": {
+      "path": "/openmoji/extras-unicode/1F1F6.svg",
+      "sourceHexcode": "1F1F6",
+      "collection": "extras-unicode"
+    },
+    "1F1F7": {
+      "path": "/openmoji/extras-unicode/1F1F7.svg",
+      "sourceHexcode": "1F1F7",
+      "collection": "extras-unicode"
+    },
+    "1F1F8": {
+      "path": "/openmoji/extras-unicode/1F1F8.svg",
+      "sourceHexcode": "1F1F8",
+      "collection": "extras-unicode"
+    },
+    "1F1F9": {
+      "path": "/openmoji/extras-unicode/1F1F9.svg",
+      "sourceHexcode": "1F1F9",
+      "collection": "extras-unicode"
+    },
+    "1F1FA": {
+      "path": "/openmoji/extras-unicode/1F1FA.svg",
+      "sourceHexcode": "1F1FA",
+      "collection": "extras-unicode"
+    },
+    "1F1FB": {
+      "path": "/openmoji/extras-unicode/1F1FB.svg",
+      "sourceHexcode": "1F1FB",
+      "collection": "extras-unicode"
+    },
+    "1F1FC": {
+      "path": "/openmoji/extras-unicode/1F1FC.svg",
+      "sourceHexcode": "1F1FC",
+      "collection": "extras-unicode"
+    },
+    "1F1FD": {
+      "path": "/openmoji/extras-unicode/1F1FD.svg",
+      "sourceHexcode": "1F1FD",
+      "collection": "extras-unicode"
+    },
+    "1F1FE": {
+      "path": "/openmoji/extras-unicode/1F1FE.svg",
+      "sourceHexcode": "1F1FE",
+      "collection": "extras-unicode"
+    },
+    "1F1FF": {
+      "path": "/openmoji/extras-unicode/1F1FF.svg",
+      "sourceHexcode": "1F1FF",
+      "collection": "extras-unicode"
+    },
+    "1F265": {
+      "path": "/openmoji/extras-unicode/1F265.svg",
+      "sourceHexcode": "1F265",
+      "collection": "extras-unicode"
+    },
+    "1F260": {
+      "path": "/openmoji/extras-unicode/1F260.svg",
+      "sourceHexcode": "1F260",
+      "collection": "extras-unicode"
+    },
+    "1F261": {
+      "path": "/openmoji/extras-unicode/1F261.svg",
+      "sourceHexcode": "1F261",
+      "collection": "extras-unicode"
+    },
+    "1F262": {
+      "path": "/openmoji/extras-unicode/1F262.svg",
+      "sourceHexcode": "1F262",
+      "collection": "extras-unicode"
+    },
+    "1F264": {
+      "path": "/openmoji/extras-unicode/1F264.svg",
+      "sourceHexcode": "1F264",
+      "collection": "extras-unicode"
+    },
+    "1F263": {
+      "path": "/openmoji/extras-unicode/1F263.svg",
+      "sourceHexcode": "1F263",
+      "collection": "extras-unicode"
+    },
+    "25E7": {
+      "path": "/openmoji/extras-unicode/25E7.svg",
+      "sourceHexcode": "25E7",
+      "collection": "extras-unicode"
+    },
+    "25EA": {
+      "path": "/openmoji/extras-unicode/25EA.svg",
+      "sourceHexcode": "25EA",
+      "collection": "extras-unicode"
+    },
+    "25E8": {
+      "path": "/openmoji/extras-unicode/25E8.svg",
+      "sourceHexcode": "25E8",
+      "collection": "extras-unicode"
+    },
+    "25E9": {
+      "path": "/openmoji/extras-unicode/25E9.svg",
+      "sourceHexcode": "25E9",
+      "collection": "extras-unicode"
+    },
+    "2BEA": {
+      "path": "/openmoji/extras-unicode/2BEA.svg",
+      "sourceHexcode": "2BEA",
+      "collection": "extras-unicode"
+    },
+    "2BEB": {
+      "path": "/openmoji/extras-unicode/2BEB.svg",
+      "sourceHexcode": "2BEB",
+      "collection": "extras-unicode"
+    },
+    "1FBC5": {
+      "path": "/openmoji/extras-unicode/1FBC5.svg",
+      "sourceHexcode": "1FBC5",
+      "collection": "extras-unicode"
+    },
+    "1FBC7": {
+      "path": "/openmoji/extras-unicode/1FBC7.svg",
+      "sourceHexcode": "1FBC7",
+      "collection": "extras-unicode"
+    },
+    "1FBC8": {
+      "path": "/openmoji/extras-unicode/1FBC8.svg",
+      "sourceHexcode": "1FBC8",
+      "collection": "extras-unicode"
+    },
+    "1FBC6": {
+      "path": "/openmoji/extras-unicode/1FBC6.svg",
+      "sourceHexcode": "1FBC6",
+      "collection": "extras-unicode"
+    },
+    "1FBC9": {
+      "path": "/openmoji/extras-unicode/1FBC9.svg",
+      "sourceHexcode": "1FBC9",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0075-E0073-E0074-E0078-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0075-E0073-E0074-E0078-E007F.svg",
+      "sourceHexcode": "1F3F4-E0075-E0073-E0074-E0078-E007F",
+      "collection": "extras-unicode"
+    },
+    "2B0D": {
+      "path": "/openmoji/extras-unicode/2B0D.svg",
+      "sourceHexcode": "2B0D",
+      "collection": "extras-unicode"
+    },
+    "25ED": {
+      "path": "/openmoji/extras-unicode/25ED.svg",
+      "sourceHexcode": "25ED",
+      "collection": "extras-unicode"
+    },
+    "25EE": {
+      "path": "/openmoji/extras-unicode/25EE.svg",
+      "sourceHexcode": "25EE",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0065-E0073-E0076-E0063-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0065-E0073-E0076-E0063-E007F.svg",
+      "sourceHexcode": "1F3F4-E0065-E0073-E0076-E0063-E007F",
+      "collection": "extras-unicode"
+    },
+    "1F3F4-E0075-E0073-E0064-E0063-E007F": {
+      "path": "/openmoji/extras-unicode/1F3F4-E0075-E0073-E0064-E0063-E007F.svg",
+      "sourceHexcode": "1F3F4-E0075-E0073-E0064-E0063-E007F",
+      "collection": "extras-unicode"
+    },
+    "2B21": {
+      "path": "/openmoji/extras-unicode/2B21.svg",
+      "sourceHexcode": "2B21",
+      "collection": "extras-unicode"
+    },
+    "2B20": {
+      "path": "/openmoji/extras-unicode/2B20.svg",
+      "sourceHexcode": "2B20",
+      "collection": "extras-unicode"
+    },
+    "25AD": {
+      "path": "/openmoji/extras-unicode/25AD.svg",
+      "sourceHexcode": "25AD",
+      "collection": "extras-unicode"
+    },
+    "25A1": {
+      "path": "/openmoji/extras-unicode/25A1.svg",
+      "sourceHexcode": "25A1",
+      "collection": "extras-unicode"
+    },
+    "2B2F": {
+      "path": "/openmoji/extras-unicode/2B2F.svg",
+      "sourceHexcode": "2B2F",
+      "collection": "extras-unicode"
     },
     "1F3F4-E006D-E0078-E0079-E0075-E0063-E007F": {
-      "path": "/openmoji-extras/1F3F4-E006D-E0078-E0079-E0075-E0063-E007F.svg",
-      "sourceHexcode": "1F3F4-E006D-E0078-E0079-E0075-E0063-E007F"
+      "path": "/openmoji/extras-unicode/1F3F4-E006D-E0078-E0079-E0075-E0063-E007F.svg",
+      "sourceHexcode": "1F3F4-E006D-E0078-E0079-E0075-E0063-E007F",
+      "collection": "extras-unicode"
     }
   }
 }

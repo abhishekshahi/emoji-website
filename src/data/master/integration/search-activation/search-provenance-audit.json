@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-09T15:00:46.477Z",
+  "phase": "8.11G",
+  "releaseId": "master-8.10-20260809",
+  "checks": {
+    "hasCanonicalId": true,
+    "hasMatchedField": true,
+    "hasScore": true,
+    "hasSource": true,
+    "hasConfidence": true,
+    "noExternalUrls": true,
+    "noFilesystemPaths": true
+  },
+  "status": "PASS"
+}

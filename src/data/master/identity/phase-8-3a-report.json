@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-08-09T04:03:18.364Z",
+  "phase": "8.3a",
+  "originalConflicts": 5531,
+  "remainingConflicts": 2335,
+  "resolvedConflicts": 3196,
+  "conflictReport": {
+    "all": 2335,
+    "resolvable": 0,
+    "presentationVariation": 1785,
+    "sourceField": 550,
+    "genuineIdentity": 0,
+    "unresolved": 0
+  },
+  "fluentCorrections": {
+    "recordsAffected": 7885,
+    "recordsCorrected": 7885,
+    "recordsStillUnresolved": 0,
+    "authoritativeField": "fluent.metadata.unicode / fluent.metadata.glyph"
+  },
+  "unmatchedClassification": {
+    "originallyUnmatchedInPhase83": 387,
+    "classifiedTotal": 515,
+    "byClassification": {
+      "legitimate-unicode-emoji": 0,
+      "legitimate-source-specific-emoji": 0,
+      "private-use": 0,
+      "artwork-variant-asset": 514,
+      "utility-support-file": 1,
+      "metadata-only": 0,
+      "invalid-non-emoji": 0,
+      "unresolved": 0
+    }
+  },
+  "privateUseReconciliation": {
+    "rawPrivateUseRecords": 736,
+    "uniquePrivateUseIdentities": 365,
+    "openmojiPrivateUseRecords": 734,
+    "openmojiExtraRecords": 542,
+    "openmojiExtrasPrivateUse": 363,
+    "openmojiExtrasUnicodeMapped": 179,
+    "twemojiPrivateUseRecords": 2
+  },
+  "constraints": {
+    "rawSourceDataUnchanged": true,
+    "productionDataUnchanged": true,
+    "deduplicationPerformed": false,
+    "canonicalMasterRecordsCreated": false
+  }
+}

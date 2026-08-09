@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-08-09T05:20:05.700Z",
+  "phase": "8.11C",
+  "releaseId": "master-8.10-20260809",
+  "totals": {
+    "masterMetadataRecords": 42910,
+    "canonicalIdentities": 6955,
+    "aliases": 4015,
+    "safeAliases": 3580,
+    "restrictedAliases": 435,
+    "keywordTerms": 43977,
+    "shortcodeRecords": 14304,
+    "emojinetSenses": 15183,
+    "emojinetDefinitions": 17572,
+    "safeSearchTerms": 29468,
+    "ambiguousTerms": 115387,
+    "notoMetadataAvailable": false,
+    "twemojiMetadataAvailable": false
+  },
+  "status": "PASS"
+}

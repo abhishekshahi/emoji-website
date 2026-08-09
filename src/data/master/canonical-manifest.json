@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-08-09T04:08:46.098Z",
+  "phase": "8.4",
+  "recordCount": 6955,
+  "files": {
+    "canonicalEmojis": "master/canonical-emojis.json",
+    "canonicalAuditReport": "master/canonical-audit-report.json",
+    "crossSourceCoverage": "master/cross-source-coverage.json",
+    "sourceOnlyRecords": "master/source-only-records.json"
+  }
+}

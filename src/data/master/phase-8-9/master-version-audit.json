@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-08-09T04:48:56.272Z",
+  "phase": "8.9",
+  "sources": [
+    {
+      "source": "openmoji",
+      "lockVersion": "17.0.0",
+      "storedVersion": "17.0.0",
+      "lockCommit": null,
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 17.0.0, expected 17.0.0"
+    },
+    {
+      "source": "unicode-emoji-data",
+      "lockVersion": "17.0.0",
+      "storedVersion": null,
+      "lockCommit": null,
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 17.0.0, expected 17.0.0"
+    },
+    {
+      "source": "unicode",
+      "lockVersion": "17.0.0",
+      "storedVersion": "17.0.0",
+      "lockCommit": null,
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 17.0.0, expected 17.0.0"
+    },
+    {
+      "source": "emoji-time",
+      "lockVersion": "2.2.5",
+      "storedVersion": null,
+      "lockCommit": null,
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 2.2.5, expected 2.2.5"
+    },
+    {
+      "source": "noto",
+      "lockVersion": "2.051",
+      "storedVersion": "2.051",
+      "lockCommit": "8998f5dd683424a73e2314a8c1f1e359c19e8742",
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 2.051, expected 2.051"
+    },
+    {
+      "source": "twemoji",
+      "lockVersion": "17.0.3",
+      "storedVersion": "17.0.3",
+      "lockCommit": "b6b55fef1e8636b540a6d016a4729ca8cdf2e60b",
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 17.0.3, expected 17.0.3"
+    },
+    {
+      "source": "fluent",
+      "lockVersion": "UNRESOLVED",
+      "storedVersion": "UNRESOLVED",
+      "lockCommit": "62ecdc0d7ca5c6df32148c169556bc8d3782fca4",
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock UNRESOLVED, expected UNRESOLVED"
+    },
+    {
+      "source": "emojibase",
+      "lockVersion": "17.0.0",
+      "storedVersion": "17.0.0",
+      "lockCommit": null,
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 17.0.0, expected 17.0.0"
+    },
+    {
+      "source": "emojilib",
+      "lockVersion": "4.0.3",
+      "storedVersion": "4.0.3",
+      "lockCommit": null,
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 4.0.3, expected 4.0.3"
+    },
+    {
+      "source": "emojinet",
+      "lockVersion": "2017-11-02",
+      "storedVersion": "2017-11-02",
+      "lockCommit": null,
+      "storedCommit": null,
+      "status": "PASS",
+      "detail": "Lock 2017-11-02, expected 2017-11-02"
+    }
+  ],
+  "status": "PASS"
+}

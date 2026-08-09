@@ -1,0 +1,4015 @@
+{
+  "generatedAt": "2026-08-09T04:03:05.510Z",
+  "phase": "8.3a",
+  "summary": {
+    "rawPrivateUseRecords": 736,
+    "uniquePrivateUseIdentities": 365,
+    "openmojiPrivateUseRecords": 734,
+    "openmojiExtraRecords": 542,
+    "openmojiExtrasPrivateUse": 363,
+    "openmojiExtrasUnicodeMapped": 179,
+    "twemojiPrivateUseRecords": 2
+  },
+  "explanation": [
+    "728 raw source records are classified private-use because their codepoint sequences are entirely in the BMP private-use area (U+E000..U+F8FF).",
+    "734 OpenMoji records use private-use hexcodes. 367 are standard openmoji:<PUA> rows and 367 are duplicate openmoji-extra:<PUA> rows for the same extras.",
+    "542 OpenMoji extras exist in total: 363 map to source:openmoji:<PUA> private-use identities and 179 map to real Unicode sequences (e.g. 1F10D, tag sequences).",
+    "366 unique private-use identities means many records share one canonical identity (e.g. openmoji:E000, openmoji-extra:E000, and openmoji-artwork:E000 all resolve to source:openmoji:E000).",
+    "2 Twemoji private-use artwork records (E50A) are separate from the OpenMoji extras set."
+  ],
+  "duplicateIdentityGroups": [
+    {
+      "canonicalIdentity": "source:openmoji:E000",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E000",
+        "openmoji-extra:E000"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E001",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E001",
+        "openmoji-extra:E001"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E002",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E002",
+        "openmoji-extra:E002"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E003",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E003",
+        "openmoji-extra:E003"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E004",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E004",
+        "openmoji-extra:E004"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E006",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E006",
+        "openmoji-extra:E006"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E007",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E007",
+        "openmoji-extra:E007"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E008",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E008",
+        "openmoji-extra:E008"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E009",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E009",
+        "openmoji-extra:E009"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E010",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E010",
+        "openmoji-extra:E010"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E011",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E011",
+        "openmoji-extra:E011"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E040",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E040",
+        "openmoji-extra:E040"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E041",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E041",
+        "openmoji-extra:E041"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E042",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E042",
+        "openmoji-extra:E042"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E043",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E043",
+        "openmoji-extra:E043"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E044",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E044",
+        "openmoji-extra:E044"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E045",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E045",
+        "openmoji-extra:E045"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E046",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E046",
+        "openmoji-extra:E046"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E047",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E047",
+        "openmoji-extra:E047"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E048",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E048",
+        "openmoji-extra:E048"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E049",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E049",
+        "openmoji-extra:E049"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E04A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E04A",
+        "openmoji-extra:E04A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E04B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E04B",
+        "openmoji-extra:E04B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E04C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E04C",
+        "openmoji-extra:E04C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E04D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E04D",
+        "openmoji-extra:E04D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E04E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E04E",
+        "openmoji-extra:E04E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E04F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E04F",
+        "openmoji-extra:E04F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E050",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E050",
+        "openmoji-extra:E050"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E051",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E051",
+        "openmoji-extra:E051"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E052",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E052",
+        "openmoji-extra:E052"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E053",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E053",
+        "openmoji-extra:E053"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E054",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E054",
+        "openmoji-extra:E054"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E055",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E055",
+        "openmoji-extra:E055"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E056",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E056",
+        "openmoji-extra:E056"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E057",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E057",
+        "openmoji-extra:E057"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E058",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E058",
+        "openmoji-extra:E058"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E059",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E059",
+        "openmoji-extra:E059"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E05A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E05A",
+        "openmoji-extra:E05A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E05B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E05B",
+        "openmoji-extra:E05B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E05C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E05C",
+        "openmoji-extra:E05C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E05D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E05D",
+        "openmoji-extra:E05D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E05E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E05E",
+        "openmoji-extra:E05E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E05F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E05F",
+        "openmoji-extra:E05F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E060",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E060",
+        "openmoji-extra:E060"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E061",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E061",
+        "openmoji-extra:E061"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E062",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E062",
+        "openmoji-extra:E062"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E063",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E063",
+        "openmoji-extra:E063"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E064",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E064",
+        "openmoji-extra:E064"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E065",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E065",
+        "openmoji-extra:E065"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E066",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E066",
+        "openmoji-extra:E066"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E067",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E067",
+        "openmoji-extra:E067"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E068",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E068",
+        "openmoji-extra:E068"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E069",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E069",
+        "openmoji-extra:E069"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E06A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E06A",
+        "openmoji-extra:E06A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E06B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E06B",
+        "openmoji-extra:E06B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E06C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E06C",
+        "openmoji-extra:E06C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E06D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E06D",
+        "openmoji-extra:E06D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E06E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E06E",
+        "openmoji-extra:E06E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E06F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E06F",
+        "openmoji-extra:E06F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E070",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E070",
+        "openmoji-extra:E070"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0FF",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0FF",
+        "openmoji-extra:E0FF"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:F000",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:F000",
+        "openmoji-extra:F000"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:F77A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:F77A",
+        "openmoji-extra:F77A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:F8FF",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:F8FF",
+        "openmoji-extra:F8FF"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C0",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C0",
+        "openmoji-extra:E2C0"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C1",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C1",
+        "openmoji-extra:E2C1"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C2",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C2",
+        "openmoji-extra:E2C2"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C3",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C3",
+        "openmoji-extra:E2C3"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C4",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C4",
+        "openmoji-extra:E2C4"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C6",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C6",
+        "openmoji-extra:E2C6"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C7",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C7",
+        "openmoji-extra:E2C7"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C8",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C8",
+        "openmoji-extra:E2C8"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2C9",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2C9",
+        "openmoji-extra:E2C9"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2CA",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2CA",
+        "openmoji-extra:E2CA"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2CB",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2CB",
+        "openmoji-extra:E2CB"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2CC",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2CC",
+        "openmoji-extra:E2CC"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2CD",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2CD",
+        "openmoji-extra:E2CD"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2CE",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2CE",
+        "openmoji-extra:E2CE"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2CF",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2CF",
+        "openmoji-extra:E2CF"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D0",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D0",
+        "openmoji-extra:E2D0"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D1",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D1",
+        "openmoji-extra:E2D1"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D2",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D2",
+        "openmoji-extra:E2D2"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D3",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D3",
+        "openmoji-extra:E2D3"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D4",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D4",
+        "openmoji-extra:E2D4"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D5",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D5",
+        "openmoji-extra:E2D5"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D6",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D6",
+        "openmoji-extra:E2D6"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D7",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D7",
+        "openmoji-extra:E2D7"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D8",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D8",
+        "openmoji-extra:E2D8"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2D9",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2D9",
+        "openmoji-extra:E2D9"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E2DA",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E2DA",
+        "openmoji-extra:E2DA"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E080",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E080",
+        "openmoji-extra:E080"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E081",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E081",
+        "openmoji-extra:E081"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E082",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E082",
+        "openmoji-extra:E082"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E083",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E083",
+        "openmoji-extra:E083"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E084",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E084",
+        "openmoji-extra:E084"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E085",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E085",
+        "openmoji-extra:E085"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E086",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E086",
+        "openmoji-extra:E086"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E087",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E087",
+        "openmoji-extra:E087"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E088",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E088",
+        "openmoji-extra:E088"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E089",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E089",
+        "openmoji-extra:E089"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E08A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E08A",
+        "openmoji-extra:E08A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E08B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E08B",
+        "openmoji-extra:E08B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E08C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E08C",
+        "openmoji-extra:E08C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E08D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E08D",
+        "openmoji-extra:E08D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E08E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E08E",
+        "openmoji-extra:E08E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E08F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E08F",
+        "openmoji-extra:E08F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E090",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E090",
+        "openmoji-extra:E090"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E091",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E091",
+        "openmoji-extra:E091"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E092",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E092",
+        "openmoji-extra:E092"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E093",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E093",
+        "openmoji-extra:E093"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E094",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E094",
+        "openmoji-extra:E094"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E095",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E095",
+        "openmoji-extra:E095"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E096",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E096",
+        "openmoji-extra:E096"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E097",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E097",
+        "openmoji-extra:E097"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E098",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E098",
+        "openmoji-extra:E098"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E099",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E099",
+        "openmoji-extra:E099"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E09A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E09A",
+        "openmoji-extra:E09A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E09B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E09B",
+        "openmoji-extra:E09B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E09C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E09C",
+        "openmoji-extra:E09C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E09E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E09E",
+        "openmoji-extra:E09E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E09F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E09F",
+        "openmoji-extra:E09F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A0",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A0",
+        "openmoji-extra:E0A0"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A1",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A1",
+        "openmoji-extra:E0A1"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A2",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A2",
+        "openmoji-extra:E0A2"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A3",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A3",
+        "openmoji-extra:E0A3"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A4",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A4",
+        "openmoji-extra:E0A4"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A5",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A5",
+        "openmoji-extra:E0A5"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A6",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A6",
+        "openmoji-extra:E0A6"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A7",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A7",
+        "openmoji-extra:E0A7"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A8",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A8",
+        "openmoji-extra:E0A8"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0A9",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0A9",
+        "openmoji-extra:E0A9"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0AA",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0AA",
+        "openmoji-extra:E0AA"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0AB",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0AB",
+        "openmoji-extra:E0AB"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0AC",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0AC",
+        "openmoji-extra:E0AC"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0AD",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0AD",
+        "openmoji-extra:E0AD"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0AE",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0AE",
+        "openmoji-extra:E0AE"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0AF",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0AF",
+        "openmoji-extra:E0AF"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0B0",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0B0",
+        "openmoji-extra:E0B0"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0B1",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0B1",
+        "openmoji-extra:E0B1"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0B2",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0B2",
+        "openmoji-extra:E0B2"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0B3",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0B3",
+        "openmoji-extra:E0B3"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0B4",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0B4",
+        "openmoji-extra:E0B4"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C0",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C0",
+        "openmoji-extra:E0C0"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C1",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C1",
+        "openmoji-extra:E0C1"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C2",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C2",
+        "openmoji-extra:E0C2"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C3",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C3",
+        "openmoji-extra:E0C3"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C4",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C4",
+        "openmoji-extra:E0C4"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C5",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C5",
+        "openmoji-extra:E0C5"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C6",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C6",
+        "openmoji-extra:E0C6"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C7",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C7",
+        "openmoji-extra:E0C7"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C8",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C8",
+        "openmoji-extra:E0C8"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0C9",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0C9",
+        "openmoji-extra:E0C9"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0CA",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0CA",
+        "openmoji-extra:E0CA"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0CB",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0CB",
+        "openmoji-extra:E0CB"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E0CC",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E0CC",
+        "openmoji-extra:E0CC"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E340",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E340",
+        "openmoji-extra:E340"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E341",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E341",
+        "openmoji-extra:E341"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E342",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E342",
+        "openmoji-extra:E342"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E343",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E343",
+        "openmoji-extra:E343"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E344",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E344",
+        "openmoji-extra:E344"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E345",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E345",
+        "openmoji-extra:E345"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E346",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E346",
+        "openmoji-extra:E346"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E347",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E347",
+        "openmoji-extra:E347"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E348",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E348",
+        "openmoji-extra:E348"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E300",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E300",
+        "openmoji-extra:E300"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E301",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E301",
+        "openmoji-extra:E301"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E302",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E302",
+        "openmoji-extra:E302"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E303",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E303",
+        "openmoji-extra:E303"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E305",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E305",
+        "openmoji-extra:E305"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E306",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E306",
+        "openmoji-extra:E306"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E307",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E307",
+        "openmoji-extra:E307"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E308",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E308",
+        "openmoji-extra:E308"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E309",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E309",
+        "openmoji-extra:E309"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E30A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E30A",
+        "openmoji-extra:E30A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E30B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E30B",
+        "openmoji-extra:E30B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E30C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E30C",
+        "openmoji-extra:E30C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E30D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E30D",
+        "openmoji-extra:E30D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E30E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E30E",
+        "openmoji-extra:E30E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E30F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E30F",
+        "openmoji-extra:E30F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E312",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E312",
+        "openmoji-extra:E312"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E313",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E313",
+        "openmoji-extra:E313"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E314",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E314",
+        "openmoji-extra:E314"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E315",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E315",
+        "openmoji-extra:E315"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E316",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E316",
+        "openmoji-extra:E316"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E318",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E318",
+        "openmoji-extra:E318"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E319",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E319",
+        "openmoji-extra:E319"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E31A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E31A",
+        "openmoji-extra:E31A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E31B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E31B",
+        "openmoji-extra:E31B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E31C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E31C",
+        "openmoji-extra:E31C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E31D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E31D",
+        "openmoji-extra:E31D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E31E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E31E",
+        "openmoji-extra:E31E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E31F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E31F",
+        "openmoji-extra:E31F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E320",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E320",
+        "openmoji-extra:E320"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E321",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E321",
+        "openmoji-extra:E321"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E322",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E322",
+        "openmoji-extra:E322"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E324",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E324",
+        "openmoji-extra:E324"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E325",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E325",
+        "openmoji-extra:E325"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E326",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E326",
+        "openmoji-extra:E326"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E327",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E327",
+        "openmoji-extra:E327"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E328",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E328",
+        "openmoji-extra:E328"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E329",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E329",
+        "openmoji-extra:E329"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E32B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E32B",
+        "openmoji-extra:E32B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E100",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E100",
+        "openmoji-extra:E100"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E101",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E101",
+        "openmoji-extra:E101"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E102",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E102",
+        "openmoji-extra:E102"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E103",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E103",
+        "openmoji-extra:E103"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E104",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E104",
+        "openmoji-extra:E104"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E105",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E105",
+        "openmoji-extra:E105"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E106",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E106",
+        "openmoji-extra:E106"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E107",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E107",
+        "openmoji-extra:E107"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E108",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E108",
+        "openmoji-extra:E108"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E109",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E109",
+        "openmoji-extra:E109"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E10A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E10A",
+        "openmoji-extra:E10A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E10B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E10B",
+        "openmoji-extra:E10B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E10C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E10C",
+        "openmoji-extra:E10C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E10D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E10D",
+        "openmoji-extra:E10D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E140",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E140",
+        "openmoji-extra:E140"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E141",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E141",
+        "openmoji-extra:E141"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E142",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E142",
+        "openmoji-extra:E142"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E143",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E143",
+        "openmoji-extra:E143"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E144",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E144",
+        "openmoji-extra:E144"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E145",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E145",
+        "openmoji-extra:E145"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E146",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E146",
+        "openmoji-extra:E146"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E147",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E147",
+        "openmoji-extra:E147"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E148",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E148",
+        "openmoji-extra:E148"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E149",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E149",
+        "openmoji-extra:E149"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E14A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E14A",
+        "openmoji-extra:E14A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E150",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E150",
+        "openmoji-extra:E150"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E151",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E151",
+        "openmoji-extra:E151"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E152",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E152",
+        "openmoji-extra:E152"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E153",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E153",
+        "openmoji-extra:E153"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E154",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E154",
+        "openmoji-extra:E154"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E155",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E155",
+        "openmoji-extra:E155"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E156",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E156",
+        "openmoji-extra:E156"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E157",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E157",
+        "openmoji-extra:E157"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E181",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E181",
+        "openmoji-extra:E181"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E182",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E182",
+        "openmoji-extra:E182"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E183",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E183",
+        "openmoji-extra:E183"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E184",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E184",
+        "openmoji-extra:E184"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E185",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E185",
+        "openmoji-extra:E185"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E186",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E186",
+        "openmoji-extra:E186"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E187",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E187",
+        "openmoji-extra:E187"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E188",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E188",
+        "openmoji-extra:E188"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E189",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E189",
+        "openmoji-extra:E189"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E420",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E420",
+        "openmoji-extra:E420"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E421",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E421",
+        "openmoji-extra:E421"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E422",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E422",
+        "openmoji-extra:E422"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E423",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E423",
+        "openmoji-extra:E423"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E424",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E424",
+        "openmoji-extra:E424"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E425",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E425",
+        "openmoji-extra:E425"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E426",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E426",
+        "openmoji-extra:E426"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E427",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E427",
+        "openmoji-extra:E427"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E428",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E428",
+        "openmoji-extra:E428"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E429",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E429",
+        "openmoji-extra:E429"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E42A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E42A",
+        "openmoji-extra:E42A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E42B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E42B",
+        "openmoji-extra:E42B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E42C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E42C",
+        "openmoji-extra:E42C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E42D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E42D",
+        "openmoji-extra:E42D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E42E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E42E",
+        "openmoji-extra:E42E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E42F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E42F",
+        "openmoji-extra:E42F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E430",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E430",
+        "openmoji-extra:E430"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E431",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E431",
+        "openmoji-extra:E431"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E432",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E432",
+        "openmoji-extra:E432"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E433",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E433",
+        "openmoji-extra:E433"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E434",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E434",
+        "openmoji-extra:E434"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E435",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E435",
+        "openmoji-extra:E435"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E280",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E280",
+        "openmoji-extra:E280"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E281",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E281",
+        "openmoji-extra:E281"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E282",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E282",
+        "openmoji-extra:E282"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E283",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E283",
+        "openmoji-extra:E283"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E380",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E380",
+        "openmoji-extra:E380"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E381",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E381",
+        "openmoji-extra:E381"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C0",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C0",
+        "openmoji-extra:E1C0"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C1",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C1",
+        "openmoji-extra:E1C1"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C2",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C2",
+        "openmoji-extra:E1C2"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C3",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C3",
+        "openmoji-extra:E1C3"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C4",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C4",
+        "openmoji-extra:E1C4"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C6",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C6",
+        "openmoji-extra:E1C6"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C7",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C7",
+        "openmoji-extra:E1C7"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C8",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C8",
+        "openmoji-extra:E1C8"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1C9",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1C9",
+        "openmoji-extra:E1C9"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1CA",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1CA",
+        "openmoji-extra:E1CA"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1CB",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1CB",
+        "openmoji-extra:E1CB"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1CC",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1CC",
+        "openmoji-extra:E1CC"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1CD",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1CD",
+        "openmoji-extra:E1CD"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1CE",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1CE",
+        "openmoji-extra:E1CE"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1CF",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1CF",
+        "openmoji-extra:E1CF"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D0",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D0",
+        "openmoji-extra:E1D0"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D1",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D1",
+        "openmoji-extra:E1D1"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D2",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D2",
+        "openmoji-extra:E1D2"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D3",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D3",
+        "openmoji-extra:E1D3"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D4",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D4",
+        "openmoji-extra:E1D4"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D5",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D5",
+        "openmoji-extra:E1D5"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D6",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D6",
+        "openmoji-extra:E1D6"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D7",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D7",
+        "openmoji-extra:E1D7"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D8",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D8",
+        "openmoji-extra:E1D8"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1D9",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1D9",
+        "openmoji-extra:E1D9"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E1DA",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E1DA",
+        "openmoji-extra:E1DA"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E200",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E200",
+        "openmoji-extra:E200"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E201",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E201",
+        "openmoji-extra:E201"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E202",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E202",
+        "openmoji-extra:E202"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E203",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E203",
+        "openmoji-extra:E203"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E204",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E204",
+        "openmoji-extra:E204"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E205",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E205",
+        "openmoji-extra:E205"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E206",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E206",
+        "openmoji-extra:E206"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E207",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E207",
+        "openmoji-extra:E207"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E208",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E208",
+        "openmoji-extra:E208"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E209",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E209",
+        "openmoji-extra:E209"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E20A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E20A",
+        "openmoji-extra:E20A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E20B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E20B",
+        "openmoji-extra:E20B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E20C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E20C",
+        "openmoji-extra:E20C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E20D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E20D",
+        "openmoji-extra:E20D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E20E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E20E",
+        "openmoji-extra:E20E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E20F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E20F",
+        "openmoji-extra:E20F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E210",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E210",
+        "openmoji-extra:E210"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E211",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E211",
+        "openmoji-extra:E211"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E212",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E212",
+        "openmoji-extra:E212"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E213",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E213",
+        "openmoji-extra:E213"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E214",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E214",
+        "openmoji-extra:E214"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E215",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E215",
+        "openmoji-extra:E215"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E216",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E216",
+        "openmoji-extra:E216"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E240",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E240",
+        "openmoji-extra:E240"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E241",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E241",
+        "openmoji-extra:E241"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E242",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E242",
+        "openmoji-extra:E242"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E243",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E243",
+        "openmoji-extra:E243"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E244",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E244",
+        "openmoji-extra:E244"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E245",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E245",
+        "openmoji-extra:E245"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E246",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E246",
+        "openmoji-extra:E246"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E247",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E247",
+        "openmoji-extra:E247"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E248",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E248",
+        "openmoji-extra:E248"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E249",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E249",
+        "openmoji-extra:E249"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E24A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E24A",
+        "openmoji-extra:E24A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E24B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E24B",
+        "openmoji-extra:E24B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E24C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E24C",
+        "openmoji-extra:E24C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E24D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E24D",
+        "openmoji-extra:E24D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E24E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E24E",
+        "openmoji-extra:E24E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E24F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E24F",
+        "openmoji-extra:E24F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E250",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E250",
+        "openmoji-extra:E250"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E251",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E251",
+        "openmoji-extra:E251"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E252",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E252",
+        "openmoji-extra:E252"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E253",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E253",
+        "openmoji-extra:E253"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E254",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E254",
+        "openmoji-extra:E254"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E255",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E255",
+        "openmoji-extra:E255"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E256",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E256",
+        "openmoji-extra:E256"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E257",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E257",
+        "openmoji-extra:E257"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E258",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E258",
+        "openmoji-extra:E258"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E259",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E259",
+        "openmoji-extra:E259"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E25A",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E25A",
+        "openmoji-extra:E25A"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E25B",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E25B",
+        "openmoji-extra:E25B"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E25C",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E25C",
+        "openmoji-extra:E25C"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E25D",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E25D",
+        "openmoji-extra:E25D"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E25E",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E25E",
+        "openmoji-extra:E25E"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E25F",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E25F",
+        "openmoji-extra:E25F"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E260",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E260",
+        "openmoji-extra:E260"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E261",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E261",
+        "openmoji-extra:E261"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E262",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E262",
+        "openmoji-extra:E262"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E263",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E263",
+        "openmoji-extra:E263"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E264",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E264",
+        "openmoji-extra:E264"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E265",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E265",
+        "openmoji-extra:E265"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E266",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E266",
+        "openmoji-extra:E266"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E267",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E267",
+        "openmoji-extra:E267"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E268",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E268",
+        "openmoji-extra:E268"
+      ]
+    },
+    {
+      "canonicalIdentity": "source:openmoji:E269",
+      "recordCount": 2,
+      "sources": [
+        "openmoji"
+      ],
+      "sampleSourceIds": [
+        "openmoji:E269",
+        "openmoji-extra:E269"
+      ]
+    }
+  ]
+}

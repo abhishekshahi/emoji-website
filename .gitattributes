@@ -1,0 +1,4 @@
+src/data/master/semantic/canonical-semantic-index.json filter=lfs diff=lfs merge=lfs -text
+src/data/master/semantic/semantic-seo-index.json filter=lfs diff=lfs merge=lfs -text
+src/data/master/semantic/canonical-semantic-search.json filter=lfs diff=lfs merge=lfs -text
+src/data/master/metadata/raw-metadata-index.json filter=lfs diff=lfs merge=lfs -text

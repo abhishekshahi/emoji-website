@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-08-09T04:08:46.097Z",
+  "phase": "8.4",
+  "baselines": {
+    "rawRecords": 72228,
+    "artwork": 40071,
+    "metadata": 34784,
+    "semantic": 15183
+  },
+  "counts": {
+    "uniqueUnicodeCanonicalIdentities": 5540,
+    "uniqueSourceSpecificIdentities": 1415,
+    "totalCanonicalIdentities": 6955,
+    "canonicalIdentitiesWithMultipleSources": 4192,
+    "canonicalIdentitiesWithOneSource": 2230,
+    "canonicalIdentitiesWithArtwork": 5331,
+    "canonicalIdentitiesWithMetadata": 4759,
+    "canonicalIdentitiesWithSemanticData": 2336,
+    "privateUseCanonicalIdentities": 365,
+    "sourceSpecificCanonicalIdentities": 1050,
+    "artworkOnlySourceRecords": 35576,
+    "metadataOnlySourceRecords": 1914,
+    "semanticOnlySourceRecords": 15183
+  },
+  "sourceOnly": {
+    "openmojiOnly": 515,
+    "notoOnly": 1085,
+    "twemojiOnly": 45,
+    "fluentOnly": 14,
+    "unicodeOnly": 0,
+    "emojibaseOnly": 0,
+    "emojilibOnly": 0,
+    "emojinetOnly": 0,
+    "emojiTimeOnly": 0
+  },
+  "emojifindCompatibility": {
+    "standardRecords": 3944,
+    "standardMapped": 3944,
+    "extrasRecords": 542,
+    "extrasMapped": 542,
+    "intact": true
+  },
+  "note": "Canonical identity count before metadata/name/SEO policy. Not the final website emoji count."
+}

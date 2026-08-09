@@ -1,0 +1,681 @@
+{
+  "generatedAt": "2026-08-09T04:48:56.298Z",
+  "phase": "8.9",
+  "overallStatus": "PASS",
+  "sections": [
+    {
+      "name": "Source completeness",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "source-openmoji",
+          "name": "Source lock entry: openmoji",
+          "status": "PASS"
+        },
+        {
+          "id": "source-unicode-emoji-data",
+          "name": "Source lock entry: unicode-emoji-data",
+          "status": "PASS"
+        },
+        {
+          "id": "source-emoji-time",
+          "name": "Source lock entry: emoji-time",
+          "status": "PASS"
+        },
+        {
+          "id": "source-noto",
+          "name": "Source lock entry: noto",
+          "status": "PASS"
+        },
+        {
+          "id": "source-twemoji",
+          "name": "Source lock entry: twemoji",
+          "status": "PASS"
+        },
+        {
+          "id": "source-fluent",
+          "name": "Source lock entry: fluent",
+          "status": "PASS"
+        },
+        {
+          "id": "source-emojibase",
+          "name": "Source lock entry: emojibase",
+          "status": "PASS"
+        },
+        {
+          "id": "source-unicode",
+          "name": "Source lock entry: unicode",
+          "status": "PASS"
+        },
+        {
+          "id": "source-emojilib",
+          "name": "Source lock entry: emojilib",
+          "status": "PASS"
+        },
+        {
+          "id": "source-emojinet",
+          "name": "Source lock entry: emojinet",
+          "status": "PASS"
+        },
+        {
+          "id": "source-count",
+          "name": "Ten sources in lock file",
+          "status": "PASS",
+          "expected": 10,
+          "actual": 10
+        },
+        {
+          "id": "source-raw-openmoji",
+          "name": "openmoji raw records represented",
+          "status": "PASS",
+          "expected": 5037,
+          "actual": 5037
+        },
+        {
+          "id": "source-license-openmoji",
+          "name": "openmoji license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-unicode-emoji-data",
+          "name": "unicode-emoji-data raw records represented",
+          "status": "PASS",
+          "expected": 8126,
+          "actual": 8126
+        },
+        {
+          "id": "source-license-unicode-emoji-data",
+          "name": "unicode-emoji-data license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-emoji-time",
+          "name": "emoji-time raw records represented",
+          "status": "PASS",
+          "expected": 24,
+          "actual": 24
+        },
+        {
+          "id": "source-license-emoji-time",
+          "name": "emoji-time license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-noto",
+          "name": "noto raw records represented",
+          "status": "PASS",
+          "expected": 19673,
+          "actual": 19673
+        },
+        {
+          "id": "source-license-noto",
+          "name": "noto license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-twemoji",
+          "name": "twemoji raw records represented",
+          "status": "PASS",
+          "expected": 8018,
+          "actual": 8018
+        },
+        {
+          "id": "source-license-twemoji",
+          "name": "twemoji license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-fluent",
+          "name": "fluent raw records represented",
+          "status": "PASS",
+          "expected": 7885,
+          "actual": 7885
+        },
+        {
+          "id": "source-license-fluent",
+          "name": "fluent license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-emojibase",
+          "name": "emojibase raw records represented",
+          "status": "PASS",
+          "expected": 3979,
+          "actual": 3979
+        },
+        {
+          "id": "source-license-emojibase",
+          "name": "emojibase license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-unicode",
+          "name": "unicode raw records represented",
+          "status": "PASS",
+          "expected": 3979,
+          "actual": 0
+        },
+        {
+          "id": "source-license-unicode",
+          "name": "unicode license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-emojilib",
+          "name": "emojilib raw records represented",
+          "status": "PASS",
+          "expected": 1914,
+          "actual": 1914
+        },
+        {
+          "id": "source-license-emojilib",
+          "name": "emojilib license in lock",
+          "status": "PASS"
+        },
+        {
+          "id": "source-raw-emojinet",
+          "name": "emojinet raw records represented",
+          "status": "PASS",
+          "expected": 17572,
+          "actual": 17572
+        },
+        {
+          "id": "source-license-emojinet",
+          "name": "emojinet license in lock",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Raw preservation",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "raw-source-count",
+          "name": "72,228 raw source records",
+          "status": "PASS",
+          "expected": 72228,
+          "actual": 72228
+        },
+        {
+          "id": "raw-artwork-count",
+          "name": "40,071 raw artwork records",
+          "status": "PASS",
+          "expected": 40071,
+          "actual": 40071
+        },
+        {
+          "id": "raw-metadata-manifest",
+          "name": "34,784 raw metadata manifest",
+          "status": "PASS",
+          "expected": 34784,
+          "actual": 34784
+        },
+        {
+          "id": "raw-ingestion-success",
+          "name": "Raw ingestion report success",
+          "status": "PASS"
+        },
+        {
+          "id": "raw-duplicate-source-ids",
+          "name": "Duplicate source IDs reported and preserved",
+          "status": "PASS",
+          "detail": "11193 duplicate rows across 61035 unique source keys (not deleted)",
+          "expected": 61035,
+          "actual": 72228
+        }
+      ]
+    },
+    {
+      "name": "Canonical identities",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "canonical-count",
+          "name": "6,955 canonical identities",
+          "status": "PASS",
+          "expected": 6955,
+          "actual": 6955
+        },
+        {
+          "id": "variation-263a",
+          "name": "263A and 263A-FE0F remain distinct",
+          "status": "PASS"
+        },
+        {
+          "id": "skin-tone-thumbs",
+          "name": "Thumbs up skin tones distinct",
+          "status": "PASS"
+        },
+        {
+          "id": "zwj-technologist",
+          "name": "Man and woman technologist distinct",
+          "status": "PASS"
+        },
+        {
+          "id": "flag-india",
+          "name": "India flag identity preserved",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Private-use audit",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "pua-not-unicode",
+          "name": "OpenMoji PUA remains source-specific",
+          "status": "PASS"
+        },
+        {
+          "id": "pua-twemoji",
+          "name": "Twemoji PUA remains source-specific",
+          "status": "PASS"
+        },
+        {
+          "id": "pua-raw-records",
+          "name": "PUA raw records audited",
+          "status": "PASS",
+          "expected": ">0",
+          "actual": 736
+        },
+        {
+          "id": "pua-identities",
+          "name": "PUA canonical identities exist",
+          "status": "PASS",
+          "expected": ">0",
+          "actual": 365
+        }
+      ]
+    },
+    {
+      "name": "Artwork integrity",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "artwork-total",
+          "name": "40,071 artwork records",
+          "status": "PASS",
+          "expected": 40071,
+          "actual": 40071
+        },
+        {
+          "id": "artwork-openmoji",
+          "name": "OpenMoji artwork count",
+          "status": "PASS",
+          "expected": 4495,
+          "actual": 4495
+        },
+        {
+          "id": "artwork-noto",
+          "name": "Noto artwork count",
+          "status": "PASS",
+          "expected": 19673,
+          "actual": 19673
+        },
+        {
+          "id": "artwork-twemoji",
+          "name": "Twemoji artwork count",
+          "status": "PASS",
+          "expected": 8018,
+          "actual": 8018
+        },
+        {
+          "id": "artwork-fluent",
+          "name": "Fluent artwork count",
+          "status": "PASS",
+          "expected": 7885,
+          "actual": 7885
+        },
+        {
+          "id": "artwork-missing-files",
+          "name": "No missing artwork files",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "artwork-checksum-failures",
+          "name": "No checksum failures",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "artwork-path-collisions",
+          "name": "No path collisions",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "artwork-noto-utility",
+          "name": "noto.png remains utility/support",
+          "status": "PASS"
+        },
+        {
+          "id": "artwork-canonical-refs",
+          "name": "All artwork points to valid canonicalId",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0,
+          "affectedRecords": []
+        }
+      ]
+    },
+    {
+      "name": "Metadata integrity",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "metadata-total",
+          "name": "42,910 master metadata records",
+          "status": "PASS",
+          "expected": 42910,
+          "actual": 42910
+        },
+        {
+          "id": "metadata-semantic",
+          "name": "15,183 semantic records",
+          "status": "PASS",
+          "expected": 15183,
+          "actual": 15183
+        },
+        {
+          "id": "metadata-definitions",
+          "name": "17,572 definitions",
+          "status": "PASS",
+          "expected": 17572,
+          "actual": 17572
+        },
+        {
+          "id": "metadata-noto-absent",
+          "name": "Noto metadata explicitly absent",
+          "status": "PASS"
+        },
+        {
+          "id": "metadata-twemoji-absent",
+          "name": "Twemoji metadata explicitly absent",
+          "status": "PASS"
+        },
+        {
+          "id": "metadata-canonical-refs",
+          "name": "All metadata mapped to canonicalId",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "metadata-required-fields",
+          "name": "Metadata records have source/canonicalId",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Name reconciliation",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "names-total",
+          "name": "6,955 canonical name records",
+          "status": "PASS"
+        },
+        {
+          "id": "names-conflicts",
+          "name": "4,187 name conflicts traceable",
+          "status": "PASS",
+          "expected": 4187,
+          "actual": 4187
+        },
+        {
+          "id": "aliases-total",
+          "name": "4,015 aliases",
+          "status": "PASS",
+          "expected": 4015,
+          "actual": 4015
+        },
+        {
+          "id": "aliases-safe",
+          "name": "3,580 safe aliases",
+          "status": "PASS",
+          "expected": 3580,
+          "actual": 3580
+        },
+        {
+          "id": "aliases-restricted",
+          "name": "435 restricted aliases",
+          "status": "PASS",
+          "expected": 435,
+          "actual": 435
+        },
+        {
+          "id": "source-names-preserved",
+          "name": "All identities with metadata retain sourceNames",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Keyword integrity",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "keywords-total",
+          "name": "43,977 canonical keyword terms",
+          "status": "PASS",
+          "expected": 43977,
+          "actual": 43977
+        },
+        {
+          "id": "keywords-entries",
+          "name": "6,955 keyword entries",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Shortcode integrity",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "shortcodes-records",
+          "name": "14,304 shortcode records",
+          "status": "PASS",
+          "expected": 14304,
+          "actual": 14304
+        },
+        {
+          "id": "shortcodes-identities",
+          "name": "5,333 shortcode identity entries",
+          "status": "PASS",
+          "expected": 5333,
+          "actual": 5333
+        }
+      ]
+    },
+    {
+      "name": "Semantic integrity",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "semantic-senses",
+          "name": "15,183 EmojiNet senses in semantic-source-index",
+          "status": "PASS"
+        },
+        {
+          "id": "semantic-definitions-index",
+          "name": "17,572 definitions in semantic-definitions-index",
+          "status": "PASS"
+        },
+        {
+          "id": "semantic-safe-search",
+          "name": "29,468 safe search terms",
+          "status": "PASS",
+          "expected": 29468,
+          "actual": 29468
+        },
+        {
+          "id": "semantic-safe-seo",
+          "name": "11,738 safe SEO terms",
+          "status": "PASS",
+          "expected": 11738,
+          "actual": 11738
+        },
+        {
+          "id": "semantic-ambiguous",
+          "name": "115,387 ambiguous terms",
+          "status": "PASS",
+          "expected": 115387,
+          "actual": 115387
+        },
+        {
+          "id": "semantic-hot-ambiguous",
+          "name": "hot is ambiguous and not forced to fire",
+          "status": "PASS"
+        },
+        {
+          "id": "semantic-hot-multi",
+          "name": "hot maps to multiple identities",
+          "status": "PASS",
+          "expected": ">=8",
+          "actual": 29
+        }
+      ]
+    },
+    {
+      "name": "Search integrity",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "search-index-count",
+          "name": "6,955 search index entries",
+          "status": "PASS"
+        },
+        {
+          "id": "search-canonical-refs",
+          "name": "Search index canonical refs valid",
+          "status": "PASS"
+        },
+        {
+          "id": "search-complete-coverage",
+          "name": "Every canonical identity in search index",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        }
+      ]
+    },
+    {
+      "name": "SEO integrity",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "seo-count",
+          "name": "6,955 SEO records",
+          "status": "PASS"
+        },
+        {
+          "id": "seo-canonical-refs",
+          "name": "SEO records point to valid canonicalId",
+          "status": "PASS"
+        },
+        {
+          "id": "seo-empty-slugs",
+          "name": "No empty SEO slugs",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "seo-duplicate-slugs",
+          "name": "No duplicate SEO slugs after disambiguation",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0,
+          "affectedRecords": []
+        }
+      ]
+    },
+    {
+      "name": "Cross-layer references",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "reference-integrity",
+          "name": "Cross-layer referential integrity",
+          "status": "PASS",
+          "detail": "0 issues"
+        }
+      ]
+    },
+    {
+      "name": "License provenance",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "license-audit",
+          "name": "Artwork and metadata licenses",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Version locks",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "version-audit",
+          "name": "Locked source versions",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Data-loss audit",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "data-loss",
+          "name": "No raw data reductions across phases",
+          "status": "PASS",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "name": "Production safety",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "production-emojis",
+          "name": "emojis.json unchanged count",
+          "status": "PASS"
+        },
+        {
+          "id": "production-extras",
+          "name": "openmoji-extras.json unchanged count",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "Count consistency",
+      "status": "PASS",
+      "checks": [
+        {
+          "id": "count-audit",
+          "name": "Independently recalculated counts",
+          "status": "PASS",
+          "detail": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "pass": 18,
+    "fail": 0,
+    "warn": 0
+  }
+}

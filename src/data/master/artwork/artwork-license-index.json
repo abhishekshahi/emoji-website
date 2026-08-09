@@ -1,0 +1,38 @@
+[
+  {
+    "provider": "openmoji",
+    "license": "CC BY-SA 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0",
+    "sourceURL": "https://openmoji.org/",
+    "sourceVersion": "17.0.0",
+    "artworkCount": 4495
+  },
+  {
+    "provider": "noto",
+    "license": "Apache-2.0",
+    "licenseURL": "https://www.apache.org/licenses/LICENSE-2.0",
+    "attribution": "Google Noto Emoji project",
+    "sourceURL": "https://github.com/googlefonts/noto-emoji",
+    "sourceVersion": "2.051",
+    "artworkCount": 19673
+  },
+  {
+    "provider": "twemoji",
+    "license": "CC BY 4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Copyright 2025 Twitter, Inc and other contributors",
+    "sourceURL": "https://github.com/jdecked/twemoji",
+    "sourceVersion": "17.0.3",
+    "artworkCount": 8018
+  },
+  {
+    "provider": "fluent",
+    "license": "MIT",
+    "licenseURL": "https://opensource.org/licenses/MIT",
+    "attribution": "Microsoft Corporation",
+    "sourceURL": "https://github.com/microsoft/fluentui-emoji",
+    "sourceVersion": "UNRESOLVED",
+    "artworkCount": 7885
+  }
+]

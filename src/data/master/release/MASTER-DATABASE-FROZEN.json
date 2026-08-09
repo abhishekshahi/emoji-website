@@ -1,0 +1,14 @@
+{
+  "status": "FROZEN",
+  "phase": "8.10",
+  "releaseId": "master-8.10-20260809",
+  "releaseDate": "2026-08-09T04:53:43.150Z",
+  "canonicalIdentities": 6955,
+  "artwork": 40071,
+  "metadata": 42910,
+  "semanticRecords": 15183,
+  "definitions": 17572,
+  "releaseManifest": "src/data/master/release/8.10/master-release-manifest.json",
+  "fileChecksumManifest": "src/data/master/release/8.10/master-file-checksums.json",
+  "note": "Master database frozen at Phase 8.10. No automatic source updates permitted."
+}

@@ -47,8 +47,11 @@ export default function LicensesPage() {
         </p>
         <p className="text-muted">
           EmojiFind is not affiliated with, endorsed by, or sponsored by OpenMoji.
-          Artwork files are served locally from this website and are not hotlinked
-          from third-party servers.
+          Artwork files are served locally from this website under{" "}
+          <code className="rounded bg-surface-muted px-1.5 py-0.5 text-xs">
+            public/openmoji/
+          </code>{" "}
+          and are not hotlinked from third-party servers.
         </p>
       </section>
 

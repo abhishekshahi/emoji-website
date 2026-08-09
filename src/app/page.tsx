@@ -88,7 +88,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/extras"
-            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-strong"
+            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition hover:bg-accent-strong"
           >
             Explore OpenMoji Extras
           </Link>
@@ -129,7 +129,7 @@ export default function HomePage() {
           </div>
           <Link
             href="/emoji"
-            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-strong"
+            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition hover:bg-accent-strong"
           >
             Browse all emojis
           </Link>

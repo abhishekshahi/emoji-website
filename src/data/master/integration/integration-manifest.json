@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-08-09T04:59:52.733Z",
+  "phase": "8.11A",
+  "releaseId": "master-8.10-20260809",
+  "releaseStatus": "frozen",
+  "readOnly": true,
+  "featureFlags": {
+    "masterIntegrationEnabled": false,
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "dataSources": {
+    "releasePackage": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/release/8.10",
+    "canonicalDatabase": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/canonical-emojis.json",
+    "artworkLayer": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/artwork",
+    "metadataLayer": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/metadata",
+    "semanticLayer": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/semantic"
+  },
+  "outputs": {
+    "productionToMasterMap": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/production-to-master-map.json",
+    "integrationAuditReport": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/integration-audit-report.json"
+  }
+}

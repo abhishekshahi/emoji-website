@@ -4,12 +4,14 @@ import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { useEmojiSearch } from "@/hooks/use-emoji-search";
 import { getBrowsableEmojiById } from "@/lib/emoji/browsable-data";
+import { isAmbiguousSearchQuery } from "@/lib/emoji/search-highlight";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 
 export function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
-  const { results, isReady } = useEmojiSearch(query);
+  const trimmedQuery = query.trim();
+  const { results, isReady } = useEmojiSearch(trimmedQuery);
 
   const emojis = useMemo(
     () =>
@@ -19,7 +21,7 @@ export function SearchResults() {
     [results],
   );
 
-  if (!query.trim()) {
+  if (!trimmedQuery) {
     return (
       <div className="card-surface px-6 py-12 text-center">
         <p className="text-lg font-semibold">Start typing to search emojis</p>
@@ -43,15 +45,23 @@ export function SearchResults() {
     );
   }
 
+  const ambiguous = isAmbiguousSearchQuery(trimmedQuery);
+
   return (
     <div className="space-y-4">
-      <p className="text-sm text-muted">
+      <p className="text-sm text-muted" role="status" aria-live="polite">
         {emojis.length} result{emojis.length === 1 ? "" : "s"} for{" "}
-        <span className="font-semibold text-foreground">&quot;{query}&quot;</span>
+        <span className="font-semibold text-foreground">&quot;{trimmedQuery}&quot;</span>
       </p>
+      {ambiguous ? (
+        <p className="rounded-2xl border border-border bg-surface-muted/60 px-4 py-3 text-sm text-muted">
+          Multiple matches — this term can refer to more than one emoji.
+        </p>
+      ) : null}
       <EmojiGrid
         emojis={emojis}
-        emptyMessage={`No emojis matched "${query}". Try another keyword or code point.`}
+        highlightQuery={trimmedQuery}
+        emptyMessage={`No emojis matched "${trimmedQuery}". Try another keyword or code point.`}
       />
     </div>
   );

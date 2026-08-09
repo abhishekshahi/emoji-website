@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-09T04:37:41.742Z",
+  "phase": "8.8",
+  "files": {
+    "semanticSourceIndex": "master/semantic/semantic-source-index.json",
+    "canonicalSemanticIndex": "master/semantic/canonical-semantic-index.json",
+    "canonicalSemanticSearch": "master/semantic/canonical-semantic-search.json",
+    "semanticSeoIndex": "master/semantic/semantic-seo-index.json",
+    "semanticSearchTerms": "master/semantic/semantic-search-terms.json",
+    "semanticDefinitionsIndex": "master/semantic/semantic-definitions-index.json",
+    "semanticConflicts": "master/semantic/semantic-conflicts.json",
+    "semanticCoverageReport": "master/semantic/semantic-coverage-report.json",
+    "semanticSeoPolicyReport": "master/semantic/semantic-seo-policy-report.json"
+  }
+}

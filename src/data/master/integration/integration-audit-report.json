@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-08-09T04:59:52.733Z",
+  "phase": "8.11A",
+  "releaseId": "master-8.10-20260809",
+  "releaseVerification": {
+    "verified": true,
+    "releaseId": "master-8.10-20260809",
+    "status": "frozen",
+    "checksumStatus": "PASS",
+    "mismatches": []
+  },
+  "productionMappings": {
+    "standard": {
+      "total": 3944,
+      "mapped": 3944
+    },
+    "extras": {
+      "total": 542,
+      "mapped": 542
+    },
+    "total": {
+      "total": 4486,
+      "mapped": 4486
+    },
+    "status": "PASS"
+  },
+  "adapters": {
+    "canonical": "PASS",
+    "artwork": "PASS",
+    "metadata": "PASS",
+    "search": "PASS",
+    "seo": "PASS"
+  },
+  "productionSafety": {
+    "emojisJsonCount": 3944,
+    "openmojiExtrasCount": 542,
+    "featureFlagsDefaultFalse": true,
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-08-09T06:29:54.181Z",
+  "phase": "8.11F",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "checks": {
+    "metadataLoaded": true,
+    "canonicalName": true,
+    "modelIncludesMetadata": true,
+    "notoUnavailable": true,
+    "twemojiUnavailable": true,
+    "unicodeAvailable": true,
+    "sourceSeparation": true,
+    "shortcodeFire": true,
+    "keywordCap": true,
+    "aliasCap": true,
+    "semanticSourceLabeled": true,
+    "emojinetPanelAvailable": true,
+    "noInventedNotoMetadata": true,
+    "noInventedTwemojiMetadata": true
+  },
+  "status": "PASS",
+  "hotSafety": "PASS",
+  "searchDisabled": true,
+  "seoDisabled": true
+}

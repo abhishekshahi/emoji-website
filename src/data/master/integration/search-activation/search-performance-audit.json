@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-08-09T15:00:46.489Z",
+  "phase": "8.11G",
+  "releaseId": "master-8.10-20260809",
+  "checks": {
+    "canonicalScopedResults": true,
+    "noFullMetadataLoad": true,
+    "staticIndexUsesMaps": true,
+    "productionIndexSize": true,
+    "publicSemanticBelowAmbiguous": true
+  },
+  "status": "PASS"
+}

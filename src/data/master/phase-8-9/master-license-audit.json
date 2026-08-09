@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-08-09T04:48:56.272Z",
+  "phase": "8.9",
+  "artworkLicenses": {
+    "openmoji": {
+      "expected": "CC BY-SA 4.0",
+      "actual": "CC BY-SA 4.0",
+      "status": "PASS"
+    },
+    "noto": {
+      "expected": "Apache-2.0",
+      "actual": "Apache-2.0",
+      "status": "PASS"
+    },
+    "twemoji": {
+      "expected": "CC BY 4.0",
+      "actual": "CC BY 4.0",
+      "status": "PASS"
+    },
+    "fluent": {
+      "expected": "MIT",
+      "actual": "MIT",
+      "status": "PASS"
+    }
+  },
+  "metadataLicenses": {
+    "openmoji": {
+      "expected": "CC BY-SA 4.0",
+      "actual": "CC BY-SA 4.0",
+      "status": "PASS"
+    },
+    "unicode-emoji-data": {
+      "expected": "Unicode Terms of Use",
+      "actual": "UNKNOWN",
+      "status": "WARN"
+    },
+    "unicode": {
+      "expected": "Unicode Terms of Use",
+      "actual": "Unicode Terms of Use",
+      "status": "PASS"
+    },
+    "emojibase": {
+      "expected": "MIT",
+      "actual": "MIT",
+      "status": "PASS"
+    },
+    "emojilib": {
+      "expected": "MIT",
+      "actual": "MIT",
+      "status": "PASS"
+    },
+    "emojinet": {
+      "expected": "CC BY-NC-SA 4.0",
+      "actual": "CC BY-NC-SA 4.0",
+      "status": "PASS"
+    },
+    "fluent": {
+      "expected": "MIT",
+      "actual": "MIT",
+      "status": "PASS"
+    },
+    "emoji-time": {
+      "expected": "MIT",
+      "actual": "UNKNOWN",
+      "status": "WARN"
+    }
+  },
+  "unknownLicenses": [],
+  "status": "PASS"
+}

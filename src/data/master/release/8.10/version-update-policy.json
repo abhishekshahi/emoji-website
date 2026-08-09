@@ -1,0 +1,18 @@
+{
+  "phase": "8.10",
+  "policy": "NO AUTOMATIC SOURCE UPDATES",
+  "rules": [
+    "No automatic source version bumps",
+    "No silent metadata refresh",
+    "No silent artwork refresh",
+    "No silent Unicode refresh",
+    "Dependency upgrades require explicit new release phase"
+  ],
+  "example": "OpenMoji 17.0.0 → 17.0.1 must NOT happen automatically",
+  "requirementsForNewRelease": [
+    "new source lock",
+    "new ingestion",
+    "new audit",
+    "new master release"
+  ]
+}

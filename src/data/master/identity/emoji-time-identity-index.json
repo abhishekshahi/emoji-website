@@ -1,0 +1,266 @@
+[
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-0:0",
+    "mapping": {
+      "hour": 0,
+      "halfHour": false,
+      "hexcode": "1F550",
+      "emoji": "🕐"
+    },
+    "canonicalIdentity": "unicode:1F550"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-1:0",
+    "mapping": {
+      "hour": 1,
+      "halfHour": false,
+      "hexcode": "1F551",
+      "emoji": "🕑"
+    },
+    "canonicalIdentity": "unicode:1F551"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-2:0",
+    "mapping": {
+      "hour": 2,
+      "halfHour": false,
+      "hexcode": "1F552",
+      "emoji": "🕒"
+    },
+    "canonicalIdentity": "unicode:1F552"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-3:0",
+    "mapping": {
+      "hour": 3,
+      "halfHour": false,
+      "hexcode": "1F553",
+      "emoji": "🕓"
+    },
+    "canonicalIdentity": "unicode:1F553"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-4:0",
+    "mapping": {
+      "hour": 4,
+      "halfHour": false,
+      "hexcode": "1F554",
+      "emoji": "🕔"
+    },
+    "canonicalIdentity": "unicode:1F554"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-5:0",
+    "mapping": {
+      "hour": 5,
+      "halfHour": false,
+      "hexcode": "1F555",
+      "emoji": "🕕"
+    },
+    "canonicalIdentity": "unicode:1F555"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-6:0",
+    "mapping": {
+      "hour": 6,
+      "halfHour": false,
+      "hexcode": "1F556",
+      "emoji": "🕖"
+    },
+    "canonicalIdentity": "unicode:1F556"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-7:0",
+    "mapping": {
+      "hour": 7,
+      "halfHour": false,
+      "hexcode": "1F557",
+      "emoji": "🕗"
+    },
+    "canonicalIdentity": "unicode:1F557"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-8:0",
+    "mapping": {
+      "hour": 8,
+      "halfHour": false,
+      "hexcode": "1F558",
+      "emoji": "🕘"
+    },
+    "canonicalIdentity": "unicode:1F558"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-9:0",
+    "mapping": {
+      "hour": 9,
+      "halfHour": false,
+      "hexcode": "1F559",
+      "emoji": "🕙"
+    },
+    "canonicalIdentity": "unicode:1F559"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-10:0",
+    "mapping": {
+      "hour": 10,
+      "halfHour": false,
+      "hexcode": "1F55A",
+      "emoji": "🕚"
+    },
+    "canonicalIdentity": "unicode:1F55A"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-11:0",
+    "mapping": {
+      "hour": 11,
+      "halfHour": false,
+      "hexcode": "1F55B",
+      "emoji": "🕛"
+    },
+    "canonicalIdentity": "unicode:1F55B"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-0:1",
+    "mapping": {
+      "hour": 0,
+      "halfHour": true,
+      "hexcode": "1F55C",
+      "emoji": "🕜"
+    },
+    "canonicalIdentity": "unicode:1F55C"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-1:1",
+    "mapping": {
+      "hour": 1,
+      "halfHour": true,
+      "hexcode": "1F55D",
+      "emoji": "🕝"
+    },
+    "canonicalIdentity": "unicode:1F55D"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-2:1",
+    "mapping": {
+      "hour": 2,
+      "halfHour": true,
+      "hexcode": "1F55E",
+      "emoji": "🕞"
+    },
+    "canonicalIdentity": "unicode:1F55E"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-3:1",
+    "mapping": {
+      "hour": 3,
+      "halfHour": true,
+      "hexcode": "1F55F",
+      "emoji": "🕟"
+    },
+    "canonicalIdentity": "unicode:1F55F"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-4:1",
+    "mapping": {
+      "hour": 4,
+      "halfHour": true,
+      "hexcode": "1F560",
+      "emoji": "🕠"
+    },
+    "canonicalIdentity": "unicode:1F560"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-5:1",
+    "mapping": {
+      "hour": 5,
+      "halfHour": true,
+      "hexcode": "1F561",
+      "emoji": "🕡"
+    },
+    "canonicalIdentity": "unicode:1F561"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-6:1",
+    "mapping": {
+      "hour": 6,
+      "halfHour": true,
+      "hexcode": "1F562",
+      "emoji": "🕢"
+    },
+    "canonicalIdentity": "unicode:1F562"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-7:1",
+    "mapping": {
+      "hour": 7,
+      "halfHour": true,
+      "hexcode": "1F563",
+      "emoji": "🕣"
+    },
+    "canonicalIdentity": "unicode:1F563"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-8:1",
+    "mapping": {
+      "hour": 8,
+      "halfHour": true,
+      "hexcode": "1F564",
+      "emoji": "🕤"
+    },
+    "canonicalIdentity": "unicode:1F564"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-9:1",
+    "mapping": {
+      "hour": 9,
+      "halfHour": true,
+      "hexcode": "1F565",
+      "emoji": "🕥"
+    },
+    "canonicalIdentity": "unicode:1F565"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-10:1",
+    "mapping": {
+      "hour": 10,
+      "halfHour": true,
+      "hexcode": "1F566",
+      "emoji": "🕦"
+    },
+    "canonicalIdentity": "unicode:1F566"
+  },
+  {
+    "source": "emoji-time",
+    "sourceId": "emoji-time:clock-11:1",
+    "mapping": {
+      "hour": 11,
+      "halfHour": true,
+      "hexcode": "1F567",
+      "emoji": "🕧"
+    },
+    "canonicalIdentity": "unicode:1F567"
+  }
+]

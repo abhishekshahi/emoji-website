@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-08-09T15:00:46.455Z",
+  "phase": "8.11G",
+  "releaseId": "master-8.10-20260809",
+  "checks": {
+    "restrictedAliasesNotPublic": true,
+    "canonicalKeywordsPresent": true,
+    "puaNotMappedToUnicode": true,
+    "utilityExcluded": true,
+    "publicSemanticTermsFiltered": true,
+    "productionMapping": true,
+    "seoDisabled": true,
+    "artworkDisabled": true,
+    "metadataDisabled": true
+  },
+  "status": "PASS"
+}
