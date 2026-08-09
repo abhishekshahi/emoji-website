@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-08-09T17:11:39.303Z",
+  "phase": "8.11I",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterSEOEnabled": true
+  },
+  "provenance": "frozen-master-8.10",
+  "queryResults": [
+    {
+      "query": "fire",
+      "expected": "unicode:1F525",
+      "top": "unicode:1F525",
+      "pass": true
+    },
+    {
+      "query": "🔥",
+      "expected": "unicode:1F525",
+      "top": "unicode:1F525",
+      "pass": true
+    },
+    {
+      "query": "U+1F525",
+      "expected": "unicode:1F525",
+      "top": "unicode:1F525",
+      "pass": true
+    },
+    {
+      "query": ":fire:",
+      "expected": "unicode:1F525",
+      "top": "unicode:1F525",
+      "pass": true
+    },
+    {
+      "query": "flame",
+      "expected": "unicode:1F525",
+      "top": "unicode:1F525",
+      "pass": true
+    },
+    {
+      "query": "burn",
+      "expected": "unicode:1F525",
+      "top": "unicode:1F525",
+      "pass": true
+    },
+    {
+      "query": "pride flag",
+      "expected": "unicode:1F3F3-FE0F-200D-1F308",
+      "top": "unicode:1F3F3-FE0F-200D-1F308",
+      "pass": true
+    },
+    {
+      "query": "thumbs up",
+      "expected": "unicode:1F44D",
+      "top": "unicode:1F44D",
+      "pass": true
+    },
+    {
+      "query": "👍",
+      "expected": "unicode:1F44D",
+      "top": "unicode:1F44D",
+      "pass": true
+    },
+    {
+      "query": "👍🏻",
+      "expected": "unicode:1F44D-1F3FB",
+      "top": "unicode:1F44D-1F3FB",
+      "pass": true
+    },
+    {
+      "query": "👨‍💻",
+      "expected": "unicode:1F468-200D-1F4BB",
+      "top": "unicode:1F468-200D-1F4BB",
+      "pass": true
+    },
+    {
+      "query": "🇮🇳",
+      "expected": "unicode:1F1EE-1F1F3",
+      "top": "unicode:1F1EE-1F1F3",
+      "pass": true
+    }
+  ],
+  "hotResultCount": 20,
+  "checks": {
+    "integrationAudit": true,
+    "queryMatrix": true,
+    "hotAmbiguous": true,
+    "hotNotFireOnly": true,
+    "variationSelectorAware": true,
+    "deterministicRanking": true
+  },
+  "searchIntegration": "PASS",
+  "status": "PASS"
+}

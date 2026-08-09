@@ -12,6 +12,7 @@ export const UI_INTEGRATION_PHASE = "8.11E" as const;
 export const ACTIVATION_PHASE = "8.11F" as const;
 export const SEARCH_ACTIVATION_PHASE = "8.11G" as const;
 export const SEARCH_UI_PHASE = "8.11H" as const;
+export const FINAL_ACTIVATION_PHASE = "8.11I" as const;
 
 export const PRODUCTION_BASELINES = {
   standardRecords: 3944,
@@ -39,6 +40,7 @@ export function integrationDataPaths(rootDir: string): {
   activationIntegrationDir: string;
   searchActivationIntegrationDir: string;
   searchUiIntegrationDir: string;
+  finalActivationIntegrationDir: string;
 } {
   return {
     releaseDir: `${rootDir}/src/data/master/release/8.10`,
@@ -52,5 +54,6 @@ export function integrationDataPaths(rootDir: string): {
     activationIntegrationDir: `${rootDir}/src/data/master/integration/activation`,
     searchActivationIntegrationDir: `${rootDir}/src/data/master/integration/search-activation`,
     searchUiIntegrationDir: `${rootDir}/src/data/master/integration/search-ui`,
+    finalActivationIntegrationDir: `${rootDir}/src/data/master/integration/final-activation`,
   };
 }

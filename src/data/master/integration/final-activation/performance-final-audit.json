@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-08-09T17:11:45.240Z",
+  "phase": "8.11I",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterSEOEnabled": true
+  },
+  "provenance": "frozen-master-8.10",
+  "timings": [
+    {
+      "label": "production-search-fire",
+      "durationMs": 0.342
+    },
+    {
+      "label": "master-search-fire",
+      "durationMs": 11.798
+    },
+    {
+      "label": "canonical-artwork-lookup-fire",
+      "durationMs": 0.058
+    },
+    {
+      "label": "canonical-metadata-lookup-fire",
+      "durationMs": 0.077
+    },
+    {
+      "label": "seo-lookup-fire",
+      "durationMs": 0.026
+    },
+    {
+      "label": "provider-artwork-lookup-fire",
+      "durationMs": 0.013
+    }
+  ],
+  "checks": {
+    "productionSearchUnderOneSecond": true,
+    "masterSearchUnderOneSecond": true,
+    "artworkLookupUnderOneSecond": true,
+    "metadataLookupUnderOneSecond": true,
+    "seoLookupUnderOneSecond": true,
+    "canonicalScopedLoading": true,
+    "noFullMasterClientLoad": true
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-08-09T17:11:45.808Z",
+  "phase": "8.11I",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "checks": {
+    "artworkFlagFalse": true,
+    "metadataFlagFalse": true,
+    "searchFlagFalse": true,
+    "seoFlagFalse": true,
+    "productionSearchWorks": true,
+    "productionSearchUnchanged": true,
+    "productionArtworkPath": true,
+    "productionSeoWorks": true,
+    "masterSeoInactive": true,
+    "noVisibleMasterUi": true
+  },
+  "status": "PASS"
+}

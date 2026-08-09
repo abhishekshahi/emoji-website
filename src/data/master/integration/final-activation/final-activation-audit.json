@@ -1,0 +1,737 @@
+{
+  "generatedAt": "2026-08-09T17:11:31.636Z",
+  "phase": "8.11I",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "sections": {
+    "frozenReleaseIntegrity": {
+      "generatedAt": "2026-08-09T17:10:42.743Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "checks": {
+        "releaseId": true,
+        "frozenMarker": true,
+        "manifestExists": true,
+        "checksumsExist": true,
+        "checksumVerification": true,
+        "checksumFailures": true
+      },
+      "checksumVerifiedFiles": 31,
+      "checksumFailures": 0,
+      "status": "PASS"
+    },
+    "productionSafety": {
+      "generatedAt": "2026-08-09T17:10:46.213Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "standardRecords": 3944,
+        "extrasRecords": 542,
+        "totalSearchable": 4486
+      },
+      "checks": {
+        "standardRecords": true,
+        "extrasRecords": true,
+        "totalSearchable": true,
+        "productionSearchWorks": true,
+        "productionSeoWorks": true,
+        "frozenRelease": true,
+        "flagsDisabled": true
+      },
+      "status": "PASS"
+    },
+    "combinedActivation": {
+      "generatedAt": "2026-08-09T17:11:11.999Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "checks": {
+        "artworkActive": true,
+        "metadataActive": true,
+        "searchActive": true,
+        "seoActive": true,
+        "identityStable": true,
+        "noExternalRuntime": true
+      },
+      "status": "PASS",
+      "providerCount": 4,
+      "metadataSources": 10,
+      "searchTop": "unicode:1F525",
+      "seoSlug": "fire"
+    },
+    "coreEmojiMatrix": {
+      "generatedAt": "2026-08-09T17:11:12.765Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "matrix": [
+        {
+          "label": "fire",
+          "canonicalId": "unicode:1F525",
+          "resolvedCanonical": "unicode:1F525",
+          "canonicalMatch": true,
+          "artworkProviders": 4,
+          "metadataAvailable": true,
+          "searchHits": 5,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F525",
+            "recent": "1F525",
+            "copy": "🔥",
+            "share": "/emoji/fire"
+          },
+          "pass": true
+        },
+        {
+          "label": "thumbs-up",
+          "canonicalId": "unicode:1F44D",
+          "resolvedCanonical": "unicode:1F44D",
+          "canonicalMatch": true,
+          "artworkProviders": 4,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F44D",
+            "recent": "1F44D",
+            "copy": "👍",
+            "share": "/emoji/thumbs-up"
+          },
+          "pass": true
+        },
+        {
+          "label": "thumbs-up-light",
+          "canonicalId": "unicode:1F44D-1F3FB",
+          "resolvedCanonical": "unicode:1F44D-1F3FB",
+          "canonicalMatch": true,
+          "artworkProviders": 2,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F44D-1F3FB",
+            "recent": "1F44D-1F3FB",
+            "copy": "👍🏻",
+            "share": "/emoji/thumbs-up-light-skin-tone"
+          },
+          "pass": true
+        },
+        {
+          "label": "thumbs-up-dark",
+          "canonicalId": "unicode:1F44D-1F3FF",
+          "resolvedCanonical": "unicode:1F44D-1F3FF",
+          "canonicalMatch": true,
+          "artworkProviders": 2,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F44D-1F3FF",
+            "recent": "1F44D-1F3FF",
+            "copy": "👍🏿",
+            "share": "/emoji/thumbs-up-dark-skin-tone"
+          },
+          "pass": true
+        },
+        {
+          "label": "man-technologist",
+          "canonicalId": "unicode:1F468-200D-1F4BB",
+          "resolvedCanonical": "unicode:1F468-200D-1F4BB",
+          "canonicalMatch": true,
+          "artworkProviders": 3,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F468-200D-1F4BB",
+            "recent": "1F468-200D-1F4BB",
+            "copy": "👨‍💻",
+            "share": "/emoji/man-technologist"
+          },
+          "pass": true
+        },
+        {
+          "label": "woman-technologist",
+          "canonicalId": "unicode:1F469-200D-1F4BB",
+          "resolvedCanonical": "unicode:1F469-200D-1F4BB",
+          "canonicalMatch": true,
+          "artworkProviders": 3,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F469-200D-1F4BB",
+            "recent": "1F469-200D-1F4BB",
+            "copy": "👩‍💻",
+            "share": "/emoji/woman-technologist"
+          },
+          "pass": true
+        },
+        {
+          "label": "india-flag",
+          "canonicalId": "unicode:1F1EE-1F1F3",
+          "resolvedCanonical": "unicode:1F1EE-1F1F3",
+          "canonicalMatch": true,
+          "artworkProviders": 2,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F1EE-1F1F3",
+            "recent": "1F1EE-1F1F3",
+            "copy": "🇮🇳",
+            "share": "/emoji/flag-india"
+          },
+          "pass": true
+        },
+        {
+          "label": "heart",
+          "canonicalId": "unicode:2764-FE0F",
+          "resolvedCanonical": "unicode:2764-FE0F",
+          "canonicalMatch": true,
+          "artworkProviders": 1,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "2764-FE0F",
+            "recent": "2764-FE0F",
+            "copy": "❤️",
+            "share": "/emoji/red-heart"
+          },
+          "pass": true
+        },
+        {
+          "label": "text-smile",
+          "canonicalId": "unicode:263A",
+          "resolvedCanonical": "unicode:263A",
+          "canonicalMatch": true,
+          "artworkProviders": 3,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": null,
+          "pass": true
+        },
+        {
+          "label": "emoji-smile",
+          "canonicalId": "unicode:263A-FE0F",
+          "resolvedCanonical": "unicode:263A-FE0F",
+          "canonicalMatch": true,
+          "artworkProviders": 1,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "263A-FE0F",
+            "recent": "263A-FE0F",
+            "copy": "☺️",
+            "share": "/emoji/smiling-face"
+          },
+          "pass": true
+        },
+        {
+          "label": "rainbow-flag",
+          "canonicalId": "unicode:1F3F3-FE0F-200D-1F308",
+          "resolvedCanonical": "unicode:1F3F3-FE0F-200D-1F308",
+          "canonicalMatch": true,
+          "artworkProviders": 3,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "1F3F3-FE0F-200D-1F308",
+            "recent": "1F3F3-FE0F-200D-1F308",
+            "copy": "🏳️‍🌈",
+            "share": "/emoji/rainbow-flag"
+          },
+          "pass": true
+        },
+        {
+          "label": "openmoji-pua",
+          "canonicalId": "source:openmoji:E000",
+          "resolvedCanonical": "source:openmoji:E000",
+          "canonicalMatch": true,
+          "artworkProviders": 1,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": {
+            "favorite": "E000",
+            "recent": "E000",
+            "copy": "",
+            "share": "/emoji/extra-goldfish"
+          },
+          "pass": true
+        },
+        {
+          "label": "noto-artwork-only",
+          "canonicalId": "source:noto:noto.png",
+          "resolvedCanonical": "source:noto:noto.png",
+          "canonicalMatch": true,
+          "artworkProviders": 0,
+          "metadataAvailable": true,
+          "searchHits": 0,
+          "seoAvailable": true,
+          "identity": null,
+          "pass": true
+        }
+      ],
+      "testCount": 13,
+      "status": "PASS"
+    },
+    "artwork": {
+      "generatedAt": "2026-08-09T17:11:13.031Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "artworkRecords": 40071,
+        "checksumFailures": 0,
+        "missingFiles": 0
+      },
+      "checks": {
+        "integrationAudit": true,
+        "artworkRecords": true,
+        "checksumFailures": true,
+        "missingFiles": true,
+        "releaseChecksumFailures": true,
+        "fourProviders": true,
+        "providerSwitching": true,
+        "localPathsOnly": true,
+        "noPermanentWinner": true
+      },
+      "artworkIntegration": "PASS",
+      "status": "PASS"
+    },
+    "metadata": {
+      "generatedAt": "2026-08-09T17:11:13.068Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "masterMetadataRecords": 42910,
+        "sourcesInspected": 8
+      },
+      "checks": {
+        "integrationAudit": true,
+        "metadataRecords": true,
+        "unicodeAvailable": true,
+        "cldrAvailable": true,
+        "openmojiAvailable": true,
+        "emojibaseAvailable": true,
+        "emojilibAvailable": true,
+        "emojinetAvailable": true,
+        "fluentAvailable": true,
+        "notoUnavailable": true,
+        "twemojiUnavailable": true,
+        "sourceSeparation": true,
+        "provenancePreserved": true,
+        "noSilentOverwrite": true
+      },
+      "metadataIntegration": "PASS",
+      "status": "PASS"
+    },
+    "search": {
+      "generatedAt": "2026-08-09T17:11:15.194Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "queryResults": [
+        {
+          "query": "fire",
+          "expected": "unicode:1F525",
+          "top": "unicode:1F525",
+          "pass": true
+        },
+        {
+          "query": "🔥",
+          "expected": "unicode:1F525",
+          "top": "unicode:1F525",
+          "pass": true
+        },
+        {
+          "query": "U+1F525",
+          "expected": "unicode:1F525",
+          "top": "unicode:1F525",
+          "pass": true
+        },
+        {
+          "query": ":fire:",
+          "expected": "unicode:1F525",
+          "top": "unicode:1F525",
+          "pass": true
+        },
+        {
+          "query": "flame",
+          "expected": "unicode:1F525",
+          "top": "unicode:1F525",
+          "pass": true
+        },
+        {
+          "query": "burn",
+          "expected": "unicode:1F525",
+          "top": "unicode:1F525",
+          "pass": true
+        },
+        {
+          "query": "pride flag",
+          "expected": "unicode:1F3F3-FE0F-200D-1F308",
+          "top": "unicode:1F3F3-FE0F-200D-1F308",
+          "pass": true
+        },
+        {
+          "query": "thumbs up",
+          "expected": "unicode:1F44D",
+          "top": "unicode:1F44D",
+          "pass": true
+        },
+        {
+          "query": "👍",
+          "expected": "unicode:1F44D",
+          "top": "unicode:1F44D",
+          "pass": true
+        },
+        {
+          "query": "👍🏻",
+          "expected": "unicode:1F44D-1F3FB",
+          "top": "unicode:1F44D-1F3FB",
+          "pass": true
+        },
+        {
+          "query": "👨‍💻",
+          "expected": "unicode:1F468-200D-1F4BB",
+          "top": "unicode:1F468-200D-1F4BB",
+          "pass": true
+        },
+        {
+          "query": "🇮🇳",
+          "expected": "unicode:1F1EE-1F1F3",
+          "top": "unicode:1F1EE-1F1F3",
+          "pass": true
+        }
+      ],
+      "hotResultCount": 20,
+      "checks": {
+        "integrationAudit": true,
+        "queryMatrix": true,
+        "hotAmbiguous": true,
+        "hotNotFireOnly": true,
+        "variationSelectorAware": true,
+        "deterministicRanking": true
+      },
+      "searchIntegration": "PASS",
+      "status": "PASS"
+    },
+    "semantic": {
+      "generatedAt": "2026-08-09T17:11:15.297Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "emojinetSenses": 15183,
+        "emojinetDefinitions": 17572,
+        "ambiguousTerms": 115387
+      },
+      "checks": {
+        "emojinetSenses": true,
+        "definitionsPreserved": true,
+        "ambiguousTermsTracked": true,
+        "hotProtected": true,
+        "snapstreakContextual": true,
+        "litafRestricted": true,
+        "unicodeNamingAuthority": true,
+        "noPublicSeoLeak": true
+      },
+      "hotAmbiguous": true,
+      "snapstreakHits": 1,
+      "litafHits": 1,
+      "status": "PASS"
+    },
+    "seo": {
+      "generatedAt": "2026-08-09T17:11:15.941Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "slugMismatches": 2934,
+        "slugIssues": 4217,
+        "sitemapEligible": 4486
+      },
+      "checks": {
+        "integrationAudit": true,
+        "fireCanonicalUrl": true,
+        "singleCanonicalUrl": true,
+        "noProviderUrls": true,
+        "slugMismatchesReported": true,
+        "slugMismatchesNotAutoFixed": true,
+        "slugIssuesReported": true,
+        "sitemapEligibility": true,
+        "artworkOnlyBlocked": true,
+        "utilityBlocked": true,
+        "puaBlocked": true
+      },
+      "seoIntegration": "PASS",
+      "fireSlug": "fire",
+      "status": "PASS"
+    },
+    "ui": {
+      "generatedAt": "2026-08-09T17:11:24.260Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "checks": {
+        "uiIntegration": true,
+        "searchUiIntegration": true,
+        "accessibility": true,
+        "responsive": true,
+        "providerSelector": true,
+        "variantSelector": true,
+        "metadataPanel": true,
+        "sourcePanel": true,
+        "searchHighlight": true,
+        "ambiguityMessage": true,
+        "emptyState": true,
+        "noResultsState": true,
+        "loadingState": true,
+        "noProviderInUrl": true
+      },
+      "uiIntegration": "PASS",
+      "searchUiIntegration": "PASS",
+      "status": "PASS"
+    },
+    "serverClientBoundary": {
+      "generatedAt": "2026-08-09T17:11:24.264Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "clientFilesInspected": [
+        "src/hooks/use-emoji-search.ts",
+        "src/components/search/search-bar.tsx",
+        "src/components/search/search-results.tsx",
+        "src/components/emoji/emoji-card.tsx",
+        "src/components/emoji/emoji-grid.tsx",
+        "src/components/master/artwork/artwork-gallery.tsx",
+        "src/components/master/provider/artwork-provider-selector.tsx",
+        "src/components/master/artwork/artwork-variant-selector.tsx",
+        "src/components/master/metadata/canonical-metadata-panel.tsx",
+        "src/components/master/metadata/source-metadata-panel.tsx",
+        "src/lib/master/integration/ui/provider-state.client.ts"
+      ],
+      "serverFilesInspected": [
+        "src/lib/master/integration/master-reader.ts",
+        "src/lib/master/integration/ui/server-data.ts",
+        "src/components/master/master-emoji-panels.server.tsx"
+      ],
+      "checks": {
+        "clientNoNodeFs": true,
+        "clientNoNodePath": true,
+        "clientNoMasterReader": true,
+        "clientNoGetMasterReader": true,
+        "serverUsesFs": true,
+        "providerStateClientOnly": true,
+        "noExternalFetch": true,
+        "noMasterDatabaseImport": true
+      },
+      "status": "PASS"
+    },
+    "performance": {
+      "generatedAt": "2026-08-09T17:11:24.292Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "timings": [
+        {
+          "label": "production-search-fire",
+          "durationMs": 0.453
+        },
+        {
+          "label": "master-search-fire",
+          "durationMs": 26.794
+        },
+        {
+          "label": "canonical-artwork-lookup-fire",
+          "durationMs": 0.204
+        },
+        {
+          "label": "canonical-metadata-lookup-fire",
+          "durationMs": 0.217
+        },
+        {
+          "label": "seo-lookup-fire",
+          "durationMs": 0.089
+        },
+        {
+          "label": "provider-artwork-lookup-fire",
+          "durationMs": 0.05
+        }
+      ],
+      "checks": {
+        "productionSearchUnderOneSecond": true,
+        "masterSearchUnderOneSecond": true,
+        "artworkLookupUnderOneSecond": true,
+        "metadataLookupUnderOneSecond": true,
+        "seoLookupUnderOneSecond": true,
+        "canonicalScopedLoading": true,
+        "noFullMasterClientLoad": true
+      },
+      "status": "PASS"
+    },
+    "failureSafety": {
+      "generatedAt": "2026-08-09T17:11:24.931Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": true,
+        "masterMetadataEnabled": true,
+        "masterSearchEnabled": true,
+        "masterSEOEnabled": true
+      },
+      "provenance": "frozen-master-8.10",
+      "checks": {
+        "checksumMismatchDetected": true,
+        "missingArtworkSafe": true,
+        "invalidCanonicalSafe": true,
+        "unavailableMetadataSafe": true,
+        "missingSeoSafe": true,
+        "ambiguousQuerySafe": true,
+        "malformedProviderSafe": true,
+        "noInventedMetadata": true,
+        "noExternalFallback": true,
+        "noUnsafeSeoPages": true
+      },
+      "status": "PASS"
+    },
+    "flagRollback": {
+      "generatedAt": "2026-08-09T17:11:24.953Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "checks": {
+        "artworkFlagFalse": true,
+        "metadataFlagFalse": true,
+        "searchFlagFalse": true,
+        "seoFlagFalse": true,
+        "productionSearchWorks": true,
+        "productionSearchUnchanged": true,
+        "productionArtworkPath": true,
+        "productionSeoWorks": true,
+        "masterSeoInactive": true,
+        "noVisibleMasterUi": true
+      },
+      "status": "PASS"
+    },
+    "regression": {
+      "generatedAt": "2026-08-09T17:11:31.636Z",
+      "phase": "8.11I",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "suites": {
+        "activation": "PASS",
+        "artwork": "PASS",
+        "metadata": "PASS",
+        "search": "PASS",
+        "seo": "PASS",
+        "ui": "PASS",
+        "searchUi": "PASS"
+      },
+      "existingTestBaseline": 278,
+      "phaseTestSuite": "8.11I-final-activation",
+      "status": "PASS"
+    }
+  },
+  "recommendation": "Phase 8.11I final audit passed. Branch is production-ready with all feature flags disabled.",
+  "status": "PASS"
+}
