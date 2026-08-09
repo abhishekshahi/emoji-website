@@ -18,6 +18,7 @@ export const SEO_MIGRATION_PHASE = "8.12A" as const;
 export const SEO_MIGRATION_REVIEW_PHASE = "8.12B" as const;
 export const SEO_MIGRATION_IMPLEMENTATION_PHASE = "8.12C" as const;
 export const SEO_MIGRATION_PRODUCTION_QA_PHASE = "8.12D" as const;
+export const SEO_CANARY_PHASE = "8.12E" as const;
 
 export const PRODUCTION_BASELINES = {
   standardRecords: 3944,
@@ -51,6 +52,7 @@ export function integrationDataPaths(rootDir: string): {
   seoMigrationReviewIntegrationDir: string;
   seoMigrationImplementationIntegrationDir: string;
   seoMigrationProductionQaIntegrationDir: string;
+  seoCanaryIntegrationDir: string;
 } {
   return {
     releaseDir: `${rootDir}/src/data/master/release/8.10`,
@@ -70,5 +72,6 @@ export function integrationDataPaths(rootDir: string): {
     seoMigrationReviewIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-review`,
     seoMigrationImplementationIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-implementation`,
     seoMigrationProductionQaIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-production-qa`,
+    seoCanaryIntegrationDir: `${rootDir}/src/data/master/integration/seo-canary`,
   };
 }

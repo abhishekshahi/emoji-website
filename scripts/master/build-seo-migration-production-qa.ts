@@ -2,7 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { spawn, type ChildProcess } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { buildProductionQaPackage } from "../../src/lib/master/integration/seo-migration-production-qa/build";
+import { buildProductionQaPackage, buildCanaryOfflinePackage } from "../../src/lib/master/integration/seo-migration-production-qa/build";
 
 const scriptsDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(scriptsDir, "..", "..");
@@ -38,6 +38,7 @@ async function startServer(): Promise<ChildProcess> {
     env: {
       ...process.env,
       NEXT_PUBLIC_SITE_URL: BASE_URL,
+      MASTER_SEO_ROLLOUT_MODE: "CANARY",
     },
   });
   await waitForServer(BASE_URL);
@@ -51,6 +52,28 @@ function stopServer(child: ChildProcess | null): void {
 }
 
 async function main(): Promise<void> {
+  const canaryDir = join(rootDir, "src", "data", "master", "integration", "seo-canary");
+  if (process.argv.includes("--canary")) {
+    const canaryPackage = buildCanaryOfflinePackage(rootDir);
+    writeJson(join(canaryDir, "canary-audit.json"), canaryPackage.canaryAudit);
+    writeJson(join(canaryDir, "canary-config-audit.json"), canaryPackage.canaryConfigAudit);
+    writeJson(join(canaryDir, "failure-safety-audit.json"), canaryPackage.failureSafetyAudit);
+    writeJson(join(canaryDir, "production-safety-audit.json"), canaryPackage.productionSafetyAudit);
+    writeJson(join(canaryDir, "sitemap-canary-audit.json"), canaryPackage.sitemapCanaryAudit);
+    writeJson(join(canaryDir, "performance-canary-audit.json"), canaryPackage.performanceCanaryAudit);
+    writeJson(join(canaryDir, "redirect-bundle-audit.json"), canaryPackage.redirectBundleAudit);
+    writeJson(join(canaryDir, "canary-manifest.json"), canaryPackage.canaryManifest);
+    writeJson(join(canaryDir, "redirect-canary-audit.json"), canaryPackage.failureSafetyAudit);
+    writeJson(join(canaryDir, "canonical-canary-audit.json"), canaryPackage.sitemapCanaryAudit);
+    writeJson(join(canaryDir, "indexation-canary-audit.json"), canaryPackage.productionSafetyAudit);
+    writeJson(join(canaryDir, "rollback-canary-audit.json"), canaryPackage.failureSafetyAudit);
+    console.log(`Canary audit: ${canaryPackage.canaryAudit.status}`);
+    if (canaryPackage.canaryAudit.status !== "PASS") {
+      process.exitCode = 1;
+    }
+    return;
+  }
+
   let server: ChildProcess | null = null;
   const useExternalBaseUrl = Boolean(process.env.SEO_QA_BASE_URL);
 

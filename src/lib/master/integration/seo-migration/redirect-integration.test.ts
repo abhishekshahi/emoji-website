@@ -31,6 +31,15 @@ import {
   resolveEmojiPageSlug,
   resolveProductionSlugForRedirectTarget,
 } from "@/lib/master/integration/seo-migration/redirects";
+import { buildCanaryOfflinePackage } from "@/lib/master/integration/seo-migration-production-qa/build";
+import { resolveActiveEmojiRedirect } from "@/lib/master/integration/seo-canary/active-migration";
+import {
+  getSeoRolloutMode,
+  isSeoMigrationRolloutActive,
+  parseSeoRolloutMode,
+  runWithSeoRolloutMode,
+} from "@/lib/master/integration/seo-canary/rollout";
+import { SEO_CANARY_PHASE } from "@/lib/master/integration/config";
 import { verifyFrozenChecksums } from "@/lib/master/release/build";
 import type { FileChecksumEntry } from "@/lib/master/release/types";
 
@@ -194,5 +203,37 @@ describe("phase 8.12C approved SEO redirect implementation", () => {
   it("confirms production datasets remain unchanged", () => {
     assert.equal((emojis as BrowsableEmoji[]).length, PRODUCTION_BASELINES.standardRecords);
     assert.equal((extras as BrowsableEmoji[]).length, PRODUCTION_BASELINES.extrasRecords);
+  });
+});
+
+describe("phase 8.12E SEO canary rollout", () => {
+  const offlinePackage = buildCanaryOfflinePackage(rootDir);
+
+  it("defaults SEO rollout to OFF and keeps masterSEOEnabled false", () => {
+    assert.equal(parseSeoRolloutMode(undefined), "OFF");
+    assert.equal(getSeoRolloutMode(), "OFF");
+    assert.equal(isSeoMigrationRolloutActive(), false);
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterSEOEnabled, false);
+    assert.equal(isMasterSeoIntegrationEnabled(), false);
+  });
+
+  it("activates approved redirects only when rollout mode is CANARY", () => {
+    const sample = resolveApprovedEmojiRedirect("/emoji/smiling-face");
+    assert.ok(sample);
+    runWithSeoRolloutMode("OFF", () => {
+      assert.equal(resolveActiveEmojiRedirect("/emoji/smiling-face"), null);
+    });
+    runWithSeoRolloutMode("CANARY", () => {
+      assert.equal(resolveActiveEmojiRedirect("/emoji/smiling-face")?.to, sample?.to);
+    });
+  });
+
+  it("passes offline canary audits", () => {
+    assert.equal(offlinePackage.canaryConfigAudit.status, "PASS");
+    assert.equal(offlinePackage.failureSafetyAudit.status, "PASS");
+    assert.equal(offlinePackage.productionSafetyAudit.status, "PASS");
+    assert.equal(offlinePackage.sitemapCanaryAudit.status, "PASS");
+    assert.equal(offlinePackage.redirectBundleAudit.status, "PASS");
+    assert.equal(offlinePackage.canaryManifest.phase, SEO_CANARY_PHASE);
   });
 });

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllBrowsableSlugs } from "@/lib/emoji/browsable-data";
 import { getAllCategorySlugs, getManifest } from "@/lib/emoji/data";
 import { getOpenMojiExtrasManifest } from "@/lib/emoji/extras-data";
-import { getCanonicalEmojiSitemapSlugs } from "@/lib/master/integration/seo-migration/redirects";
+import { getActiveEmojiSitemapSlugs } from "@/lib/master/integration/seo-canary/active-migration";
 import { absoluteUrl } from "@/lib/seo/metadata";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -69,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  const emojiPages: MetadataRoute.Sitemap = getCanonicalEmojiSitemapSlugs(getAllBrowsableSlugs()).map(
+  const emojiPages: MetadataRoute.Sitemap = getActiveEmojiSitemapSlugs(getAllBrowsableSlugs()).map(
     (slug) => ({
       url: absoluteUrl(`/emoji/${slug}`),
       lastModified: generatedAt,

@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-08-09T22:29:16.498Z",
+  "phase": "8.12E",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "off": {
+    "redirectsActive": false,
+    "redirectFailureCount": 0,
+    "status": "PASS"
+  },
+  "canary": {
+    "redirectsActive": true,
+    "approvedRedirects": 2280,
+    "redirectFailureCount": 0,
+    "status": "PASS"
+  },
+  "intentionalDifference": {
+    "redirectsOnlyInCanary": true,
+    "sitemapCountUnchanged": 4486
+  },
+  "status": "PASS"
+}

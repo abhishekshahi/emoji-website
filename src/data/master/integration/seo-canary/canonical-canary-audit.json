@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-08-09T22:28:55.058Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "entries": [
+    {
+      "label": "migrated-source",
+      "path": "/emoji/keycap",
+      "status": 301,
+      "canonical": null,
+      "expectedCanonical": null,
+      "fireExists": true,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "migrated-target",
+      "path": "/emoji/e0-6-keycap-u0023fe0f20e3",
+      "status": 200,
+      "canonical": "http://localhost:3099/emoji/e0-6-keycap-u0023fe0f20e3",
+      "expectedCanonical": "http://localhost:3000/emoji/e0-6-keycap-u0023fe0f20e3",
+      "fireExists": true,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "preserved-url",
+      "path": "/emoji/extra-goldfish",
+      "status": 200,
+      "canonical": "http://localhost:3000/emoji/extra-goldfish",
+      "expectedCanonical": "http://localhost:3000/emoji/extra-goldfish",
+      "fireExists": true,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "extra-url",
+      "path": "/emoji/extra-hyphen-minus",
+      "status": 200,
+      "canonical": "http://localhost:3000/emoji/extra-hyphen-minus",
+      "expectedCanonical": "http://localhost:3000/emoji/extra-hyphen-minus",
+      "fireExists": true,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "source-specific-url",
+      "path": "/emoji/extra-goldfish",
+      "status": 200,
+      "canonical": "http://localhost:3000/emoji/extra-goldfish",
+      "expectedCanonical": "http://localhost:3000/emoji/extra-goldfish",
+      "fireExists": true,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "canonical-fire",
+      "path": "/emoji/fire",
+      "status": 200,
+      "canonical": "http://localhost:3000/emoji/fire",
+      "expectedCanonical": "http://localhost:3000/emoji/fire",
+      "fireExists": true,
+      "failures": [],
+      "pass": true
+    }
+  ],
+  "failureCount": 0,
+  "status": "PASS"
+}

@@ -25,10 +25,10 @@ import {
 } from "@/lib/site/config";
 import { MasterEmojiPanelsGate } from "@/components/master/master-emoji-panels-gate";
 import {
-  getCanonicalEmojiSitemapSlugs,
-  isApprovedRedirectSourceSlug,
-  resolveEmojiPageSlug,
-} from "@/lib/master/integration/seo-migration/redirects";
+  getActiveEmojiSitemapSlugs,
+  isActiveApprovedRedirectSourceSlug,
+  resolveActiveEmojiPageSlug,
+} from "@/lib/master/integration/seo-canary/active-migration";
 
 interface EmojiPageProps {
   params: Promise<{ slug: string }>;
@@ -36,7 +36,7 @@ interface EmojiPageProps {
 
 export async function generateStaticParams() {
   const productionSlugs = getAllBrowsableSlugs();
-  const canonicalSlugs = getCanonicalEmojiSitemapSlugs(productionSlugs);
+  const canonicalSlugs = getActiveEmojiSitemapSlugs(productionSlugs);
   return canonicalSlugs.map((slug) => ({ slug }));
 }
 
@@ -44,13 +44,13 @@ export async function generateMetadata({
   params,
 }: EmojiPageProps): Promise<Metadata> {
   const { slug } = await params;
-  if (isApprovedRedirectSourceSlug(slug)) {
+  if (isActiveApprovedRedirectSourceSlug(slug)) {
     return {
       title: "Emoji redirect",
     };
   }
 
-  const { lookupSlug, canonicalSlug } = resolveEmojiPageSlug(slug);
+  const { lookupSlug, canonicalSlug } = resolveActiveEmojiPageSlug(slug);
   const emoji = getBrowsableEmojiBySlug(lookupSlug);
 
   if (!emoji) {
@@ -71,7 +71,7 @@ export async function generateMetadata({
 
 export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   const { slug } = await params;
-  const { lookupSlug, canonicalSlug } = resolveEmojiPageSlug(slug);
+  const { lookupSlug, canonicalSlug } = resolveActiveEmojiPageSlug(slug);
   const emoji = getBrowsableEmojiBySlug(lookupSlug);
 
   if (!emoji) {

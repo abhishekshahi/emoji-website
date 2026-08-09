@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { resolveApprovedEmojiRedirect } from "@/lib/master/integration/seo-migration/redirects";
+import { resolveActiveEmojiRedirect } from "@/lib/master/integration/seo-canary/active-migration";
 
 export function middleware(request: NextRequest) {
-  const redirect = resolveApprovedEmojiRedirect(request.nextUrl.pathname);
+  const redirect = resolveActiveEmojiRedirect(request.nextUrl.pathname);
   if (!redirect) {
     return NextResponse.next();
   }

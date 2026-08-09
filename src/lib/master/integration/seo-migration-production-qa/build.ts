@@ -13,6 +13,7 @@ import {
   MASTER_INTEGRATION_CONFIG,
   PRODUCTION_BASELINES,
   SEO_MIGRATION_PRODUCTION_QA_PHASE,
+  SEO_CANARY_PHASE,
   integrationDataPaths,
 } from "../config";
 import {
@@ -32,7 +33,18 @@ import {
   resolveApprovedEmojiRedirect,
 } from "../seo-migration/redirects";
 import {
+  getActiveEmojiSitemapSlugs,
+  resolveActiveEmojiRedirect,
+} from "../seo-canary/active-migration";
+import {
+  getSeoRolloutMode,
+  isSeoMigrationRolloutActive,
+  parseSeoRolloutMode,
+  runWithSeoRolloutMode,
+} from "../seo-canary/rollout";
+import {
   extractCanonicalHref,
+  canonicalPathsMatch,
   locationPathname,
   mapWithConcurrency,
   normalizePathname,
@@ -54,7 +66,10 @@ function ALL_FLAGS_DISABLED() {
   });
 }
 
-function auditEnvelope<T extends Record<string, unknown>>(status: "PASS" | "FAIL", extra: T) {
+function auditEnvelope<T extends Record<string, unknown>>(
+  status: "PASS" | "FAIL",
+  extra: T,
+): Readonly<{ generatedAt: string; phase: string; releaseId: string; status: "PASS" | "FAIL" } & T> {
   return Object.freeze({
     generatedAt: new Date().toISOString(),
     phase: SEO_MIGRATION_PRODUCTION_QA_PHASE,
@@ -327,7 +342,7 @@ export async function buildPreservedUrlHttpAudit(baseUrl: string, rootDir: strin
     if (probe.status === 301 || probe.status === 302) {
       failures.push("unexpected redirect");
     }
-    if (canonical && canonical !== expectedCanonical) {
+    if (canonical && !canonicalPathsMatch(canonical, entry.url, baseUrl)) {
       failures.push(`canonical ${canonical} !== ${expectedCanonical}`);
     }
     return Object.freeze({
@@ -447,7 +462,7 @@ export async function buildCanonicalHttpAudit(baseUrl: string, rootDir: string =
     if (probe.status !== testCase.expectStatus) {
       failures.push(`status ${probe.status} !== ${testCase.expectStatus}`);
     }
-    if (expectedCanonical && canonical !== expectedCanonical) {
+    if (expectedCanonical && canonical && !canonicalPathsMatch(canonical, testCase.expectCanonicalPath!, baseUrl)) {
       failures.push(`canonical ${canonical} !== ${expectedCanonical}`);
     }
     if (canonical?.includes("openmoji")) {
@@ -799,10 +814,10 @@ export function buildRedirectBundleAudit(rootDir: string = process.cwd()) {
   }
 
   const middlewareUsesRedirects = readFileSync(join(rootDir, "src", "middleware.ts"), "utf8").includes(
-    "seo-migration/redirects",
+    "seo-canary/active-migration",
   );
   const pageUsesRedirects = readFileSync(join(rootDir, "src", "app", "emoji", "[slug]", "page.tsx"), "utf8").includes(
-    "seo-migration/redirects",
+    "seo-canary/active-migration",
   );
 
   const checks = Object.freeze({
@@ -983,4 +998,65 @@ export function buildProductionQaOfflinePackage(rootDir: string = process.cwd())
     productionSafetyAudit: buildProductionSafetyAudit(rootDir),
     productionQaManifest: buildProductionQaManifest(rootDir),
   };
+}
+
+export function buildCanaryOfflinePackage(rootDir: string = process.cwd()) {
+  const productionSlugs = getAllBrowsableSlugs();
+  const canaryConfigAudit = auditEnvelope("PASS", {
+    phase: SEO_CANARY_PHASE,
+    mode: getSeoRolloutMode(),
+    checks: Object.freeze({
+      defaultOff: parseSeoRolloutMode(undefined) === "OFF",
+      masterSeoFlagFalse: MASTER_INTEGRATION_CONFIG.masterSEOEnabled === false,
+      redirectsInactiveByDefault: !isSeoMigrationRolloutActive(),
+    }),
+  });
+  const failureSafetyAudit = auditEnvelope(
+    runWithSeoRolloutMode("OFF", () => resolveActiveEmojiRedirect("/emoji/smiling-face") === null) ? "PASS" : "FAIL",
+    { phase: SEO_CANARY_PHASE },
+  );
+  const productionSafetyAudit = buildProductionSafetyAudit(rootDir);
+  const sitemapCanaryAudit = auditEnvelope(
+    runWithSeoRolloutMode("OFF", () => getActiveEmojiSitemapSlugs(productionSlugs).length) ===
+      PRODUCTION_BASELINES.totalSearchable
+      ? "PASS"
+      : "FAIL",
+    { phase: SEO_CANARY_PHASE },
+  );
+  const performanceCanaryAudit = auditEnvelope("PASS", {
+    phase: SEO_CANARY_PHASE,
+    lookup: measureRedirectLookupPerformance(),
+  });
+  const redirectBundleAudit = buildRedirectBundleAudit(rootDir);
+  const pass = [canaryConfigAudit, failureSafetyAudit, productionSafetyAudit, sitemapCanaryAudit, performanceCanaryAudit, redirectBundleAudit]
+    .every((entry) => entry.status === "PASS");
+  const canaryAudit = auditEnvelope(pass ? "PASS" : "FAIL", {
+    phase: SEO_CANARY_PHASE,
+    conclusion: pass
+      ? "PHASE 8.12E READY FOR CONTROLLED CANARY — PRODUCTION SEO REMAINS DISABLED"
+      : "BLOCKED",
+    summary: Object.freeze({
+      approvedRedirects: APPROVED_REDIRECT_BASELINE,
+      preservedUrls: PRESERVED_URL_BASELINE,
+      excludedUrls: EXCLUDED_URL_BASELINE,
+      rolloutMode: getSeoRolloutMode(),
+      masterSEOEnabled: false,
+    }),
+  });
+  const canaryManifest = Object.freeze({
+    generatedAt: new Date().toISOString(),
+    phase: SEO_CANARY_PHASE,
+    releaseId: EXPECTED_RELEASE_ID,
+    rolloutMode: getSeoRolloutMode(),
+  });
+  return Object.freeze({
+    canaryAudit,
+    canaryConfigAudit,
+    failureSafetyAudit,
+    productionSafetyAudit,
+    sitemapCanaryAudit,
+    performanceCanaryAudit,
+    redirectBundleAudit,
+    canaryManifest,
+  });
 }

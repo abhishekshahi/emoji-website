@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-08-09T22:29:16.498Z",
+  "phase": "8.12E",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "conclusion": "PHASE 8.12E CANARY VALIDATION COMPLETE",
+  "sections": {
+    "offBehaviorAudit": "PASS",
+    "defaultOffBehaviorAudit": "PASS",
+    "canaryHttpRedirectAudit": "PASS",
+    "redirectChainAudit": "PASS",
+    "preservedUrlHttpAudit": "PASS",
+    "excludedUrlAudit": "PASS",
+    "canonicalHttpAudit": "PASS",
+    "emojiUrlMatrixAudit": "PASS",
+    "redirectSecurityAudit": "PASS",
+    "redirectPerformanceAudit": "PASS",
+    "sitemapProductionAudit": "PASS",
+    "rollbackHttpAudit": "PASS",
+    "failureSafetyAudit": "PASS",
+    "offlineCanaryAudit": "PASS",
+    "comparisonAudit": "PASS"
+  },
+  "summary": {
+    "approvedRedirects": 2280,
+    "preservedUrls": 644,
+    "excludedUrls": 10,
+    "masterSEOEnabled": false
+  },
+  "status": "PASS"
+}
