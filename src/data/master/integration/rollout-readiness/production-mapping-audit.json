@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-08-09T18:04:59.619Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "counts": {
+    "standard": 3944,
+    "extras": 542,
+    "total": 4486,
+    "unmapped": 0
+  },
+  "checks": {
+    "standardMapped": true,
+    "extrasMapped": true,
+    "totalMapped": true,
+    "unmappedCount": 0
+  },
+  "unmappedProductionIds": [],
+  "status": "PASS"
+}

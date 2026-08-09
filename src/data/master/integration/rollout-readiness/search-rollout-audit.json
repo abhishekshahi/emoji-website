@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-08-09T18:05:01.293Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "queryResults": [
+    {
+      "query": "fire",
+      "resultCount": 15,
+      "topCanonicalId": "unicode:1F525",
+      "topScore": 800
+    },
+    {
+      "query": "flame",
+      "resultCount": 14,
+      "topCanonicalId": "unicode:1F525",
+      "topScore": 500
+    },
+    {
+      "query": "🔥",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F525",
+      "topScore": 1000
+    },
+    {
+      "query": "U+1F525",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F525",
+      "topScore": 900
+    },
+    {
+      "query": ":fire:",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F525",
+      "topScore": 800
+    },
+    {
+      "query": "hot",
+      "resultCount": 15,
+      "topCanonicalId": "unicode:1F975",
+      "topScore": 800
+    },
+    {
+      "query": "pride flag",
+      "resultCount": 15,
+      "topCanonicalId": "unicode:1F3F3-FE0F-200D-1F308",
+      "topScore": 500
+    },
+    {
+      "query": "☺",
+      "resultCount": 2,
+      "topCanonicalId": "unicode:263A",
+      "topScore": 999
+    },
+    {
+      "query": "☺️",
+      "resultCount": 2,
+      "topCanonicalId": "unicode:263A-FE0F",
+      "topScore": 1000
+    },
+    {
+      "query": "👍",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F44D",
+      "topScore": 999
+    },
+    {
+      "query": "👍🏻",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F44D-1F3FB",
+      "topScore": 1000
+    },
+    {
+      "query": "👍🏿",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F44D-1F3FF",
+      "topScore": 1000
+    },
+    {
+      "query": "👨‍💻",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F468-200D-1F4BB",
+      "topScore": 1000
+    },
+    {
+      "query": "👩‍💻",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F469-200D-1F4BB",
+      "topScore": 1000
+    },
+    {
+      "query": "🇮🇳",
+      "resultCount": 1,
+      "topCanonicalId": "unicode:1F1EE-1F1F3",
+      "topScore": 1000
+    },
+    {
+      "query": "xyzabc-unknown-query",
+      "resultCount": 0,
+      "topCanonicalId": null,
+      "topScore": 0
+    }
+  ],
+  "hotResultCount": 20,
+  "checks": {
+    "integrationAudit": true,
+    "fireQueryWorks": true,
+    "emojiQueryWorks": true,
+    "unicodeQueryWorks": true,
+    "shortcodeWorks": true,
+    "hotAmbiguous": true,
+    "hotNotFireOnly": true,
+    "variationSelectorDistinct": true,
+    "unknownQuerySafe": true,
+    "productionFallbackWorks": true,
+    "deterministicRanking": true,
+    "noExternalApi": true
+  },
+  "searchIntegration": "PASS",
+  "status": "PASS"
+}

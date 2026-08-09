@@ -24,20 +24,34 @@ import {
   OPENMOJI_PROJECT_URL,
 } from "@/lib/site/config";
 import { MasterEmojiPanelsGate } from "@/components/master/master-emoji-panels-gate";
+import {
+  getCanonicalEmojiSitemapSlugs,
+  isApprovedRedirectSourceSlug,
+  resolveEmojiPageSlug,
+} from "@/lib/master/integration/seo-migration/redirects";
 
 interface EmojiPageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return getAllBrowsableSlugs().map((slug) => ({ slug }));
+  const productionSlugs = getAllBrowsableSlugs();
+  const canonicalSlugs = getCanonicalEmojiSitemapSlugs(productionSlugs);
+  return canonicalSlugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
   params,
 }: EmojiPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const emoji = getBrowsableEmojiBySlug(slug);
+  if (isApprovedRedirectSourceSlug(slug)) {
+    return {
+      title: "Emoji redirect",
+    };
+  }
+
+  const { lookupSlug, canonicalSlug } = resolveEmojiPageSlug(slug);
+  const emoji = getBrowsableEmojiBySlug(lookupSlug);
 
   if (!emoji) {
     return {
@@ -48,7 +62,7 @@ export async function generateMetadata({
   return createEmojiPageMetadata({
     name: emoji.name,
     emoji: emoji.emoji,
-    slug: emoji.slug,
+    slug: canonicalSlug,
     keywords: emoji.keywords,
     codePointString: emoji.codePointString,
     artworkPath: getOpenMojiArtworkPath(emoji.hexcode),
@@ -57,7 +71,8 @@ export async function generateMetadata({
 
 export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   const { slug } = await params;
-  const emoji = getBrowsableEmojiBySlug(slug);
+  const { lookupSlug, canonicalSlug } = resolveEmojiPageSlug(slug);
+  const emoji = getBrowsableEmojiBySlug(lookupSlug);
 
   if (!emoji) {
     notFound();
@@ -73,7 +88,7 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   const jsonLd = buildEmojiPageJsonLd({
     name: emoji.name,
     emoji: emoji.emoji,
-    slug: emoji.slug,
+    slug: canonicalSlug,
     description,
     codePointString: emoji.codePointString,
     artworkPath: getOpenMojiArtworkPath(emoji.hexcode),
@@ -89,7 +104,7 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
         items={[
           { name: "Home", path: "/" },
           { name: categoryLabel, path: `/category/${emoji.category}` },
-          { name: `${emoji.name} ${emoji.emoji}`, path: `/emoji/${emoji.slug}` },
+          { name: `${emoji.name} ${emoji.emoji}`, path: `/emoji/${canonicalSlug}` },
         ]}
       />
 

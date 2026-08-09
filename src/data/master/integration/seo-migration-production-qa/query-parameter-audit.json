@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-08-09T20:30:16.549Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "observedPolicy": "query-string-not-forwarded-on-redirect",
+  "entries": [
+    {
+      "label": "no-query",
+      "requestPath": "/emoji/keycap",
+      "status": 301,
+      "location": "/emoji/e0-6-keycap-u0023fe0f20e3",
+      "note": "Next.js middleware redirects pathname only; query string is not forwarded to destination.",
+      "pass": true
+    },
+    {
+      "label": "utm-source",
+      "requestPath": "/emoji/keycap?utm_source=test",
+      "status": 301,
+      "location": "/emoji/e0-6-keycap-u0023fe0f20e3",
+      "note": "Next.js middleware redirects pathname only; query string is not forwarded to destination.",
+      "pass": true
+    },
+    {
+      "label": "multi-query",
+      "requestPath": "/emoji/keycap?utm_source=test&ref=qa",
+      "status": 301,
+      "location": "/emoji/e0-6-keycap-u0023fe0f20e3",
+      "note": "Next.js middleware redirects pathname only; query string is not forwarded to destination.",
+      "pass": true
+    },
+    {
+      "label": "encoded-query",
+      "requestPath": "/emoji/keycap?q=hello%20world&emoji=%F0%9F%94%A5",
+      "status": 301,
+      "location": "/emoji/e0-6-keycap-u0023fe0f20e3",
+      "note": "Next.js middleware redirects pathname only; query string is not forwarded to destination.",
+      "pass": true
+    }
+  ],
+  "failureCount": 0,
+  "status": "PASS"
+}

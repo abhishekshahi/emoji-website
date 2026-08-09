@@ -42,3 +42,8 @@ yarn-error.log*
 next-env.d.ts
 
 !.env.example
+# Large raw emoji data — keep locally, don't commit
+/src/data/master/raw/artwork/
+/src/data/master/raw/vendor/
+# Logs
+*.log

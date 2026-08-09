@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-08-09T20:30:16.626Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "entries": [
+    {
+      "path": "/emoji/../../evil",
+      "status": 404,
+      "location": null,
+      "resolved": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/%2e%2e%2f%2e%2e%2fevil",
+      "status": 404,
+      "location": null,
+      "resolved": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/unknown-arbitrary-slug-qa-security",
+      "status": 404,
+      "location": null,
+      "resolved": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/%2F%2Fevil.example",
+      "status": 404,
+      "location": null,
+      "resolved": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/../../../etc/passwd",
+      "status": 404,
+      "location": null,
+      "resolved": null,
+      "pass": true
+    },
+    {
+      "path": "https://evil.example/emoji/fire",
+      "status": null,
+      "location": null,
+      "resolved": null,
+      "pass": true
+    },
+    {
+      "path": "//evil.example/emoji/fire",
+      "status": null,
+      "location": null,
+      "resolved": null,
+      "pass": true
+    }
+  ],
+  "failureCount": 0,
+  "status": "PASS"
+}

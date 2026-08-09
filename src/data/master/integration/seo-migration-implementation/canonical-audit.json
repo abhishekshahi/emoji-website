@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-08-09T19:28:25.792Z",
+  "phase": "8.12C",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "approved-redirect-dataset",
+  "auditOnly": false,
+  "checks": {
+    "redirectTargetsAreCanonicalUrls": true,
+    "preservedUrlsRemainSelfCanonical": true,
+    "masterSeoDisabled": true
+  },
+  "preservedCanonicalCount": 654,
+  "status": "PASS"
+}

@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-08-09T18:50:12.017Z",
+  "phase": "8.12B",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "auditOnly": true,
+  "policies": {
+    "unicodeIdentities": {
+      "rule": "Prefer stable canonical Unicode-based URLs for standard production pages.",
+      "mergeDistinctIdentities": false
+    },
+    "variationSelectors": {
+      "rule": "Never merge distinct canonical identities because rendered appearance is similar.",
+      "examples": [
+        "unicode:263A vs unicode:263A-FE0F"
+      ]
+    },
+    "extras": {
+      "rule": "Preserve /emoji/extra-* URLs unless explicit migration approval exists.",
+      "defaultDecision": "KEEP_EXTRA_URL"
+    },
+    "sourceSpecificIdentities": {
+      "rule": "Do not automatically map source-specific identities to Unicode identities.",
+      "defaultDecision": "KEEP_SOURCE_URL"
+    },
+    "artworkOnlyIdentities": {
+      "rule": "Do not create indexable URLs merely because artwork exists.",
+      "indexable": false
+    },
+    "futurePages": {
+      "rule": "Do not index until a production route exists.",
+      "autoIndex": false
+    }
+  },
+  "implementationAllowed": false,
+  "status": "PASS"
+}

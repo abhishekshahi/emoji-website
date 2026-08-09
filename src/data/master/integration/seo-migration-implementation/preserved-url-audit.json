@@ -1,0 +1,3292 @@
+{
+  "generatedAt": "2026-08-09T19:28:25.275Z",
+  "phase": "8.12C",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "approved-redirect-dataset",
+  "auditOnly": false,
+  "count": 644,
+  "expected": 644,
+  "excludedCount": 10,
+  "violations": [],
+  "entries": [
+    {
+      "url": "/emoji/extra-goldfish",
+      "canonicalId": "source:openmoji:E000",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-poppy",
+      "canonicalId": "source:openmoji:E002",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-doe",
+      "canonicalId": "source:openmoji:E003",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-spouting-orca",
+      "canonicalId": "source:openmoji:E004",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-narwhal",
+      "canonicalId": "source:openmoji:E006",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-beluga",
+      "canonicalId": "source:openmoji:E007",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-porpoise",
+      "canonicalId": "source:openmoji:E008",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-pigeon",
+      "canonicalId": "source:openmoji:E009",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-macaw",
+      "canonicalId": "source:openmoji:E010",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-twitter",
+      "canonicalId": "source:openmoji:E040",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-pinterest",
+      "canonicalId": "source:openmoji:E041",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-facebook",
+      "canonicalId": "source:openmoji:E042",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-instagram",
+      "canonicalId": "source:openmoji:E043",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-youtube",
+      "canonicalId": "source:openmoji:E044",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-github",
+      "canonicalId": "source:openmoji:E045",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-linkedin",
+      "canonicalId": "source:openmoji:E046",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-android",
+      "canonicalId": "source:openmoji:E047",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-musicbrainz",
+      "canonicalId": "source:openmoji:E048",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-openfoodfact",
+      "canonicalId": "source:openmoji:E049",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-openstreetmap",
+      "canonicalId": "source:openmoji:E04A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wikidata",
+      "canonicalId": "source:openmoji:E04B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-dotnet",
+      "canonicalId": "source:openmoji:E04C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-golang",
+      "canonicalId": "source:openmoji:E04D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-kotlin",
+      "canonicalId": "source:openmoji:E04E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ruby",
+      "canonicalId": "source:openmoji:E04F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-firefox",
+      "canonicalId": "source:openmoji:E050",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-safari",
+      "canonicalId": "source:openmoji:E051",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-opera",
+      "canonicalId": "source:openmoji:E052",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-chromium",
+      "canonicalId": "source:openmoji:E053",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-chrome",
+      "canonicalId": "source:openmoji:E054",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-netscape-navigator",
+      "canonicalId": "source:openmoji:E055",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-internet-explorer",
+      "canonicalId": "source:openmoji:E056",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-edge",
+      "canonicalId": "source:openmoji:E057",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-inaturalist",
+      "canonicalId": "source:openmoji:E058",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-gitlab",
+      "canonicalId": "source:openmoji:E059",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-mastodon",
+      "canonicalId": "source:openmoji:E05A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-peertube",
+      "canonicalId": "source:openmoji:E05B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-pixelfed",
+      "canonicalId": "source:openmoji:E05C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-signal",
+      "canonicalId": "source:openmoji:E05D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-element",
+      "canonicalId": "source:openmoji:E05E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-jellyfin",
+      "canonicalId": "source:openmoji:E05F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-reddit",
+      "canonicalId": "source:openmoji:E060",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-discord",
+      "canonicalId": "source:openmoji:E061",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-c",
+      "canonicalId": "source:openmoji:E062",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-cplusplus",
+      "canonicalId": "source:openmoji:E063",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-csharp",
+      "canonicalId": "source:openmoji:E064",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-chrome-canary",
+      "canonicalId": "source:openmoji:E065",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-firefox-developer",
+      "canonicalId": "source:openmoji:E066",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-firefox-nightly",
+      "canonicalId": "source:openmoji:E067",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-javascript",
+      "canonicalId": "source:openmoji:E068",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-typescript",
+      "canonicalId": "source:openmoji:E069",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-webassembly",
+      "canonicalId": "source:openmoji:E06A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-svg",
+      "canonicalId": "source:openmoji:E06B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-markdown",
+      "canonicalId": "source:openmoji:E06C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-winrar",
+      "canonicalId": "source:openmoji:E06D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-facetime",
+      "canonicalId": "source:openmoji:E06E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ecosia-browser",
+      "canonicalId": "source:openmoji:E06F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-bluesky",
+      "canonicalId": "source:openmoji:E070",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-assembly-point",
+      "canonicalId": "source:openmoji:E080",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-assembly-group",
+      "canonicalId": "source:openmoji:E081",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-authority-instruction",
+      "canonicalId": "source:openmoji:E082",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-help-others",
+      "canonicalId": "source:openmoji:E083",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-drop-cover-hold",
+      "canonicalId": "source:openmoji:E084",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-evacuate",
+      "canonicalId": "source:openmoji:E085",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-evacuate-vertical",
+      "canonicalId": "source:openmoji:E086",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-evacuate-downstairs",
+      "canonicalId": "source:openmoji:E087",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-evacuate-to-shelter",
+      "canonicalId": "source:openmoji:E088",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-structural-fire",
+      "canonicalId": "source:openmoji:E089",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wild-fire",
+      "canonicalId": "source:openmoji:E08A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-evacuate-fire",
+      "canonicalId": "source:openmoji:E08B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-warning-tsunami",
+      "canonicalId": "source:openmoji:E08C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-warning-volcano",
+      "canonicalId": "source:openmoji:E08D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-warning-fire",
+      "canonicalId": "source:openmoji:E08E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-authority",
+      "canonicalId": "source:openmoji:E08F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-first-aid",
+      "canonicalId": "source:openmoji:E090",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-flagged-point",
+      "canonicalId": "source:openmoji:E091",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-flagged-building",
+      "canonicalId": "source:openmoji:E092",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-authority-building",
+      "canonicalId": "source:openmoji:E093",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-signpost",
+      "canonicalId": "source:openmoji:E094",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-mobile-info",
+      "canonicalId": "source:openmoji:E095",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-mobile-message",
+      "canonicalId": "source:openmoji:E096",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-charge-plug",
+      "canonicalId": "source:openmoji:E097",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-shelter",
+      "canonicalId": "source:openmoji:E098",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-volcano-eruption",
+      "canonicalId": "source:openmoji:E099",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-volcano-ashes",
+      "canonicalId": "source:openmoji:E09A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-tsunami",
+      "canonicalId": "source:openmoji:E09B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-earthquake",
+      "canonicalId": "source:openmoji:E09C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-avalanche",
+      "canonicalId": "source:openmoji:E09E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-flood",
+      "canonicalId": "source:openmoji:E09F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-north",
+      "canonicalId": "source:openmoji:E0A0",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-transmission",
+      "canonicalId": "source:openmoji:E0A1",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-sos-stencil",
+      "canonicalId": "source:openmoji:E0A2",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ok-stencil",
+      "canonicalId": "source:openmoji:E0A3",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-no-stencil",
+      "canonicalId": "source:openmoji:E0A4",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-warning-strip",
+      "canonicalId": "source:openmoji:E0A5",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-warning-strip-right",
+      "canonicalId": "source:openmoji:E0A6",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-arrow-turn-right",
+      "canonicalId": "source:openmoji:E0A7",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-emergency-exit-door",
+      "canonicalId": "source:openmoji:E0A8",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-location-indicator-red",
+      "canonicalId": "source:openmoji:E0A9",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-electric-plug-red",
+      "canonicalId": "source:openmoji:E0AA",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-timer",
+      "canonicalId": "source:openmoji:E0AB",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-person-with-medical-mask",
+      "canonicalId": "source:openmoji:E0AC",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-person-sneezing-into-elbow",
+      "canonicalId": "source:openmoji:E0AD",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-disinfect-surface",
+      "canonicalId": "source:openmoji:E0AE",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-quarantine",
+      "canonicalId": "source:openmoji:E0AF",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-social-distancing",
+      "canonicalId": "source:openmoji:E0B0",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-sanitizer-spray",
+      "canonicalId": "source:openmoji:E0B1",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wash-hands",
+      "canonicalId": "source:openmoji:E0B2",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-temperature-taking",
+      "canonicalId": "source:openmoji:E0B3",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-medical-gloves",
+      "canonicalId": "source:openmoji:E0B4",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-half-orange-fruit",
+      "canonicalId": "source:openmoji:E0C0",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-maultasche",
+      "canonicalId": "source:openmoji:E0C1",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-lentils-with-spaetzle",
+      "canonicalId": "source:openmoji:E0C2",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-pomegranate",
+      "canonicalId": "source:openmoji:E0C4",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-latte-macchiato",
+      "canonicalId": "source:openmoji:E0C5",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-roasted-coffee-bean",
+      "canonicalId": "source:openmoji:E0C6",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-cake",
+      "canonicalId": "source:openmoji:E0C7",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-champignon-brown",
+      "canonicalId": "source:openmoji:E0C8",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-champignon-white",
+      "canonicalId": "source:openmoji:E0C9",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-boule-bread",
+      "canonicalId": "source:openmoji:E0CA",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-glass-bottle",
+      "canonicalId": "source:openmoji:E0CB",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-plastic-bottle",
+      "canonicalId": "source:openmoji:E0CC",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ubuntu",
+      "canonicalId": "source:openmoji:E0FF",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-tap",
+      "canonicalId": "source:openmoji:E100",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-double-tap",
+      "canonicalId": "source:openmoji:E101",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-three-finger-operation",
+      "canonicalId": "source:openmoji:E102",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-move",
+      "canonicalId": "source:openmoji:E103",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-swipe",
+      "canonicalId": "source:openmoji:E105",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-scroll-horizontal",
+      "canonicalId": "source:openmoji:E106",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-page-move",
+      "canonicalId": "source:openmoji:E107",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-swipe-left",
+      "canonicalId": "source:openmoji:E108",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-swipe-up",
+      "canonicalId": "source:openmoji:E109",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-swipe-right",
+      "canonicalId": "source:openmoji:E10A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-swipe-down",
+      "canonicalId": "source:openmoji:E10B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-finger-pushing-button",
+      "canonicalId": "source:openmoji:E10C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-exit",
+      "canonicalId": "source:openmoji:E10D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-first-aid-kit",
+      "canonicalId": "source:openmoji:E140",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-armchair",
+      "canonicalId": "source:openmoji:E141",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-picture",
+      "canonicalId": "source:openmoji:E142",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-lighter",
+      "canonicalId": "source:openmoji:E143",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-outlet",
+      "canonicalId": "source:openmoji:E144",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-guy-fawkes-mask",
+      "canonicalId": "source:openmoji:E145",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-spatzlepresse",
+      "canonicalId": "source:openmoji:E146",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-european-name-badge",
+      "canonicalId": "source:openmoji:E147",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-kehrwoche",
+      "canonicalId": "source:openmoji:E148",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-tardis",
+      "canonicalId": "source:openmoji:E149",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-motorbike-helmet",
+      "canonicalId": "source:openmoji:E14A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-espresso-machine",
+      "canonicalId": "source:openmoji:E150",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-french-press",
+      "canonicalId": "source:openmoji:E151",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-moka-pot",
+      "canonicalId": "source:openmoji:E152",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-milk-jug",
+      "canonicalId": "source:openmoji:E153",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-electric-coffee-percolator",
+      "canonicalId": "source:openmoji:E154",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-drip-coffee-maker",
+      "canonicalId": "source:openmoji:E155",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-coffee-grinder",
+      "canonicalId": "source:openmoji:E156",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-horse-jumping-hurdle",
+      "canonicalId": "source:openmoji:E157",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-drunk-person",
+      "canonicalId": "source:openmoji:E181",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-person-with-dog",
+      "canonicalId": "source:openmoji:E182",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-trump",
+      "canonicalId": "source:openmoji:E183",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-horse-riding",
+      "canonicalId": "source:openmoji:E184",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-barista",
+      "canonicalId": "source:openmoji:E185",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-man-barista",
+      "canonicalId": "source:openmoji:E186",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-woman-barista",
+      "canonicalId": "source:openmoji:E187",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-greta-thunberg",
+      "canonicalId": "source:openmoji:E188",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-windsurfing",
+      "canonicalId": "source:openmoji:E189",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wireframes",
+      "canonicalId": "source:openmoji:E1C0",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-code-editor",
+      "canonicalId": "source:openmoji:E1C1",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-autonomous-car",
+      "canonicalId": "source:openmoji:E1C2",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-switch",
+      "canonicalId": "source:openmoji:E1C3",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-surveillance",
+      "canonicalId": "source:openmoji:E1C4",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-augmented-reality",
+      "canonicalId": "source:openmoji:E1C6",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-led",
+      "canonicalId": "source:openmoji:E1C7",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-motor",
+      "canonicalId": "source:openmoji:E1C8",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-raspberry-pi",
+      "canonicalId": "source:openmoji:E1C9",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-virtual-reality",
+      "canonicalId": "source:openmoji:E1CA",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-cable",
+      "canonicalId": "source:openmoji:E1CB",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-tablet",
+      "canonicalId": "source:openmoji:E1CC",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-gps",
+      "canonicalId": "source:openmoji:E1CD",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-smartwatch",
+      "canonicalId": "source:openmoji:E1CE",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-washing-machine",
+      "canonicalId": "source:openmoji:E1CF",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ibeacon",
+      "canonicalId": "source:openmoji:E1D0",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-drone",
+      "canonicalId": "source:openmoji:E1D2",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-arduino",
+      "canonicalId": "source:openmoji:E1D3",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wire",
+      "canonicalId": "source:openmoji:E1D4",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-potentiometer",
+      "canonicalId": "source:openmoji:E1D5",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-solar-cell",
+      "canonicalId": "source:openmoji:E1D6",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-circuit",
+      "canonicalId": "source:openmoji:E1D7",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-qr-code",
+      "canonicalId": "source:openmoji:E1D8",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-barcode",
+      "canonicalId": "source:openmoji:E1D9",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ai-hand",
+      "canonicalId": "source:openmoji:E1DA",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-cafeteria",
+      "canonicalId": "source:openmoji:E200",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-emergency-exit",
+      "canonicalId": "source:openmoji:E201",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-stairway",
+      "canonicalId": "source:openmoji:E202",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-town",
+      "canonicalId": "source:openmoji:E203",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-eiffel-tower",
+      "canonicalId": "source:openmoji:E205",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-parking-garage",
+      "canonicalId": "source:openmoji:E206",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-schwabisch-gmund-forum-gold-und-silber",
+      "canonicalId": "source:openmoji:E207",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-schwabisch-gmund-funfknopfturm",
+      "canonicalId": "source:openmoji:E208",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-schwabisch-gmund-ratshaus",
+      "canonicalId": "source:openmoji:E209",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-stuttgart-fernsehturm",
+      "canonicalId": "source:openmoji:E20A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-space-shuttle",
+      "canonicalId": "source:openmoji:E20B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-viennese-coffee-house",
+      "canonicalId": "source:openmoji:E20C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-black-hole",
+      "canonicalId": "source:openmoji:E20D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-foggy-mountain",
+      "canonicalId": "source:openmoji:E20E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-great-pyramid-of-giza",
+      "canonicalId": "source:openmoji:E20F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-colossus-of-rhodes",
+      "canonicalId": "source:openmoji:E210",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-hanging-gardens-of-babylon",
+      "canonicalId": "source:openmoji:E211",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-lighthouse-of-alexandria",
+      "canonicalId": "source:openmoji:E212",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-mausoleum-at-halicarnassus",
+      "canonicalId": "source:openmoji:E213",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-statue-of-zeus-at-olympia",
+      "canonicalId": "source:openmoji:E214",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-temple-of-artemis-at-ephesus",
+      "canonicalId": "source:openmoji:E215",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-mark",
+      "canonicalId": "source:openmoji:E240",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-toggle-button",
+      "canonicalId": "source:openmoji:E241",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-location-indicator",
+      "canonicalId": "source:openmoji:E242",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-scale",
+      "canonicalId": "source:openmoji:E243",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-locomotion",
+      "canonicalId": "source:openmoji:E244",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-toggle-button-state-b",
+      "canonicalId": "source:openmoji:E245",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-people-dialogue",
+      "canonicalId": "source:openmoji:E246",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-safety",
+      "canonicalId": "source:openmoji:E247",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-chats",
+      "canonicalId": "source:openmoji:E248",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-collaboration",
+      "canonicalId": "source:openmoji:E249",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-interview",
+      "canonicalId": "source:openmoji:E24A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-intricate",
+      "canonicalId": "source:openmoji:E24B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-simple",
+      "canonicalId": "source:openmoji:E24C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-return",
+      "canonicalId": "source:openmoji:E24D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-close",
+      "canonicalId": "source:openmoji:E24E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-forward",
+      "canonicalId": "source:openmoji:E24F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-hamburger-menu",
+      "canonicalId": "source:openmoji:E250",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-upload",
+      "canonicalId": "source:openmoji:E251",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-download",
+      "canonicalId": "source:openmoji:E252",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-share",
+      "canonicalId": "source:openmoji:E253",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wifi",
+      "canonicalId": "source:openmoji:E254",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-copy",
+      "canonicalId": "source:openmoji:E255",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-contacts",
+      "canonicalId": "source:openmoji:E256",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-filter",
+      "canonicalId": "source:openmoji:E257",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-cursor",
+      "canonicalId": "source:openmoji:E258",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-details",
+      "canonicalId": "source:openmoji:E259",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-hold",
+      "canonicalId": "source:openmoji:E25A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-duplicate",
+      "canonicalId": "source:openmoji:E25B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-save",
+      "canonicalId": "source:openmoji:E25C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-edit",
+      "canonicalId": "source:openmoji:E25D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-home-button",
+      "canonicalId": "source:openmoji:E25E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-add-button",
+      "canonicalId": "source:openmoji:E25F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-archive",
+      "canonicalId": "source:openmoji:E260",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-overview",
+      "canonicalId": "source:openmoji:E261",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-delete",
+      "canonicalId": "source:openmoji:E262",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-comment",
+      "canonicalId": "source:openmoji:E263",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-more-information",
+      "canonicalId": "source:openmoji:E264",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-sort",
+      "canonicalId": "source:openmoji:E265",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-inbox",
+      "canonicalId": "source:openmoji:E266",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-compose",
+      "canonicalId": "source:openmoji:E267",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-add-contact",
+      "canonicalId": "source:openmoji:E268",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-exhausted-face",
+      "canonicalId": "source:openmoji:E280",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-incredulous-face",
+      "canonicalId": "source:openmoji:E281",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-dejected-face",
+      "canonicalId": "source:openmoji:E282",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-annoyed-face-with-tongue",
+      "canonicalId": "source:openmoji:E283",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-iceberg",
+      "canonicalId": "source:openmoji:E2C0",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-floating-ice",
+      "canonicalId": "source:openmoji:E2C1",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-floating-ice-broken",
+      "canonicalId": "source:openmoji:E2C2",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-polar-research-station",
+      "canonicalId": "source:openmoji:E2C3",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ice-core-sample",
+      "canonicalId": "source:openmoji:E2C4",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ice-shelf",
+      "canonicalId": "source:openmoji:E2C6",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ice-shelf-melting",
+      "canonicalId": "source:openmoji:E2C7",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-polar-explorer",
+      "canonicalId": "source:openmoji:E2C8",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-polar-explorer-man",
+      "canonicalId": "source:openmoji:E2C9",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-polar-explorer-woman",
+      "canonicalId": "source:openmoji:E2CA",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-oil-spill",
+      "canonicalId": "source:openmoji:E2CB",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-exhaust-gases-factory",
+      "canonicalId": "source:openmoji:E2CC",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-solar-energy",
+      "canonicalId": "source:openmoji:E2CD",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-meat-consumption",
+      "canonicalId": "source:openmoji:E2CE",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-exhaust-gases-car",
+      "canonicalId": "source:openmoji:E2CF",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-sea-level-rise",
+      "canonicalId": "source:openmoji:E2D0",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wind-energy",
+      "canonicalId": "source:openmoji:E2D1",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-reusable-bag",
+      "canonicalId": "source:openmoji:E2D2",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-radioactive-waste",
+      "canonicalId": "source:openmoji:E2D3",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-nuclear-power-plant",
+      "canonicalId": "source:openmoji:E2D4",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-nuclear-power-plant-ruin",
+      "canonicalId": "source:openmoji:E2D5",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-geiger-counter",
+      "canonicalId": "source:openmoji:E2D6",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-nuclear-worker-man",
+      "canonicalId": "source:openmoji:E2D7",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-nuclear-worker-woman",
+      "canonicalId": "source:openmoji:E2D8",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-nuclear-protection",
+      "canonicalId": "source:openmoji:E2D9",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-atom-bomb",
+      "canonicalId": "source:openmoji:E2DA",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-female-doctor",
+      "canonicalId": "source:openmoji:E300",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-male-doctor",
+      "canonicalId": "source:openmoji:E301",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-female-nurse",
+      "canonicalId": "source:openmoji:E302",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-male-nurse",
+      "canonicalId": "source:openmoji:E303",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-pills",
+      "canonicalId": "source:openmoji:E305",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-plaster",
+      "canonicalId": "source:openmoji:E306",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-medication",
+      "canonicalId": "source:openmoji:E307",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ecg-waves",
+      "canonicalId": "source:openmoji:E308",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-first-aid-bag",
+      "canonicalId": "source:openmoji:E309",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-patient-file",
+      "canonicalId": "source:openmoji:E30A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-patient-clipboard",
+      "canonicalId": "source:openmoji:E30B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-saline-drip",
+      "canonicalId": "source:openmoji:E30C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-blood-transfusion",
+      "canonicalId": "source:openmoji:E30D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-swab-pliers",
+      "canonicalId": "source:openmoji:E30E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-hot-water-bottle",
+      "canonicalId": "source:openmoji:E30F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-liver",
+      "canonicalId": "source:openmoji:E312",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-stomach",
+      "canonicalId": "source:openmoji:E313",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-large-intestine",
+      "canonicalId": "source:openmoji:E314",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-intestine",
+      "canonicalId": "source:openmoji:E315",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-kidney",
+      "canonicalId": "source:openmoji:E316",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-forceps",
+      "canonicalId": "source:openmoji:E318",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-bed-linen",
+      "canonicalId": "source:openmoji:E31A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-bandage-change",
+      "canonicalId": "source:openmoji:E31B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-eye-pain",
+      "canonicalId": "source:openmoji:E31C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-headache",
+      "canonicalId": "source:openmoji:E31D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-earache",
+      "canonicalId": "source:openmoji:E31E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-fracture-leg",
+      "canonicalId": "source:openmoji:E31F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-knee-pain",
+      "canonicalId": "source:openmoji:E320",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-backache",
+      "canonicalId": "source:openmoji:E321",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-joint-pain",
+      "canonicalId": "source:openmoji:E322",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-clinical-thermometer",
+      "canonicalId": "source:openmoji:E324",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-bandage-scissors",
+      "canonicalId": "source:openmoji:E325",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-crutches",
+      "canonicalId": "source:openmoji:E326",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wheel-chair",
+      "canonicalId": "source:openmoji:E327",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-stretcher",
+      "canonicalId": "source:openmoji:E328",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-ct-scan",
+      "canonicalId": "source:openmoji:E329",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-scales",
+      "canonicalId": "source:openmoji:E32B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-gardener-man",
+      "canonicalId": "source:openmoji:E340",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-gardener-woman",
+      "canonicalId": "source:openmoji:E341",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-gardening-gloves",
+      "canonicalId": "source:openmoji:E342",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-lawn-mower",
+      "canonicalId": "source:openmoji:E343",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-wheelbarrow",
+      "canonicalId": "source:openmoji:E344",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-spade",
+      "canonicalId": "source:openmoji:E345",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-trowel",
+      "canonicalId": "source:openmoji:E346",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-saw",
+      "canonicalId": "source:openmoji:E348",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-no-handshaking",
+      "canonicalId": "source:openmoji:E380",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-web-syndication",
+      "canonicalId": "source:openmoji:E381",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-pride",
+      "canonicalId": "source:openmoji:E420",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-lesbian",
+      "canonicalId": "source:openmoji:E421",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-gay",
+      "canonicalId": "source:openmoji:E422",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-bisexual",
+      "canonicalId": "source:openmoji:E423",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-pansexual",
+      "canonicalId": "source:openmoji:E424",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-asexual",
+      "canonicalId": "source:openmoji:E425",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-demisexual",
+      "canonicalId": "source:openmoji:E426",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-greysexual",
+      "canonicalId": "source:openmoji:E427",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-polysexual",
+      "canonicalId": "source:openmoji:E428",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-aroace",
+      "canonicalId": "source:openmoji:E429",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-aromantic",
+      "canonicalId": "source:openmoji:E42A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-polyamory",
+      "canonicalId": "source:openmoji:E42B",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-bdsm-rights",
+      "canonicalId": "source:openmoji:E42C",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-intersex",
+      "canonicalId": "source:openmoji:E42D",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-nonbinary",
+      "canonicalId": "source:openmoji:E42E",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-genderfluid",
+      "canonicalId": "source:openmoji:E42F",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-genderqueer",
+      "canonicalId": "source:openmoji:E430",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-agender",
+      "canonicalId": "source:openmoji:E431",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-demigirl",
+      "canonicalId": "source:openmoji:E432",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-demiboy",
+      "canonicalId": "source:openmoji:E433",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-demigender",
+      "canonicalId": "source:openmoji:E434",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-bigender",
+      "canonicalId": "source:openmoji:E435",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-windows",
+      "canonicalId": "source:openmoji:F000",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-artstation",
+      "canonicalId": "source:openmoji:F77A",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/extra-apple",
+      "canonicalId": "source:openmoji:F8FF",
+      "decision": "KEEP_SOURCE_URL"
+    },
+    {
+      "url": "/emoji/keycap-002afe0f20e3",
+      "canonicalId": "unicode:002A-FE0F-20E3",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-hyphen-minus",
+      "canonicalId": "unicode:002D",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circled-zero-with-slash",
+      "canonicalId": "unicode:1F10D",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circled-anticlockwise-arrow",
+      "canonicalId": "unicode:1F10E",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circled-dollar-sign-with-overlaid-backslash",
+      "canonicalId": "unicode:1F10F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-copyleft-symbol",
+      "canonicalId": "unicode:1F12F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circled-cc",
+      "canonicalId": "unicode:1F16D",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circled-c-with-overlaid-backslash",
+      "canonicalId": "unicode:1F16E",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circled-human-figure",
+      "canonicalId": "unicode:1F16F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-a",
+      "canonicalId": "unicode:1F1E6",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-antigua-and-barbuda",
+      "canonicalId": "unicode:1F1E6-1F1EC",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/flag-aland-islands",
+      "canonicalId": "unicode:1F1E6-1F1FD",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-b",
+      "canonicalId": "unicode:1F1E7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-bosnia-and-herzegovina",
+      "canonicalId": "unicode:1F1E7-1F1E6",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/flag-st-barthelemy",
+      "canonicalId": "unicode:1F1E7-1F1F1",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-c",
+      "canonicalId": "unicode:1F1E8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-cote-d-ivoire",
+      "canonicalId": "unicode:1F1E8-1F1EE",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/flag-curacao",
+      "canonicalId": "unicode:1F1E8-1F1FC",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-d",
+      "canonicalId": "unicode:1F1E9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-e",
+      "canonicalId": "unicode:1F1EA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-ceuta-and-melilla",
+      "canonicalId": "unicode:1F1EA-1F1E6",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-f",
+      "canonicalId": "unicode:1F1EB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-g",
+      "canonicalId": "unicode:1F1EC",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-south-georgia-and-south-sandwich-islands",
+      "canonicalId": "unicode:1F1EC-1F1F8",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-h",
+      "canonicalId": "unicode:1F1ED",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-heard-and-mcdonald-islands",
+      "canonicalId": "unicode:1F1ED-1F1F2",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-i",
+      "canonicalId": "unicode:1F1EE",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-j",
+      "canonicalId": "unicode:1F1EF",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-k",
+      "canonicalId": "unicode:1F1F0",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-st-kitts-and-nevis",
+      "canonicalId": "unicode:1F1F0-1F1F3",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-l",
+      "canonicalId": "unicode:1F1F1",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-m",
+      "canonicalId": "unicode:1F1F2",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-n",
+      "canonicalId": "unicode:1F1F3",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-o",
+      "canonicalId": "unicode:1F1F4",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-p",
+      "canonicalId": "unicode:1F1F5",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-st-pierre-and-miquelon",
+      "canonicalId": "unicode:1F1F5-1F1F2",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-q",
+      "canonicalId": "unicode:1F1F6",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-r",
+      "canonicalId": "unicode:1F1F7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-reunion",
+      "canonicalId": "unicode:1F1F7-1F1EA",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-s",
+      "canonicalId": "unicode:1F1F8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-svalbard-and-jan-mayen",
+      "canonicalId": "unicode:1F1F8-1F1EF",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/flag-sao-tome-and-principe",
+      "canonicalId": "unicode:1F1F8-1F1F9",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-t",
+      "canonicalId": "unicode:1F1F9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-turks-and-caicos-islands",
+      "canonicalId": "unicode:1F1F9-1F1E8",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/flag-turkiye",
+      "canonicalId": "unicode:1F1F9-1F1F7",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/flag-trinidad-and-tobago",
+      "canonicalId": "unicode:1F1F9-1F1F9",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-u",
+      "canonicalId": "unicode:1F1FA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-v",
+      "canonicalId": "unicode:1F1FB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-st-vincent-and-grenadines",
+      "canonicalId": "unicode:1F1FB-1F1E8",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-w",
+      "canonicalId": "unicode:1F1FC",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/flag-wallis-and-futuna",
+      "canonicalId": "unicode:1F1FC-1F1EB",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-x",
+      "canonicalId": "unicode:1F1FD",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-y",
+      "canonicalId": "unicode:1F1FE",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-regional-indicator-z",
+      "canonicalId": "unicode:1F1FF",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-rounded-symbol-for-fu",
+      "canonicalId": "unicode:1F260",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-rounded-symbol-for-lu",
+      "canonicalId": "unicode:1F261",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-rounded-symbol-for-shou",
+      "canonicalId": "unicode:1F262",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-rounded-symbol-for-xi",
+      "canonicalId": "unicode:1F263",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-rounded-symbol-for-shuangxi",
+      "canonicalId": "unicode:1F264",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-rounded-symbol-for-cai",
+      "canonicalId": "unicode:1F265",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/woman-running-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FB-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-running-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FB-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-running-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FB-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-running-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FC-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-running-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FC-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-running-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-running-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FD-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-running-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FD-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-running-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-running-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FE-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-running-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FE-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-running-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FE-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-running-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FF-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-running-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FF-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-running-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F3C3-1F3FF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-berber-flag",
+      "canonicalId": "unicode:1F3F3-200D-1F7E6-200D-1F7E9-200D-1F7E8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-nail-and-gear-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F4CC-200D-2699-FE0F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-red-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7E5",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-blue-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7E6",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-united-federation-of-planets-flag-star-trek",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7E6-200D-1F30C",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-orange-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7E7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-yellow-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7E8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-green-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7E9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-esperanto-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7E9-200D-2B50-200D-1F7E9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-purple-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7EA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-brown-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F7EB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-true-south-antarctica-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-1F9CA-200D-1F48E",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-flag",
+      "canonicalId": "unicode:1F3F3-FE0F-200D-2B1C",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-ontario-flag",
+      "canonicalId": "unicode:1F3F4-E0063-E0061-E006F-E006E-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-quebec-flag",
+      "canonicalId": "unicode:1F3F4-E0063-E0061-E0071-E0063-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-berlin-flag",
+      "canonicalId": "unicode:1F3F4-E0064-E0065-E0062-E0065-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-bavaria-flag",
+      "canonicalId": "unicode:1F3F4-E0064-E0065-E0062-E0079-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-andalusia-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0061-E006E-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-aragon-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0061-E0072-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-asturian-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0061-E0073-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-cantabria-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0063-E0062-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-ceuta-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0063-E0065-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-castile-and-le-n-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0063-E006C-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-castile-la-mancha-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0063-E006D-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-canary-islands-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0063-E006E-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-catalonia-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0063-E0074-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-extremadura-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0065-E0078-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-galicia-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0067-E0061-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-balearic-islands-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0069-E0062-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-murcia-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E006D-E0063-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-madrid-autonomous-community-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E006D-E0064-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-melilla-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E006D-E006C-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-navarra-chartered-community",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E006E-E0063-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-basque-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0070-E0076-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-la-rioja-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0072-E0069-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-valencian-community-flag",
+      "canonicalId": "unicode:1F3F4-E0065-E0073-E0076-E0063-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-bretagne-flag",
+      "canonicalId": "unicode:1F3F4-E0066-E0072-E0062-E0072-E0065-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-bari-flag",
+      "canonicalId": "unicode:1F3F4-E0069-E0074-E0062-E0061-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-queretaro-flag",
+      "canonicalId": "unicode:1F3F4-E006D-E0078-E0071-E0075-E0065-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-yucatan-flag",
+      "canonicalId": "unicode:1F3F4-E006D-E0078-E0079-E0075-E0063-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-alabama-flag",
+      "canonicalId": "unicode:1F3F4-E0075-E0073-E0061-E006C-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-california-flag",
+      "canonicalId": "unicode:1F3F4-E0075-E0073-E0063-E0061-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-colorado-flag",
+      "canonicalId": "unicode:1F3F4-E0075-E0073-E0063-E006F-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-washington-dc-flag",
+      "canonicalId": "unicode:1F3F4-E0075-E0073-E0064-E0063-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-texas-flag",
+      "canonicalId": "unicode:1F3F4-E0075-E0073-E0074-E0078-E007F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-red-and-black-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F170-FE0F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-deep-red-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7E5",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-deep-blue-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7E6",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-deep-orange-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7E7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-deep-yellow-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7E8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-deep-green-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7E9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-browncoat-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7E9-200D-2B50",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-deep-purple-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7EA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-deep-brown-flag",
+      "canonicalId": "unicode:1F3F4-FE0F-200D-1F7EB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-hacker-cat",
+      "canonicalId": "unicode:1F431-200D-1F4BB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/man-with-white-cane-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FB-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-motorized-wheelchair-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FB-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-manual-wheelchair-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FB-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-with-white-cane-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FC-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-motorized-wheelchair-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FC-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-manual-wheelchair-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FC-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-with-white-cane-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FD-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-motorized-wheelchair-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FD-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-manual-wheelchair-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FD-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-with-white-cane-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FE-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-motorized-wheelchair-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FE-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-manual-wheelchair-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FE-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-with-white-cane-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FF-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-motorized-wheelchair-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FF-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-in-manual-wheelchair-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F468-1F3FF-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-dj-man",
+      "canonicalId": "unicode:1F468-200D-1FAA9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/woman-with-white-cane-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FB-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-motorized-wheelchair-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FB-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-manual-wheelchair-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FB-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-with-white-cane-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FC-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-motorized-wheelchair-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FC-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-manual-wheelchair-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FC-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-with-white-cane-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FD-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-motorized-wheelchair-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FD-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-manual-wheelchair-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FD-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-with-white-cane-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FE-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-motorized-wheelchair-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FE-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-manual-wheelchair-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FE-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-with-white-cane-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FF-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-motorized-wheelchair-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FF-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-in-manual-wheelchair-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F469-1F3FF-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-dj-woman",
+      "canonicalId": "unicode:1F469-200D-1FAA9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/woman-walking-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FB-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-walking-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FB-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-walking-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FB-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-walking-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FC-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-walking-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FC-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-walking-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-walking-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FD-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-walking-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FD-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-walking-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-walking-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FE-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-walking-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FE-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-walking-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FE-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-walking-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FF-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-walking-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FF-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-walking-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F6B6-1F3FF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-kneeling-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FB-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-kneeling-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FB-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-kneeling-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FB-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-kneeling-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FC-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-kneeling-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FC-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-kneeling-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-kneeling-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FD-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-kneeling-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FD-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-kneeling-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-kneeling-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FE-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-kneeling-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FE-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-kneeling-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FE-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/woman-kneeling-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FF-200D-2640-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/man-kneeling-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FF-200D-2642-FE0F-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-kneeling-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9CE-1F3FF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-with-white-cane-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FB-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-motorized-wheelchair-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FB-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-manual-wheelchair-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FB-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-with-white-cane-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FC-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-motorized-wheelchair-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FC-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-manual-wheelchair-medium-light-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FC-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-with-white-cane-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FD-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-motorized-wheelchair-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FD-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-manual-wheelchair-medium-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FD-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-with-white-cane-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FE-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-motorized-wheelchair-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FE-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-manual-wheelchair-medium-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FE-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-with-white-cane-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FF-200D-1F9AF-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-motorized-wheelchair-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FF-200D-1F9BC-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/person-in-manual-wheelchair-dark-skin-tone-facing-right",
+      "canonicalId": "unicode:1F9D1-1F3FF-200D-1F9BD-200D-27A1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-dj",
+      "canonicalId": "unicode:1F9D1-200D-1FAA9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/pinata",
+      "canonicalId": "unicode:1FA85",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-jar-with-red-content",
+      "canonicalId": "unicode:1FAD9-200D-1F7E5",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-jar-with-blue-content",
+      "canonicalId": "unicode:1FAD9-200D-1F7E6",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-jar-with-orange-content",
+      "canonicalId": "unicode:1FAD9-200D-1F7E7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-jar-with-yellow-content",
+      "canonicalId": "unicode:1FAD9-200D-1F7E8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-jar-with-green-content",
+      "canonicalId": "unicode:1FAD9-200D-1F7E9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-jar-with-purple-content",
+      "canonicalId": "unicode:1FAD9-200D-1F7EA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-jar-with-brown-content",
+      "canonicalId": "unicode:1FAD9-200D-1F7EB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure",
+      "canonicalId": "unicode:1FBC5",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure-with-arms-raised",
+      "canonicalId": "unicode:1FBC6",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure-with-dress-and-arms-raised",
+      "canonicalId": "unicode:1FBC6-200D-1F457",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure-leaning-left",
+      "canonicalId": "unicode:1FBC7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure-with-dress-leaning-left",
+      "canonicalId": "unicode:1FBC7-200D-1F457",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure-leaning-right",
+      "canonicalId": "unicode:1FBC8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure-with-dress-leaning-right",
+      "canonicalId": "unicode:1FBC8-200D-1F457",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-stick-figure-with-dress",
+      "canonicalId": "unicode:1FBC9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-combining-enclosing-keycap",
+      "canonicalId": "unicode:20E3",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-sound-recording-copyright",
+      "canonicalId": "unicode:2117",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-service-mark",
+      "canonicalId": "unicode:2120",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circled-equals",
+      "canonicalId": "unicode:229C",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-power-symbol",
+      "canonicalId": "unicode:23FB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-power-on-off-symbol",
+      "canonicalId": "unicode:23FC",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-power-on-symbol",
+      "canonicalId": "unicode:23FD",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-power-sleep-symbol",
+      "canonicalId": "unicode:23FE",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-square",
+      "canonicalId": "unicode:25A1",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-rectangle",
+      "canonicalId": "unicode:25AC",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-rectangle",
+      "canonicalId": "unicode:25AD",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-vertical-rectangle",
+      "canonicalId": "unicode:25AE",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-fisheye",
+      "canonicalId": "unicode:25C9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-red-eye",
+      "canonicalId": "unicode:25C9-FE0F-200D-1F534",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-hal-9000",
+      "canonicalId": "unicode:25C9-FE0F-200D-1F534-200D-25AE-FE0F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circle-with-left-half-black",
+      "canonicalId": "unicode:25D0",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-circle-with-right-half-black",
+      "canonicalId": "unicode:25D1",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-square-with-left-half-black",
+      "canonicalId": "unicode:25E7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-square-with-right-half-black",
+      "canonicalId": "unicode:25E8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-square-with-upper-left-diagonal-black",
+      "canonicalId": "unicode:25E9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-square-with-lower-right-diagonal-black",
+      "canonicalId": "unicode:25EA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-up-pointing-triangle-with-left-half-black",
+      "canonicalId": "unicode:25ED",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-up-pointing-triangle-with-right-half-black",
+      "canonicalId": "unicode:25EE",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-star",
+      "canonicalId": "unicode:2605",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-chess-king",
+      "canonicalId": "unicode:2654",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-chess-queen",
+      "canonicalId": "unicode:2655",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-chess-rook",
+      "canonicalId": "unicode:2656",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-chess-bishop",
+      "canonicalId": "unicode:2657",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-chess-knight",
+      "canonicalId": "unicode:2658",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-chess-pawn",
+      "canonicalId": "unicode:2659",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-chess-king",
+      "canonicalId": "unicode:265A",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-chess-queen",
+      "canonicalId": "unicode:265B",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-chess-rook",
+      "canonicalId": "unicode:265C",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-chess-bishop",
+      "canonicalId": "unicode:265D",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-chess-knight",
+      "canonicalId": "unicode:265E",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/rescue-worker-s-helmet",
+      "canonicalId": "unicode:26D1-FE0F",
+      "decision": "KEEP_CURRENT_URL"
+    },
+    {
+      "url": "/emoji/extra-left-right-black-arrow",
+      "canonicalId": "unicode:2B0C",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-up-down-black-arrow",
+      "canonicalId": "unicode:2B0D",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-pentagon",
+      "canonicalId": "unicode:2B1F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-pentagon",
+      "canonicalId": "unicode:2B20",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-hexagon",
+      "canonicalId": "unicode:2B21",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-rainbow-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F308",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-red-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F7E5",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-blue-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F7E6",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-orange-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F7E7",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-yellow-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F7E8",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-green-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F7E9",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-purple-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F7EA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-brown-hexagon",
+      "canonicalId": "unicode:2B21-FE0F-200D-1F7EB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-hexagon",
+      "canonicalId": "unicode:2B22",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-horizontal-black-hexagon",
+      "canonicalId": "unicode:2B23",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-large-circle",
+      "canonicalId": "unicode:2B24",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-vertical-ellipse",
+      "canonicalId": "unicode:2B2E",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-white-vertical-ellipse",
+      "canonicalId": "unicode:2B2F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-heavy-circle",
+      "canonicalId": "unicode:2B58",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-anticlockwise-triangle-headed-top-u-shaped-arrow",
+      "canonicalId": "unicode:2B8F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-overlapping-white-squares",
+      "canonicalId": "unicode:2BBA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-overlapping-white-and-black-squares",
+      "canonicalId": "unicode:2BBB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-overlapping-black-squares",
+      "canonicalId": "unicode:2BBC",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-horizontal-black-octagon",
+      "canonicalId": "unicode:2BC3",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-black-octagon",
+      "canonicalId": "unicode:2BC4",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-star-with-left-half-black",
+      "canonicalId": "unicode:2BEA",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-star-with-right-half-black",
+      "canonicalId": "unicode:2BEB",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-woman-with-medical-mask",
+      "canonicalId": "unicode:E0AC-200D-2640-FE0F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-man-with-medical-mask",
+      "canonicalId": "unicode:E0AC-200D-2642-FE0F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-woman-sneezing-into-elbow",
+      "canonicalId": "unicode:E0AD-200D-2640-FE0F",
+      "decision": "KEEP_EXTRA_URL"
+    },
+    {
+      "url": "/emoji/extra-man-sneezing-into-elbow",
+      "canonicalId": "unicode:E0AD-200D-2642-FE0F",
+      "decision": "KEEP_EXTRA_URL"
+    }
+  ],
+  "excluded": [
+    {
+      "url": "/emoji/extra-donkey",
+      "canonicalId": "source:openmoji:E001",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-microbe",
+      "canonicalId": "source:openmoji:E011",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-pretzel",
+      "canonicalId": "source:openmoji:E0C3",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-scroll",
+      "canonicalId": "source:openmoji:E104",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-keyboard",
+      "canonicalId": "source:openmoji:E1D1",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-elevator",
+      "canonicalId": "source:openmoji:E204",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-moai",
+      "canonicalId": "source:openmoji:E216",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-link",
+      "canonicalId": "source:openmoji:E269",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-brain",
+      "canonicalId": "source:openmoji:E319",
+      "decision": "DO_NOT_MIGRATE"
+    },
+    {
+      "url": "/emoji/extra-axe",
+      "canonicalId": "source:openmoji:E347",
+      "decision": "DO_NOT_MIGRATE"
+    }
+  ],
+  "status": "PASS"
+}

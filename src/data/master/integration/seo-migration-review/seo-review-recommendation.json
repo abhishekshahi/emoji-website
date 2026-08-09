@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-08-09T18:50:17.464Z",
+  "phase": "8.12B",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "auditOnly": true,
+  "conclusion": "READY FOR HUMAN APPROVAL",
+  "blockers": [
+    "10 cases are permanently excluded from migration."
+  ],
+  "safeRedirectCandidates": 2280,
+  "keepCurrentTotal": 644,
+  "implementationAllowed": false,
+  "status": "PASS"
+}

@@ -1,0 +1,1171 @@
+{
+  "generatedAt": "2026-08-09T18:04:59.602Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "sections": {
+    "productionMapping": {
+      "generatedAt": "2026-08-09T18:04:34.045Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "standard": 3944,
+        "extras": 542,
+        "total": 4486,
+        "unmapped": 0
+      },
+      "checks": {
+        "standardMapped": true,
+        "extrasMapped": true,
+        "totalMapped": true,
+        "unmappedCount": 0
+      },
+      "unmappedProductionIds": [],
+      "status": "PASS"
+    },
+    "artworkRollout": {
+      "generatedAt": "2026-08-09T18:04:48.979Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "productionRecords": 4486,
+        "withAllFourProviders": 1164,
+        "withMissingArtwork": 2,
+        "withOpenMojiOnly": 527,
+        "providerCoverage": {
+          "openmoji": 4279,
+          "noto": 1211,
+          "twemoji": 3750,
+          "fluent": 1580
+        }
+      },
+      "rolloutRisks": {
+        "missingArtwork": 2,
+        "partialProviderCoverage": 3322
+      },
+      "checks": {
+        "integrationAudit": true,
+        "noPermanentWinner": true,
+        "noProviderUrls": true,
+        "favoritesProviderIndependent": true,
+        "recentsProviderIndependent": true,
+        "copyEmojiBased": true,
+        "localPathsOnly": true,
+        "checksumVerification": true
+      },
+      "artworkIntegration": "PASS",
+      "status": "PASS"
+    },
+    "metadataRollout": {
+      "generatedAt": "2026-08-09T18:04:50.927Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "masterMetadataRecords": 42910,
+        "emojinetSenses": 15183
+      },
+      "checks": {
+        "integrationAudit": true,
+        "unicodeNamingAuthority": true,
+        "emojinetDoesNotOverrideUnicode": true,
+        "notoUnavailable": true,
+        "twemojiUnavailable": true,
+        "unicodeAvailable": true,
+        "cldrAvailable": true,
+        "openmojiAvailable": true,
+        "emojibaseAvailable": true,
+        "emojilibAvailable": true,
+        "emojinetAvailable": true,
+        "fluentAvailable": true,
+        "sourceProvenancePreserved": true,
+        "definitionsNotAutoSeoKeywords": true,
+        "noSilentDeletion": true,
+        "unicodeSourceName": true
+      },
+      "metadataIntegration": "PASS",
+      "status": "PASS"
+    },
+    "searchRollout": {
+      "generatedAt": "2026-08-09T18:04:52.433Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "queryResults": [
+        {
+          "query": "fire",
+          "resultCount": 15,
+          "topCanonicalId": "unicode:1F525",
+          "topScore": 800
+        },
+        {
+          "query": "flame",
+          "resultCount": 14,
+          "topCanonicalId": "unicode:1F525",
+          "topScore": 500
+        },
+        {
+          "query": "🔥",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F525",
+          "topScore": 1000
+        },
+        {
+          "query": "U+1F525",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F525",
+          "topScore": 900
+        },
+        {
+          "query": ":fire:",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F525",
+          "topScore": 800
+        },
+        {
+          "query": "hot",
+          "resultCount": 15,
+          "topCanonicalId": "unicode:1F975",
+          "topScore": 800
+        },
+        {
+          "query": "pride flag",
+          "resultCount": 15,
+          "topCanonicalId": "unicode:1F3F3-FE0F-200D-1F308",
+          "topScore": 500
+        },
+        {
+          "query": "☺",
+          "resultCount": 2,
+          "topCanonicalId": "unicode:263A",
+          "topScore": 999
+        },
+        {
+          "query": "☺️",
+          "resultCount": 2,
+          "topCanonicalId": "unicode:263A-FE0F",
+          "topScore": 1000
+        },
+        {
+          "query": "👍",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F44D",
+          "topScore": 999
+        },
+        {
+          "query": "👍🏻",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F44D-1F3FB",
+          "topScore": 1000
+        },
+        {
+          "query": "👍🏿",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F44D-1F3FF",
+          "topScore": 1000
+        },
+        {
+          "query": "👨‍💻",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F468-200D-1F4BB",
+          "topScore": 1000
+        },
+        {
+          "query": "👩‍💻",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F469-200D-1F4BB",
+          "topScore": 1000
+        },
+        {
+          "query": "🇮🇳",
+          "resultCount": 1,
+          "topCanonicalId": "unicode:1F1EE-1F1F3",
+          "topScore": 1000
+        },
+        {
+          "query": "xyzabc-unknown-query",
+          "resultCount": 0,
+          "topCanonicalId": null,
+          "topScore": 0
+        }
+      ],
+      "hotResultCount": 20,
+      "checks": {
+        "integrationAudit": true,
+        "fireQueryWorks": true,
+        "emojiQueryWorks": true,
+        "unicodeQueryWorks": true,
+        "shortcodeWorks": true,
+        "hotAmbiguous": true,
+        "hotNotFireOnly": true,
+        "variationSelectorDistinct": true,
+        "unknownQuerySafe": true,
+        "productionFallbackWorks": true,
+        "deterministicRanking": true,
+        "noExternalApi": true
+      },
+      "searchIntegration": "PASS",
+      "status": "PASS"
+    },
+    "seoMigration": {
+      "generatedAt": "2026-08-09T18:04:53.423Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "exactMatches": 1552,
+        "mismatches": 2934,
+        "totalSlugIssues": 4217,
+        "duplicateSlugCollisions": 0,
+        "artworkOnly": 918,
+        "privateUse": 2,
+        "utility": 2,
+        "futurePage": 1277,
+        "missingProductionPages": 2469
+      },
+      "checks": {
+        "slugMismatchesVerified": true,
+        "slugIssuesVerified": true,
+        "duplicateCollisionsZero": true,
+        "noAutoMigration": true,
+        "canonicalIdentities": true,
+        "productionPages": true
+      },
+      "sampleMismatches": [
+        {
+          "canonicalId": "source:openmoji:E000",
+          "currentUrl": "/emoji/extra-goldfish",
+          "proposedUrl": "/emoji/goldfish",
+          "currentSlug": "extra-goldfish",
+          "proposedSlug": "goldfish"
+        },
+        {
+          "canonicalId": "source:openmoji:E001",
+          "currentUrl": "/emoji/extra-donkey",
+          "proposedUrl": "/emoji/donkey",
+          "currentSlug": "extra-donkey",
+          "proposedSlug": "donkey"
+        },
+        {
+          "canonicalId": "source:openmoji:E002",
+          "currentUrl": "/emoji/extra-poppy",
+          "proposedUrl": "/emoji/poppy",
+          "currentSlug": "extra-poppy",
+          "proposedSlug": "poppy"
+        },
+        {
+          "canonicalId": "source:openmoji:E003",
+          "currentUrl": "/emoji/extra-doe",
+          "proposedUrl": "/emoji/doe",
+          "currentSlug": "extra-doe",
+          "proposedSlug": "doe"
+        },
+        {
+          "canonicalId": "source:openmoji:E004",
+          "currentUrl": "/emoji/extra-spouting-orca",
+          "proposedUrl": "/emoji/spouting-orca",
+          "currentSlug": "extra-spouting-orca",
+          "proposedSlug": "spouting-orca"
+        },
+        {
+          "canonicalId": "source:openmoji:E006",
+          "currentUrl": "/emoji/extra-narwhal",
+          "proposedUrl": "/emoji/narwhal",
+          "currentSlug": "extra-narwhal",
+          "proposedSlug": "narwhal"
+        },
+        {
+          "canonicalId": "source:openmoji:E007",
+          "currentUrl": "/emoji/extra-beluga",
+          "proposedUrl": "/emoji/beluga",
+          "currentSlug": "extra-beluga",
+          "proposedSlug": "beluga"
+        },
+        {
+          "canonicalId": "source:openmoji:E008",
+          "currentUrl": "/emoji/extra-porpoise",
+          "proposedUrl": "/emoji/porpoise",
+          "currentSlug": "extra-porpoise",
+          "proposedSlug": "porpoise"
+        },
+        {
+          "canonicalId": "source:openmoji:E009",
+          "currentUrl": "/emoji/extra-pigeon",
+          "proposedUrl": "/emoji/pigeon",
+          "currentSlug": "extra-pigeon",
+          "proposedSlug": "pigeon"
+        },
+        {
+          "canonicalId": "source:openmoji:E010",
+          "currentUrl": "/emoji/extra-macaw",
+          "proposedUrl": "/emoji/macaw",
+          "currentSlug": "extra-macaw",
+          "proposedSlug": "macaw"
+        },
+        {
+          "canonicalId": "source:openmoji:E011",
+          "currentUrl": "/emoji/extra-microbe",
+          "proposedUrl": "/emoji/microbe",
+          "currentSlug": "extra-microbe",
+          "proposedSlug": "microbe"
+        },
+        {
+          "canonicalId": "source:openmoji:E040",
+          "currentUrl": "/emoji/extra-twitter",
+          "proposedUrl": "/emoji/twitter",
+          "currentSlug": "extra-twitter",
+          "proposedSlug": "twitter"
+        },
+        {
+          "canonicalId": "source:openmoji:E041",
+          "currentUrl": "/emoji/extra-pinterest",
+          "proposedUrl": "/emoji/pinterest",
+          "currentSlug": "extra-pinterest",
+          "proposedSlug": "pinterest"
+        },
+        {
+          "canonicalId": "source:openmoji:E042",
+          "currentUrl": "/emoji/extra-facebook",
+          "proposedUrl": "/emoji/facebook",
+          "currentSlug": "extra-facebook",
+          "proposedSlug": "facebook"
+        },
+        {
+          "canonicalId": "source:openmoji:E043",
+          "currentUrl": "/emoji/extra-instagram",
+          "proposedUrl": "/emoji/instagram",
+          "currentSlug": "extra-instagram",
+          "proposedSlug": "instagram"
+        },
+        {
+          "canonicalId": "source:openmoji:E044",
+          "currentUrl": "/emoji/extra-youtube",
+          "proposedUrl": "/emoji/youtube",
+          "currentSlug": "extra-youtube",
+          "proposedSlug": "youtube"
+        },
+        {
+          "canonicalId": "source:openmoji:E045",
+          "currentUrl": "/emoji/extra-github",
+          "proposedUrl": "/emoji/github",
+          "currentSlug": "extra-github",
+          "proposedSlug": "github"
+        },
+        {
+          "canonicalId": "source:openmoji:E046",
+          "currentUrl": "/emoji/extra-linkedin",
+          "proposedUrl": "/emoji/linkedin",
+          "currentSlug": "extra-linkedin",
+          "proposedSlug": "linkedin"
+        },
+        {
+          "canonicalId": "source:openmoji:E047",
+          "currentUrl": "/emoji/extra-android",
+          "proposedUrl": "/emoji/android",
+          "currentSlug": "extra-android",
+          "proposedSlug": "android"
+        },
+        {
+          "canonicalId": "source:openmoji:E048",
+          "currentUrl": "/emoji/extra-musicbrainz",
+          "proposedUrl": "/emoji/musicbrainz",
+          "currentSlug": "extra-musicbrainz",
+          "proposedSlug": "musicbrainz"
+        },
+        {
+          "canonicalId": "source:openmoji:E049",
+          "currentUrl": "/emoji/extra-openfoodfact",
+          "proposedUrl": "/emoji/openfoodfact",
+          "currentSlug": "extra-openfoodfact",
+          "proposedSlug": "openfoodfact"
+        },
+        {
+          "canonicalId": "source:openmoji:E04A",
+          "currentUrl": "/emoji/extra-openstreetmap",
+          "proposedUrl": "/emoji/openstreetmap",
+          "currentSlug": "extra-openstreetmap",
+          "proposedSlug": "openstreetmap"
+        },
+        {
+          "canonicalId": "source:openmoji:E04B",
+          "currentUrl": "/emoji/extra-wikidata",
+          "proposedUrl": "/emoji/wikidata",
+          "currentSlug": "extra-wikidata",
+          "proposedSlug": "wikidata"
+        },
+        {
+          "canonicalId": "source:openmoji:E04C",
+          "currentUrl": "/emoji/extra-dotnet",
+          "proposedUrl": "/emoji/dotnet",
+          "currentSlug": "extra-dotnet",
+          "proposedSlug": "dotnet"
+        },
+        {
+          "canonicalId": "source:openmoji:E04D",
+          "currentUrl": "/emoji/extra-golang",
+          "proposedUrl": "/emoji/golang",
+          "currentSlug": "extra-golang",
+          "proposedSlug": "golang"
+        }
+      ],
+      "productionRecordsMapped": 4486,
+      "status": "PASS"
+    },
+    "sitemap": {
+      "generatedAt": "2026-08-09T18:04:53.512Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "indexable": 0,
+        "not-indexable": 0,
+        "existing-production-page": 4486,
+        "future-page": 1277,
+        "source-specific": 130,
+        "private-use": 2,
+        "artwork-only": 918,
+        "utility": 2,
+        "insufficient-content": 0,
+        "duplicate-slug": 140,
+        "ambiguous": 0
+      },
+      "checks": {
+        "sitemapEligibleMatchesProduction": true,
+        "notAllCanonicalIndexable": true,
+        "artworkOnlyExcluded": true,
+        "puaExcluded": true,
+        "utilityExcluded": true,
+        "futurePagesExcluded": true,
+        "onlyExistingProductionInSitemap": true
+      },
+      "sitemapIntegration": "PASS",
+      "status": "PASS"
+    },
+    "indexationSafety": {
+      "generatedAt": "2026-08-09T18:04:53.780Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "slugMismatchesRequiringRedirects": 2934,
+        "futurePageIndexRisk": 0,
+        "providerUrlRisk": 0
+      },
+      "checks": {
+        "fireCanonicalUrl": true,
+        "fireSingleCanonical": true,
+        "noProviderSpecificUrls": true,
+        "robotsPolicyPresent": true,
+        "oldUrlPreservationRequired": true,
+        "futurePageIndexBlocked": true,
+        "duplicateContentRiskManaged": true,
+        "redirectRequiredForMismatches": true,
+        "variationSelectorUrlsDistinct": true
+      },
+      "status": "PASS"
+    },
+    "performance": {
+      "generatedAt": "2026-08-09T18:04:54.191Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "timings": [
+        {
+          "label": "production-search-fire",
+          "durationMs": 0.844
+        },
+        {
+          "label": "cold-master-search-fire",
+          "durationMs": 51.398
+        },
+        {
+          "label": "warm-master-search-fire",
+          "durationMs": 344.678
+        },
+        {
+          "label": "canonical-artwork-lookup",
+          "durationMs": 0.115
+        },
+        {
+          "label": "canonical-metadata-lookup",
+          "durationMs": 0.216
+        },
+        {
+          "label": "seo-lookup",
+          "durationMs": 0.137
+        }
+      ],
+      "checks": {
+        "productionSearchUnderOneSecond": true,
+        "masterSearchUnderOneSecond": true,
+        "noNodeFsInClient": true,
+        "noNodePathInClient": true,
+        "noMasterReaderInClient": true,
+        "noRawMasterJsonInClient": true,
+        "noExternalFetch": true,
+        "clientLoadsProductionOnly": true,
+        "canonicalScopedLoading": true
+      },
+      "status": "PASS"
+    },
+    "rollback": {
+      "generatedAt": "2026-08-09T18:04:54.244Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "checks": {
+        "artworkFlagFalse": true,
+        "metadataFlagFalse": true,
+        "searchFlagFalse": true,
+        "seoFlagFalse": true,
+        "productionSearchRestored": true,
+        "productionSearchUnchanged": true,
+        "productionArtworkRestored": true,
+        "masterSeoInactive": true
+      },
+      "status": "PASS"
+    },
+    "riskRegister": {
+      "generatedAt": "2026-08-09T18:04:55.142Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "risks": [
+        {
+          "id": "seo-slug-migration",
+          "level": "HIGH",
+          "area": "SEO",
+          "description": "2934 production slug mismatches require redirect planning before SEO activation.",
+          "mitigation": "Deploy redirects/canonical strategy; do not auto-rename URLs."
+        },
+        {
+          "id": "large-lfs-files",
+          "level": "MEDIUM",
+          "area": "Infrastructure",
+          "description": "Four master JSON files exceed 100MB and require Git LFS.",
+          "mitigation": "LFS already configured; verify clone/CI LFS support."
+        },
+        {
+          "id": "master-data-size",
+          "level": "MEDIUM",
+          "area": "Server",
+          "description": "Frozen master database is large; server memory must accommodate reader cache.",
+          "mitigation": "Canonical-scoped loading; keep master data server-only."
+        },
+        {
+          "id": "client-bundle-risk",
+          "level": "LOW",
+          "area": "Client",
+          "description": "Risk of master data leaking into client bundles.",
+          "mitigation": "Server/client boundary verified; production JSON only on client."
+        },
+        {
+          "id": "semantic-ambiguity",
+          "level": "MEDIUM",
+          "area": "Search",
+          "description": "Ambiguous terms like 'hot' must not collapse to single results.",
+          "mitigation": "Ambiguity protection verified in search rollout audit."
+        },
+        {
+          "id": "route-compatibility",
+          "level": "HIGH",
+          "area": "SEO",
+          "description": "179 extras route prefix mismatches.",
+          "mitigation": "Manual review of extra-* production URLs before migration."
+        },
+        {
+          "id": "rollback-capability",
+          "level": "NONE",
+          "area": "Operations",
+          "description": "All four flags restore production behavior when disabled.",
+          "mitigation": "Feature flags remain default false."
+        },
+        {
+          "id": "production-search-regression",
+          "level": "LOW",
+          "area": "Search",
+          "description": "Master search could diverge from production search ranking.",
+          "mitigation": "Production search 0.882ms; fallback bridge verified."
+        },
+        {
+          "id": "artwork-license-attribution",
+          "level": "LOW",
+          "area": "Artwork",
+          "description": "Multi-provider artwork requires per-provider license display.",
+          "mitigation": "Attribution UI verified in Phase 8.11 artwork integration."
+        }
+      ],
+      "highestRisk": "HIGH",
+      "riskCounts": {
+        "critical": 0,
+        "high": 2,
+        "medium": 3,
+        "low": 3,
+        "none": 1
+      },
+      "status": "PASS"
+    },
+    "slugClassification": {
+      "generatedAt": "2026-08-09T18:04:55.261Z",
+      "phase": "8.12",
+      "releaseId": "master-8.10-20260809",
+      "featureFlags": {
+        "masterArtworkEnabled": false,
+        "masterMetadataEnabled": false,
+        "masterSearchEnabled": false,
+        "masterSEOEnabled": false
+      },
+      "provenance": "frozen-master-8.10",
+      "counts": {
+        "totalProduction": 4486,
+        "slugMismatches": 2934,
+        "byClassification": {
+          "safe-no-op": 1552,
+          "safe-redirect-candidate": 2261,
+          "requires-manual-review": 131,
+          "unsafe-to-migrate": 0,
+          "duplicate-collision": 0,
+          "source-specific": 363,
+          "route-compatibility-issue": 179
+        }
+      },
+      "mismatchSummary": {
+        "safe-no-op": 1552,
+        "safe-redirect-candidate": 2261,
+        "requires-manual-review": 131,
+        "unsafe-to-migrate": 0,
+        "duplicate-collision": 0,
+        "source-specific": 363,
+        "route-compatibility-issue": 179
+      },
+      "samples": [
+        {
+          "canonicalId": "source:openmoji:E000",
+          "currentSlug": "extra-goldfish",
+          "proposedSlug": "goldfish",
+          "currentUrl": "/emoji/extra-goldfish",
+          "proposedUrl": "/emoji/goldfish",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E001",
+          "currentSlug": "extra-donkey",
+          "proposedSlug": "donkey",
+          "currentUrl": "/emoji/extra-donkey",
+          "proposedUrl": "/emoji/donkey",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E002",
+          "currentSlug": "extra-poppy",
+          "proposedSlug": "poppy",
+          "currentUrl": "/emoji/extra-poppy",
+          "proposedUrl": "/emoji/poppy",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E003",
+          "currentSlug": "extra-doe",
+          "proposedSlug": "doe",
+          "currentUrl": "/emoji/extra-doe",
+          "proposedUrl": "/emoji/doe",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E004",
+          "currentSlug": "extra-spouting-orca",
+          "proposedSlug": "spouting-orca",
+          "currentUrl": "/emoji/extra-spouting-orca",
+          "proposedUrl": "/emoji/spouting-orca",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E006",
+          "currentSlug": "extra-narwhal",
+          "proposedSlug": "narwhal",
+          "currentUrl": "/emoji/extra-narwhal",
+          "proposedUrl": "/emoji/narwhal",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E007",
+          "currentSlug": "extra-beluga",
+          "proposedSlug": "beluga",
+          "currentUrl": "/emoji/extra-beluga",
+          "proposedUrl": "/emoji/beluga",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E008",
+          "currentSlug": "extra-porpoise",
+          "proposedSlug": "porpoise",
+          "currentUrl": "/emoji/extra-porpoise",
+          "proposedUrl": "/emoji/porpoise",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E009",
+          "currentSlug": "extra-pigeon",
+          "proposedSlug": "pigeon",
+          "currentUrl": "/emoji/extra-pigeon",
+          "proposedUrl": "/emoji/pigeon",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E010",
+          "currentSlug": "extra-macaw",
+          "proposedSlug": "macaw",
+          "currentUrl": "/emoji/extra-macaw",
+          "proposedUrl": "/emoji/macaw",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E011",
+          "currentSlug": "extra-microbe",
+          "proposedSlug": "microbe",
+          "currentUrl": "/emoji/extra-microbe",
+          "proposedUrl": "/emoji/microbe",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E040",
+          "currentSlug": "extra-twitter",
+          "proposedSlug": "twitter",
+          "currentUrl": "/emoji/extra-twitter",
+          "proposedUrl": "/emoji/twitter",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E041",
+          "currentSlug": "extra-pinterest",
+          "proposedSlug": "pinterest",
+          "currentUrl": "/emoji/extra-pinterest",
+          "proposedUrl": "/emoji/pinterest",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E042",
+          "currentSlug": "extra-facebook",
+          "proposedSlug": "facebook",
+          "currentUrl": "/emoji/extra-facebook",
+          "proposedUrl": "/emoji/facebook",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E043",
+          "currentSlug": "extra-instagram",
+          "proposedSlug": "instagram",
+          "currentUrl": "/emoji/extra-instagram",
+          "proposedUrl": "/emoji/instagram",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E044",
+          "currentSlug": "extra-youtube",
+          "proposedSlug": "youtube",
+          "currentUrl": "/emoji/extra-youtube",
+          "proposedUrl": "/emoji/youtube",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E045",
+          "currentSlug": "extra-github",
+          "proposedSlug": "github",
+          "currentUrl": "/emoji/extra-github",
+          "proposedUrl": "/emoji/github",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E046",
+          "currentSlug": "extra-linkedin",
+          "proposedSlug": "linkedin",
+          "currentUrl": "/emoji/extra-linkedin",
+          "proposedUrl": "/emoji/linkedin",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E047",
+          "currentSlug": "extra-android",
+          "proposedSlug": "android",
+          "currentUrl": "/emoji/extra-android",
+          "proposedUrl": "/emoji/android",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E048",
+          "currentSlug": "extra-musicbrainz",
+          "proposedSlug": "musicbrainz",
+          "currentUrl": "/emoji/extra-musicbrainz",
+          "proposedUrl": "/emoji/musicbrainz",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E049",
+          "currentSlug": "extra-openfoodfact",
+          "proposedSlug": "openfoodfact",
+          "currentUrl": "/emoji/extra-openfoodfact",
+          "proposedUrl": "/emoji/openfoodfact",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E04A",
+          "currentSlug": "extra-openstreetmap",
+          "proposedSlug": "openstreetmap",
+          "currentUrl": "/emoji/extra-openstreetmap",
+          "proposedUrl": "/emoji/openstreetmap",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E04B",
+          "currentSlug": "extra-wikidata",
+          "proposedSlug": "wikidata",
+          "currentUrl": "/emoji/extra-wikidata",
+          "proposedUrl": "/emoji/wikidata",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E04C",
+          "currentSlug": "extra-dotnet",
+          "proposedSlug": "dotnet",
+          "currentUrl": "/emoji/extra-dotnet",
+          "proposedUrl": "/emoji/dotnet",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E04D",
+          "currentSlug": "extra-golang",
+          "proposedSlug": "golang",
+          "currentUrl": "/emoji/extra-golang",
+          "proposedUrl": "/emoji/golang",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E04E",
+          "currentSlug": "extra-kotlin",
+          "proposedSlug": "kotlin",
+          "currentUrl": "/emoji/extra-kotlin",
+          "proposedUrl": "/emoji/kotlin",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E04F",
+          "currentSlug": "extra-ruby",
+          "proposedSlug": "ruby",
+          "currentUrl": "/emoji/extra-ruby",
+          "proposedUrl": "/emoji/ruby",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E050",
+          "currentSlug": "extra-firefox",
+          "proposedSlug": "firefox",
+          "currentUrl": "/emoji/extra-firefox",
+          "proposedUrl": "/emoji/firefox",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E051",
+          "currentSlug": "extra-safari",
+          "proposedSlug": "safari",
+          "currentUrl": "/emoji/extra-safari",
+          "proposedUrl": "/emoji/safari",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E052",
+          "currentSlug": "extra-opera",
+          "proposedSlug": "opera",
+          "currentUrl": "/emoji/extra-opera",
+          "proposedUrl": "/emoji/opera",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E053",
+          "currentSlug": "extra-chromium",
+          "proposedSlug": "chromium",
+          "currentUrl": "/emoji/extra-chromium",
+          "proposedUrl": "/emoji/chromium",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E054",
+          "currentSlug": "extra-chrome",
+          "proposedSlug": "chrome",
+          "currentUrl": "/emoji/extra-chrome",
+          "proposedUrl": "/emoji/chrome",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E055",
+          "currentSlug": "extra-netscape-navigator",
+          "proposedSlug": "netscape-navigator",
+          "currentUrl": "/emoji/extra-netscape-navigator",
+          "proposedUrl": "/emoji/netscape-navigator",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E056",
+          "currentSlug": "extra-internet-explorer",
+          "proposedSlug": "internet-explorer",
+          "currentUrl": "/emoji/extra-internet-explorer",
+          "proposedUrl": "/emoji/internet-explorer",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E057",
+          "currentSlug": "extra-edge",
+          "proposedSlug": "edge",
+          "currentUrl": "/emoji/extra-edge",
+          "proposedUrl": "/emoji/edge",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E058",
+          "currentSlug": "extra-inaturalist",
+          "proposedSlug": "inaturalist",
+          "currentUrl": "/emoji/extra-inaturalist",
+          "proposedUrl": "/emoji/inaturalist",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E059",
+          "currentSlug": "extra-gitlab",
+          "proposedSlug": "gitlab",
+          "currentUrl": "/emoji/extra-gitlab",
+          "proposedUrl": "/emoji/gitlab",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E05A",
+          "currentSlug": "extra-mastodon",
+          "proposedSlug": "mastodon",
+          "currentUrl": "/emoji/extra-mastodon",
+          "proposedUrl": "/emoji/mastodon",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E05B",
+          "currentSlug": "extra-peertube",
+          "proposedSlug": "peertube",
+          "currentUrl": "/emoji/extra-peertube",
+          "proposedUrl": "/emoji/peertube",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E05C",
+          "currentSlug": "extra-pixelfed",
+          "proposedSlug": "pixelfed",
+          "currentUrl": "/emoji/extra-pixelfed",
+          "proposedUrl": "/emoji/pixelfed",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E05D",
+          "currentSlug": "extra-signal",
+          "proposedSlug": "signal",
+          "currentUrl": "/emoji/extra-signal",
+          "proposedUrl": "/emoji/signal",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E05E",
+          "currentSlug": "extra-element",
+          "proposedSlug": "element",
+          "currentUrl": "/emoji/extra-element",
+          "proposedUrl": "/emoji/element",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E05F",
+          "currentSlug": "extra-jellyfin",
+          "proposedSlug": "jellyfin",
+          "currentUrl": "/emoji/extra-jellyfin",
+          "proposedUrl": "/emoji/jellyfin",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E060",
+          "currentSlug": "extra-reddit",
+          "proposedSlug": "reddit",
+          "currentUrl": "/emoji/extra-reddit",
+          "proposedUrl": "/emoji/reddit",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E061",
+          "currentSlug": "extra-discord",
+          "proposedSlug": "discord",
+          "currentUrl": "/emoji/extra-discord",
+          "proposedUrl": "/emoji/discord",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E062",
+          "currentSlug": "extra-c",
+          "proposedSlug": "c",
+          "currentUrl": "/emoji/extra-c",
+          "proposedUrl": "/emoji/c",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E063",
+          "currentSlug": "extra-cplusplus",
+          "proposedSlug": "cplusplus",
+          "currentUrl": "/emoji/extra-cplusplus",
+          "proposedUrl": "/emoji/cplusplus",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E064",
+          "currentSlug": "extra-csharp",
+          "proposedSlug": "csharp",
+          "currentUrl": "/emoji/extra-csharp",
+          "proposedUrl": "/emoji/csharp",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E065",
+          "currentSlug": "extra-chrome-canary",
+          "proposedSlug": "chrome-canary",
+          "currentUrl": "/emoji/extra-chrome-canary",
+          "proposedUrl": "/emoji/chrome-canary",
+          "classification": "source-specific",
+          "slugMismatch": true
+        },
+        {
+          "canonicalId": "source:openmoji:E066",
+          "currentSlug": "extra-firefox-developer",
+          "proposedSlug": "firefox-developer",
+          "currentUrl": "/emoji/extra-firefox-developer",
+          "proposedUrl": "/emoji/firefox-developer",
+          "classification": "source-specific",
+          "slugMismatch": true
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "frozenRelease": "PASS",
+  "productionCounts": {
+    "standard": 3944,
+    "extras": 542,
+    "total": 4486
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,44 @@
+{
+  "generatedAt": "2026-08-09T20:30:17.208Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "baseUrl": "http://localhost:3099",
+  "conclusion": "READY FOR CANARY",
+  "sections": {
+    "datasetAudit": "PASS",
+    "httpRedirectAudit": "PASS",
+    "redirectStatusAudit": "PASS",
+    "locationHeaderAudit": "PASS",
+    "redirectExhaustiveAudit": "PASS",
+    "redirectChainAudit": "PASS",
+    "preservedUrlHttpAudit": "PASS",
+    "excludedUrlAudit": "PASS",
+    "canonicalHttpAudit": "PASS",
+    "sitemapProductionAudit": "PASS",
+    "emojiUrlMatrixAudit": "PASS",
+    "queryParameterAudit": "PASS",
+    "redirectSecurityAudit": "PASS",
+    "redirectPerformanceAudit": "PASS",
+    "redirectBundleAudit": "PASS",
+    "rollbackAudit": "PASS",
+    "productionSafetyAudit": "PASS"
+  },
+  "summary": {
+    "approvedRedirects": 2280,
+    "preservedUrls": 644,
+    "excludedUrls": 10,
+    "redirectLoops": 0,
+    "redirectChains": 0,
+    "selfRedirects": 0,
+    "httpFailures": 0
+  },
+  "status": "PASS"
+}

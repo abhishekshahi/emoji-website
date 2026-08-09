@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-08-09T19:28:29.418Z",
+  "phase": "8.12C",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "approved-redirect-dataset",
+  "auditOnly": false,
+  "redirectCount": 2280,
+  "preservedCount": 644,
+  "sections": {
+    "resolution": "PASS",
+    "loops": "PASS",
+    "chains": "PASS",
+    "preserved": "PASS",
+    "canonical": "PASS",
+    "sitemap": "PASS",
+    "seoSafety": "PASS"
+  },
+  "status": "PASS"
+}

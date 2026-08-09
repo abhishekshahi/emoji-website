@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-08-09T18:05:08.670Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "conclusion": "READY AFTER REQUIRED FIXES",
+  "blockers": [
+    "SEO: 2934 production slug mismatches require redirect/migration plan before master SEO activation.",
+    "SEO: 131 slug mismatches require manual review.",
+    "SEO: 179 extras route prefix compatibility issues."
+  ],
+  "canaryScope": [
+    "Enable masterArtworkEnabled only for internal QA cohort",
+    "Enable masterMetadataEnabled only after artwork QA passes",
+    "Enable masterSearchEnabled only after search parity QA passes",
+    "Do NOT enable masterSEOEnabled until redirect plan for 2934 slug mismatches is approved"
+  ],
+  "technicalReadiness": "PASS",
+  "searchReady": true,
+  "artworkReady": true,
+  "metadataReady": true,
+  "status": "PASS"
+}

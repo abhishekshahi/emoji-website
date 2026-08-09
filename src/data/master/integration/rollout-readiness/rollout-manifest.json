@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-08-09T18:05:08.674Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "auditOnly": true,
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "outputs": {
+    "rolloutReadinessAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/rollout-readiness-audit.json",
+    "productionMappingAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/production-mapping-audit.json",
+    "artworkRolloutAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/artwork-rollout-audit.json",
+    "metadataRolloutAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/metadata-rollout-audit.json",
+    "searchRolloutAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/search-rollout-audit.json",
+    "seoMigrationAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/seo-migration-audit.json",
+    "sitemapAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/sitemap-audit.json",
+    "indexationSafetyAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/indexation-safety-audit.json",
+    "performanceRolloutAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/performance-rollout-audit.json",
+    "rollbackAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/rollback-audit.json",
+    "riskRegister": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/risk-register.json",
+    "slugMismatchClassification": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/slug-mismatch-classification.json",
+    "rolloutRecommendation": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/rollout-recommendation.json",
+    "rolloutManifest": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/rollout-readiness/rollout-manifest.json"
+  }
+}

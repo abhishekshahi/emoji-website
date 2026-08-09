@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-08-09T20:30:16.633Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "violations": [],
+  "checks": {
+    "noRedirectDataInClientEntries": true,
+    "middlewareUsesRedirectEngine": true,
+    "emojiPageUsesRedirectResolution": true,
+    "redirectDatasetServerOnly": true,
+    "serverOnlyFilesPresent": true
+  },
+  "clientEntryFilesScanned": [
+    "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\src\\components\\search\\search-results.tsx",
+    "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\src\\components\\emoji\\emoji-detail-actions.tsx",
+    "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\src\\components\\layout\\breadcrumbs.tsx",
+    "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\src\\app\\emoji\\page.tsx"
+  ],
+  "status": "PASS"
+}

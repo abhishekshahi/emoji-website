@@ -1,0 +1,1808 @@
+{
+  "generatedAt": "2026-08-09T18:45:08.230Z",
+  "phase": "8.12A",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "auditOnly": true,
+  "count": 179,
+  "preserveExtraPrefixPolicy": true,
+  "entries": [
+    {
+      "currentExtrasRoute": "/emoji/extra-hyphen-minus",
+      "proposedCanonicalSlug": "hyphen-minus",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circled-zero-with-slash",
+      "proposedCanonicalSlug": "circled-zero-with-slash",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circled-anticlockwise-arrow",
+      "proposedCanonicalSlug": "circled-anticlockwise-arrow",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circled-dollar-sign-with-overlaid-backslash",
+      "proposedCanonicalSlug": "circled-dollar-sign-with-overlaid-backslash",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-copyleft-symbol",
+      "proposedCanonicalSlug": "copyleft-symbol",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circled-cc",
+      "proposedCanonicalSlug": "circled-cc",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circled-c-with-overlaid-backslash",
+      "proposedCanonicalSlug": "circled-c-with-overlaid-backslash",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circled-human-figure",
+      "proposedCanonicalSlug": "circled-human-figure",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-a",
+      "proposedCanonicalSlug": "emoji-presentation",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-b",
+      "proposedCanonicalSlug": "regional-indicator-b",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-c",
+      "proposedCanonicalSlug": "regional-indicator-c",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-d",
+      "proposedCanonicalSlug": "regional-indicator-d",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-e",
+      "proposedCanonicalSlug": "regional-indicator-e",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-f",
+      "proposedCanonicalSlug": "regional-indicator-f",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-g",
+      "proposedCanonicalSlug": "regional-indicator-g",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-h",
+      "proposedCanonicalSlug": "regional-indicator-h",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-i",
+      "proposedCanonicalSlug": "regional-indicator-i",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-j",
+      "proposedCanonicalSlug": "regional-indicator-j",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-k",
+      "proposedCanonicalSlug": "regional-indicator-k",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-l",
+      "proposedCanonicalSlug": "regional-indicator-l",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-m",
+      "proposedCanonicalSlug": "regional-indicator-m",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-n",
+      "proposedCanonicalSlug": "regional-indicator-n",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-o",
+      "proposedCanonicalSlug": "regional-indicator-o",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-p",
+      "proposedCanonicalSlug": "regional-indicator-p",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-q",
+      "proposedCanonicalSlug": "regional-indicator-q",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-r",
+      "proposedCanonicalSlug": "regional-indicator-r",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-s",
+      "proposedCanonicalSlug": "regional-indicator-s",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-t",
+      "proposedCanonicalSlug": "regional-indicator-t",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-u",
+      "proposedCanonicalSlug": "regional-indicator-u",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-v",
+      "proposedCanonicalSlug": "regional-indicator-v",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-w",
+      "proposedCanonicalSlug": "regional-indicator-w",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-x",
+      "proposedCanonicalSlug": "regional-indicator-x",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-y",
+      "proposedCanonicalSlug": "regional-indicator-y",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-regional-indicator-z",
+      "proposedCanonicalSlug": "regional-indicator-z",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-rounded-symbol-for-fu",
+      "proposedCanonicalSlug": "rounded-symbol-for-fu",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-rounded-symbol-for-lu",
+      "proposedCanonicalSlug": "rounded-symbol-for-lu",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-rounded-symbol-for-shou",
+      "proposedCanonicalSlug": "rounded-symbol-for-shou",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-rounded-symbol-for-xi",
+      "proposedCanonicalSlug": "rounded-symbol-for-xi",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-rounded-symbol-for-shuangxi",
+      "proposedCanonicalSlug": "rounded-symbol-for-shuangxi",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-rounded-symbol-for-cai",
+      "proposedCanonicalSlug": "rounded-symbol-for-cai",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-berber-flag",
+      "proposedCanonicalSlug": "berber-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-nail-and-gear-flag",
+      "proposedCanonicalSlug": "nail-and-gear-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-red-flag",
+      "proposedCanonicalSlug": "red-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-blue-flag",
+      "proposedCanonicalSlug": "blue-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-united-federation-of-planets-flag-star-trek",
+      "proposedCanonicalSlug": "united-federation-of-planets-flag-star-trek",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-orange-flag",
+      "proposedCanonicalSlug": "orange-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-yellow-flag",
+      "proposedCanonicalSlug": "yellow-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-green-flag",
+      "proposedCanonicalSlug": "green-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-esperanto-flag",
+      "proposedCanonicalSlug": "esperanto-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-purple-flag",
+      "proposedCanonicalSlug": "purple-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-brown-flag",
+      "proposedCanonicalSlug": "brown-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-true-south-antarctica-flag",
+      "proposedCanonicalSlug": "true-south-antarctica-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-flag",
+      "proposedCanonicalSlug": "white-flag-u1f3f3fe0f200d2b1c",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-ontario-flag",
+      "proposedCanonicalSlug": "ontario-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-quebec-flag",
+      "proposedCanonicalSlug": "quebec-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-berlin-flag",
+      "proposedCanonicalSlug": "berlin-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-bavaria-flag",
+      "proposedCanonicalSlug": "bavaria-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-andalusia-flag",
+      "proposedCanonicalSlug": "andalusia-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-aragon-flag",
+      "proposedCanonicalSlug": "aragon-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-asturian-flag",
+      "proposedCanonicalSlug": "asturian-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-cantabria-flag",
+      "proposedCanonicalSlug": "cantabria-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-ceuta-flag",
+      "proposedCanonicalSlug": "ceuta-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-castile-and-le-n-flag",
+      "proposedCanonicalSlug": "castile-and-le-n-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-castile-la-mancha-flag",
+      "proposedCanonicalSlug": "castile-la-mancha-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-canary-islands-flag",
+      "proposedCanonicalSlug": "canary-islands-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-catalonia-flag",
+      "proposedCanonicalSlug": "catalonia-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-extremadura-flag",
+      "proposedCanonicalSlug": "extremadura-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-galicia-flag",
+      "proposedCanonicalSlug": "galicia-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-balearic-islands-flag",
+      "proposedCanonicalSlug": "balearic-islands-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-murcia-flag",
+      "proposedCanonicalSlug": "murcia-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-madrid-autonomous-community-flag",
+      "proposedCanonicalSlug": "madrid-autonomous-community-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-melilla-flag",
+      "proposedCanonicalSlug": "melilla-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-navarra-chartered-community",
+      "proposedCanonicalSlug": "navarra-chartered-community",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-basque-flag",
+      "proposedCanonicalSlug": "basque-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-la-rioja-flag",
+      "proposedCanonicalSlug": "la-rioja-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-valencian-community-flag",
+      "proposedCanonicalSlug": "valencian-community-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-bretagne-flag",
+      "proposedCanonicalSlug": "bretagne-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-bari-flag",
+      "proposedCanonicalSlug": "bari-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-queretaro-flag",
+      "proposedCanonicalSlug": "queretaro-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-yucatan-flag",
+      "proposedCanonicalSlug": "yucatan-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-alabama-flag",
+      "proposedCanonicalSlug": "alabama-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-california-flag",
+      "proposedCanonicalSlug": "california-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-colorado-flag",
+      "proposedCanonicalSlug": "colorado-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-washington-dc-flag",
+      "proposedCanonicalSlug": "washington-dc-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-texas-flag",
+      "proposedCanonicalSlug": "texas-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-red-and-black-flag",
+      "proposedCanonicalSlug": "red-and-black-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-deep-red-flag",
+      "proposedCanonicalSlug": "deep-red-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-deep-blue-flag",
+      "proposedCanonicalSlug": "deep-blue-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-deep-orange-flag",
+      "proposedCanonicalSlug": "deep-orange-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-deep-yellow-flag",
+      "proposedCanonicalSlug": "deep-yellow-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-deep-green-flag",
+      "proposedCanonicalSlug": "deep-green-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-browncoat-flag",
+      "proposedCanonicalSlug": "browncoat-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-deep-purple-flag",
+      "proposedCanonicalSlug": "deep-purple-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-deep-brown-flag",
+      "proposedCanonicalSlug": "deep-brown-flag",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-hacker-cat",
+      "proposedCanonicalSlug": "hacker-cat",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-dj-man",
+      "proposedCanonicalSlug": "dj-man",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-dj-woman",
+      "proposedCanonicalSlug": "dj-woman",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-dj",
+      "proposedCanonicalSlug": "dj-u1f9d1200d1faa9",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-jar-with-red-content",
+      "proposedCanonicalSlug": "jar-with-red-content",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-jar-with-blue-content",
+      "proposedCanonicalSlug": "jar-with-blue-content",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-jar-with-orange-content",
+      "proposedCanonicalSlug": "jar-with-orange-content",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-jar-with-yellow-content",
+      "proposedCanonicalSlug": "jar-with-yellow-content",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-jar-with-green-content",
+      "proposedCanonicalSlug": "jar-with-green-content",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-jar-with-purple-content",
+      "proposedCanonicalSlug": "jar-with-purple-content",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-jar-with-brown-content",
+      "proposedCanonicalSlug": "jar-with-brown-content",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure",
+      "proposedCanonicalSlug": "stick-figure",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure-with-arms-raised",
+      "proposedCanonicalSlug": "stick-figure-with-arms-raised",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure-with-dress-and-arms-raised",
+      "proposedCanonicalSlug": "stick-figure-with-dress-and-arms-raised",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure-leaning-left",
+      "proposedCanonicalSlug": "stick-figure-leaning-left",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure-with-dress-leaning-left",
+      "proposedCanonicalSlug": "stick-figure-with-dress-leaning-left",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure-leaning-right",
+      "proposedCanonicalSlug": "stick-figure-leaning-right",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure-with-dress-leaning-right",
+      "proposedCanonicalSlug": "stick-figure-with-dress-leaning-right",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-stick-figure-with-dress",
+      "proposedCanonicalSlug": "stick-figure-with-dress",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-combining-enclosing-keycap",
+      "proposedCanonicalSlug": "emoji-component-u20e3",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-sound-recording-copyright",
+      "proposedCanonicalSlug": "sound-recording-copyright",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-service-mark",
+      "proposedCanonicalSlug": "service-mark",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circled-equals",
+      "proposedCanonicalSlug": "circled-equals",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-power-symbol",
+      "proposedCanonicalSlug": "power-symbol",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-power-on-off-symbol",
+      "proposedCanonicalSlug": "power-on-off-symbol",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-power-on-symbol",
+      "proposedCanonicalSlug": "power-on-symbol",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-power-sleep-symbol",
+      "proposedCanonicalSlug": "power-sleep-symbol",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-square",
+      "proposedCanonicalSlug": "white-square",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-rectangle",
+      "proposedCanonicalSlug": "black-rectangle",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-rectangle",
+      "proposedCanonicalSlug": "white-rectangle",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-vertical-rectangle",
+      "proposedCanonicalSlug": "black-vertical-rectangle",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-fisheye",
+      "proposedCanonicalSlug": "fisheye",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-red-eye",
+      "proposedCanonicalSlug": "red-eye",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-hal-9000",
+      "proposedCanonicalSlug": "hal-9000",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circle-with-left-half-black",
+      "proposedCanonicalSlug": "circle-with-left-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-circle-with-right-half-black",
+      "proposedCanonicalSlug": "circle-with-right-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-square-with-left-half-black",
+      "proposedCanonicalSlug": "square-with-left-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-square-with-right-half-black",
+      "proposedCanonicalSlug": "square-with-right-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-square-with-upper-left-diagonal-black",
+      "proposedCanonicalSlug": "square-with-upper-left-diagonal-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-square-with-lower-right-diagonal-black",
+      "proposedCanonicalSlug": "square-with-lower-right-diagonal-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-up-pointing-triangle-with-left-half-black",
+      "proposedCanonicalSlug": "up-pointing-triangle-with-left-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-up-pointing-triangle-with-right-half-black",
+      "proposedCanonicalSlug": "up-pointing-triangle-with-right-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-star",
+      "proposedCanonicalSlug": "black-star",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-chess-king",
+      "proposedCanonicalSlug": "white-chess-king",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-chess-queen",
+      "proposedCanonicalSlug": "white-chess-queen",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-chess-rook",
+      "proposedCanonicalSlug": "white-chess-rook",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-chess-bishop",
+      "proposedCanonicalSlug": "white-chess-bishop",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-chess-knight",
+      "proposedCanonicalSlug": "white-chess-knight",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-chess-pawn",
+      "proposedCanonicalSlug": "white-chess-pawn",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-chess-king",
+      "proposedCanonicalSlug": "black-chess-king",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-chess-queen",
+      "proposedCanonicalSlug": "black-chess-queen",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-chess-rook",
+      "proposedCanonicalSlug": "black-chess-rook",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-chess-bishop",
+      "proposedCanonicalSlug": "black-chess-bishop",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-chess-knight",
+      "proposedCanonicalSlug": "black-chess-knight",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-left-right-black-arrow",
+      "proposedCanonicalSlug": "left-right-black-arrow",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-up-down-black-arrow",
+      "proposedCanonicalSlug": "up-down-black-arrow",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-pentagon",
+      "proposedCanonicalSlug": "black-pentagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-pentagon",
+      "proposedCanonicalSlug": "white-pentagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-hexagon",
+      "proposedCanonicalSlug": "white-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-rainbow-hexagon",
+      "proposedCanonicalSlug": "rainbow-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-red-hexagon",
+      "proposedCanonicalSlug": "red-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-blue-hexagon",
+      "proposedCanonicalSlug": "blue-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-orange-hexagon",
+      "proposedCanonicalSlug": "orange-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-yellow-hexagon",
+      "proposedCanonicalSlug": "yellow-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-green-hexagon",
+      "proposedCanonicalSlug": "green-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-purple-hexagon",
+      "proposedCanonicalSlug": "purple-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-brown-hexagon",
+      "proposedCanonicalSlug": "brown-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-hexagon",
+      "proposedCanonicalSlug": "black-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-horizontal-black-hexagon",
+      "proposedCanonicalSlug": "horizontal-black-hexagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-large-circle",
+      "proposedCanonicalSlug": "black-large-circle",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-vertical-ellipse",
+      "proposedCanonicalSlug": "black-vertical-ellipse",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-white-vertical-ellipse",
+      "proposedCanonicalSlug": "white-vertical-ellipse",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-heavy-circle",
+      "proposedCanonicalSlug": "heavy-circle",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-anticlockwise-triangle-headed-top-u-shaped-arrow",
+      "proposedCanonicalSlug": "anticlockwise-triangle-headed-top-u-shaped-arrow",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-overlapping-white-squares",
+      "proposedCanonicalSlug": "overlapping-white-squares",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-overlapping-white-and-black-squares",
+      "proposedCanonicalSlug": "overlapping-white-and-black-squares",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-overlapping-black-squares",
+      "proposedCanonicalSlug": "overlapping-black-squares",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-horizontal-black-octagon",
+      "proposedCanonicalSlug": "horizontal-black-octagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-black-octagon",
+      "proposedCanonicalSlug": "black-octagon",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-star-with-left-half-black",
+      "proposedCanonicalSlug": "star-with-left-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-star-with-right-half-black",
+      "proposedCanonicalSlug": "star-with-right-half-black",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-woman-with-medical-mask",
+      "proposedCanonicalSlug": "woman-with-medical-mask",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-man-with-medical-mask",
+      "proposedCanonicalSlug": "man-with-medical-mask",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-woman-sneezing-into-elbow",
+      "proposedCanonicalSlug": "woman-sneezing-into-elbow",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    },
+    {
+      "currentExtrasRoute": "/emoji/extra-man-sneezing-into-elbow",
+      "proposedCanonicalSlug": "man-sneezing-into-elbow",
+      "redirectSafe": false,
+      "oldUrlMustRemainSupported": true,
+      "canonicalUrlShouldRemainOld": true,
+      "redirectWouldCreateAmbiguity": true,
+      "reason": "Production extras URLs use extra-* prefix; master canonical slug omits prefix. Permanent backward compatibility required.",
+      "recommendedAction": "retain-current-url-as-canonical-until-explicit-migration-approval"
+    }
+  ],
+  "status": "PASS"
+}

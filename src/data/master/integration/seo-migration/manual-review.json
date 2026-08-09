@@ -1,0 +1,1081 @@
+{
+  "generatedAt": "2026-08-09T18:45:08.068Z",
+  "phase": "8.12A",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "auditOnly": true,
+  "count": 131,
+  "byReason": {
+    "variation-selector": 92,
+    "zwj-sequence": 0,
+    "skin-tone": 0,
+    "gender": 0,
+    "flag": 19,
+    "keycap": 0,
+    "tag-sequence": 0,
+    "punctuation": 0,
+    "unicode-naming-difference": 20,
+    "source-specific-naming": 0,
+    "ambiguous-semantic": 0,
+    "route-compatibility": 0,
+    "other": 0
+  },
+  "reviewTable": [
+    {
+      "currentUrl": "/emoji/keycap-002afe0f20e3",
+      "proposedUrl": "/emoji/e2-0-keycap-u002afe0f20e3",
+      "emoji": "*️⃣",
+      "canonicalId": "unicode:002A-FE0F-20E3",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-antigua-and-barbuda",
+      "proposedUrl": "/emoji/flag-antigua-barbuda",
+      "emoji": "🇦🇬",
+      "canonicalId": "unicode:1F1E6-1F1EC",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-aland-islands",
+      "proposedUrl": "/emoji/flag-land-islands",
+      "emoji": "🇦🇽",
+      "canonicalId": "unicode:1F1E6-1F1FD",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-bosnia-and-herzegovina",
+      "proposedUrl": "/emoji/flag-bosnia-herzegovina",
+      "emoji": "🇧🇦",
+      "canonicalId": "unicode:1F1E7-1F1E6",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-st-barthelemy",
+      "proposedUrl": "/emoji/flag-st-barth-lemy",
+      "emoji": "🇧🇱",
+      "canonicalId": "unicode:1F1E7-1F1F1",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-cote-d-ivoire",
+      "proposedUrl": "/emoji/flag-c-te-divoire",
+      "emoji": "🇨🇮",
+      "canonicalId": "unicode:1F1E8-1F1EE",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-curacao",
+      "proposedUrl": "/emoji/flag-cura-ao",
+      "emoji": "🇨🇼",
+      "canonicalId": "unicode:1F1E8-1F1FC",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-ceuta-and-melilla",
+      "proposedUrl": "/emoji/flag-ceuta-melilla",
+      "emoji": "🇪🇦",
+      "canonicalId": "unicode:1F1EA-1F1E6",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-south-georgia-and-south-sandwich-islands",
+      "proposedUrl": "/emoji/flag-south-georgia-south-sandwich-islands",
+      "emoji": "🇬🇸",
+      "canonicalId": "unicode:1F1EC-1F1F8",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-heard-and-mcdonald-islands",
+      "proposedUrl": "/emoji/flag-heard-mcdonald-islands",
+      "emoji": "🇭🇲",
+      "canonicalId": "unicode:1F1ED-1F1F2",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-st-kitts-and-nevis",
+      "proposedUrl": "/emoji/flag-st-kitts-nevis",
+      "emoji": "🇰🇳",
+      "canonicalId": "unicode:1F1F0-1F1F3",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-st-pierre-and-miquelon",
+      "proposedUrl": "/emoji/flag-st-pierre-miquelon",
+      "emoji": "🇵🇲",
+      "canonicalId": "unicode:1F1F5-1F1F2",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-reunion",
+      "proposedUrl": "/emoji/flag-r-union",
+      "emoji": "🇷🇪",
+      "canonicalId": "unicode:1F1F7-1F1EA",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-svalbard-and-jan-mayen",
+      "proposedUrl": "/emoji/flag-svalbard-jan-mayen",
+      "emoji": "🇸🇯",
+      "canonicalId": "unicode:1F1F8-1F1EF",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-sao-tome-and-principe",
+      "proposedUrl": "/emoji/flag-s-o-tom-pr-ncipe",
+      "emoji": "🇸🇹",
+      "canonicalId": "unicode:1F1F8-1F1F9",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-turks-and-caicos-islands",
+      "proposedUrl": "/emoji/flag-turks-caicos-islands",
+      "emoji": "🇹🇨",
+      "canonicalId": "unicode:1F1F9-1F1E8",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-turkiye",
+      "proposedUrl": "/emoji/flag-t-rkiye",
+      "emoji": "🇹🇷",
+      "canonicalId": "unicode:1F1F9-1F1F7",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-trinidad-and-tobago",
+      "proposedUrl": "/emoji/flag-trinidad-tobago",
+      "emoji": "🇹🇹",
+      "canonicalId": "unicode:1F1F9-1F1F9",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-st-vincent-and-grenadines",
+      "proposedUrl": "/emoji/flag-st-vincent-grenadines",
+      "emoji": "🇻🇨",
+      "canonicalId": "unicode:1F1FB-1F1E8",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/flag-wallis-and-futuna",
+      "proposedUrl": "/emoji/flag-wallis-futuna",
+      "emoji": "🇼🇫",
+      "canonicalId": "unicode:1F1FC-1F1EB",
+      "reason": "flag",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-running-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-running-facing-right-light-skin-tone-u1f3c31f3fb200d2640fe0f200d27a1fe0f",
+      "emoji": "🏃🏻‍♀️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FB-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-running-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-running-facing-right-light-skin-tone-u1f3c31f3fb200d2642fe0f200d27a1fe0f",
+      "emoji": "🏃🏻‍♂️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FB-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-running-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-running-facing-right-light-skin-tone-u1f3c31f3fb200d27a1fe0f",
+      "emoji": "🏃🏻‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FB-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-running-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-running-facing-right-medium-light-skin-tone-u1f3c31f3fc200d2640fe0f200d27a1fe0f",
+      "emoji": "🏃🏼‍♀️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FC-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-running-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-running-facing-right-medium-light-skin-tone-u1f3c31f3fc200d2642fe0f200d27a1fe0f",
+      "emoji": "🏃🏼‍♂️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FC-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-running-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-running-facing-right-medium-light-skin-tone-u1f3c31f3fc200d27a1fe0f",
+      "emoji": "🏃🏼‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-running-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-running-facing-right-medium-skin-tone-u1f3c31f3fd200d2640fe0f200d27a1fe0f",
+      "emoji": "🏃🏽‍♀️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FD-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-running-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-running-facing-right-medium-skin-tone-u1f3c31f3fd200d2642fe0f200d27a1fe0f",
+      "emoji": "🏃🏽‍♂️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FD-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-running-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-running-facing-right-medium-skin-tone-u1f3c31f3fd200d27a1fe0f",
+      "emoji": "🏃🏽‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-running-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-running-facing-right-medium-dark-skin-tone-u1f3c31f3fe200d2640fe0f200d27a1fe0f",
+      "emoji": "🏃🏾‍♀️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FE-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-running-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-running-facing-right-medium-dark-skin-tone-u1f3c31f3fe200d2642fe0f200d27a1fe0f",
+      "emoji": "🏃🏾‍♂️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FE-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-running-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-running-facing-right-medium-dark-skin-tone-u1f3c31f3fe200d27a1fe0f",
+      "emoji": "🏃🏾‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FE-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-running-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-running-facing-right-dark-skin-tone-u1f3c31f3ff200d2640fe0f200d27a1fe0f",
+      "emoji": "🏃🏿‍♀️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FF-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-running-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-running-facing-right-dark-skin-tone-u1f3c31f3ff200d2642fe0f200d27a1fe0f",
+      "emoji": "🏃🏿‍♂️‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FF-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-running-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-running-facing-right-dark-skin-tone-u1f3c31f3ff200d27a1fe0f",
+      "emoji": "🏃🏿‍➡️",
+      "canonicalId": "unicode:1F3C3-1F3FF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-s-hat",
+      "proposedUrl": "/emoji/womans-hat",
+      "emoji": "👒",
+      "canonicalId": "unicode:1F452",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-s-clothes",
+      "proposedUrl": "/emoji/womans-clothes",
+      "emoji": "👚",
+      "canonicalId": "unicode:1F45A",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-s-shoe",
+      "proposedUrl": "/emoji/mans-shoe",
+      "emoji": "👞",
+      "canonicalId": "unicode:1F45E",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-s-sandal",
+      "proposedUrl": "/emoji/womans-sandal",
+      "emoji": "👡",
+      "canonicalId": "unicode:1F461",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-s-boot",
+      "proposedUrl": "/emoji/womans-boot",
+      "emoji": "👢",
+      "canonicalId": "unicode:1F462",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-with-white-cane-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-with-white-cane-facing-right-light-skin-tone-u1f4681f3fb200d1f9af200d27a1fe0f",
+      "emoji": "👨🏻‍🦯‍➡️",
+      "canonicalId": "unicode:1F468-1F3FB-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-motorized-wheelchair-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-motorized-wheelchair-facing-right-light-skin-tone-u1f4681f3fb200d1f9bc200d27a1fe0f",
+      "emoji": "👨🏻‍🦼‍➡️",
+      "canonicalId": "unicode:1F468-1F3FB-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-manual-wheelchair-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-manual-wheelchair-facing-right-light-skin-tone-u1f4681f3fb200d1f9bd200d27a1fe0f",
+      "emoji": "👨🏻‍🦽‍➡️",
+      "canonicalId": "unicode:1F468-1F3FB-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-with-white-cane-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-with-white-cane-facing-right-medium-light-skin-tone-u1f4681f3fc200d1f9af200d27a1fe0f",
+      "emoji": "👨🏼‍🦯‍➡️",
+      "canonicalId": "unicode:1F468-1F3FC-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-motorized-wheelchair-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/man-in-motorized-wheelchair-facing-right-medium-light-skin-tone",
+      "emoji": "👨🏼‍🦼‍➡️",
+      "canonicalId": "unicode:1F468-1F3FC-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-manual-wheelchair-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-manual-wheelchair-facing-right-medium-light-skin-tone-u1f4681f3fc200d1f9bd200d27a1fe0f",
+      "emoji": "👨🏼‍🦽‍➡️",
+      "canonicalId": "unicode:1F468-1F3FC-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-with-white-cane-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-with-white-cane-facing-right-medium-skin-tone-u1f4681f3fd200d1f9af200d27a1fe0f",
+      "emoji": "👨🏽‍🦯‍➡️",
+      "canonicalId": "unicode:1F468-1F3FD-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-motorized-wheelchair-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-motorized-wheelchair-facing-right-medium-skin-tone-u1f4681f3fd200d1f9bc200d27a1fe0f",
+      "emoji": "👨🏽‍🦼‍➡️",
+      "canonicalId": "unicode:1F468-1F3FD-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-manual-wheelchair-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-manual-wheelchair-facing-right-medium-skin-tone-u1f4681f3fd200d1f9bd200d27a1fe0f",
+      "emoji": "👨🏽‍🦽‍➡️",
+      "canonicalId": "unicode:1F468-1F3FD-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-with-white-cane-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-with-white-cane-facing-right-medium-dark-skin-tone-u1f4681f3fe200d1f9af200d27a1fe0f",
+      "emoji": "👨🏾‍🦯‍➡️",
+      "canonicalId": "unicode:1F468-1F3FE-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-motorized-wheelchair-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-motorized-wheelchair-facing-right-medium-dark-skin-tone-u1f4681f3fe200d1f9bc200d27a1fe0f",
+      "emoji": "👨🏾‍🦼‍➡️",
+      "canonicalId": "unicode:1F468-1F3FE-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-manual-wheelchair-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-manual-wheelchair-facing-right-medium-dark-skin-tone-u1f4681f3fe200d1f9bd200d27a1fe0f",
+      "emoji": "👨🏾‍🦽‍➡️",
+      "canonicalId": "unicode:1F468-1F3FE-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-with-white-cane-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-with-white-cane-facing-right-dark-skin-tone-u1f4681f3ff200d1f9af200d27a1fe0f",
+      "emoji": "👨🏿‍🦯‍➡️",
+      "canonicalId": "unicode:1F468-1F3FF-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-motorized-wheelchair-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-motorized-wheelchair-facing-right-dark-skin-tone-u1f4681f3ff200d1f9bc200d27a1fe0f",
+      "emoji": "👨🏿‍🦼‍➡️",
+      "canonicalId": "unicode:1F468-1F3FF-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-in-manual-wheelchair-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-in-manual-wheelchair-facing-right-dark-skin-tone-u1f4681f3ff200d1f9bd200d27a1fe0f",
+      "emoji": "👨🏿‍🦽‍➡️",
+      "canonicalId": "unicode:1F468-1F3FF-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-with-white-cane-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-with-white-cane-facing-right-light-skin-tone-u1f4691f3fb200d1f9af200d27a1fe0f",
+      "emoji": "👩🏻‍🦯‍➡️",
+      "canonicalId": "unicode:1F469-1F3FB-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-motorized-wheelchair-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-motorized-wheelchair-facing-right-light-skin-tone-u1f4691f3fb200d1f9bc200d27a1fe0f",
+      "emoji": "👩🏻‍🦼‍➡️",
+      "canonicalId": "unicode:1F469-1F3FB-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-manual-wheelchair-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-manual-wheelchair-facing-right-light-skin-tone-u1f4691f3fb200d1f9bd200d27a1fe0f",
+      "emoji": "👩🏻‍🦽‍➡️",
+      "canonicalId": "unicode:1F469-1F3FB-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-with-white-cane-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-with-white-cane-facing-right-medium-light-skin-tone-u1f4691f3fc200d1f9af200d27a1fe0f",
+      "emoji": "👩🏼‍🦯‍➡️",
+      "canonicalId": "unicode:1F469-1F3FC-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-motorized-wheelchair-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/woman-in-motorized-wheelchair-facing-right-medium-light-skin-tone",
+      "emoji": "👩🏼‍🦼‍➡️",
+      "canonicalId": "unicode:1F469-1F3FC-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-manual-wheelchair-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-manual-wheelchair-facing-right-medium-light-skin-tone-u1f4691f3fc200d1f9bd200d27a1fe0f",
+      "emoji": "👩🏼‍🦽‍➡️",
+      "canonicalId": "unicode:1F469-1F3FC-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-with-white-cane-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-with-white-cane-facing-right-medium-skin-tone-u1f4691f3fd200d1f9af200d27a1fe0f",
+      "emoji": "👩🏽‍🦯‍➡️",
+      "canonicalId": "unicode:1F469-1F3FD-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-motorized-wheelchair-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-motorized-wheelchair-facing-right-medium-skin-tone-u1f4691f3fd200d1f9bc200d27a1fe0f",
+      "emoji": "👩🏽‍🦼‍➡️",
+      "canonicalId": "unicode:1F469-1F3FD-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-manual-wheelchair-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-manual-wheelchair-facing-right-medium-skin-tone-u1f4691f3fd200d1f9bd200d27a1fe0f",
+      "emoji": "👩🏽‍🦽‍➡️",
+      "canonicalId": "unicode:1F469-1F3FD-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-with-white-cane-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-with-white-cane-facing-right-medium-dark-skin-tone-u1f4691f3fe200d1f9af200d27a1fe0f",
+      "emoji": "👩🏾‍🦯‍➡️",
+      "canonicalId": "unicode:1F469-1F3FE-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-motorized-wheelchair-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/woman-in-motorized-wheelchair-facing-right-medium-dark-skin-tone",
+      "emoji": "👩🏾‍🦼‍➡️",
+      "canonicalId": "unicode:1F469-1F3FE-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-manual-wheelchair-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-manual-wheelchair-facing-right-medium-dark-skin-tone-u1f4691f3fe200d1f9bd200d27a1fe0f",
+      "emoji": "👩🏾‍🦽‍➡️",
+      "canonicalId": "unicode:1F469-1F3FE-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-with-white-cane-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-with-white-cane-facing-right-dark-skin-tone-u1f4691f3ff200d1f9af200d27a1fe0f",
+      "emoji": "👩🏿‍🦯‍➡️",
+      "canonicalId": "unicode:1F469-1F3FF-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-motorized-wheelchair-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-motorized-wheelchair-facing-right-dark-skin-tone-u1f4691f3ff200d1f9bc200d27a1fe0f",
+      "emoji": "👩🏿‍🦼‍➡️",
+      "canonicalId": "unicode:1F469-1F3FF-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-in-manual-wheelchair-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-in-manual-wheelchair-facing-right-dark-skin-tone-u1f4691f3ff200d1f9bd200d27a1fe0f",
+      "emoji": "👩🏿‍🦽‍➡️",
+      "canonicalId": "unicode:1F469-1F3FF-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/one-o-clock",
+      "proposedUrl": "/emoji/one-oclock",
+      "emoji": "🕐",
+      "canonicalId": "unicode:1F550",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/two-o-clock",
+      "proposedUrl": "/emoji/two-oclock",
+      "emoji": "🕑",
+      "canonicalId": "unicode:1F551",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/three-o-clock",
+      "proposedUrl": "/emoji/three-oclock",
+      "emoji": "🕒",
+      "canonicalId": "unicode:1F552",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/four-o-clock",
+      "proposedUrl": "/emoji/four-oclock",
+      "emoji": "🕓",
+      "canonicalId": "unicode:1F553",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/five-o-clock",
+      "proposedUrl": "/emoji/five-oclock",
+      "emoji": "🕔",
+      "canonicalId": "unicode:1F554",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/six-o-clock",
+      "proposedUrl": "/emoji/six-oclock",
+      "emoji": "🕕",
+      "canonicalId": "unicode:1F555",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/seven-o-clock",
+      "proposedUrl": "/emoji/seven-oclock",
+      "emoji": "🕖",
+      "canonicalId": "unicode:1F556",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/eight-o-clock",
+      "proposedUrl": "/emoji/eight-oclock",
+      "emoji": "🕗",
+      "canonicalId": "unicode:1F557",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/nine-o-clock",
+      "proposedUrl": "/emoji/nine-oclock",
+      "emoji": "🕘",
+      "canonicalId": "unicode:1F558",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/ten-o-clock",
+      "proposedUrl": "/emoji/ten-oclock",
+      "emoji": "🕙",
+      "canonicalId": "unicode:1F559",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/eleven-o-clock",
+      "proposedUrl": "/emoji/eleven-oclock",
+      "emoji": "🕚",
+      "canonicalId": "unicode:1F55A",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/twelve-o-clock",
+      "proposedUrl": "/emoji/twelve-oclock",
+      "emoji": "🕛",
+      "canonicalId": "unicode:1F55B",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-walking-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-walking-facing-right-light-skin-tone-u1f6b61f3fb200d2640fe0f200d27a1fe0f",
+      "emoji": "🚶🏻‍♀️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FB-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-walking-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-walking-facing-right-light-skin-tone-u1f6b61f3fb200d2642fe0f200d27a1fe0f",
+      "emoji": "🚶🏻‍♂️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FB-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-walking-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-walking-facing-right-light-skin-tone-u1f6b61f3fb200d27a1fe0f",
+      "emoji": "🚶🏻‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FB-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-walking-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-walking-facing-right-medium-light-skin-tone-u1f6b61f3fc200d2640fe0f200d27a1fe0f",
+      "emoji": "🚶🏼‍♀️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FC-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-walking-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-walking-facing-right-medium-light-skin-tone-u1f6b61f3fc200d2642fe0f200d27a1fe0f",
+      "emoji": "🚶🏼‍♂️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FC-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-walking-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-walking-facing-right-medium-light-skin-tone-u1f6b61f3fc200d27a1fe0f",
+      "emoji": "🚶🏼‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-walking-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-walking-facing-right-medium-skin-tone-u1f6b61f3fd200d2640fe0f200d27a1fe0f",
+      "emoji": "🚶🏽‍♀️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FD-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-walking-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-walking-facing-right-medium-skin-tone-u1f6b61f3fd200d2642fe0f200d27a1fe0f",
+      "emoji": "🚶🏽‍♂️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FD-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-walking-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-walking-facing-right-medium-skin-tone-u1f6b61f3fd200d27a1fe0f",
+      "emoji": "🚶🏽‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-walking-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-walking-facing-right-medium-dark-skin-tone-u1f6b61f3fe200d2640fe0f200d27a1fe0f",
+      "emoji": "🚶🏾‍♀️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FE-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-walking-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-walking-facing-right-medium-dark-skin-tone-u1f6b61f3fe200d2642fe0f200d27a1fe0f",
+      "emoji": "🚶🏾‍♂️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FE-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-walking-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-walking-facing-right-medium-dark-skin-tone-u1f6b61f3fe200d27a1fe0f",
+      "emoji": "🚶🏾‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FE-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-walking-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-walking-facing-right-dark-skin-tone-u1f6b61f3ff200d2640fe0f200d27a1fe0f",
+      "emoji": "🚶🏿‍♀️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FF-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-walking-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-walking-facing-right-dark-skin-tone-u1f6b61f3ff200d2642fe0f200d27a1fe0f",
+      "emoji": "🚶🏿‍♂️‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FF-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-walking-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-walking-facing-right-dark-skin-tone-u1f6b61f3ff200d27a1fe0f",
+      "emoji": "🚶🏿‍➡️",
+      "canonicalId": "unicode:1F6B6-1F3FF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/men-s-room",
+      "proposedUrl": "/emoji/mens-room",
+      "emoji": "🚹",
+      "canonicalId": "unicode:1F6B9",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/women-s-room",
+      "proposedUrl": "/emoji/womens-room",
+      "emoji": "🚺",
+      "canonicalId": "unicode:1F6BA",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-kneeling-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-kneeling-facing-right-light-skin-tone-u1f9ce1f3fb200d2640fe0f200d27a1fe0f",
+      "emoji": "🧎🏻‍♀️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FB-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-kneeling-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-kneeling-facing-right-light-skin-tone-u1f9ce1f3fb200d2642fe0f200d27a1fe0f",
+      "emoji": "🧎🏻‍♂️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FB-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-kneeling-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-kneeling-facing-right-light-skin-tone-u1f9ce1f3fb200d27a1fe0f",
+      "emoji": "🧎🏻‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FB-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-kneeling-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-kneeling-facing-right-medium-light-skin-tone-u1f9ce1f3fc200d2640fe0f200d27a1fe0f",
+      "emoji": "🧎🏼‍♀️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FC-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-kneeling-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-kneeling-facing-right-medium-light-skin-tone-u1f9ce1f3fc200d2642fe0f200d27a1fe0f",
+      "emoji": "🧎🏼‍♂️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FC-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-kneeling-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-kneeling-facing-right-medium-light-skin-tone-u1f9ce1f3fc200d27a1fe0f",
+      "emoji": "🧎🏼‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-kneeling-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-kneeling-facing-right-medium-skin-tone-u1f9ce1f3fd200d2640fe0f200d27a1fe0f",
+      "emoji": "🧎🏽‍♀️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FD-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-kneeling-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-kneeling-facing-right-medium-skin-tone-u1f9ce1f3fd200d2642fe0f200d27a1fe0f",
+      "emoji": "🧎🏽‍♂️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FD-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-kneeling-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-kneeling-facing-right-medium-skin-tone-u1f9ce1f3fd200d27a1fe0f",
+      "emoji": "🧎🏽‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-kneeling-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-kneeling-facing-right-medium-dark-skin-tone-u1f9ce1f3fe200d2640fe0f200d27a1fe0f",
+      "emoji": "🧎🏾‍♀️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FE-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-kneeling-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-kneeling-facing-right-medium-dark-skin-tone-u1f9ce1f3fe200d2642fe0f200d27a1fe0f",
+      "emoji": "🧎🏾‍♂️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FE-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-kneeling-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-kneeling-facing-right-medium-dark-skin-tone-u1f9ce1f3fe200d27a1fe0f",
+      "emoji": "🧎🏾‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FE-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/woman-kneeling-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-woman-kneeling-facing-right-dark-skin-tone-u1f9ce1f3ff200d2640fe0f200d27a1fe0f",
+      "emoji": "🧎🏿‍♀️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FF-200D-2640-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/man-kneeling-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-man-kneeling-facing-right-dark-skin-tone-u1f9ce1f3ff200d2642fe0f200d27a1fe0f",
+      "emoji": "🧎🏿‍♂️‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FF-200D-2642-FE0F-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-kneeling-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-kneeling-facing-right-dark-skin-tone-u1f9ce1f3ff200d27a1fe0f",
+      "emoji": "🧎🏿‍➡️",
+      "canonicalId": "unicode:1F9CE-1F3FF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-with-white-cane-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-with-white-cane-facing-right-light-skin-tone-u1f9d11f3fb200d1f9af200d27a1fe0f",
+      "emoji": "🧑🏻‍🦯‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FB-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-motorized-wheelchair-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-in-motorized-wheelchair-facing-right-light-skin-tone-u1f9d11f3fb200d1f9bc200d27a1fe0f",
+      "emoji": "🧑🏻‍🦼‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FB-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-manual-wheelchair-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-in-manual-wheelchair-facing-right-light-skin-tone-u1f9d11f3fb200d1f9bd200d27a1fe0f",
+      "emoji": "🧑🏻‍🦽‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FB-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-with-white-cane-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-with-white-cane-facing-right-medium-light-skin-tone-u1f9d11f3fc200d1f9af200d27a1fe0f",
+      "emoji": "🧑🏼‍🦯‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FC-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-motorized-wheelchair-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/person-in-motorized-wheelchair-facing-right-medium-light-skin-tone",
+      "emoji": "🧑🏼‍🦼‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FC-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-manual-wheelchair-medium-light-skin-tone-facing-right",
+      "proposedUrl": "/emoji/person-in-manual-wheelchair-facing-right-medium-light-skin-tone",
+      "emoji": "🧑🏼‍🦽‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FC-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-with-white-cane-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-with-white-cane-facing-right-medium-skin-tone-u1f9d11f3fd200d1f9af200d27a1fe0f",
+      "emoji": "🧑🏽‍🦯‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FD-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-motorized-wheelchair-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-in-motorized-wheelchair-facing-right-medium-skin-tone-u1f9d11f3fd200d1f9bc200d27a1fe0f",
+      "emoji": "🧑🏽‍🦼‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FD-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-manual-wheelchair-medium-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-in-manual-wheelchair-facing-right-medium-skin-tone-u1f9d11f3fd200d1f9bd200d27a1fe0f",
+      "emoji": "🧑🏽‍🦽‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FD-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-with-white-cane-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-with-white-cane-facing-right-medium-dark-skin-tone-u1f9d11f3fe200d1f9af200d27a1fe0f",
+      "emoji": "🧑🏾‍🦯‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FE-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-motorized-wheelchair-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/person-in-motorized-wheelchair-facing-right-medium-dark-skin-tone",
+      "emoji": "🧑🏾‍🦼‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FE-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-manual-wheelchair-medium-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-in-manual-wheelchair-facing-right-medium-dark-skin-tone-u1f9d11f3fe200d1f9bd200d27a1fe0f",
+      "emoji": "🧑🏾‍🦽‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FE-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-with-white-cane-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-with-white-cane-facing-right-dark-skin-tone-u1f9d11f3ff200d1f9af200d27a1fe0f",
+      "emoji": "🧑🏿‍🦯‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FF-200D-1F9AF-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-motorized-wheelchair-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-in-motorized-wheelchair-facing-right-dark-skin-tone-u1f9d11f3ff200d1f9bc200d27a1fe0f",
+      "emoji": "🧑🏿‍🦼‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FF-200D-1F9BC-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/person-in-manual-wheelchair-dark-skin-tone-facing-right",
+      "proposedUrl": "/emoji/e15-1-person-in-manual-wheelchair-facing-right-dark-skin-tone-u1f9d11f3ff200d1f9bd200d27a1fe0f",
+      "emoji": "🧑🏿‍🦽‍➡️",
+      "canonicalId": "unicode:1F9D1-1F3FF-200D-1F9BD-200D-27A1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/pinata",
+      "proposedUrl": "/emoji/pi-ata",
+      "emoji": "🪅",
+      "canonicalId": "unicode:1FA85",
+      "reason": "unicode-naming-difference",
+      "recommendedAction": "defer-until-manual-approval"
+    },
+    {
+      "currentUrl": "/emoji/rescue-worker-s-helmet",
+      "proposedUrl": "/emoji/e0-7-rescue-workers-helmet",
+      "emoji": "⛑️",
+      "canonicalId": "unicode:26D1-FE0F",
+      "reason": "variation-selector",
+      "recommendedAction": "defer-until-manual-approval"
+    }
+  ],
+  "autoResolve": false,
+  "status": "PASS"
+}

@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-08-09T18:05:04.192Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "risks": [
+    {
+      "id": "seo-slug-migration",
+      "level": "HIGH",
+      "area": "SEO",
+      "description": "2934 production slug mismatches require redirect planning before SEO activation.",
+      "mitigation": "Deploy redirects/canonical strategy; do not auto-rename URLs."
+    },
+    {
+      "id": "large-lfs-files",
+      "level": "MEDIUM",
+      "area": "Infrastructure",
+      "description": "Four master JSON files exceed 100MB and require Git LFS.",
+      "mitigation": "LFS already configured; verify clone/CI LFS support."
+    },
+    {
+      "id": "master-data-size",
+      "level": "MEDIUM",
+      "area": "Server",
+      "description": "Frozen master database is large; server memory must accommodate reader cache.",
+      "mitigation": "Canonical-scoped loading; keep master data server-only."
+    },
+    {
+      "id": "client-bundle-risk",
+      "level": "LOW",
+      "area": "Client",
+      "description": "Risk of master data leaking into client bundles.",
+      "mitigation": "Server/client boundary verified; production JSON only on client."
+    },
+    {
+      "id": "semantic-ambiguity",
+      "level": "MEDIUM",
+      "area": "Search",
+      "description": "Ambiguous terms like 'hot' must not collapse to single results.",
+      "mitigation": "Ambiguity protection verified in search rollout audit."
+    },
+    {
+      "id": "route-compatibility",
+      "level": "HIGH",
+      "area": "SEO",
+      "description": "179 extras route prefix mismatches.",
+      "mitigation": "Manual review of extra-* production URLs before migration."
+    },
+    {
+      "id": "rollback-capability",
+      "level": "NONE",
+      "area": "Operations",
+      "description": "All four flags restore production behavior when disabled.",
+      "mitigation": "Feature flags remain default false."
+    },
+    {
+      "id": "production-search-regression",
+      "level": "LOW",
+      "area": "Search",
+      "description": "Master search could diverge from production search ranking.",
+      "mitigation": "Production search 0.488ms; fallback bridge verified."
+    },
+    {
+      "id": "artwork-license-attribution",
+      "level": "LOW",
+      "area": "Artwork",
+      "description": "Multi-provider artwork requires per-provider license display.",
+      "mitigation": "Attribution UI verified in Phase 8.11 artwork integration."
+    }
+  ],
+  "highestRisk": "HIGH",
+  "riskCounts": {
+    "critical": 0,
+    "high": 2,
+    "medium": 3,
+    "low": 3,
+    "none": 1
+  },
+  "status": "PASS"
+}

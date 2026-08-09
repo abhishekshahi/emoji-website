@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-08-09T19:28:24.269Z",
+  "phase": "8.12C",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "approved-redirect-dataset",
+  "auditOnly": false,
+  "redirectLoops": 0,
+  "selfRedirects": 0,
+  "status": "PASS"
+}

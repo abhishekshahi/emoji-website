@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-08-09T18:05:03.300Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "timings": [
+    {
+      "label": "production-search-fire",
+      "durationMs": 2.085
+    },
+    {
+      "label": "cold-master-search-fire",
+      "durationMs": 55.526
+    },
+    {
+      "label": "warm-master-search-fire",
+      "durationMs": 138.452
+    },
+    {
+      "label": "canonical-artwork-lookup",
+      "durationMs": 0.106
+    },
+    {
+      "label": "canonical-metadata-lookup",
+      "durationMs": 0.354
+    },
+    {
+      "label": "seo-lookup",
+      "durationMs": 0.133
+    }
+  ],
+  "checks": {
+    "productionSearchUnderOneSecond": true,
+    "masterSearchUnderOneSecond": true,
+    "noNodeFsInClient": true,
+    "noNodePathInClient": true,
+    "noMasterReaderInClient": true,
+    "noRawMasterJsonInClient": true,
+    "noExternalFetch": true,
+    "clientLoadsProductionOnly": true,
+    "canonicalScopedLoading": true
+  },
+  "status": "PASS"
+}

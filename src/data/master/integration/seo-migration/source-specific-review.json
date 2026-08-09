@@ -1,0 +1,3647 @@
+{
+  "generatedAt": "2026-08-09T18:45:08.385Z",
+  "phase": "8.12A",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "auditOnly": true,
+  "count": 363,
+  "entries": [
+    {
+      "canonicalId": "source:openmoji:E000",
+      "currentUrl": "/emoji/extra-goldfish",
+      "proposedUrl": "/emoji/goldfish",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E001",
+      "currentUrl": "/emoji/extra-donkey",
+      "proposedUrl": "/emoji/donkey",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E002",
+      "currentUrl": "/emoji/extra-poppy",
+      "proposedUrl": "/emoji/poppy",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E003",
+      "currentUrl": "/emoji/extra-doe",
+      "proposedUrl": "/emoji/doe",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E004",
+      "currentUrl": "/emoji/extra-spouting-orca",
+      "proposedUrl": "/emoji/spouting-orca",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E006",
+      "currentUrl": "/emoji/extra-narwhal",
+      "proposedUrl": "/emoji/narwhal",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E007",
+      "currentUrl": "/emoji/extra-beluga",
+      "proposedUrl": "/emoji/beluga",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E008",
+      "currentUrl": "/emoji/extra-porpoise",
+      "proposedUrl": "/emoji/porpoise",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E009",
+      "currentUrl": "/emoji/extra-pigeon",
+      "proposedUrl": "/emoji/pigeon",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E010",
+      "currentUrl": "/emoji/extra-macaw",
+      "proposedUrl": "/emoji/macaw",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E011",
+      "currentUrl": "/emoji/extra-microbe",
+      "proposedUrl": "/emoji/microbe",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E040",
+      "currentUrl": "/emoji/extra-twitter",
+      "proposedUrl": "/emoji/twitter",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E041",
+      "currentUrl": "/emoji/extra-pinterest",
+      "proposedUrl": "/emoji/pinterest",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E042",
+      "currentUrl": "/emoji/extra-facebook",
+      "proposedUrl": "/emoji/facebook",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E043",
+      "currentUrl": "/emoji/extra-instagram",
+      "proposedUrl": "/emoji/instagram",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E044",
+      "currentUrl": "/emoji/extra-youtube",
+      "proposedUrl": "/emoji/youtube",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E045",
+      "currentUrl": "/emoji/extra-github",
+      "proposedUrl": "/emoji/github",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E046",
+      "currentUrl": "/emoji/extra-linkedin",
+      "proposedUrl": "/emoji/linkedin",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E047",
+      "currentUrl": "/emoji/extra-android",
+      "proposedUrl": "/emoji/android",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E048",
+      "currentUrl": "/emoji/extra-musicbrainz",
+      "proposedUrl": "/emoji/musicbrainz",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E049",
+      "currentUrl": "/emoji/extra-openfoodfact",
+      "proposedUrl": "/emoji/openfoodfact",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E04A",
+      "currentUrl": "/emoji/extra-openstreetmap",
+      "proposedUrl": "/emoji/openstreetmap",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E04B",
+      "currentUrl": "/emoji/extra-wikidata",
+      "proposedUrl": "/emoji/wikidata",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E04C",
+      "currentUrl": "/emoji/extra-dotnet",
+      "proposedUrl": "/emoji/dotnet",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E04D",
+      "currentUrl": "/emoji/extra-golang",
+      "proposedUrl": "/emoji/golang",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E04E",
+      "currentUrl": "/emoji/extra-kotlin",
+      "proposedUrl": "/emoji/kotlin",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E04F",
+      "currentUrl": "/emoji/extra-ruby",
+      "proposedUrl": "/emoji/ruby",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E050",
+      "currentUrl": "/emoji/extra-firefox",
+      "proposedUrl": "/emoji/firefox",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E051",
+      "currentUrl": "/emoji/extra-safari",
+      "proposedUrl": "/emoji/safari",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E052",
+      "currentUrl": "/emoji/extra-opera",
+      "proposedUrl": "/emoji/opera",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E053",
+      "currentUrl": "/emoji/extra-chromium",
+      "proposedUrl": "/emoji/chromium",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E054",
+      "currentUrl": "/emoji/extra-chrome",
+      "proposedUrl": "/emoji/chrome",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E055",
+      "currentUrl": "/emoji/extra-netscape-navigator",
+      "proposedUrl": "/emoji/netscape-navigator",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E056",
+      "currentUrl": "/emoji/extra-internet-explorer",
+      "proposedUrl": "/emoji/internet-explorer",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E057",
+      "currentUrl": "/emoji/extra-edge",
+      "proposedUrl": "/emoji/edge",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E058",
+      "currentUrl": "/emoji/extra-inaturalist",
+      "proposedUrl": "/emoji/inaturalist",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E059",
+      "currentUrl": "/emoji/extra-gitlab",
+      "proposedUrl": "/emoji/gitlab",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E05A",
+      "currentUrl": "/emoji/extra-mastodon",
+      "proposedUrl": "/emoji/mastodon",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E05B",
+      "currentUrl": "/emoji/extra-peertube",
+      "proposedUrl": "/emoji/peertube",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E05C",
+      "currentUrl": "/emoji/extra-pixelfed",
+      "proposedUrl": "/emoji/pixelfed",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E05D",
+      "currentUrl": "/emoji/extra-signal",
+      "proposedUrl": "/emoji/signal",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E05E",
+      "currentUrl": "/emoji/extra-element",
+      "proposedUrl": "/emoji/element",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E05F",
+      "currentUrl": "/emoji/extra-jellyfin",
+      "proposedUrl": "/emoji/jellyfin",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E060",
+      "currentUrl": "/emoji/extra-reddit",
+      "proposedUrl": "/emoji/reddit",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E061",
+      "currentUrl": "/emoji/extra-discord",
+      "proposedUrl": "/emoji/discord",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E062",
+      "currentUrl": "/emoji/extra-c",
+      "proposedUrl": "/emoji/c",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E063",
+      "currentUrl": "/emoji/extra-cplusplus",
+      "proposedUrl": "/emoji/cplusplus",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E064",
+      "currentUrl": "/emoji/extra-csharp",
+      "proposedUrl": "/emoji/csharp",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E065",
+      "currentUrl": "/emoji/extra-chrome-canary",
+      "proposedUrl": "/emoji/chrome-canary",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E066",
+      "currentUrl": "/emoji/extra-firefox-developer",
+      "proposedUrl": "/emoji/firefox-developer",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E067",
+      "currentUrl": "/emoji/extra-firefox-nightly",
+      "proposedUrl": "/emoji/firefox-nightly",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E068",
+      "currentUrl": "/emoji/extra-javascript",
+      "proposedUrl": "/emoji/javascript",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E069",
+      "currentUrl": "/emoji/extra-typescript",
+      "proposedUrl": "/emoji/typescript",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E06A",
+      "currentUrl": "/emoji/extra-webassembly",
+      "proposedUrl": "/emoji/webassembly",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E06B",
+      "currentUrl": "/emoji/extra-svg",
+      "proposedUrl": "/emoji/svg",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E06C",
+      "currentUrl": "/emoji/extra-markdown",
+      "proposedUrl": "/emoji/markdown",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E06D",
+      "currentUrl": "/emoji/extra-winrar",
+      "proposedUrl": "/emoji/winrar",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E06E",
+      "currentUrl": "/emoji/extra-facetime",
+      "proposedUrl": "/emoji/facetime",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E06F",
+      "currentUrl": "/emoji/extra-ecosia-browser",
+      "proposedUrl": "/emoji/ecosia-browser",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E070",
+      "currentUrl": "/emoji/extra-bluesky",
+      "proposedUrl": "/emoji/bluesky",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E080",
+      "currentUrl": "/emoji/extra-assembly-point",
+      "proposedUrl": "/emoji/assembly-point",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E081",
+      "currentUrl": "/emoji/extra-assembly-group",
+      "proposedUrl": "/emoji/assembly-group",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E082",
+      "currentUrl": "/emoji/extra-authority-instruction",
+      "proposedUrl": "/emoji/authority-instruction",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E083",
+      "currentUrl": "/emoji/extra-help-others",
+      "proposedUrl": "/emoji/help-others",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E084",
+      "currentUrl": "/emoji/extra-drop-cover-hold",
+      "proposedUrl": "/emoji/drop-cover-hold",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E085",
+      "currentUrl": "/emoji/extra-evacuate",
+      "proposedUrl": "/emoji/evacuate",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E086",
+      "currentUrl": "/emoji/extra-evacuate-vertical",
+      "proposedUrl": "/emoji/evacuate-vertical",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E087",
+      "currentUrl": "/emoji/extra-evacuate-downstairs",
+      "proposedUrl": "/emoji/evacuate-downstairs",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E088",
+      "currentUrl": "/emoji/extra-evacuate-to-shelter",
+      "proposedUrl": "/emoji/evacuate-to-shelter",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E089",
+      "currentUrl": "/emoji/extra-structural-fire",
+      "proposedUrl": "/emoji/structural-fire",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E08A",
+      "currentUrl": "/emoji/extra-wild-fire",
+      "proposedUrl": "/emoji/wild-fire",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E08B",
+      "currentUrl": "/emoji/extra-evacuate-fire",
+      "proposedUrl": "/emoji/evacuate-fire",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E08C",
+      "currentUrl": "/emoji/extra-warning-tsunami",
+      "proposedUrl": "/emoji/warning-tsunami",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E08D",
+      "currentUrl": "/emoji/extra-warning-volcano",
+      "proposedUrl": "/emoji/warning-volcano",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E08E",
+      "currentUrl": "/emoji/extra-warning-fire",
+      "proposedUrl": "/emoji/warning-fire",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E08F",
+      "currentUrl": "/emoji/extra-authority",
+      "proposedUrl": "/emoji/authority",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E090",
+      "currentUrl": "/emoji/extra-first-aid",
+      "proposedUrl": "/emoji/first-aid",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E091",
+      "currentUrl": "/emoji/extra-flagged-point",
+      "proposedUrl": "/emoji/flagged-point",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E092",
+      "currentUrl": "/emoji/extra-flagged-building",
+      "proposedUrl": "/emoji/flagged-building",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E093",
+      "currentUrl": "/emoji/extra-authority-building",
+      "proposedUrl": "/emoji/authority-building",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E094",
+      "currentUrl": "/emoji/extra-signpost",
+      "proposedUrl": "/emoji/signpost",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E095",
+      "currentUrl": "/emoji/extra-mobile-info",
+      "proposedUrl": "/emoji/mobile-info",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E096",
+      "currentUrl": "/emoji/extra-mobile-message",
+      "proposedUrl": "/emoji/mobile-message",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E097",
+      "currentUrl": "/emoji/extra-charge-plug",
+      "proposedUrl": "/emoji/charge-plug",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E098",
+      "currentUrl": "/emoji/extra-shelter",
+      "proposedUrl": "/emoji/shelter",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E099",
+      "currentUrl": "/emoji/extra-volcano-eruption",
+      "proposedUrl": "/emoji/volcano-eruption",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E09A",
+      "currentUrl": "/emoji/extra-volcano-ashes",
+      "proposedUrl": "/emoji/volcano-ashes",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E09B",
+      "currentUrl": "/emoji/extra-tsunami",
+      "proposedUrl": "/emoji/tsunami",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E09C",
+      "currentUrl": "/emoji/extra-earthquake",
+      "proposedUrl": "/emoji/earthquake",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E09E",
+      "currentUrl": "/emoji/extra-avalanche",
+      "proposedUrl": "/emoji/avalanche",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E09F",
+      "currentUrl": "/emoji/extra-flood",
+      "proposedUrl": "/emoji/flood",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A0",
+      "currentUrl": "/emoji/extra-north",
+      "proposedUrl": "/emoji/north",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A1",
+      "currentUrl": "/emoji/extra-transmission",
+      "proposedUrl": "/emoji/transmission",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A2",
+      "currentUrl": "/emoji/extra-sos-stencil",
+      "proposedUrl": "/emoji/sos-stencil",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A3",
+      "currentUrl": "/emoji/extra-ok-stencil",
+      "proposedUrl": "/emoji/ok-stencil",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A4",
+      "currentUrl": "/emoji/extra-no-stencil",
+      "proposedUrl": "/emoji/no-stencil",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A5",
+      "currentUrl": "/emoji/extra-warning-strip",
+      "proposedUrl": "/emoji/warning-strip",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A6",
+      "currentUrl": "/emoji/extra-warning-strip-right",
+      "proposedUrl": "/emoji/warning-strip-right",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A7",
+      "currentUrl": "/emoji/extra-arrow-turn-right",
+      "proposedUrl": "/emoji/arrow-turn-right",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A8",
+      "currentUrl": "/emoji/extra-emergency-exit-door",
+      "proposedUrl": "/emoji/emergency-exit-door",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0A9",
+      "currentUrl": "/emoji/extra-location-indicator-red",
+      "proposedUrl": "/emoji/location-indicator-red",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0AA",
+      "currentUrl": "/emoji/extra-electric-plug-red",
+      "proposedUrl": "/emoji/electric-plug-red",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0AB",
+      "currentUrl": "/emoji/extra-timer",
+      "proposedUrl": "/emoji/timer",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0AC",
+      "currentUrl": "/emoji/extra-person-with-medical-mask",
+      "proposedUrl": "/emoji/person-with-medical-mask",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0AD",
+      "currentUrl": "/emoji/extra-person-sneezing-into-elbow",
+      "proposedUrl": "/emoji/person-sneezing-into-elbow",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0AE",
+      "currentUrl": "/emoji/extra-disinfect-surface",
+      "proposedUrl": "/emoji/disinfect-surface",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0AF",
+      "currentUrl": "/emoji/extra-quarantine",
+      "proposedUrl": "/emoji/quarantine",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0B0",
+      "currentUrl": "/emoji/extra-social-distancing",
+      "proposedUrl": "/emoji/social-distancing",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0B1",
+      "currentUrl": "/emoji/extra-sanitizer-spray",
+      "proposedUrl": "/emoji/sanitizer-spray",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0B2",
+      "currentUrl": "/emoji/extra-wash-hands",
+      "proposedUrl": "/emoji/wash-hands",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0B3",
+      "currentUrl": "/emoji/extra-temperature-taking",
+      "proposedUrl": "/emoji/temperature-taking",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0B4",
+      "currentUrl": "/emoji/extra-medical-gloves",
+      "proposedUrl": "/emoji/medical-gloves",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C0",
+      "currentUrl": "/emoji/extra-half-orange-fruit",
+      "proposedUrl": "/emoji/half-orange-fruit",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C1",
+      "currentUrl": "/emoji/extra-maultasche",
+      "proposedUrl": "/emoji/maultasche",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C2",
+      "currentUrl": "/emoji/extra-lentils-with-spaetzle",
+      "proposedUrl": "/emoji/lentils-with-spaetzle",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C3",
+      "currentUrl": "/emoji/extra-pretzel",
+      "proposedUrl": "/emoji/pretzel",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C4",
+      "currentUrl": "/emoji/extra-pomegranate",
+      "proposedUrl": "/emoji/pomegranate",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C5",
+      "currentUrl": "/emoji/extra-latte-macchiato",
+      "proposedUrl": "/emoji/latte-macchiato",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C6",
+      "currentUrl": "/emoji/extra-roasted-coffee-bean",
+      "proposedUrl": "/emoji/roasted-coffee-bean",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C7",
+      "currentUrl": "/emoji/extra-cake",
+      "proposedUrl": "/emoji/cake",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C8",
+      "currentUrl": "/emoji/extra-champignon-brown",
+      "proposedUrl": "/emoji/champignon-brown",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0C9",
+      "currentUrl": "/emoji/extra-champignon-white",
+      "proposedUrl": "/emoji/champignon-white",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0CA",
+      "currentUrl": "/emoji/extra-boule-bread",
+      "proposedUrl": "/emoji/boule-bread",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0CB",
+      "currentUrl": "/emoji/extra-glass-bottle",
+      "proposedUrl": "/emoji/glass-bottle",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0CC",
+      "currentUrl": "/emoji/extra-plastic-bottle",
+      "proposedUrl": "/emoji/plastic-bottle",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E0FF",
+      "currentUrl": "/emoji/extra-ubuntu",
+      "proposedUrl": "/emoji/ubuntu",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E100",
+      "currentUrl": "/emoji/extra-tap",
+      "proposedUrl": "/emoji/tap",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E101",
+      "currentUrl": "/emoji/extra-double-tap",
+      "proposedUrl": "/emoji/double-tap",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E102",
+      "currentUrl": "/emoji/extra-three-finger-operation",
+      "proposedUrl": "/emoji/three-finger-operation",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E103",
+      "currentUrl": "/emoji/extra-move",
+      "proposedUrl": "/emoji/move",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E104",
+      "currentUrl": "/emoji/extra-scroll",
+      "proposedUrl": "/emoji/scroll",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E105",
+      "currentUrl": "/emoji/extra-swipe",
+      "proposedUrl": "/emoji/swipe",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E106",
+      "currentUrl": "/emoji/extra-scroll-horizontal",
+      "proposedUrl": "/emoji/scroll-horizontal",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E107",
+      "currentUrl": "/emoji/extra-page-move",
+      "proposedUrl": "/emoji/page-move",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E108",
+      "currentUrl": "/emoji/extra-swipe-left",
+      "proposedUrl": "/emoji/swipe-left",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E109",
+      "currentUrl": "/emoji/extra-swipe-up",
+      "proposedUrl": "/emoji/swipe-up",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E10A",
+      "currentUrl": "/emoji/extra-swipe-right",
+      "proposedUrl": "/emoji/swipe-right",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E10B",
+      "currentUrl": "/emoji/extra-swipe-down",
+      "proposedUrl": "/emoji/swipe-down",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E10C",
+      "currentUrl": "/emoji/extra-finger-pushing-button",
+      "proposedUrl": "/emoji/finger-pushing-button",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E10D",
+      "currentUrl": "/emoji/extra-exit",
+      "proposedUrl": "/emoji/exit",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E140",
+      "currentUrl": "/emoji/extra-first-aid-kit",
+      "proposedUrl": "/emoji/first-aid-kit",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E141",
+      "currentUrl": "/emoji/extra-armchair",
+      "proposedUrl": "/emoji/armchair",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E142",
+      "currentUrl": "/emoji/extra-picture",
+      "proposedUrl": "/emoji/picture",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E143",
+      "currentUrl": "/emoji/extra-lighter",
+      "proposedUrl": "/emoji/lighter",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E144",
+      "currentUrl": "/emoji/extra-outlet",
+      "proposedUrl": "/emoji/outlet",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E145",
+      "currentUrl": "/emoji/extra-guy-fawkes-mask",
+      "proposedUrl": "/emoji/guy-fawkes-mask",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E146",
+      "currentUrl": "/emoji/extra-spatzlepresse",
+      "proposedUrl": "/emoji/sp-tzlepresse",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E147",
+      "currentUrl": "/emoji/extra-european-name-badge",
+      "proposedUrl": "/emoji/european-name-badge",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E148",
+      "currentUrl": "/emoji/extra-kehrwoche",
+      "proposedUrl": "/emoji/kehrwoche",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E149",
+      "currentUrl": "/emoji/extra-tardis",
+      "proposedUrl": "/emoji/tardis",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E14A",
+      "currentUrl": "/emoji/extra-motorbike-helmet",
+      "proposedUrl": "/emoji/motorbike-helmet",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E150",
+      "currentUrl": "/emoji/extra-espresso-machine",
+      "proposedUrl": "/emoji/espresso-machine",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E151",
+      "currentUrl": "/emoji/extra-french-press",
+      "proposedUrl": "/emoji/french-press",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E152",
+      "currentUrl": "/emoji/extra-moka-pot",
+      "proposedUrl": "/emoji/moka-pot",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E153",
+      "currentUrl": "/emoji/extra-milk-jug",
+      "proposedUrl": "/emoji/milk-jug",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E154",
+      "currentUrl": "/emoji/extra-electric-coffee-percolator",
+      "proposedUrl": "/emoji/electric-coffee-percolator",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E155",
+      "currentUrl": "/emoji/extra-drip-coffee-maker",
+      "proposedUrl": "/emoji/drip-coffee-maker",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E156",
+      "currentUrl": "/emoji/extra-coffee-grinder",
+      "proposedUrl": "/emoji/coffee-grinder",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E157",
+      "currentUrl": "/emoji/extra-horse-jumping-hurdle",
+      "proposedUrl": "/emoji/horse-jumping-hurdle",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E181",
+      "currentUrl": "/emoji/extra-drunk-person",
+      "proposedUrl": "/emoji/drunk-person",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E182",
+      "currentUrl": "/emoji/extra-person-with-dog",
+      "proposedUrl": "/emoji/person-with-dog",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E183",
+      "currentUrl": "/emoji/extra-trump",
+      "proposedUrl": "/emoji/trump",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E184",
+      "currentUrl": "/emoji/extra-horse-riding",
+      "proposedUrl": "/emoji/horse-riding",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E185",
+      "currentUrl": "/emoji/extra-barista",
+      "proposedUrl": "/emoji/barista",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E186",
+      "currentUrl": "/emoji/extra-man-barista",
+      "proposedUrl": "/emoji/man-barista",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E187",
+      "currentUrl": "/emoji/extra-woman-barista",
+      "proposedUrl": "/emoji/woman-barista",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E188",
+      "currentUrl": "/emoji/extra-greta-thunberg",
+      "proposedUrl": "/emoji/greta-thunberg",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E189",
+      "currentUrl": "/emoji/extra-windsurfing",
+      "proposedUrl": "/emoji/windsurfing",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C0",
+      "currentUrl": "/emoji/extra-wireframes",
+      "proposedUrl": "/emoji/wireframes",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C1",
+      "currentUrl": "/emoji/extra-code-editor",
+      "proposedUrl": "/emoji/code-editor",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C2",
+      "currentUrl": "/emoji/extra-autonomous-car",
+      "proposedUrl": "/emoji/autonomous-car",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C3",
+      "currentUrl": "/emoji/extra-switch",
+      "proposedUrl": "/emoji/switch",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C4",
+      "currentUrl": "/emoji/extra-surveillance",
+      "proposedUrl": "/emoji/surveillance",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C6",
+      "currentUrl": "/emoji/extra-augmented-reality",
+      "proposedUrl": "/emoji/augmented-reality",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C7",
+      "currentUrl": "/emoji/extra-led",
+      "proposedUrl": "/emoji/led",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C8",
+      "currentUrl": "/emoji/extra-motor",
+      "proposedUrl": "/emoji/motor",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1C9",
+      "currentUrl": "/emoji/extra-raspberry-pi",
+      "proposedUrl": "/emoji/raspberry-pi",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1CA",
+      "currentUrl": "/emoji/extra-virtual-reality",
+      "proposedUrl": "/emoji/virtual-reality",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1CB",
+      "currentUrl": "/emoji/extra-cable",
+      "proposedUrl": "/emoji/cable",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1CC",
+      "currentUrl": "/emoji/extra-tablet",
+      "proposedUrl": "/emoji/tablet",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1CD",
+      "currentUrl": "/emoji/extra-gps",
+      "proposedUrl": "/emoji/gps",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1CE",
+      "currentUrl": "/emoji/extra-smartwatch",
+      "proposedUrl": "/emoji/smartwatch",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1CF",
+      "currentUrl": "/emoji/extra-washing-machine",
+      "proposedUrl": "/emoji/washing-machine",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D0",
+      "currentUrl": "/emoji/extra-ibeacon",
+      "proposedUrl": "/emoji/ibeacon",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D1",
+      "currentUrl": "/emoji/extra-keyboard",
+      "proposedUrl": "/emoji/keyboard",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D2",
+      "currentUrl": "/emoji/extra-drone",
+      "proposedUrl": "/emoji/drone",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D3",
+      "currentUrl": "/emoji/extra-arduino",
+      "proposedUrl": "/emoji/arduino",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D4",
+      "currentUrl": "/emoji/extra-wire",
+      "proposedUrl": "/emoji/wire",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D5",
+      "currentUrl": "/emoji/extra-potentiometer",
+      "proposedUrl": "/emoji/potentiometer",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D6",
+      "currentUrl": "/emoji/extra-solar-cell",
+      "proposedUrl": "/emoji/solar-cell",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D7",
+      "currentUrl": "/emoji/extra-circuit",
+      "proposedUrl": "/emoji/circuit",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D8",
+      "currentUrl": "/emoji/extra-qr-code",
+      "proposedUrl": "/emoji/qr-code",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1D9",
+      "currentUrl": "/emoji/extra-barcode",
+      "proposedUrl": "/emoji/barcode",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E1DA",
+      "currentUrl": "/emoji/extra-ai-hand",
+      "proposedUrl": "/emoji/ai-hand",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E200",
+      "currentUrl": "/emoji/extra-cafeteria",
+      "proposedUrl": "/emoji/cafeteria",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E201",
+      "currentUrl": "/emoji/extra-emergency-exit",
+      "proposedUrl": "/emoji/emergency-exit",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E202",
+      "currentUrl": "/emoji/extra-stairway",
+      "proposedUrl": "/emoji/stairway",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E203",
+      "currentUrl": "/emoji/extra-town",
+      "proposedUrl": "/emoji/town",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E204",
+      "currentUrl": "/emoji/extra-elevator",
+      "proposedUrl": "/emoji/elevator",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E205",
+      "currentUrl": "/emoji/extra-eiffel-tower",
+      "proposedUrl": "/emoji/eiffel-tower",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E206",
+      "currentUrl": "/emoji/extra-parking-garage",
+      "proposedUrl": "/emoji/parking-garage",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E207",
+      "currentUrl": "/emoji/extra-schwabisch-gmund-forum-gold-und-silber",
+      "proposedUrl": "/emoji/schw-bisch-gm-nd-forum-gold-und-silber",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E208",
+      "currentUrl": "/emoji/extra-schwabisch-gmund-funfknopfturm",
+      "proposedUrl": "/emoji/schw-bisch-gm-nd-f-nfknopfturm",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E209",
+      "currentUrl": "/emoji/extra-schwabisch-gmund-ratshaus",
+      "proposedUrl": "/emoji/schw-bisch-gm-nd-ratshaus",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E20A",
+      "currentUrl": "/emoji/extra-stuttgart-fernsehturm",
+      "proposedUrl": "/emoji/stuttgart-fernsehturm",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E20B",
+      "currentUrl": "/emoji/extra-space-shuttle",
+      "proposedUrl": "/emoji/space-shuttle",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E20C",
+      "currentUrl": "/emoji/extra-viennese-coffee-house",
+      "proposedUrl": "/emoji/viennese-coffee-house",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E20D",
+      "currentUrl": "/emoji/extra-black-hole",
+      "proposedUrl": "/emoji/black-hole",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E20E",
+      "currentUrl": "/emoji/extra-foggy-mountain",
+      "proposedUrl": "/emoji/foggy-mountain",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E20F",
+      "currentUrl": "/emoji/extra-great-pyramid-of-giza",
+      "proposedUrl": "/emoji/great-pyramid-of-giza",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E210",
+      "currentUrl": "/emoji/extra-colossus-of-rhodes",
+      "proposedUrl": "/emoji/colossus-of-rhodes",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E211",
+      "currentUrl": "/emoji/extra-hanging-gardens-of-babylon",
+      "proposedUrl": "/emoji/hanging-gardens-of-babylon",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E212",
+      "currentUrl": "/emoji/extra-lighthouse-of-alexandria",
+      "proposedUrl": "/emoji/lighthouse-of-alexandria",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E213",
+      "currentUrl": "/emoji/extra-mausoleum-at-halicarnassus",
+      "proposedUrl": "/emoji/mausoleum-at-halicarnassus",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E214",
+      "currentUrl": "/emoji/extra-statue-of-zeus-at-olympia",
+      "proposedUrl": "/emoji/statue-of-zeus-at-olympia",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E215",
+      "currentUrl": "/emoji/extra-temple-of-artemis-at-ephesus",
+      "proposedUrl": "/emoji/temple-of-artemis-at-ephesus",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E216",
+      "currentUrl": "/emoji/extra-moai",
+      "proposedUrl": "/emoji/moai",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E240",
+      "currentUrl": "/emoji/extra-mark",
+      "proposedUrl": "/emoji/mark",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E241",
+      "currentUrl": "/emoji/extra-toggle-button",
+      "proposedUrl": "/emoji/toggle-button",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E242",
+      "currentUrl": "/emoji/extra-location-indicator",
+      "proposedUrl": "/emoji/location-indicator",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E243",
+      "currentUrl": "/emoji/extra-scale",
+      "proposedUrl": "/emoji/scale",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E244",
+      "currentUrl": "/emoji/extra-locomotion",
+      "proposedUrl": "/emoji/locomotion",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E245",
+      "currentUrl": "/emoji/extra-toggle-button-state-b",
+      "proposedUrl": "/emoji/toggle-button-state-b",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E246",
+      "currentUrl": "/emoji/extra-people-dialogue",
+      "proposedUrl": "/emoji/people-dialogue",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E247",
+      "currentUrl": "/emoji/extra-safety",
+      "proposedUrl": "/emoji/safety",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E248",
+      "currentUrl": "/emoji/extra-chats",
+      "proposedUrl": "/emoji/chats",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E249",
+      "currentUrl": "/emoji/extra-collaboration",
+      "proposedUrl": "/emoji/collaboration",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E24A",
+      "currentUrl": "/emoji/extra-interview",
+      "proposedUrl": "/emoji/interview",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E24B",
+      "currentUrl": "/emoji/extra-intricate",
+      "proposedUrl": "/emoji/intricate",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E24C",
+      "currentUrl": "/emoji/extra-simple",
+      "proposedUrl": "/emoji/simple",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E24D",
+      "currentUrl": "/emoji/extra-return",
+      "proposedUrl": "/emoji/return",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E24E",
+      "currentUrl": "/emoji/extra-close",
+      "proposedUrl": "/emoji/close",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E24F",
+      "currentUrl": "/emoji/extra-forward",
+      "proposedUrl": "/emoji/forward",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E250",
+      "currentUrl": "/emoji/extra-hamburger-menu",
+      "proposedUrl": "/emoji/hamburger-menu",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E251",
+      "currentUrl": "/emoji/extra-upload",
+      "proposedUrl": "/emoji/upload",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E252",
+      "currentUrl": "/emoji/extra-download",
+      "proposedUrl": "/emoji/download",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E253",
+      "currentUrl": "/emoji/extra-share",
+      "proposedUrl": "/emoji/share",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E254",
+      "currentUrl": "/emoji/extra-wifi",
+      "proposedUrl": "/emoji/wifi",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E255",
+      "currentUrl": "/emoji/extra-copy",
+      "proposedUrl": "/emoji/copy",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E256",
+      "currentUrl": "/emoji/extra-contacts",
+      "proposedUrl": "/emoji/contacts",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E257",
+      "currentUrl": "/emoji/extra-filter",
+      "proposedUrl": "/emoji/filter",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E258",
+      "currentUrl": "/emoji/extra-cursor",
+      "proposedUrl": "/emoji/cursor",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E259",
+      "currentUrl": "/emoji/extra-details",
+      "proposedUrl": "/emoji/details",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E25A",
+      "currentUrl": "/emoji/extra-hold",
+      "proposedUrl": "/emoji/hold",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E25B",
+      "currentUrl": "/emoji/extra-duplicate",
+      "proposedUrl": "/emoji/duplicate",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E25C",
+      "currentUrl": "/emoji/extra-save",
+      "proposedUrl": "/emoji/save",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E25D",
+      "currentUrl": "/emoji/extra-edit",
+      "proposedUrl": "/emoji/edit",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E25E",
+      "currentUrl": "/emoji/extra-home-button",
+      "proposedUrl": "/emoji/home-button",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E25F",
+      "currentUrl": "/emoji/extra-add-button",
+      "proposedUrl": "/emoji/add-button",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E260",
+      "currentUrl": "/emoji/extra-archive",
+      "proposedUrl": "/emoji/archive",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E261",
+      "currentUrl": "/emoji/extra-overview",
+      "proposedUrl": "/emoji/overview",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E262",
+      "currentUrl": "/emoji/extra-delete",
+      "proposedUrl": "/emoji/delete",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E263",
+      "currentUrl": "/emoji/extra-comment",
+      "proposedUrl": "/emoji/comment",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E264",
+      "currentUrl": "/emoji/extra-more-information",
+      "proposedUrl": "/emoji/more-information",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E265",
+      "currentUrl": "/emoji/extra-sort",
+      "proposedUrl": "/emoji/sort",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E266",
+      "currentUrl": "/emoji/extra-inbox",
+      "proposedUrl": "/emoji/inbox",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E267",
+      "currentUrl": "/emoji/extra-compose",
+      "proposedUrl": "/emoji/compose",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E268",
+      "currentUrl": "/emoji/extra-add-contact",
+      "proposedUrl": "/emoji/add-contact",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E269",
+      "currentUrl": "/emoji/extra-link",
+      "proposedUrl": "/emoji/link",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E280",
+      "currentUrl": "/emoji/extra-exhausted-face",
+      "proposedUrl": "/emoji/exhausted-face",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E281",
+      "currentUrl": "/emoji/extra-incredulous-face",
+      "proposedUrl": "/emoji/incredulous-face",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E282",
+      "currentUrl": "/emoji/extra-dejected-face",
+      "proposedUrl": "/emoji/dejected-face",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E283",
+      "currentUrl": "/emoji/extra-annoyed-face-with-tongue",
+      "proposedUrl": "/emoji/annoyed-face-with-tongue",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C0",
+      "currentUrl": "/emoji/extra-iceberg",
+      "proposedUrl": "/emoji/iceberg",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C1",
+      "currentUrl": "/emoji/extra-floating-ice",
+      "proposedUrl": "/emoji/floating-ice",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C2",
+      "currentUrl": "/emoji/extra-floating-ice-broken",
+      "proposedUrl": "/emoji/floating-ice-broken",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C3",
+      "currentUrl": "/emoji/extra-polar-research-station",
+      "proposedUrl": "/emoji/polar-research-station",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C4",
+      "currentUrl": "/emoji/extra-ice-core-sample",
+      "proposedUrl": "/emoji/ice-core-sample",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C6",
+      "currentUrl": "/emoji/extra-ice-shelf",
+      "proposedUrl": "/emoji/ice-shelf",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C7",
+      "currentUrl": "/emoji/extra-ice-shelf-melting",
+      "proposedUrl": "/emoji/ice-shelf-melting",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C8",
+      "currentUrl": "/emoji/extra-polar-explorer",
+      "proposedUrl": "/emoji/polar-explorer",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2C9",
+      "currentUrl": "/emoji/extra-polar-explorer-man",
+      "proposedUrl": "/emoji/polar-explorer-man",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2CA",
+      "currentUrl": "/emoji/extra-polar-explorer-woman",
+      "proposedUrl": "/emoji/polar-explorer-woman",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2CB",
+      "currentUrl": "/emoji/extra-oil-spill",
+      "proposedUrl": "/emoji/oil-spill",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2CC",
+      "currentUrl": "/emoji/extra-exhaust-gases-factory",
+      "proposedUrl": "/emoji/exhaust-gases-factory",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2CD",
+      "currentUrl": "/emoji/extra-solar-energy",
+      "proposedUrl": "/emoji/solar-energy",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2CE",
+      "currentUrl": "/emoji/extra-meat-consumption",
+      "proposedUrl": "/emoji/meat-consumption",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2CF",
+      "currentUrl": "/emoji/extra-exhaust-gases-car",
+      "proposedUrl": "/emoji/exhaust-gases-car",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D0",
+      "currentUrl": "/emoji/extra-sea-level-rise",
+      "proposedUrl": "/emoji/sea-level-rise",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D1",
+      "currentUrl": "/emoji/extra-wind-energy",
+      "proposedUrl": "/emoji/wind-energy",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D2",
+      "currentUrl": "/emoji/extra-reusable-bag",
+      "proposedUrl": "/emoji/reusable-bag",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D3",
+      "currentUrl": "/emoji/extra-radioactive-waste",
+      "proposedUrl": "/emoji/radioactive-waste",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D4",
+      "currentUrl": "/emoji/extra-nuclear-power-plant",
+      "proposedUrl": "/emoji/nuclear-power-plant",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D5",
+      "currentUrl": "/emoji/extra-nuclear-power-plant-ruin",
+      "proposedUrl": "/emoji/nuclear-power-plant-ruin",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D6",
+      "currentUrl": "/emoji/extra-geiger-counter",
+      "proposedUrl": "/emoji/geiger-counter",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D7",
+      "currentUrl": "/emoji/extra-nuclear-worker-man",
+      "proposedUrl": "/emoji/nuclear-worker-man",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D8",
+      "currentUrl": "/emoji/extra-nuclear-worker-woman",
+      "proposedUrl": "/emoji/nuclear-worker-woman",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2D9",
+      "currentUrl": "/emoji/extra-nuclear-protection",
+      "proposedUrl": "/emoji/nuclear-protection",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E2DA",
+      "currentUrl": "/emoji/extra-atom-bomb",
+      "proposedUrl": "/emoji/atom-bomb",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E300",
+      "currentUrl": "/emoji/extra-female-doctor",
+      "proposedUrl": "/emoji/female-doctor",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E301",
+      "currentUrl": "/emoji/extra-male-doctor",
+      "proposedUrl": "/emoji/male-doctor",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E302",
+      "currentUrl": "/emoji/extra-female-nurse",
+      "proposedUrl": "/emoji/female-nurse",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E303",
+      "currentUrl": "/emoji/extra-male-nurse",
+      "proposedUrl": "/emoji/male-nurse",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E305",
+      "currentUrl": "/emoji/extra-pills",
+      "proposedUrl": "/emoji/pills",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E306",
+      "currentUrl": "/emoji/extra-plaster",
+      "proposedUrl": "/emoji/plaster",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E307",
+      "currentUrl": "/emoji/extra-medication",
+      "proposedUrl": "/emoji/medication",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E308",
+      "currentUrl": "/emoji/extra-ecg-waves",
+      "proposedUrl": "/emoji/ecg-waves",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E309",
+      "currentUrl": "/emoji/extra-first-aid-bag",
+      "proposedUrl": "/emoji/first-aid-bag",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E30A",
+      "currentUrl": "/emoji/extra-patient-file",
+      "proposedUrl": "/emoji/patient-file",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E30B",
+      "currentUrl": "/emoji/extra-patient-clipboard",
+      "proposedUrl": "/emoji/patient-clipboard",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E30C",
+      "currentUrl": "/emoji/extra-saline-drip",
+      "proposedUrl": "/emoji/saline-drip",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E30D",
+      "currentUrl": "/emoji/extra-blood-transfusion",
+      "proposedUrl": "/emoji/blood-transfusion",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E30E",
+      "currentUrl": "/emoji/extra-swab-pliers",
+      "proposedUrl": "/emoji/swab-pliers",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E30F",
+      "currentUrl": "/emoji/extra-hot-water-bottle",
+      "proposedUrl": "/emoji/hot-water-bottle",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E312",
+      "currentUrl": "/emoji/extra-liver",
+      "proposedUrl": "/emoji/liver",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E313",
+      "currentUrl": "/emoji/extra-stomach",
+      "proposedUrl": "/emoji/stomach",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E314",
+      "currentUrl": "/emoji/extra-large-intestine",
+      "proposedUrl": "/emoji/large-intestine",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E315",
+      "currentUrl": "/emoji/extra-intestine",
+      "proposedUrl": "/emoji/intestine",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E316",
+      "currentUrl": "/emoji/extra-kidney",
+      "proposedUrl": "/emoji/kidney",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E318",
+      "currentUrl": "/emoji/extra-forceps",
+      "proposedUrl": "/emoji/forceps",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E319",
+      "currentUrl": "/emoji/extra-brain",
+      "proposedUrl": "/emoji/brain",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E31A",
+      "currentUrl": "/emoji/extra-bed-linen",
+      "proposedUrl": "/emoji/bed-linen",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E31B",
+      "currentUrl": "/emoji/extra-bandage-change",
+      "proposedUrl": "/emoji/bandage-change",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E31C",
+      "currentUrl": "/emoji/extra-eye-pain",
+      "proposedUrl": "/emoji/eye-pain",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E31D",
+      "currentUrl": "/emoji/extra-headache",
+      "proposedUrl": "/emoji/headache",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E31E",
+      "currentUrl": "/emoji/extra-earache",
+      "proposedUrl": "/emoji/earache",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E31F",
+      "currentUrl": "/emoji/extra-fracture-leg",
+      "proposedUrl": "/emoji/fracture-leg",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E320",
+      "currentUrl": "/emoji/extra-knee-pain",
+      "proposedUrl": "/emoji/knee-pain",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E321",
+      "currentUrl": "/emoji/extra-backache",
+      "proposedUrl": "/emoji/backache",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E322",
+      "currentUrl": "/emoji/extra-joint-pain",
+      "proposedUrl": "/emoji/joint-pain",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E324",
+      "currentUrl": "/emoji/extra-clinical-thermometer",
+      "proposedUrl": "/emoji/clinical-thermometer",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E325",
+      "currentUrl": "/emoji/extra-bandage-scissors",
+      "proposedUrl": "/emoji/bandage-scissors",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E326",
+      "currentUrl": "/emoji/extra-crutches",
+      "proposedUrl": "/emoji/crutches",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E327",
+      "currentUrl": "/emoji/extra-wheel-chair",
+      "proposedUrl": "/emoji/wheel-chair",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E328",
+      "currentUrl": "/emoji/extra-stretcher",
+      "proposedUrl": "/emoji/stretcher",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E329",
+      "currentUrl": "/emoji/extra-ct-scan",
+      "proposedUrl": "/emoji/ct-scan",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E32B",
+      "currentUrl": "/emoji/extra-scales",
+      "proposedUrl": "/emoji/scales",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E340",
+      "currentUrl": "/emoji/extra-gardener-man",
+      "proposedUrl": "/emoji/gardener-man",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E341",
+      "currentUrl": "/emoji/extra-gardener-woman",
+      "proposedUrl": "/emoji/gardener-woman",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E342",
+      "currentUrl": "/emoji/extra-gardening-gloves",
+      "proposedUrl": "/emoji/gardening-gloves",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E343",
+      "currentUrl": "/emoji/extra-lawn-mower",
+      "proposedUrl": "/emoji/lawn-mower",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E344",
+      "currentUrl": "/emoji/extra-wheelbarrow",
+      "proposedUrl": "/emoji/wheelbarrow",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E345",
+      "currentUrl": "/emoji/extra-spade",
+      "proposedUrl": "/emoji/spade",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E346",
+      "currentUrl": "/emoji/extra-trowel",
+      "proposedUrl": "/emoji/trowel",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E347",
+      "currentUrl": "/emoji/extra-axe",
+      "proposedUrl": "/emoji/axe",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E348",
+      "currentUrl": "/emoji/extra-saw",
+      "proposedUrl": "/emoji/saw",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E380",
+      "currentUrl": "/emoji/extra-no-handshaking",
+      "proposedUrl": "/emoji/no-handshaking",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E381",
+      "currentUrl": "/emoji/extra-web-syndication",
+      "proposedUrl": "/emoji/web-syndication",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E420",
+      "currentUrl": "/emoji/extra-pride",
+      "proposedUrl": "/emoji/pride",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E421",
+      "currentUrl": "/emoji/extra-lesbian",
+      "proposedUrl": "/emoji/lesbian",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E422",
+      "currentUrl": "/emoji/extra-gay",
+      "proposedUrl": "/emoji/gay",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E423",
+      "currentUrl": "/emoji/extra-bisexual",
+      "proposedUrl": "/emoji/bisexual",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E424",
+      "currentUrl": "/emoji/extra-pansexual",
+      "proposedUrl": "/emoji/pansexual",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E425",
+      "currentUrl": "/emoji/extra-asexual",
+      "proposedUrl": "/emoji/asexual",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E426",
+      "currentUrl": "/emoji/extra-demisexual",
+      "proposedUrl": "/emoji/demisexual",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E427",
+      "currentUrl": "/emoji/extra-greysexual",
+      "proposedUrl": "/emoji/greysexual",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E428",
+      "currentUrl": "/emoji/extra-polysexual",
+      "proposedUrl": "/emoji/polysexual",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E429",
+      "currentUrl": "/emoji/extra-aroace",
+      "proposedUrl": "/emoji/aroace",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E42A",
+      "currentUrl": "/emoji/extra-aromantic",
+      "proposedUrl": "/emoji/aromantic",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E42B",
+      "currentUrl": "/emoji/extra-polyamory",
+      "proposedUrl": "/emoji/polyamory",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E42C",
+      "currentUrl": "/emoji/extra-bdsm-rights",
+      "proposedUrl": "/emoji/bdsm-rights",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E42D",
+      "currentUrl": "/emoji/extra-intersex",
+      "proposedUrl": "/emoji/intersex",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E42E",
+      "currentUrl": "/emoji/extra-nonbinary",
+      "proposedUrl": "/emoji/nonbinary",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E42F",
+      "currentUrl": "/emoji/extra-genderfluid",
+      "proposedUrl": "/emoji/genderfluid",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E430",
+      "currentUrl": "/emoji/extra-genderqueer",
+      "proposedUrl": "/emoji/genderqueer",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E431",
+      "currentUrl": "/emoji/extra-agender",
+      "proposedUrl": "/emoji/agender",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E432",
+      "currentUrl": "/emoji/extra-demigirl",
+      "proposedUrl": "/emoji/demigirl",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E433",
+      "currentUrl": "/emoji/extra-demiboy",
+      "proposedUrl": "/emoji/demiboy",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E434",
+      "currentUrl": "/emoji/extra-demigender",
+      "proposedUrl": "/emoji/demigender",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:E435",
+      "currentUrl": "/emoji/extra-bigender",
+      "proposedUrl": "/emoji/bigender",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:F000",
+      "currentUrl": "/emoji/extra-windows",
+      "proposedUrl": "/emoji/windows",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:F77A",
+      "currentUrl": "/emoji/extra-artstation",
+      "proposedUrl": "/emoji/artstation",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    },
+    {
+      "canonicalId": "source:openmoji:F8FF",
+      "currentUrl": "/emoji/extra-apple",
+      "proposedUrl": "/emoji/apple",
+      "recommendation": "retain-current-production-url",
+      "redirect": false,
+      "forceUnicodeCanonical": false,
+      "requiresManualReview": true,
+      "reason": "Source-specific identity must not be forced into Unicode canonical URL."
+    }
+  ],
+  "status": "PASS"
+}

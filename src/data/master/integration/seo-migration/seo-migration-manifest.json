@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-08-09T18:45:09.617Z",
+  "phase": "8.12A",
+  "releaseId": "master-8.10-20260809",
+  "auditOnly": true,
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "outputs": {
+    "redirectInventory": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/redirect-inventory.json",
+    "safeRedirects": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/safe-redirects.json",
+    "manualReview": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/manual-review.json",
+    "extrasCompatibility": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/extras-compatibility.json",
+    "sourceSpecificReview": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/source-specific-review.json",
+    "redirectSafetyAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/redirect-safety-audit.json",
+    "redirectTargetAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/redirect-target-audit.json",
+    "canonicalPreservationAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/canonical-preservation-audit.json",
+    "backwardCompatibilityAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/backward-compatibility-audit.json",
+    "seoMigrationRecommendation": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/seo-migration-recommendation.json",
+    "seoMigrationManifest": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration/seo-migration-manifest.json"
+  }
+}

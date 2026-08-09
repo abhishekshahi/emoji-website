@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-08-09T18:50:14.569Z",
+  "phase": "8.12B",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "auditOnly": true,
+  "blockers": {
+    "safeToRedirect": 2280,
+    "keepCurrent": 112,
+    "keepExtra": 179,
+    "keepSource": 353,
+    "requiringHumanApproval": 0,
+    "permanentlyExcluded": 10,
+    "requiringNewCanonical": 0
+  },
+  "checks": {
+    "allMismatchesDecided": true,
+    "manualReviewResolved": true,
+    "extrasResolved": true,
+    "sourceSpecificResolved": true,
+    "deferredCasesResolved": true,
+    "redirectSafety": true,
+    "productionUrlsUnchanged": true,
+    "featureFlagsDisabled": true
+  },
+  "manualByDecision": {
+    "KEEP_CURRENT_URL": 112,
+    "SAFE_TO_REDIRECT": 19,
+    "REQUIRES_NEW_CANONICAL": 0,
+    "REQUIRES_MANUAL_CONTENT_REVIEW": 0,
+    "DO_NOT_MIGRATE": 0
+  },
+  "extrasByDecision": {
+    "KEEP_EXTRA_URL": 179,
+    "SAFE_TO_REDIRECT": 0,
+    "REQUIRES_MANUAL_REVIEW": 0,
+    "DO_NOT_MIGRATE": 0
+  },
+  "sourceByDecision": {
+    "KEEP_SOURCE_URL": 353,
+    "SAFE_TO_REDIRECT": 0,
+    "REQUIRES_MANUAL_REVIEW": 0,
+    "DO_NOT_MIGRATE": 10
+  },
+  "matrixByDecision": {
+    "SAFE_TO_REDIRECT": 2280,
+    "KEEP_CURRENT_URL": 112,
+    "KEEP_EXTRA_URL": 179,
+    "KEEP_SOURCE_URL": 353,
+    "REQUIRES_NEW_CANONICAL": 0,
+    "REQUIRES_MANUAL_CONTENT_REVIEW": 0,
+    "DO_NOT_MIGRATE": 10
+  },
+  "exclusionCount": 654,
+  "status": "PASS"
+}

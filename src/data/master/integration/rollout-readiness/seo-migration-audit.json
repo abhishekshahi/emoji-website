@@ -1,0 +1,210 @@
+{
+  "generatedAt": "2026-08-09T18:05:02.487Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "counts": {
+    "exactMatches": 1552,
+    "mismatches": 2934,
+    "totalSlugIssues": 4217,
+    "duplicateSlugCollisions": 0,
+    "artworkOnly": 918,
+    "privateUse": 2,
+    "utility": 2,
+    "futurePage": 1277,
+    "missingProductionPages": 2469
+  },
+  "checks": {
+    "slugMismatchesVerified": true,
+    "slugIssuesVerified": true,
+    "duplicateCollisionsZero": true,
+    "noAutoMigration": true,
+    "canonicalIdentities": true,
+    "productionPages": true
+  },
+  "sampleMismatches": [
+    {
+      "canonicalId": "source:openmoji:E000",
+      "currentUrl": "/emoji/extra-goldfish",
+      "proposedUrl": "/emoji/goldfish",
+      "currentSlug": "extra-goldfish",
+      "proposedSlug": "goldfish"
+    },
+    {
+      "canonicalId": "source:openmoji:E001",
+      "currentUrl": "/emoji/extra-donkey",
+      "proposedUrl": "/emoji/donkey",
+      "currentSlug": "extra-donkey",
+      "proposedSlug": "donkey"
+    },
+    {
+      "canonicalId": "source:openmoji:E002",
+      "currentUrl": "/emoji/extra-poppy",
+      "proposedUrl": "/emoji/poppy",
+      "currentSlug": "extra-poppy",
+      "proposedSlug": "poppy"
+    },
+    {
+      "canonicalId": "source:openmoji:E003",
+      "currentUrl": "/emoji/extra-doe",
+      "proposedUrl": "/emoji/doe",
+      "currentSlug": "extra-doe",
+      "proposedSlug": "doe"
+    },
+    {
+      "canonicalId": "source:openmoji:E004",
+      "currentUrl": "/emoji/extra-spouting-orca",
+      "proposedUrl": "/emoji/spouting-orca",
+      "currentSlug": "extra-spouting-orca",
+      "proposedSlug": "spouting-orca"
+    },
+    {
+      "canonicalId": "source:openmoji:E006",
+      "currentUrl": "/emoji/extra-narwhal",
+      "proposedUrl": "/emoji/narwhal",
+      "currentSlug": "extra-narwhal",
+      "proposedSlug": "narwhal"
+    },
+    {
+      "canonicalId": "source:openmoji:E007",
+      "currentUrl": "/emoji/extra-beluga",
+      "proposedUrl": "/emoji/beluga",
+      "currentSlug": "extra-beluga",
+      "proposedSlug": "beluga"
+    },
+    {
+      "canonicalId": "source:openmoji:E008",
+      "currentUrl": "/emoji/extra-porpoise",
+      "proposedUrl": "/emoji/porpoise",
+      "currentSlug": "extra-porpoise",
+      "proposedSlug": "porpoise"
+    },
+    {
+      "canonicalId": "source:openmoji:E009",
+      "currentUrl": "/emoji/extra-pigeon",
+      "proposedUrl": "/emoji/pigeon",
+      "currentSlug": "extra-pigeon",
+      "proposedSlug": "pigeon"
+    },
+    {
+      "canonicalId": "source:openmoji:E010",
+      "currentUrl": "/emoji/extra-macaw",
+      "proposedUrl": "/emoji/macaw",
+      "currentSlug": "extra-macaw",
+      "proposedSlug": "macaw"
+    },
+    {
+      "canonicalId": "source:openmoji:E011",
+      "currentUrl": "/emoji/extra-microbe",
+      "proposedUrl": "/emoji/microbe",
+      "currentSlug": "extra-microbe",
+      "proposedSlug": "microbe"
+    },
+    {
+      "canonicalId": "source:openmoji:E040",
+      "currentUrl": "/emoji/extra-twitter",
+      "proposedUrl": "/emoji/twitter",
+      "currentSlug": "extra-twitter",
+      "proposedSlug": "twitter"
+    },
+    {
+      "canonicalId": "source:openmoji:E041",
+      "currentUrl": "/emoji/extra-pinterest",
+      "proposedUrl": "/emoji/pinterest",
+      "currentSlug": "extra-pinterest",
+      "proposedSlug": "pinterest"
+    },
+    {
+      "canonicalId": "source:openmoji:E042",
+      "currentUrl": "/emoji/extra-facebook",
+      "proposedUrl": "/emoji/facebook",
+      "currentSlug": "extra-facebook",
+      "proposedSlug": "facebook"
+    },
+    {
+      "canonicalId": "source:openmoji:E043",
+      "currentUrl": "/emoji/extra-instagram",
+      "proposedUrl": "/emoji/instagram",
+      "currentSlug": "extra-instagram",
+      "proposedSlug": "instagram"
+    },
+    {
+      "canonicalId": "source:openmoji:E044",
+      "currentUrl": "/emoji/extra-youtube",
+      "proposedUrl": "/emoji/youtube",
+      "currentSlug": "extra-youtube",
+      "proposedSlug": "youtube"
+    },
+    {
+      "canonicalId": "source:openmoji:E045",
+      "currentUrl": "/emoji/extra-github",
+      "proposedUrl": "/emoji/github",
+      "currentSlug": "extra-github",
+      "proposedSlug": "github"
+    },
+    {
+      "canonicalId": "source:openmoji:E046",
+      "currentUrl": "/emoji/extra-linkedin",
+      "proposedUrl": "/emoji/linkedin",
+      "currentSlug": "extra-linkedin",
+      "proposedSlug": "linkedin"
+    },
+    {
+      "canonicalId": "source:openmoji:E047",
+      "currentUrl": "/emoji/extra-android",
+      "proposedUrl": "/emoji/android",
+      "currentSlug": "extra-android",
+      "proposedSlug": "android"
+    },
+    {
+      "canonicalId": "source:openmoji:E048",
+      "currentUrl": "/emoji/extra-musicbrainz",
+      "proposedUrl": "/emoji/musicbrainz",
+      "currentSlug": "extra-musicbrainz",
+      "proposedSlug": "musicbrainz"
+    },
+    {
+      "canonicalId": "source:openmoji:E049",
+      "currentUrl": "/emoji/extra-openfoodfact",
+      "proposedUrl": "/emoji/openfoodfact",
+      "currentSlug": "extra-openfoodfact",
+      "proposedSlug": "openfoodfact"
+    },
+    {
+      "canonicalId": "source:openmoji:E04A",
+      "currentUrl": "/emoji/extra-openstreetmap",
+      "proposedUrl": "/emoji/openstreetmap",
+      "currentSlug": "extra-openstreetmap",
+      "proposedSlug": "openstreetmap"
+    },
+    {
+      "canonicalId": "source:openmoji:E04B",
+      "currentUrl": "/emoji/extra-wikidata",
+      "proposedUrl": "/emoji/wikidata",
+      "currentSlug": "extra-wikidata",
+      "proposedSlug": "wikidata"
+    },
+    {
+      "canonicalId": "source:openmoji:E04C",
+      "currentUrl": "/emoji/extra-dotnet",
+      "proposedUrl": "/emoji/dotnet",
+      "currentSlug": "extra-dotnet",
+      "proposedSlug": "dotnet"
+    },
+    {
+      "canonicalId": "source:openmoji:E04D",
+      "currentUrl": "/emoji/extra-golang",
+      "proposedUrl": "/emoji/golang",
+      "currentSlug": "extra-golang",
+      "proposedSlug": "golang"
+    }
+  ],
+  "productionRecordsMapped": 4486,
+  "status": "PASS"
+}

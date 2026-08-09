@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-09T18:50:17.464Z",
+  "phase": "8.12B",
+  "releaseId": "master-8.10-20260809",
+  "auditOnly": true,
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "outputs": {
+    "manualReviewDecisions": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/manual-review-decisions.json",
+    "extrasMigrationDecisions": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/extras-migration-decisions.json",
+    "sourceSpecificDecisions": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/source-specific-decisions.json",
+    "finalMigrationMatrix": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/final-migration-matrix.json",
+    "redirectApprovalCandidates": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/redirect-approval-candidates.json",
+    "redirectExclusions": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/redirect-exclusions.json",
+    "canonicalPolicy": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/canonical-policy.json",
+    "seoReviewAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/seo-review-audit.json",
+    "seoReviewRecommendation": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/seo-review-recommendation.json",
+    "seoReviewManifest": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-migration-review/seo-review-manifest.json"
+  }
+}

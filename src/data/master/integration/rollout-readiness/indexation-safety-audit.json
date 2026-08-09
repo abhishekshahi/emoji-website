@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-08-09T18:05:03.071Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "counts": {
+    "slugMismatchesRequiringRedirects": 2934,
+    "futurePageIndexRisk": 0,
+    "providerUrlRisk": 0
+  },
+  "checks": {
+    "fireCanonicalUrl": true,
+    "fireSingleCanonical": true,
+    "noProviderSpecificUrls": true,
+    "robotsPolicyPresent": true,
+    "oldUrlPreservationRequired": true,
+    "futurePageIndexBlocked": true,
+    "duplicateContentRiskManaged": true,
+    "redirectRequiredForMismatches": true,
+    "variationSelectorUrlsDistinct": true
+  },
+  "status": "PASS"
+}

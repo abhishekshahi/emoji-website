@@ -13,6 +13,11 @@ export const ACTIVATION_PHASE = "8.11F" as const;
 export const SEARCH_ACTIVATION_PHASE = "8.11G" as const;
 export const SEARCH_UI_PHASE = "8.11H" as const;
 export const FINAL_ACTIVATION_PHASE = "8.11I" as const;
+export const ROLLOUT_READINESS_PHASE = "8.12" as const;
+export const SEO_MIGRATION_PHASE = "8.12A" as const;
+export const SEO_MIGRATION_REVIEW_PHASE = "8.12B" as const;
+export const SEO_MIGRATION_IMPLEMENTATION_PHASE = "8.12C" as const;
+export const SEO_MIGRATION_PRODUCTION_QA_PHASE = "8.12D" as const;
 
 export const PRODUCTION_BASELINES = {
   standardRecords: 3944,
@@ -41,6 +46,11 @@ export function integrationDataPaths(rootDir: string): {
   searchActivationIntegrationDir: string;
   searchUiIntegrationDir: string;
   finalActivationIntegrationDir: string;
+  rolloutReadinessIntegrationDir: string;
+  seoMigrationIntegrationDir: string;
+  seoMigrationReviewIntegrationDir: string;
+  seoMigrationImplementationIntegrationDir: string;
+  seoMigrationProductionQaIntegrationDir: string;
 } {
   return {
     releaseDir: `${rootDir}/src/data/master/release/8.10`,
@@ -55,5 +65,10 @@ export function integrationDataPaths(rootDir: string): {
     searchActivationIntegrationDir: `${rootDir}/src/data/master/integration/search-activation`,
     searchUiIntegrationDir: `${rootDir}/src/data/master/integration/search-ui`,
     finalActivationIntegrationDir: `${rootDir}/src/data/master/integration/final-activation`,
+    rolloutReadinessIntegrationDir: `${rootDir}/src/data/master/integration/rollout-readiness`,
+    seoMigrationIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration`,
+    seoMigrationReviewIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-review`,
+    seoMigrationImplementationIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-implementation`,
+    seoMigrationProductionQaIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-production-qa`,
   };
 }

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-08-09T18:05:02.575Z",
+  "phase": "8.12",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "frozen-master-8.10",
+  "counts": {
+    "indexable": 0,
+    "not-indexable": 0,
+    "existing-production-page": 4486,
+    "future-page": 1277,
+    "source-specific": 130,
+    "private-use": 2,
+    "artwork-only": 918,
+    "utility": 2,
+    "insufficient-content": 0,
+    "duplicate-slug": 140,
+    "ambiguous": 0
+  },
+  "checks": {
+    "sitemapEligibleMatchesProduction": true,
+    "notAllCanonicalIndexable": true,
+    "artworkOnlyExcluded": true,
+    "puaExcluded": true,
+    "utilityExcluded": true,
+    "futurePagesExcluded": true,
+    "onlyExistingProductionInSitemap": true
+  },
+  "sitemapIntegration": "PASS",
+  "status": "PASS"
+}
