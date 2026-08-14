@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "emoji-website",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2024-12-30",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "minify": true,
+  "vars": {
+    "MASTER_R2_MODE": "ENABLED",
+    "MASTER_SEO_ROLLOUT_MODE": "OFF",
+    "PUBLIC_MASTER_PLATFORM_MODE": "ENABLED"
+  },
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "emoji-website"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MASTER_R2",
+      "bucket_name": "emojiquick-master",
+      "preview_bucket_name": "emojiquick-master-preview"
+    }
+  ]
+}
