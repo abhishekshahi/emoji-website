@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-08-10T16:22:45.044Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "count": 10,
+  "expected": 10,
+  "failureCount": 0,
+  "entries": [
+    {
+      "url": "/emoji/extra-donkey",
+      "canonicalId": "source:openmoji:E001",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-microbe",
+      "canonicalId": "source:openmoji:E011",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-pretzel",
+      "canonicalId": "source:openmoji:E0C3",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-scroll",
+      "canonicalId": "source:openmoji:E104",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-keyboard",
+      "canonicalId": "source:openmoji:E1D1",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-elevator",
+      "canonicalId": "source:openmoji:E204",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-moai",
+      "canonicalId": "source:openmoji:E216",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-link",
+      "canonicalId": "source:openmoji:E269",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-brain",
+      "canonicalId": "source:openmoji:E319",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "url": "/emoji/extra-axe",
+      "canonicalId": "source:openmoji:E347",
+      "status": 200,
+      "failures": [],
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

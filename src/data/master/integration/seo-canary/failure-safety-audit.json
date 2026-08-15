@@ -1,19 +1,14 @@
 {
-  "generatedAt": "2026-08-09T22:27:31.499Z",
+  "generatedAt": "2026-08-10T17:02:28.722Z",
   "phase": "8.12E",
-  "rolloutMode": "OFF",
+  "releaseId": "master-8.10-20260809",
   "featureFlags": {
     "masterArtworkEnabled": false,
     "masterMetadataEnabled": false,
     "masterSearchEnabled": false,
     "masterSEOEnabled": false
   },
+  "provenance": "production-redirect-qa",
   "auditOnly": true,
-  "checks": {
-    "invalidModeDefaultsOff": true,
-    "emptyModeDefaultsOff": true,
-    "masterSeoFlagFalse": true,
-    "noFuzzyRedirect": true
-  },
   "status": "PASS"
 }

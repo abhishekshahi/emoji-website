@@ -1,9 +1,9 @@
 import type { MetadataRoute } from "next";
-import { getAllBrowsableSlugs } from "@/lib/emoji/browsable-data";
 import { getAllCategorySlugs, getManifest } from "@/lib/emoji/data";
 import { getOpenMojiExtrasManifest } from "@/lib/emoji/extras-data";
 import { getActiveEmojiSitemapSlugs } from "@/lib/master/integration/seo-canary/active-migration";
-import { absoluteUrl } from "@/lib/seo/metadata";
+import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
+import { canonicalUrl } from "@/lib/seo/metadata";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const manifest = getManifest();
@@ -17,43 +17,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages: MetadataRoute.Sitemap = [
     {
-      url: absoluteUrl("/"),
+      url: canonicalUrl("/"),
       lastModified: generatedAt,
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: absoluteUrl("/emoji"),
+      url: canonicalUrl("/emoji"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: absoluteUrl("/extras"),
+      url: canonicalUrl("/extras"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.85,
     },
     {
-      url: absoluteUrl("/popular"),
+      url: canonicalUrl("/popular"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: absoluteUrl("/new"),
+      url: canonicalUrl("/new"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: absoluteUrl("/search"),
+      url: canonicalUrl("/search"),
       lastModified: generatedAt,
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: absoluteUrl("/licenses"),
+      url: canonicalUrl("/licenses"),
       lastModified: generatedAt,
       changeFrequency: "yearly",
       priority: 0.3,
@@ -62,16 +62,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const categoryPages: MetadataRoute.Sitemap = getAllCategorySlugs().map(
     (category) => ({
-      url: absoluteUrl(`/category/${category}`),
+      url: canonicalUrl(`/category/${category}`),
       lastModified: generatedAt,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     }),
   );
 
-  const emojiPages: MetadataRoute.Sitemap = getActiveEmojiSitemapSlugs(getAllBrowsableSlugs()).map(
+  const emojiPages: MetadataRoute.Sitemap = getActiveEmojiSitemapSlugs(getAllIdentitySlugs()).map(
     (slug) => ({
-      url: absoluteUrl(`/emoji/${slug}`),
+      url: canonicalUrl(`/emoji/${slug}`),
       lastModified: generatedAt,
       changeFrequency: "monthly" as const,
       priority: 0.7,

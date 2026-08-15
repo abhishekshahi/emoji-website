@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T22:27:31.487Z",
+  "generatedAt": "2026-08-10T17:02:29.628Z",
   "phase": "8.12E",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
@@ -11,8 +11,8 @@
   "provenance": "production-redirect-qa",
   "auditOnly": true,
   "lookup": {
-    "coldLookupMs": 0.1172999999998865,
-    "warmLookupMs": 0.0007618000000002212,
+    "coldLookupMs": 0.09850000000005821,
+    "warmLookupMs": 0.0006099000000001525,
     "lookupComplexity": "O(1)"
   },
   "status": "PASS"

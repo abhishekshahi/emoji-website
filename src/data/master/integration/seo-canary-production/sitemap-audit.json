@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-09T22:36:45.604Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "productionPageCount": 4486,
+  "expected": 4486,
+  "duplicateUrlCount": 0,
+  "checks": {
+    "pageCount": true,
+    "noDuplicateUrls": true,
+    "sourcesExcluded": true,
+    "targetsIncluded": true,
+    "noMasterOnlyExpansion": true
+  },
+  "status": "PASS"
+}

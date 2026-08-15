@@ -1,0 +1,131 @@
+{
+  "sitemap": {
+    "status": 200,
+    "total": 6991,
+    "emoji": 6955
+  },
+  "onDemand": {
+    "label": "on-demand",
+    "total": 2469,
+    "passed": 1294,
+    "failed": 1175,
+    "durationMs": 51701,
+    "sampleFailures": [
+      {
+        "slug": "bz-bz",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "bz-svg-bz",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "cg-png-cg",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "ch",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "ch-svg-ch",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "ck-svg-ck",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "cl-svg-cl",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "cn-png-cn",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "co-png-co",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "cp-png-cp",
+        "status": 503,
+        "ok": false
+      }
+    ]
+  },
+  "static": {
+    "label": "static",
+    "total": 4486,
+    "passed": 1756,
+    "failed": 2730,
+    "durationMs": 48662,
+    "sampleFailures": [
+      {
+        "slug": "extra-porpoise",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-openstreetmap",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-kotlin",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-ruby",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-inaturalist",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-chrome-canary",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-firefox-nightly",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-javascript",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-authority-instruction",
+        "status": 503,
+        "ok": false
+      },
+      {
+        "slug": "extra-evacuate",
+        "status": 503,
+        "ok": false
+      }
+    ]
+  },
+  "total": {
+    "passed": 3050,
+    "total": 6955,
+    "verdict": "FAIL"
+  },
+  "elapsedMs": 100397
+}

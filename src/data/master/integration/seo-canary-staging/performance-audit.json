@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-08-10T16:23:07.334Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "redirectLookup": {
+    "coldLookupMs": 0.03980000002775341,
+    "warmLookupMs": 0.0006171999999787658,
+    "lookupComplexity": "O(1)"
+  },
+  "sitemapGenerationMs": 2.6385000000009313,
+  "masterDatabasePerRequest": false,
+  "status": "PASS"
+}

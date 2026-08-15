@@ -1,0 +1,13 @@
+{
+  "phase": "8.61-E",
+  "verdict": "PASS",
+  "counts": {
+    "total": 6991,
+    "emoji": 6955
+  },
+  "checks": {
+    "http200": true,
+    "total6991": true,
+    "emoji6955": true
+  }
+}

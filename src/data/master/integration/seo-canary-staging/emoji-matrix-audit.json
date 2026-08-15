@@ -1,0 +1,139 @@
+{
+  "generatedAt": "2026-08-10T16:23:01.385Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "entries": [
+    {
+      "label": "fire",
+      "slug": "fire",
+      "path": "/emoji/fire",
+      "approvedRedirect": null,
+      "status": 200,
+      "location": null,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "smiling-face-fe0f",
+      "slug": "smiling-face",
+      "path": "/emoji/smiling-face",
+      "approvedRedirect": "/emoji/e0-6-smiling-face",
+      "status": 301,
+      "location": "/emoji/e0-6-smiling-face",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "white-smiling-face",
+      "slug": "white-smiling-face",
+      "path": "/emoji/white-smiling-face",
+      "approvedRedirect": null,
+      "status": 404,
+      "location": null,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "thumbs-up",
+      "slug": "thumbs-up",
+      "path": "/emoji/thumbs-up",
+      "approvedRedirect": null,
+      "status": 200,
+      "location": null,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "thumbs-up-light",
+      "slug": "thumbs-up-light-skin-tone",
+      "path": "/emoji/thumbs-up-light-skin-tone",
+      "approvedRedirect": "/emoji/e1-0-thumbs-up-light-skin-tone",
+      "status": 301,
+      "location": "/emoji/e1-0-thumbs-up-light-skin-tone",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "thumbs-up-dark",
+      "slug": "thumbs-up-dark-skin-tone",
+      "path": "/emoji/thumbs-up-dark-skin-tone",
+      "approvedRedirect": "/emoji/e1-0-thumbs-up-dark-skin-tone",
+      "status": 301,
+      "location": "/emoji/e1-0-thumbs-up-dark-skin-tone",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "man-technologist",
+      "slug": "man-technologist",
+      "path": "/emoji/man-technologist",
+      "approvedRedirect": "/emoji/e4-0-man-technologist",
+      "status": 301,
+      "location": "/emoji/e4-0-man-technologist",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "woman-technologist",
+      "slug": "woman-technologist",
+      "path": "/emoji/woman-technologist",
+      "approvedRedirect": "/emoji/e4-0-woman-technologist",
+      "status": 301,
+      "location": "/emoji/e4-0-woman-technologist",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "india-flag",
+      "slug": "flag-india",
+      "path": "/emoji/flag-india",
+      "approvedRedirect": null,
+      "status": 200,
+      "location": null,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "pride-flag",
+      "slug": "rainbow-flag",
+      "path": "/emoji/rainbow-flag",
+      "approvedRedirect": "/emoji/e4-0-rainbow-flag-u1f3f3fe0f200d1f308",
+      "status": 301,
+      "location": "/emoji/e4-0-rainbow-flag-u1f3f3fe0f200d1f308",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "extra-url",
+      "slug": "extra-hyphen-minus",
+      "path": "/emoji/extra-hyphen-minus",
+      "approvedRedirect": null,
+      "status": 200,
+      "location": null,
+      "failures": [],
+      "pass": true
+    },
+    {
+      "label": "source-specific-url",
+      "slug": "extra-goldfish",
+      "path": "/emoji/extra-goldfish",
+      "approvedRedirect": null,
+      "status": 200,
+      "location": null,
+      "failures": [],
+      "pass": true
+    }
+  ],
+  "distinctIdentityFailures": [],
+  "resolvedTargetCount": 6,
+  "failureCount": 0,
+  "status": "PASS"
+}

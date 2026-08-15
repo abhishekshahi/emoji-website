@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-08-10T17:03:48.491Z",
+  "phase": "8.12H",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "requestedTrafficPercentage": 1,
+  "trafficSplitEnforced": false,
+  "planSupportsRollingReleases": false,
+  "rollingReleaseConfigured": false,
+  "stableProductionUrl": "https://emoji-website-iiw154g0g-abhishekshahi4598-6592s-projects.vercel.app",
+  "blocker": "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Command failed: npx vercel rolling-release configure --enable --advancement-type=manual-approval --stage=1 --project=emoji-website\nVercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…\n Vercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…",
+  "checks": {
+    "providerIdentified": true,
+    "rollingReleaseSupported": false,
+    "requestedOnePercent": true,
+    "splitEnforced": false,
+    "stableProductionPreserved": true,
+    "canaryNotPromotedToFullProduction": true
+  },
+  "status": "BLOCKED"
+}

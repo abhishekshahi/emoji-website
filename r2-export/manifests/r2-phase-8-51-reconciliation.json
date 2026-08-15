@@ -1,0 +1,378 @@
+{
+  "phase": "8.51",
+  "mode": "FAST",
+  "generatedAt": "2026-08-13T19:38:14.397Z",
+  "startedAt": "2026-08-13T19:37:00.908Z",
+  "elapsedMs": 73470,
+  "expectedObjects": 114498,
+  "expectedUnexpected": [
+    "licenses/LICENSE-MATRIX.json",
+    "manifests/master-manifest.json",
+    "test-benchmark-delete-me.json"
+  ],
+  "restListCount": 114491,
+  "bindingAugmented": 10,
+  "bindingMissing": [],
+  "dotKeysProbed": 10,
+  "canonicalPresent": 114498,
+  "remoteObjects": 114501,
+  "missingObjects": [],
+  "unexpectedObjects": [
+    "licenses/LICENSE-MATRIX.json",
+    "manifests/master-manifest.json",
+    "test-benchmark-delete-me.json"
+  ],
+  "unexpectedMatchesExpected": true,
+  "conflicts": [],
+  "listSizeMismatches": [],
+  "headSampleMismatches": [],
+  "headFailed": [
+    "metadata/unicode_1F49B.json",
+    "provenance/unicode_1F9D1-1F3FF-200D-2764-FE0F-200D-1F9D1-1F3FC.json",
+    "semantic/unicode_1FAA0.json",
+    "artwork-records/b2b55dad21132947ea1a7150eb5818589b0d9cbed990d51e93dc2a46fe866af4.json",
+    "semantic/unicode_1F926.json",
+    "artwork-records/5bc6b984a12c5ea0455cd5b570c9ae15dbfb2dbd0abd968f7bfa3cecb0c97ddd.json",
+    "artwork-records/556ca5e5b5741f32e0a56e782e7e0e1edb213322ecb320e8a03cf20e28e266cc.json",
+    "metadata/unicode_25E7.json",
+    "identities/unicode_1F9D7-1F3FF-200D-2642-FE0F.json",
+    "artwork-records/258e325b3f00f75d45067244cfb32eb88ba109af111a4ef4c379214a1cb04637.json",
+    "artwork-records/5b8b61271f9f0e92cdd3877ed4fe9c1fa1d1586f8141f4c88f83dbf29dc1e8be.json",
+    "search/unicode_1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF.json",
+    "artwork-records/cc1bfd46400e7561800298202f62c3279b83ed622b71ea00d176e5f33d4aedcc.json",
+    "artwork-records/83eeb67635ff989251664b43516870e67c81189ac24ab83e3219d9edc162e815.json",
+    "artwork-records/75b4488486a65ab9739374fd58f3d0e04629a05d79709c43e78304839f2ec002.json",
+    "search/unicode_1F170-FE0F.json",
+    "artwork-records/a3396a791c2ceb119d614116c37339c8dc58f54f5f9f91f6a755ecc4700f9721.json",
+    "metadata/source_noto_MX-CMX.png_MX-CMX.png.json",
+    "artwork-records/f2c899bb1392e97b2702842dc3d97aea96d9001d905f6483c1e97786d947e8b6.json",
+    "identities/unicode_1F404.json",
+    "artwork-records/a06b35085d0beac94d7472e4b2893438c67487256bc1b36d02d1def54b2ab447.json",
+    "artwork-records/76fd74ea6bafcdd974b9808913aba8166bb0c4c07631762e796bc8a57a953b47.json",
+    "artwork-records/54f110190cde1d9c85159bf0332b11f09944aaf4632df5b7fc94ce0ec615112f.json",
+    "identities/unicode_1F9BE.json",
+    "artwork-records/c1139ce2240f3a896f4a565acd40d1321e3db3ddd6e8e20f97c7d64f8a2fc009.json",
+    "artwork-records/394555d22eb93ee4b62cad2bfc20d45495a7d64a9b703615e1d9c90a4cf82996.json",
+    "identities/source_noto_BT.png_BT.png.json",
+    "provenance/source_openmoji_E2D2.json",
+    "artwork-records/e4107a57baf7837f2eb9f7c5e9b097b871a366d630c1a91cb707d38c5fc2c9f8.json",
+    "artwork-records/84761fc75605d6dacab3cf5d0b4b80e0639de854c624795df53907d20ccafcc5.json",
+    "provenance/unicode_1F446-1F3FB.json",
+    "artwork-records/345bb19edc8784157f846376db4208ff024be2b154e6285393f3ecb85df84423.json",
+    "artwork-records/3bfdd215b573df2aff29c4bfe16a49ad5f4eebe7a7aad60abcf5949a5f799278.json",
+    "artwork-records/edb0eb74025c05d405a158fcd338d8215020b413af0945a5c583ec3e90bcdd5d.json",
+    "identities/unicode_1F481-1F3FE-200D-2640.json",
+    "metadata/unicode_1FAD6.json",
+    "artwork-records/dfaa970121bd35f80da03b83d2fc704b92857913fc51c90d46ea1b8f22aa5607.json",
+    "artwork-records/6332775fa095fcd69b4a5c3ed5c7263fd9852a174eb93e8e5e741e83a67d6f6a.json",
+    "artwork-records/ffcbbd054f89f3cc590fa6916e927b458f645d7fc3c2e89677436e5a5ddd96ee.json",
+    "artwork-records/1b2e6f641770ceb9df7cb2021a07e3ba73fca66d21010594574640a4ff7780d0.json",
+    "artwork-records/a6ec830db6b17c89ad40305d1be2ad92fec8e6d09514161a5439473def296c9b.json",
+    "artwork-records/cae4f698873add75168468914d4143e4c1acb182977b7d7362ffd20897697fae.json",
+    "artwork-records/ed6b0a49202dce0dbaa17b33557666fcefd02014df0d04eccd65a075160b2b06.json",
+    "identities/unicode_1F3C4-1F3FB-200D-2640-FE0F.json",
+    "identities/unicode_1F468-1F3FE-200D-1F9AF.json",
+    "semantic/unicode_1F468-1F3FD-200D-1F430-200D-1F468-1F3FF.json",
+    "provenance/unicode_1F468-1F3FB-200D-2764-200D-1F48B-200D-1F468-1F3FF.json",
+    "identities/source_noto_SR.png_SR.png.json",
+    "artwork-records/4b76ccf5c0305609aa87489bd204164cbbc10662a1564aa445585c6060ecde2f.json",
+    "artwork-records/bf5325ce51095c6c1abfaa34edc1f1559583c1025d861564c31b43f58d579ccb.json",
+    "artwork-records/a8ad0a6de993593b117c93c141b48f3ae9823b88165f6317c9d2f7caf11116e1.json",
+    "search/source_noto_JO.svg.json",
+    "provenance/unicode_1F468-1F3FC-200D-2696.json",
+    "search/unicode_1F46E-200D-2642-FE0F.json",
+    "semantic/unicode_1F469.json",
+    "identities/unicode_1F469-1F3FF-200D-1F9AF-200D-27A1.json",
+    "artwork-records/bf1b8dbec253e34c682fbbb581f36197e296d8846a04de999f4ad5a8b2f1fd23.json",
+    "artwork-records/a30db8375249cbfc5dac8471b7167755e1de84b4e1ef1ef3aef7d148b20fbb46.json",
+    "semantic/unicode_1F6B6-200D-2640-FE0F-200D-27A1.json",
+    "artwork-records/32f5b5866c53a3bfc879bf91ebc76a6a4df7c488131b98720ffcaaf49ff09313.json",
+    "provenance/unicode_1F487-1F3FC.json",
+    "artwork-records/21e7aa3f47ccb67bd5e1bd3b6d9cd82105b34472d83f471e1199731bf44d6402.json",
+    "artwork-records/1b49d306933ddc177713dc82a53d6b0a02133a2a569c6cb3063661f7f776cc1a.json",
+    "artwork-records/6c8b02bf02dea39deaeb59eb5b71b14cb3ef2b1b1faa32d9338a84e39df518a0.json",
+    "artwork-records/939aff3e858c5862d3c1bf05d001473bdc8f01caedef9b4f5ec4fb23068767fa.json",
+    "artwork-records/0cf411eb75fa68867bd0da2591a75ec6f7f6919e53fd703409bd2d755c3a6951.json",
+    "provenance/unicode_1F46B-1F3FB.json",
+    "provenance/unicode_1F468-1F3FD-200D-1F9B2.json",
+    "identities/unicode_1F469-200D-1F469-200D-1F466-200D-1F466.json",
+    "artwork-records/e8f01c3beb9a4e5ea899eaf1cb8dcf967dd89621157de80229f942ab5ee929d2.json",
+    "artwork-records/333d86d24486dead47cb96925d867ac2e5698a6c06303b568f85b3d2ea333bf6.json",
+    "search/source_noto_-DE.json",
+    "metadata/unicode_1F469-1F3FB-200D-2764-200D-1F48B-200D-1F468-1F3FB.json",
+    "artwork-records/26cf546a92406170e428bc0e1addd462fdc2067758137de564a76809aa4263bb.json",
+    "artwork-records/9c71ef7444962f8d8c84f871ccfcdaaef3412b182ab7e386edf0e263f13e9e7e.json",
+    "semantic/unicode_1F9D1-1F3FF-200D-1FAEF-200D-1F9D1-1F3FC.json",
+    "search/unicode_2764-FE0F.json",
+    "artwork-records/523c45bc3379162fea46c5703a55a7143955bc6c5a29243b166f7dea487379d0.json",
+    "metadata/unicode_270C-1F3FB.json",
+    "artwork-records/e31284cd56eb4ba0c5930356e02edd830b0e90e6ead67ab1c7363011a94dc554.json",
+    "identities/source_openmoji_E435.json",
+    "identities/unicode_1F468-1F3FF-200D-2696-FE0F.json",
+    "metadata/source_noto_KI.svg.json",
+    "artwork-records/01aff4b7364112eb8b173f4b2911627761025aaee7b4fc495c9dd2bcae367305.json",
+    "artwork-records/116fd12ceeb1786584408d9b6b48a33f394f743da0f741c1fab67d2df3286f63.json",
+    "artwork-records/3d785b7c4b452412ba0a17a9d7032452620709c207b524fa28f08cea32bd0ee1.json",
+    "artwork-records/7e969602233bf97e3be38515827120c77edad54d44663156193421507bc97013.json",
+    "artwork-records/8f4f59e9d23447458bbe380ceeb25e5212e0e16473f395c0457e2d721f5e5654.json",
+    "metadata/unicode_1F4E8.json",
+    "semantic/unicode_1F469-1F3FC-200D-2764-FE0F-200D-1F468-1F3FD.json",
+    "artwork-records/d26388322972d5757cd2897cfc8ab78b4ddc563bbe2175aba30f9ed3f428d553.json",
+    "provenance/unicode_2648.json",
+    "metadata/unicode_1F938-200D-2640-FE0F.json",
+    "artwork-records/6aea45eec16d533a2273e11f0c00a3ccc38a1bc4ab5837e825942d995c00773b.json",
+    "artwork-records/e9675afc3cd4a1a7211d76ff0390155b3e6da99f54c5b3acf594d44d45d31572.json",
+    "artwork-records/e2d978443010d0644a03c2ea71b554c3472da976023615efe02a316ce534705f.json",
+    "artwork-records/f9f570c35e66f7a1db5ae259dba553d897b088fc9840d86b94f8ea0243140996.json",
+    "artwork-records/e78fc20bde3da775ec510978383911de468c3082b378d73eed9bcab63dea07d4.json",
+    "identities/unicode_1F46B-1F3FB.json",
+    "artwork-records/0ef5af1c2931c7effa381a0a0bec19a03b4b5f3f53acb37652dc23faee4ec34f.json",
+    "identities/unicode_1F486-1F3FF.json",
+    "search/unicode_1F97A.json",
+    "artwork-records/9c23be0d9e8048c7bdbd18b595b6877af8f625b5e05bc18b5fd1321ede88d026.json",
+    "identities/unicode_1FAF0-1F3FF.json",
+    "identities/unicode_1F469-1F3FD-200D-1F9BC-200D-27A1-FE0F.json",
+    "provenance/source_noto_CA-NU.svg.json",
+    "artwork-records/f00559b82b3fcf7fc7c96a42292717886e5a5eab1cdec90c8f7be63810382cbd.json",
+    "artwork-records/c8b9fcaaeb0ef20fdc6270e8d4a5c3fedca5e65c0a86dd03b65c168e73718fff.json",
+    "artwork-records/9dd41f9951fb529030746801c865d0409a33e325780c6ccb383686ff1b876883.json",
+    "artwork-records/dc8d74faae98e33209adca07dca0a95baaa12f04dbf88e69a27e96e1bf29c5eb.json",
+    "metadata/source_openmoji_E426.json",
+    "metadata/unicode_1F3A3.json",
+    "identities/unicode_1F9B8-1F3FC-200D-2642.json",
+    "identities/unicode_1F9D1-1F3FD-200D-2696.json",
+    "artwork-records/1047d8e908ac0d724b47c198564c00cbf4eac2aca9261bf1900dfcf59a8d3ec4.json",
+    "artwork-records/b0c51fc9aa1793c2451e2e25f6fc317106e3927659c5a13a9beb0bf66f5ca0e6.json",
+    "identities/unicode_1F9D8-1F3FD.json",
+    "identities/unicode_1F46F-200D-2640.json",
+    "semantic/unicode_1F468-1F3FE-200D-1F3EB.json",
+    "search/unicode_1F64E-1F3FF-200D-2640.json",
+    "artwork-records/18aa796e67319285a0ac8906777d1bddabca5934413994bed34d046f0784e2a0.json",
+    "semantic/source_openmoji_E216.json",
+    "identities/unicode_1F926-1F3FF-200D-2640-FE0F.json",
+    "search/unicode_1F469-1F3FB-200D-2764-200D-1F469-1F3FE.json",
+    "artwork-records/d36e49158c7ecdba5f30dad4594e84ee160ca26d01a7b9d2662d3323b9d91eb8.json",
+    "artwork-records/eb1d3092dabfba685040651e106f7fcdee3fa9a4da18de937f74e7d36d4f002f.json",
+    "artwork-records/616073939f95817e350768da87f8fea544f1438e83fe8753375b6a8f8b696009.json",
+    "artwork-records/c4e9db2128cb13f39b29f1fbf94a784d181443462f101e494329613978637e07.json",
+    "artwork-records/40642f77a7c9cdfa541835f1993bbfb6f59cb4b680802a3cf214474c703be46a.json",
+    "artwork-records/49fb19d9031ef8fb17945b2a1f7f3b401c7ba041c77c5f3cf27a077e63ef4bc5.json",
+    "artwork-records/af83341332e5b45606643ffb279d4f665fa6b9974eb06b088dd4f6e7fcf14575.json",
+    "artwork-records/0062ca603c7b52a3ea49208972fffdc7c184baaf6a009a96c8ca590a34b55e7b.json",
+    "artwork-records/a3458407500093ec5beae71ea968010407bb9f5fab046f35b57f5ac34b9d46b3.json",
+    "artwork-records/34eb6e1b155e99e65e112ddedeb7c3e296440e976b4f040f4ff0c9fe1c23d551.json",
+    "artwork-records/d114624df9e430f1dbc0b3654f6ae437f6bc28f778d8ecc3cc3b05c34b3798d0.json",
+    "metadata/unicode_1F408-200D-2B1B.json",
+    "search/unicode_1FAF7-1F3FD.json",
+    "metadata/source_noto_FK.png.json",
+    "artwork-records/1f191180f2c34cdc08b567f6a55ebaa38388fa3adab40fbbf1f9463364b7081f.json",
+    "artwork-records/9e4a3230198660a27666bbe122c3e98660e0586d28a6a0e6874a30b97eb8f7fd.json",
+    "metadata/source_noto_MX-VER.png_MX-VER.png.json",
+    "artwork-records/a6173dc6b30bcab63b526235b8ecae3395c48584235e19f0d61abf7bfd5f5b65.json",
+    "provenance/source_noto_MX-CAM.png.json",
+    "artwork-records/2985af0df3e4c660f62cacd612236cddd813ae83fc57b78185ed8fc082a6d182.json",
+    "provenance/unicode_0037.json"
+  ],
+  "sizeMismatches": [],
+  "checksumMismatches": [],
+  "spotCheckUnableToVerify": [],
+  "spotChecksVerified": 8,
+  "spotCheckPicks": [
+    "identities/unicode_1F9D1-1F3FB-200D-1F9AF.json",
+    "artwork/0002fe9c9c5ad70adacd755db6f8a5da3783911f8348f7a99fcbd176986b3128.svg",
+    "artwork-records/e8cb0c297d8b06f2e21aecaa005bbc52254f5ec7e71e50712e0eaaa42588cae7.json",
+    "metadata/unicode_1F64D-1F3FC.json",
+    "semantic/unicode_1F9D1-1F3FF-200D-1F430-200D-1F9D1-1F3FE.json",
+    "search/unicode_1F469-1F3FC-200D-2764-FE0F-200D-1F48B-200D-1F468-1F3FF.json",
+    "provenance/unicode_1F91E-1F3FB.json",
+    "identities/source_unicode-emoji-data_0030..0039_Emoji_Component.json"
+  ],
+  "checksumStrategy": {
+    "phase": "C",
+    "title": "Checksum verification strategy (FAST 8.51)",
+    "serverSha256": false,
+    "serverSha256Note": "Cloudflare R2 does not expose per-object SHA-256 checksums via the REST API.",
+    "etagIsSha256": false,
+    "etagNote": "R2 ETag values are opaque identifiers (often MD5-based for single-part uploads), not SHA-256.",
+    "fullContentSha256OnAllObjects": false,
+    "fullContentSha256Note": "Phase 8.50 performs full SHA-256 on all 114,498 objects; Phase 8.51 FAST uses list metadata size checks, HEAD sampling, and category spot checks only.",
+    "spotCheckSha256": true,
+    "spotCheckNote": "Phase D downloads ~10 representative objects and verifies SHA-256 against r2-checksums.sha256.",
+    "jsonTextNormalization": "JSON/md/txt objects strip trailing newline before SHA-256 to match export manifest conventions.",
+    "headSampleSize": 200,
+    "headConcurrency": {
+      "min": 32,
+      "start": 64,
+      "max": 128
+    }
+  },
+  "categoryCounts": {
+    "identities": 6955,
+    "metadata": 6955,
+    "semantic": 6955,
+    "search": 6955,
+    "provenance": 6955,
+    "artwork": 39652,
+    "artworkRecords": 40071,
+    "manifests": 1,
+    "licenses": 1
+  },
+  "identities": {
+    "expected": 6955,
+    "remote": 6955
+  },
+  "artworkRecords": {
+    "expected": 40071,
+    "remote": 40071
+  },
+  "uniqueArtworkBinaries": {
+    "expected": 39652,
+    "remote": 39652
+  },
+  "duplicateBinaryReferences": {
+    "expected": 419,
+    "local": 419
+  },
+  "metadata": {
+    "expected": 6955,
+    "remote": 6955
+  },
+  "semantic": {
+    "expected": 6955,
+    "remote": 6955
+  },
+  "search": {
+    "expected": 6955,
+    "remote": 6955
+  },
+  "provenance": {
+    "expected": 6955,
+    "remote": 6955
+  },
+  "licenses": {
+    "remote": 1
+  },
+  "manifests": {
+    "remote": 1
+  },
+  "artworkIdCollisions": 11193,
+  "sha256KeyArchitecture": true,
+  "totalBytes": 637169080,
+  "storageGB": 0.6372,
+  "storageGiB": 0.5934,
+  "allowanceGB": 10,
+  "utilizationPercent": 6.3717,
+  "remainingGB": 9.3628,
+  "privacy": "PRIVATE",
+  "license": {
+    "A": [
+      "openmoji",
+      "twemoji"
+    ],
+    "B": [
+      "noto"
+    ],
+    "C": [
+      "fluent",
+      "emojinet-unknown-artwork"
+    ]
+  },
+  "frozenRelease": {
+    "status": "PASS",
+    "pass": "31/31"
+  },
+  "seo": {
+    "MASTER_SEO_ROLLOUT_MODE": "OFF",
+    "masterSEOEnabled": false,
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false
+  },
+  "production": {
+    "checks": [
+      {
+        "url": "https://emojiquick.com/",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/fire",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/keycap",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/category/smileys-emotion",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/sitemap.xml",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/robots.txt",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "keycapNoRedirect": true
+  },
+  "sitemap": {
+    "expected": 4522,
+    "actual": 4522,
+    "pass": true
+  },
+  "tests": {
+    "typecheck": {
+      "status": "PASS",
+      "detail": "verified 2026-08-12"
+    },
+    "tests": {
+      "status": "PASS",
+      "detail": "437/437 verified 2026-08-12"
+    },
+    "build": {
+      "status": "PASS",
+      "detail": "next build exit 0 verified 2026-08-12"
+    },
+    "r2ArchTests": {
+      "status": "PASS",
+      "detail": "14/14 r2-architecture tests"
+    }
+  },
+  "readinessScores": {
+    "canonicalPresent": true,
+    "missingZero": true,
+    "unexpectedExpected": true,
+    "remoteTotal": true,
+    "conflictsZero": true,
+    "listSizeMismatchesZero": true,
+    "headSamplePass": false,
+    "spotChecksPass": true,
+    "identities": true,
+    "artworkRecords": true,
+    "uniqueArtworkBinaries": true,
+    "duplicateBinaryRefs": true,
+    "artworkIdCollisionsZero": false,
+    "metadata": true,
+    "semantic": true,
+    "search": true,
+    "provenance": true,
+    "r2Private": true,
+    "productionFlagsOff": true,
+    "canaryOff": true,
+    "fullOff": true,
+    "frozenIntegrity": true,
+    "productionHttp": true,
+    "localDataIntegrity": false,
+    "sitemap": true
+  },
+  "finalScore": "22/25",
+  "overallStatus": "FAIL"
+}

@@ -1,0 +1,212 @@
+{
+  "phase": "8.39",
+  "generatedAt": "2026-08-12T00:39:20.932Z",
+  "bucket": "emojiquick-master",
+  "frozenChecksums": {
+    "pass": 31,
+    "total": 31,
+    "status": "PASS"
+  },
+  "identities": {
+    "count": 6955,
+    "expected": 6955,
+    "duplicates": 0,
+    "malformed": 0,
+    "missing": 0
+  },
+  "artworkRecords": {
+    "count": 40071,
+    "exportFiles": 40071,
+    "expected": 40071,
+    "uniqueRecordKeys": 40071,
+    "artworkIdOnlyCollisions": 11193,
+    "exportCollisionCount": 0
+  },
+  "artworkBinaries": {
+    "uniqueInIndex": 39652,
+    "exportFiles": 39652,
+    "duplicateRefs": 419,
+    "expectedUnique": 39652,
+    "expectedDupRefs": 419
+  },
+  "checksumAudit": {
+    "lines": 114498,
+    "failures": 0,
+    "sampleFailures": []
+  },
+  "localExport": {
+    "counts": {
+      "identities": 6955,
+      "artwork": 39652,
+      "artworkRecords": 40071,
+      "metadata": 6955,
+      "semantic": 6955,
+      "search": 6955,
+      "provenance": 6955,
+      "licenses": 2,
+      "manifests": 7
+    },
+    "totalFilesOnDisk": 114510,
+    "canonicalObjectTotal": 114500,
+    "manifestObjectTotal": 114498,
+    "bytes": 652691585,
+    "gb": 0.652691585,
+    "gib": 0.6078664073720574,
+    "mb": 652.691585,
+    "mib": 622.4552011489868
+  },
+  "r2Account": {
+    "enabled": true
+  },
+  "remoteInventory": {
+    "count": 0,
+    "keys": []
+  },
+  "canaryVerification": {
+    "pass": 10,
+    "total": 10,
+    "results": [
+      {
+        "key": "identities/unicode_1F600.json",
+        "pass": true
+      },
+      {
+        "key": "metadata/unicode_1F600.json",
+        "pass": true
+      },
+      {
+        "key": "semantic/unicode_1F600.json",
+        "pass": true
+      },
+      {
+        "key": "search/unicode_1F600.json",
+        "pass": true
+      },
+      {
+        "key": "provenance/unicode_1F600.json",
+        "pass": true
+      },
+      {
+        "key": "artwork-records/1cd742197b9c891cea1430930e1aa4c095128e46f0b7fe94842355bc3651b811.json",
+        "pass": true
+      },
+      {
+        "key": "artwork/f3d5483791b88975bb0f4db7dc7b81439dfe18b02123bf81ad8bc984169651c6.svg",
+        "pass": true
+      },
+      {
+        "key": "artwork/cce976a0def9c94f5a81db3fdcfb46a2438b3d6852987c6b1f2d70631bed93dc.svg",
+        "pass": true
+      },
+      {
+        "key": "manifests/master-manifest.json",
+        "pass": true
+      },
+      {
+        "key": "licenses/LICENSE-MATRIX.json",
+        "pass": true
+      }
+    ]
+  },
+  "remoteComparison": {
+    "match": 10,
+    "missingBeforeBulkUpload": 114490,
+    "unexpected": [],
+    "conflicts": [],
+    "note": "Wrangler has no r2 object list command; remote inventory based on verified canary downloads"
+  },
+  "remoteObjectCountVerified": 10,
+  "licenseAudit": {
+    "providerCount": 10,
+    "classifications": {
+      "A": [
+        "openmoji",
+        "twemoji"
+      ],
+      "B": [
+        "noto"
+      ],
+      "C": [
+        "fluent",
+        "emojinet-unknown-artwork"
+      ]
+    },
+    "status": "PASS"
+  },
+  "privacy": {
+    "bucketPrivate": true,
+    "r2Dev": "not_configured",
+    "publicAccessEnabled": false
+  },
+  "productionFlags": {
+    "MASTER_SEO_ROLLOUT_MODE": "OFF",
+    "masterSEOEnabled": false,
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "canary": "OFF",
+    "full": "OFF"
+  },
+  "productionHttp": {
+    "checks": [
+      {
+        "url": "https://emojiquick.com/",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/fire",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/keycap",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/category/smileys-emotion",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/sitemap.xml",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/robots.txt",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "keycapNoRedirect": true
+  },
+  "r2Storage": {
+    "allowanceGb": 10,
+    "bytes": 652691585,
+    "utilizationPercent": 6.5269,
+    "remainingGb": 9.3473
+  },
+  "checks": {
+    "frozen": true,
+    "identities": true,
+    "artworkRecords": true,
+    "binaries": true,
+    "checksums": true,
+    "canary": true,
+    "conflicts": true,
+    "privacy": true,
+    "productionFlags": true,
+    "keycap": true
+  },
+  "finalDecision": "GO",
+  "tests": {
+    "typecheck": "PASS",
+    "r2Architecture": "14/14 PASS",
+    "releaseFrozen": "7/7 PASS (31/31 checksums)",
+    "artwork": "PASS",
+    "canaryVerify": "10/10 PASS",
+    "fullSuite": "436/437 PASS (1 pre-existing search-ui audit failure)"
+  }
+}

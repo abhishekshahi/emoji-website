@@ -1,0 +1,49 @@
+{
+  "phase": "8.56",
+  "subPhase": "8.56-B",
+  "finalVerdict": "PASS",
+  "completedAt": "2026-08-15T03:45:00+05:30",
+  "productionVersionId": "cc87fcd2-95b6-4708-a451-0d55a3b108e8",
+  "priorRollbackVersion": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "failedPriorCandidate": "969b444e-ceaa-4279-be2e-12b1dc1a1718",
+  "commit": "0b27bd1e",
+  "gzipKiB": 2506.06,
+  "handlerGzipKiBPreDeploy": 2304.98,
+  "gzipUnderLimit": true,
+  "minify": true,
+  "buildComplete": true,
+  "buildPath": "C:\\temp\\emoji-856-build",
+  "buildLog": "r2-export/phase-8.56-b-build-cf.log",
+  "deployLog": "r2-export/phase-8.56-b-deploy.log",
+  "smokeLog": "r2-export/phase-8.56-b-smoke.json",
+  "emojiSmoke": "PASS",
+  "masterApiSmoke": "PASS",
+  "smokeFailCount": 0,
+  "smokeHosts": [
+    "https://emojiquick.com",
+    "https://emoji-website.emoji-website.workers.dev"
+  ],
+  "bundleGate": {
+    "status": "PASS",
+    "routes": {
+      "catalog": "R2 ternary present (shouldReadFromR2Binding ? queryPublicCatalogFromR2 : queryCatalog)",
+      "search": "R2 ternary present (shouldReadFromR2Binding ? searchPublicMasterFromR2 : searchMasterIntegrated)",
+      "identity": "R2 ternary present (shouldReadFromR2Binding ? buildPublicIdentityResponseFromR2 : buildPublicIdentityResponse)",
+      "artwork": "R2 ternary present (shouldReadFromR2Binding ? buildPublicArtworkResponseFromR2 : buildPublicArtworkResponse)"
+    },
+    "bareGetMasterReaderInGetOnly": false
+  },
+  "r2": {
+    "bucket": "emojiquick-master",
+    "objectCount": 114498,
+    "reuploadRequired": false,
+    "status": "PASS"
+  },
+  "wrangler": {
+    "MASTER_R2_MODE": "ENABLED",
+    "PUBLIC_MASTER_PLATFORM_MODE": "ENABLED",
+    "MASTER_SEO_ROLLOUT_MODE": "OFF",
+    "bindings": ["MASTER_R2", "ASSETS", "WORKER_SELF_REFERENCE"]
+  },
+  "fixSummary": "Committed untracked master API R2 wiring; clean build:cf in C:\\temp with OOM mitigation; bundle gate verified R2 branch in all four public master routes; deployed cc87fcd2; smoke 28/28 PASS on emojiquick.com + workers.dev"
+}

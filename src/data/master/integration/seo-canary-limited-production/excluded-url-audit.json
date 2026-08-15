@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-10T17:03:48.491Z",
+  "phase": "8.12H",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "reason": "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Command failed: npx vercel rolling-release configure --enable --advancement-type=manual-approval --stage=1 --project=emoji-website\nVercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…\n Vercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…",
+  "note": "HTTP production-canary audits not executed - traffic splitting unavailable",
+  "status": "BLOCKED"
+}

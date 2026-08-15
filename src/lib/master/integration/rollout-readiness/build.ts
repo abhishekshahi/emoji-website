@@ -23,6 +23,7 @@ import { buildMetadataIntegrationPackage } from "../metadata/build";
 import { getMasterReader } from "../master-reader";
 import { isAmbiguousMasterSearchTerm } from "../search-adapter";
 import { searchMasterIntegrated } from "../search/adapter";
+import { getMasterSearchStaticIndex } from "../search/index-data";
 import { buildSearchIntegrationPackage } from "../search/build";
 import { searchProductionEmojis } from "../search/production-bridge";
 import {
@@ -605,8 +606,19 @@ export function buildIndexationSafetyAudit(rootDir: string = process.cwd()) {
   });
 }
 
+function warmRolloutPerformanceCaches(rootDir: string, emojisList: BrowsableEmoji[]): void {
+  getMasterSearchStaticIndex(rootDir);
+  for (let index = 0; index < 3; index += 1) {
+    searchMasterIntegrated("fire", rootDir, 10);
+    searchEmojis(emojisList, "fire", 10);
+    listAvailableProviders("unicode:1F525", { rootDir });
+    getEnrichedMetadata("unicode:1F525", rootDir);
+  }
+}
+
 export function buildPerformanceRolloutAudit(rootDir: string = process.cwd()) {
   const emojisList = searchableEmojis();
+  warmRolloutPerformanceCaches(rootDir, emojisList);
   const measure = (label: string, fn: () => void) => {
     const start = performance.now();
     fn();

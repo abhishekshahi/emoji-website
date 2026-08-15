@@ -1,0 +1,18 @@
+{
+  "phase": "8.61-E",
+  "generatedAt": "2026-08-15T00:00:00.000Z",
+  "productionHost": "https://emojiquick.com",
+  "counts": {
+    "total": 6991,
+    "emojiIdentityPages": 6955,
+    "staticPages": 7,
+    "categoryPages": 29
+  },
+  "breakdown": {
+    "staticPaths": ["/", "/emoji", "/extras", "/popular", "/new", "/search", "/licenses"],
+    "emojiPathPattern": "/emoji/{slug}",
+    "categoryPathPattern": "/category/{categoryId}"
+  },
+  "forbiddenInSitemap": ["/api/", "/catalog/", "114498", "r2.cloudflarestorage.com"],
+  "slugSource": "src/data/master/integration/identity-slug-map.json"
+}

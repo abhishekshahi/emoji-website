@@ -10,6 +10,7 @@ interface EmojiGridProps {
   pageSize?: number;
   emptyMessage?: string;
   highlightQuery?: string;
+  matchLabelsById?: Readonly<Record<string, string>>;
 }
 
 export function EmojiGrid({
@@ -17,6 +18,7 @@ export function EmojiGrid({
   pageSize = EMOJI_GRID_PAGE_SIZE,
   emptyMessage = "No emojis to show yet.",
   highlightQuery,
+  matchLabelsById,
 }: EmojiGridProps) {
   const [visibleCount, setVisibleCount] = useState(pageSize);
 
@@ -37,7 +39,12 @@ export function EmojiGrid({
     <div className="space-y-6">
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {visibleEmojis.map((emoji) => (
-          <EmojiCard key={emoji.id} emoji={emoji} highlightQuery={highlightQuery} />
+          <EmojiCard
+            key={emoji.id}
+            emoji={emoji}
+            highlightQuery={highlightQuery}
+            matchLabel={matchLabelsById?.[emoji.id]}
+          />
         ))}
       </div>
 

@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-08-10T16:23:12.199Z",
+  "phase": "8.12E",
+  "rolloutMode": "CANARY",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "mode": "OFF",
+  "rollbackVerified": true,
+  "sampleCount": 20,
+  "fireStatus": 200,
+  "entries": [
+    {
+      "from": "/emoji/keycap",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-0",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-1",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-2",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-3",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-4",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-5",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-6",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-7",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-8",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/keycap-9",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/copyright",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/registered",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/a-button-blood-type",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/b-button-blood-type",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/o-button-blood-type",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/p-button",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/japanese-service-charge-button",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/japanese-monthly-amount-button",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "from": "/emoji/thermometer",
+      "status": 200,
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

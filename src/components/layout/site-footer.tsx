@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/emoji/constants";
+import { isPublicMasterPlatformEnabled } from "@/lib/master/public/config";
 import {
   OPENMOJI_LICENSE,
   OPENMOJI_LICENSE_URL,
@@ -16,6 +17,15 @@ const FOOTER_LINKS = [
 ] as const;
 
 export function SiteFooter() {
+  const masterLinks = isPublicMasterPlatformEnabled()
+    ? [
+        { href: "/catalog", label: "Master Catalog" },
+        { href: "/artwork", label: "Artwork" },
+        { href: "/developers", label: "API" },
+        { href: "/data", label: "Data" },
+      ]
+    : [];
+
   return (
     <footer className="mt-auto border-t border-border bg-surface/70">
       <div className="page-shell flex flex-col gap-6 py-10">
@@ -30,6 +40,11 @@ export function SiteFooter() {
 
           <nav aria-label="Footer" className="flex flex-wrap gap-2">
             {FOOTER_LINKS.map((link) => (
+              <Link key={link.href} href={link.href} className="pill-link">
+                {link.label}
+              </Link>
+            ))}
+            {masterLinks.map((link) => (
               <Link key={link.href} href={link.href} className="pill-link">
                 {link.label}
               </Link>

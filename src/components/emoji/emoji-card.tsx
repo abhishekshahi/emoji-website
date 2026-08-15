@@ -11,9 +11,10 @@ interface EmojiCardProps {
   emoji: Pick<BrowsableEmoji, "id" | "emoji" | "name" | "slug" | "hexcode">;
   showName?: boolean;
   highlightQuery?: string;
+  matchLabel?: string;
 }
 
-function EmojiCardComponent({ emoji, showName = true, highlightQuery }: EmojiCardProps) {
+function EmojiCardComponent({ emoji, showName = true, highlightQuery, matchLabel }: EmojiCardProps) {
   const { isFavorite, toggleFavorite, copyEmoji } = useEmojiActions();
   const favorite = isFavorite(emoji.hexcode);
 
@@ -56,6 +57,11 @@ function EmojiCardComponent({ emoji, showName = true, highlightQuery }: EmojiCar
                     ),
                   )
                 : emoji.name}
+            </span>
+          ) : null}
+          {matchLabel ? (
+            <span className="rounded-full bg-surface px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-muted">
+              {matchLabel}
             </span>
           ) : null}
         </button>

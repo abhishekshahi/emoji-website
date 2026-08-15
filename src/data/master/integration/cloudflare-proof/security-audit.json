@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-08-10T19:50:16.841Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "baseUrl": "https://emoji-website.emoji-website.workers.dev",
+  "failureCount": 0,
+  "entries": [
+    {
+      "path": "/emoji/../etc/passwd",
+      "status": 404,
+      "location": null,
+      "externalRedirect": false,
+      "pass": true
+    },
+    {
+      "path": "/emoji/%2e%2e%2fetc%2fpasswd",
+      "status": 404,
+      "location": null,
+      "externalRedirect": false,
+      "pass": true
+    },
+    {
+      "path": "/emoji/%2f%2fexample.com",
+      "status": 503,
+      "location": null,
+      "externalRedirect": false,
+      "pass": true
+    },
+    {
+      "path": "/emoji/unknown-cloudflare-proof-slug-qa",
+      "status": 404,
+      "location": null,
+      "externalRedirect": false,
+      "pass": true
+    },
+    {
+      "path": "//evil.example/phish",
+      "status": 0,
+      "location": null,
+      "externalRedirect": false,
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}

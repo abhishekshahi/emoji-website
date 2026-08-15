@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-08-10T19:48:54.795Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "success": true,
+  "durationSeconds": 407.5,
+  "workerGzipKiB": 2542.43,
+  "workerRawKiB": 27245.73,
+  "staticAssetCount": 4531,
+  "staticAssetTotalBytes": 20044750,
+  "largestAssetName": "_next\\static\\chunks\\3czkpuof8nul3.js",
+  "largestAssetBytes": 2764049,
+  "warnings": [
+    "WSL not available; Windows OpenNext build used",
+    "OpenNext Windows compatibility warning may apply"
+  ],
+  "platform": "win32",
+  "wslAvailable": false,
+  "lfsSkipSmudge": true,
+  "siteUrl": "https://emojiquick.com",
+  "openNextExists": true,
+  "status": "PASS"
+}

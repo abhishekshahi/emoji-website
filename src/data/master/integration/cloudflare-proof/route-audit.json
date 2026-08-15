@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-08-10T19:49:40.110Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "baseUrl": "https://emoji-website.emoji-website.workers.dev",
+  "routeCount": 18,
+  "failureCount": 9,
+  "entries": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/fire",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/emoji/red-heart",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/emoji/thumbs-up",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/thumbs-up-light-skin-tone",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/emoji/man-technologist",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/emoji/flag-india",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/rainbow-flag",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/extra-goldfish",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/category/smileys-emotion",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/search?q=fire",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/robots.txt",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/favorites",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/recent",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/extras",
+      "status": 503,
+      "location": null,
+      "pass": false
+    },
+    {
+      "path": "/openmoji/standard/1F525.svg",
+      "status": 200,
+      "location": null,
+      "pass": true
+    },
+    {
+      "path": "/emoji/keycap",
+      "status": 200,
+      "location": null,
+      "pass": true
+    }
+  ],
+  "status": "FAIL"
+}

@@ -36,8 +36,6 @@ function readSource(relativePath: string): string {
 }
 
 describe("phase 8.11H master search UI integration", () => {
-  const uiPackage = buildSearchUiPackage(rootDir);
-
   it("keeps all feature flags disabled after controlled QA rollback", () => {
     assert.equal(MASTER_INTEGRATION_CONFIG.masterSearchEnabled, false);
     assert.equal(MASTER_INTEGRATION_CONFIG.masterSEOEnabled, false);
@@ -199,6 +197,7 @@ describe("phase 8.11H master search UI integration", () => {
   });
 
   it("passes search UI audit package", () => {
+    const uiPackage = buildSearchUiPackage(rootDir);
     assert.equal(uiPackage.searchUiAudit.phase, SEARCH_UI_PHASE);
     assert.equal(uiPackage.searchUiAudit.status, "PASS");
     assert.equal(uiPackage.searchInputAudit.status, "PASS");

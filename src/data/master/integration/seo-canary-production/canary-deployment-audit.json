@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-08-09T22:37:01.509Z",
+  "phase": "8.12F",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "environment": "local-production-like",
+  "baseUrl": "http://localhost:3099",
+  "seoRolloutMode": "CANARY",
+  "masterSeoFeatureFlag": false,
+  "checks": {
+    "rolloutModeCanary": true,
+    "masterSeoFlagFalse": true,
+    "masterArtworkFlagFalse": true,
+    "masterMetadataFlagFalse": true,
+    "masterSearchFlagFalse": true,
+    "dedicatedEnvironment": true,
+    "baseUrlConfigured": true
+  },
+  "status": "PASS"
+}

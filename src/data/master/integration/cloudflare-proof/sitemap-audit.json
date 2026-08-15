@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-08-10T19:50:17.729Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "baseUrl": "https://emoji-website.emoji-website.workers.dev",
+  "status": "FAIL",
+  "urlCount": 44,
+  "productionSlugCount": 4486,
+  "usesConfiguredSiteUrl": false
+}

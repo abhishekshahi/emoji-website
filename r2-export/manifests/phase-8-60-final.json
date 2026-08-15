@@ -1,0 +1,140 @@
+{
+  "phase": "8.60",
+  "finalVerdict": "FINAL PASS WITH WARNINGS",
+  "productionVersion": "0a01b930-ef1a-4d30-8dd2-527114432b87",
+  "rollbackVersion": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "completedAt": "2026-08-15T06:05:00.000Z",
+  "scorecard": {
+    "8.60-A PRODUCTION IDENTITY": "PASS",
+    "8.60-B PRODUCTION SMOKE": "PASS",
+    "8.60-C MASTER PLATFORM": "PASS",
+    "8.60-D ARTWORK + LICENSE": "PASS",
+    "8.60-E R2 + DATA INTEGRITY": "PASS WITH WARNINGS",
+    "8.60-F SECURITY + PRIVACY": "PASS",
+    "8.60-G SEO + INDEXING": "PASS WITH WARNINGS",
+    "8.60-H PERFORMANCE + RELIABILITY": "PASS WITH WARNINGS",
+    "8.60-I FINAL SIGN-OFF": "FINAL PASS WITH WARNINGS"
+  },
+  "constraints": {
+    "noDeploy": true,
+    "noR2Changes": true,
+    "noFullSeo": true,
+    "noDnsChanges": true,
+    "frozen810Unchanged": true,
+    "masterR2Mode": "ENABLED",
+    "publicMasterPlatformMode": "ENABLED",
+    "masterSeoRolloutMode": "OFF"
+  },
+  "productionHosts": {
+    "primary": "https://emojiquick.com",
+    "workersDev": "https://emoji-website.emoji-website.workers.dev"
+  },
+  "r2": {
+    "bucket": "emojiquick-master",
+    "privacy": "PRIVATE",
+    "canonicalObjects": 114498,
+    "restListCount": 114491,
+    "missing": 0,
+    "restDeltaExplanation": "REST list API undercounts by 7 due to pagination/truncation; canonical manifest + binding verification confirms 114498 present, 0 missing"
+  },
+  "masterCounts": {
+    "identities": 6955,
+    "artworkRecords": 40071,
+    "uniqueBinaries": 39652,
+    "duplicateBinaryRefs": 419
+  },
+  "siteCounts": {
+    "emojiPages": 4486,
+    "sitemapUrls": 4522
+  },
+  "smokeResults": {
+    "hosts": 2,
+    "pathsPerHost": 8,
+    "total": 16,
+    "pass": 16,
+    "fail": 0,
+    "no500": true
+  },
+  "masterApiProbes": {
+    "catalog": { "status": 200, "ms": 155 },
+    "searchFire": { "status": 200, "ms": 3713, "bytes": 18086 },
+    "searchHeart": { "status": 200, "ms": 5791, "bytes": 39657 },
+    "searchLove": { "status": 200, "ms": 5896, "bytes": 41020 },
+    "searchFamily": { "status": 200, "ms": 5953, "bytes": 42371 },
+    "searchDoctor": { "status": 200, "ms": 3433, "bytes": 16908 },
+    "searchBirthday": { "status": 200, "ms": 866, "bytes": 2796 },
+    "identityFire": { "status": 200, "ms": 229 },
+    "identityRedHeart": { "status": 200, "ms": 255 },
+    "artworkFire": { "status": 200, "ms": 255 }
+  },
+  "artworkProbes": {
+    "openmoji1F600": { "status": 200, "contentType": "image/svg+xml", "bytes": 1439 },
+    "twemoji2764": { "status": 200, "contentType": "image/png", "bytes": 498 },
+    "openmojiFire": { "status": 200, "contentType": "image/svg+xml", "bytes": 3130 },
+    "openmojiKeycap": { "status": 200, "contentType": "image/svg+xml", "bytes": 653 },
+    "openmojiZWJ": { "status": 200, "contentType": "image/svg+xml", "bytes": 6895 },
+    "openmojiSkinTone": { "status": 200, "contentType": "image/svg+xml", "bytes": 2476 },
+    "openmojiFlag": { "status": 200, "contentType": "image/svg+xml", "bytes": 1437 },
+    "noto1F600": { "status": 403 },
+    "fluent1F600": { "status": 403 },
+    "emojinet1F600": { "status": 400, "note": "unknown provider rejected; effectively protected" }
+  },
+  "securityChecks": {
+    "credsInHomepage": false,
+    "credsInCatalogApi": false,
+    "r2ExportInResponses": false,
+    "internalMasterSearch": { "status": 503, "exposed": false },
+    "internalMasterArtwork": { "status": 400, "exposed": false },
+    "r2ServerSideOnly": true,
+    "parallelBurst503": { "probes": 17, "pass200": 17, "pass503": 0 }
+  },
+  "performance": {
+    "homepageMs": 541,
+    "searchPageMs": 223,
+    "catalogApiMs": 155,
+    "identityApiMs": 229,
+    "artworkBinaryMs": 535,
+    "searchBroadQueriesMs": { "fire": 3713, "heart": 5791, "love": 5896, "family": 5953 },
+    "searchClassification": "acceptable (3-6s vs 8.57 baseline 6-11s; N+1 fix retained)"
+  },
+  "warnings": [
+    {
+      "id": "robots-api-disallow",
+      "classification": "NON-BLOCKING",
+      "detail": "robots.txt lacks explicit Disallow: /api/*; Cloudflare managed block prepended; API paths absent from sitemap"
+    },
+    {
+      "id": "duplicate-title-suffix",
+      "classification": "NON-BLOCKING",
+      "detail": "Title template shows duplicate site suffix (| EmojiFind | EmojiFind) — unchanged since 8.58"
+    },
+    {
+      "id": "alias-slugs-404",
+      "classification": "FIX RECOMMENDED",
+      "detail": "Alias slugs /emoji/heart, /emoji/doctor, /emoji/birthday return 404 in SEO OFF mode; mappings deferred to CANARY/FULL"
+    },
+    {
+      "id": "r2-rest-delta-7",
+      "classification": "NON-BLOCKING",
+      "detail": "R2 REST list 114491 vs canonical manifest 114498; binding verification confirms 0 missing"
+    },
+    {
+      "id": "search-broad-latency",
+      "classification": "NON-BLOCKING",
+      "detail": "Broad search queries 3.7-5.8s; acceptable vs 8.57/8.58 evidence, not sub-second"
+    }
+  ],
+  "fixesDeployed": [],
+  "evidencePaths": [
+    "r2-export/PHASE-8.60-FINAL.md",
+    "r2-export/FINAL-8.54-8.60-AUDIT.md",
+    "r2-export/manifests/phase-8-60-final.json",
+    "r2-export/manifests/final-8-54-8-60-audit.json",
+    "r2-export/manifests/master-manifest.json",
+    "r2-export/manifests/phase-8-59-final.json",
+    "r2-export/manifests/phase-8-58-final.json",
+    "r2-export/manifests/phase-8-57-final.json",
+    "r2-export/phase-8.56-b-smoke.json",
+    "wrangler.jsonc"
+  ]
+}

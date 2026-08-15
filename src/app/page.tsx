@@ -35,7 +35,7 @@ export default function HomePage() {
             Find the Perfect Emoji
           </h1>
           <p className="text-lg text-muted">
-            Search, copy and discover emojis instantly.
+            Search, copy, and discover emojis with meanings, Unicode details, keywords, variants, and OpenMoji artwork.
           </p>
           <div className="pt-2">
             <SearchBar size="hero" />

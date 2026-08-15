@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T22:28:55.094Z",
+  "generatedAt": "2026-08-10T17:02:29.626Z",
   "phase": "8.12D",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
@@ -10,15 +10,19 @@
   },
   "provenance": "production-redirect-qa",
   "auditOnly": true,
-  "productionPageCount": 4486,
-  "expected": 4486,
-  "duplicateUrlCount": 0,
-  "checks": {
-    "pageCount": true,
-    "noDuplicateUrls": true,
-    "sourcesExcluded": true,
-    "targetsIncluded": true,
-    "noMasterOnlyExpansion": true
+  "counts": {
+    "standardRecords": 3944,
+    "extrasRecords": 542,
+    "total": 4486
   },
+  "checks": {
+    "emojisJson": true,
+    "extrasJson": true,
+    "total": true,
+    "frozenRelease": true,
+    "releaseId": "master-8.10-20260809",
+    "featureFlagsDisabled": true
+  },
+  "checksumResult": "PASS",
   "status": "PASS"
 }

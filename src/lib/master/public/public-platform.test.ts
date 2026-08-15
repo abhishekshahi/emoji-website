@@ -10,9 +10,12 @@ import { searchMasterIntegrated } from "@/lib/master/integration/search/adapter"
 import {
   MASTER_ARTWORK_RECORD_COUNT,
   MASTER_IDENTITY_COUNT,
+  PRODUCTION_BROWSABLE_EMOJI_COUNT,
+  PUBLIC_INDEXABLE_IDENTITY_COUNT,
   PUBLIC_SEO_EMOJI_PAGE_COUNT,
   PUBLIC_SITEMAP_URL_COUNT,
 } from "@/lib/master/r2/catalog";
+import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
 import {
   getCatalogStats,
   queryCatalog,
@@ -60,8 +63,8 @@ describe("public master platform", () => {
     resetCatalogCache();
     const stats = getCatalogStats(rootDir);
     assert.equal(stats.totalIdentities, MASTER_IDENTITY_COUNT);
-    assert.ok(stats.publicIdentities > PUBLIC_SEO_EMOJI_PAGE_COUNT);
-    assert.equal(stats.indexableIdentities, PUBLIC_SEO_EMOJI_PAGE_COUNT);
+    assert.equal(stats.publicIdentities, PUBLIC_INDEXABLE_IDENTITY_COUNT);
+    assert.equal(stats.indexableIdentities, PUBLIC_INDEXABLE_IDENTITY_COUNT);
   });
 
   it("paginates catalog without loading entire dataset in one page", () => {
@@ -102,9 +105,10 @@ describe("public master platform", () => {
     assert.ok(LICENSE_REGISTRY.some((e) => e.provider === "EmojiNet"));
   });
 
-  it("keeps sitemap and production page counts stable", () => {
-    assert.equal(getAllBrowsableEmojis().length, PUBLIC_SEO_EMOJI_PAGE_COUNT);
-    const sitemapCount = 7 + getAllCategorySlugs().length + getAllBrowsableEmojis().length;
+  it("keeps sitemap and identity page counts stable", () => {
+    assert.equal(getAllIdentitySlugs().length, PUBLIC_SEO_EMOJI_PAGE_COUNT);
+    assert.equal(getAllBrowsableEmojis().length, PRODUCTION_BROWSABLE_EMOJI_COUNT);
+    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length;
     assert.equal(sitemapCount, PUBLIC_SITEMAP_URL_COUNT);
   });
 });

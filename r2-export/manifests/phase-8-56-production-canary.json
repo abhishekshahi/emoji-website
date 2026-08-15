@@ -1,0 +1,13 @@
+{
+  "phase": "8.56",
+  "finalVerdict": "PRODUCTION CANARY PASS",
+  "completedAt": "2026-08-13T23:20:00.000Z",
+  "deployExecuted": true,
+  "workersDevUrl": "https://emoji-website.emoji-website.workers.dev",
+  "versionId": "7771a9c6-b283-4aa7-ad24-5608484b6a99",
+  "gzipUploadKiB": 2904.18,
+  "minifyEnabled": true,
+  "masterR2Mode": "OFF",
+  "featureFlagsOff": true,
+  "seoRollout": "OFF"
+}

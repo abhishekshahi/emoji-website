@@ -25,18 +25,39 @@ export function locationPathname(location: string | null, baseUrl: string): stri
   }
 }
 
+function resolveProtectionBypassSecret(): string | null {
+  const configured =
+    process.env.SEO_QA_PROTECTION_BYPASS?.trim() ??
+    process.env.VERCEL_AUTOMATION_BYPASS_SECRET?.trim();
+  return configured || null;
+}
+
+export function buildProbeHeaders(): Record<string, string> {
+  const headers: Record<string, string> = {
+    Accept: "text/html",
+  };
+  const bypassSecret = resolveProtectionBypassSecret();
+  if (bypassSecret) {
+    headers["x-vercel-protection-bypass"] = bypassSecret;
+  }
+  return headers;
+}
+
 export async function probeUrl(
   baseUrl: string,
   path: string,
   options?: { followRedirects?: boolean },
 ): Promise<HttpProbeResult> {
-  const url = new URL(path, baseUrl).toString();
+  const target = new URL(path, baseUrl);
+  const bypassSecret = resolveProtectionBypassSecret();
+  if (bypassSecret) {
+    target.searchParams.set("x-vercel-protection-bypass", bypassSecret);
+  }
+  const url = target.toString();
   try {
     const response = await fetch(url, {
       redirect: options?.followRedirects === false ? "manual" : "follow",
-      headers: {
-        Accept: "text/html",
-      },
+      headers: buildProbeHeaders(),
     });
 
     let bodySnippet: string | null = null;

@@ -1,4 +1,3 @@
-import approvedRedirectsDataset from "@/data/master/integration/seo-migration-review/approved-redirects.json";
 import type { ApprovedRedirectRecord } from "../seo-migration-implementation/types";
 import {
   APPROVED_REDIRECT_BASELINE,
@@ -14,31 +13,59 @@ export interface ResolvedApprovedRedirect {
   readonly status: typeof REDIRECT_HTTP_STATUS;
 }
 
-const redirectByFrom = new Map<string, ApprovedRedirectRecord>();
-const productionSlugByTarget = new Map<string, string>();
-const redirectSourceSlugs = new Set<string>();
-const redirectTargetSlugs = new Set<string>();
-const canonicalIdByTarget = new Map<string, string>();
-
-for (const record of approvedRedirectsDataset.redirects as ApprovedRedirectRecord[]) {
-  redirectByFrom.set(record.from, record);
-  const sourceSlug = record.from.replace("/emoji/", "");
-  const targetSlug = record.to.replace("/emoji/", "");
-  redirectSourceSlugs.add(sourceSlug);
-  redirectTargetSlugs.add(targetSlug);
-  productionSlugByTarget.set(targetSlug, sourceSlug);
-  canonicalIdByTarget.set(targetSlug, record.canonicalId);
+interface ApprovedRedirectsDataset {
+  readonly redirects: readonly ApprovedRedirectRecord[];
 }
 
-if (redirectByFrom.size !== APPROVED_REDIRECT_BASELINE) {
-  throw new Error(
-    `Approved redirect dataset must contain exactly ${APPROVED_REDIRECT_BASELINE} redirects (found ${redirectByFrom.size}).`,
-  );
+let redirectByFrom: Map<string, ApprovedRedirectRecord> | null = null;
+let productionSlugByTarget: Map<string, string> | null = null;
+let redirectSourceSlugs: Set<string> | null = null;
+let redirectTargetSlugs: Set<string> | null = null;
+let canonicalIdByTarget: Map<string, string> | null = null;
+let approvedRedirectsDataset: ApprovedRedirectsDataset | null = null;
+
+function ensureRedirectIndex(): void {
+  if (redirectByFrom !== null) {
+    return;
+  }
+
+  // Lazy load keeps the ~834 KB dataset out of OFF-mode Worker bundles.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  approvedRedirectsDataset = require("@/data/master/integration/seo-migration-review/approved-redirects.json") as ApprovedRedirectsDataset;
+
+  const byFrom = new Map<string, ApprovedRedirectRecord>();
+  const slugByTarget = new Map<string, string>();
+  const sourceSlugs = new Set<string>();
+  const targetSlugs = new Set<string>();
+  const canonicalByTarget = new Map<string, string>();
+
+  for (const record of approvedRedirectsDataset.redirects) {
+    byFrom.set(record.from, record);
+    const sourceSlug = record.from.replace("/emoji/", "");
+    const targetSlug = record.to.replace("/emoji/", "");
+    sourceSlugs.add(sourceSlug);
+    targetSlugs.add(targetSlug);
+    slugByTarget.set(targetSlug, sourceSlug);
+    canonicalByTarget.set(targetSlug, record.canonicalId);
+  }
+
+  if (byFrom.size !== APPROVED_REDIRECT_BASELINE) {
+    throw new Error(
+      `Approved redirect dataset must contain exactly ${APPROVED_REDIRECT_BASELINE} redirects (found ${byFrom.size}).`,
+    );
+  }
+
+  redirectByFrom = byFrom;
+  productionSlugByTarget = slugByTarget;
+  redirectSourceSlugs = sourceSlugs;
+  redirectTargetSlugs = targetSlugs;
+  canonicalIdByTarget = canonicalByTarget;
 }
 
 export function resolveApprovedEmojiRedirect(pathname: string): ResolvedApprovedRedirect | null {
+  ensureRedirectIndex();
   const normalized = pathname.endsWith("/") && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
-  const record = redirectByFrom.get(normalized);
+  const record = redirectByFrom!.get(normalized);
   if (!record) {
     return null;
   }
@@ -51,41 +78,49 @@ export function resolveApprovedEmojiRedirect(pathname: string): ResolvedApproved
 }
 
 export function isApprovedRedirectSourceSlug(slug: string): boolean {
-  return redirectSourceSlugs.has(slug);
+  ensureRedirectIndex();
+  return redirectSourceSlugs!.has(slug);
 }
 
 export function isApprovedRedirectTargetSlug(slug: string): boolean {
-  return redirectTargetSlugs.has(slug);
+  ensureRedirectIndex();
+  return redirectTargetSlugs!.has(slug);
 }
 
 export function resolveProductionSlugForRedirectTarget(slug: string): string | null {
-  return productionSlugByTarget.get(slug) ?? null;
+  ensureRedirectIndex();
+  return productionSlugByTarget!.get(slug) ?? null;
 }
 
 export function getCanonicalIdForRedirectTarget(slug: string): string | null {
-  return canonicalIdByTarget.get(slug) ?? null;
+  ensureRedirectIndex();
+  return canonicalIdByTarget!.get(slug) ?? null;
 }
 
 export function getApprovedRedirectRecords(): readonly ApprovedRedirectRecord[] {
-  return approvedRedirectsDataset.redirects as ApprovedRedirectRecord[];
+  ensureRedirectIndex();
+  return approvedRedirectsDataset!.redirects;
 }
 
 export function getApprovedRedirectSourceSlugs(): ReadonlySet<string> {
-  return redirectSourceSlugs;
+  ensureRedirectIndex();
+  return redirectSourceSlugs!;
 }
 
 export function getApprovedRedirectTargetSlugs(): ReadonlySet<string> {
-  return redirectTargetSlugs;
+  ensureRedirectIndex();
+  return redirectTargetSlugs!;
 }
 
 export function getCanonicalEmojiSitemapSlugs(productionSlugs: readonly string[]): string[] {
+  ensureRedirectIndex();
   const canonical: string[] = [];
   for (const slug of productionSlugs) {
-    if (!redirectSourceSlugs.has(slug)) {
+    if (!redirectSourceSlugs!.has(slug)) {
       canonical.push(slug);
     }
   }
-  for (const targetSlug of redirectTargetSlugs) {
+  for (const targetSlug of redirectTargetSlugs!) {
     canonical.push(targetSlug);
   }
   return canonical;
@@ -95,7 +130,8 @@ export function resolveEmojiPageSlug(slug: string): {
   readonly lookupSlug: string;
   readonly canonicalSlug: string;
 } {
-  const productionAlias = productionSlugByTarget.get(slug);
+  ensureRedirectIndex();
+  const productionAlias = productionSlugByTarget!.get(slug);
   if (productionAlias) {
     return Object.freeze({
       lookupSlug: productionAlias,
@@ -113,7 +149,8 @@ export function measureRedirectLookupPerformance(): {
   readonly warmLookupMs: number;
   readonly lookupComplexity: "O(1)";
 } {
-  const sample = (approvedRedirectsDataset.redirects as ApprovedRedirectRecord[])[0]?.from ?? "/emoji/keycap";
+  ensureRedirectIndex();
+  const sample = approvedRedirectsDataset!.redirects[0]?.from ?? "/emoji/keycap";
   const coldStart = performance.now();
   resolveApprovedEmojiRedirect(sample);
   const coldMs = performance.now() - coldStart;

@@ -2,6 +2,10 @@ export const R2_ARTWORK_CACHE_CONTROL = "public, max-age=31536000, immutable" as
 export const R2_METADATA_CACHE_CONTROL = "public, max-age=3600, stale-while-revalidate=86400" as const;
 export const R2_API_DISABLED_CACHE_CONTROL = "no-store" as const;
 
+export function toBinaryResponseBody(bytes: Uint8Array): ArrayBuffer {
+  return bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) as ArrayBuffer;
+}
+
 export function artworkResponseHeaders(contentType: string, publiclyServed: boolean): HeadersInit {
   return {
     "Content-Type": contentType,

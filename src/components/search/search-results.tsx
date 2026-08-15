@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { useEmojiSearch } from "@/hooks/use-emoji-search";
 import { getBrowsableEmojiById } from "@/lib/emoji/browsable-data";
 import { isAmbiguousSearchQuery } from "@/lib/emoji/search-highlight";
+import { getSearchMatchLabel } from "@/lib/emoji/search-match";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 
 export function SearchResults() {
@@ -13,20 +14,28 @@ export function SearchResults() {
   const trimmedQuery = query.trim();
   const { results, isReady } = useEmojiSearch(trimmedQuery);
 
-  const emojis = useMemo(
-    () =>
-      results
-        .map((result) => getBrowsableEmojiById(result.emoji.id))
-        .filter((emoji): emoji is NonNullable<typeof emoji> => Boolean(emoji)),
-    [results],
-  );
+  const { emojis, matchLabelsById } = useMemo(() => {
+    const labels: Record<string, string> = {};
+    const resolved = results
+      .map((result) => {
+        const emoji = getBrowsableEmojiById(result.emoji.id);
+        if (!emoji) return null;
+        const label = getSearchMatchLabel(result.score);
+        if (label) labels[emoji.id] = label;
+        return emoji;
+      })
+      .filter((emoji): emoji is NonNullable<typeof emoji> => Boolean(emoji));
+
+    return { emojis: resolved, matchLabelsById: labels };
+  }, [results]);
 
   if (!trimmedQuery) {
     return (
       <div className="card-surface px-6 py-12 text-center">
         <p className="text-lg font-semibold">Start typing to search emojis</p>
         <p className="mt-2 text-sm text-muted">
-          Search by name, keyword, emoji character, hex code, or Unicode code point.
+          Search by name, keyword, meaning, synonym, emoji character, hex code, or Unicode code
+          point.
         </p>
       </div>
     );
@@ -61,7 +70,8 @@ export function SearchResults() {
       <EmojiGrid
         emojis={emojis}
         highlightQuery={trimmedQuery}
-        emptyMessage={`No emojis matched "${trimmedQuery}". Try another keyword or code point.`}
+        matchLabelsById={matchLabelsById}
+        emptyMessage={`No emojis matched "${trimmedQuery}". Try another keyword, meaning, or code point.`}
       />
     </div>
   );

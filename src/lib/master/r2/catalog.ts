@@ -1,19 +1,16 @@
-import { PRODUCTION_BASELINES } from "@/lib/master/integration/config";
-
 /**
  * MASTER DATA = all canonical identities in the frozen master release.
- * PUBLIC SEO CATALOG = currently approved production emoji pages only.
- *
- * Storage coverage and URL coverage are intentionally separate.
- *
- * R2 layers:
- * - FULL MASTER ARCHIVE (.r2-export-full/) = complete byte-for-byte preservation
- * - OPTIMIZED APPLICATION DATA (.r2-export/) = compact runtime shards for Worker/R2
+ * PUBLIC SEO CATALOG = all 6955 master identity pages (Phase 8.61).
  */
 export const MASTER_IDENTITY_COUNT = 6955 as const;
 export const MASTER_ARTWORK_RECORD_COUNT = 40071 as const;
-export const PUBLIC_SEO_EMOJI_PAGE_COUNT = PRODUCTION_BASELINES.totalSearchable;
-export const PUBLIC_SITEMAP_URL_COUNT = 4522 as const;
+/** Legacy browsable production dataset (emojis.json + openmoji-extras.json). */
+export const PRODUCTION_BROWSABLE_EMOJI_COUNT = 4486 as const;
+export const PUBLIC_SEO_EMOJI_PAGE_COUNT = MASTER_IDENTITY_COUNT;
+/** All identities minus 2 utility/support records (still have pages, not indexable). */
+export const PUBLIC_INDEXABLE_IDENTITY_COUNT = 6953 as const;
+/** 6955 emoji + 7 static + 29 category pages */
+export const PUBLIC_SITEMAP_URL_COUNT = 6991 as const;
 
 export function isPublicSeoCatalogSlug(slug: string, approvedSlugs: ReadonlySet<string>): boolean {
   return approvedSlugs.has(slug);

@@ -5,9 +5,11 @@ import { describe, it } from "node:test";
 import {
   MASTER_ARTWORK_RECORD_COUNT,
   MASTER_IDENTITY_COUNT,
+  PRODUCTION_BROWSABLE_EMOJI_COUNT,
   PUBLIC_SEO_EMOJI_PAGE_COUNT,
   PUBLIC_SITEMAP_URL_COUNT,
 } from "@/lib/master/r2/catalog";
+import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
 import { parseMasterR2Mode } from "@/lib/master/r2/config";
 import {
   buildArtworkStorageKey,
@@ -76,12 +78,13 @@ describe("master R2 catalog invariants", () => {
 
   it("keeps production emoji page count separate from master identities", () => {
     const emojis = getAllBrowsableEmojis();
-    assert.equal(emojis.length, PUBLIC_SEO_EMOJI_PAGE_COUNT);
-    assert.ok(PUBLIC_SEO_EMOJI_PAGE_COUNT < MASTER_IDENTITY_COUNT);
+    assert.equal(emojis.length, PRODUCTION_BROWSABLE_EMOJI_COUNT);
+    assert.equal(getAllIdentitySlugs().length, PUBLIC_SEO_EMOJI_PAGE_COUNT);
+    assert.ok(PUBLIC_SEO_EMOJI_PAGE_COUNT === MASTER_IDENTITY_COUNT);
   });
 
   it("keeps sitemap URL count stable", () => {
-    const sitemapCount = 7 + getAllCategorySlugs().length + getAllBrowsableEmojis().length;
+    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length;
     assert.equal(sitemapCount, PUBLIC_SITEMAP_URL_COUNT);
   });
 });
@@ -116,11 +119,11 @@ describe("master R2 feature flags and SEO safety", () => {
     assert.equal(parseMasterR2Mode("ENABLED"), "ENABLED");
   });
 
-  it("keeps master integration and SEO rollout disabled", () => {
+  it("keeps master integration SEO disabled while runtime flags enabled", () => {
     assert.equal(MASTER_INTEGRATION_CONFIG.masterSEOEnabled, false);
-    assert.equal(MASTER_INTEGRATION_CONFIG.masterArtworkEnabled, false);
-    assert.equal(MASTER_INTEGRATION_CONFIG.masterMetadataEnabled, false);
-    assert.equal(MASTER_INTEGRATION_CONFIG.masterSearchEnabled, false);
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterArtworkEnabled, true);
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterMetadataEnabled, true);
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterSearchEnabled, true);
     assert.equal(parseSeoRolloutMode(process.env.MASTER_SEO_ROLLOUT_MODE), "OFF");
   });
 });

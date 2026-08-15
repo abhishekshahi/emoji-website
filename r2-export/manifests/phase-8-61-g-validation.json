@@ -1,0 +1,237 @@
+{
+  "phase": "8.61-G",
+  "base": "https://emojiquick.com",
+  "concurrency": 6,
+  "verdict": "FAIL",
+  "total": 500,
+  "passed": 204,
+  "failed": 296,
+  "durationMs": 26172,
+  "sampleFailures": [
+    {
+      "slug": "ag",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ag-ag",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ai",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ai-ai",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "al-png-al",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "al-al",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "al-svg-al",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "am",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ao",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ao-png-ao",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ao-ao",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ao-svg-ao",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "aq-png-aq",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "aq-aq",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ar",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ar-png-ar",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "ar-svg-ar",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "as",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "as-png-as",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "at",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "at-png-at",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "at-at",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "at-svg-at",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "au",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    },
+    {
+      "slug": "au-png-au",
+      "issues": [
+        "HTTP 503",
+        "missing canonical",
+        "missing JSON-LD"
+      ],
+      "pass": false
+    }
+  ]
+}

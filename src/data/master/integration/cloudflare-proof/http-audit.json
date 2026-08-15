@@ -1,0 +1,49 @@
+{
+  "generatedAt": "2026-08-10T19:49:38.580Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "baseUrl": "https://emoji-website.emoji-website.workers.dev",
+  "offAudit": {
+    "generatedAt": "2026-08-10T19:49:37.289Z",
+    "phase": "8.12E",
+    "rolloutMode": "OFF",
+    "featureFlags": {
+      "masterArtworkEnabled": false,
+      "masterMetadataEnabled": false,
+      "masterSearchEnabled": false,
+      "masterSEOEnabled": false
+    },
+    "auditOnly": true,
+    "mode": "OFF",
+    "approvedRedirectCount": 2280,
+    "redirectFailureCount": 0,
+    "preservedFailureCount": 267,
+    "sampleRedirect": "/emoji/keycap",
+    "unknownStatus": 404,
+    "sitemapStatus": 503,
+    "offSlugCount": 4486,
+    "productionSlugCount": 4486,
+    "checks": {
+      "noApprovedRedirects": true,
+      "preservedUrlsOk": false,
+      "unknownNoRedirect": true,
+      "sitemapReachable": false,
+      "offUsesProductionSlugs": true,
+      "sampleSourceNoRedirect": true
+    },
+    "status": "FAIL"
+  },
+  "keycapStatus": 200,
+  "keycapLocation": null,
+  "fireStatus": 200,
+  "fireCanonical": "https://emojiquick.com/emoji/fire",
+  "status": "FAIL"
+}

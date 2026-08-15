@@ -1,36 +1,21 @@
 {
-  "generatedAt": "2026-08-09T22:29:16.498Z",
+  "generatedAt": "2026-08-10T17:02:29.632Z",
   "phase": "8.12E",
-  "rolloutMode": "OFF",
+  "releaseId": "master-8.10-20260809",
   "featureFlags": {
     "masterArtworkEnabled": false,
     "masterMetadataEnabled": false,
     "masterSearchEnabled": false,
     "masterSEOEnabled": false
   },
+  "provenance": "production-redirect-qa",
   "auditOnly": true,
-  "conclusion": "PHASE 8.12E CANARY VALIDATION COMPLETE",
-  "sections": {
-    "offBehaviorAudit": "PASS",
-    "defaultOffBehaviorAudit": "PASS",
-    "canaryHttpRedirectAudit": "PASS",
-    "redirectChainAudit": "PASS",
-    "preservedUrlHttpAudit": "PASS",
-    "excludedUrlAudit": "PASS",
-    "canonicalHttpAudit": "PASS",
-    "emojiUrlMatrixAudit": "PASS",
-    "redirectSecurityAudit": "PASS",
-    "redirectPerformanceAudit": "PASS",
-    "sitemapProductionAudit": "PASS",
-    "rollbackHttpAudit": "PASS",
-    "failureSafetyAudit": "PASS",
-    "offlineCanaryAudit": "PASS",
-    "comparisonAudit": "PASS"
-  },
+  "conclusion": "PHASE 8.12E READY FOR CONTROLLED CANARY — PRODUCTION SEO REMAINS DISABLED",
   "summary": {
     "approvedRedirects": 2280,
     "preservedUrls": 644,
     "excludedUrls": 10,
+    "rolloutMode": "OFF",
     "masterSEOEnabled": false
   },
   "status": "PASS"

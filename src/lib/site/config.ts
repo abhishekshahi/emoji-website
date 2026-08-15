@@ -3,6 +3,9 @@
  * Set NEXT_PUBLIC_SITE_URL in production for canonical URLs, sitemap, and Open Graph.
  */
 
+/** Public production hostname for canonicals, sitemap, robots, OG, Twitter, and JSON-LD. */
+export const PRODUCTION_SITE_URL = "https://emojiquick.com" as const;
+
 function trimTrailingSlash(url: string): string {
   return url.replace(/\/+$/, "");
 }
@@ -22,15 +25,15 @@ function resolveSiteUrl(): string {
     return `https://${vercelUrl}`;
   }
 
-  return "http://localhost:3000";
+  return PRODUCTION_SITE_URL;
 }
 
 export const SITE_URL = resolveSiteUrl();
 
-export const SITE_NAME = "EmojiFind";
+export const SITE_NAME = "EmojiQuick";
 
 export const SITE_DESCRIPTION =
-  "Search, copy, and discover emojis instantly. Browse categories, Unicode details, and OpenMoji artwork.";
+  "Search, copy, and discover emojis instantly. Browse Unicode emoji meanings, names, keywords, variants, artwork, and code points on EmojiQuick.";
 
 export const OPENMOJI_VERSION = "17.0.0";
 export const OPENMOJI_LICENSE = "CC BY-SA 4.0";

@@ -302,11 +302,10 @@ export async function searchPublicMasterFromR2(
   for (const match of productionMatches) {
     const canonicalId = resolveCanonicalIdFromHexcode(match.emoji.hexcode);
     if (!canonicalId) continue;
-    const search = await adapter.getSearch(canonicalId);
     pushCandidate({
       canonicalId,
-      character: search?.data?.emoji ?? match.emoji.emoji,
-      canonicalName: search?.data?.canonicalName ?? match.emoji.name,
+      character: match.emoji.emoji,
+      canonicalName: match.emoji.name,
       matchedField: "canonical-name",
       matchedTerm: match.emoji.name,
       score: Math.max(100, match.score),

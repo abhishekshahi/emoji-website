@@ -32,6 +32,7 @@ const SCORE = {
   EXACT_SHORTCODE: 800,
   EXACT_NAME: 700,
   EXACT_KEYWORD: 500,
+  SEMANTIC_MATCH: 350,
   PARTIAL_NAME: 300,
   PARTIAL_KEYWORD: 200,
   TOKEN_MATCH: 100,
@@ -69,12 +70,13 @@ function mergeSearchTerms(values: string[]): string[] {
   );
 }
 
-function toSearchableEmoji(emoji: BrowsableEmoji): SearchableEmoji {
+function toSearchableEmoji(emoji: BrowsableEmoji, extraSearchTerms: readonly string[] = []): SearchableEmoji {
   const isExtra = isOpenMojiExtra(emoji);
   const metadata = isExtra ? undefined : getEmojibaseMetadataByHexcode()[emoji.hexcode];
 
   const keywords = uniqueStrings([
     ...emoji.keywords,
+    ...extraSearchTerms,
     ...(metadata?.tags ?? []),
     emoji.name,
     emoji.slug.replace(/-/g, " "),
@@ -150,20 +152,29 @@ function buildTokenMap(entries: SearchableEmoji[]): Map<string, Set<number>> {
   return tokenMap;
 }
 
-export function createSearchIndex(emojis: BrowsableEmoji[]): SearchIndex {
-  const entries = emojis.map(toSearchableEmoji);
+export function createSearchIndex(
+  emojis: BrowsableEmoji[],
+  enrichmentTermsById: Readonly<Record<string, readonly string[]>> = {},
+): SearchIndex {
+  const entries = emojis.map((emoji) =>
+    toSearchableEmoji(emoji, enrichmentTermsById[emoji.id] ?? []),
+  );
   return {
     entries,
     tokenMap: buildTokenMap(entries),
   };
 }
 
-function getSearchIndex(emojis: BrowsableEmoji[]): SearchIndex {
+function getSearchIndex(
+  emojis: BrowsableEmoji[],
+  enrichmentTermsById: Readonly<Record<string, readonly string[]>> = {},
+): SearchIndex {
   const metadataCount = Object.keys(getEmojibaseMetadataByHexcode()).length;
-  const nextKey = `${emojis.length}:${metadataCount}`;
+  const enrichmentCount = Object.keys(enrichmentTermsById).length;
+  const nextKey = `${emojis.length}:${metadataCount}:${enrichmentCount}`;
 
   if (!searchIndex || searchIndexKey !== nextKey) {
-    searchIndex = createSearchIndex(emojis);
+    searchIndex = createSearchIndex(emojis, enrichmentTermsById);
     searchIndexKey = nextKey;
   }
 
@@ -256,6 +267,7 @@ export function searchEmojis(
   emojis: BrowsableEmoji[],
   query: string,
   limit = 120,
+  enrichmentTermsById: Readonly<Record<string, readonly string[]>> = {},
 ): SearchResult[] {
   const trimmedQuery = query.trim();
   const normalizedQuery = normalizeQuery(query);
@@ -264,7 +276,7 @@ export function searchEmojis(
     return [];
   }
 
-  const index = getSearchIndex(emojis);
+  const index = getSearchIndex(emojis, enrichmentTermsById);
   const candidateScores = new Map<number, number>();
   const shortcodeQuery = stripShortcodeDelimiters(trimmedQuery);
   const queryTokens = mergeSearchTerms([

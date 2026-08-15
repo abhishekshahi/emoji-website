@@ -1,0 +1,39 @@
+{
+  "phase": "8.61-I",
+  "completedAt": "2026-08-15T10:55:00+05:30",
+  "verdict": "FAIL",
+  "productionVersion": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "failedCandidates": [
+    "cafaa272-19b5-46e5-80b5-2cbd660e7ada",
+    "a2f62b01-a0e6-46f0-b7cb-11e294bb6752"
+  ],
+  "rollbackExecuted": true,
+  "rollbackReason": "503 error 1102 Worker resource limit exceeded after hybrid deploy",
+  "gzipUploadKiB": 2706.55,
+  "buildSSGRoutes": 4486,
+  "counts": {
+    "masterIdentities": 6955,
+    "publicEmojiPagesSSG": 4486,
+    "publicEmojiPagesOnDemand": 2469,
+    "sitemapUrlsExpected": 6991,
+    "sitemapUrlsProductionPostRollback": 4522,
+    "massValidationPassedBurst": 3050,
+    "massValidationTotal": 6955
+  },
+  "seoFullEnabled": false,
+  "scorecard": {
+    "A": "PASS",
+    "B": "PASS",
+    "C": "PASS",
+    "D": "PASS",
+    "E": "PASS",
+    "F": "PASS",
+    "G": "FAIL",
+    "H": "PASS",
+    "I": "FAIL"
+  },
+  "blockers": [
+    "Hybrid deploy caused sustained 503/1102 under Worker resource limits",
+    "Mass concurrent validation triggers rate-limit/resource exhaustion on on-demand R2 pages"
+  ]
+}

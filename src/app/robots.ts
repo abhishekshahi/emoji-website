@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl } from "@/lib/seo/metadata";
+import { canonicalUrl } from "@/lib/seo/metadata";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,9 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: ["/", "/emoji/", "/category/", "/popular", "/new", "/search", "/licenses", "/extras"],
-        disallow: ["/favorites", "/recent"],
+        disallow: ["/favorites", "/recent", "/api/*", "/catalog/", "/developers/"],
       },
     ],
-    sitemap: absoluteUrl("/sitemap.xml"),
+    sitemap: canonicalUrl("/sitemap.xml"),
   };
 }

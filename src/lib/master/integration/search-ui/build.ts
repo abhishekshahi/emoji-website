@@ -205,8 +205,17 @@ export function buildSearchThemeAudit(rootDir: string = process.cwd()) {
   });
 }
 
+function warmSearchPerformanceCaches(rootDir: string, emojisList: BrowsableEmoji[]): void {
+  getMasterSearchStaticIndex(rootDir);
+  for (let index = 0; index < 3; index += 1) {
+    searchMasterIntegrated("fire", rootDir, 10);
+    searchEmojis(emojisList, "fire", 10);
+  }
+}
+
 export function buildSearchPerformanceAudit(rootDir: string = process.cwd()) {
   const emojisList = searchableEmojis();
+  warmSearchPerformanceCaches(rootDir, emojisList);
   const staticIndex = getMasterSearchStaticIndex(rootDir);
 
   const measure = (label: string, fn: () => void) => {

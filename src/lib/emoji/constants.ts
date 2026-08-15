@@ -1,5 +1,17 @@
 export { SITE_NAME } from "@/lib/site/config";
 
+export const RELATED_CATEGORIES: Record<string, readonly string[]> = {
+  "smileys-emotion": ["people-body", "symbols", "animals-nature"],
+  "people-body": ["smileys-emotion", "activities", "symbols"],
+  "animals-nature": ["food-drink", "travel-places", "smileys-emotion"],
+  "food-drink": ["animals-nature", "objects", "activities"],
+  "travel-places": ["activities", "flags", "objects"],
+  activities: ["people-body", "travel-places", "objects"],
+  objects: ["symbols", "activities", "food-drink"],
+  symbols: ["smileys-emotion", "objects", "flags"],
+  flags: ["travel-places", "symbols"],
+};
+
 export const CATEGORY_LABELS: Record<string, string> = {
   "smileys-emotion": "Smileys & Emotion",
   "people-body": "People & Body",
@@ -22,6 +34,27 @@ export const CATEGORY_EMOJIS: Record<string, string> = {
   objects: "💡",
   symbols: "❤️",
   flags: "🏳️",
+};
+
+export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
+  "smileys-emotion":
+    "Explore faces, moods, and emotional symbols from the Unicode Smileys & Emotion group.",
+  "people-body":
+    "Browse people, gestures, professions, and body-related emojis from Unicode.",
+  "animals-nature":
+    "Discover animals, plants, weather, and nature emojis from the Unicode catalog.",
+  "food-drink":
+    "Find food, drinks, cooking, and meal emojis from the Unicode Food & Drink group.",
+  "travel-places":
+    "Browse travel, places, landmarks, and transport emojis from Unicode.",
+  activities:
+    "Explore sports, hobbies, games, and event emojis from the Unicode Activities group.",
+  objects:
+    "Find everyday objects, tools, technology, and household emojis from Unicode.",
+  symbols:
+    "Browse hearts, signs, shapes, and symbolic emojis from the Unicode Symbols group.",
+  flags:
+    "Explore country flags, regional indicators, and flag emojis from Unicode.",
 };
 
 export const POPULAR_EMOJI_SLUGS = [

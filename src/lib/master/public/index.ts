@@ -7,4 +7,6 @@ export * from "./catalog-service";
 export * from "./identity-service";
 export * from "./data-manifest";
 export * from "./edge-context";
+export * from "./identity-slug-map";
+export * from "./identity-page-resolver";
 export * from "./r2-service";

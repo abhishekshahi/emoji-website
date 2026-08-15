@@ -80,17 +80,19 @@ export function evaluateSeoPolicy(input: {
     });
   }
 
-  if (productionRecord && productionSlug) {
+  if (productionSlug) {
     return freezeDecision({
       canonicalId,
       identityType: canonical.identityType,
-      eligibility: "existing-production-page",
+      eligibility: productionRecord ? "existing-production-page" : "future-page",
       indexable: true,
       robots: "index,follow",
       sitemapEligible: true,
-      reason: canonical.identityType === "private-use"
-        ? "Existing OpenMoji extra page; not promoted to a Unicode identity."
-        : "Existing production emoji page.",
+      reason: productionRecord
+        ? canonical.identityType === "private-use"
+          ? "Existing OpenMoji extra page; not promoted to a Unicode identity."
+          : "Existing production emoji page."
+        : "Public master identity page (Phase 8.61).",
     });
   }
 

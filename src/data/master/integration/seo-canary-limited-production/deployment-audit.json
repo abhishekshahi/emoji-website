@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-08-10T17:03:48.490Z",
+  "phase": "8.12H",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "commitSha": "c6b41d442f07c4b3e06bec08b8a39a94aae2e5de",
+  "stableProductionUrl": "https://emoji-website-iiw154g0g-abhishekshahi4598-6592s-projects.vercel.app",
+  "canaryDeploymentUrl": null,
+  "environment": "production-canary",
+  "seoRolloutMode": "CANARY",
+  "masterSeoFeatureFlag": false,
+  "infrastructure": {
+    "hostingProvider": "vercel",
+    "projectId": "prj_Vp1SazV5jNIIDVqFsCnuTpb5zT47",
+    "projectName": "emoji-website",
+    "planSupportsRollingReleases": false,
+    "rollingReleaseConfigured": false,
+    "customProductionDomain": null,
+    "stableProductionUrl": "https://emoji-website-iiw154g0g-abhishekshahi4598-6592s-projects.vercel.app",
+    "canaryDeploymentCreated": false,
+    "requestedTrafficPercentage": 1,
+    "trafficSplitEnforced": false,
+    "blocker": "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Command failed: npx vercel rolling-release configure --enable --advancement-type=manual-approval --stage=1 --project=emoji-website\nVercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…\n Vercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…"
+  },
+  "checks": {
+    "commitRecorded": true,
+    "rolloutModeCanarySupported": true,
+    "masterSeoFlagFalse": true,
+    "masterArtworkFlagFalse": true,
+    "masterMetadataFlagFalse": true,
+    "masterSearchFlagFalse": true,
+    "stableProductionIdentified": true,
+    "canaryDeploymentSafeToCreate": false
+  },
+  "status": "BLOCKED"
+}
