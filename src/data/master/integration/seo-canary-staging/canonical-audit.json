@@ -1,77 +1,15 @@
 {
-  "generatedAt": "2026-08-10T16:22:49.497Z",
-  "phase": "8.12D",
+  "generatedAt": "2026-08-15T11:25:35.346Z",
+  "phase": "8.12G",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
-    "masterArtworkEnabled": false,
-    "masterMetadataEnabled": false,
-    "masterSearchEnabled": false,
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
     "masterSEOEnabled": false
   },
-  "provenance": "production-redirect-qa",
   "auditOnly": true,
-  "entries": [
-    {
-      "label": "migrated-source",
-      "path": "/emoji/keycap",
-      "status": 301,
-      "canonical": null,
-      "expectedCanonical": null,
-      "fireExists": true,
-      "failures": [],
-      "pass": true
-    },
-    {
-      "label": "migrated-target",
-      "path": "/emoji/e0-6-keycap-u0023fe0f20e3",
-      "status": 200,
-      "canonical": "https://emoji-website-9bf7nrcak-abhishekshahi4598-6592s-projects.vercel.app/emoji/e0-6-keycap-u0023fe0f20e3",
-      "expectedCanonical": "http://localhost:3000/emoji/e0-6-keycap-u0023fe0f20e3",
-      "fireExists": true,
-      "failures": [],
-      "pass": true
-    },
-    {
-      "label": "preserved-url",
-      "path": "/emoji/extra-goldfish",
-      "status": 200,
-      "canonical": "https://emoji-website-9bf7nrcak-abhishekshahi4598-6592s-projects.vercel.app/emoji/extra-goldfish",
-      "expectedCanonical": "http://localhost:3000/emoji/extra-goldfish",
-      "fireExists": true,
-      "failures": [],
-      "pass": true
-    },
-    {
-      "label": "extra-url",
-      "path": "/emoji/extra-hyphen-minus",
-      "status": 200,
-      "canonical": "https://emoji-website-9bf7nrcak-abhishekshahi4598-6592s-projects.vercel.app/emoji/extra-hyphen-minus",
-      "expectedCanonical": "http://localhost:3000/emoji/extra-hyphen-minus",
-      "fireExists": true,
-      "failures": [],
-      "pass": true
-    },
-    {
-      "label": "source-specific-url",
-      "path": "/emoji/extra-goldfish",
-      "status": 200,
-      "canonical": "https://emoji-website-9bf7nrcak-abhishekshahi4598-6592s-projects.vercel.app/emoji/extra-goldfish",
-      "expectedCanonical": "http://localhost:3000/emoji/extra-goldfish",
-      "fireExists": true,
-      "failures": [],
-      "pass": true
-    },
-    {
-      "label": "canonical-fire",
-      "path": "/emoji/fire",
-      "status": 200,
-      "canonical": "https://emoji-website-9bf7nrcak-abhishekshahi4598-6592s-projects.vercel.app/emoji/fire",
-      "expectedCanonical": "http://localhost:3000/emoji/fire",
-      "fireExists": true,
-      "failures": [],
-      "pass": true
-    }
-  ],
-  "failureCount": 0,
-  "status": "PASS"
+  "reason": "SEO_QA_BASE_URL is required for staging validation; SEO_CANARY_ENVIRONMENT must be set to staging; SEO_QA_OFF_BASE_URL is required for Phase 8.12G phased staging validation; SEO_QA_ROLLBACK_BASE_URL is required for Phase 8.12G phased staging validation",
+  "note": "HTTP audits not executed — staging deployment unavailable",
+  "status": "BLOCKED"
 }

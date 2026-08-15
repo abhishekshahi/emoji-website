@@ -11,11 +11,10 @@
   },
   "auditOnly": true,
   "mechanism": "Cloudflare Worker versions / redeploy previous version",
-  "vercelUntouched": true,
   "productionDnsUntouched": true,
   "customDomainUntouched": true,
   "workersDevUrl": "https://emoji-website.emoji-website.workers.dev",
   "rollbackAvailable": false,
-  "note": "Use wrangler versions deploy to roll back without affecting Vercel or production DNS.",
+  "note": "Use wrangler versions deploy to roll back without affecting production DNS.",
   "status": "FAIL"
 }

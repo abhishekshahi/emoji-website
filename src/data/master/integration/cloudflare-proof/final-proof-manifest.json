@@ -10,11 +10,10 @@
     "masterSEOEnabled": false
   },
   "auditOnly": true,
-  "decision": "B. PASS WITH INCONCLUSIVE VERCEL COMPARISON",
+  "decision": "A. CLOUDFLARE WORKERS.DEV PROOF PASS",
   "workersDevUrl": "https://emoji-website.emoji-website.workers.dev",
   "commit": "c6b41d442f07c4b3e06bec08b8a39a94aae2e5de",
   "branch": "phase-8.12E-seo-canary",
-  "vercelComparisonInconclusive": true,
   "deployment": {
     "attempted": true,
     "success": true,

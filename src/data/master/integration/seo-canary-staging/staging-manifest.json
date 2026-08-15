@@ -1,19 +1,18 @@
 {
-  "generatedAt": "2026-08-10T16:24:25.461Z",
+  "generatedAt": "2026-08-15T11:25:35.346Z",
   "phase": "8.12G",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
-    "masterArtworkEnabled": false,
-    "masterMetadataEnabled": false,
-    "masterSearchEnabled": false,
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
     "masterSEOEnabled": false
   },
   "auditOnly": true,
-  "decision": "A. STAGING CANARY PASS — READY FOR LIMITED TRAFFIC",
-  "environment": "staging",
-  "baseUrl": "https://emoji-website-9bf7nrcak-abhishekshahi4598-6592s-projects.vercel.app",
-  "offBaseUrl": "https://emoji-website-iiw154g0g-abhishekshahi4598-6592s-projects.vercel.app",
-  "rollbackBaseUrl": "https://emoji-website-9uv95npq9-abhishekshahi4598-6592s-projects.vercel.app",
+  "decision": "C. STAGING CANARY FAIL — DO NOT PROCEED",
+  "blocker": "SEO_QA_BASE_URL is required for staging validation; SEO_CANARY_ENVIRONMENT must be set to staging; SEO_QA_OFF_BASE_URL is required for Phase 8.12G phased staging validation; SEO_QA_ROLLBACK_BASE_URL is required for Phase 8.12G phased staging validation",
+  "environment": null,
+  "baseUrl": null,
   "outputs": {
     "stagingDeploymentAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/staging-deployment-audit.json",
     "httpRedirectAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/http-redirect-audit.json",
@@ -33,31 +32,23 @@
     "preservedUrls": 644,
     "excludedUrls": 10,
     "productionPages": 4486,
-    "redirectFailures": 0,
-    "preservedBreakdown": {
-      "KEEP_CURRENT_URL": 112,
-      "KEEP_EXTRA_URL": 179,
-      "KEEP_SOURCE_URL": 353
-    },
-    "masterSEOEnabled": false,
-    "rolloutMode": "CANARY",
-    "httpValidationExecuted": true
+    "httpValidationExecuted": false,
+    "masterSEOEnabled": false
   },
   "sections": {
-    "stagingDeploymentAudit": "PASS",
+    "stagingDeploymentAudit": "FAIL",
     "datasetAudit": "PASS",
-    "httpRedirectAudit": "PASS",
-    "preservedUrlAudit": "PASS",
-    "excludedUrlAudit": "PASS",
-    "canonicalAudit": "PASS",
-    "sitemapAudit": "PASS",
-    "emojiMatrixAudit": "PASS",
-    "securityAudit": "PASS",
-    "performanceAudit": "PASS",
-    "rollbackAudit": "PASS",
-    "offRollbackAudit": "PASS",
     "productionSafetyAudit": "PASS",
-    "redirectBundleAudit": "PASS"
+    "redirectBundleAudit": "PASS",
+    "httpRedirectAudit": "BLOCKED",
+    "preservedUrlAudit": "BLOCKED",
+    "excludedUrlAudit": "BLOCKED",
+    "canonicalAudit": "BLOCKED",
+    "sitemapAudit": "BLOCKED",
+    "emojiMatrixAudit": "BLOCKED",
+    "securityAudit": "BLOCKED",
+    "performanceAudit": "BLOCKED",
+    "rollbackAudit": "BLOCKED"
   },
-  "status": "PASS"
+  "status": "FAIL"
 }

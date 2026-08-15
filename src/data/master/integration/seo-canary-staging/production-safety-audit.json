@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-10T16:24:25.447Z",
+  "generatedAt": "2026-08-15T11:25:35.344Z",
   "phase": "8.12D",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
-    "masterArtworkEnabled": false,
-    "masterMetadataEnabled": false,
-    "masterSearchEnabled": false,
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
     "masterSEOEnabled": false
   },
   "provenance": "production-redirect-qa",

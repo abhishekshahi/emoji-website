@@ -1,21 +1,15 @@
 {
-  "generatedAt": "2026-08-10T16:23:07.334Z",
-  "phase": "8.12D",
+  "generatedAt": "2026-08-15T11:25:35.346Z",
+  "phase": "8.12G",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
-    "masterArtworkEnabled": false,
-    "masterMetadataEnabled": false,
-    "masterSearchEnabled": false,
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
     "masterSEOEnabled": false
   },
-  "provenance": "production-redirect-qa",
   "auditOnly": true,
-  "redirectLookup": {
-    "coldLookupMs": 0.03980000002775341,
-    "warmLookupMs": 0.0006171999999787658,
-    "lookupComplexity": "O(1)"
-  },
-  "sitemapGenerationMs": 2.6385000000009313,
-  "masterDatabasePerRequest": false,
-  "status": "PASS"
+  "reason": "SEO_QA_BASE_URL is required for staging validation; SEO_CANARY_ENVIRONMENT must be set to staging; SEO_QA_OFF_BASE_URL is required for Phase 8.12G phased staging validation; SEO_QA_ROLLBACK_BASE_URL is required for Phase 8.12G phased staging validation",
+  "note": "HTTP audits not executed — staging deployment unavailable",
+  "status": "BLOCKED"
 }

@@ -1,66 +1,15 @@
 {
-  "generatedAt": "2026-08-10T16:23:07.330Z",
-  "phase": "8.12D",
+  "generatedAt": "2026-08-15T11:25:35.346Z",
+  "phase": "8.12G",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
-    "masterArtworkEnabled": false,
-    "masterMetadataEnabled": false,
-    "masterSearchEnabled": false,
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
     "masterSEOEnabled": false
   },
-  "provenance": "production-redirect-qa",
   "auditOnly": true,
-  "entries": [
-    {
-      "path": "/emoji/../../evil",
-      "status": 404,
-      "location": null,
-      "resolved": null,
-      "pass": true
-    },
-    {
-      "path": "/emoji/%2e%2e%2f%2e%2e%2fevil",
-      "status": 400,
-      "location": null,
-      "resolved": null,
-      "pass": true
-    },
-    {
-      "path": "/emoji/unknown-arbitrary-slug-qa-security",
-      "status": 404,
-      "location": null,
-      "resolved": null,
-      "pass": true
-    },
-    {
-      "path": "/emoji/%2F%2Fevil.example",
-      "status": 404,
-      "location": null,
-      "resolved": null,
-      "pass": true
-    },
-    {
-      "path": "/emoji/../../../etc/passwd",
-      "status": 404,
-      "location": null,
-      "resolved": null,
-      "pass": true
-    },
-    {
-      "path": "https://evil.example/emoji/fire",
-      "status": null,
-      "location": null,
-      "resolved": null,
-      "pass": true
-    },
-    {
-      "path": "//evil.example/emoji/fire",
-      "status": null,
-      "location": null,
-      "resolved": null,
-      "pass": true
-    }
-  ],
-  "failureCount": 0,
-  "status": "PASS"
+  "reason": "SEO_QA_BASE_URL is required for staging validation; SEO_CANARY_ENVIRONMENT must be set to staging; SEO_QA_OFF_BASE_URL is required for Phase 8.12G phased staging validation; SEO_QA_ROLLBACK_BASE_URL is required for Phase 8.12G phased staging validation",
+  "note": "HTTP audits not executed — staging deployment unavailable",
+  "status": "BLOCKED"
 }

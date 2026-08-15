@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-08-10T16:24:25.461Z",
+  "generatedAt": "2026-08-15T11:25:35.346Z",
   "phase": "8.12G",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
-    "masterArtworkEnabled": false,
-    "masterMetadataEnabled": false,
-    "masterSearchEnabled": false,
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
     "masterSEOEnabled": false
   },
   "auditOnly": true,
-  "environment": "staging",
-  "baseUrl": "https://emoji-website-9bf7nrcak-abhishekshahi4598-6592s-projects.vercel.app",
-  "offBaseUrl": "https://emoji-website-iiw154g0g-abhishekshahi4598-6592s-projects.vercel.app",
-  "rollbackBaseUrl": "https://emoji-website-9uv95npq9-abhishekshahi4598-6592s-projects.vercel.app",
+  "environment": null,
+  "baseUrl": null,
+  "offBaseUrl": null,
+  "rollbackBaseUrl": null,
   "seoRolloutMode": "CANARY",
   "masterSeoFeatureFlag": false,
   "checks": {
-    "baseUrlConfigured": true,
-    "offBaseUrlConfigured": true,
-    "rollbackBaseUrlConfigured": true,
-    "environmentIsStaging": true,
+    "baseUrlConfigured": false,
+    "offBaseUrlConfigured": false,
+    "rollbackBaseUrlConfigured": false,
+    "environmentIsStaging": false,
     "rolloutModeCanarySupported": true,
     "masterSeoFlagFalse": true,
-    "masterArtworkFlagFalse": true,
-    "masterMetadataFlagFalse": true,
-    "masterSearchFlagFalse": true
+    "masterArtworkFlagFalse": false,
+    "masterMetadataFlagFalse": false,
+    "masterSearchFlagFalse": false
   },
-  "status": "PASS"
+  "status": "FAIL"
 }

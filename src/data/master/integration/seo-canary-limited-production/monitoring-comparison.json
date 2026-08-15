@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-10T17:03:48.491Z",
+  "generatedAt": "2026-08-15T11:25:33.615Z",
   "phase": "8.12H",
   "releaseId": "master-8.10-20260809",
   "featureFlags": {
-    "masterArtworkEnabled": false,
-    "masterMetadataEnabled": false,
-    "masterSearchEnabled": false,
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
     "masterSEOEnabled": false
   },
   "auditOnly": true,
   "note": "Monitoring comparison not executed - limited-production canary blocked before traffic routing",
   "canaryMonitoringAvailable": false,
   "stableMonitoringAvailable": false,
-  "blocker": "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Command failed: npx vercel rolling-release configure --enable --advancement-type=manual-approval --stage=1 --project=emoji-website\nVercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…\n Vercel CLI 58.9.0 (Node.js 24.18.0)\nRetrieving project…",
+  "blocker": "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Cloudflare Workers does not expose automated 1% production traffic routing in this repo. Configure canary routing manually via wrangler versions or Cloudflare dashboard.",
   "status": "BLOCKED"
 }
