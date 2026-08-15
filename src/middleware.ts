@@ -4,7 +4,7 @@ import { isSeoMigrationRolloutActive } from "@/lib/master/integration/seo-canary
 
 /** Public emoji HTML — safe to edge-cache (canonical URLs, no auth). */
 const PUBLIC_EMOJI_HTML_CACHE_CONTROL =
-  "public, max-age=3600, stale-while-revalidate=86400" as const;
+  "public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400" as const;
 
 function withPublicEmojiHtmlCache(response: NextResponse): NextResponse {
   response.headers.set("Cache-Control", PUBLIC_EMOJI_HTML_CACHE_CONTROL);

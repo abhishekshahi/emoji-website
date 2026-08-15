@@ -245,9 +245,11 @@ type PublicIdentityPayload = Readonly<{
 /** Bounded immutable cross-request cache — safe read-only after insert. */
 const PUBLIC_IDENTITY_PAYLOAD_CACHE_MAX = 512;
 const publicIdentityPayloadCache = new Map<string, PublicIdentityPayload>();
+const publicIdentityPayloadInflight = new Map<string, Promise<PublicIdentityPayload | null>>();
 
 export function resetPublicIdentityPayloadCache(): void {
   publicIdentityPayloadCache.clear();
+  publicIdentityPayloadInflight.clear();
 }
 
 function getCachedPublicIdentityPayload(canonicalId: string): PublicIdentityPayload | null {
@@ -270,32 +272,45 @@ function setCachedPublicIdentityPayload(canonicalId: string, payload: PublicIden
  * because master identity pages do not render them and the extra reads caused
  * Worker CPU/subrequest exhaustion (HTTP 1102) under concurrent on-demand load.
  */
-export const getPublicIdentityR2Payload = cache(async (canonicalId: string) => {
+async function fetchPublicIdentityPayload(canonicalId: string): Promise<PublicIdentityPayload | null> {
   const cached = getCachedPublicIdentityPayload(canonicalId);
   if (cached) {
     return cached;
   }
 
-  const adapter = await getMasterR2Adapter();
-  if (!adapter) return null;
-
-  const [identityResult, searchResult] = await Promise.all([
-    adapter.getIdentity(canonicalId),
-    adapter.getSearch(canonicalId),
-  ]);
-
-  if (!identityResult?.data && !searchResult?.data) {
-    return null;
+  const inflight = publicIdentityPayloadInflight.get(canonicalId);
+  if (inflight) {
+    return inflight;
   }
 
-  const payload = Object.freeze({
-    identity: identityResult?.data ?? null,
-    search: searchResult?.data ?? null,
-  }) as PublicIdentityPayload;
+  const promise = (async () => {
+    const adapter = await getMasterR2Adapter();
+    if (!adapter) return null;
 
-  setCachedPublicIdentityPayload(canonicalId, payload);
-  return payload;
-});
+    const identityResult = await adapter.getIdentity(canonicalId);
+    const identity = identityResult?.data ?? null;
+    const searchResult = identity ? null : await adapter.getSearch(canonicalId);
+
+    if (!identity && !searchResult?.data) {
+      return null;
+    }
+
+    const payload = Object.freeze({
+      identity,
+      search: searchResult?.data ?? null,
+    }) as PublicIdentityPayload;
+
+    setCachedPublicIdentityPayload(canonicalId, payload);
+    return payload;
+  })().finally(() => {
+    publicIdentityPayloadInflight.delete(canonicalId);
+  });
+
+  publicIdentityPayloadInflight.set(canonicalId, promise);
+  return promise;
+}
+
+export const getPublicIdentityR2Payload = cache(fetchPublicIdentityPayload);
 
 /** React request-level cache for emoji bundle reads. */
 export const getEmojiMasterBundle = cache(async (canonicalId: string) => {
