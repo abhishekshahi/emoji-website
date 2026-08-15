@@ -40,9 +40,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 !.env.example
+.dev.vars
+.env.vercel.preview
 
-# vercel
+# vercel (deprecated — production is Cloudflare-only)
 .vercel
+.env.vercel.preview
 
 # typescript
 *.tsbuildinfo

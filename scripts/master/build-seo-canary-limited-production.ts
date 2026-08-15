@@ -13,10 +13,13 @@ const outputDir = join(rootDir, "src", "data", "master", "integration", "seo-can
 
 const STABLE_PRODUCTION_URL =
   process.env.SEO_QA_STABLE_PRODUCTION_URL?.trim() ??
-  "https://emoji-website-iiw154g0g-abhishekshahi4598-6592s-projects.vercel.app";
-const PROJECT_ID = process.env.VERCEL_PROJECT_ID?.trim() ?? "prj_Vp1SazV5jNIIDVqFsCnuTpb5zT47";
+  "https://emojiquick.com";
+const PROJECT_ID = process.env.VERCEL_PROJECT_ID?.trim() ?? "deprecated-vercel-project";
 const PROJECT_NAME = process.env.VERCEL_PROJECT_NAME?.trim() ?? "emoji-website";
 const REQUESTED_TRAFFIC_PERCENTAGE = Number(process.env.SEO_CANARY_TRAFFIC_PERCENTAGE ?? "1");
+
+/** @deprecated Production is Cloudflare-only. Vercel rolling-release canary is no longer used. */
+const DEPRECATED = true;
 
 function writeJson(path: string, value: unknown): void {
   mkdirSync(dirname(path), { recursive: true });
@@ -32,6 +35,13 @@ function resolveCommitSha(): string {
 }
 
 function probeRollingReleaseSupport(): { supported: boolean; blocker: string } {
+  if (DEPRECATED) {
+    return {
+      supported: false,
+      blocker:
+        "DEPRECATED: Vercel rolling-release canary superseded by Cloudflare Workers version deploy. Use wrangler versions deploy for canary/rollback. See r2-export/CLOUDFLARE-ONLY-MIGRATION.md.",
+    };
+  }
   try {
     execSync(
       "npx vercel rolling-release configure --enable --advancement-type=manual-approval --stage=1 --project=emoji-website",
@@ -62,7 +72,7 @@ function main(): void {
   const commitSha = resolveCommitSha();
   const rollingRelease = probeRollingReleaseSupport();
   const infrastructure: LimitedProductionInfrastructureAudit = Object.freeze({
-    hostingProvider: "vercel",
+    hostingProvider: "cloudflare",
     projectId: PROJECT_ID,
     projectName: PROJECT_NAME,
     planSupportsRollingReleases: rollingRelease.supported,
