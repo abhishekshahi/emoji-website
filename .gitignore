@@ -41,11 +41,6 @@ yarn-error.log*
 .env*
 !.env.example
 .dev.vars
-.env.vercel.preview
-
-# vercel (deprecated — production is Cloudflare-only)
-.vercel
-.env.vercel.preview
 
 # typescript
 *.tsbuildinfo
@@ -57,5 +52,3 @@ next-env.d.ts
 /src/data/master/raw/vendor/
 # Logs
 *.log
-.vercel
-.env*

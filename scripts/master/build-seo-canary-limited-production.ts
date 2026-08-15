@@ -6,20 +6,17 @@ import {
   buildLimitedProductionBlockedPackage,
   type LimitedProductionInfrastructureAudit,
 } from "../../src/lib/master/integration/seo-canary-limited-production/build";
+import { PRODUCTION_SITE_URL } from "../../src/lib/site/config";
 
 const scriptsDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(scriptsDir, "..", "..");
 const outputDir = join(rootDir, "src", "data", "master", "integration", "seo-canary-limited-production");
 
 const STABLE_PRODUCTION_URL =
-  process.env.SEO_QA_STABLE_PRODUCTION_URL?.trim() ??
-  "https://emojiquick.com";
-const PROJECT_ID = process.env.VERCEL_PROJECT_ID?.trim() ?? "deprecated-vercel-project";
-const PROJECT_NAME = process.env.VERCEL_PROJECT_NAME?.trim() ?? "emoji-website";
+  process.env.SEO_QA_STABLE_PRODUCTION_URL?.trim() ?? PRODUCTION_SITE_URL;
 const REQUESTED_TRAFFIC_PERCENTAGE = Number(process.env.SEO_CANARY_TRAFFIC_PERCENTAGE ?? "1");
-
-/** @deprecated Production is Cloudflare-only. Vercel rolling-release canary is no longer used. */
-const DEPRECATED = true;
+const LIMITED_PRODUCTION_BLOCKER =
+  "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Cloudflare Workers does not expose automated 1% production traffic routing in this repo. Configure canary routing manually via wrangler versions or Cloudflare dashboard.";
 
 function writeJson(path: string, value: unknown): void {
   mkdirSync(dirname(path), { recursive: true });
@@ -34,89 +31,48 @@ function resolveCommitSha(): string {
   }
 }
 
-function probeRollingReleaseSupport(): { supported: boolean; blocker: string } {
-  if (DEPRECATED) {
-    return {
-      supported: false,
-      blocker:
-        "DEPRECATED: Vercel rolling-release canary superseded by Cloudflare Workers version deploy. Use wrangler versions deploy for canary/rollback. See r2-export/CLOUDFLARE-ONLY-MIGRATION.md.",
-    };
-  }
-  try {
-    execSync(
-      "npx vercel rolling-release configure --enable --advancement-type=manual-approval --stage=1 --project=emoji-website",
-      { cwd: rootDir, encoding: "utf8", stdio: "pipe" },
-    );
-    return { supported: true, blocker: "" };
-  } catch (error) {
-    const stderr =
-      typeof error === "object" && error !== null && "stderr" in error
-        ? String((error as { stderr?: string }).stderr ?? "")
-        : "";
-    const message = `${error instanceof Error ? error.message : String(error)} ${stderr}`;
-    if (message.includes("does not support rolling releases")) {
-      return {
-        supported: false,
-        blocker:
-          "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Vercel Hobby plan does not support Rolling Releases (403). Cannot guarantee 1% production traffic routing.",
-      };
-    }
-    return {
-      supported: false,
-      blocker: `LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: ${message.trim()}`,
-    };
-  }
-}
-
 function main(): void {
   const commitSha = resolveCommitSha();
-  const rollingRelease = probeRollingReleaseSupport();
   const infrastructure: LimitedProductionInfrastructureAudit = Object.freeze({
     hostingProvider: "cloudflare",
-    projectId: PROJECT_ID,
-    projectName: PROJECT_NAME,
-    planSupportsRollingReleases: rollingRelease.supported,
+    projectId: process.env.CLOUDFLARE_ACCOUNT_ID?.trim() ?? null,
+    projectName: process.env.CLOUDFLARE_WORKER_NAME?.trim() ?? "emoji-website",
+    planSupportsRollingReleases: false,
     rollingReleaseConfigured: false,
-    customProductionDomain: null,
+    customProductionDomain: PRODUCTION_SITE_URL,
     stableProductionUrl: STABLE_PRODUCTION_URL,
     canaryDeploymentCreated: false,
     requestedTrafficPercentage: REQUESTED_TRAFFIC_PERCENTAGE,
-    trafficSplitEnforced: rollingRelease.supported,
-    blocker: rollingRelease.blocker,
+    trafficSplitEnforced: false,
+    blocker: LIMITED_PRODUCTION_BLOCKER,
   });
 
   console.log("Phase 8.12H - limited-production SEO canary preflight");
   console.log(`  Commit: ${commitSha}`);
   console.log(`  Stable production: ${STABLE_PRODUCTION_URL}`);
   console.log(`  Requested traffic: ${REQUESTED_TRAFFIC_PERCENTAGE}%`);
-  console.log(`  Rolling releases supported: ${rollingRelease.supported}`);
+  console.log(`  Hosting provider: cloudflare`);
 
-  if (!rollingRelease.supported) {
-    const blocked = buildLimitedProductionBlockedPackage(rootDir, infrastructure, {
-      commitSha,
-      stableProductionUrl: STABLE_PRODUCTION_URL,
-    });
-    writeJson(join(outputDir, "deployment-audit.json"), blocked.deploymentAudit);
-    writeJson(join(outputDir, "traffic-split-audit.json"), blocked.trafficSplitAudit);
-    writeJson(join(outputDir, "http-redirect-audit.json"), blocked.httpRedirectAudit);
-    writeJson(join(outputDir, "preserved-url-audit.json"), blocked.preservedUrlAudit);
-    writeJson(join(outputDir, "excluded-url-audit.json"), blocked.excludedUrlAudit);
-    writeJson(join(outputDir, "canonical-audit.json"), blocked.canonicalAudit);
-    writeJson(join(outputDir, "sitemap-audit.json"), blocked.sitemapAudit);
-    writeJson(join(outputDir, "emoji-matrix-audit.json"), blocked.emojiMatrixAudit);
-    writeJson(join(outputDir, "security-audit.json"), blocked.securityAudit);
-    writeJson(join(outputDir, "performance-audit.json"), blocked.performanceAudit);
-    writeJson(join(outputDir, "production-safety-audit.json"), blocked.productionSafetyAudit);
-    writeJson(join(outputDir, "rollback-audit.json"), blocked.rollbackAudit);
-    writeJson(join(outputDir, "monitoring-comparison.json"), blocked.monitoringComparison);
-    writeJson(join(outputDir, "final-canary-manifest.json"), blocked.finalCanaryManifest);
-    console.error(infrastructure.blocker);
-    console.error(`Decision: ${blocked.decision}`);
-    process.exitCode = 1;
-    return;
-  }
-
-  console.error("Rolling release support detected but automated limited-production flow is not implemented.");
+  const blocked = buildLimitedProductionBlockedPackage(rootDir, infrastructure, {
+    commitSha,
+    stableProductionUrl: STABLE_PRODUCTION_URL,
+  });
+  writeJson(join(outputDir, "deployment-audit.json"), blocked.deploymentAudit);
+  writeJson(join(outputDir, "traffic-split-audit.json"), blocked.trafficSplitAudit);
+  writeJson(join(outputDir, "http-redirect-audit.json"), blocked.httpRedirectAudit);
+  writeJson(join(outputDir, "preserved-url-audit.json"), blocked.preservedUrlAudit);
+  writeJson(join(outputDir, "excluded-url-audit.json"), blocked.excludedUrlAudit);
+  writeJson(join(outputDir, "canonical-audit.json"), blocked.canonicalAudit);
+  writeJson(join(outputDir, "sitemap-audit.json"), blocked.sitemapAudit);
+  writeJson(join(outputDir, "emoji-matrix-audit.json"), blocked.emojiMatrixAudit);
+  writeJson(join(outputDir, "security-audit.json"), blocked.securityAudit);
+  writeJson(join(outputDir, "performance-audit.json"), blocked.performanceAudit);
+  writeJson(join(outputDir, "production-safety-audit.json"), blocked.productionSafetyAudit);
+  writeJson(join(outputDir, "rollback-audit.json"), blocked.rollbackAudit);
+  writeJson(join(outputDir, "monitoring-comparison.json"), blocked.monitoringComparison);
+  writeJson(join(outputDir, "final-canary-manifest.json"), blocked.finalCanaryManifest);
+  console.error(infrastructure.blocker);
+  console.error(`Decision: ${blocked.decision}`);
   process.exitCode = 1;
 }
 

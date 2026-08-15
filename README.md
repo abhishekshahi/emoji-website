@@ -94,6 +94,4 @@ npm run audit:production
 npm run master:build-cloudflare-proof
 ```
 
-## Vercel (deprecated)
-
-Vercel was used for early hosting and SEO canary experiments (Phase 8.12H). **All production traffic is on Cloudflare.** Vercel deploy paths, `.vercelignore`, and rolling-release canary scripts are deprecated. See `r2-export/CLOUDFLARE-ONLY-MIGRATION.md` for the migration record.
+See `r2-export/CLOUDFLARE-ONLY-MIGRATION.md` for the Cloudflare-only migration record.

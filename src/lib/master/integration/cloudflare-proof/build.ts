@@ -17,7 +17,6 @@ import type { FileChecksumEntry } from "@/lib/master/release/types";
 
 export type CloudflareProofDecision =
   | "A. CLOUDFLARE WORKERS.DEV PROOF PASS"
-  | "B. PASS WITH INCONCLUSIVE VERCEL COMPARISON"
   | "C. BLOCKED"
   | "D. FAILED";
 
@@ -285,12 +284,11 @@ export function buildRollbackAudit(deployment: CloudflareDeploymentResult) {
   const pass = deployment.authenticated && deployment.success;
   return proofEnvelope(pass ? "PASS" : deployment.authenticated ? "FAIL" : "BLOCKED", {
     mechanism: "Cloudflare Worker versions / redeploy previous version",
-    vercelUntouched: true,
     productionDnsUntouched: true,
     customDomainUntouched: true,
     workersDevUrl: deployment.workersDevUrl,
     rollbackAvailable: pass,
-    note: "Use wrangler versions deploy to roll back without affecting Vercel or production DNS.",
+    note: "Use wrangler versions deploy to roll back without affecting production DNS.",
   });
 }
 
@@ -333,7 +331,6 @@ export function classifyCloudflareProofDecision(input: {
   routeAudit: { status: ProofStatus };
   seoOffAudit: { status: ProofStatus };
   securityAudit: { status: ProofStatus };
-  vercelComparisonInconclusive: boolean;
 }): CloudflareProofDecision {
   if (!input.deployment.authenticated) {
     return "C. BLOCKED";
@@ -350,9 +347,6 @@ export function classifyCloudflareProofDecision(input: {
   if (!corePass) {
     return "D. FAILED";
   }
-  if (input.vercelComparisonInconclusive) {
-    return "B. PASS WITH INCONCLUSIVE VERCEL COMPARISON";
-  }
   return "A. CLOUDFLARE WORKERS.DEV PROOF PASS";
 }
 
@@ -360,9 +354,8 @@ export async function buildCloudflareProofPackage(input: {
   rootDir: string;
   metrics: CloudflareBuildMetrics;
   deployment: CloudflareDeploymentResult;
-  vercelComparisonInconclusive: boolean;
 }) {
-  const { rootDir, metrics, deployment, vercelComparisonInconclusive } = input;
+  const { rootDir, metrics, deployment } = input;
   const { cloudflareProofIntegrationDir } = integrationDataPaths(rootDir);
   const baseUrl = deployment.workersDevUrl ?? process.env.CLOUDFLARE_PROOF_BASE_URL ?? "";
 
@@ -391,7 +384,6 @@ export async function buildCloudflareProofPackage(input: {
     routeAudit,
     seoOffAudit,
     securityAudit,
-    vercelComparisonInconclusive,
   });
 
   const manifest = proofEnvelope(decision.startsWith("C") || decision.startsWith("D") ? "FAIL" : "PASS", {
@@ -399,7 +391,6 @@ export async function buildCloudflareProofPackage(input: {
     workersDevUrl: deployment.workersDevUrl,
     commit: deployment.commit,
     branch: deployment.branch,
-    vercelComparisonInconclusive,
     deployment,
     metrics,
   });

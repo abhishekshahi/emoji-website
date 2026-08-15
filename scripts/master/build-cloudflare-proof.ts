@@ -8,7 +8,6 @@ import {
   type CloudflareBuildMetrics,
   type CloudflareDeploymentResult,
 } from "../../src/lib/master/integration/cloudflare-proof/build";
-import { probeUrl } from "../../src/lib/master/integration/seo-migration-production-qa/http-client";
 
 const scriptsDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(scriptsDir, "..", "..");
@@ -139,18 +138,10 @@ async function main(): Promise<void> {
     }
   }
 
-  let vercelComparisonInconclusive = true;
-  const vercelBase = process.env.SEO_QA_OFF_BASE_URL?.trim();
-  if (vercelBase && deployment.workersDevUrl) {
-    const vercelProbe = await probeUrl(vercelBase, "/emoji/fire", { followRedirects: false });
-    vercelComparisonInconclusive = vercelProbe.status === 302 || vercelProbe.status === 401 || vercelProbe.status === 403;
-  }
-
   const proofPackage = await buildCloudflareProofPackage({
     rootDir,
     metrics,
     deployment,
-    vercelComparisonInconclusive,
   });
 
   for (const [filename, payload] of Object.entries(proofPackage.artifacts)) {
