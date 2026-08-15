@@ -237,6 +237,33 @@ export function resetMasterR2AdapterCache(): void {
   adapterSingleton = null;
 }
 
+type PublicIdentityPayload = Readonly<{
+  identity: CanonicalIdentityRecord | null;
+  search: CanonicalSearchRecord | null;
+}>;
+
+/** Bounded immutable cross-request cache — safe read-only after insert. */
+const PUBLIC_IDENTITY_PAYLOAD_CACHE_MAX = 512;
+const publicIdentityPayloadCache = new Map<string, PublicIdentityPayload>();
+
+export function resetPublicIdentityPayloadCache(): void {
+  publicIdentityPayloadCache.clear();
+}
+
+function getCachedPublicIdentityPayload(canonicalId: string): PublicIdentityPayload | null {
+  return publicIdentityPayloadCache.get(canonicalId) ?? null;
+}
+
+function setCachedPublicIdentityPayload(canonicalId: string, payload: PublicIdentityPayload): void {
+  if (publicIdentityPayloadCache.size >= PUBLIC_IDENTITY_PAYLOAD_CACHE_MAX) {
+    const oldest = publicIdentityPayloadCache.keys().next().value;
+    if (oldest) {
+      publicIdentityPayloadCache.delete(oldest);
+    }
+  }
+  publicIdentityPayloadCache.set(canonicalId, payload);
+}
+
 /**
  * Minimal request-scoped R2 payload for public emoji pages.
  * Fetches only identity + search (2 reads) — metadata/semantic are omitted
@@ -244,6 +271,11 @@ export function resetMasterR2AdapterCache(): void {
  * Worker CPU/subrequest exhaustion (HTTP 1102) under concurrent on-demand load.
  */
 export const getPublicIdentityR2Payload = cache(async (canonicalId: string) => {
+  const cached = getCachedPublicIdentityPayload(canonicalId);
+  if (cached) {
+    return cached;
+  }
+
   const adapter = await getMasterR2Adapter();
   if (!adapter) return null;
 
@@ -256,10 +288,13 @@ export const getPublicIdentityR2Payload = cache(async (canonicalId: string) => {
     return null;
   }
 
-  return Object.freeze({
+  const payload = Object.freeze({
     identity: identityResult?.data ?? null,
     search: searchResult?.data ?? null,
-  });
+  }) as PublicIdentityPayload;
+
+  setCachedPublicIdentityPayload(canonicalId, payload);
+  return payload;
 });
 
 /** React request-level cache for emoji bundle reads. */

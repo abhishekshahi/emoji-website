@@ -194,6 +194,8 @@ describe("Phase 8.52 master R2 adapter", () => {
       if (originalMode === undefined) delete process.env.MASTER_R2_MODE;
       else process.env.MASTER_R2_MODE = originalMode;
       resetMasterR2AdapterCache();
+      const { resetPublicIdentityPayloadCache } = await import("@/lib/r2");
+      resetPublicIdentityPayloadCache();
     }
   });
 
@@ -234,6 +236,8 @@ describe("Phase 8.52 master R2 adapter", () => {
       if (originalMode === undefined) delete process.env.MASTER_R2_MODE;
       else process.env.MASTER_R2_MODE = originalMode;
       resetMasterR2AdapterCache();
+      const { resetPublicIdentityPayloadCache } = await import("@/lib/r2");
+      resetPublicIdentityPayloadCache();
     }
   });
 });

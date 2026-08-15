@@ -41,8 +41,12 @@ import {
   isActiveApprovedRedirectSourceSlug,
   resolveActiveEmojiPageSlug,
 } from "@/lib/master/integration/seo-canary/active-migration";
-import { resolveEmojiPage } from "@/lib/master/public/identity-page-resolver";
 import { createMasterIdentityPageMetadata } from "@/lib/seo/metadata";
+
+async function resolveOnDemandEmojiPage(slug: string) {
+  const { resolveEmojiPage } = await import("@/lib/master/public/identity-page-resolver");
+  return resolveEmojiPage(slug);
+}
 
 interface EmojiPageProps {
   params: Promise<{ slug: string }>;
@@ -85,7 +89,7 @@ export async function generateMetadata({
     });
   }
 
-  const resolved = await resolveEmojiPage(canonicalSlug);
+  const resolved = await resolveOnDemandEmojiPage(canonicalSlug);
   if (resolved?.kind === "master-identity" && resolved.identity) {
     return createMasterIdentityPageMetadata({
       name: resolved.identity.officialName,
@@ -108,7 +112,7 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   const emoji = getBrowsableEmojiBySlug(lookupSlug);
 
   if (!emoji) {
-    const resolved = await resolveEmojiPage(canonicalSlug);
+    const resolved = await resolveOnDemandEmojiPage(canonicalSlug);
     if (resolved?.kind === "master-identity" && resolved.identity) {
       return <MasterIdentityDetailPage slug={canonicalSlug} identity={resolved.identity} />;
     }

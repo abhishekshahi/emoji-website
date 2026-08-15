@@ -1,9 +1,7 @@
 import { cache } from "react";
 import { getBrowsableEmojiBySlug } from "@/lib/emoji/browsable-data";
 import { isUtilityCanonicalId } from "@/lib/master/integration/seo/policy";
-import { buildPublicIdentityResponse } from "@/lib/master/public/identity-service";
 import { getCanonicalIdForSlug, getIdentitySlugEntry } from "@/lib/master/public/identity-slug-map";
-import { buildPublicIdentityResponseFromR2 } from "@/lib/master/public/r2-service";
 import type { PublicIdentityResponse } from "@/lib/master/public/types";
 import { shouldReadFromR2Binding } from "@/lib/master/r2/config";
 
@@ -69,8 +67,12 @@ async function resolveEmojiPageUncached(slug: string): Promise<EmojiPageResoluti
   }
 
   const identity = shouldReadFromR2Binding()
-    ? await buildPublicIdentityResponseFromR2(canonicalId)
-    : buildPublicIdentityResponse(canonicalId);
+    ? await (await import("@/lib/master/public/r2-identity-loader")).buildPublicIdentityResponseFromR2(
+        canonicalId,
+      )
+    : (await import("@/lib/master/public/identity-service")).buildPublicIdentityResponse(
+        canonicalId,
+      );
 
   const resolvedIdentity =
     identity ??
