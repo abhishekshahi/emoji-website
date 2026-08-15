@@ -23,6 +23,7 @@ export {
   getMasterR2Adapter,
   resetMasterR2AdapterCache,
   getEmojiMasterBundle,
+  getPublicIdentityR2Payload,
   getArtworkBinaryForRecord,
 } from "./master-r2";
 export type { MasterR2Options } from "./master-r2";

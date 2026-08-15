@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { getBrowsableEmojiBySlug } from "@/lib/emoji/browsable-data";
 import { isUtilityCanonicalId } from "@/lib/master/integration/seo/policy";
 import { buildPublicIdentityResponse } from "@/lib/master/public/identity-service";
@@ -53,7 +54,7 @@ function buildFallbackIdentity(canonicalId: string, slug: string, name: string):
   });
 }
 
-export async function resolveEmojiPage(slug: string): Promise<EmojiPageResolution | null> {
+async function resolveEmojiPageUncached(slug: string): Promise<EmojiPageResolution | null> {
   const canonicalId = getCanonicalIdForSlug(slug);
   if (!canonicalId) {
     return null;
@@ -89,3 +90,6 @@ export async function resolveEmojiPage(slug: string): Promise<EmojiPageResolutio
     identity: resolvedIdentity,
   });
 }
+
+/** Dedupes generateMetadata + page render within the same request. */
+export const resolveEmojiPage = cache(resolveEmojiPageUncached);

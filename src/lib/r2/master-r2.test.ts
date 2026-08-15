@@ -164,4 +164,76 @@ describe("Phase 8.52 master R2 adapter", () => {
       assert.ok(!key.toLowerCase().includes("cloudflare_api"));
     }
   });
+
+  it("loads cached public identity payload for on-demand pages", async () => {
+    if (!existsSync(join(exportRoot, "search"))) {
+      return;
+    }
+
+    const originalMode = process.env.MASTER_R2_MODE;
+    process.env.MASTER_R2_MODE = "ENABLED";
+    try {
+      const { getPublicIdentityR2Payload } = await import("@/lib/r2");
+      const { buildPublicIdentityResponseFromR2 } = await import("@/lib/master/public/r2-service");
+      const { resolveEmojiPage } = await import("@/lib/master/public/identity-page-resolver");
+      const canonicalId = "source:noto:-CA";
+      const first = await getPublicIdentityR2Payload(canonicalId);
+      const second = await getPublicIdentityR2Payload(canonicalId);
+      assert.ok(first);
+      assert.deepEqual(first, second);
+
+      const resolved = await resolveEmojiPage("ca");
+      assert.ok(resolved);
+      assert.equal(resolved?.kind, "master-identity");
+      assert.equal(resolved?.canonicalId, canonicalId);
+
+      const identity = await buildPublicIdentityResponseFromR2(canonicalId);
+      assert.ok(identity);
+      assert.equal(identity?.semanticTerms.length, 0);
+    } finally {
+      if (originalMode === undefined) delete process.env.MASTER_R2_MODE;
+      else process.env.MASTER_R2_MODE = originalMode;
+      resetMasterR2AdapterCache();
+    }
+  });
+
+  it("resolves 100 on-demand pages concurrently from local r2-export", async () => {
+    if (!existsSync(join(exportRoot, "search"))) {
+      return;
+    }
+
+    const originalMode = process.env.MASTER_R2_MODE;
+    process.env.MASTER_R2_MODE = "ENABLED";
+    try {
+      const { readFileSync } = await import("node:fs");
+      const { resolveEmojiPage } = await import("@/lib/master/public/identity-page-resolver");
+      const slugMap = JSON.parse(
+        readFileSync(join(rootDir, "src/data/master/integration/identity-slug-map.json"), "utf8"),
+      ) as { entries: Array<{ slug: string }> };
+      const browsable = new Set(
+        JSON.parse(readFileSync(join(rootDir, "src/data/emojis.json"), "utf8")).map(
+          (entry: { slug: string }) => entry.slug,
+        ),
+      );
+      const slugs = slugMap.entries
+        .map((entry) => entry.slug)
+        .filter((slug) => !browsable.has(slug))
+        .slice(0, 100);
+
+      const started = Date.now();
+      const results = await Promise.all(
+        slugs.map(async (slug) => {
+          const resolved = await resolveEmojiPage(slug);
+          return { slug, ok: Boolean(resolved?.identity) };
+        }),
+      );
+      const failed = results.filter((result) => !result.ok);
+      assert.equal(failed.length, 0, `failed slugs: ${failed.slice(0, 5).map((entry) => entry.slug).join(", ")}`);
+      assert.ok(Date.now() - started < 60000, "100 concurrent local resolutions took too long");
+    } finally {
+      if (originalMode === undefined) delete process.env.MASTER_R2_MODE;
+      else process.env.MASTER_R2_MODE = originalMode;
+      resetMasterR2AdapterCache();
+    }
+  });
 });

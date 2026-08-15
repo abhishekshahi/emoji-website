@@ -237,6 +237,31 @@ export function resetMasterR2AdapterCache(): void {
   adapterSingleton = null;
 }
 
+/**
+ * Minimal request-scoped R2 payload for public emoji pages.
+ * Fetches only identity + search (2 reads) — metadata/semantic are omitted
+ * because master identity pages do not render them and the extra reads caused
+ * Worker CPU/subrequest exhaustion (HTTP 1102) under concurrent on-demand load.
+ */
+export const getPublicIdentityR2Payload = cache(async (canonicalId: string) => {
+  const adapter = await getMasterR2Adapter();
+  if (!adapter) return null;
+
+  const [identityResult, searchResult] = await Promise.all([
+    adapter.getIdentity(canonicalId),
+    adapter.getSearch(canonicalId),
+  ]);
+
+  if (!identityResult?.data && !searchResult?.data) {
+    return null;
+  }
+
+  return Object.freeze({
+    identity: identityResult?.data ?? null,
+    search: searchResult?.data ?? null,
+  });
+});
+
 /** React request-level cache for emoji bundle reads. */
 export const getEmojiMasterBundle = cache(async (canonicalId: string) => {
   const adapter = await getMasterR2Adapter();

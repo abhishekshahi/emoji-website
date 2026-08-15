@@ -1,0 +1,49 @@
+{
+  "phase": "8.61-runtime-hardening",
+  "completedAt": "2026-08-15T11:45:00+05:30",
+  "verdict": "FIX_APPLIED_LOCAL_PASS",
+  "productionVersion": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "deployed": false,
+  "deployReadiness": "NO",
+  "rootCause": "Double resolveEmojiPage (generateMetadata + page) × 4 R2 reads per call caused Worker CPU/subrequest exhaustion (1102) under concurrent on-demand load",
+  "fixSummary": [
+    "React cache() on resolveEmojiPage",
+    "getPublicIdentityR2Payload with identity+search only (2 reads)",
+    "Removed metadata/semantic fetch from public page path"
+  ],
+  "resourceImprovement": {
+    "r2ReadsPerOnDemandPageBefore": 8,
+    "r2ReadsPerOnDemandPageAfter": 2,
+    "reductionPercent": 75
+  },
+  "localGates": {
+    "typecheck": "PASS",
+    "targetedTests": "PASS_24_OF_25",
+    "onDemandSlugSingle": "PASS",
+    "onDemandSlugsConcurrent100": {
+      "verdict": "PASS",
+      "passed": 100,
+      "total": 100,
+      "durationMs": 208
+    },
+    "httpPreviewConcurrency24": "NOT_RUN",
+    "massValidation6955": "NOT_RUN"
+  },
+  "error1102Status": {
+    "productionRollback": "HEALTHY",
+    "preFixCandidate": "FAIL_3050_OF_6955_AT_C24",
+    "postFixCloudflare": "UNVERIFIED"
+  },
+  "blockers": [
+    "Preview worker concurrent probe at c=24 not executed",
+    "Candidate build:cf not produced in this pass",
+    "Full 6955 mass validation deferred"
+  ],
+  "filesChanged": [
+    "src/lib/r2/master-r2.ts",
+    "src/lib/r2/index.ts",
+    "src/lib/master/public/r2-service.ts",
+    "src/lib/master/public/identity-page-resolver.ts",
+    "src/lib/r2/master-r2.test.ts"
+  ]
+}

@@ -7,7 +7,7 @@ import { searchEmojis } from "@/lib/emoji/search";
 import { isUtilityCanonicalId } from "@/lib/master/integration/seo/policy";
 import { PROVIDER_LABELS } from "@/lib/master/integration/ui/attribution";
 import { MASTER_IDENTITY_COUNT } from "@/lib/master/r2/catalog";
-import { getMasterR2Adapter } from "@/lib/r2";
+import { getMasterR2Adapter, getPublicIdentityR2Payload } from "@/lib/r2";
 import { MasterDataUnavailableError, MasterObjectNotFoundError } from "@/lib/r2";
 import type { CatalogItemSummary, CatalogPageResult, CatalogQuery } from "./catalog-service";
 import { PUBLIC_CATALOG_PAGE_SIZE } from "./config";
@@ -111,37 +111,22 @@ function buildArtworkProviders(identity: R2IdentityPayload): PublicArtworkProvid
 async function loadR2IdentityPayload(canonicalId: string): Promise<{
   identity: R2IdentityPayload;
   search: CanonicalSearchRecord | null;
-  metadata: Record<string, unknown> | null;
-  semantic: Record<string, unknown> | null;
 }> {
-  const adapter = await getMasterR2Adapter();
-  if (!adapter) {
-    throw new MasterDataUnavailableError();
-  }
-
-  const [identityResult, searchResult, metadataResult, semanticResult] = await Promise.all([
-    adapter.getIdentity(canonicalId),
-    adapter.getSearch(canonicalId),
-    adapter.getMetadata(canonicalId),
-    adapter.getSemantic(canonicalId),
-  ]);
-
-  if (!identityResult?.data && !searchResult?.data) {
+  const payload = await getPublicIdentityR2Payload(canonicalId);
+  if (!payload) {
     throw new MasterObjectNotFoundError();
   }
 
-  const identity = (identityResult?.data ?? {
+  const identity = (payload.identity ?? {
     canonicalId,
-    emoji: searchResult?.data?.emoji ?? null,
-    unicodeSequence: searchResult?.data?.hexcode ?? null,
+    emoji: payload.search?.emoji ?? null,
+    unicodeSequence: payload.search?.hexcode ?? null,
     identityType: "unicode",
   }) as R2IdentityPayload;
 
   return {
     identity,
-    search: searchResult?.data ?? null,
-    metadata: metadataResult?.data ?? null,
-    semantic: semanticResult?.data ?? null,
+    search: payload.search ?? null,
   };
 }
 
@@ -149,7 +134,7 @@ export async function buildPublicIdentityResponseFromR2(
   canonicalIdInput: string,
 ): Promise<PublicIdentityResponse | null> {
   const canonicalId = resolvePublicCanonicalIdParam(canonicalIdInput);
-  const { identity, search, metadata, semantic } = await loadR2IdentityPayload(canonicalId);
+  const { identity, search } = await loadR2IdentityPayload(canonicalId);
 
   if (isUtilityCanonicalId(canonicalId)) {
     return null;
@@ -158,17 +143,12 @@ export async function buildPublicIdentityResponseFromR2(
   const slug = getProductionSlugForCanonicalEdge(canonicalId);
   const artworkProviders = buildArtworkProviders(identity);
   const hasArtwork = artworkProviders.some((provider) => provider.publicServingAllowed);
-  const hasMetadata =
-    (identity.metadataSources?.length ?? 0) > 0 || Boolean(search) || Boolean(metadata) || Boolean(semantic);
+  const hasMetadata = (identity.metadataSources?.length ?? 0) > 0 || Boolean(search);
   const visibility = resolvePublicVisibilityFromR2(canonicalId, identity, slug, hasArtwork, hasMetadata);
 
   if (!visibility.public) {
     return null;
   }
-
-  const semanticTerms = Array.isArray(semantic?.safeSearchTerms)
-    ? (semantic.safeSearchTerms as Array<{ term?: string }>).map((entry) => entry.term).filter(Boolean)
-    : [];
 
   return Object.freeze({
     canonicalId,
@@ -181,7 +161,7 @@ export async function buildPublicIdentityResponseFromR2(
     aliases: Object.freeze([...(search?.aliases ?? [])]),
     keywords: Object.freeze([...(search?.keywords ?? [])]),
     definitions: Object.freeze([]),
-    semanticTerms: Object.freeze(semanticTerms.filter((term): term is string => typeof term === "string")),
+    semanticTerms: Object.freeze([]),
     category: null,
     subcategory: null,
     variants: Object.freeze([]),
