@@ -1,16 +1,38 @@
-﻿{
+{
   "phase": "8.61-I",
-  "completedAt": "2026-08-15T12:10:00+05:30",
+  "completedAt": "2026-08-15T21:20:00+05:30",
   "verdict": "FAIL",
-  "commit": "a2be639c7360ea9194477ecfcf1c4f98da42d0f4",
+  "commit": "4d96c7e4e4baf0d60d10de0f321109c9b1b9fbe7",
   "productionVersion": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
-  "failedCandidates": ["cafaa272-19b5-46e5-80b5-2cbd660e7ada", "a2f62b01-a0e6-46f0-b7cb-11e294bb6752", "ca943741-fb70-4ac9-8bd8-cb2191398b3a"],
-  "previewVersion": "14c1b6dd-a6ba-4c8e-b114-5ea0a78203ad",
-  "rollbackExecuted": true,
-  "gzipUploadKiB": 2706.65,
+  "previewVersion": "40ddf885-5905-4abf-8a8f-1e9bad2e7060",
+  "failedCandidates": [
+    "cafaa272-19b5-46e5-80b5-2cbd660e7ada",
+    "a2f62b01-a0e6-46f0-b7cb-11e294bb6752",
+    "ca943741-fb70-4ac9-8bd8-cb2191398b3a",
+    "14c1b6dd-a6ba-4c8e-b114-5ea0a78203ad"
+  ],
+  "rollbackExecuted": false,
+  "prodDeployed": false,
+  "gzipUploadKiB": 2719.33,
   "buildSSGRoutes": 4486,
-  "concurrencyGates": {"c4": {"onDemand100": {"ok200": 49, "count1102": 51, "verdict": "FAIL"}, "onDemand20": {"ok200": 8, "count1102": 12, "verdict": "FAIL"}, "ssg10": {"ok200": 3, "count1102": 7, "verdict": "FAIL"}}, "c12": {"verdict": "NOT_RUN"}, "c24": {"verdict": "NOT_RUN"}},
-  "counts": {"masterIdentities": 6955, "publicEmojiPagesSSG": 4486, "publicEmojiPagesOnDemand": 2469, "sitemapUrlsExpected": 6991, "massValidationPassed": 0, "massValidationTotal": 200, "massValidation6955Run": false},
+  "concurrencyGates": {
+    "c4": {
+      "onDemand20_first": { "ok200": 17, "count503": 3, "count1102": 0, "verdict": "FAIL" },
+      "onDemand20_retry": { "ok200": 20, "count503": 0, "count1102": 0, "verdict": "PASS" }
+    },
+    "c8": { "onDemand50": { "ok200": 41, "count503": 9, "count1102": 0, "verdict": "FAIL" } },
+    "c12": { "onDemand100": { "ok200": 59, "count503": 40, "count1102": 0, "verdict": "FAIL" } }
+  },
+  "counts": {
+    "masterIdentities": 6955,
+    "publicEmojiPagesSSG": 4486,
+    "publicEmojiPagesOnDemand": 2469,
+    "sitemapUrlsExpected": 6991,
+    "massValidationPassed": 0,
+    "massValidationTotal": 0,
+    "massValidation6955Run": false
+  },
   "seoFullEnabled": false,
-  "scorecard": {"A": "PASS", "B": "PASS", "C": "PASS", "D": "PASS", "E": "PASS", "F": "PASS", "G": "FAIL", "H": "PASS", "I": "FAIL"}
+  "phase862Blocked": true,
+  "scorecard": { "A": "PASS", "B": "PASS", "C": "PASS", "D": "PASS", "E": "PASS", "F": "PASS", "G": "FAIL", "H": "PASS", "I": "FAIL" }
 }
