@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryGrid } from "@/components/category/category-grid";
 import { CategoryNav } from "@/components/category/category-nav";
+import { DiscoverySection } from "@/components/discovery/discovery-section";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 import { RecentlyUsedSection } from "@/components/home/recently-used-section";
 import { SearchBar } from "@/components/search/search-bar";
 import {
   getManifest,
   getNewEmojis,
-  getPopularEmojis,
 } from "@/lib/emoji/data";
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { SITE_DESCRIPTION } from "@/lib/site/config";
@@ -20,7 +20,6 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function HomePage() {
-  const popularEmojis = getPopularEmojis(12);
   const newEmojis = getNewEmojis(12);
   const manifest = getManifest();
 
@@ -45,18 +44,7 @@ export default function HomePage() {
 
       <RecentlyUsedSection />
 
-      <section className="space-y-4">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="section-title">Popular Emojis</h2>
-            <p className="section-subtitle">The emojis people reach for most.</p>
-          </div>
-          <Link href="/popular" className="pill-link">
-            View all
-          </Link>
-        </div>
-        <EmojiGrid emojis={popularEmojis} pageSize={12} />
-      </section>
+      <DiscoverySection />
 
       <section className="space-y-4">
         <div>

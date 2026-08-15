@@ -1,4 +1,5 @@
 import { getEmojibaseMetadataByHexcode } from "./emojibase-metadata";
+import { POPULAR_EMOJI_SLUGS, CATEGORY_LABELS } from "./constants";
 import type { BrowsableEmoji } from "./types";
 import { isOpenMojiExtra } from "./types";
 
@@ -30,14 +31,22 @@ const SCORE = {
   EXACT_UNICODE: 900,
   EXACT_HEX: 880,
   EXACT_SHORTCODE: 800,
+  EXACT_CANONICAL: 750,
   EXACT_NAME: 700,
+  EXACT_ALIAS: 600,
   EXACT_KEYWORD: 500,
+  CATEGORY_MATCH: 420,
   SEMANTIC_MATCH: 350,
   PARTIAL_NAME: 300,
   PARTIAL_KEYWORD: 200,
   TOKEN_MATCH: 100,
+  POPULARITY_BOOST: 25,
   EXTRA_PENALTY: 15,
 } as const;
+
+const POPULARITY_RANK = new Map<string, number>(
+  POPULAR_EMOJI_SLUGS.map((slug, index) => [slug, index]),
+);
 
 let searchIndex: SearchIndex | null = null;
 let searchIndexKey = "";
@@ -224,7 +233,17 @@ function scoreEntry(
   }
 
   if (entry.slug === normalizedQuery.replace(/\s+/g, "-")) {
-    score = Math.max(score, SCORE.EXACT_NAME - 50);
+    score = Math.max(score, SCORE.EXACT_CANONICAL);
+  }
+
+  const slugAsName = entry.slug.replace(/-/g, " ");
+  if (slugAsName === normalizedQuery) {
+    score = Math.max(score, SCORE.EXACT_ALIAS);
+  }
+
+  const categoryLabel = CATEGORY_LABELS[entry.category]?.toLowerCase();
+  if (categoryLabel && (categoryLabel === normalizedQuery || categoryLabel.includes(normalizedQuery))) {
+    score = Math.max(score, SCORE.CATEGORY_MATCH);
   }
 
   if (shortcodeQuery) {
@@ -234,6 +253,10 @@ function scoreEntry(
   }
 
   for (const token of tokens) {
+    if (slugAsName.includes(token) && token.length >= 3) {
+      score = Math.max(score, SCORE.EXACT_ALIAS - 50);
+    }
+
     if (entry.keywords.some((keyword) => keyword.toLowerCase() === token)) {
       score = Math.max(score, SCORE.EXACT_KEYWORD);
     } else if (
@@ -258,6 +281,11 @@ function scoreEntry(
 
   if (entry.isExtra) {
     score = Math.max(0, score - SCORE.EXTRA_PENALTY);
+  }
+
+  const popularityRank = POPULARITY_RANK.get(entry.slug);
+  if (popularityRank !== undefined) {
+    score += Math.max(1, SCORE.POPULARITY_BOOST - popularityRank);
   }
 
   return score;

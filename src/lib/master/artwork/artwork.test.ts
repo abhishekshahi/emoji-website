@@ -230,3 +230,39 @@ describe("artwork master database", () => {
     );
   });
 });
+
+describe("Phase 8.62-B resolvePreferredArtwork", () => {
+  it("prefers Noto then falls back to public OpenMoji", async () => {
+    const { resolvePreferredArtwork, resolvePublicPreferredArtwork } = await import(
+      "@/lib/artwork/resolve-preferred-artwork"
+    );
+    const identity = {
+      canonicalId: "unicode:1F525",
+      artwork: {
+        noto: [{ sourceId: "1f525", path: "noto/1f525.svg", format: "svg" }],
+        openmoji: [{ sourceId: "1F525", path: "openmoji/1F525.svg", format: "svg" }],
+      },
+    };
+    const preferred = resolvePreferredArtwork(identity);
+    assert.ok(preferred);
+    assert.equal(preferred.provider, "noto");
+    assert.equal(preferred.fallbackRank, 1);
+    const pub = resolvePublicPreferredArtwork(identity);
+    assert.ok(pub);
+    assert.equal(pub.publiclyServed, true);
+    assert.equal(pub.provider, "openmoji");
+  });
+});
+
+describe("Phase 8.62-C provider architecture", () => {
+  it("preserves license gates for Noto/Fluent", async () => {
+    const { getProviderArchitecture, isPublicArtworkProvider } = await import(
+      "@/lib/artwork/provider-architecture"
+    );
+    assert.equal(isPublicArtworkProvider("openmoji"), true);
+    assert.equal(isPublicArtworkProvider("twemoji"), true);
+    assert.equal(isPublicArtworkProvider("noto"), false);
+    assert.equal(isPublicArtworkProvider("fluent"), false);
+    assert.equal(getProviderArchitecture().length, 4);
+  });
+});

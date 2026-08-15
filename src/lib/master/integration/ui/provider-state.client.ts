@@ -3,7 +3,8 @@
 import type { ClientArtworkProvider } from "@/lib/master/integration/ui/client-types";
 import { CLIENT_ARTWORK_PROVIDERS } from "@/lib/master/integration/ui/client-types";
 
-export const ARTWORK_PROVIDER_PREFERENCE_KEY = "emojifind:artwork-provider-preference";
+export const ARTWORK_PROVIDER_PREFERENCE_KEY = "emojiquick:artwork-provider-preference";
+export const LEGACY_ARTWORK_PROVIDER_PREFERENCE_KEY = "emojifind:artwork-provider-preference";
 
 export const DEFAULT_PRESENTATION_PROVIDER: ClientArtworkProvider = "openmoji";
 
@@ -25,10 +26,15 @@ export function readStoredArtworkProvider(): ClientArtworkProvider | null {
 
   try {
     const stored = window.localStorage.getItem(ARTWORK_PROVIDER_PREFERENCE_KEY);
-    if (!stored || !isSupportedArtworkProvider(stored)) {
-      return null;
+    if (stored && isSupportedArtworkProvider(stored)) {
+      return stored;
     }
-    return stored;
+    const legacy = window.localStorage.getItem(LEGACY_ARTWORK_PROVIDER_PREFERENCE_KEY);
+    if (legacy && isSupportedArtworkProvider(legacy)) {
+      window.localStorage.setItem(ARTWORK_PROVIDER_PREFERENCE_KEY, legacy);
+      return legacy;
+    }
+    return null;
   } catch {
     return null;
   }

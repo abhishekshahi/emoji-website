@@ -1,4 +1,5 @@
-export const THEME_STORAGE_KEY = "emojifind-theme";
+export const THEME_STORAGE_KEY = "emojiquick-theme";
+export const LEGACY_THEME_STORAGE_KEY = "emojifind-theme";
 
 export type ThemePreference = "light" | "dark" | "system";
 

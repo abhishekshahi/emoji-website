@@ -28,7 +28,7 @@ const PROVIDER_LICENSES: Record<EnrichmentArtworkProvider, string> = {
 const PUBLICLY_SERVED: Record<EnrichmentArtworkProvider, boolean> = {
   openmoji: true,
   noto: false,
-  twemoji: false,
+  twemoji: true,
   fluent: false,
 };
 

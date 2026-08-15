@@ -1,0 +1,21 @@
+{
+  "phase": "8.62",
+  "finalVerdict": "PASS WITH WARNINGS",
+  "deployBlocked": true,
+  "blocker": "8.61 gate FAIL",
+  "tests": {
+    "targeted862": 43,
+    "pass": 43,
+    "fail": 0
+  },
+  "typecheck": "PASS",
+  "completedAt": "2026-08-15T14:37:13.930Z",
+  "scorecard": {
+    "8.62-A": "PASS",
+    "8.62-B": "PASS",
+    "8.62-C": "PASS",
+    "8.62-D": "PASS",
+    "8.62-E": "PASS",
+    "8.62-F": "PASS WITH WARNINGS"
+  }
+}

@@ -122,3 +122,30 @@ describe("public platform feature gates", () => {
     process.env.PUBLIC_MASTER_PLATFORM_MODE = original;
   });
 });
+
+describe("Phase 8.62-A EmojiQuick branding", () => {
+  it("uses EmojiQuick site name in config", async () => {
+    const { SITE_NAME } = await import("@/lib/site/config");
+    assert.equal(SITE_NAME, "EmojiQuick");
+  });
+
+  it("icon.svg aria-label is EmojiQuick not EmojiFind", () => {
+    const icon = readFileSync(join(rootDir, "src/app/icon.svg"), "utf8");
+    assert.match(icon, /EmojiQuick/);
+    assert.doesNotMatch(icon, /EmojiFind/);
+  });
+});
+
+describe("Phase 8.62-E discovery engine", () => {
+  it("returns baseline trending and caches", async () => {
+    const { getTrendingDiscovery, getPopularDiscovery, getContextDiscovery } = await import(
+      "@/lib/discovery/engine"
+    );
+    const trending = getTrendingDiscovery("today");
+    assert.equal(trending.source, "baseline");
+    assert.ok(trending.items.length > 0);
+    assert.equal(getTrendingDiscovery("today").cached, true);
+    assert.ok(getPopularDiscovery("copied").items.length > 0);
+    assert.ok(getContextDiscovery("gaming").items.length > 0);
+  });
+});
