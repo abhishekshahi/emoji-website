@@ -1,6 +1,6 @@
 # Phase 8.61 Runtime Hardening
 
-**Verdict: FIX APPLIED — local gates PASS; Cloudflare 1102 not re-tested (no deploy)**
+**Verdict: FIX APPLIED — local gates PASS; Cloudflare c=4 gate FAIL (see PHASE-8.61-RUNTIME-FINAL-AUDIT.md)**
 
 **Production (unchanged):** `5e12fc5d-2778-4505-9d51-50d4a04b37ea`  
 **Failed candidate (root cause):** `cafaa272` / `a2f62b01` — HTTP 1102 under concurrent on-demand R2 load
@@ -47,11 +47,11 @@ Contributing factors ruled out: bundle size (gzip ~2706 KiB PASS), sitemap, R2 c
 | Production (rollback) | **Healthy** — no change deployed |
 | Failed candidate (pre-fix) | **1102 reproduced** — 3050/6955 @ c=24 |
 | Local resolver simulation | **No exhaustion** — 100/100 @ unbounded Promise.all |
-| Post-fix Cloudflare worker | **UNVERIFIED** — requires preview deploy + low→high concurrency probe |
+| Post-fix Cloudflare worker (preview) | **FAIL @ c=4** — 51/100 on-demand 1102; 7/10 SSG 1102 |
 
 ## Deploy Readiness
 
-**NO** — code fix is ready and local gates pass, but **1102 has not been cleared on a Cloudflare worker/preview** at concurrency 24+. Candidate `build:cf` not executed in this pass.
+**NO** — build:cf executed (gzip 2706.65 KiB, 4486 SSG). Preview deploy tested; **c=4 gate FAIL** (1102). Production deploy rolled back.
 
 ### Blockers before deploy
 

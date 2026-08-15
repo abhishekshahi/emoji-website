@@ -1,39 +1,16 @@
-{
+﻿{
   "phase": "8.61-I",
-  "completedAt": "2026-08-15T10:55:00+05:30",
+  "completedAt": "2026-08-15T12:10:00+05:30",
   "verdict": "FAIL",
+  "commit": "a2be639c7360ea9194477ecfcf1c4f98da42d0f4",
   "productionVersion": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
-  "failedCandidates": [
-    "cafaa272-19b5-46e5-80b5-2cbd660e7ada",
-    "a2f62b01-a0e6-46f0-b7cb-11e294bb6752"
-  ],
+  "failedCandidates": ["cafaa272-19b5-46e5-80b5-2cbd660e7ada", "a2f62b01-a0e6-46f0-b7cb-11e294bb6752", "ca943741-fb70-4ac9-8bd8-cb2191398b3a"],
+  "previewVersion": "14c1b6dd-a6ba-4c8e-b114-5ea0a78203ad",
   "rollbackExecuted": true,
-  "rollbackReason": "503 error 1102 Worker resource limit exceeded after hybrid deploy",
-  "gzipUploadKiB": 2706.55,
+  "gzipUploadKiB": 2706.65,
   "buildSSGRoutes": 4486,
-  "counts": {
-    "masterIdentities": 6955,
-    "publicEmojiPagesSSG": 4486,
-    "publicEmojiPagesOnDemand": 2469,
-    "sitemapUrlsExpected": 6991,
-    "sitemapUrlsProductionPostRollback": 4522,
-    "massValidationPassedBurst": 3050,
-    "massValidationTotal": 6955
-  },
+  "concurrencyGates": {"c4": {"onDemand100": {"ok200": 49, "count1102": 51, "verdict": "FAIL"}, "onDemand20": {"ok200": 8, "count1102": 12, "verdict": "FAIL"}, "ssg10": {"ok200": 3, "count1102": 7, "verdict": "FAIL"}}, "c12": {"verdict": "NOT_RUN"}, "c24": {"verdict": "NOT_RUN"}},
+  "counts": {"masterIdentities": 6955, "publicEmojiPagesSSG": 4486, "publicEmojiPagesOnDemand": 2469, "sitemapUrlsExpected": 6991, "massValidationPassed": 0, "massValidationTotal": 200, "massValidation6955Run": false},
   "seoFullEnabled": false,
-  "scorecard": {
-    "A": "PASS",
-    "B": "PASS",
-    "C": "PASS",
-    "D": "PASS",
-    "E": "PASS",
-    "F": "PASS",
-    "G": "FAIL",
-    "H": "PASS",
-    "I": "FAIL"
-  },
-  "blockers": [
-    "Hybrid deploy caused sustained 503/1102 under Worker resource limits",
-    "Mass concurrent validation triggers rate-limit/resource exhaustion on on-demand R2 pages"
-  ]
+  "scorecard": {"A": "PASS", "B": "PASS", "C": "PASS", "D": "PASS", "E": "PASS", "F": "PASS", "G": "FAIL", "H": "PASS", "I": "FAIL"}
 }
