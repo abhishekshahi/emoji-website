@@ -1,0 +1,21 @@
+{
+  "completedAt": "2026-08-15T06:43:58.122Z",
+  "workerId": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "deploymentMessage": "Rollback",
+  "newWorkerLive": false,
+  "readyForAgent1MassValidate": false,
+  "rollbackHealthy": false,
+  "smoke10StatusSummary": {
+    "s503": 8,
+    "s200": 2
+  },
+  "onDemand50_c4": {
+    "200": 0,
+    "404": 6,
+    "503": 44,
+    "1102": 0,
+    "note": "503 titles=Worker exceeded resource limits (1102-class)"
+  },
+  "onDemand50_c12": "ABORTED_hung",
+  "remoteSitemapHttpStatus": 500
+}
