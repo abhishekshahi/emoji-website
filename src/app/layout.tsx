@@ -6,7 +6,14 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { SkipLink } from "@/components/layout/skip-link";
+import {
+  BRAND_FAVICON_180,
+  BRAND_FAVICONS,
+  BRAND_ICON,
+  BRAND_OG_IMAGE,
+} from "@/lib/site/brand";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site/config";
+import { absoluteUrl } from "@/lib/seo/metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +25,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteOgImage = absoluteUrl(BRAND_OG_IMAGE);
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -26,7 +35,8 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   icons: {
-    icon: "/icon.svg",
+    icon: [{ url: BRAND_ICON, type: "image/svg+xml" }, ...BRAND_FAVICONS],
+    apple: [{ url: BRAND_FAVICON_180, sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     type: "website",
@@ -35,11 +45,20 @@ export const metadata: Metadata = {
     title: `${SITE_NAME} | Find the Perfect Emoji`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
+    images: [
+      {
+        url: siteOgImage,
+        width: 3840,
+        height: 2160,
+        alt: SITE_NAME,
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: `${SITE_NAME} | Find the Perfect Emoji`,
     description: SITE_DESCRIPTION,
+    images: [siteOgImage],
   },
 };
 

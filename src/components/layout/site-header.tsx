@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SITE_NAME } from "@/lib/emoji/constants";
+import { SiteLogo } from "@/components/layout/site-logo";
 import { SearchBar } from "@/components/search/search-bar";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 
@@ -23,19 +24,10 @@ export function SiteHeader() {
         <div className="flex items-center justify-between gap-4">
           <Link
             href="/"
-            className="flex items-center gap-3 rounded-xl focus-visible:outline-offset-4"
+            className="flex items-center rounded-xl focus-visible:outline-offset-4"
             aria-label={`${SITE_NAME} home`}
           >
-            <span
-              aria-hidden="true"
-              className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent-soft text-2xl"
-            >
-              😊
-            </span>
-            <span className="flex flex-col">
-              <span className="text-lg font-bold tracking-tight">{SITE_NAME}</span>
-              <span className="text-xs text-muted">Search. Copy. Smile.</span>
-            </span>
+            <SiteLogo />
           </Link>
 
           <div className="flex items-center gap-2">

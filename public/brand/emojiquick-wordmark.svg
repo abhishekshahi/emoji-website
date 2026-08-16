@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" role="img" aria-label="EmojiQuick">
+  <defs>
+    <linearGradient id="emojiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD84D"/>
+      <stop offset="100%" stop-color="#FF7A18"/>
+    </linearGradient>
+    <linearGradient id="quickGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5ED4FF"/>
+      <stop offset="100%" stop-color="#1B63D8"/>
+    </linearGradient>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0B1B33" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <text x="0" y="168" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="148" font-weight="800" font-style="italic" letter-spacing="-2" filter="url(#textShadow)">
+    <tspan fill="url(#emojiGrad)">Emoji</tspan><tspan fill="url(#quickGrad)">Quick</tspan>
+  </text>
+</svg>

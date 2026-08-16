@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE_NAME } from "@/lib/emoji/constants";
+import { SiteLogoCompact } from "@/components/layout/site-logo";
 import { isPublicMasterPlatformEnabled } from "@/lib/master/public/config";
 import {
   OPENMOJI_LICENSE,
@@ -33,8 +33,8 @@ export function SiteFooter() {
       <div className="page-shell flex flex-col gap-6 py-10">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-lg font-semibold">{SITE_NAME}</p>
-            <p className="mt-1 max-w-xl text-sm text-muted">
+            <SiteLogoCompact />
+            <p className="mt-3 max-w-xl text-sm text-muted">
               A fast, friendly emoji search experience built from Unicode and
               Emojibase data.
             </p>

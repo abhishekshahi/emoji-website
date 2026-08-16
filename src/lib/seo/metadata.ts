@@ -5,6 +5,7 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "@/lib/site/config";
+import { BRAND_OG_IMAGE } from "@/lib/site/brand";
 
 function normalizePath(path: string): string {
   return path.startsWith("/") ? path : `/${path}`;
@@ -34,6 +35,7 @@ export function createPageMetadata({
 }): Metadata {
   const canonical = canonicalUrl(path);
   const url = absoluteUrl(path);
+  const ogImage = image ? absoluteUrl(image) : absoluteUrl(BRAND_OG_IMAGE);
 
   return {
     title,
@@ -60,13 +62,13 @@ export function createPageMetadata({
       title,
       description,
       siteName: SITE_NAME,
-      ...(image ? { images: [{ url: absoluteUrl(image) }] } : {}),
+      images: [{ url: ogImage }],
     },
     twitter: {
-      card: image ? "summary_large_image" : "summary",
+      card: "summary_large_image",
       title,
       description,
-      ...(image ? { images: [absoluteUrl(image)] } : {}),
+      images: [ogImage],
     },
   };
 }
