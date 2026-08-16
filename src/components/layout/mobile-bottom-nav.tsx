@@ -7,8 +7,8 @@ const MOBILE_NAV = [
   { href: "/", label: "Home", icon: "🏠" },
   { href: "/search", label: "Search", icon: "🔎" },
   { href: "/emoji", label: "Browse", icon: "🗂️" },
-  { href: "/favorites", label: "Saved", icon: "★" },
-  { href: "/recent", label: "Recent", icon: "🕘" },
+  { href: "/popular", label: "Popular", icon: "⭐" },
+  { href: "/explore", label: "Explore", icon: "🧭" },
 ] as const;
 
 export function MobileBottomNav() {

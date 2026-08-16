@@ -10,6 +10,7 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 const NAV_ITEMS = [
   { href: "/emoji", label: "Browse" },
   { href: "/popular", label: "Popular" },
+  { href: "/explore", label: "Explore" },
   { href: "/new", label: "New" },
   { href: "/favorites", label: "Favorites" },
   { href: "/recent", label: "Recent" },
