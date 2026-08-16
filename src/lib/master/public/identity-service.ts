@@ -4,6 +4,7 @@ import { getArtwork, listAvailableProviders } from "@/lib/master/integration/art
 import { PROVIDER_LABELS } from "@/lib/master/integration/ui/attribution";
 import { getIdentityTypeLabel } from "./visibility";
 import { getArtworkProviderPolicy } from "./license-registry";
+import { buildPublicArtworkApiUrl } from "./artwork-api-url";
 import { getProductionSlugForCanonical } from "./production-slug";
 import { resolvePublicVisibility } from "./visibility";
 import type { PublicArtworkProviderInfo, PublicIdentityResponse } from "./types";
@@ -46,7 +47,7 @@ export function buildPublicIdentityResponse(
         downloadAllowed: policy.publicDownloadAllowed && publicServing,
         artworkUrl:
           publicServing && primary
-            ? `/api/artwork/${provider}/${primary.sourceId}.${primary.format}`
+            ? buildPublicArtworkApiUrl(provider, primary.sourceId, primary.format)
             : null,
         status: publicServing ? "public" : "restricted",
         message: publicServing

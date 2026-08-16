@@ -49,8 +49,9 @@ export function EmojiArtworkPanel({
           Artwork styles
         </h2>
         <p className="section-subtitle">
-          EmojiQuick serves OpenMoji artwork publicly. Other providers are indexed in the master
-          database for future licensed display.
+          EmojiQuick serves verified artwork from OpenMoji, Twemoji, Noto, and Fluent where license
+          policy permits. Other indexed styles follow the asset-rights registry on{" "}
+          <Link href="/licenses" className="text-accent-strong underline">/licenses</Link>.
         </p>
       </div>
 

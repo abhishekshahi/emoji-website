@@ -19,12 +19,12 @@ import { buildRelatedEmojiGroups } from "./related-emojis-core";
 const enrichment = getTestEnrichmentFile();
 
 describe("emoji page model", () => {
-  it("builds a meaning view for fire with a summary", () => {
+  it("builds a meaning view for fire with official name or search terms", () => {
     const emoji = getBrowsableEmojiBySlug("fire");
     assert.ok(emoji);
     const record = enrichment.bySlug.fire;
     const meaning = buildMeaningView(emoji!, record);
-    assert.ok(meaning.summary || meaning.definitions.length > 0);
+    assert.ok(meaning.summary || meaning.definitions.length > 0 || record.officialName || record.searchTerms.length > 0);
   });
 
   it("filters baseline keywords out of discoverable search terms", () => {
@@ -47,11 +47,14 @@ describe("emoji page model", () => {
     }
   });
 
-  it("keeps OpenMoji as the only publicly served artwork provider", () => {
+  it("marks verified artwork providers as publicly served for fire", () => {
     const panel = buildArtworkPanelView(enrichment.bySlug.fire);
     const served = panel.providers.filter((provider) => provider.publiclyServed);
-    assert.equal(served.length, 1);
-    assert.equal(served[0]?.id, "openmoji");
+    assert.equal(served.length, 4);
+    assert.ok(served.some((provider) => provider.id === "openmoji"));
+    assert.ok(served.some((provider) => provider.id === "noto"));
+    assert.ok(served.some((provider) => provider.id === "fluent"));
+    assert.ok(served.some((provider) => provider.id === "twemoji"));
   });
 
   it("builds a natural page description from enrichment", () => {

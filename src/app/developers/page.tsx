@@ -70,8 +70,9 @@ export default function DevelopersPage() {
       <section className="card-surface space-y-3 p-6">
         <h2 className="text-xl font-semibold">License &amp; attribution</h2>
         <p className="text-muted">
-          All API responses include license and provenance metadata. See /licenses for provider terms.
-          EmojiNet definitions are CC BY-NC-SA 4.0 — non-commercial use only.
+          All API responses include license and provenance metadata. See{" "}
+          <a href="/licenses" className="text-accent-strong underline">/licenses</a> for provider terms.
+          EmojiNet-derived content is restricted and is not included in public API responses.
         </p>
       </section>
     </div>

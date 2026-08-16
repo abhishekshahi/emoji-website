@@ -7,6 +7,7 @@ import { isUtilityCanonicalId } from "@/lib/master/integration/seo/policy";
 import { PROVIDER_LABELS } from "@/lib/master/integration/ui/attribution";
 import { getProductionSlugForCanonicalEdge, resolvePublicCanonicalIdParam } from "./edge-context";
 import { getArtworkProviderPolicy } from "./license-registry";
+import { buildPublicArtworkApiUrl } from "./artwork-api-url";
 import type { PublicArtworkProviderInfo, PublicIdentityResponse } from "./types";
 import { encodeCatalogPath, getIdentityTypeLabel } from "./visibility";
 
@@ -85,7 +86,7 @@ function buildArtworkProviders(identity: R2IdentityPayload): PublicArtworkProvid
         downloadAllowed: policy.publicDownloadAllowed && publicServing,
         artworkUrl:
           publicServing && format !== "unknown"
-            ? `/api/artwork/${provider}/${primary.sourceId}.${format}`
+            ? buildPublicArtworkApiUrl(provider, primary.sourceId, format)
             : null,
         status: publicServing ? "public" : "restricted",
         message: publicServing

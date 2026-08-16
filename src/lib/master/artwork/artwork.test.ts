@@ -250,7 +250,7 @@ describe("Phase 8.62-B resolvePreferredArtwork", () => {
     const pub = resolvePublicPreferredArtwork(identity);
     assert.ok(pub);
     assert.equal(pub.publiclyServed, true);
-    assert.equal(pub.provider, "openmoji");
+    assert.equal(pub.provider, "noto");
   });
 });
 
@@ -261,8 +261,8 @@ describe("Phase 8.62-C provider architecture", () => {
     );
     assert.equal(isPublicArtworkProvider("openmoji"), true);
     assert.equal(isPublicArtworkProvider("twemoji"), true);
-    assert.equal(isPublicArtworkProvider("noto"), false);
-    assert.equal(isPublicArtworkProvider("fluent"), false);
+    assert.equal(isPublicArtworkProvider("noto"), true);
+    assert.equal(isPublicArtworkProvider("fluent"), true);
     assert.equal(getProviderArchitecture().length, 4);
   });
 });

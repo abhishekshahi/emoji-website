@@ -11,10 +11,8 @@ import { EmojiTechnicalDetails } from "@/components/emoji/emoji-technical-detail
 import { EmojiVariantExplorer } from "@/components/emoji/emoji-variant-explorer";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
-import {
-  getAllBrowsableSlugs,
-  getBrowsableEmojiBySlug,
-} from "@/lib/emoji/browsable-data";
+import { getBrowsableEmojiBySlug } from "@/lib/emoji/browsable-data";
+import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
 import { getEmojiEnrichmentBySlug } from "@/lib/emoji/enrichment";
 import {
   buildArtworkPanelView,
@@ -24,6 +22,7 @@ import {
   buildTechnicalView,
   buildVariantGroups,
 } from "@/lib/emoji/emoji-page-model";
+import { filterPublicDefinitions } from "@/lib/master/public/asset-rights";
 import { getCategoryLabel } from "@/lib/emoji/data";
 import { getEnrichedRelatedEmojiGroups } from "@/lib/emoji/related-emojis";
 import { isOpenMojiExtra } from "@/lib/emoji/types";
@@ -52,10 +51,11 @@ interface EmojiPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export const dynamicParams = true;
+/** Phase 8.62-A: all 6955 canonical identities are pre-rendered; no on-demand emoji pages. */
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const canonicalSlugs = getActiveEmojiSitemapSlugs(getAllBrowsableSlugs());
+  const canonicalSlugs = getActiveEmojiSitemapSlugs(getAllIdentitySlugs());
   return canonicalSlugs.map((slug) => ({ slug }));
 }
 
@@ -74,6 +74,7 @@ export async function generateMetadata({
 
   if (emoji) {
     const enrichment = getEmojiEnrichmentBySlug(canonicalSlug);
+    const publicDefinitions = filterPublicDefinitions(enrichment?.definitions ?? []);
     return createEmojiPageMetadata({
       name: emoji.name,
       emoji: emoji.emoji,
@@ -84,7 +85,7 @@ export async function generateMetadata({
       ],
       codePointString: emoji.codePointString,
       artworkPath: getOpenMojiArtworkPath(emoji.hexcode),
-      meaningSnippet: enrichment?.definitions[0]?.text,
+      meaningSnippet: publicDefinitions[0]?.text,
       categoryLabel: getCategoryLabel(emoji.category),
     });
   }

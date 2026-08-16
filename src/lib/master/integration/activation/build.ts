@@ -22,6 +22,7 @@ import { getProductionSEO } from "../seo/production-bridge";
 import { PROVIDER_LICENSE_DEFAULTS } from "../ui/attribution";
 import { resolveUiArtworkDisplay, getUiArtworkProviders } from "../ui/artwork-ui-adapter";
 import { getUiMetadataPayload } from "../ui/metadata-ui-adapter";
+import { getEnrichedMetadata } from "../metadata/enrichment";
 import {
   getCopyIdentityValue,
   getFavoriteIdentityKey,
@@ -203,6 +204,7 @@ export function buildMetadataActivationAudit(rootDir: string = process.cwd()) {
     { masterArtworkEnabled: true, masterMetadataEnabled: true },
     () => {
       const metadata = getUiProductionMetadata(context, rootDir);
+      const enriched = getEnrichedMetadata(CRITICAL.fire, rootDir);
       const notoPanel = metadata?.sourcePanels.find((panel) => panel.source === "noto");
       const twemojiPanel = metadata?.sourcePanels.find((panel) => panel.source === "twemoji");
       const unicodePanel = metadata?.sourcePanels.find((panel) => panel.source === "unicode");
@@ -219,8 +221,8 @@ export function buildMetadataActivationAudit(rootDir: string = process.cwd()) {
         shortcodeFire: metadata?.shortcodes.some((entry) => entry.includes("fire")) ?? false,
         keywordCap: (metadata?.safeKeywords.length ?? 0) <= 12,
         aliasCap: (metadata?.safeAliases.length ?? 0) <= 8,
-        semanticSourceLabeled: (metadata?.emojinetSenseCount ?? 0) > 0,
-        emojinetPanelAvailable: emojinetPanel?.available === true,
+        semanticSourceLabeled: (enriched?.emojinetSenseCount ?? 0) > 0,
+        emojinetExcludedFromPublicUi: emojinetPanel?.available !== true,
         noInventedNotoMetadata: notoPanel?.name === null,
         noInventedTwemojiMetadata: twemojiPanel?.name === null,
       };

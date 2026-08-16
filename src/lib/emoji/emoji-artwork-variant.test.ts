@@ -34,7 +34,7 @@ describe("artwork intelligence", () => {
     assert.equal(openmoji?.status, "available");
   });
 
-  it("keeps Noto indexed but not publicly served", () => {
+  it("marks Noto as publicly served when indexed with verified assets", () => {
     const summary = buildArtworkIntelSummary({
       openmoji: [],
       noto: ["noto:noto-artwork:1F525:emoji_u1f525.svg", "noto:noto-artwork:1F525:emoji_u1f525.png"],
@@ -44,7 +44,7 @@ describe("artwork intelligence", () => {
     });
     const noto = summary.providers.find((provider) => provider.provider === "noto");
     assert.equal(noto?.indexed, true);
-    assert.equal(noto?.publiclyServed, false);
+    assert.equal(noto?.publiclyServed, true);
     assert.deepEqual(noto?.formats, ["svg", "png"]);
   });
 
@@ -59,14 +59,17 @@ describe("artwork intelligence", () => {
     const compact = compactArtworkForRecord(summary);
     const expanded = expandArtworkFromRecord(compact);
     assert.equal(expanded.primaryProvider, "openmoji");
-    assert.ok(expanded.providers.some((provider) => provider.provider === "fluent" && !provider.publiclyServed));
+    assert.ok(expanded.providers.some((provider) => provider.provider === "fluent" && provider.publiclyServed));
   });
 
-  it("builds artwork panel with only OpenMoji publicly served for fire", () => {
+  it("builds artwork panel with all verified public providers for fire", () => {
     const panel = buildArtworkPanelView(enrichment.bySlug.fire);
     const served = panel.providers.filter((provider) => provider.publiclyServed);
-    assert.equal(served.length, 1);
-    assert.equal(served[0]?.id, "openmoji");
+    assert.equal(served.length, 4);
+    assert.ok(served.some((provider) => provider.id === "openmoji"));
+    assert.ok(served.some((provider) => provider.id === "noto"));
+    assert.ok(served.some((provider) => provider.id === "fluent"));
+    assert.ok(served.some((provider) => provider.id === "twemoji"));
   });
 });
 

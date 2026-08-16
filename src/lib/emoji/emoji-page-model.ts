@@ -1,5 +1,6 @@
 import type { EmojiEnrichmentRecord, EnrichmentVariantLink } from "./enrichment-types";
 import { expandArtworkFromRecord, type ArtworkIntelSummary } from "./artwork-intelligence";
+import { filterPublicDefinitions } from "@/lib/master/public/asset-rights";
 import { sortVariantLinks, VARIANT_KIND_ORDER } from "./variant-intelligence";
 import type { BrowsableEmoji } from "./types";
 import { isOpenMojiExtra } from "./types";
@@ -110,7 +111,7 @@ export function buildMeaningView(
   emoji: BrowsableEmoji,
   enrichment: EmojiEnrichmentRecord | null,
 ): EmojiMeaningView {
-  const definitions = enrichment?.definitions ?? [];
+  const definitions = filterPublicDefinitions(enrichment?.definitions ?? []);
   const summary = definitions[0]?.text ?? null;
   const relatedConcepts = uniqueTerms(
     (enrichment?.searchTerms ?? []).filter((term) => !isBaselineTerm(emoji, term)),
@@ -251,7 +252,8 @@ export function buildEmojiPageDescription(
   enrichment: EmojiEnrichmentRecord | null,
 ): string {
   const extra = isOpenMojiExtra(emoji);
-  const meaning = enrichment?.definitions[0]?.text;
+  const publicDefinitions = filterPublicDefinitions(enrichment?.definitions ?? []);
+  const meaning = publicDefinitions[0]?.text;
   const keywordText = emoji.keywords.slice(0, 4).join(", ");
 
   if (meaning) {

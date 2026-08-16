@@ -45,9 +45,6 @@ async function loadR2MetadataPayload(
       safeAliases: Object.freeze(mapped.safeAliases),
       shortcodes: Object.freeze(mapped.shortcodes),
       sourcePanels: Object.freeze([]),
-      emojinetSenseCount: 0,
-      emojinetDefinitionCount: 0,
-      hasSemanticSourceData: Boolean(bundle.semantic),
     });
   } catch {
     return getUiMetadataPayload(canonicalId, rootDir);

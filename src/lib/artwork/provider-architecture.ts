@@ -1,6 +1,5 @@
 import type { ArtworkProvider } from "@/lib/master/artwork/types";
 import { getArtworkProviderPolicy } from "@/lib/master/public/license-registry";
-import { isProviderPubliclyServed } from "@/lib/master/r2/licenses";
 
 /** Central priority order for preferred artwork resolution (8.62-B). */
 export const ARTWORK_PRIORITY_ORDER: readonly ArtworkProvider[] = [
@@ -36,11 +35,11 @@ const PROVIDER_LICENSES: Record<ArtworkProvider, string> = {
   twemoji: "CC BY 4.0",
 };
 
-/** Four-provider architecture (8.62-C): OpenMoji/Twemoji public; Noto/Fluent license-gated. */
+/** Four-provider architecture: public when registry + asset-rights permit. */
 export function getProviderArchitecture(): readonly ProviderArchitectureEntry[] {
   return ARTWORK_PRIORITY_ORDER.map((provider, index) => {
     const policy = getArtworkProviderPolicy(provider);
-    const publiclyServed = isProviderPubliclyServed(provider) && policy.publicServingAllowed;
+    const publiclyServed = policy.publicServingAllowed;
 
     return Object.freeze({
       provider,

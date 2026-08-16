@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import type { ArtworkProvider } from "@/lib/master/artwork/types";
-import { isProviderPubliclyServed } from "@/lib/master/r2/licenses";
+import { canPublicServeArtworkProvider } from "@/lib/master/public/asset-rights";
 import type { LicenseMatrix, LicenseMatrixEntry } from "./types";
 
 const PROVIDER_NAME_MAP: Record<ArtworkProvider, string[]> = {
@@ -27,26 +27,10 @@ export function resetLicenseMatrixCache(): void {
 
 export function isArtworkPubliclyServable(
   provider: ArtworkProvider,
-  matrix: LicenseMatrix | null,
-  recordClass?: string,
+  _matrix: LicenseMatrix | null,
+  _recordClass?: string,
 ): boolean {
-  if (recordClass === "A") return isProviderPubliclyServed(provider);
-  if (recordClass === "B" || recordClass === "C") return false;
-
-  if (!matrix) {
-    return isProviderPubliclyServed(provider);
-  }
-
-  const names = PROVIDER_NAME_MAP[provider];
-  const entries = matrix.providers.filter((entry: LicenseMatrixEntry) =>
-    names.some((name) => entry.provider.toLowerCase().includes(name.toLowerCase())),
-  );
-
-  if (entries.length === 0) {
-    return isProviderPubliclyServed(provider);
-  }
-
-  return entries.some((entry) => entry.publicServingAllowed === true);
+  return canPublicServeArtworkProvider(provider);
 }
 
 export function getProviderServingClass(

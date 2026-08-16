@@ -10,7 +10,6 @@ const SOURCE_ORDER: readonly (MetadataSourceKey | "noto" | "twemoji")[] = [
   "openmoji",
   "emojibase",
   "emojilib",
-  "emojinet",
   "fluent",
   "emoji-time",
   "noto",
@@ -110,9 +109,6 @@ export function getUiMetadataPayload(canonicalId: string, rootDir?: string): UiM
     safeAliases: Object.freeze(safeAliases),
     shortcodes: Object.freeze(shortcodes),
     sourcePanels,
-    emojinetSenseCount: enriched.emojinetSenseCount,
-    emojinetDefinitionCount: enriched.emojinetDefinitions.length,
-    hasSemanticSourceData: enriched.emojinetSenseCount > 0 || enriched.emojinetDefinitions.length > 0,
   });
 }
 

@@ -138,8 +138,8 @@ describe("Phase 8.52 master R2 adapter", () => {
   it("enforces license matrix public serving rules", () => {
     const matrix = loadLicenseMatrix(exportRoot);
     assert.equal(isArtworkPubliclyServable("openmoji", matrix), true);
-    assert.equal(isArtworkPubliclyServable("noto", matrix), false);
-    assert.equal(isArtworkPubliclyServable("fluent", matrix), false);
+    assert.equal(isArtworkPubliclyServable("noto", matrix), true);
+    assert.equal(isArtworkPubliclyServable("fluent", matrix), true);
   });
 
   it("keeps feature flags OFF by default", () => {

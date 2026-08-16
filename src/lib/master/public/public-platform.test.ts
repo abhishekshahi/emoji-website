@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
+import { HUB_PAGE_COUNT } from "@/lib/hub/hub-routes";
 import { getAllBrowsableEmojis } from "@/lib/emoji/browsable-data";
 import { getAllCategorySlugs } from "@/lib/emoji/data";
 import { MASTER_INTEGRATION_CONFIG } from "@/lib/master/integration/config";
@@ -100,15 +101,20 @@ describe("public master platform", () => {
     assert.ok(summary.totalEntries >= 10);
     assert.equal(getArtworkProviderPolicy("openmoji").publicServingAllowed, true);
     assert.equal(getArtworkProviderPolicy("twemoji").publicServingAllowed, true);
-    assert.equal(getArtworkProviderPolicy("noto").publicServingAllowed, false);
-    assert.equal(getArtworkProviderPolicy("fluent").publicServingAllowed, false);
+    assert.equal(getArtworkProviderPolicy("noto").publicServingAllowed, true);
+    assert.equal(getArtworkProviderPolicy("fluent").publicServingAllowed, true);
+    assert.equal(getArtworkProviderPolicy("noto").publicDownloadAllowed, true);
+    assert.equal(getArtworkProviderPolicy("fluent").publicDownloadAllowed, true);
     assert.ok(LICENSE_REGISTRY.some((e) => e.provider === "EmojiNet"));
+    const emojinet = LICENSE_REGISTRY.find((e) => e.provider === "EmojiNet");
+    assert.equal(emojinet?.publicServingAllowed, false);
+    assert.equal(emojinet?.verificationStatus, "restricted");
   });
 
   it("keeps sitemap and identity page counts stable", () => {
     assert.equal(getAllIdentitySlugs().length, PUBLIC_SEO_EMOJI_PAGE_COUNT);
     assert.equal(getAllBrowsableEmojis().length, PRODUCTION_BROWSABLE_EMOJI_COUNT);
-    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length;
+    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length + HUB_PAGE_COUNT;
     assert.equal(sitemapCount, PUBLIC_SITEMAP_URL_COUNT);
   });
 });

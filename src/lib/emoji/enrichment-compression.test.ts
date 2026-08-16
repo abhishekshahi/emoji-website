@@ -149,14 +149,17 @@ describe("enrichment compression integrity", () => {
     assert.equal(unknown, 0);
   });
 
-  it("keeps OpenMoji publicly served and other providers indexed-only", () => {
+  it("keeps verified providers publicly served in compact artwork flags", () => {
     const fire = expanded.bySlug.fire;
     assert.ok(fire);
     const providers = getEnrichmentArtworkProviders(fire);
     assert.ok(providers.includes("openmoji"));
     assert.equal(fire.artwork.p.openmoji?.s, true);
     if (fire.artwork.p.noto) {
-      assert.equal(fire.artwork.p.noto.s, false);
+      assert.equal(fire.artwork.p.noto.s, true);
+    }
+    if (fire.artwork.p.fluent) {
+      assert.equal(fire.artwork.p.fluent.s, true);
     }
   });
 
@@ -192,8 +195,8 @@ describe("enrichment compression counts", () => {
 
     assert.equal(variants, 21658);
     assert.equal(related, 44102);
-    assert.equal(definitions, 2180);
-    assert.equal(searchTerms, 49353);
+    assert.equal(definitions, 0);
+    assert.equal(searchTerms, 49350);
     assert.ok(artworkProviders > 0);
   });
 });

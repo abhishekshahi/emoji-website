@@ -9,10 +9,12 @@ import {
 
 const FOOTER_LINKS = [
   { href: "/emoji", label: "Browse Emojis" },
-  { href: "/extras", label: "OpenMoji Extras" },
+  { href: "/explore", label: "Explore" },
+  { href: "/styles", label: "Styles" },
   { href: "/search", label: "Search" },
   { href: "/popular", label: "Popular" },
   { href: "/category/smileys-emotion", label: "Categories" },
+  { href: "/about", label: "About" },
   { href: "/licenses", label: "Licenses" },
 ] as const;
 

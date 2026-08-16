@@ -1,5 +1,6 @@
 import type { ArtworkProvider } from "@/lib/master/artwork/types";
 import { getArtworkProviderPolicy } from "@/lib/master/public/license-registry";
+import { buildPublicArtworkApiUrl } from "@/lib/master/public/artwork-api-url";
 import {
   ARTWORK_PRIORITY_ORDER,
   isPublicArtworkProvider,
@@ -56,7 +57,7 @@ function buildArtworkUrl(provider: ArtworkProvider, asset: ArtworkAssetRef): str
   if (!isPublicArtworkProvider(provider)) return null;
   const format = formatFromPath(asset.path);
   if (format === "unknown") return null;
-  return `/api/artwork/${provider}/${asset.sourceId}.${format}`;
+  return buildPublicArtworkApiUrl(provider, asset.sourceId, format);
 }
 
 function pickPrimaryAsset(assets: readonly ArtworkAssetRef[]): ArtworkAssetRef | null {

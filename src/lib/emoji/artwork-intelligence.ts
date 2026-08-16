@@ -1,4 +1,5 @@
 import type { EnrichmentArtworkProvider } from "./enrichment-types";
+import { canPublicServeArtworkProvider } from "@/lib/master/public/asset-rights";
 
 export type ArtworkFormat = "svg" | "png" | "other";
 
@@ -26,10 +27,10 @@ const PROVIDER_LICENSES: Record<EnrichmentArtworkProvider, string> = {
 };
 
 const PUBLICLY_SERVED: Record<EnrichmentArtworkProvider, boolean> = {
-  openmoji: true,
-  noto: false,
-  twemoji: true,
-  fluent: false,
+  openmoji: canPublicServeArtworkProvider("openmoji"),
+  noto: canPublicServeArtworkProvider("noto"),
+  twemoji: canPublicServeArtworkProvider("twemoji"),
+  fluent: canPublicServeArtworkProvider("fluent"),
 };
 
 function detectFormats(paths: readonly string[]): ArtworkFormat[] {

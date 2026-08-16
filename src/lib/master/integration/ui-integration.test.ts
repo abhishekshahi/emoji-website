@@ -199,13 +199,13 @@ describe("phase 8.11E UI integration", () => {
     assert.ok(listUiAvailableMetadataSources(CRITICAL.fire, rootDir).includes("unicode"));
   });
 
-  it("preserves shortcodes and restricts aliases in UI metadata payload", () => {
+  it("preserves shortcodes in UI metadata without EmojiNet disclosure fields", () => {
     const metadata = getUiMetadataPayload(CRITICAL.fire, rootDir);
     assert.ok(metadata);
     assert.ok(metadata.shortcodes.some((entry) => entry.includes("fire")));
-    const enriched = metadata;
-    assert.ok(enriched.emojinetSenseCount > 0);
-    assert.ok(enriched.hasSemanticSourceData);
+    assert.equal("emojinetSenseCount" in metadata, false);
+    assert.equal("emojinetDefinitionCount" in metadata, false);
+    assert.equal("hasSemanticSourceData" in metadata, false);
   });
 
   it("keeps favorites, recents, copy, and share identity stable", () => {

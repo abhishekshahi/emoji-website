@@ -202,21 +202,13 @@ function main(): void {
     const searchTerms = uniqueStrings([
       ...(searchEntry?.keywords ?? []),
       ...(searchEntry?.aliases ?? []),
-      ...(searchEntry?.semanticSearchTerms ?? []),
+      // canonical search semanticSearchTerms are EmojiNet-derived — excluded from public index
       ...safeSemanticTerms,
       emoji.name,
       emoji.slug.replace(/-/g, " "),
     ]).slice(0, MAX_SEARCH_TERMS);
 
-    const definitions: EnrichmentDefinition[] = uniqueStrings(
-      (definitionsByCanonical.get(canonicalId) ?? []).map((entry) => entry.definition),
-    )
-      .slice(0, MAX_DEFINITIONS)
-      .map((text, index) => ({
-        text: text.replace(/\s+https?:\/\/\S+/g, "").trim().slice(0, 220),
-        source: (definitionsByCanonical.get(canonicalId) ?? [])[index]?.source ?? "emojinet",
-      }))
-      .filter((entry) => entry.text.length > 0);
+    const definitions: EnrichmentDefinition[] = [];
 
     const artworkSummary = buildArtworkIntelSummary({
       openmoji: artworkEntry?.artwork.openmoji ?? [],

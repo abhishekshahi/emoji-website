@@ -8,6 +8,7 @@ import {
   expandRelatedGrouped,
 } from "./enrichment-compact-codecs";
 import type { EmojiEnrichmentFile, EmojiEnrichmentRecord } from "./enrichment-types";
+import { filterPublicDefinitions } from "@/lib/master/public/asset-rights";
 import { buildVariantLabel, sortVariantLinks } from "./variant-intelligence";
 import type { BrowsableEmoji } from "./types";
 
@@ -28,17 +29,16 @@ export function expandCompactRecord(
     }),
   );
 
+  const definitions = filterPublicDefinitions(
+    (compact.d ?? []).map((text) => ({ text, source: "unicode" })),
+  );
+
   return Object.freeze({
     canonicalId: expandCanonicalId(compact.i),
     officialName: compact.o,
     aliases: Object.freeze(compact.a ?? []),
     searchTerms: Object.freeze(compact.t ?? []),
-    definitions: Object.freeze(
-      (compact.d ?? []).map((text) => ({
-        text,
-        source: "emojinet",
-      })),
-    ),
+    definitions: Object.freeze(definitions),
     artwork: Object.freeze(compact.w),
     variantBaseSlug: compact.bs ?? slug,
     variants: Object.freeze(variants),

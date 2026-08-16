@@ -1,144 +1,98 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/page-header";
 import { createPageMetadata } from "@/lib/seo/metadata";
-import { LICENSE_REGISTRY, getLicenseRegistrySummary } from "@/lib/master/public/license-registry";
-import {
-  OPENMOJI_LICENSE,
-  OPENMOJI_LICENSE_URL,
-  OPENMOJI_PROJECT_URL,
-  OPENMOJI_REPOSITORY_URL,
-  OPENMOJI_VERSION,
-} from "@/lib/site/config";
+import { getAttributionBlocks, getRightsDashboardStats } from "@/lib/master/public/asset-rights";
+import { LICENSE_REGISTRY } from "@/lib/master/public/license-registry";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Licenses & Attribution",
-  description:
-    "Third-party licenses and attribution for emoji artwork and data used by EmojiQuick.",
+  description: "Third-party licenses, attribution, and asset rights for EmojiQuick.",
   path: "/licenses",
 });
 
+function SectionTable({ entries }: { entries: typeof LICENSE_REGISTRY }) {
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full min-w-[640px] text-left text-sm">
+        <thead>
+          <tr className="border-b border-border text-muted">
+            <th className="py-2 pr-4 font-semibold">Provider</th>
+            <th className="py-2 pr-4 font-semibold">Asset type</th>
+            <th className="py-2 pr-4 font-semibold">License</th>
+            <th className="py-2 pr-4 font-semibold">Public serve</th>
+            <th className="py-2 font-semibold">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          {entries.map((entry) => (
+            <tr key={`${entry.provider}-${entry.assetType}`} className="border-b border-border/60">
+              <td className="py-2 pr-4">{entry.provider}</td>
+              <td className="py-2 pr-4 text-muted">{entry.assetType}</td>
+              <td className="py-2 pr-4">
+                <Link href={entry.licenseURL} className="text-accent-strong underline">{entry.license}</Link>
+              </td>
+              <td className="py-2 pr-4">{entry.publicServingAllowed ? "Yes" : "No"}</td>
+              <td className="py-2">{entry.publicDownloadAllowed ? "Yes" : "No"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function LicensesPage() {
-  const registrySummary = getLicenseRegistrySummary();
+  const stats = getRightsDashboardStats();
+  const blocks = getAttributionBlocks();
+  const artwork = blocks.filter((b) => b.category === "artwork");
+  const unicode = blocks.filter((b) => b.category === "unicode");
+  const metadata = blocks.filter((b) => b.category === "metadata" && b.provider !== "EmojiNet");
+  const restricted = blocks.filter((b) => b.category === "restricted");
 
   return (
     <div className="page-shell space-y-8">
       <PageHeader
         eyebrow="Legal"
         title="Licenses & Attribution"
-        description="Third-party artwork and data sources used by this website."
+        description="Generated from the EmojiQuick asset rights registry. EmojiQuick is not affiliated with, endorsed by, or sponsored by the third-party projects listed below."
       />
 
-      <section className="card-surface space-y-4 p-6">
-        <h2 className="text-xl font-semibold">OpenMoji artwork</h2>
-        <p className="text-muted">
-          Emoji artwork on this website is provided by{" "}
-          <Link href={OPENMOJI_PROJECT_URL} className="text-accent-strong underline">
-            OpenMoji
-          </Link>{" "}
-          (version {OPENMOJI_VERSION}) and is licensed under{" "}
-          <Link href={OPENMOJI_LICENSE_URL} className="text-accent-strong underline">
-            {OPENMOJI_LICENSE}
-          </Link>
-          .
-        </p>
-        <p className="text-muted">
-          Source repository:{" "}
-          <Link href={OPENMOJI_REPOSITORY_URL} className="text-accent-strong underline">
-            {OPENMOJI_REPOSITORY_URL}
-          </Link>
-        </p>
-        <p className="text-muted">
-          EmojiQuick is not affiliated with, endorsed by, or sponsored by OpenMoji.
-          Artwork files are served locally from this website under{" "}
-          <code className="rounded bg-surface-muted px-1.5 py-0.5 text-xs">
-            public/openmoji/
-          </code>{" "}
-          and are not hotlinked from third-party servers.
-        </p>
+      <section className="card-surface grid gap-4 p-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div><p className="text-2xl font-bold">{stats.totals.verified}</p><p className="text-sm text-muted">Verified entries</p></div>
+        <div><p className="text-2xl font-bold">{stats.totals.publicServe}</p><p className="text-sm text-muted">Public serve allowed</p></div>
+        <div><p className="text-2xl font-bold">{stats.totals.downloadable}</p><p className="text-sm text-muted">Download allowed</p></div>
+        <div><p className="text-2xl font-bold">{stats.totals.restricted}</p><p className="text-sm text-muted">Restricted</p></div>
       </section>
 
       <section className="card-surface space-y-4 p-6">
-        <h2 className="text-xl font-semibold">OpenMoji Extras artwork</h2>
-        <p className="text-muted">
-          OpenMoji Extras are additional symbols and designs beyond the standard
-          Unicode emoji set. They are provided by{" "}
-          <Link href={OPENMOJI_PROJECT_URL} className="text-accent-strong underline">
-            OpenMoji
-          </Link>{" "}
-          under{" "}
-          <Link href={OPENMOJI_LICENSE_URL} className="text-accent-strong underline">
-            {OPENMOJI_LICENSE}
-          </Link>
-          .
-        </p>
-        <p className="text-muted">
-          Individual OpenMoji Extra designs credit their authors on each emoji
-          detail page. When sharing or redistributing OpenMoji artwork, you must
-          provide attribution and share under the same license.
-        </p>
+        <h2 className="text-xl font-semibold">Artwork</h2>
+        <p className="text-sm text-muted">OpenMoji, OpenMoji Extras, Twemoji, Noto, and Fluent artwork policies.</p>
+        <SectionTable entries={LICENSE_REGISTRY.filter((e) => artwork.some((a) => a.provider === e.provider))} />
+        {artwork.map((block) => (
+          <p key={block.provider} className="text-xs text-muted">{block.attributionText}</p>
+        ))}
       </section>
 
       <section className="card-surface space-y-4 p-6">
-        <h2 className="text-xl font-semibold">Unicode &amp; metadata sources</h2>
-        <p className="text-muted">
-          Emoji names, categories, keywords, meanings, and Unicode information are enriched from official Unicode data and additional metadata sources indexed in the master database.
-        </p>
-        <ul className="list-disc space-y-2 pl-5 text-sm text-muted">
-          <li>Unicode emoji data (Unicode Terms of Use)</li>
-          <li>CLDR / Emojibase annotations (MIT / Unicode Terms of Use)</li>
-          <li>Emojilib keywords (MIT)</li>
-          <li>EmojiNet definitions (CC BY-NC-SA 4.0 — used for on-page meaning where available)</li>
-          <li>OpenMoji tags and annotations (CC BY-SA 4.0)</li>
-        </ul>
-        <p className="text-sm text-muted">
-          OpenMoji and Twemoji artwork may be publicly served when the master platform is enabled, subject to CC BY-SA 4.0 and CC BY 4.0 attribution requirements. Noto and Fluent artwork remain indexed but private until per-asset license verification is complete.
-        </p>
+        <h2 className="text-xl font-semibold">Unicode & character data</h2>
+        <SectionTable entries={LICENSE_REGISTRY.filter((e) => unicode.some((u) => u.provider === e.provider))} />
       </section>
 
       <section className="card-surface space-y-4 p-6">
-        <h2 className="text-xl font-semibold">License registry</h2>
-        <p className="text-sm text-muted">
-          Formal provider and source license audit ({registrySummary.totalEntries} entries:{" "}
-          {registrySummary.verified} verified, {registrySummary.partial} partial,{" "}
-          {registrySummary.unverified} unverified, {registrySummary.restricted} restricted).
-        </p>
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[640px] text-left text-sm">
-            <thead>
-              <tr className="border-b border-border text-muted">
-                <th className="py-2 pr-4 font-semibold">Provider</th>
-                <th className="py-2 pr-4 font-semibold">Asset type</th>
-                <th className="py-2 pr-4 font-semibold">License</th>
-                <th className="py-2 pr-4 font-semibold">Public serve</th>
-                <th className="py-2 font-semibold">Download</th>
-              </tr>
-            </thead>
-            <tbody>
-              {LICENSE_REGISTRY.map((entry) => (
-                <tr key={`${entry.provider}-${entry.assetType}`} className="border-b border-border/60">
-                  <td className="py-2 pr-4">{entry.provider}</td>
-                  <td className="py-2 pr-4 text-muted">{entry.assetType}</td>
-                  <td className="py-2 pr-4">
-                    <Link href={entry.licenseURL} className="text-accent-strong underline">
-                      {entry.license}
-                    </Link>
-                  </td>
-                  <td className="py-2 pr-4">{entry.publicServingAllowed ? "Yes" : "No"}</td>
-                  <td className="py-2">{entry.publicDownloadAllowed ? "Yes" : "No"}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <h2 className="text-xl font-semibold">Metadata</h2>
+        <SectionTable entries={LICENSE_REGISTRY.filter((e) => metadata.some((m) => m.provider === e.provider))} />
       </section>
 
       <section className="card-surface space-y-4 p-6">
-        <h2 className="text-xl font-semibold">Application code</h2>
-        <p className="text-muted">
-          The EmojiQuick application code is separate from third-party artwork
-          licensing. See the repository for application licensing details.
-        </p>
+        <h2 className="text-xl font-semibold">Restricted sources</h2>
+        <p className="text-sm text-muted">These sources are indexed privately and are not publicly served or downloaded on EmojiQuick.</p>
+        <SectionTable entries={LICENSE_REGISTRY.filter((e) => restricted.some((r) => r.provider === e.provider))} />
+      </section>
+
+      <section className="card-surface space-y-2 p-6 text-sm text-muted">
+        <p>EmojiQuick does not claim ownership of third-party emoji artwork or data.</p>
+        <p>Public serving follows verification: only VERIFIED entries with explicit public-serve permission are distributed.</p>
       </section>
     </div>
   );

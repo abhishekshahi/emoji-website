@@ -39,6 +39,23 @@ export const LICENSE_REGISTRY: readonly LicenseRegistryEntry[] = [
     notes: "Official OpenMoji graphics license. Attribution and ShareAlike required.",
   },
   {
+    provider: "OpenMoji Extras",
+    assetType: "supplemental graphics (SVG/PNG)",
+    license: "CC BY-SA 4.0",
+    licenseURL: "https://creativecommons.org/licenses/by-sa/4.0/",
+    copyright: "OpenMoji Project and individual authors",
+    attributionRequired: true,
+    publicServingAllowed: true,
+    publicDownloadAllowed: true,
+    commercialUseAllowed: true,
+    modificationAllowed: true,
+    shareAlikeRequired: true,
+    sourceURL: "https://openmoji.org/",
+    verificationStatus: "verified",
+    verificationDate: "2026-08-09",
+    notes: "OpenMoji Extras beyond standard Unicode set. Per-design author attribution on detail pages where required.",
+  },
+  {
     provider: "Twemoji",
     assetType: "emoji graphics (SVG/PNG)",
     license: "CC BY 4.0",
@@ -59,52 +76,55 @@ export const LICENSE_REGISTRY: readonly LicenseRegistryEntry[] = [
     provider: "Noto Emoji",
     assetType: "emoji fonts",
     license: "SIL Open Font License 1.1",
-    licenseURL: "https://scripts.sil.org/OFL",
+    licenseURL: "https://github.com/googlefonts/noto-emoji/blob/main/fonts/LICENSE",
     copyright: "Google LLC",
     attributionRequired: true,
-    publicServingAllowed: false,
-    publicDownloadAllowed: false,
-    commercialUseAllowed: "conditional",
-    modificationAllowed: true,
-    shareAlikeRequired: false,
-    sourceURL: "https://github.com/googlefonts/noto-emoji",
-    verificationStatus: "partial",
-    verificationDate: "2026-08-09",
-    notes: "Font assets require OFL compliance. Not automatically interchangeable with image redistribution.",
-  },
-  {
-    provider: "Noto Emoji",
-    assetType: "emoji image resources",
-    license: "Apache License 2.0",
-    licenseURL: "https://www.apache.org/licenses/LICENSE-2.0",
-    copyright: "Google LLC",
-    attributionRequired: true,
-    publicServingAllowed: false,
-    publicDownloadAllowed: false,
+    publicServingAllowed: true,
+    publicDownloadAllowed: true,
     commercialUseAllowed: true,
     modificationAllowed: true,
     shareAlikeRequired: false,
     sourceURL: "https://github.com/googlefonts/noto-emoji",
-    verificationStatus: "partial",
-    verificationDate: "2026-08-09",
-    notes: "Most image resources are Apache-2.0. Flag assets may have separate/public-domain treatment — per-asset audit required.",
+    verificationStatus: "verified",
+    verificationDate: "2026-08-16",
+    notes:
+      "Noto Emoji fonts under SIL OFL 1.1. Public serve/download permitted with OFL attribution and license preservation requirements.",
+  },
+  {
+    provider: "Noto Emoji",
+    assetType: "emoji image resources (SVG/PNG)",
+    license: "Apache License 2.0",
+    licenseURL: "https://github.com/googlefonts/noto-emoji/blob/main/svg/LICENSE",
+    copyright: "Google LLC",
+    attributionRequired: true,
+    publicServingAllowed: true,
+    publicDownloadAllowed: true,
+    commercialUseAllowed: true,
+    modificationAllowed: true,
+    shareAlikeRequired: false,
+    sourceURL: "https://github.com/googlefonts/noto-emoji",
+    verificationStatus: "verified",
+    verificationDate: "2026-08-16",
+    notes:
+      "Noto SVG/image resources under Apache-2.0 per official svg/LICENSE. Distinct from OFL-licensed font binaries.",
   },
   {
     provider: "Fluent Emoji",
     assetType: "emoji graphics (PNG)",
-    license: "MIT (repository)",
-    licenseURL: "https://opensource.org/licenses/MIT",
+    license: "MIT License",
+    licenseURL: "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE",
     copyright: "Microsoft Corporation",
     attributionRequired: true,
-    publicServingAllowed: false,
-    publicDownloadAllowed: false,
-    commercialUseAllowed: "conditional",
+    publicServingAllowed: true,
+    publicDownloadAllowed: true,
+    commercialUseAllowed: true,
     modificationAllowed: true,
     shareAlikeRequired: false,
     sourceURL: "https://github.com/microsoft/fluentui-emoji",
-    verificationStatus: "unverified",
-    verificationDate: "2026-08-09",
-    notes: "Repository is MIT-licensed; asset scope and notices require per-asset verification before public redistribution.",
+    verificationStatus: "verified",
+    verificationDate: "2026-08-16",
+    notes:
+      "Fluent Emoji repository MIT license verified. Preserve Microsoft copyright and LICENSE notice on redistribution.",
   },
   {
     provider: "Unicode",
@@ -181,7 +201,7 @@ export const LICENSE_REGISTRY: readonly LicenseRegistryEntry[] = [
     licenseURL: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     copyright: "EmojiNet contributors",
     attributionRequired: true,
-    publicServingAllowed: true,
+    publicServingAllowed: false,
     publicDownloadAllowed: false,
     commercialUseAllowed: false,
     modificationAllowed: true,
@@ -189,25 +209,32 @@ export const LICENSE_REGISTRY: readonly LicenseRegistryEntry[] = [
     sourceURL: "https://emojinet.knoesis.org/",
     verificationStatus: "restricted",
     verificationDate: "2026-08-09",
-    notes: "Non-commercial restriction applies. Definitions shown on-page with attribution; bulk redistribution not permitted.",
+    notes:
+      "RESTRICTED: CC BY-NC-SA 4.0 non-commercial. EmojiNet definitions and senses are indexed privately and are NOT publicly served, downloaded, or indexed on EmojiQuick.",
   },
 ] as const;
 
-const ARTWORK_PROVIDER_POLICY: Record<
-  ArtworkProvider,
-  { publicServingAllowed: boolean; publicDownloadAllowed: boolean }
-> = {
-  openmoji: { publicServingAllowed: true, publicDownloadAllowed: true },
-  twemoji: { publicServingAllowed: true, publicDownloadAllowed: true },
-  noto: { publicServingAllowed: false, publicDownloadAllowed: false },
-  fluent: { publicServingAllowed: false, publicDownloadAllowed: false },
+const ARTWORK_PROVIDER_LABELS: Record<ArtworkProvider, string> = {
+  openmoji: "OpenMoji",
+  twemoji: "Twemoji",
+  noto: "Noto Emoji",
+  fluent: "Fluent Emoji",
 };
 
 export function getArtworkProviderPolicy(provider: ArtworkProvider): {
   publicServingAllowed: boolean;
   publicDownloadAllowed: boolean;
 } {
-  return ARTWORK_PROVIDER_POLICY[provider];
+  const label = ARTWORK_PROVIDER_LABELS[provider];
+  const entries = LICENSE_REGISTRY.filter((entry) => entry.provider === label);
+  return {
+    publicServingAllowed: entries.some(
+      (entry) => entry.verificationStatus === "verified" && entry.publicServingAllowed,
+    ),
+    publicDownloadAllowed: entries.some(
+      (entry) => entry.verificationStatus === "verified" && entry.publicDownloadAllowed,
+    ),
+  };
 }
 
 export function getLicenseEntriesForProvider(provider: string): readonly LicenseRegistryEntry[] {

@@ -3,6 +3,7 @@ import { EmojiGrid } from "@/components/emoji/emoji-grid";
 import { getBrowsableEmojiBySlug } from "@/lib/emoji/browsable-data";
 import type { EmojiEnrichmentRecord, EnrichmentArtworkProvider } from "@/lib/emoji/enrichment-types";
 import { getEnrichmentArtworkProviders } from "@/lib/emoji/enrichment-artwork";
+import { filterPublicDefinitions } from "@/lib/master/public/asset-rights";
 import type { BrowsableEmoji } from "@/lib/emoji/types";
 
 const PROVIDER_LABELS: Record<EnrichmentArtworkProvider, string> = {
@@ -18,11 +19,12 @@ interface EmojiEnrichmentPanelsProps {
 }
 
 export function EmojiEnrichmentPanels({ emoji, enrichment }: EmojiEnrichmentPanelsProps) {
+  const publicDefinitions = filterPublicDefinitions(enrichment.definitions);
   const variantEmojis = enrichment.variants
     .map((variant) => getBrowsableEmojiBySlug(variant.slug))
     .filter((entry): entry is BrowsableEmoji => Boolean(entry));
 
-  const hasMeaning = enrichment.definitions.length > 0;
+  const hasMeaning = publicDefinitions.length > 0;
   const hasAliases = enrichment.aliases.length > 0;
   const hasSearchTerms = enrichment.searchTerms.length > emoji.keywords.length;
   const hasVariants = variantEmojis.length > 0;
@@ -40,7 +42,7 @@ export function EmojiEnrichmentPanels({ emoji, enrichment }: EmojiEnrichmentPane
         <section className="card-surface space-y-4 p-6">
           <h2 className="text-lg font-semibold">Meaning &amp; context</h2>
           <div className="space-y-3">
-            {enrichment.definitions.map((definition) => (
+            {publicDefinitions.map((definition) => (
               <blockquote key={`${definition.source}-${definition.text.slice(0, 24)}`} className="border-l-4 border-accent-strong/40 pl-4 text-muted">
                 <p>{definition.text}</p>
                 <footer className="mt-2 text-xs uppercase tracking-wide text-muted">
@@ -107,7 +109,8 @@ export function EmojiEnrichmentPanels({ emoji, enrichment }: EmojiEnrichmentPane
         <section className="card-surface space-y-3 p-6">
           <h2 className="text-lg font-semibold">Artwork sources in database</h2>
           <p className="text-sm text-muted">
-            EmojiQuick serves OpenMoji artwork on the public site. Additional artwork styles are indexed in the master database for future licensed display.
+            EmojiQuick serves verified artwork from OpenMoji, Twemoji, Noto, and Fluent where license
+            policy permits. Additional artwork styles are indexed in the master database.
           </p>
           <ul className="flex flex-wrap gap-2">
             {extraProviders.map((provider) => (

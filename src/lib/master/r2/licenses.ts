@@ -1,4 +1,5 @@
 import type { ArtworkProvider } from "@/lib/master/artwork/types";
+import { canPublicServeArtworkProvider } from "@/lib/master/public/asset-rights";
 import type { R2ProviderLicense } from "./types";
 
 const PROVIDER_LICENSES: Record<
@@ -13,11 +14,11 @@ const PROVIDER_LICENSES: Record<
     publiclyServed: true,
   },
   noto: {
-    license: "Apache-2.0",
-    licenseURL: "https://www.apache.org/licenses/LICENSE-2.0",
-    attribution: "Google Noto Emoji project",
+    license: "Apache-2.0 / OFL",
+    licenseURL: "https://github.com/googlefonts/noto-emoji/blob/main/svg/LICENSE",
+    attribution: "Noto Emoji by Google LLC — Apache-2.0 (images) / OFL 1.1 (fonts)",
     sourceURL: "https://github.com/googlefonts/noto-emoji",
-    publiclyServed: false,
+    publiclyServed: true,
   },
   twemoji: {
     license: "CC BY 4.0",
@@ -28,10 +29,10 @@ const PROVIDER_LICENSES: Record<
   },
   fluent: {
     license: "MIT",
-    licenseURL: "https://opensource.org/licenses/MIT",
-    attribution: "Microsoft Corporation",
+    licenseURL: "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE",
+    attribution: "Fluent Emoji by Microsoft Corporation. License: MIT",
     sourceURL: "https://github.com/microsoft/fluentui-emoji",
-    publiclyServed: false,
+    publiclyServed: true,
   },
 };
 
@@ -47,7 +48,7 @@ export function getProviderLicense(
 }
 
 export function isProviderPubliclyServed(provider: ArtworkProvider): boolean {
-  return PROVIDER_LICENSES[provider].publiclyServed;
+  return canPublicServeArtworkProvider(provider);
 }
 
 export function getAllowedArtworkProviders(): readonly ArtworkProvider[] {

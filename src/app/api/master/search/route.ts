@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { isPublicMasterApiEnabled } from "@/lib/master/public/config";
 import { searchMasterIntegrated } from "@/lib/master/integration/search/adapter";
+import { sanitizePublicProvenanceSource } from "@/lib/master/public/asset-rights";
 import { getProductionSlugForCanonical } from "@/lib/master/public/production-slug";
 import { encodeCatalogPath } from "@/lib/master/public/visibility";
 import { shouldReadFromR2Binding } from "@/lib/master/r2/config";
@@ -33,6 +34,11 @@ export async function GET(request: Request): Promise<NextResponse> {
         : getProductionSlugForCanonical(result.canonicalId);
       return {
         ...result,
+        source: sanitizePublicProvenanceSource(result.source),
+        provenance: Object.freeze({
+          ...result.provenance,
+          source: sanitizePublicProvenanceSource(result.provenance.source),
+        }),
         resultType: seoSlug ? "seo-page" : "catalog-item",
         seoPageUrl: seoSlug ? `/emoji/${seoSlug}` : null,
         catalogUrl: encodeCatalogPath(result.canonicalId),

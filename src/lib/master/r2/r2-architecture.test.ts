@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
+import { HUB_PAGE_COUNT } from "@/lib/hub/hub-routes";
 import {
   MASTER_ARTWORK_RECORD_COUNT,
   MASTER_IDENTITY_COUNT,
@@ -84,7 +85,7 @@ describe("master R2 catalog invariants", () => {
   });
 
   it("keeps sitemap URL count stable", () => {
-    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length;
+    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length + HUB_PAGE_COUNT;
     assert.equal(sitemapCount, PUBLIC_SITEMAP_URL_COUNT);
   });
 });
@@ -105,11 +106,11 @@ describe("master R2 security", () => {
     assert.throws(() => assertSafeR2Key("other-prefix/artwork/openmoji/1F525.svg"), R2KeyValidationError);
   });
 
-  it("keeps only OpenMoji and Twemoji publicly served", () => {
+  it("keeps verified artwork providers publicly served", () => {
     assert.equal(isProviderPubliclyServed("openmoji"), true);
     assert.equal(isProviderPubliclyServed("twemoji"), true);
-    assert.equal(isProviderPubliclyServed("noto"), false);
-    assert.equal(isProviderPubliclyServed("fluent"), false);
+    assert.equal(isProviderPubliclyServed("noto"), true);
+    assert.equal(isProviderPubliclyServed("fluent"), true);
   });
 });
 

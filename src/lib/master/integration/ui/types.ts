@@ -78,9 +78,6 @@ export interface UiMetadataPayload {
   readonly safeAliases: readonly string[];
   readonly shortcodes: readonly string[];
   readonly sourcePanels: readonly UiSourceMetadataPanel[];
-  readonly emojinetSenseCount: number;
-  readonly emojinetDefinitionCount: number;
-  readonly hasSemanticSourceData: boolean;
 }
 
 export interface UiProductionContext {
