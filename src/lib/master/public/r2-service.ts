@@ -3,8 +3,6 @@ import type { CanonicalIdentityType } from "@/lib/master/canonical/types";
 import { getAllBrowsableEmojis } from "@/lib/emoji/browsable-data";
 import { isOpenMojiExtra } from "@/lib/emoji/types";
 import { searchEmojis } from "@/lib/emoji/search";
-import { isUtilityCanonicalId } from "@/lib/master/integration/seo/policy";
-import { MASTER_IDENTITY_COUNT } from "@/lib/master/r2/catalog";
 import { getMasterR2Adapter } from "@/lib/r2";
 import { MasterDataUnavailableError } from "@/lib/r2";
 import type { CatalogItemSummary, CatalogPageResult, CatalogQuery } from "./catalog-service";
@@ -191,8 +189,6 @@ function buildCatalogCacheStatic(): CatalogItemSummary[] {
   const items: CatalogItemSummary[] = [];
 
   for (const canonicalId of listProductionCanonicalIds()) {
-    if (isUtilityCanonicalId(canonicalId)) continue;
-
     const hexMatch = /:([0-9A-F-]+)$/i.exec(canonicalId);
     const hexcode = hexMatch?.[1]?.toUpperCase() ?? null;
     const emoji = hexcode ? emojiByHex.get(hexcode) : undefined;
@@ -260,7 +256,7 @@ export async function queryPublicCatalogFromR2(query: CatalogQuery): Promise<Cat
     items = [...items].sort((left, right) => left.identityType.localeCompare(right.identityType));
   }
 
-  const total = Math.max(items.length, MASTER_IDENTITY_COUNT - 10);
+  const total = items.length;
   const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
   const start = (page - 1) * pageSize;
   const paged = items.slice(start, start + pageSize);

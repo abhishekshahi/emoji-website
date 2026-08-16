@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { BrowsableEmoji, EmojiRecord } from "@/lib/emoji/types";
+import { fetchMasterSearch, mapMasterSearchResultToBrowsable } from "@/lib/emoji/master-search-client";
 import { searchEmojis } from "@/lib/emoji/search";
 import { SEARCH_UI_CONTRACT } from "@/lib/emoji/search-ui-contract";
 
@@ -39,7 +40,9 @@ async function loadSearchEnrichment(): Promise<Readonly<Record<string, readonly 
 export function useEmojiSearch(query: string, limit = 120) {
   const [emojis, setEmojis] = useState<BrowsableEmoji[]>([]);
   const [searchEnrichment, setSearchEnrichment] = useState<Readonly<Record<string, readonly string[]>>>({});
+  const [masterResults, setMasterResults] = useState<Array<{ emoji: BrowsableEmoji; score: number }>>([]);
   const [isReady, setIsReady] = useState(false);
+  const [usesMasterSearch, setUsesMasterSearch] = useState(false);
   const latestQueryRef = useRef(query);
 
   useEffect(() => {
@@ -62,8 +65,43 @@ export function useEmojiSearch(query: string, limit = 120) {
     };
   }, []);
 
-  const results = useMemo(() => {
-    if (!isReady || !query.trim()) {
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!trimmed) {
+      setMasterResults([]);
+      setUsesMasterSearch(false);
+      return;
+    }
+
+    let cancelled = false;
+    setUsesMasterSearch(true);
+
+    fetchMasterSearch(trimmed, limit).then((response) => {
+      if (cancelled) return;
+      if (!response) {
+        setUsesMasterSearch(false);
+        setMasterResults([]);
+        return;
+      }
+
+      const mapped = response.results
+        .map((result) => {
+          const emoji = mapMasterSearchResultToBrowsable(result);
+          if (!emoji) return null;
+          return { emoji, score: result.score };
+        })
+        .filter((entry): entry is { emoji: BrowsableEmoji; score: number } => Boolean(entry));
+
+      setMasterResults(mapped);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [limit, query]);
+
+  const clientResults = useMemo(() => {
+    if (!isReady || !query.trim() || usesMasterSearch) {
       return [];
     }
 
@@ -72,11 +110,12 @@ export function useEmojiSearch(query: string, limit = 120) {
     }
 
     return searchEmojis(emojis, query, limit, searchEnrichment);
-  }, [emojis, isReady, limit, query, searchEnrichment]);
+  }, [emojis, isReady, limit, query, searchEnrichment, usesMasterSearch]);
 
+  const results = usesMasterSearch ? masterResults : clientResults;
   const stableResults = latestQueryRef.current === query ? results : [];
 
-  return { results: stableResults, isReady };
+  return { results: stableResults, isReady: isReady || usesMasterSearch };
 }
 
 export function useEmojiDataset() {

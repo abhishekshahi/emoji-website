@@ -16,7 +16,7 @@ import {
   PUBLIC_SEO_EMOJI_PAGE_COUNT,
   PUBLIC_SITEMAP_URL_COUNT,
 } from "@/lib/master/r2/catalog";
-import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
+import { getAllIdentitySlugs, getIndexableEmojiPageSlugs } from "@/lib/master/public/identity-slug-map";
 import {
   getCatalogStats,
   queryCatalog,
@@ -114,7 +114,8 @@ describe("public master platform", () => {
   it("keeps sitemap and identity page counts stable", () => {
     assert.equal(getAllIdentitySlugs().length, PUBLIC_SEO_EMOJI_PAGE_COUNT);
     assert.equal(getAllBrowsableEmojis().length, PRODUCTION_BROWSABLE_EMOJI_COUNT);
-    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length + HUB_PAGE_COUNT;
+    assert.equal(getIndexableEmojiPageSlugs().length, PUBLIC_INDEXABLE_IDENTITY_COUNT);
+    const sitemapCount = 7 + getAllCategorySlugs().length + getIndexableEmojiPageSlugs().length + HUB_PAGE_COUNT;
     assert.equal(sitemapCount, PUBLIC_SITEMAP_URL_COUNT);
   });
 });
@@ -129,16 +130,53 @@ describe("public platform feature gates", () => {
   });
 });
 
-describe("Phase 8.62-A EmojiQuick branding", () => {
+describe("Phase 8.63 EmojiQuick official branding", () => {
   it("uses EmojiQuick site name in config", async () => {
     const { SITE_NAME } = await import("@/lib/site/config");
     assert.equal(SITE_NAME, "EmojiQuick");
   });
 
-  it("icon.svg aria-label is EmojiQuick not EmojiFind", () => {
-    const icon = readFileSync(join(rootDir, "src/app/icon.svg"), "utf8");
-    assert.match(icon, /EmojiQuick/);
-    assert.doesNotMatch(icon, /EmojiFind/);
+  it("ships official PNG brand assets derived from authoritative source", () => {
+    const brandDir = join(rootDir, "public/brand");
+    for (const file of [
+      "emojiquick-logo-official-source.png",
+      "emojiquick-logo-primary.png",
+      "emojiquick-icon.png",
+      "emojiquick-og.png",
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-512.png",
+    ]) {
+      assert.ok(readFileSync(join(brandDir, file)).byteLength > 100, file);
+    }
+  });
+
+  it("uses PNG app icons instead of legacy SVG favicon", () => {
+    assert.ok(readFileSync(join(rootDir, "src/app/icon.png")).byteLength > 100);
+    assert.ok(readFileSync(join(rootDir, "src/app/apple-icon.png")).byteLength > 100);
+  });
+
+  it("points brand constants at official PNG derivatives", async () => {
+    const brand = await import("@/lib/site/brand");
+    assert.match(brand.BRAND_LOGO_PRIMARY, /\.png$/);
+    assert.match(brand.BRAND_ICON, /\.png$/);
+    assert.match(brand.BRAND_OG_IMAGE, /\.png$/);
+  });
+
+  it("embeds Organization JSON-LD with official logo URL", async () => {
+    const { buildSiteOrganizationJsonLd } = await import("@/lib/seo/json-ld");
+    const jsonLd = buildSiteOrganizationJsonLd() as {
+      "@graph": Array<{ "@type": string; logo?: { url: string } }>;
+    };
+    const org = jsonLd["@graph"].find((n) => n["@type"] === "Organization");
+    assert.ok(org?.logo?.url.includes("/brand/emojiquick-logo-primary.png"));
+  });
+
+  it("site header logo component references official assets", () => {
+    const logo = readFileSync(join(rootDir, "src/components/layout/site-logo.tsx"), "utf8");
+    assert.match(logo, /BRAND_LOGO_PRIMARY/);
+    assert.match(logo, /BRAND_ICON/);
+    assert.doesNotMatch(logo, /EmojiFind/);
   });
 });
 

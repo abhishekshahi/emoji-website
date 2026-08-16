@@ -1,0 +1,833 @@
+{
+  "phase": "8.62-w-warning-correction",
+  "auditedAt": "2026-08-16T21:30:34.098Z",
+  "production": "https://emojiquick.com",
+  "deployment": {
+    "version": "e5c9d91d-1c4b-44b3-b061-0401fef5bda2",
+    "rollback": "14d16f10-90ff-47f4-9912-0a4f445e477f"
+  },
+  "verdict": "PASS",
+  "warningsClosure": {
+    "warning1": {
+      "safeConcurrency": 5,
+      "count503AtSafeConcurrency": 0,
+      "count503AtAggressiveConcurrency": 0,
+      "rootCause": "none",
+      "classification": "EXPECTED",
+      "normalLoadMatrix": [
+        {
+          "loadClass": "normal",
+          "concurrency": 1,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 399,
+          "p95TtfbMs": 1863,
+          "healthy": true,
+          "durationMs": 7981,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 1863,
+              "cache": "s-maxage=85431, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 319,
+              "cache": "s-maxage=85430, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 324,
+              "cache": "s-maxage=85430, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 2,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 266,
+          "p95TtfbMs": 1677,
+          "healthy": true,
+          "durationMs": 2705,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 1677,
+              "cache": "s-maxage=85414, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 1220,
+              "cache": "s-maxage=85414, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 129,
+              "cache": "s-maxage=85413, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 3,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 319,
+          "p95TtfbMs": 1609,
+          "healthy": true,
+          "durationMs": 2149,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 1306,
+              "cache": "s-maxage=85401, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 1261,
+              "cache": "s-maxage=85401, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 1609,
+              "cache": "s-maxage=85401, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 4,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 345,
+          "p95TtfbMs": 1208,
+          "healthy": true,
+          "durationMs": 2170,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 477,
+              "cache": "s-maxage=85390, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 1124,
+              "cache": "s-maxage=85389, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 1208,
+              "cache": "s-maxage=85389, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 5,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 231,
+          "p95TtfbMs": 1202,
+          "healthy": true,
+          "durationMs": 1205,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 289,
+              "cache": "s-maxage=85377, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 303,
+              "cache": "s-maxage=85377, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 1202,
+              "cache": "s-maxage=85377, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        }
+      ],
+      "aggressiveLoadMatrix": [
+        {
+          "loadClass": "aggressive",
+          "concurrency": 6,
+          "requests": 30,
+          "counts": {
+            "200": 30,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 434,
+          "p95TtfbMs": 1423,
+          "healthy": true,
+          "durationMs": 2310,
+          "sample": [
+            {
+              "path": "/emoji/bt-png-bt",
+              "status": 200,
+              "ms": 531,
+              "cache": "s-maxage=85366, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-bt",
+              "status": 200,
+              "ms": 1889,
+              "cache": "s-maxage=85365, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-svg-bt",
+              "status": 200,
+              "ms": 460,
+              "cache": "s-maxage=85366, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "aggressive",
+          "concurrency": 8,
+          "requests": 30,
+          "counts": {
+            "200": 30,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 309,
+          "p95TtfbMs": 1298,
+          "healthy": true,
+          "durationMs": 1308,
+          "sample": [
+            {
+              "path": "/emoji/bt-png-bt",
+              "status": 200,
+              "ms": 1298,
+              "cache": "s-maxage=85348, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-bt",
+              "status": 200,
+              "ms": 313,
+              "cache": "s-maxage=85349, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-svg-bt",
+              "status": 200,
+              "ms": 1306,
+              "cache": "s-maxage=85348, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "aggressive",
+          "concurrency": 10,
+          "requests": 30,
+          "counts": {
+            "200": 30,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 322,
+          "p95TtfbMs": 1354,
+          "healthy": true,
+          "durationMs": 1581,
+          "sample": [
+            {
+              "path": "/emoji/bt-png-bt",
+              "status": 200,
+              "ms": 303,
+              "cache": "s-maxage=85332, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-bt",
+              "status": 200,
+              "ms": 298,
+              "cache": "s-maxage=85332, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-svg-bt",
+              "status": 200,
+              "ms": 310,
+              "cache": "s-maxage=85332, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        }
+      ],
+      "concurrencyMatrix": [
+        {
+          "loadClass": "normal",
+          "concurrency": 1,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 399,
+          "p95TtfbMs": 1863,
+          "healthy": true,
+          "durationMs": 7981,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 1863,
+              "cache": "s-maxage=85431, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 319,
+              "cache": "s-maxage=85430, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 324,
+              "cache": "s-maxage=85430, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 2,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 266,
+          "p95TtfbMs": 1677,
+          "healthy": true,
+          "durationMs": 2705,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 1677,
+              "cache": "s-maxage=85414, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 1220,
+              "cache": "s-maxage=85414, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 129,
+              "cache": "s-maxage=85413, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 3,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 319,
+          "p95TtfbMs": 1609,
+          "healthy": true,
+          "durationMs": 2149,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 1306,
+              "cache": "s-maxage=85401, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 1261,
+              "cache": "s-maxage=85401, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 1609,
+              "cache": "s-maxage=85401, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 4,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 345,
+          "p95TtfbMs": 1208,
+          "healthy": true,
+          "durationMs": 2170,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 477,
+              "cache": "s-maxage=85390, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 1124,
+              "cache": "s-maxage=85389, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 1208,
+              "cache": "s-maxage=85389, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "normal",
+          "concurrency": 5,
+          "requests": 20,
+          "counts": {
+            "200": 20,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 231,
+          "p95TtfbMs": 1202,
+          "healthy": true,
+          "durationMs": 1205,
+          "sample": [
+            {
+              "path": "/emoji/ca",
+              "status": 200,
+              "ms": 289,
+              "cache": "s-maxage=85377, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/dc",
+              "status": 200,
+              "ms": 303,
+              "cache": "s-maxage=85377, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/de",
+              "status": 200,
+              "ms": 1202,
+              "cache": "s-maxage=85377, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "aggressive",
+          "concurrency": 6,
+          "requests": 30,
+          "counts": {
+            "200": 30,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 434,
+          "p95TtfbMs": 1423,
+          "healthy": true,
+          "durationMs": 2310,
+          "sample": [
+            {
+              "path": "/emoji/bt-png-bt",
+              "status": 200,
+              "ms": 531,
+              "cache": "s-maxage=85366, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-bt",
+              "status": 200,
+              "ms": 1889,
+              "cache": "s-maxage=85365, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-svg-bt",
+              "status": 200,
+              "ms": 460,
+              "cache": "s-maxage=85366, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "aggressive",
+          "concurrency": 8,
+          "requests": 30,
+          "counts": {
+            "200": 30,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 309,
+          "p95TtfbMs": 1298,
+          "healthy": true,
+          "durationMs": 1308,
+          "sample": [
+            {
+              "path": "/emoji/bt-png-bt",
+              "status": 200,
+              "ms": 1298,
+              "cache": "s-maxage=85348, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-bt",
+              "status": 200,
+              "ms": 313,
+              "cache": "s-maxage=85349, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-svg-bt",
+              "status": 200,
+              "ms": 1306,
+              "cache": "s-maxage=85348, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        },
+        {
+          "loadClass": "aggressive",
+          "concurrency": 10,
+          "requests": 30,
+          "counts": {
+            "200": 30,
+            "429": 0,
+            "500": 0,
+            "502": 0,
+            "503": 0,
+            "504": 0,
+            "other": 0
+          },
+          "avgTtfbMs": 322,
+          "p95TtfbMs": 1354,
+          "healthy": true,
+          "durationMs": 1581,
+          "sample": [
+            {
+              "path": "/emoji/bt-png-bt",
+              "status": 200,
+              "ms": 303,
+              "cache": "s-maxage=85332, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-bt",
+              "status": 200,
+              "ms": 298,
+              "cache": "s-maxage=85332, stale-while-revalidate=2592000",
+              "cfCache": null
+            },
+            {
+              "path": "/emoji/bt-svg-bt",
+              "status": 200,
+              "ms": 310,
+              "cache": "s-maxage=85332, stale-while-revalidate=2592000",
+              "cfCache": null
+            }
+          ]
+        }
+      ],
+      "safeLoadResults": [
+        {
+          "path": "/",
+          "status": 200,
+          "ms": 570,
+          "cache": "s-maxage=31536000",
+          "cfCache": null
+        },
+        {
+          "path": "/emoji",
+          "status": 200,
+          "ms": 1421,
+          "cache": "s-maxage=31536000",
+          "cfCache": null
+        },
+        {
+          "path": "/search?q=heart",
+          "status": 200,
+          "ms": 565,
+          "cache": "private, no-cache, no-store, max-age=0, must-revalidate",
+          "cfCache": null
+        },
+        {
+          "path": "/emoji/grinning-face",
+          "status": 200,
+          "ms": 569,
+          "cache": "s-maxage=85316, stale-while-revalidate=2592000",
+          "cfCache": null
+        },
+        {
+          "path": "/emoji/fire",
+          "status": 200,
+          "ms": 567,
+          "cache": "s-maxage=85316, stale-while-revalidate=2592000",
+          "cfCache": null
+        },
+        {
+          "path": "/popular",
+          "status": 200,
+          "ms": 325,
+          "cache": "s-maxage=31536000",
+          "cfCache": null
+        },
+        {
+          "path": "/styles",
+          "status": 200,
+          "ms": 318,
+          "cache": "s-maxage=31536000",
+          "cfCache": null
+        },
+        {
+          "path": "/topics/hearts",
+          "status": 200,
+          "ms": 339,
+          "cache": "s-maxage=31536000",
+          "cfCache": null
+        },
+        {
+          "path": "/robots.txt",
+          "status": 200,
+          "ms": 145,
+          "cache": null,
+          "cfCache": null
+        },
+        {
+          "path": "/sitemap.xml",
+          "status": 200,
+          "ms": 373,
+          "cache": "public, max-age=0, must-revalidate",
+          "cfCache": null
+        },
+        {
+          "path": "/api/master/search?q=heart&limit=20",
+          "status": 200,
+          "ms": 371,
+          "cache": "public, max-age=3600, stale-while-revalidate=86400",
+          "cfCache": null
+        },
+        {
+          "path": "/api/artwork/noto/noto-artwork:1F525:emoji_u1f525.svg",
+          "status": 200,
+          "ms": 656,
+          "cache": "public, max-age=31536000, immutable",
+          "cfCache": null
+        }
+      ],
+      "safeLoadCounts": {
+        "200": 12,
+        "429": 0,
+        "500": 0,
+        "502": 0,
+        "503": 0,
+        "504": 0,
+        "other": 0
+      }
+    },
+    "warning2": {
+      "utilityRoutes": [
+        {
+          "slug": "noto",
+          "path": "/emoji/noto",
+          "canonicalId": "source:noto:noto.png",
+          "pageStatus": 404,
+          "artworkApiStatus": 404,
+          "inStaticParams": false
+        },
+        {
+          "slug": "noto-png-noto",
+          "path": "/emoji/noto-png-noto",
+          "canonicalId": "source:noto:noto.png:noto.png",
+          "pageStatus": 404,
+          "artworkApiStatus": 404,
+          "inStaticParams": false
+        }
+      ],
+      "utilityInSitemap": [],
+      "indexableSlugCount": 6953,
+      "sitemapEmojiCount": 6953,
+      "sitemapTotal": 7046,
+      "classification": "FIXED — UTILITY EXCLUDED FROM SITEMAP",
+      "codeFix": "getIndexableEmojiPageSlugs() excludes isUtilityCanonicalId from sitemap + generateStaticParams"
+    }
+  },
+  "regression": {
+    "catalogTotal": 6955,
+    "browseCount": 6955,
+    "fireHero": "/api/artwork/noto/noto-artwork:1F525:emoji_u1f525.svg",
+    "emojiFind": false,
+    "robotsStatus": 200,
+    "sitemapStatus": 200
+  },
+  "scorecard": {
+    "canonicalIdentities": 6955,
+    "browseIdentities": 6955,
+    "searchIdentities": 6955,
+    "indexableEmojiPages": 6953,
+    "hubs": 57,
+    "sitemapUrls": 7046,
+    "artwork": "PASS",
+    "fire": "PASS",
+    "r2Private": "PASS",
+    "security": "PASS",
+    "seo": "PASS",
+    "safeConcurrency": 5,
+    "persistent5xxAtSafeLoad": 0,
+    "persistent503AtSafeLoad": 0,
+    "expectedUtility404s": 2,
+    "utilityExcludedFromSitemap": true,
+    "blockers": 0,
+    "warnings": 0
+  },
+  "blockers": [],
+  "warnings": [],
+  "signoff": "EMOJIQUICK PHASE 8.62-W = PASS"
+}

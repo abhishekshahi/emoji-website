@@ -2,7 +2,8 @@ import type { MetadataRoute } from "next";
 import { getAllCategorySlugs, getManifest } from "@/lib/emoji/data";
 import { getOpenMojiExtrasManifest } from "@/lib/emoji/extras-data";
 import { getActiveEmojiSitemapSlugs } from "@/lib/master/integration/seo-canary/active-migration";
-import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
+import { getIndexableEmojiPageSlugs } from "@/lib/master/public/identity-slug-map";
+import { getHubPagePaths } from "@/lib/hub/hub-routes";
 import { canonicalUrl } from "@/lib/seo/metadata";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -69,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  const emojiPages: MetadataRoute.Sitemap = getActiveEmojiSitemapSlugs(getAllIdentitySlugs()).map(
+  const emojiPages: MetadataRoute.Sitemap = getActiveEmojiSitemapSlugs(getIndexableEmojiPageSlugs()).map(
     (slug) => ({
       url: canonicalUrl(`/emoji/${slug}`),
       lastModified: generatedAt,
@@ -78,5 +79,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  return [...staticPages, ...categoryPages, ...emojiPages];
+  const hubPages: MetadataRoute.Sitemap = getHubPagePaths().map((path) => ({
+    url: canonicalUrl(path),
+    lastModified: generatedAt,
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  }));
+
+  return [...staticPages, ...hubPages, ...categoryPages, ...emojiPages];
 }

@@ -1,4 +1,5 @@
 import type { EnrichmentArtworkProvider } from "./enrichment-types";
+import { ARTWORK_PRIORITY_ORDER } from "@/lib/artwork/provider-architecture";
 import { canPublicServeArtworkProvider } from "@/lib/master/public/asset-rights";
 
 export type ArtworkFormat = "svg" | "png" | "other";
@@ -59,16 +60,21 @@ export function buildArtworkIntelSummary(input: {
     provider: EnrichmentArtworkProvider;
     paths: readonly string[];
     publiclyServed: boolean;
-  }> = [
-    {
-      provider: "openmoji",
-      paths: input.openmoji,
-      publiclyServed: input.openmojiPubliclyAvailable && PUBLICLY_SERVED.openmoji,
-    },
-    { provider: "noto", paths: input.noto, publiclyServed: PUBLICLY_SERVED.noto },
-    { provider: "twemoji", paths: input.twemoji, publiclyServed: PUBLICLY_SERVED.twemoji },
-    { provider: "fluent", paths: input.fluent, publiclyServed: PUBLICLY_SERVED.fluent },
-  ];
+  }> = ARTWORK_PRIORITY_ORDER.map((provider) => {
+    const paths =
+      provider === "openmoji"
+        ? input.openmoji
+        : provider === "noto"
+          ? input.noto
+          : provider === "fluent"
+            ? input.fluent
+            : input.twemoji;
+  const publiclyServed =
+    provider === "openmoji"
+      ? input.openmojiPubliclyAvailable && PUBLICLY_SERVED.openmoji
+      : PUBLICLY_SERVED[provider];
+    return { provider, paths, publiclyServed };
+  });
 
   const providers: ArtworkProviderIntel[] = providerData.map(({ provider, paths, publiclyServed }) => {
     const assetCount = uniqueAssetCount(paths);
@@ -92,8 +98,12 @@ export function buildArtworkIntelSummary(input: {
 
   const indexedProviders = providers.filter((provider) => provider.indexed);
   const primaryProvider =
-    indexedProviders.find((provider) => provider.publiclyServed)?.provider ??
-    indexedProviders[0]?.provider ??
+    ARTWORK_PRIORITY_ORDER.find((name) =>
+      indexedProviders.some((p) => p.provider === name && p.publiclyServed),
+    ) ??
+    ARTWORK_PRIORITY_ORDER.find((name) =>
+      indexedProviders.some((p) => p.provider === name),
+    ) ??
     "openmoji";
 
   return {

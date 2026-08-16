@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getOpenMojiArtworkPath } from "@/lib/artwork/openmoji";
+import { getArtworkPath } from "@/lib/artwork/providers";
 import { EmojiArtworkPanel } from "@/components/emoji/emoji-artwork-panel";
 import { EmojiDetailHero } from "@/components/emoji/emoji-detail-hero";
 import { EmojiMeaningSection } from "@/components/emoji/emoji-meaning-section";
@@ -12,7 +12,7 @@ import { EmojiVariantExplorer } from "@/components/emoji/emoji-variant-explorer"
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getBrowsableEmojiBySlug } from "@/lib/emoji/browsable-data";
-import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
+import { getIndexableEmojiPageSlugs } from "@/lib/master/public/identity-slug-map";
 import { getEmojiEnrichmentBySlug } from "@/lib/emoji/enrichment";
 import {
   buildArtworkPanelView,
@@ -55,7 +55,7 @@ interface EmojiPageProps {
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const canonicalSlugs = getActiveEmojiSitemapSlugs(getAllIdentitySlugs());
+  const canonicalSlugs = getActiveEmojiSitemapSlugs(getIndexableEmojiPageSlugs());
   return canonicalSlugs.map((slug) => ({ slug }));
 }
 
@@ -84,7 +84,7 @@ export async function generateMetadata({
         ...(enrichment?.searchTerms.slice(0, 8) ?? []),
       ],
       codePointString: emoji.codePointString,
-      artworkPath: getOpenMojiArtworkPath(emoji.hexcode),
+      artworkPath: getArtworkPath(emoji.hexcode),
       meaningSnippet: publicDefinitions[0]?.text,
       categoryLabel: getCategoryLabel(emoji.category),
     });
@@ -138,7 +138,7 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
     slug: canonicalSlug,
     description,
     codePointString: emoji.codePointString,
-    artworkPath: getOpenMojiArtworkPath(emoji.hexcode),
+    artworkPath: getArtworkPath(emoji.hexcode),
     categoryLabel,
     categoryId: emoji.category,
   });

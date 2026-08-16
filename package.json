@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "brand:build": "node scripts/brand/build-brand-assets.mjs",
     "data:build": "tsx scripts/build-emoji-data.ts",
     "emojibase:build": "tsx scripts/build-emojibase-metadata.ts",
     "enrichment:build": "tsx scripts/build-emoji-enrichment.ts",
@@ -83,7 +84,7 @@
     "r2:fast-upload": "tsx scripts/r2/fast-upload.ts",
     "audit:production": "tsx scripts/audit/production-readiness.ts",
     "audit:staging": "tsx scripts/audit/staging-validation.ts",
-    "test": "tsx --test src/lib/emoji/search.test.ts src/lib/emoji/enrichment.test.ts src/lib/emoji/enrichment-compression.test.ts src/lib/emoji/emoji-page-model.test.ts src/lib/emoji/emoji-artwork-variant.test.ts src/lib/emoji/phase-8-35.test.ts src/lib/r2/master-r2.test.ts src/lib/master/r2/r2-architecture.test.ts src/lib/master/public/public-platform.test.ts src/lib/master/public/asset-rights.test.ts src/lib/master/public/license-coverage.test.ts src/lib/master/identity/identity.test.ts src/lib/master/canonical/canonical.test.ts src/lib/master/artwork/artwork.test.ts src/lib/master/metadata/metadata.test.ts src/lib/master/reconciliation/reconciliation.test.ts src/lib/master/semantic/semantic.test.ts src/lib/master/audit/phase-8-9.test.ts src/lib/master/release/release.test.ts src/lib/master/integration/integration.test.ts src/lib/master/integration/artwork/artwork-integration.test.ts src/lib/master/integration/metadata-search-integration.test.ts src/lib/master/integration/seo-integration.test.ts src/lib/master/integration/ui-integration.test.ts src/lib/master/integration/activation-integration.test.ts src/lib/master/integration/search-activation-integration.test.ts src/lib/master/integration/search-ui-integration.test.ts src/lib/master/integration/final-activation-integration.test.ts src/lib/master/integration/rollout-readiness-integration.test.ts src/lib/master/integration/seo-migration-integration.test.ts src/lib/master/integration/seo-migration-review-integration.test.ts src/lib/master/integration/seo-migration/redirect-integration.test.ts src/lib/master/integration/seo-migration-production-qa-integration.test.ts"
+    "test": "tsx --test src/lib/artwork/phase-8-62-c-artwork.test.ts src/lib/emoji/search.test.ts src/lib/emoji/enrichment.test.ts src/lib/emoji/enrichment-compression.test.ts src/lib/emoji/emoji-page-model.test.ts src/lib/emoji/emoji-artwork-variant.test.ts src/lib/emoji/phase-8-35.test.ts src/lib/r2/master-r2.test.ts src/lib/master/r2/r2-architecture.test.ts src/lib/master/public/public-platform.test.ts src/lib/master/public/asset-rights.test.ts src/lib/master/public/license-coverage.test.ts src/lib/master/identity/identity.test.ts src/lib/master/canonical/canonical.test.ts src/lib/master/artwork/artwork.test.ts src/lib/master/metadata/metadata.test.ts src/lib/master/reconciliation/reconciliation.test.ts src/lib/master/semantic/semantic.test.ts src/lib/master/audit/phase-8-9.test.ts src/lib/master/release/release.test.ts src/lib/master/integration/integration.test.ts src/lib/master/integration/artwork/artwork-integration.test.ts src/lib/master/integration/metadata-search-integration.test.ts src/lib/master/integration/seo-integration.test.ts src/lib/master/integration/ui-integration.test.ts src/lib/master/integration/activation-integration.test.ts src/lib/master/integration/search-activation-integration.test.ts src/lib/master/integration/search-ui-integration.test.ts src/lib/master/integration/final-activation-integration.test.ts src/lib/master/integration/rollout-readiness-integration.test.ts src/lib/master/integration/seo-migration-integration.test.ts src/lib/master/integration/seo-migration-review-integration.test.ts src/lib/master/integration/seo-migration/redirect-integration.test.ts src/lib/master/integration/seo-migration-production-qa-integration.test.ts"
   },
   "dependencies": {
     "emojibase": "17.0.0",
@@ -103,6 +104,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "tsx": "^4.23.11",
     "typescript": "^5",

@@ -10,6 +10,7 @@ import {
   getManifest,
   getNewEmojis,
 } from "@/lib/emoji/data";
+import { MASTER_IDENTITY_COUNT } from "@/lib/master/r2/catalog";
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { SITE_DESCRIPTION } from "@/lib/site/config";
 
@@ -101,7 +102,7 @@ export default function HomePage() {
           <div>
             <h2 className="section-title">Browse All Emojis</h2>
             <p className="section-subtitle">
-              Explore all {manifest.recordCount.toLocaleString()} emojis in the collection.
+              Explore all {MASTER_IDENTITY_COUNT.toLocaleString()} emojis in the collection.
             </p>
           </div>
           <Link href="/emoji" className="pill-link">

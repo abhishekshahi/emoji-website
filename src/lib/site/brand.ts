@@ -1,9 +1,15 @@
-/** Official EmojiQuick brand assets - use these paths only for site branding. */
+/** Official EmojiQuick brand assets — derived from emojiquick-logo-official-source.png (Phase 8.63). */
 
-export const BRAND_LOGO_PRIMARY = "/brand/emojiquick-logo-primary.svg";
-export const BRAND_ICON = "/brand/emojiquick-icon.svg";
+export const BRAND_LOGO_PRIMARY = "/brand/emojiquick-logo-primary.png";
+export const BRAND_LOGO_PRIMARY_WEBP = "/brand/emojiquick-logo-primary.webp";
+export const BRAND_ICON = "/brand/emojiquick-icon.png";
 export const BRAND_WORDMARK = "/brand/emojiquick-wordmark.svg";
-export const BRAND_OG_IMAGE = "/brand/emojiquick-logo-primary-4k.png";
+export const BRAND_OG_IMAGE = "/brand/emojiquick-og.png";
+export const BRAND_OG_IMAGE_4K = "/brand/emojiquick-logo-primary-4k.png";
+
+/** Primary logo intrinsic dimensions (official source aspect ratio). */
+export const BRAND_LOGO_PRIMARY_WIDTH = 1024;
+export const BRAND_LOGO_PRIMARY_HEIGHT = 558;
 
 export const BRAND_FAVICON_16 = "/brand/favicon-16.png";
 export const BRAND_FAVICON_32 = "/brand/favicon-32.png";

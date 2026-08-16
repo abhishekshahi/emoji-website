@@ -1,4 +1,10 @@
-import { BRAND_ICON, BRAND_LOGO_PRIMARY } from "@/lib/site/brand";
+import {
+  BRAND_ICON,
+  BRAND_LOGO_PRIMARY,
+  BRAND_LOGO_PRIMARY_HEIGHT,
+  BRAND_LOGO_PRIMARY_WEBP,
+  BRAND_LOGO_PRIMARY_WIDTH,
+} from "@/lib/site/brand";
 
 type SiteLogoProps = {
   className?: string;
@@ -17,28 +23,34 @@ export function SiteLogo({ className }: SiteLogoProps) {
         className="h-10 w-10 shrink-0 md:hidden"
         decoding="async"
       />
-      <img
-        src={BRAND_LOGO_PRIMARY}
-        alt="EmojiQuick"
-        width={150}
-        height={40}
-        className="hidden h-10 w-auto max-w-[min(100%,12.5rem)] shrink-0 md:block"
-        decoding="async"
-      />
+      <picture className="hidden md:contents">
+        <source srcSet={BRAND_LOGO_PRIMARY_WEBP} type="image/webp" />
+        <img
+          src={BRAND_LOGO_PRIMARY}
+          alt="EmojiQuick"
+          width={BRAND_LOGO_PRIMARY_WIDTH}
+          height={BRAND_LOGO_PRIMARY_HEIGHT}
+          className="hidden h-10 w-auto max-w-[min(100%,11.5rem)] shrink-0 md:block"
+          decoding="async"
+        />
+      </picture>
     </span>
   );
 }
 
-/** Footer and compact contexts - primary logo at a smaller height. */
+/** Footer and compact contexts — primary logo at a smaller height. */
 export function SiteLogoCompact({ className }: SiteLogoProps) {
   return (
-    <img
-      src={BRAND_LOGO_PRIMARY}
-      alt="EmojiQuick"
-      width={120}
-      height={32}
-      className={className ?? "h-8 w-auto max-w-[10rem]"}
-      decoding="async"
-    />
+    <picture>
+      <source srcSet={BRAND_LOGO_PRIMARY_WEBP} type="image/webp" />
+      <img
+        src={BRAND_LOGO_PRIMARY}
+        alt="EmojiQuick"
+        width={BRAND_LOGO_PRIMARY_WIDTH}
+        height={BRAND_LOGO_PRIMARY_HEIGHT}
+        className={className ?? "h-8 w-auto max-w-[9.5rem]"}
+        decoding="async"
+      />
+    </picture>
   );
 }

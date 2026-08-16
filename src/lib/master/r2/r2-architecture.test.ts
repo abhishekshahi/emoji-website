@@ -7,10 +7,11 @@ import {
   MASTER_ARTWORK_RECORD_COUNT,
   MASTER_IDENTITY_COUNT,
   PRODUCTION_BROWSABLE_EMOJI_COUNT,
+  PUBLIC_INDEXABLE_IDENTITY_COUNT,
   PUBLIC_SEO_EMOJI_PAGE_COUNT,
   PUBLIC_SITEMAP_URL_COUNT,
 } from "@/lib/master/r2/catalog";
-import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
+import { getAllIdentitySlugs, getIndexableEmojiPageSlugs } from "@/lib/master/public/identity-slug-map";
 import { parseMasterR2Mode } from "@/lib/master/r2/config";
 import {
   buildArtworkStorageKey,
@@ -85,7 +86,8 @@ describe("master R2 catalog invariants", () => {
   });
 
   it("keeps sitemap URL count stable", () => {
-    const sitemapCount = 7 + getAllCategorySlugs().length + getAllIdentitySlugs().length + HUB_PAGE_COUNT;
+    assert.equal(getIndexableEmojiPageSlugs().length, PUBLIC_INDEXABLE_IDENTITY_COUNT);
+    const sitemapCount = 7 + getAllCategorySlugs().length + getIndexableEmojiPageSlugs().length + HUB_PAGE_COUNT;
     assert.equal(sitemapCount, PUBLIC_SITEMAP_URL_COUNT);
   });
 });

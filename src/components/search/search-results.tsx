@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { useEmojiSearch } from "@/hooks/use-emoji-search";
-import { getBrowsableEmojiById } from "@/lib/emoji/browsable-data";
+import type { BrowsableEmoji } from "@/lib/emoji/types";
 import { isAmbiguousSearchQuery } from "@/lib/emoji/search-highlight";
 import { getSearchMatchLabel } from "@/lib/emoji/search-match";
 import { SEARCH_CATEGORY_HINTS, SEARCH_SUGGESTIONS } from "@/lib/emoji/search-suggestions";
@@ -20,13 +20,13 @@ export function SearchResults() {
     const labels: Record<string, string> = {};
     const resolved = results
       .map((result) => {
-        const emoji = getBrowsableEmojiById(result.emoji.id);
+        const emoji = result.emoji;
         if (!emoji) return null;
         const label = getSearchMatchLabel(result.score);
         if (label) labels[emoji.id] = label;
         return emoji;
       })
-      .filter((emoji): emoji is NonNullable<typeof emoji> => Boolean(emoji));
+      .filter((emoji): emoji is BrowsableEmoji => Boolean(emoji));
 
     return { emojis: resolved, matchLabelsById: labels };
   }, [results]);

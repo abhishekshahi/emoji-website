@@ -1,0 +1,178 @@
+{
+  "phase": "8.63-branding",
+  "auditedAt": "2026-08-16T22:51:51.040Z",
+  "production": "https://emojiquick.com",
+  "deployment": {
+    "version": "963be1f0-8bbf-4d6a-a87a-5be4794315f5",
+    "rollback": "e5c9d91d-1c4b-44b3-b061-0401fef5bda2"
+  },
+  "verdict": "PASS",
+  "branding": {
+    "brandAssets": [
+      {
+        "asset": "/brand/emojiquick-logo-primary.png",
+        "status": 200,
+        "contentType": "image/png",
+        "ms": 733
+      },
+      {
+        "asset": "/brand/emojiquick-icon.png",
+        "status": 200,
+        "contentType": "image/png",
+        "ms": 170
+      },
+      {
+        "asset": "/brand/emojiquick-og.png",
+        "status": 200,
+        "contentType": "image/png",
+        "ms": 173
+      },
+      {
+        "asset": "/brand/favicon-32.png",
+        "status": 200,
+        "contentType": "image/png",
+        "ms": 128
+      },
+      {
+        "asset": "/brand/favicon-180.png",
+        "status": 200,
+        "contentType": "image/png",
+        "ms": 119
+      },
+      {
+        "asset": "/brand/favicon-512.png",
+        "status": 200,
+        "contentType": "image/png",
+        "ms": 261
+      }
+    ],
+    "pages": [
+      {
+        "path": "/",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png"
+        ]
+      },
+      {
+        "path": "/emoji",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png"
+        ]
+      },
+      {
+        "path": "/search?q=heart",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png"
+        ]
+      },
+      {
+        "path": "/emoji/fire",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png"
+        ]
+      },
+      {
+        "path": "/popular",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png"
+        ]
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": []
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": []
+      },
+      {
+        "path": "/manifest.webmanifest",
+        "status": 200,
+        "emojiQuick": true,
+        "emojiFind": false,
+        "logoRefs": []
+      }
+    ],
+    "usesNewLogo": true,
+    "usesOldSvgOnly": false,
+    "hasOrgJsonLd": true,
+    "emojiFindUserFacing": [],
+    "emojiQuickPresent": [
+      "/",
+      "/emoji",
+      "/search?q=heart",
+      "/emoji/fire",
+      "/popular",
+      "/robots.txt",
+      "/sitemap.xml",
+      "/manifest.webmanifest"
+    ]
+  },
+  "regression": {
+    "catalogTotal": 6955,
+    "browseCount": 6955,
+    "sitemapTotal": 7046,
+    "sitemapEmoji": 6953,
+    "fire": "PASS",
+    "r2Private": "PASS"
+  },
+  "blockers": [],
+  "warnings": [],
+  "signoff": "EMOJIQUICK PHASE 8.63 = PASS"
+}

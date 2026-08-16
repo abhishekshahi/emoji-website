@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { SkipLink } from "@/components/layout/skip-link";
+import { JsonLd } from "@/components/seo/json-ld";
 import {
   BRAND_FAVICON_180,
   BRAND_FAVICONS,
@@ -14,6 +15,7 @@ import {
 } from "@/lib/site/brand";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site/config";
 import { absoluteUrl } from "@/lib/seo/metadata";
+import { buildSiteOrganizationJsonLd } from "@/lib/seo/json-ld";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,8 +37,9 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   icons: {
-    icon: [{ url: BRAND_ICON, type: "image/svg+xml" }, ...BRAND_FAVICONS],
+    icon: [{ url: BRAND_ICON, type: "image/png" }, ...BRAND_FAVICONS],
     apple: [{ url: BRAND_FAVICON_180, sizes: "180x180", type: "image/png" }],
+    shortcut: [{ url: BRAND_ICON, type: "image/png" }],
   },
   openGraph: {
     type: "website",
@@ -48,9 +51,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: siteOgImage,
-        width: 3840,
-        height: 2160,
-        alt: SITE_NAME,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} — official logo`,
       },
     ],
   },
@@ -63,6 +66,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const siteJsonLd = buildSiteOrganizationJsonLd();
+
   return (
     <html
       lang="en"
@@ -71,6 +76,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
+        <JsonLd data={siteJsonLd} />
         <ClientProviders>
           <SkipLink />
           <SiteHeader />

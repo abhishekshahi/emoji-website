@@ -54,7 +54,7 @@ function buildCatalogCache(rootDir: string): CatalogItemSummary[] {
     const providers: ArtworkProvider[] = ["openmoji", "noto", "twemoji", "fluent"];
     const availableProviders = providers.filter((p) => (artwork?.[p]?.length ?? 0) > 0);
     const visibility = resolvePublicVisibility(entry.canonicalId, rootDir);
-    if (!visibility?.public) continue;
+    if (!visibility) continue;
 
     items.push(
       Object.freeze({
@@ -166,7 +166,8 @@ export function getCatalogStats(rootDir: string = process.cwd()): {
 
   return {
     totalIdentities: MASTER_IDENTITY_COUNT,
-    publicIdentities: items.length,
+    // Catalog API lists all 6955 identities; indexable excludes 2 utility/support records.
+    publicIdentities: indexable,
     indexableIdentities: indexable,
     withArtwork,
     withMetadata,

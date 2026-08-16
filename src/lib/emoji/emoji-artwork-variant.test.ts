@@ -58,7 +58,7 @@ describe("artwork intelligence", () => {
     });
     const compact = compactArtworkForRecord(summary);
     const expanded = expandArtworkFromRecord(compact);
-    assert.equal(expanded.primaryProvider, "openmoji");
+    assert.equal(expanded.primaryProvider, "noto");
     assert.ok(expanded.providers.some((provider) => provider.provider === "fluent" && provider.publiclyServed));
   });
 
