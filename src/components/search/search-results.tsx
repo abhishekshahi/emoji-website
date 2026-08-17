@@ -8,6 +8,7 @@ import { isAmbiguousSearchQuery } from "@/lib/emoji/search-highlight";
 import { getSearchMatchLabel } from "@/lib/emoji/search-match";
 import { SEARCH_CATEGORY_HINTS, SEARCH_SUGGESTIONS } from "@/lib/emoji/search-suggestions";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
+import { RecentlyUsedSection } from "@/components/home/recently-used-section";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ChipLink } from "@/components/ui/chip";
 import { EmojiGridSkeleton } from "@/components/ui/skeleton";
@@ -35,10 +36,12 @@ export function SearchResults() {
 
   if (!trimmedQuery) {
     return (
-      <EmptyState
-        title="Start typing to search"
-        description="Search by name, keyword, meaning, synonym, emoji character, hex code, or Unicode code point."
-      >
+      <div className="space-y-8">
+        <RecentlyUsedSection />
+        <EmptyState
+          title="Start typing to search"
+          description="Search by name, keyword, meaning, synonym, emoji character, hex code, or Unicode code point."
+        >
         <div className="flex flex-wrap justify-center gap-2">
           {SEARCH_SUGGESTIONS.slice(0, 6).map((suggestion) => (
             <ChipLink
@@ -49,7 +52,8 @@ export function SearchResults() {
             </ChipLink>
           ))}
         </div>
-      </EmptyState>
+        </EmptyState>
+      </div>
     );
   }
 

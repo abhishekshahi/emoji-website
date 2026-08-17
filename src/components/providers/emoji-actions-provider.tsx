@@ -68,7 +68,7 @@ export function EmojiActionsProvider({ children }: { children: ReactNode }) {
 
       setCopiedHexcode(hexcode);
       addRecentHexcode(hexcode);
-      showToast(`Copied ${emoji}`);
+      showToast("Copied! 🚀");
       window.setTimeout(() => {
         setCopiedHexcode((current) => (current === hexcode ? null : current));
       }, 1600);

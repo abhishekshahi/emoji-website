@@ -74,8 +74,9 @@ export const POPULAR_EMOJI_SLUGS = [
 
 export const FAVORITES_STORAGE_KEY = "emoji-favorites";
 export const RECENT_STORAGE_KEY = "emoji-recent";
-export const MAX_RECENT_ITEMS = 20;
-export const EMOJI_GRID_PAGE_SIZE = 60;
+export const MAX_RECENT_ITEMS = 15;
+export const RECENT_DISPLAY_COUNT = 15;
+export const EMOJI_GRID_PAGE_SIZE = 72;
 
 export const EMOJI_VERSION_ORDER = [
   "17.0",

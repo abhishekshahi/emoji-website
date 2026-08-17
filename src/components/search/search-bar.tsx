@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { FormEvent, KeyboardEvent, useEffect, useState } from "react";
 import { SEARCH_UI_CONTRACT } from "@/lib/emoji/search-ui-contract";
 import { useDebouncedValue } from "@/hooks/use-debounced-value";
+import { useDesktopAutofocus } from "@/hooks/use-desktop-autofocus";
 
 interface SearchBarProps {
   defaultValue?: string;
@@ -22,6 +23,7 @@ export function SearchBar({
   const router = useRouter();
   const [query, setQuery] = useState(defaultValue);
   const debouncedQuery = useDebouncedValue(query, SEARCH_UI_CONTRACT.debounceMs);
+  const desktopAutofocus = useDesktopAutofocus(autoFocus);
   const isHero = size === "hero";
   const isLive = mode === "live";
   const hasQuery = query.trim().length > 0;
@@ -95,7 +97,7 @@ export function SearchBar({
               ? "Search emojis by name, keyword, or Unicode..."
               : "Search by name, keyword, emoji, U+1F525, or 1F525"
           }
-          autoFocus={autoFocus}
+          autoFocus={desktopAutofocus}
           autoComplete="off"
           enterKeyHint="search"
           className={`search-bar__input ${isHero ? "text-lg" : "text-base"}`}
