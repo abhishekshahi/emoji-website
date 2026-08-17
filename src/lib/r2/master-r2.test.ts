@@ -142,10 +142,11 @@ describe("Phase 8.52 master R2 adapter", () => {
     assert.equal(isArtworkPubliclyServable("fluent", matrix), true);
   });
 
-  it("keeps feature flags OFF by default", () => {
-    assert.equal(MASTER_INTEGRATION_CONFIG.masterMetadataEnabled, false);
-    assert.equal(MASTER_INTEGRATION_CONFIG.masterSearchEnabled, false);
-    assert.equal(MASTER_INTEGRATION_CONFIG.masterArtworkEnabled, false);
+  it("keeps integration flags enabled while R2 mode stays OFF by default", () => {
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterIntegrationEnabled, false);
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterMetadataEnabled, true);
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterSearchEnabled, true);
+    assert.equal(MASTER_INTEGRATION_CONFIG.masterArtworkEnabled, true);
     assert.equal(isR2MetadataBackendActive(), false);
     assert.equal(isR2SearchBackendActive(), false);
     assert.equal(parseMasterR2Mode(undefined), "OFF");

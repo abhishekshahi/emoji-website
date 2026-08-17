@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo } from "react";
 import { useEmojiActions } from "@/components/providers/emoji-actions-provider";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
+import { EmptyState } from "@/components/ui/empty-state";
 import { getEmojisByHexcodes } from "@/lib/emoji/data";
 
 interface StoredEmojiGridProps {
@@ -20,10 +22,11 @@ export function StoredEmojiGrid({
 
   if (hexcodes.length === 0) {
     return (
-      <div className="card-surface px-6 py-12 text-center">
-        <p className="text-lg font-semibold">{emptyTitle}</p>
-        <p className="mt-2 text-sm text-muted">{emptyDescription}</p>
-      </div>
+      <EmptyState title={emptyTitle} description={emptyDescription}>
+        <Link href="/emoji" className="btn btn--primary btn--md">
+          Browse emojis
+        </Link>
+      </EmptyState>
     );
   }
 

@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { EMOJI_GRID_PAGE_SIZE } from "@/lib/emoji/constants";
 import type { BrowsableEmoji } from "@/lib/emoji/types";
+import { EmptyState } from "@/components/ui/empty-state";
 import { EmojiCard } from "./emoji-card";
 
 interface EmojiGridProps {
@@ -11,6 +12,8 @@ interface EmojiGridProps {
   emptyMessage?: string;
   highlightQuery?: string;
   matchLabelsById?: Readonly<Record<string, string>>;
+  /** When false, renders nothing if emojis is empty (caller handles empty UI). */
+  showEmptyState?: boolean;
 }
 
 export function EmojiGrid({
@@ -19,6 +22,7 @@ export function EmojiGrid({
   emptyMessage = "No emojis to show yet.",
   highlightQuery,
   matchLabelsById,
+  showEmptyState = true,
 }: EmojiGridProps) {
   const [visibleCount, setVisibleCount] = useState(pageSize);
 
@@ -28,11 +32,10 @@ export function EmojiGrid({
   );
 
   if (emojis.length === 0) {
-    return (
-      <div className="card-surface px-6 py-12 text-center text-muted">
-        {emptyMessage}
-      </div>
-    );
+    if (!showEmptyState) {
+      return null;
+    }
+    return <EmptyState title={emptyMessage} />;
   }
 
   return (
@@ -53,7 +56,7 @@ export function EmojiGrid({
           <button
             type="button"
             onClick={() => setVisibleCount((count) => count + pageSize)}
-            className="min-h-11 rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold transition hover:bg-surface-muted"
+            className="btn btn--secondary btn--md"
             aria-label={`Load more emojis, ${emojis.length - visibleCount} remaining`}
           >
             Load more ({emojis.length - visibleCount} remaining)

@@ -6,11 +6,17 @@ import {
   BRAND_LOGO_UI_WIDTH,
   type BrandLogoVariant,
 } from "@/lib/site/brand";
+import { SITE_NAME } from "@/lib/site/config";
 
 type BrandLogoProps = {
   /** header = site header; footer = site footer; inline = general branded surfaces */
   variant?: BrandLogoVariant;
   className?: string;
+  /**
+   * When true, the image is decorative (parent link provides accessible name).
+   * When false, img exposes alt text for standalone branding.
+   */
+  decorative?: boolean;
 };
 
 const variantClass: Record<BrandLogoVariant, string> = {
@@ -23,7 +29,11 @@ const variantClass: Record<BrandLogoVariant, string> = {
  * Canonical EmojiQuick logo — complete mascot + wordmark, never cropped.
  * Uses transparent trimmed PNG derived from the official approved artwork.
  */
-export function BrandLogo({ variant = "header", className }: BrandLogoProps) {
+export function BrandLogo({
+  variant = "header",
+  className,
+  decorative = false,
+}: BrandLogoProps) {
   return (
     <picture
       className={className ?? "brand-logo-picture"}
@@ -32,7 +42,8 @@ export function BrandLogo({ variant = "header", className }: BrandLogoProps) {
       <source srcSet={BRAND_LOGO_UI_WEBP} type="image/webp" />
       <img
         src={BRAND_LOGO_UI}
-        alt=""
+        alt={decorative ? "" : SITE_NAME}
+        aria-hidden={decorative ? true : undefined}
         width={BRAND_LOGO_UI_WIDTH}
         height={BRAND_LOGO_UI_HEIGHT}
         className={variantClass[variant]}

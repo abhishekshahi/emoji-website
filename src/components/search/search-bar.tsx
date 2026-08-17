@@ -79,13 +79,9 @@ export function SearchBar({
       <label htmlFor="emoji-search" className="sr-only">
         Search emojis
       </label>
-      <div
-        className={`flex min-h-11 items-center gap-3 rounded-[1.25rem] border border-border bg-surface px-4 shadow-[var(--shadow)] focus-within:ring-2 focus-within:ring-accent/40 ${
-          isHero ? "min-h-16 px-5" : "min-h-12"
-        }`}
-      >
-        <span aria-hidden="true" className={isHero ? "text-2xl" : "text-lg"}>
-          🔎
+      <div className={`search-bar ${isHero ? "search-bar--hero" : ""}`}>
+        <span aria-hidden="true" className={isHero ? "text-xl" : "text-lg"}>
+          {"\u{1F50E}"}
         </span>
         <input
           id="emoji-search"
@@ -94,34 +90,32 @@ export function SearchBar({
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Search by name, keyword, emoji, U+1F525, or 1F525"
+          placeholder={
+            isHero
+              ? "Search emojis by name, keyword, or Unicode..."
+              : "Search by name, keyword, emoji, U+1F525, or 1F525"
+          }
           autoFocus={autoFocus}
           autoComplete="off"
           enterKeyHint="search"
-          className={`w-full bg-transparent text-foreground placeholder:text-muted focus:outline-none ${
-            isHero ? "text-lg" : "text-base"
-          }`}
+          className={`search-bar__input ${isHero ? "text-lg" : "text-base"}`}
         />
         {hasQuery ? (
           <button
             type="button"
             onClick={handleClear}
-            className="min-h-11 rounded-full px-3 py-2 text-sm font-medium text-muted transition hover:bg-surface-muted hover:text-foreground focus-visible:outline-offset-4"
+            className="btn btn--ghost btn--sm"
             aria-label="Clear search"
           >
             Clear
           </button>
         ) : null}
         {isLive ? (
-          <span className="hidden text-xs font-medium text-muted sm:inline">
-            Live
-          </span>
+          <span className="search-bar__live-badge hidden sm:inline">Live</span>
         ) : (
           <button
             type="submit"
-            className={`min-h-11 rounded-full bg-accent font-semibold text-on-accent transition hover:bg-accent-strong ${
-              isHero ? "px-5 py-3 text-sm" : "px-4 py-2 text-sm"
-            }`}
+            className={`btn btn--primary ${isHero ? "btn--md" : "btn--sm"}`}
           >
             Search
           </button>
@@ -129,9 +123,18 @@ export function SearchBar({
       </div>
       {isHero ? (
         <p className="mt-3 text-sm text-muted">
-          Try <Link href="/search?q=fire" className="underline">fire</Link>,{" "}
-          <Link href="/search?q=heart" className="underline">heart</Link>, or{" "}
-          <Link href="/search?q=U%2B1F525" className="underline">U+1F525</Link>
+          Try{" "}
+          <Link href="/search?q=fire" className="underline hover:text-accent-strong">
+            fire
+          </Link>
+          ,{" "}
+          <Link href="/search?q=heart" className="underline hover:text-accent-strong">
+            heart
+          </Link>
+          , or{" "}
+          <Link href="/search?q=U%2B1F525" className="underline hover:text-accent-strong">
+            U+1F525
+          </Link>
         </p>
       ) : null}
     </form>

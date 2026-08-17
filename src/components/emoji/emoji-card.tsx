@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { memo, useCallback } from "react";
+import { memo, useCallback, useState } from "react";
 import { useEmojiActions } from "@/components/providers/emoji-actions-provider";
 import { EmojiArtwork } from "@/components/emoji/emoji-artwork";
 import { getSearchHighlightSegments } from "@/lib/emoji/search-highlight";
@@ -17,24 +17,30 @@ interface EmojiCardProps {
 function EmojiCardComponent({ emoji, showName = true, highlightQuery, matchLabel }: EmojiCardProps) {
   const { isFavorite, toggleFavorite, copyEmoji } = useEmojiActions();
   const favorite = isFavorite(emoji.hexcode);
+  const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
     await copyEmoji(emoji.hexcode, emoji.emoji);
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 1400);
   }, [copyEmoji, emoji.emoji, emoji.hexcode]);
 
-  const handleFavorite = useCallback(() => {
-    toggleFavorite(emoji.hexcode);
-  }, [emoji.hexcode, toggleFavorite]);
+  const handleFavorite = useCallback(
+    (event: { stopPropagation: () => void }) => {
+      event.stopPropagation();
+      toggleFavorite(emoji.hexcode);
+    },
+    [emoji.hexcode, toggleFavorite],
+  );
 
   return (
-    <article className="group relative">
-      <div className="card-surface flex h-full flex-col items-center gap-3 p-4 transition hover:-translate-y-0.5">
-        <button
-          type="button"
-          onClick={handleCopy}
-          className="flex w-full min-h-11 flex-col items-center gap-3 rounded-2xl bg-surface-muted/70 px-2 py-4 transition hover:bg-accent-soft focus-visible:outline-offset-4"
-          aria-label={`Copy ${emoji.name} emoji`}
-        >
+    <article className="emoji-card group p-3">
+      <button
+        type="button"
+        onClick={handleCopy}
+        className={`emoji-card__copy ${copied ? "emoji-card__copy--copied" : ""}`}
+        aria-label={`Copy ${emoji.name} emoji`}
+      >
           <EmojiArtwork
             hexcode={emoji.hexcode}
             name={emoji.name}
@@ -42,7 +48,7 @@ function EmojiCardComponent({ emoji, showName = true, highlightQuery, matchLabel
             size="card"
           />
           {showName ? (
-            <span className="line-clamp-2 text-center text-sm font-medium text-foreground">
+            <span className="emoji-card__name text-foreground">
               {highlightQuery
                 ? getSearchHighlightSegments(emoji.name, highlightQuery).map((segment, index) =>
                     segment.highlight ? (
@@ -59,14 +65,19 @@ function EmojiCardComponent({ emoji, showName = true, highlightQuery, matchLabel
                 : emoji.name}
             </span>
           ) : null}
-          {matchLabel ? (
+        {copied ? (
+          <span className="text-xs font-semibold text-success" role="status">
+            Copied!
+          </span>
+        ) : null}
+        {matchLabel ? (
             <span className="rounded-full bg-surface px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-muted">
               {matchLabel}
             </span>
-          ) : null}
-        </button>
+        ) : null}
+      </button>
 
-        <div className="flex w-full items-center justify-between gap-2">
+      <div className="emoji-card__actions">
           <Link
             href={`/emoji/${emoji.slug}`}
             className="min-h-11 inline-flex items-center text-xs font-semibold text-accent-strong hover:underline"
@@ -78,7 +89,9 @@ function EmojiCardComponent({ emoji, showName = true, highlightQuery, matchLabel
           <button
             type="button"
             onClick={handleFavorite}
-            className="min-h-11 rounded-full px-3 py-1.5 text-sm transition hover:bg-surface-muted"
+            className={`min-h-11 rounded-full px-3 py-1.5 text-base transition hover:bg-surface-muted ${
+            favorite ? "text-accent-strong" : "text-muted"
+          }`}
             aria-label={
               favorite
                 ? `Remove ${emoji.name} from favorites`
@@ -88,7 +101,6 @@ function EmojiCardComponent({ emoji, showName = true, highlightQuery, matchLabel
           >
             {favorite ? "★" : "☆"}
           </button>
-        </div>
       </div>
     </article>
   );

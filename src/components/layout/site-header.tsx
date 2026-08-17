@@ -13,29 +13,28 @@ const NAV_ITEMS = [
   { href: "/explore", label: "Explore" },
   { href: "/new", label: "New" },
   { href: "/favorites", label: "Favorites" },
-  { href: "/recent", label: "Recent" },
 ] as const;
 
 export function SiteHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-md">
-      <div className="page-shell flex flex-col gap-4 py-4">
+    <header className="site-header sticky top-0 z-40">
+      <div className="page-shell flex flex-col gap-3 py-3 sm:gap-4 sm:py-4">
         <div className="flex min-w-0 items-center justify-between gap-3 sm:gap-4">
           <Link
             href="/"
             className="brand-logo-link rounded-xl focus-visible:outline-offset-4"
             aria-label={`${SITE_NAME} home`}
           >
-            <BrandLogo variant="header" />
+            <BrandLogo variant="header" decorative />
           </Link>
 
           <div className="flex shrink-0 items-center gap-2">
             <ThemeToggle />
             <nav
               aria-label="Primary"
-              className="hidden items-center gap-1 md:flex"
+              className="hidden items-center gap-0.5 md:flex"
             >
             {NAV_ITEMS.map((item) => {
               const isActive =
@@ -46,10 +45,8 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   aria-current={isActive ? "page" : undefined}
-                  className={`rounded-full px-3 py-2 text-sm font-medium transition-colors ${
-                    isActive
-                      ? "bg-accent-soft text-accent-strong"
-                      : "text-muted hover:bg-surface-muted hover:text-foreground"
+                  className={`site-nav__link ${
+                    isActive ? "site-nav__link--active" : ""
                   }`}
                 >
                   {item.label}

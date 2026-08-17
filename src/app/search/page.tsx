@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { PageHeader } from "@/components/layout/page-header";
 import { SearchBar } from "@/components/search/search-bar";
 import { SearchResults } from "@/components/search/search-results";
+import { EmojiGridSkeleton } from "@/components/ui/skeleton";
 
 import { createPageMetadata } from "@/lib/seo/metadata";
 
@@ -39,11 +40,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       />
       <SearchBar defaultValue={q} autoFocus mode="live" />
       <Suspense
-        fallback={
-          <div className="card-surface px-6 py-12 text-center text-muted">
-            Loading search results...
-          </div>
-        }
+        fallback={<EmojiGridSkeleton count={12} />}
       >
         <SearchResults />
       </Suspense>
