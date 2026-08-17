@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SiteLogoCompact } from "@/components/layout/site-logo";
+import { BrandLogo } from "@/components/layout/site-logo";
 import { HubFooterNavigation } from "@/components/hub/hub-nav-sections";
 import { isPublicMasterPlatformEnabled } from "@/lib/master/public/config";
 import {
@@ -23,7 +23,7 @@ export function SiteFooter() {
       <div className="page-shell flex flex-col gap-8 py-10">
         <div className="flex flex-col gap-6">
           <div>
-            <SiteLogoCompact />
+            <BrandLogo variant="footer" />
             <p className="mt-3 max-w-xl text-sm text-muted">
               A fast, friendly emoji search experience built from Unicode and
               Emojibase data.

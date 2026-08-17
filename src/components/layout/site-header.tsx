@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SITE_NAME } from "@/lib/emoji/constants";
-import { SiteLogo } from "@/components/layout/site-logo";
+import { BrandLogo } from "@/components/layout/site-logo";
 import { SearchBar } from "@/components/search/search-bar";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 
@@ -22,16 +22,16 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-md">
       <div className="page-shell flex flex-col gap-4 py-4">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex min-w-0 items-center justify-between gap-3 sm:gap-4">
           <Link
             href="/"
-            className="flex items-center rounded-xl focus-visible:outline-offset-4"
+            className="brand-logo-link rounded-xl focus-visible:outline-offset-4"
             aria-label={`${SITE_NAME} home`}
           >
-            <SiteLogo />
+            <BrandLogo variant="header" />
           </Link>
 
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-2">
             <ThemeToggle />
             <nav
               aria-label="Primary"

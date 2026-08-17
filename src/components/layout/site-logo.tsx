@@ -1,56 +1,53 @@
 import {
-  BRAND_ICON,
-  BRAND_LOGO_PRIMARY,
-  BRAND_LOGO_PRIMARY_HEIGHT,
-  BRAND_LOGO_PRIMARY_WEBP,
-  BRAND_LOGO_PRIMARY_WIDTH,
+  BRAND_LOGO_UI,
+  BRAND_LOGO_UI_ASPECT_RATIO,
+  BRAND_LOGO_UI_HEIGHT,
+  BRAND_LOGO_UI_WEBP,
+  BRAND_LOGO_UI_WIDTH,
+  type BrandLogoVariant,
 } from "@/lib/site/brand";
 
-type SiteLogoProps = {
+type BrandLogoProps = {
+  /** header = site header; footer = site footer; inline = general branded surfaces */
+  variant?: BrandLogoVariant;
   className?: string;
 };
 
-/** Desktop: full primary logo. Mobile: compact mascot icon. */
-export function SiteLogo({ className }: SiteLogoProps) {
-  return (
-    <span className={className}>
-      <img
-        src={BRAND_ICON}
-        alt=""
-        aria-hidden="true"
-        width={40}
-        height={40}
-        className="h-10 w-10 shrink-0 md:hidden"
-        decoding="async"
-      />
-      <picture className="hidden md:contents">
-        <source srcSet={BRAND_LOGO_PRIMARY_WEBP} type="image/webp" />
-        <img
-          src={BRAND_LOGO_PRIMARY}
-          alt="EmojiQuick"
-          width={BRAND_LOGO_PRIMARY_WIDTH}
-          height={BRAND_LOGO_PRIMARY_HEIGHT}
-          className="hidden h-10 w-auto max-w-[min(100%,11.5rem)] shrink-0 md:block"
-          decoding="async"
-        />
-      </picture>
-    </span>
-  );
-}
+const variantClass: Record<BrandLogoVariant, string> = {
+  header: "brand-logo-img brand-logo-img--header",
+  footer: "brand-logo-img brand-logo-img--footer",
+  inline: "brand-logo-img brand-logo-img--inline",
+};
 
-/** Footer and compact contexts — primary logo at a smaller height. */
-export function SiteLogoCompact({ className }: SiteLogoProps) {
+/**
+ * Canonical EmojiQuick logo — complete mascot + wordmark, never cropped.
+ * Uses transparent trimmed PNG derived from the official approved artwork.
+ */
+export function BrandLogo({ variant = "header", className }: BrandLogoProps) {
   return (
-    <picture>
-      <source srcSet={BRAND_LOGO_PRIMARY_WEBP} type="image/webp" />
+    <picture
+      className={className ?? "brand-logo-picture"}
+      style={{ aspectRatio: String(BRAND_LOGO_UI_ASPECT_RATIO) }}
+    >
+      <source srcSet={BRAND_LOGO_UI_WEBP} type="image/webp" />
       <img
-        src={BRAND_LOGO_PRIMARY}
-        alt="EmojiQuick"
-        width={BRAND_LOGO_PRIMARY_WIDTH}
-        height={BRAND_LOGO_PRIMARY_HEIGHT}
-        className={className ?? "h-8 w-auto max-w-[9.5rem]"}
+        src={BRAND_LOGO_UI}
+        alt=""
+        width={BRAND_LOGO_UI_WIDTH}
+        height={BRAND_LOGO_UI_HEIGHT}
+        className={variantClass[variant]}
         decoding="async"
       />
     </picture>
   );
+}
+
+/** @deprecated Use BrandLogo — kept for existing imports */
+export function SiteLogo(props: Omit<BrandLogoProps, "variant">) {
+  return <BrandLogo variant="header" {...props} />;
+}
+
+/** @deprecated Use BrandLogo variant="footer" */
+export function SiteLogoCompact(props: Omit<BrandLogoProps, "variant">) {
+  return <BrandLogo variant="footer" {...props} />;
 }

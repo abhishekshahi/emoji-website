@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandLogo } from "@/components/layout/site-logo";
 import { createPageMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = createPageMetadata({
@@ -13,10 +14,10 @@ export default function NotFound() {
   return (
     <div className="page-shell">
       <div className="card-surface mx-auto max-w-xl px-6 py-12 text-center">
-        <p className="text-5xl" aria-hidden="true">
-          🔍
-        </p>
-        <h1 className="mt-4 text-3xl font-bold">Page not found</h1>
+        <div className="flex justify-center">
+          <BrandLogo variant="inline" />
+        </div>
+        <h1 className="mt-6 text-3xl font-bold">Page not found</h1>
         <p className="mt-2 text-muted">
           That emoji or page does not exist in this collection.
         </p>

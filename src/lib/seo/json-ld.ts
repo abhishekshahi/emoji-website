@@ -1,5 +1,5 @@
 import { absoluteUrl } from "@/lib/seo/metadata";
-import { BRAND_LOGO_PRIMARY, BRAND_OG_IMAGE } from "@/lib/site/brand";
+import { BRAND_LOGO_UI, BRAND_OG_IMAGE } from "@/lib/site/brand";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site/config";
 
 export interface BreadcrumbItem {
@@ -10,7 +10,7 @@ export interface BreadcrumbItem {
 /** Site-wide Organization + WebSite JSON-LD with official logo (Phase 8.63). */
 export function buildSiteOrganizationJsonLd() {
   const siteUrl = absoluteUrl("/");
-  const logoUrl = absoluteUrl(BRAND_LOGO_PRIMARY);
+  const logoUrl = absoluteUrl(BRAND_LOGO_UI);
   const ogImageUrl = absoluteUrl(BRAND_OG_IMAGE);
 
   return {

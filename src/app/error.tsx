@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import { BrandLogo } from "@/components/layout/site-logo";
 
 interface ErrorPageProps {
   error: Error & { digest?: string };
@@ -16,10 +17,10 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
   return (
     <div className="page-shell">
       <div className="card-surface mx-auto max-w-xl px-6 py-12 text-center">
-        <p className="text-5xl" aria-hidden="true">
-          ⚠️
-        </p>
-        <h1 className="mt-4 text-3xl font-bold">Something went wrong</h1>
+        <div className="flex justify-center">
+          <BrandLogo variant="inline" />
+        </div>
+        <h1 className="mt-6 text-3xl font-bold">Something went wrong</h1>
         <p className="mt-2 text-muted">
           An unexpected error occurred. You can try again or return to the homepage.
         </p>

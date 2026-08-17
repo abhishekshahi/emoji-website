@@ -188,3 +188,41 @@ input {
 .btn-accent:hover {
   background: var(--accent-strong);
 }
+
+/* Canonical EmojiQuick logo — full wordmark + mascot, never cropped or distorted */
+.brand-logo-picture {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  line-height: 0;
+  overflow: visible;
+}
+
+.brand-logo-link {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  overflow: visible;
+  min-width: 0;
+}
+
+.brand-logo-img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.brand-logo-img--header {
+  height: clamp(2.125rem, 2vw + 1.625rem, 3.25rem);
+}
+
+.brand-logo-img--footer {
+  height: clamp(1.875rem, 1.5vw + 1.25rem, 2.5rem);
+}
+
+.brand-logo-img--inline {
+  height: clamp(2rem, 2vw + 1.25rem, 2.75rem);
+}

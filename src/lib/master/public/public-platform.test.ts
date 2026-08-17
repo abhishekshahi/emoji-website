@@ -140,7 +140,8 @@ describe("Phase 8.63 EmojiQuick official branding", () => {
     const brandDir = join(rootDir, "public/brand");
     for (const file of [
       "emojiquick-logo-official-source.png",
-      "emojiquick-logo-primary.png",
+      "emojiquick-logo-ui.png",
+      "emojiquick-logo-ui.webp",
       "emojiquick-icon.png",
       "emojiquick-og.png",
       "favicon-32.png",
@@ -158,9 +159,10 @@ describe("Phase 8.63 EmojiQuick official branding", () => {
 
   it("points brand constants at official PNG derivatives", async () => {
     const brand = await import("@/lib/site/brand");
-    assert.match(brand.BRAND_LOGO_PRIMARY, /\.png$/);
+    assert.match(brand.BRAND_LOGO_UI, /\.png$/);
     assert.match(brand.BRAND_ICON, /\.png$/);
     assert.match(brand.BRAND_OG_IMAGE, /\.png$/);
+    assert.ok(brand.BRAND_LOGO_UI_ASPECT_RATIO > 1);
   });
 
   it("embeds Organization JSON-LD with official logo URL", async () => {
@@ -169,14 +171,19 @@ describe("Phase 8.63 EmojiQuick official branding", () => {
       "@graph": Array<{ "@type": string; logo?: { url: string } }>;
     };
     const org = jsonLd["@graph"].find((n) => n["@type"] === "Organization");
-    assert.ok(org?.logo?.url.includes("/brand/emojiquick-logo-primary.png"));
+    assert.ok(org?.logo?.url.includes("/brand/emojiquick-logo-ui.png"));
   });
 
-  it("site header logo component references official assets", () => {
+  it("site header uses canonical BrandLogo component", () => {
     const logo = readFileSync(join(rootDir, "src/components/layout/site-logo.tsx"), "utf8");
-    assert.match(logo, /BRAND_LOGO_PRIMARY/);
-    assert.match(logo, /BRAND_ICON/);
+    const header = readFileSync(join(rootDir, "src/components/layout/site-header.tsx"), "utf8");
+    const styles = readFileSync(join(rootDir, "src/app/globals.css"), "utf8");
+    assert.match(logo, /BrandLogo/);
+    assert.match(logo, /BRAND_LOGO_UI/);
+    assert.match(styles, /object-fit: contain/);
+    assert.match(header, /BrandLogo variant="header"/);
     assert.doesNotMatch(logo, /EmojiFind/);
+    assert.doesNotMatch(logo, /BRAND_ICON/);
   });
 });
 
