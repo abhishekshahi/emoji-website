@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { FormEvent, KeyboardEvent, useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { FormEvent, KeyboardEvent, useEffect, useMemo, useState } from "react";
+import { buildSearchHref, resolveDocumentLang } from "@/lib/content/localization/document-lang";
+import { getUiString } from "@/lib/content/localization/ui-strings";
 import { SEARCH_UI_CONTRACT } from "@/lib/emoji/search-ui-contract";
 import { useDebouncedValue } from "@/hooks/use-debounced-value";
 import { useDesktopAutofocus } from "@/hooks/use-desktop-autofocus";
+import { useSearchParams } from "next/navigation";
 
 interface SearchBarProps {
   defaultValue?: string;
@@ -21,12 +24,19 @@ export function SearchBar({
   mode = "submit",
 }: SearchBarProps) {
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const searchLanguage = useMemo(
+    () => resolveDocumentLang(pathname, searchParams.get("lang")),
+    [pathname, searchParams],
+  );
   const [query, setQuery] = useState(defaultValue);
   const debouncedQuery = useDebouncedValue(query, SEARCH_UI_CONTRACT.debounceMs);
   const desktopAutofocus = useDesktopAutofocus(autoFocus);
   const isHero = size === "hero";
   const isLive = mode === "live";
   const hasQuery = query.trim().length > 0;
+  const placeholder = getUiString("search.placeholder", searchLanguage);
 
   useEffect(() => {
     setQuery(defaultValue);
@@ -38,12 +48,10 @@ export function SearchBar({
     }
 
     const trimmed = debouncedQuery.trim();
-    const nextUrl = trimmed
-      ? `/search?q=${encodeURIComponent(trimmed)}`
-      : "/search";
+    const nextUrl = buildSearchHref(trimmed, searchLanguage);
 
     router.replace(nextUrl, { scroll: false });
-  }, [debouncedQuery, isLive, router]);
+  }, [debouncedQuery, isLive, router, searchLanguage]);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -55,17 +63,17 @@ export function SearchBar({
     const trimmed = query.trim();
 
     if (!trimmed) {
-      router.push("/search");
+      router.push(buildSearchHref("", searchLanguage));
       return;
     }
 
-    router.push(`/search?q=${encodeURIComponent(trimmed)}`);
+    router.push(buildSearchHref(trimmed, searchLanguage));
   };
 
   const handleClear = () => {
     setQuery("");
     if (isLive) {
-      router.replace("/search", { scroll: false });
+      router.replace(buildSearchHref("", searchLanguage), { scroll: false });
     }
   };
 
@@ -79,7 +87,7 @@ export function SearchBar({
   return (
     <form onSubmit={handleSubmit} className="w-full" role="search">
       <label htmlFor="emoji-search" className="sr-only">
-        Search emojis
+        {placeholder}
       </label>
       <div className={`search-bar ${isHero ? "search-bar--hero" : ""}`}>
         <span aria-hidden="true" className={isHero ? "text-xl" : "text-lg"}>
@@ -92,11 +100,7 @@ export function SearchBar({
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder={
-            isHero
-              ? "Search emojis by name, keyword, or Unicode..."
-              : "Search by name, keyword, emoji, U+1F525, or 1F525"
-          }
+          placeholder={placeholder}
           autoFocus={desktopAutofocus}
           autoComplete="off"
           enterKeyHint="search"
@@ -126,15 +130,15 @@ export function SearchBar({
       {isHero ? (
         <p className="mt-3 text-sm text-muted">
           Try{" "}
-          <Link href="/search?q=fire" className="underline hover:text-accent-strong">
+          <Link href={buildSearchHref("fire", searchLanguage)} className="underline hover:text-accent-strong">
             fire
           </Link>
           ,{" "}
-          <Link href="/search?q=heart" className="underline hover:text-accent-strong">
+          <Link href={buildSearchHref("heart", searchLanguage)} className="underline hover:text-accent-strong">
             heart
           </Link>
           , or{" "}
-          <Link href="/search?q=U%2B1F525" className="underline hover:text-accent-strong">
+          <Link href={buildSearchHref("U+1F525", searchLanguage)} className="underline hover:text-accent-strong">
             U+1F525
           </Link>
         </p>

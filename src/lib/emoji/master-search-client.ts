@@ -58,13 +58,20 @@ export function mapMasterSearchResultToBrowsable(result: MasterSearchResult): Br
   };
 }
 
-export async function fetchMasterSearch(query: string, limit = 120): Promise<MasterSearchResponse | null> {
+export async function fetchMasterSearch(
+  query: string,
+  limit = 120,
+  language = "en",
+): Promise<MasterSearchResponse | null> {
   const trimmed = query.trim();
   if (!trimmed) {
     return { query: trimmed, results: [], ambiguous: false };
   }
 
   const params = new URLSearchParams({ q: trimmed, limit: String(limit) });
+  if (language && language !== "en") {
+    params.set("lang", language);
+  }
   const response = await fetch("/api/master/search?" + params.toString());
   if (!response.ok) return null;
   return (await response.json()) as MasterSearchResponse;

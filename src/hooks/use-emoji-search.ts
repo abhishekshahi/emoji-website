@@ -37,7 +37,7 @@ async function loadSearchEnrichment(): Promise<Readonly<Record<string, readonly 
   return searchEnrichmentCache;
 }
 
-export function useEmojiSearch(query: string, limit = 120) {
+export function useEmojiSearch(query: string, limit = 120, language = "en") {
   const [emojis, setEmojis] = useState<BrowsableEmoji[]>([]);
   const [searchEnrichment, setSearchEnrichment] = useState<Readonly<Record<string, readonly string[]>>>({});
   const [masterResults, setMasterResults] = useState<Array<{ emoji: BrowsableEmoji; score: number }>>([]);
@@ -76,7 +76,7 @@ export function useEmojiSearch(query: string, limit = 120) {
     let cancelled = false;
     setUsesMasterSearch(true);
 
-    fetchMasterSearch(trimmed, limit).then((response) => {
+    fetchMasterSearch(trimmed, limit, language).then((response) => {
       if (cancelled) return;
       if (!response) {
         setUsesMasterSearch(false);
@@ -98,7 +98,7 @@ export function useEmojiSearch(query: string, limit = 120) {
     return () => {
       cancelled = true;
     };
-  }, [limit, query]);
+  }, [language, limit, query]);
 
   const clientResults = useMemo(() => {
     if (!isReady || !query.trim() || usesMasterSearch) {

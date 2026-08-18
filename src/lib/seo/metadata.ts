@@ -6,6 +6,8 @@ import {
   SITE_URL,
 } from "@/lib/site/config";
 import { BRAND_OG_IMAGE } from "@/lib/site/brand";
+import { getPublishedHreflangLanguages } from "@/lib/content/localization/published-pages";
+import { localizedEmojiPath, type SupportedLanguage } from "@/lib/content/localization/types";
 
 function normalizePath(path: string): string {
   return path.startsWith("/") ? path : `/${path}`;
@@ -108,6 +110,28 @@ export function createEmojiPageMetadata({
     path: `/emoji/${slug}`,
     image: artworkPath ?? undefined,
   });
+}
+
+/** Reciprocal hreflang for English emoji pages when localized siblings exist. */
+export function withEmojiHreflangAlternates(metadata: Metadata, slug: string): Metadata {
+  const hrefLangs = getPublishedHreflangLanguages(slug);
+  if (hrefLangs.length <= 1) return metadata;
+
+  const languages: Record<string, string> = {
+    "x-default": canonicalUrl(`/emoji/${slug}`),
+  };
+  for (const code of hrefLangs) {
+    languages[code] = canonicalUrl(localizedEmojiPath(code as SupportedLanguage, slug));
+  }
+
+  return {
+    ...metadata,
+    alternates: {
+      ...metadata.alternates,
+      canonical: canonicalUrl(`/emoji/${slug}`),
+      languages,
+    },
+  };
 }
 
 export function createMasterIdentityPageMetadata({

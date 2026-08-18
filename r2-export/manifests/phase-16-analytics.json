@@ -1,0 +1,6 @@
+{
+  "ingestEnabled": true,
+  "liveRankings": false,
+  "rankingLabel": "POPULAR / CURATED",
+  "threshold": 1000
+}

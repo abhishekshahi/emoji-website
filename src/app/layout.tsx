@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClientProviders } from "@/components/providers/client-providers";
@@ -7,6 +8,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { SkipLink } from "@/components/layout/skip-link";
 import { JsonLd } from "@/components/seo/json-ld";
+import { getLocaleDirection } from "@/lib/content/localization/locales";
 import {
   BRAND_FAVICON_180,
   BRAND_FAVICONS,
@@ -65,12 +67,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
   const siteJsonLd = buildSiteOrganizationJsonLd();
+  const headerStore = await headers();
+  const documentLang = headerStore.get("x-document-lang") ?? "en";
+  const documentDir = getLocaleDirection(documentLang);
 
   return (
     <html
-      lang="en"
+      lang={documentLang}
+      dir={documentDir}
       data-scroll-behavior="smooth"
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}

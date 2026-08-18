@@ -40,7 +40,7 @@ export function EmojiRelatedGroups({
               <h3 className="text-base font-semibold">{group.title}</h3>
               <p className="text-sm text-muted">{group.description}</p>
             </div>
-            <EmojiGrid emojis={[...group.emojis]} pageSize={group.emojis.length} />
+            <EmojiGrid emojis={[...group.emojis]} pageSize={group.emojis.length} trackRelatedClicks />
           </div>
         ))}
       </div>

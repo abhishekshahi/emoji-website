@@ -4,6 +4,7 @@ import Link from "next/link";
 import { memo, useCallback, type KeyboardEvent } from "react";
 import { useEmojiActions } from "@/components/providers/emoji-actions-provider";
 import { EmojiArtwork } from "@/components/emoji/emoji-artwork";
+import { trackClientEvent } from "@/lib/content/analytics/client";
 import { getSearchHighlightSegments } from "@/lib/emoji/search-highlight";
 import type { BrowsableEmoji } from "@/lib/emoji/types";
 
@@ -12,6 +13,7 @@ interface EmojiCardProps {
   showName?: boolean;
   highlightQuery?: string;
   matchLabel?: string;
+  trackRelatedClick?: boolean;
 }
 
 function EmojiCardComponent({
@@ -19,6 +21,7 @@ function EmojiCardComponent({
   showName = true,
   highlightQuery,
   matchLabel,
+  trackRelatedClick = false,
 }: EmojiCardProps) {
   const { isFavorite, toggleFavorite, copyEmoji, copiedHexcode } = useEmojiActions();
   const favorite = isFavorite(emoji.hexcode);
@@ -95,6 +98,11 @@ function EmojiCardComponent({
           href={`/emoji/${emoji.slug}`}
           className="min-h-11 min-w-11 inline-flex items-center justify-center rounded-md px-2 text-xs font-semibold text-accent-strong hover:underline focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
           aria-label={`View details for ${emoji.name}`}
+          onClick={() => {
+            if (trackRelatedClick) {
+              trackClientEvent("related_click", emoji.id, emoji.slug);
+            }
+          }}
         >
           Details
         </Link>

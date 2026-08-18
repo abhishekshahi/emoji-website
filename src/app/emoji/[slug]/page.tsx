@@ -27,12 +27,14 @@ import { getCategoryLabel } from "@/lib/emoji/data";
 import { getEnrichedRelatedEmojiGroups } from "@/lib/emoji/related-emojis";
 import { isOpenMojiExtra } from "@/lib/emoji/types";
 import { buildEmojiPageJsonLd } from "@/lib/seo/json-ld";
-import { absoluteUrl, createEmojiPageMetadata } from "@/lib/seo/metadata";
+import { absoluteUrl, createEmojiPageMetadata, withEmojiHreflangAlternates } from "@/lib/seo/metadata";
 import {
   OPENMOJI_LICENSE,
   OPENMOJI_LICENSE_URL,
   OPENMOJI_PROJECT_URL,
 } from "@/lib/site/config";
+import { EmojiViewTracker } from "@/components/analytics/emoji-view-tracker";
+import { hexcodeToCanonicalId } from "@/lib/content/analytics/validation";
 import { MasterEmojiPanelsGate } from "@/components/master/master-emoji-panels-gate";
 import { MasterIdentityDetailPage } from "@/components/master/master-identity-detail-page";
 import {
@@ -75,31 +77,37 @@ export async function generateMetadata({
   if (emoji) {
     const enrichment = getEmojiEnrichmentBySlug(canonicalSlug);
     const publicDefinitions = filterPublicDefinitions(enrichment?.definitions ?? []);
-    return createEmojiPageMetadata({
-      name: emoji.name,
-      emoji: emoji.emoji,
-      slug: canonicalSlug,
-      keywords: [
-        ...emoji.keywords,
-        ...(enrichment?.searchTerms.slice(0, 8) ?? []),
-      ],
-      codePointString: emoji.codePointString,
-      artworkPath: getArtworkPath(emoji.hexcode),
-      meaningSnippet: publicDefinitions[0]?.text,
-      categoryLabel: getCategoryLabel(emoji.category),
-    });
+    return withEmojiHreflangAlternates(
+      createEmojiPageMetadata({
+        name: emoji.name,
+        emoji: emoji.emoji,
+        slug: canonicalSlug,
+        keywords: [
+          ...emoji.keywords,
+          ...(enrichment?.searchTerms.slice(0, 8) ?? []),
+        ],
+        codePointString: emoji.codePointString,
+        artworkPath: getArtworkPath(emoji.hexcode),
+        meaningSnippet: publicDefinitions[0]?.text,
+        categoryLabel: getCategoryLabel(emoji.category),
+      }),
+      canonicalSlug,
+    );
   }
 
   const resolved = await resolveOnDemandEmojiPage(canonicalSlug);
   if (resolved?.kind === "master-identity" && resolved.identity) {
-    return createMasterIdentityPageMetadata({
-      name: resolved.identity.officialName,
-      emoji: resolved.identity.glyph ?? "",
-      slug: canonicalSlug,
-      keywords: [...resolved.identity.keywords],
-      codePointString: resolved.identity.unicodeSequence ?? resolved.identity.hexcode ?? "",
-      definition: resolved.identity.definitions[0],
-    });
+    return withEmojiHreflangAlternates(
+      createMasterIdentityPageMetadata({
+        name: resolved.identity.officialName,
+        emoji: resolved.identity.glyph ?? "",
+        slug: canonicalSlug,
+        keywords: [...resolved.identity.keywords],
+        codePointString: resolved.identity.unicodeSequence ?? resolved.identity.hexcode ?? "",
+        definition: resolved.identity.definitions[0],
+      }),
+      canonicalSlug,
+    );
   }
 
   return {
@@ -146,6 +154,7 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   return (
     <div className="page-shell space-y-10 pb-12">
       <JsonLd data={jsonLd} />
+      <EmojiViewTracker canonicalId={hexcodeToCanonicalId(emoji.hexcode)} slug={canonicalSlug} />
 
       <Breadcrumbs
         items={[

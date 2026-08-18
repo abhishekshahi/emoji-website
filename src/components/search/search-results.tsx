@@ -1,12 +1,16 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { useEmojiSearch } from "@/hooks/use-emoji-search";
+import { useSearchLanguage } from "@/hooks/use-search-language";
 import type { BrowsableEmoji } from "@/lib/emoji/types";
 import { isAmbiguousSearchQuery } from "@/lib/emoji/search-highlight";
 import { getSearchMatchLabel } from "@/lib/emoji/search-match";
 import { SEARCH_CATEGORY_HINTS, SEARCH_SUGGESTIONS } from "@/lib/emoji/search-suggestions";
+import { buildZeroResultRecovery } from "@/lib/content/search-intent/zero-results";
+import { trackClientEvent } from "@/lib/content/analytics/client";
+import { hexcodeToCanonicalId } from "@/lib/content/analytics/validation";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 import { RecentlyUsedSection } from "@/components/home/recently-used-section";
 import { EmptyState } from "@/components/ui/empty-state";
@@ -17,7 +21,8 @@ export function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
   const trimmedQuery = query.trim();
-  const { results, isReady } = useEmojiSearch(trimmedQuery);
+  const searchLanguage = useSearchLanguage();
+  const { results, isReady } = useEmojiSearch(trimmedQuery, 120, searchLanguage);
 
   const { emojis, matchLabelsById } = useMemo(() => {
     const labels: Record<string, string> = {};
@@ -33,6 +38,13 @@ export function SearchResults() {
 
     return { emojis: resolved, matchLabelsById: labels };
   }, [results]);
+
+  useEffect(() => {
+    if (!trimmedQuery || !isReady) return;
+    const top = emojis[0];
+    if (!top) return;
+    trackClientEvent("emoji_search", hexcodeToCanonicalId(top.hexcode), top.slug);
+  }, [trimmedQuery, isReady, emojis]);
 
   if (!trimmedQuery) {
     return (
@@ -64,6 +76,8 @@ export function SearchResults() {
   const ambiguous = isAmbiguousSearchQuery(trimmedQuery);
 
   if (emojis.length === 0) {
+    const recovery = buildZeroResultRecovery(trimmedQuery, 0);
+    const suggestions = recovery.suggestions.length > 0 ? recovery.suggestions : SEARCH_SUGGESTIONS;
     return (
       <div className="space-y-4">
         <p className="text-sm text-muted" role="status" aria-live="polite">
@@ -72,12 +86,21 @@ export function SearchResults() {
             &quot;{trimmedQuery}&quot;
           </span>
         </p>
+        {recovery.didYouMean ? (
+          <p className="text-sm">
+            Did you mean{" "}
+            <ChipLink href={`/search?q=${encodeURIComponent(recovery.didYouMean)}`}>
+              {recovery.didYouMean}
+            </ChipLink>
+            ?
+          </p>
+        ) : null}
         <EmptyState
           title="No emoji found"
-          description={`Nothing matched "${trimmedQuery}". Try one of these instead.`}
+          description={`Nothing matched "${trimmedQuery}". Try a related search or category.`}
         >
           <div className="flex flex-wrap justify-center gap-2">
-            {SEARCH_SUGGESTIONS.map((suggestion) => (
+            {suggestions.map((suggestion) => (
               <ChipLink
                 key={suggestion}
                 href={`/search?q=${encodeURIComponent(suggestion)}`}
@@ -90,7 +113,7 @@ export function SearchResults() {
             Browse by category
           </p>
           <div className="flex flex-wrap justify-center gap-2">
-            {SEARCH_CATEGORY_HINTS.map((hint) => (
+            {recovery.categoryHints.map((hint) => (
               <ChipLink
                 key={hint.label}
                 href={`/search?q=${encodeURIComponent(hint.query)}`}

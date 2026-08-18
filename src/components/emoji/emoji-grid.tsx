@@ -17,6 +17,7 @@ interface EmojiGridProps {
   showEmptyState?: boolean;
   /** Auto-load more rows when the sentinel enters the viewport. */
   infiniteScroll?: boolean;
+  trackRelatedClicks?: boolean;
 }
 
 export function EmojiGrid({
@@ -27,6 +28,7 @@ export function EmojiGrid({
   matchLabelsById,
   showEmptyState = true,
   infiniteScroll = true,
+  trackRelatedClicks = false,
 }: EmojiGridProps) {
   const [visibleCount, setVisibleCount] = useState(pageSize);
 
@@ -66,6 +68,7 @@ export function EmojiGrid({
               emoji={emoji}
               highlightQuery={highlightQuery}
               matchLabel={matchLabelsById?.[emoji.id]}
+              trackRelatedClick={trackRelatedClicks}
             />
           </div>
         ))}
