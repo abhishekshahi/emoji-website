@@ -11,6 +11,7 @@ import { listPublishedLocalizedPages } from "@/lib/content/localization/publishe
 import { filterPublishableLocalizedPages } from "@/lib/content/localization/publication";
 import { localizedEmojiPath, type SupportedLanguage } from "@/lib/content/localization/types";
 import { canonicalUrl } from "@/lib/seo/metadata";
+import { getAllPublicSlugs, getIndexableSlugs, kaomojiDataExists, loadCollections } from "@/lib/kaomoji/product/loader";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const manifest = getManifest();
@@ -125,5 +126,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...staticPages, ...hubPages, ...contentPages, ...categoryPages, ...emojiPages];
+  const kaomojiPages: MetadataRoute.Sitemap = kaomojiDataExists()
+    ? [
+        {
+          url: canonicalUrl("/kaomoji"),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.85,
+        },
+        ...loadCollections().map((c) => ({
+          url: canonicalUrl(`/kaomoji/collections/${c.slug}`),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.7,
+        })),
+        ...getIndexableSlugs(1000).map((slug) => ({
+          url: canonicalUrl(`/kaomoji/${slug}`),
+          lastModified: generatedAt,
+          changeFrequency: "monthly" as const,
+          priority: 0.65,
+        })),
+      ]
+    : [];
+
+  return [...staticPages, ...hubPages, ...contentPages, ...categoryPages, ...emojiPages, ...kaomojiPages];
 }
