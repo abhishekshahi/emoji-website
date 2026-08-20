@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-08-20T16:12:21.879Z",
+  "local_total": 392904,
+  "local_unique": 392904,
+  "remote_unique": 392904,
+  "expected": 392904,
+  "missing_count": 0,
+  "unexpected_count": 0,
+  "local_duplicates": 0,
+  "remote_duplicates": 0,
+  "missing_sample": [],
+  "unexpected_sample": [],
+  "valid": true,
+  "errors": []
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-20T17:01:58.000Z",
+  "audit_type": "phase19-final-gate-closure",
+  "previous_verdict": "PASS WITH WARNINGS",
+  "final_verdict": "PASS",
+  "git": { "branch": "master", "head": "7a565a888" },
+  "gates": {
+    "r2_remote": { "result": "4/4 PASS", "timestamp": "2026-08-20T16:11:48Z" },
+    "d1_integrity": { "result": "PASS", "timestamp": "2026-08-20T16:12:26Z" },
+    "relationship_set_diff": {
+      "result": "PASS",
+      "local": 392904,
+      "remote": 392904,
+      "missing": 0,
+      "unexpected": 0,
+      "duplicates": 0,
+      "timestamp": "2026-08-20T16:12:21Z"
+    },
+    "canonical": { "result": "PASS", "missing": 0, "unexpected": 0, "timestamp": "2026-08-20T16:11:42Z" },
+    "worker_smoke": { "result": "13/13 PASS", "timestamp": "2026-08-20T16:11:18Z" },
+    "search_benchmark": "122/122",
+    "phase19_tests": "61/61 PASS",
+    "typecheck": "PASS",
+    "build": { "result": "PASS", "exit_code": 0, "elapsed_ms": 5763521, "timestamp": "2026-08-20T14:32:54Z" },
+    "build_cf": { "result": "PASS", "exit_code": 0, "static_pages": "7488/7488", "worker_js": true, "started": "2026-08-20T15:21:02Z", "elapsed_ms": 6056000, "timestamp": "2026-08-20T17:01:58Z" }
+  },
+  "d1_live_counts": {
+    "kaomoji": 50979,
+    "relationship": 392904,
+    "kaomoji_category": 131314,
+    "kaomoji_keyword": 383621,
+    "kaomoji_locale": 198799,
+    "source_attribution": 60165,
+    "production_release": 1
+  },
+  "raw": { "count": 236508, "sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf", "removed": 0, "modified": 0 },
+  "cloudflare_mode": { "wrangler_value": "STAGING", "intentional": true },
+  "remaining_warnings": [],
+  "severity_summary": { "CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0, "INFO": 0 }
+}
