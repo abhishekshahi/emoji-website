@@ -1,57 +1,140 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { useEmojiSearch } from "@/hooks/use-emoji-search";
-import { getBrowsableEmojiById } from "@/lib/emoji/browsable-data";
+import { useSearchLanguage } from "@/hooks/use-search-language";
+import type { BrowsableEmoji } from "@/lib/emoji/types";
 import { isAmbiguousSearchQuery } from "@/lib/emoji/search-highlight";
+import { getSearchMatchLabel } from "@/lib/emoji/search-match";
+import { SEARCH_CATEGORY_HINTS, SEARCH_SUGGESTIONS } from "@/lib/emoji/search-suggestions";
+import { buildZeroResultRecovery } from "@/lib/content/search-intent/zero-results";
+import { trackClientEvent } from "@/lib/content/analytics/client";
+import { hexcodeToCanonicalId } from "@/lib/content/analytics/validation";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
+import { RecentlyUsedSection } from "@/components/home/recently-used-section";
+import { EmptyState } from "@/components/ui/empty-state";
+import { ChipLink } from "@/components/ui/chip";
+import { EmojiGridSkeleton } from "@/components/ui/skeleton";
 
 export function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
   const trimmedQuery = query.trim();
-  const { results, isReady } = useEmojiSearch(trimmedQuery);
+  const searchLanguage = useSearchLanguage();
+  const { results, isReady } = useEmojiSearch(trimmedQuery, 120, searchLanguage);
 
-  const emojis = useMemo(
-    () =>
-      results
-        .map((result) => getBrowsableEmojiById(result.emoji.id))
-        .filter((emoji): emoji is NonNullable<typeof emoji> => Boolean(emoji)),
-    [results],
-  );
+  const { emojis, matchLabelsById } = useMemo(() => {
+    const labels: Record<string, string> = {};
+    const resolved = results
+      .map((result) => {
+        const emoji = result.emoji;
+        if (!emoji) return null;
+        const label = getSearchMatchLabel(result.score);
+        if (label) labels[emoji.id] = label;
+        return emoji;
+      })
+      .filter((emoji): emoji is BrowsableEmoji => Boolean(emoji));
+
+    return { emojis: resolved, matchLabelsById: labels };
+  }, [results]);
+
+  useEffect(() => {
+    if (!trimmedQuery || !isReady) return;
+    const top = emojis[0];
+    if (!top) return;
+    trackClientEvent("emoji_search", hexcodeToCanonicalId(top.hexcode), top.slug);
+  }, [trimmedQuery, isReady, emojis]);
 
   if (!trimmedQuery) {
     return (
-      <div className="card-surface px-6 py-12 text-center">
-        <p className="text-lg font-semibold">Start typing to search emojis</p>
-        <p className="mt-2 text-sm text-muted">
-          Search by name, keyword, emoji character, hex code, or Unicode code point.
-        </p>
+      <div className="space-y-8">
+        <RecentlyUsedSection />
+        <EmptyState
+          title="Start typing to search"
+          description="Search by name, keyword, meaning, synonym, emoji character, hex code, or Unicode code point."
+        >
+        <div className="flex flex-wrap justify-center gap-2">
+          {SEARCH_SUGGESTIONS.slice(0, 6).map((suggestion) => (
+            <ChipLink
+              key={suggestion}
+              href={`/search?q=${encodeURIComponent(suggestion)}`}
+            >
+              {suggestion}
+            </ChipLink>
+          ))}
+        </div>
+        </EmptyState>
       </div>
     );
   }
 
   if (!isReady) {
-    return (
-      <div
-        className="card-surface px-6 py-12 text-center text-muted"
-        role="status"
-        aria-live="polite"
-        aria-busy="true"
-      >
-        Loading emoji search index...
-      </div>
-    );
+    return <EmojiGridSkeleton count={12} />;
   }
 
   const ambiguous = isAmbiguousSearchQuery(trimmedQuery);
+
+  if (emojis.length === 0) {
+    const recovery = buildZeroResultRecovery(trimmedQuery, 0);
+    const suggestions = recovery.suggestions.length > 0 ? recovery.suggestions : SEARCH_SUGGESTIONS;
+    return (
+      <div className="space-y-4">
+        <p className="text-sm text-muted" role="status" aria-live="polite">
+          0 results for{" "}
+          <span className="font-semibold text-foreground">
+            &quot;{trimmedQuery}&quot;
+          </span>
+        </p>
+        {recovery.didYouMean ? (
+          <p className="text-sm">
+            Did you mean{" "}
+            <ChipLink href={`/search?q=${encodeURIComponent(recovery.didYouMean)}`}>
+              {recovery.didYouMean}
+            </ChipLink>
+            ?
+          </p>
+        ) : null}
+        <EmptyState
+          title="No emoji found"
+          description={`Nothing matched "${trimmedQuery}". Try a related search or category.`}
+        >
+          <div className="flex flex-wrap justify-center gap-2">
+            {suggestions.map((suggestion) => (
+              <ChipLink
+                key={suggestion}
+                href={`/search?q=${encodeURIComponent(suggestion)}`}
+              >
+                {suggestion}
+              </ChipLink>
+            ))}
+          </div>
+          <p className="mt-3 w-full text-xs font-semibold uppercase tracking-wide text-muted">
+            Browse by category
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {recovery.categoryHints.map((hint) => (
+              <ChipLink
+                key={hint.label}
+                href={`/search?q=${encodeURIComponent(hint.query)}`}
+                variant="outline"
+              >
+                {hint.label}
+              </ChipLink>
+            ))}
+          </div>
+        </EmptyState>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">
       <p className="text-sm text-muted" role="status" aria-live="polite">
         {emojis.length} result{emojis.length === 1 ? "" : "s"} for{" "}
-        <span className="font-semibold text-foreground">&quot;{trimmedQuery}&quot;</span>
+        <span className="font-semibold text-foreground">
+          &quot;{trimmedQuery}&quot;
+        </span>
       </p>
       {ambiguous ? (
         <p className="rounded-2xl border border-border bg-surface-muted/60 px-4 py-3 text-sm text-muted">
@@ -61,7 +144,8 @@ export function SearchResults() {
       <EmojiGrid
         emojis={emojis}
         highlightQuery={trimmedQuery}
-        emptyMessage={`No emojis matched "${trimmedQuery}". Try another keyword or code point.`}
+        matchLabelsById={matchLabelsById}
+        showEmptyState={false}
       />
     </div>
   );

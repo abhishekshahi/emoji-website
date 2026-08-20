@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-08-10T17:02:29.628Z",
+  "phase": "8.12E",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "lookup": {
+    "coldLookupMs": 0.09850000000005821,
+    "warmLookupMs": 0.0006099000000001525,
+    "lookupComplexity": "O(1)"
+  },
+  "status": "PASS"
+}

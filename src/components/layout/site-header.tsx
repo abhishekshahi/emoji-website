@@ -3,48 +3,45 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SITE_NAME } from "@/lib/emoji/constants";
+import { BrandLogo } from "@/components/layout/site-logo";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { SearchBar } from "@/components/search/search-bar";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { getUiString } from "@/lib/content/localization/ui-strings";
+import { usePageLocale } from "@/hooks/use-page-locale";
 
-const NAV_ITEMS = [
-  { href: "/emoji", label: "Browse" },
-  { href: "/popular", label: "Popular" },
-  { href: "/new", label: "New" },
-  { href: "/favorites", label: "Favorites" },
-  { href: "/recent", label: "Recent" },
+const NAV_KEYS = [
+  { href: "/emoji", key: "nav.browse" as const },
+  { href: "/popular", key: "nav.popular" as const },
+  { href: "/explore", key: "nav.explore" as const },
+  { href: "/new", key: "nav.new" as const },
+  { href: "/favorites", key: "nav.favorites" as const },
 ] as const;
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const locale = usePageLocale();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-md">
-      <div className="page-shell flex flex-col gap-4 py-4">
-        <div className="flex items-center justify-between gap-4">
+    <header className="site-header sticky top-0 z-40">
+      <div className="page-shell flex flex-col gap-3 py-3 sm:gap-4 sm:py-4">
+        <div className="flex min-w-0 items-center justify-between gap-3 sm:gap-4">
           <Link
             href="/"
-            className="flex items-center gap-3 rounded-xl focus-visible:outline-offset-4"
+            className="brand-logo-link rounded-xl focus-visible:outline-offset-4"
             aria-label={`${SITE_NAME} home`}
           >
-            <span
-              aria-hidden="true"
-              className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent-soft text-2xl"
-            >
-              😊
-            </span>
-            <span className="flex flex-col">
-              <span className="text-lg font-bold tracking-tight">{SITE_NAME}</span>
-              <span className="text-xs text-muted">Search. Copy. Smile.</span>
-            </span>
+            <BrandLogo variant="header" decorative />
           </Link>
 
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-2">
+            <LanguageSwitcher />
             <ThemeToggle />
             <nav
               aria-label="Primary"
-              className="hidden items-center gap-1 md:flex"
+              className="hidden items-center gap-0.5 md:flex"
             >
-            {NAV_ITEMS.map((item) => {
+            {NAV_KEYS.map((item) => {
               const isActive =
                 pathname === item.href || pathname.startsWith(`${item.href}/`);
 
@@ -53,13 +50,11 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   aria-current={isActive ? "page" : undefined}
-                  className={`rounded-full px-3 py-2 text-sm font-medium transition-colors ${
-                    isActive
-                      ? "bg-accent-soft text-accent-strong"
-                      : "text-muted hover:bg-surface-muted hover:text-foreground"
+                  className={`site-nav__link ${
+                    isActive ? "site-nav__link--active" : ""
                   }`}
                 >
-                  {item.label}
+                  {getUiString(item.key, locale)}
                 </Link>
               );
             })}

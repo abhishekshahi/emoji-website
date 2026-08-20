@@ -1,0 +1,32 @@
+{
+  "phase": "8.61-E",
+  "mode": "local",
+  "base": "https://emojiquick.com",
+  "httpStatus": 200,
+  "expected": {
+    "total": 6991,
+    "emojiIdentityPages": 6955,
+    "staticPages": 7,
+    "categoryPages": 29
+  },
+  "verdict": "PASS",
+  "checks": {
+    "total6991": true,
+    "emoji6955": true,
+    "static7": true,
+    "category29": true,
+    "noDupes": true,
+    "noForbidden": true,
+    "allProductionHost": true
+  },
+  "counts": {
+    "total": 6991,
+    "emoji": 6955,
+    "static": 7,
+    "category": 29,
+    "dupes": 0,
+    "forbidden": 0
+  },
+  "sampleForbidden": [],
+  "pass": true
+}

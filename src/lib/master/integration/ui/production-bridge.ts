@@ -64,20 +64,26 @@ export function getUiProductionMetadata(
   return getUiMetadataPayload(canonicalId, rootDir);
 }
 
+const integrationFlagRestoreStack: MasterIntegrationConfig[] = [];
+
 export function runWithIntegrationFlags<T>(overrides: Partial<MasterIntegrationConfig>, fn: () => T): T {
   const config = MASTER_INTEGRATION_CONFIG as MasterIntegrationConfig;
-  const previous = {
+
+  integrationFlagRestoreStack.push({
     masterIntegrationEnabled: config.masterIntegrationEnabled,
     masterArtworkEnabled: config.masterArtworkEnabled,
     masterMetadataEnabled: config.masterMetadataEnabled,
     masterSearchEnabled: config.masterSearchEnabled,
     masterSEOEnabled: config.masterSEOEnabled,
-  };
+  });
 
   Object.assign(config, overrides);
   try {
     return fn();
   } finally {
-    Object.assign(config, previous);
+    const previous = integrationFlagRestoreStack.pop();
+    if (previous) {
+      Object.assign(config, previous);
+    }
   }
 }

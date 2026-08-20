@@ -1,3 +1,4 @@
+import { getAllIdentitySlugs } from "@/lib/master/public/identity-slug-map";
 import {
   getAllEmojis,
   getEmojiByHexcode,
@@ -46,4 +47,9 @@ export function getAllBrowsableEmojis(): BrowsableEmoji[] {
 
 export function getAllBrowsableSlugs(): string[] {
   return getAllBrowsableEmojis().map((emoji) => emoji.slug);
+}
+
+/** All 6955 public emoji identity slugs (Phase 8.61). */
+export function getAllPublicEmojiSlugs(): readonly string[] {
+  return getAllIdentitySlugs();
 }

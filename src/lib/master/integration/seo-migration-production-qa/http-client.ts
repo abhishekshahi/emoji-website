@@ -25,6 +25,12 @@ export function locationPathname(location: string | null, baseUrl: string): stri
   }
 }
 
+export function buildProbeHeaders(): Record<string, string> {
+  return {
+    Accept: "text/html",
+  };
+}
+
 export async function probeUrl(
   baseUrl: string,
   path: string,
@@ -34,9 +40,7 @@ export async function probeUrl(
   try {
     const response = await fetch(url, {
       redirect: options?.followRedirects === false ? "manual" : "follow",
-      headers: {
-        Accept: "text/html",
-      },
+      headers: buildProbeHeaders(),
     });
 
     let bodySnippet: string | null = null;
@@ -76,6 +80,23 @@ export function extractCanonicalHref(html: string | null, baseUrl: string): stri
     return null;
   }
   return new URL(hrefMatch[1], baseUrl).toString();
+}
+
+export function canonicalPathname(href: string | null): string | null {
+  if (!href) {
+    return null;
+  }
+  try {
+    return normalizePathname(new URL(href).pathname);
+  } catch {
+    return null;
+  }
+}
+
+export function canonicalPathsMatch(actualHref: string | null, expectedPath: string, baseUrl: string): boolean {
+  const actualPath = canonicalPathname(actualHref);
+  const expected = canonicalPathname(new URL(expectedPath, baseUrl).toString());
+  return actualPath !== null && expected !== null && actualPath === expected;
 }
 
 export async function mapWithConcurrency<T, R>(

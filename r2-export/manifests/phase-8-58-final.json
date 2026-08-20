@@ -1,0 +1,41 @@
+{
+  "phase": "8.58",
+  "finalVerdict": "PASS WITH WARNINGS",
+  "productionVersion": "0a01b930-ef1a-4d30-8dd2-527114432b87",
+  "priorVersion": "1a076681-db4f-46f4-a84d-822720635e01",
+  "rollbackVersion": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "completedAt": "2026-08-15T05:30:00.000Z",
+  "scorecard": {
+    "8.58-A METADATA": "PASS",
+    "8.58-B SEARCH": "PASS WITH WARNINGS",
+    "8.58-C ARTWORK": "PASS",
+    "8.58-D INTEGRATION": "PASS",
+    "8.58-E HARDENING": "PASS",
+    "8.58-F FINAL": "PASS WITH WARNINGS",
+    "8.58-G REPORT": "PASS WITH WARNINGS"
+  },
+  "fixesDeployed": [
+    "edge-context.ts: canonicalBySlug reverse lookup for /api/master/identity/{slug}",
+    "config.ts: restored masterSearchEnabled + masterArtworkEnabled true",
+    "artwork-binary-route.ts: restored from temp build (corruption fix)"
+  ],
+  "deploy": {
+    "buildDir": "C:/temp/emoji-856-build",
+    "gzipKiB": 2509.72,
+    "buildLog": "C:/temp/emoji-858-build4.log",
+    "deployLog": "C:/temp/emoji-858-deploy.log"
+  },
+  "warnings": [
+    "Search broad queries 4-6s (smile/cat/food/car)",
+    "R2 REST pagination delta 7 vs canonical manifest (unchanged from 8.57)",
+    "Slug aliases: doctor=health-worker, birthday=birthday-cake, heart=red-heart"
+  ],
+  "evidencePaths": [
+    "r2-export/PHASE-8.58-A-METADATA.md",
+    "r2-export/PHASE-8.58-B-SEARCH.md",
+    "r2-export/PHASE-8.58-C-ARTWORK.md",
+    "r2-export/PHASE-8.58-D-INTEGRATION.md",
+    "r2-export/PHASE-8.58-E-HARDENING.md",
+    "r2-export/PHASE-8.58-FINAL.md"
+  ]
+}

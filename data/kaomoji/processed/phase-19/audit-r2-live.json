@@ -1,0 +1,49 @@
+﻿node.exe : npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm 
+help npmrc` for supported config options.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+> emoji-website@0.1.0 kaomoji:phase19-verify-r2
+> tsx scripts/kaomoji/phase19-verify-r2.ts --remote
+
+{
+  "timestamp": "2026-08-20T08:27:50.671Z",
+  "remote_checked": true,
+  "objects": [
+    {
+      "key": "emojiquick/kaomoji/production/2026-08-19-v1/search-index-v2.json",
+      "local_exists": true,
+      "local_sha256": "b7cb74fce07d82272af111bafce736ce2a01ab0907f206ba0584d0ef9603251a",
+      "remote_exists": true,
+      "ok": true
+    },
+    {
+      "key": "emojiquick/kaomoji/production/2026-08-19-v1/locale-registry.json",
+      "local_exists": true,
+      "local_sha256": "6883418860a41b4e2b83d67e086f88abd9e61da91e71fa85bf4a658c2d687dc7",
+      "remote_exists": true,
+      "ok": true
+    },
+    {
+      "key": "emojiquick/kaomoji/production/2026-08-19-v1/manifest.json",
+      "local_exists": true,
+      "local_sha256": "92da4006c0d3299a64d589ef8684bee4ebecf7d7ceaaf3fee15ff6a2314176e0",
+      "remote_exists": true,
+      "ok": true
+    },
+    {
+      "key": "emojiquick/kaomoji/production/2026-08-19-v1/checksums.json",
+      "local_exists": true,
+      "local_sha256": "95bff16829d68b34c943a3da0b7c208ed70ff32ad5b44b332a30d80514fa54f6",
+      "remote_exists": true,
+      "ok": true
+    }
+  ],
+  "pass": 4,
+  "total": 4,
+  "valid": true
+}

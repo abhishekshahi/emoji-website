@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-08-10T19:52:00.000Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "decision": "A. CLOUDFLARE WORKERS.DEV PROOF PASS",
+  "workersDevUrl": "https://emoji-website.emoji-website.workers.dev",
+  "commit": "c6b41d442f07c4b3e06bec08b8a39a94aae2e5de",
+  "branch": "phase-8.12E-seo-canary",
+  "deployment": {
+    "attempted": true,
+    "success": true,
+    "workersDevUrl": "https://emoji-website.emoji-website.workers.dev",
+    "versionId": "0657f6c8-4112-4f24-ae2d-fbfff3211539",
+    "deploymentId": "0657f6c8-4112-4f24-ae2d-fbfff3211539",
+    "rollbackVersionId": "1116ee4f-b9b4-43f1-85ab-52aed2a37a7f",
+    "commit": "c6b41d442f07c4b3e06bec08b8a39a94aae2e5de",
+    "branch": "phase-8.12E-seo-canary",
+    "authenticated": true,
+    "blocker": null,
+    "env": {
+      "MASTER_SEO_ROLLOUT_MODE": "OFF",
+      "NEXT_PUBLIC_SITE_URL": "https://emojiquick.com"
+    }
+  },
+  "metrics": {
+    "success": true,
+    "durationSeconds": 407.5,
+    "workerGzipKiB": 2542.43,
+    "workerRawKiB": 27245.73,
+    "staticAssetCount": 4531,
+    "staticAssetTotalBytes": 20044750,
+    "largestAssetName": "_next\\static\\chunks\\3czkpuof8nul3.js",
+    "largestAssetBytes": 2764049,
+    "warnings": [
+      "WSL not available; Windows OpenNext build used",
+      "OpenNext Windows compatibility warning may apply",
+      "NEXT_PUBLIC_SITE_URL now targets https://emojiquick.com; workers.dev remains the Cloudflare Worker hostname"
+    ],
+    "platform": "win32",
+    "wslAvailable": false,
+    "lfsSkipSmudge": true,
+    "rolloutMode": "OFF",
+    "siteUrl": "https://emojiquick.com"
+  },
+  "manualHttpsQa": {
+    "method": "sequential Node fetch against live workers.dev",
+    "allRoutes200": true,
+    "keycapStatus": 200,
+    "securityExternalRedirects": false,
+    "sitemapUrlCount": 4522,
+    "canonicalSample": "https://emojiquick.com/emoji/fire",
+    "rollbackTested": true,
+    "rollbackMechanism": "wrangler versions deploy",
+    "automatedAuditNote": "Bulk OFF-behavior sweep at concurrency 40 triggers transient 503 on free-tier worker; manual sequential QA authoritative"
+  },
+  "status": "PASS"
+}

@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { EmojiGrid } from "@/components/emoji/emoji-grid";
+import { CategoryNav } from "@/components/category/category-nav";
+import { CategorySubcategorySections } from "@/components/category/category-subcategory-sections";
+import { RelatedCategories } from "@/components/category/related-categories";
 import { PageHeader } from "@/components/layout/page-header";
-import { getCategoryEmoji, getCategoryLabel, getRecordsByCategory } from "@/lib/emoji/data";
+import { RELATED_CATEGORIES } from "@/lib/emoji/constants";
+import {
+  getCategoryDescription,
+  getCategoryEmoji,
+  getCategoryLabel,
+  getRecordsByCategory,
+} from "@/lib/emoji/data";
 import { isOpenMojiExtraCategory } from "@/lib/emoji/extras-data";
 import { createCategoryPageMetadata } from "@/lib/seo/metadata";
 
@@ -26,10 +34,14 @@ export async function generateMetadata({
     return { title: "Category not found" };
   }
 
+  const label = getCategoryLabel(category);
+  const intro = getCategoryDescription(category);
+
   return createCategoryPageMetadata({
-    categoryLabel: getCategoryLabel(category),
+    categoryLabel: label,
     categoryId: category,
     emojiCount: emojis.length,
+    description: `${intro} Browse ${emojis.length.toLocaleString()} ${label.toLowerCase()} emojis with one-click copy.`,
   });
 }
 
@@ -42,6 +54,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const label = getCategoryLabel(category);
+  const intro = getCategoryDescription(category);
 
   return (
     <div className="page-shell space-y-8">
@@ -50,6 +63,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         title={`${getCategoryEmoji(category)} ${label}`}
         description={`${emojis.length.toLocaleString()} ${isOpenMojiExtraCategory(category) ? "OpenMoji extras" : "emojis"} in this category.`}
       />
+
+      <p className="max-w-3xl text-muted">{intro}</p>
+
+      <CategoryNav />
 
       <div className="flex flex-wrap gap-2">
         <Link href={isOpenMojiExtraCategory(category) ? "/extras" : "/emoji"} className="pill-link">
@@ -60,7 +77,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </Link>
       </div>
 
-      <EmojiGrid emojis={emojis} />
+      <RelatedCategories
+        categoryIds={RELATED_CATEGORIES[category] ?? []}
+        currentCategoryId={category}
+      />
+
+      <CategorySubcategorySections emojis={emojis} categoryId={category} />
     </div>
   );
 }

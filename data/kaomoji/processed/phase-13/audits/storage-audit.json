@@ -1,0 +1,332 @@
+{
+  "tier_excellent_bytes": 91159,
+  "tier_high_bytes": 1220755,
+  "tier_good_bytes": 221523,
+  "tier_medium_bytes": 109281,
+  "public_production_bytes": 656858956,
+  "quality_dataset_bytes": 737278221,
+  "full_processing_bytes": 3165463477,
+  "full_raw_bytes": 237793446,
+  "files": [
+    {
+      "path": "processed/phase-8/proposed-library/canonical-records.json",
+      "bytes": 208758998
+    },
+    {
+      "path": "phase-12/public-quality/canonical-records.json",
+      "bytes": 170475987
+    },
+    {
+      "path": "processed/phase-12/public-quality/canonical-records.json",
+      "bytes": 170475987
+    },
+    {
+      "path": "processed/phase-12/public-library/canonical-records.json",
+      "bytes": 164384259
+    },
+    {
+      "path": "processed/phase-10/scored-records.json",
+      "bytes": 147693450
+    },
+    {
+      "path": "phase-12/public-quality/provenance.json",
+      "bytes": 126989027
+    },
+    {
+      "path": "processed/phase-12/public-quality/provenance.json",
+      "bytes": 126989027
+    },
+    {
+      "path": "processed/phase-8/proposed-library/source-occurrences.json",
+      "bytes": 126945167
+    },
+    {
+      "path": "processed/phase-12/public-library/provenance.json",
+      "bytes": 123823115
+    },
+    {
+      "path": "processed/phase-9/editorial/editorial-records.json",
+      "bytes": 119409417
+    },
+    {
+      "path": "phase-12/public-quality/scores.json",
+      "bytes": 118739307
+    },
+    {
+      "path": "processed/phase-12/public-quality/scores.json",
+      "bytes": 118739307
+    },
+    {
+      "path": "processed/phase-7/proposed-published/records.json",
+      "bytes": 116860012
+    },
+    {
+      "path": "processed/phase-12/public-library/scores.json",
+      "bytes": 110310251
+    },
+    {
+      "path": "processed/phase-8/proposed-library/provenance-audit.json",
+      "bytes": 109852235
+    },
+    {
+      "path": "phase-12/public-quality/editorial.json",
+      "bytes": 97525959
+    },
+    {
+      "path": "processed/phase-12/public-quality/editorial.json",
+      "bytes": 97525959
+    },
+    {
+      "path": "processed/phase-12/public-library/editorial.json",
+      "bytes": 91731404
+    },
+    {
+      "path": "processed/phase-7/duplicate-analysis/groups.json",
+      "bytes": 85695059
+    },
+    {
+      "path": "processed/phase-9/editorial/relationships.json",
+      "bytes": 74871891
+    },
+    {
+      "path": "phase-12/public-quality/relationships.json",
+      "bytes": 74870367
+    },
+    {
+      "path": "processed/phase-12/public-quality/relationships.json",
+      "bytes": 74870367
+    },
+    {
+      "path": "processed/phase-7/normalized/records.json",
+      "bytes": 71442273
+    },
+    {
+      "path": "processed/phase-12/public-library/relationships.json",
+      "bytes": 70690168
+    },
+    {
+      "path": "processed/phase-7/quality/records.json",
+      "bytes": 70092924
+    },
+    {
+      "path": "processed/phase-9/editorial/search-index.json",
+      "bytes": 66617250
+    },
+    {
+      "path": "phase-12/public-quality/search-index.json",
+      "bytes": 66615591
+    },
+    {
+      "path": "processed/phase-12/public-quality/search-index.json",
+      "bytes": 66615591
+    },
+    {
+      "path": "processed/phase-12/public-library/search-index.json",
+      "bytes": 62826259
+    },
+    {
+      "path": "processed/phase-11/composition/canonical-inventory.json",
+      "bytes": 54270490
+    },
+    {
+      "path": "processed/phase-7/validation/records.json",
+      "bytes": 50526766
+    },
+    {
+      "path": "processed/phase-7/licensing/records.json",
+      "bytes": 40265203
+    },
+    {
+      "path": "processed/phase-8/proposed-library/review-records.json",
+      "bytes": 38116767
+    },
+    {
+      "path": "processed/phase-10/beauty-v1/records.json",
+      "bytes": 33448457
+    },
+    {
+      "path": "processed/phase-10/review-queues/records.json",
+      "bytes": 28951781
+    },
+    {
+      "path": "processed/phase-10/overall-v1/records.json",
+      "bytes": 28904339
+    },
+    {
+      "path": "processed/phase-10/quality-v2/records.json",
+      "bytes": 28543279
+    },
+    {
+      "path": "processed/phase-8/proposed-library/duplicate-groups.json",
+      "bytes": 28251968
+    },
+    {
+      "path": "processed/phase-10/duplicate-audit/groups.json",
+      "bytes": 27656135
+    },
+    {
+      "path": "processed/phase-8/proposed-library/raw-to-canonical-map.json",
+      "bytes": 21872205
+    },
+    {
+      "path": "processed/phase-12/public-library/publication-gate.json",
+      "bytes": 21457551
+    },
+    {
+      "path": "phase-12/public-quality/publication-gate.json",
+      "bytes": 21406773
+    },
+    {
+      "path": "processed/phase-12/public-quality/publication-gate.json",
+      "bytes": 21406773
+    },
+    {
+      "path": "processed/aggregated.json",
+      "bytes": 19476102
+    },
+    {
+      "path": "phase-12/public-quality/categories.json",
+      "bytes": 18558466
+    },
+    {
+      "path": "processed/phase-12/public-quality/categories.json",
+      "bytes": 18558466
+    },
+    {
+      "path": "processed/phase-12/public-library/categories.json",
+      "bytes": 17808752
+    },
+    {
+      "path": "processed/phase-10/expressiveness-v1/records.json",
+      "bytes": 17773399
+    },
+    {
+      "path": "processed/phase-10/uniqueness-v1/records.json",
+      "bytes": 17035893
+    },
+    {
+      "path": "processed/validation.json",
+      "bytes": 14956354
+    },
+    {
+      "path": "processed/phase-7/variant-analysis/groups.json",
+      "bytes": 14057401
+    },
+    {
+      "path": "processed/phase-8/proposed-library/variant-groups.json",
+      "bytes": 14057401
+    },
+    {
+      "path": "phase-12/public-quality/names.json",
+      "bytes": 12793676
+    },
+    {
+      "path": "processed/phase-12/public-quality/names.json",
+      "bytes": 12793676
+    },
+    {
+      "path": "phase-12/public-quality/keywords.json",
+      "bytes": 12412439
+    },
+    {
+      "path": "processed/phase-12/public-quality/keywords.json",
+      "bytes": 12412439
+    },
+    {
+      "path": "processed/preservation-audit.json",
+      "bytes": 12025229
+    },
+    {
+      "path": "processed/phase-12/public-library/names.json",
+      "bytes": 11912796
+    },
+    {
+      "path": "processed/phase-12/public-library/keywords.json",
+      "bytes": 11716211
+    },
+    {
+      "path": "processed/phase-10/publication-gate/records.json",
+      "bytes": 10257002
+    },
+    {
+      "path": "phase-12/public-quality/meanings.json",
+      "bytes": 9618461
+    },
+    {
+      "path": "processed/phase-12/public-quality/meanings.json",
+      "bytes": 9618461
+    },
+    {
+      "path": "processed/phase-12/public-library/meanings.json",
+      "bytes": 9140619
+    },
+    {
+      "path": "processed/provenance.json",
+      "bytes": 8699030
+    },
+    {
+      "path": "processed/phase-8/proposed-library/license-gate.json",
+      "bytes": 8592524
+    },
+    {
+      "path": "processed/normalized.json",
+      "bytes": 4896695
+    },
+    {
+      "path": "processed/phase-12/public-library/excluded-manifest.json",
+      "bytes": 3706059
+    },
+    {
+      "path": "processed/phase-9/editorial/slug-map.json",
+      "bytes": 3162403
+    },
+    {
+      "path": "phase-12/public-quality/excluded-records.json",
+      "bytes": 2843086
+    },
+    {
+      "path": "processed/phase-12/public-quality/excluded-records.json",
+      "bytes": 2843086
+    },
+    {
+      "path": "phase-12/public-quality/slug-map.json",
+      "bytes": 2548953
+    },
+    {
+      "path": "processed/phase-12/public-quality/slug-map.json",
+      "bytes": 2548953
+    },
+    {
+      "path": "processed/phase-12/public-library/slug-map.json",
+      "bytes": 2367603
+    },
+    {
+      "path": "phase-12/public-quality/high/canonical-ids.json",
+      "bytes": 1220755
+    },
+    {
+      "path": "phase-12/public-quality/high/canonical-ids.json",
+      "bytes": 1220755
+    },
+    {
+      "path": "processed/phase-12/public-quality/high/canonical-ids.json",
+      "bytes": 1220755
+    },
+    {
+      "path": "processed/phase-12/public-library/high/canonical-ids.json",
+      "bytes": 1041069
+    },
+    {
+      "path": "phase-12/public-quality/good/canonical-ids.json",
+      "bytes": 221523
+    },
+    {
+      "path": "phase-12/public-quality/good/canonical-ids.json",
+      "bytes": 221523
+    },
+    {
+      "path": "processed/phase-12/public-quality/good/canonical-ids.json",
+      "bytes": 221523
+    }
+  ]
+}

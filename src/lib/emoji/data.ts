@@ -1,6 +1,7 @@
 import emojis from "@/data/emojis.json";
 import manifest from "@/data/manifest.json";
 import {
+  CATEGORY_DESCRIPTIONS,
   CATEGORY_EMOJIS,
   CATEGORY_LABELS,
   EMOJI_VERSION_ORDER,
@@ -73,6 +74,20 @@ export function getCategoryLabel(categoryId: string): string {
   }
 
   return CATEGORY_LABELS[categoryId] ?? formatLabel(categoryId);
+}
+
+export function getCategoryDescription(categoryId: string): string {
+  if (CATEGORY_DESCRIPTIONS[categoryId]) {
+    return CATEGORY_DESCRIPTIONS[categoryId];
+  }
+
+  if (isOpenMojiExtraCategory(categoryId)) {
+    const label = getCategoryLabel(categoryId);
+    return `Browse OpenMoji Extras in the ${label} category with artwork, copy, and Unicode details.`;
+  }
+
+  const label = getCategoryLabel(categoryId);
+  return `Browse ${label.toLowerCase()} emojis with one-click copy and Unicode details.`;
 }
 
 export function getCategoryEmoji(categoryId: string): string {

@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+/** Mobile primary nav — Favorites replaces Explore (Explore via homepage + header). */
 const MOBILE_NAV = [
-  { href: "/", label: "Home", icon: "🏠" },
-  { href: "/search", label: "Search", icon: "🔎" },
-  { href: "/emoji", label: "Browse", icon: "🗂️" },
-  { href: "/favorites", label: "Saved", icon: "★" },
-  { href: "/recent", label: "Recent", icon: "🕘" },
+  { href: "/", label: "Home", icon: "\u{1F3E0}" },
+  { href: "/search", label: "Search", icon: "\u{1F50E}" },
+  { href: "/emoji", label: "Browse", icon: "\u{1F5C2}\uFE0F" },
+  { href: "/favorites", label: "Saved", icon: "\u2B50" },
+  { href: "/popular", label: "Popular", icon: "\u{1F525}" },
 ] as const;
 
 export function MobileBottomNav() {
@@ -17,7 +18,7 @@ export function MobileBottomNav() {
   return (
     <nav
       aria-label="Mobile"
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 px-2 py-2 backdrop-blur md:hidden"
+      className="mobile-nav fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 px-2 pt-2 backdrop-blur-md md:hidden"
     >
       <ul className="grid grid-cols-5 gap-1">
         {MOBILE_NAV.map((item) => {
@@ -30,13 +31,12 @@ export function MobileBottomNav() {
               <Link
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
-                className={`flex min-h-11 flex-col items-center justify-center rounded-2xl px-2 py-2 text-[11px] font-semibold ${
-                  isActive
-                    ? "bg-accent-soft text-accent-strong"
-                    : "text-muted"
+                aria-label={item.href === "/favorites" ? "Favorites" : undefined}
+                className={`mobile-nav__link ${
+                  isActive ? "mobile-nav__link--active" : "text-muted"
                 }`}
               >
-                <span aria-hidden="true" className="text-base">
+                <span aria-hidden="true" className="mobile-nav__icon">
                   {item.icon}
                 </span>
                 <span>{item.label}</span>

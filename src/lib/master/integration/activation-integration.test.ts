@@ -8,6 +8,7 @@ import { searchEmojis } from "@/lib/emoji/search";
 import type { BrowsableEmoji } from "@/lib/emoji/types";
 import { createEmojiPageMetadata } from "@/lib/seo/metadata";
 import { getOpenMojiArtworkPath } from "@/lib/artwork/openmoji";
+import { getEnrichedMetadata } from "./metadata/enrichment";
 import {
   MASTER_INTEGRATION_CONFIG,
   PRODUCTION_BASELINES,
@@ -225,15 +226,17 @@ describe("phase 8.11F controlled production activation", () => {
           const twemoji = metadata.sourcePanels.find((panel) => panel.source === "twemoji");
           const unicode = metadata.sourcePanels.find((panel) => panel.source === "unicode");
           const emojinet = metadata.sourcePanels.find((panel) => panel.source === "emojinet");
+          const enriched = getEnrichedMetadata(CRITICAL.fire, rootDir);
+          assert.ok(enriched);
 
           assert.equal(noto?.available, false);
           assert.equal(twemoji?.available, false);
           assert.equal(unicode?.available, true);
-          assert.equal(emojinet?.available, true);
+          assert.equal(emojinet?.available, undefined);
           assert.ok(metadata.shortcodes.some((entry) => entry.includes("fire")));
           assert.ok(metadata.safeKeywords.length <= 12);
           assert.ok(metadata.safeAliases.length <= 8);
-          assert.ok(metadata.emojinetSenseCount > 0);
+          assert.ok(enriched.emojinetSenseCount > 0);
         },
       );
     });

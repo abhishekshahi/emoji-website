@@ -1,42 +1,63 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getOpenMojiArtworkPath } from "@/lib/artwork/openmoji";
-import {
-  EmojiDetailActions,
-  RelatedEmojiGrid,
-} from "@/components/emoji/emoji-detail-actions";
-import { EmojiArtwork } from "@/components/emoji/emoji-artwork";
+import { getArtworkPath } from "@/lib/artwork/providers";
+import { EmojiArtworkPanel } from "@/components/emoji/emoji-artwork-panel";
+import { EmojiDetailHero } from "@/components/emoji/emoji-detail-hero";
+import { EmojiMeaningSection } from "@/components/emoji/emoji-meaning-section";
+import { EmojiNamesKeywordsSection } from "@/components/emoji/emoji-names-keywords-section";
+import { EmojiRelatedGroups } from "@/components/emoji/emoji-related-groups";
+import { EmojiTechnicalDetails } from "@/components/emoji/emoji-technical-details";
+import { EmojiVariantExplorer } from "@/components/emoji/emoji-variant-explorer";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
+import { getBrowsableEmojiBySlug } from "@/lib/emoji/browsable-data";
+import { getIndexableEmojiPageSlugs } from "@/lib/master/public/identity-slug-map";
+import { getEmojiEnrichmentBySlug } from "@/lib/emoji/enrichment";
 import {
-  getBrowsableEmojiBySlug,
-  getAllBrowsableSlugs,
-  getRelatedBrowsableEmojis,
-} from "@/lib/emoji/browsable-data";
+  buildArtworkPanelView,
+  buildEmojiPageDescription,
+  buildMeaningView,
+  buildNamesView,
+  buildTechnicalView,
+  buildVariantGroups,
+} from "@/lib/emoji/emoji-page-model";
+import { filterPublicDefinitions } from "@/lib/master/public/asset-rights";
 import { getCategoryLabel } from "@/lib/emoji/data";
+import { getEnrichedRelatedEmojiGroups } from "@/lib/emoji/related-emojis";
 import { isOpenMojiExtra } from "@/lib/emoji/types";
 import { buildEmojiPageJsonLd } from "@/lib/seo/json-ld";
-import { createEmojiPageMetadata } from "@/lib/seo/metadata";
+import { absoluteUrl, createEmojiPageMetadata, withEmojiHreflangAlternates } from "@/lib/seo/metadata";
 import {
   OPENMOJI_LICENSE,
   OPENMOJI_LICENSE_URL,
   OPENMOJI_PROJECT_URL,
 } from "@/lib/site/config";
+import { EmojiViewTracker } from "@/components/analytics/emoji-view-tracker";
+import { hexcodeToCanonicalId } from "@/lib/content/analytics/validation";
 import { MasterEmojiPanelsGate } from "@/components/master/master-emoji-panels-gate";
+import { MasterIdentityDetailPage } from "@/components/master/master-identity-detail-page";
 import {
-  getCanonicalEmojiSitemapSlugs,
-  isApprovedRedirectSourceSlug,
-  resolveEmojiPageSlug,
-} from "@/lib/master/integration/seo-migration/redirects";
+  getActiveEmojiSitemapSlugs,
+  isActiveApprovedRedirectSourceSlug,
+  resolveActiveEmojiPageSlug,
+} from "@/lib/master/integration/seo-canary/active-migration";
+import { createMasterIdentityPageMetadata } from "@/lib/seo/metadata";
+
+async function resolveOnDemandEmojiPage(slug: string) {
+  const { resolveEmojiPage } = await import("@/lib/master/public/identity-page-resolver");
+  return resolveEmojiPage(slug);
+}
 
 interface EmojiPageProps {
   params: Promise<{ slug: string }>;
 }
 
+/** Phase 8.62-A: all 6955 canonical identities are pre-rendered; no on-demand emoji pages. */
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  const productionSlugs = getAllBrowsableSlugs();
-  const canonicalSlugs = getCanonicalEmojiSitemapSlugs(productionSlugs);
+  const canonicalSlugs = getActiveEmojiSitemapSlugs(getIndexableEmojiPageSlugs());
   return canonicalSlugs.map((slug) => ({ slug }));
 }
 
@@ -44,46 +65,80 @@ export async function generateMetadata({
   params,
 }: EmojiPageProps): Promise<Metadata> {
   const { slug } = await params;
-  if (isApprovedRedirectSourceSlug(slug)) {
+  if (isActiveApprovedRedirectSourceSlug(slug)) {
     return {
       title: "Emoji redirect",
     };
   }
 
-  const { lookupSlug, canonicalSlug } = resolveEmojiPageSlug(slug);
+  const { lookupSlug, canonicalSlug } = resolveActiveEmojiPageSlug(slug);
   const emoji = getBrowsableEmojiBySlug(lookupSlug);
 
-  if (!emoji) {
-    return {
-      title: "Emoji not found",
-    };
+  if (emoji) {
+    const enrichment = getEmojiEnrichmentBySlug(canonicalSlug);
+    const publicDefinitions = filterPublicDefinitions(enrichment?.definitions ?? []);
+    return withEmojiHreflangAlternates(
+      createEmojiPageMetadata({
+        name: emoji.name,
+        emoji: emoji.emoji,
+        slug: canonicalSlug,
+        keywords: [
+          ...emoji.keywords,
+          ...(enrichment?.searchTerms.slice(0, 8) ?? []),
+        ],
+        codePointString: emoji.codePointString,
+        artworkPath: getArtworkPath(emoji.hexcode),
+        meaningSnippet: publicDefinitions[0]?.text,
+        categoryLabel: getCategoryLabel(emoji.category),
+      }),
+      canonicalSlug,
+    );
   }
 
-  return createEmojiPageMetadata({
-    name: emoji.name,
-    emoji: emoji.emoji,
-    slug: canonicalSlug,
-    keywords: emoji.keywords,
-    codePointString: emoji.codePointString,
-    artworkPath: getOpenMojiArtworkPath(emoji.hexcode),
-  });
+  const resolved = await resolveOnDemandEmojiPage(canonicalSlug);
+  if (resolved?.kind === "master-identity" && resolved.identity) {
+    return withEmojiHreflangAlternates(
+      createMasterIdentityPageMetadata({
+        name: resolved.identity.officialName,
+        emoji: resolved.identity.glyph ?? "",
+        slug: canonicalSlug,
+        keywords: [...resolved.identity.keywords],
+        codePointString: resolved.identity.unicodeSequence ?? resolved.identity.hexcode ?? "",
+        definition: resolved.identity.definitions[0],
+      }),
+      canonicalSlug,
+    );
+  }
+
+  return {
+    title: "Emoji not found",
+  };
 }
 
 export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   const { slug } = await params;
-  const { lookupSlug, canonicalSlug } = resolveEmojiPageSlug(slug);
+  const { lookupSlug, canonicalSlug } = resolveActiveEmojiPageSlug(slug);
   const emoji = getBrowsableEmojiBySlug(lookupSlug);
 
   if (!emoji) {
+    const resolved = await resolveOnDemandEmojiPage(canonicalSlug);
+    if (resolved?.kind === "master-identity" && resolved.identity) {
+      return <MasterIdentityDetailPage slug={canonicalSlug} identity={resolved.identity} />;
+    }
     notFound();
   }
 
-  const relatedEmojis = getRelatedBrowsableEmojis(emoji);
+  const enrichment = getEmojiEnrichmentBySlug(canonicalSlug);
   const categoryLabel = getCategoryLabel(emoji.category);
   const extra = isOpenMojiExtra(emoji);
-  const description = extra
-    ? `Copy ${emoji.name}. OpenMoji Extra (${emoji.codePointString}). Keywords: ${emoji.keywords.slice(0, 8).join(", ")}.`
-    : `Copy ${emoji.name} ${emoji.emoji}. Unicode ${emoji.codePointString}. Keywords: ${emoji.keywords.slice(0, 8).join(", ")}.`;
+  const pageUrl = absoluteUrl(`/emoji/${canonicalSlug}`);
+  const meaning = buildMeaningView(emoji, enrichment);
+  const names = buildNamesView(emoji, enrichment);
+  const technical = buildTechnicalView(emoji, enrichment);
+  const variantGroups = buildVariantGroups(enrichment, getBrowsableEmojiBySlug);
+  const relatedGroups = getEnrichedRelatedEmojiGroups(emoji);
+  const artworkPanel = buildArtworkPanelView(enrichment);
+  const description = buildEmojiPageDescription(emoji, enrichment);
 
   const jsonLd = buildEmojiPageJsonLd({
     name: emoji.name,
@@ -91,180 +146,80 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
     slug: canonicalSlug,
     description,
     codePointString: emoji.codePointString,
-    artworkPath: getOpenMojiArtworkPath(emoji.hexcode),
+    artworkPath: getArtworkPath(emoji.hexcode),
     categoryLabel,
     categoryId: emoji.category,
   });
 
   return (
-    <div className="page-shell space-y-10">
+    <div className="page-shell space-y-10 pb-12">
       <JsonLd data={jsonLd} />
+      <EmojiViewTracker canonicalId={hexcodeToCanonicalId(emoji.hexcode)} slug={canonicalSlug} />
 
       <Breadcrumbs
         items={[
           { name: "Home", path: "/" },
           { name: categoryLabel, path: `/category/${emoji.category}` },
-          { name: `${emoji.name} ${emoji.emoji}`, path: `/emoji/${canonicalSlug}` },
+          { name: emoji.name, path: `/emoji/${canonicalSlug}` },
         ]}
       />
 
-      <header className="space-y-3">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent-strong">
-          {categoryLabel}
-        </p>
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          {emoji.name} {emoji.emoji}
-        </h1>
-        <p className="max-w-2xl text-muted">
-          {extra
-            ? `Copy ${emoji.name}, explore OpenMoji artwork details, and browse related extras.`
-            : `Copy ${emoji.name} instantly, explore Unicode details, and browse related emojis.`}
-        </p>
-      </header>
+      <EmojiDetailHero
+        emoji={emoji}
+        canonicalSlug={canonicalSlug}
+        categoryLabel={categoryLabel}
+        summary={meaning.summary}
+        pageUrl={pageUrl}
+      />
 
-      <section className="card-surface grid gap-8 p-6 sm:p-8 lg:grid-cols-[220px_1fr]">
-        <div className="flex flex-col items-center justify-center gap-4 rounded-[1.5rem] bg-surface-muted/80 p-8">
-          <EmojiArtwork
-            hexcode={emoji.hexcode}
-            name={emoji.name}
-            emoji={emoji.emoji}
-            size="detail"
-            priority
-          />
-          <span className="text-4xl leading-none" aria-label={`Native ${emoji.name} emoji`}>
-            {emoji.emoji}
-          </span>
-        </div>
+      <EmojiMeaningSection emojiName={emoji.name} meaning={meaning} />
 
-        <div className="space-y-6">
-          <EmojiDetailActions emoji={emoji} />
+      <EmojiNamesKeywordsSection names={names} />
 
-          <div className="space-y-4">
-            <h2 className="text-lg font-semibold">What does {emoji.name} mean?</h2>
-            <p className="text-muted">
-              {emoji.name} is listed in the {categoryLabel.toLowerCase()} category
-              {extra ? " as an OpenMoji Extra" : ""}
-              {emoji.keywords.length > 0
-                ? ` and is commonly associated with ${emoji.keywords.slice(0, 5).join(", ")}.`
-                : "."}
-            </p>
-          </div>
+      <EmojiVariantExplorer
+        groups={variantGroups}
+        baseSlug={enrichment?.variantBaseSlug ?? null}
+        currentSlug={canonicalSlug}
+      />
 
-          <div className="space-y-4">
-            <h2 className="text-lg font-semibold">How to copy {emoji.name}</h2>
-            <p className="text-muted">
-              Use the copy buttons to copy {emoji.emoji}, its Unicode code points,
-              hex code{emoji.shortcodes.length > 0 ? ", or shortcode" : ""}. You can
-              also click any emoji card throughout the site for one-click copy.
-            </p>
-          </div>
+      <EmojiTechnicalDetails technical={technical} emojiId={emoji.hexcode} />
 
-          <dl className="grid gap-4 sm:grid-cols-2">
-            <div>
-              <dt className="text-sm font-semibold text-muted">Unicode code points</dt>
-              <dd className="mt-1 font-mono text-sm">{emoji.codePointString}</dd>
-            </div>
-            <div>
-              <dt className="text-sm font-semibold text-muted">Hex code</dt>
-              <dd className="mt-1 font-mono text-sm">{emoji.hexcode}</dd>
-            </div>
-            <div>
-              <dt className="text-sm font-semibold text-muted">Category</dt>
-              <dd className="mt-1">{categoryLabel}</dd>
-            </div>
-            <div>
-              <dt className="text-sm font-semibold text-muted">Subcategory</dt>
-              <dd className="mt-1 capitalize">
-                {emoji.subcategory.replace(/-/g, " ")}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-sm font-semibold text-muted">
-                {extra ? "Source" : "Unicode version"}
-              </dt>
-              <dd className="mt-1">{emoji.unicodeVersion}</dd>
-            </div>
-            {!extra ? (
-              <div>
-                <dt className="text-sm font-semibold text-muted">Sequence type</dt>
-                <dd className="mt-1 capitalize">
-                  {emoji.sequence.kind.replace(/-/g, " ")}
-                </dd>
-              </div>
-            ) : (
-              <div>
-                <dt className="text-sm font-semibold text-muted">OpenMoji group</dt>
-                <dd className="mt-1 capitalize">
-                  {emoji.openmojiGroup.replace(/-/g, " ")}
-                </dd>
-              </div>
-            )}
-            {extra ? (
-              <div>
-                <dt className="text-sm font-semibold text-muted">OpenMoji author</dt>
-                <dd className="mt-1">{emoji.openmojiAuthor}</dd>
-              </div>
-            ) : null}
-          </dl>
-
-          {emoji.keywords.length > 0 ? (
-            <div>
-              <h2 className="text-sm font-semibold text-muted">Keywords</h2>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {emoji.keywords.map((keyword) => (
-                  <li
-                    key={keyword}
-                    className="rounded-full bg-surface-muted px-3 py-1 text-sm"
-                  >
-                    {keyword}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-
-          {emoji.shortcodes.length > 0 ? (
-            <div>
-              <h2 className="text-sm font-semibold text-muted">Shortcodes</h2>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {emoji.shortcodes.map((shortcode) => (
-                  <li
-                    key={shortcode}
-                    className="rounded-full border border-border px-3 py-1 font-mono text-sm"
-                  >
-                    :{shortcode}:
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-
-          {extra ? (
-            <div className="rounded-[1rem] border border-border bg-surface-muted/60 p-4 text-sm text-muted">
-              <p>
-                Artwork by {emoji.openmojiAuthor} via{" "}
-                <Link href={OPENMOJI_PROJECT_URL} className="text-accent-strong underline">
-                  OpenMoji
-                </Link>{" "}
-                (
-                <Link href={OPENMOJI_LICENSE_URL} className="text-accent-strong underline">
-                  {OPENMOJI_LICENSE}
-                </Link>
-                ).
-              </p>
-            </div>
-          ) : null}
-        </div>
-      </section>
+      <EmojiArtworkPanel
+        hexcode={emoji.hexcode}
+        name={emoji.name}
+        emoji={emoji.emoji}
+        artwork={artworkPanel}
+        openmojiAuthor={extra ? emoji.openmojiAuthor : undefined}
+      />
 
       <MasterEmojiPanelsGate emoji={emoji} />
 
-      <section className="space-y-4">
-        <h2 className="section-title">
-          {extra ? "Related Extras" : "Related Emojis"}
-        </h2>
-        <RelatedEmojiGrid emojis={relatedEmojis} />
-      </section>
+      <EmojiRelatedGroups
+        groups={relatedGroups}
+        categoryLabel={categoryLabel}
+        categoryId={emoji.category}
+      />
+
+      {extra ? (
+        <section className="card-surface space-y-3 p-6 text-sm text-muted">
+          <h2 className="text-base font-semibold text-foreground">OpenMoji Extra details</h2>
+          <p>
+            This symbol is part of the OpenMoji Extras collection and is not part of the standard
+            Unicode emoji set.
+          </p>
+          <p>
+            Artwork by {emoji.openmojiAuthor} via{" "}
+            <Link href={OPENMOJI_PROJECT_URL} className="text-accent-strong underline">
+              OpenMoji
+            </Link>{" "}
+            (
+            <Link href={OPENMOJI_LICENSE_URL} className="text-accent-strong underline">
+              {OPENMOJI_LICENSE}
+            </Link>
+            ).
+          </p>
+        </section>
+      ) : null}
     </div>
   );
 }

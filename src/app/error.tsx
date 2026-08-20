@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import { BrandLogo } from "@/components/layout/site-logo";
 
 interface ErrorPageProps {
   error: Error & { digest?: string };
@@ -15,23 +16,24 @@ export default function ErrorPage({ error, reset }: ErrorPageProps) {
 
   return (
     <div className="page-shell">
-      <div className="card-surface mx-auto max-w-xl px-6 py-12 text-center">
-        <p className="text-5xl" aria-hidden="true">
-          ⚠️
+      <div className="empty-state mx-auto max-w-xl">
+        <div className="flex justify-center">
+          <BrandLogo variant="inline" />
+        </div>
+        <p className="empty-state__title mt-4">Something went wrong</p>
+        <p className="empty-state__description">
+          An unexpected error occurred. You can try again or return to the
+          homepage.
         </p>
-        <h1 className="mt-4 text-3xl font-bold">Something went wrong</h1>
-        <p className="mt-2 text-muted">
-          An unexpected error occurred. You can try again or return to the homepage.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
+        <div className="empty-state__actions">
           <button
             type="button"
             onClick={() => reset()}
-            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition hover:bg-accent-strong"
+            className="btn btn--primary btn--md"
           >
             Try again
           </button>
-          <Link href="/" className="pill-link min-h-11">
+          <Link href="/" className="btn btn--secondary btn--md">
             Go home
           </Link>
         </div>

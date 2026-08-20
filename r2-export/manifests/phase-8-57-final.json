@@ -1,0 +1,62 @@
+{
+  "phase": "8.57",
+  "finalVerdict": "PASS_WITH_WARNINGS",
+  "completedAt": "2026-08-14T23:36:15.568Z",
+  "productionVersionId": "1a076681-db4f-46f4-a84d-822720635e01",
+  "priorVersionId": "cc87fcd2-95b6-4708-a451-0d55a3b108e8",
+  "rollbackVersionId": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "deployGzipKiB": 2510.57,
+  "scorecard": {
+    "8.57-A": {
+      "status": "PASS",
+      "evidence": "r2-export/PHASE-8.57-A-ARTWORK-BINARY.md"
+    },
+    "8.57-B": {
+      "status": "PASS_WITH_WARNINGS",
+      "evidence": "r2-export/PHASE-8.57-B-R2-INVENTORY.md",
+      "warning": "REST list 114491 vs canonical 114498; binding confirms 0 missing"
+    },
+    "8.57-C": {
+      "status": "PASS",
+      "evidence": "r2-export/PHASE-8.57-C-TRANSIENT-503.md"
+    },
+    "8.57-D": {
+      "status": "PASS_WITH_WARNINGS",
+      "evidence": "r2-export/PHASE-8.57-D-SEARCH-PERF.md",
+      "warning": "heart ~6s after N+1 fix (was ~11-16s)"
+    },
+    "8.57-E": {
+      "status": "PASS_WITH_WARNINGS",
+      "evidence": "r2-export/PHASE-8.57-E-REPO-DRIFT.md",
+      "warning": "170 uncommitted paths preserved"
+    },
+    "8.57-F": {
+      "status": "PASS_WITH_WARNINGS",
+      "evidence": "r2-export/PHASE-8.57-F-HARDENING-AUDIT.md"
+    },
+    "8.57-G": {
+      "status": "PASS_WITH_WARNINGS",
+      "evidence": "r2-export/PHASE-8.57-FINAL.md"
+    }
+  },
+  "r2": {
+    "expected": 114498,
+    "restList": 114491,
+    "canonicalPresent": 114498,
+    "missing": 0,
+    "privacy": "PRIVATE"
+  },
+  "flags": {
+    "MASTER_R2_MODE": "ENABLED",
+    "PUBLIC_MASTER_PLATFORM_MODE": "ENABLED",
+    "MASTER_SEO_ROLLOUT_MODE": "OFF",
+    "minify": true
+  },
+  "sitemapUrls": 4522,
+  "emojiPages": 4486,
+  "fixes": [
+    "artwork route: getMasterR2Adapter + identity/record/binary resolution",
+    "toBinaryResponseBody for Workers-safe binary responses",
+    "search: removed per-match R2 getSearch N+1 in production bridge"
+  ]
+}

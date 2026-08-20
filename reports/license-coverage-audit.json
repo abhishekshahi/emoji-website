@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-15T22:26:14.595Z",
+  "providers": [
+    {
+      "provider": "Noto",
+      "totalAssets": 19673,
+      "verifiedAssets": 19672,
+      "publicAssets": 19672,
+      "downloadableAssets": 19672,
+      "pendingAssets": 1,
+      "restrictedAssets": 0,
+      "unknownAssets": 0,
+      "coveragePercentage": 99.99,
+      "evidence": [
+        "https://github.com/googlefonts/noto-emoji/blob/main/svg/LICENSE",
+        "https://github.com/googlefonts/noto-emoji/blob/main/fonts/LICENSE"
+      ],
+      "providerPublicGate": true,
+      "providerDownloadGate": true,
+      "classification": {
+        "region-flags": 980,
+        "png-image": 14961,
+        "svg-image": 3731,
+        "brand-image": 1
+      },
+      "unverifiedPaths": [
+        "artwork/noto/images/noto.png"
+      ]
+    },
+    {
+      "provider": "Fluent",
+      "totalAssets": 7885,
+      "verifiedAssets": 7885,
+      "publicAssets": 7885,
+      "downloadableAssets": 7885,
+      "pendingAssets": 0,
+      "restrictedAssets": 0,
+      "unknownAssets": 0,
+      "coveragePercentage": 100,
+      "evidence": [
+        "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE"
+      ],
+      "providerPublicGate": true,
+      "providerDownloadGate": true,
+      "classification": {
+        "fluent-assets": 7885
+      },
+      "unverifiedPaths": []
+    }
+  ],
+  "emojinet": {
+    "public": false,
+    "downloadable": false,
+    "verificationStatus": "RESTRICTED"
+  }
+}

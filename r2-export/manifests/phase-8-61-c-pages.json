@@ -1,0 +1,18 @@
+{
+  "phase": "8.61-C",
+  "verdict": "PASS",
+  "counts": {
+    "slugEntries": 6955,
+    "preRenderedAtBuild": 6955,
+    "onDemand": 0
+  },
+  "checks": {
+    "slugCount6955": true,
+    "uniqueSlugs6955": true,
+    "dynamicParams": true,
+    "masterIdentityResolver": true,
+    "masterIdentityComponent": true,
+    "r2Backed": true,
+    "preRender6955": true
+  }
+}

@@ -1,9 +1,45 @@
 import { absoluteUrl } from "@/lib/seo/metadata";
-import { SITE_NAME } from "@/lib/site/config";
+import { BRAND_LOGO_UI, BRAND_OG_IMAGE } from "@/lib/site/brand";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site/config";
 
 export interface BreadcrumbItem {
   name: string;
   path: string;
+}
+
+/** Site-wide Organization + WebSite JSON-LD with official logo (Phase 8.63). */
+export function buildSiteOrganizationJsonLd() {
+  const siteUrl = absoluteUrl("/");
+  const logoUrl = absoluteUrl(BRAND_LOGO_UI);
+  const ogImageUrl = absoluteUrl(BRAND_OG_IMAGE);
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}#organization`,
+        name: SITE_NAME,
+        url: siteUrl,
+        logo: {
+          "@type": "ImageObject",
+          url: logoUrl,
+          contentUrl: logoUrl,
+          name: `${SITE_NAME} logo`,
+        },
+        image: ogImageUrl,
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}#website`,
+        name: SITE_NAME,
+        url: siteUrl,
+        description: SITE_DESCRIPTION,
+        publisher: { "@id": `${siteUrl}#organization` },
+        inLanguage: "en-US",
+      },
+    ],
+  };
 }
 
 export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {

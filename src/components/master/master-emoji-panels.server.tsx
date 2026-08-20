@@ -8,11 +8,15 @@ interface MasterEmojiPanelsServerProps {
   emoji: BrowsableEmoji;
 }
 
-export function MasterEmojiPanelsServer({ emoji }: MasterEmojiPanelsServerProps) {
-  const model = loadMasterEmojiUiModel(emoji);
-  if (!model) {
+export async function MasterEmojiPanelsServer({ emoji }: MasterEmojiPanelsServerProps) {
+  try {
+    const model = await loadMasterEmojiUiModel(emoji);
+    if (!model) {
+      return null;
+    }
+
+    return <MasterEmojiPanelsClient model={model} />;
+  } catch {
     return null;
   }
-
-  return <MasterEmojiPanelsClient model={model} />;
 }

@@ -1,0 +1,155 @@
+{
+  "phase": "8.42",
+  "generatedAt": "2026-08-12T16:10:53.373Z",
+  "r2": {
+    "bucket": "emojiquick-master",
+    "privacy": "PRIVATE",
+    "region": "APAC",
+    "accountEnabled": true
+  },
+  "upload": {
+    "target": 114498,
+    "completed": 12472,
+    "failed": 2,
+    "pending": 102024,
+    "retried": 2495,
+    "percentComplete": 10.89,
+    "startedAt": "2026-08-12T03:16:36.616Z",
+    "updatedAt": "2026-08-12T16:02:27.291Z",
+    "uploadComplete": false
+  },
+  "objects": {
+    "identities": 6955,
+    "artwork": 39652,
+    "artworkRecords": 40071,
+    "metadata": 6955,
+    "semantic": 6955,
+    "search": 6955,
+    "provenance": 6955,
+    "licenses": 2,
+    "manifests": 11
+  },
+  "identities": {
+    "expected": 6955,
+    "local": 6955
+  },
+  "artwork": {
+    "records": 40071,
+    "uniqueBinaries": 39652,
+    "duplicateReferences": 419,
+    "sha256KeyArchitecture": true,
+    "artworkIdCollisions": 11193
+  },
+  "storage": {
+    "canonicalBytes": 653797969,
+    "storageGB": 0.6538,
+    "storageGiB": 0.6089,
+    "allowanceGB": 10,
+    "utilizationPercent": 6.538,
+    "remainingGB": 9.3462,
+    "avgObjectBytes": 5710,
+    "recordsPerIdentity": 5.76
+  },
+  "performance": {
+    "enrichmentBytes": 4546292,
+    "searchEnrichmentBytes": 227704,
+    "enrichmentUnder6MB": true,
+    "searchEnrichmentCompact": true
+  },
+  "verification": {
+    "status": "PENDING_UPLOAD_COMPLETION"
+  },
+  "production": {
+    "checks": [
+      {
+        "url": "https://emojiquick.com/",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/fire",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/keycap",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/category/smileys-emotion",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/sitemap.xml",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/robots.txt",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "keycapNoRedirect": true
+  },
+  "seo": {
+    "MASTER_SEO_ROLLOUT_MODE": "OFF",
+    "masterSEOEnabled": false,
+    "masterArtworkEnabled": false,
+    "canary": "OFF",
+    "full": "OFF"
+  },
+  "security": {
+    "bucketPrivate": true,
+    "r2DevPublic": false,
+    "publicArtworkRoute": false
+  },
+  "license": {
+    "A": [
+      "openmoji",
+      "twemoji"
+    ],
+    "B": [
+      "noto"
+    ],
+    "C": [
+      "fluent",
+      "emojinet-unknown-artwork"
+    ]
+  },
+  "frozenRelease": {
+    "status": "PASS",
+    "pass": "31/31"
+  },
+  "tests": {
+    "typecheck": {
+      "status": "PASS"
+    },
+    "tests": {
+      "status": "PASS",
+      "detail": "437/437 pass (verified 2026-08-12T16:17:35Z)"
+    },
+    "build": {
+      "status": "PASS",
+      "detail": "next build exit 0, 4486 emoji pages, ~6.8min (2026-08-12T16:21:30Z)"
+    }
+  },
+  "readinessScores": {
+    "r2UploadComplete": false,
+    "r2ReconciliationComplete": false,
+    "identityCoverage": true,
+    "artworkCoverage": true,
+    "metadataCoverage": true,
+    "semanticCoverage": true,
+    "searchCoverage": true,
+    "licenseSafety": true,
+    "r2Privacy": true,
+    "productionSafety": true,
+    "frozenIntegrity": true,
+    "testBuildHealth": true
+  },
+  "finalScore": "10/12",
+  "finalDecision": "INCOMPLETE"
+}

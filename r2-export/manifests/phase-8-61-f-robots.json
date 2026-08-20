@@ -1,0 +1,11 @@
+{
+  "phase": "8.61-F",
+  "verdict": "PASS",
+  "checks": {
+    "http200": true,
+    "allowsEmoji": true,
+    "blocksApi": true,
+    "blocksCatalog": true,
+    "sitemapProd": true
+  }
+}

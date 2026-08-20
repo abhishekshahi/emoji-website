@@ -1,7 +1,8 @@
 import type { SupportedArtworkProvider } from "../artwork/types";
 import { ARTWORK_PROVIDERS } from "../artwork/types";
 
-export const ARTWORK_PROVIDER_PREFERENCE_KEY = "emojifind:artwork-provider-preference";
+export const ARTWORK_PROVIDER_PREFERENCE_KEY = "emojiquick:artwork-provider-preference";
+export const LEGACY_ARTWORK_PROVIDER_PREFERENCE_KEY = "emojifind:artwork-provider-preference";
 
 export const DEFAULT_PRESENTATION_PROVIDER: SupportedArtworkProvider = "openmoji";
 

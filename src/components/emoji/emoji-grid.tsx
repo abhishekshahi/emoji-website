@@ -1,8 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { EMOJI_GRID_PAGE_SIZE } from "@/lib/emoji/constants";
 import type { BrowsableEmoji } from "@/lib/emoji/types";
+import { useIntersectionLoadMore } from "@/hooks/use-intersection-load-more";
+import { EmptyState } from "@/components/ui/empty-state";
 import { EmojiCard } from "./emoji-card";
 
 interface EmojiGridProps {
@@ -10,6 +12,12 @@ interface EmojiGridProps {
   pageSize?: number;
   emptyMessage?: string;
   highlightQuery?: string;
+  matchLabelsById?: Readonly<Record<string, string>>;
+  /** When false, renders nothing if emojis is empty (caller handles empty UI). */
+  showEmptyState?: boolean;
+  /** Auto-load more rows when the sentinel enters the viewport. */
+  infiniteScroll?: boolean;
+  trackRelatedClicks?: boolean;
 }
 
 export function EmojiGrid({
@@ -17,6 +25,10 @@ export function EmojiGrid({
   pageSize = EMOJI_GRID_PAGE_SIZE,
   emptyMessage = "No emojis to show yet.",
   highlightQuery,
+  matchLabelsById,
+  showEmptyState = true,
+  infiniteScroll = true,
+  trackRelatedClicks = false,
 }: EmojiGridProps) {
   const [visibleCount, setVisibleCount] = useState(pageSize);
 
@@ -25,33 +37,57 @@ export function EmojiGrid({
     [emojis, visibleCount],
   );
 
+  const hasMore = visibleCount < emojis.length;
+
+  const loadMore = useCallback(() => {
+    setVisibleCount((count) => Math.min(count + pageSize, emojis.length));
+  }, [emojis.length, pageSize]);
+
+  const sentinelRef = useIntersectionLoadMore({
+    enabled: infiniteScroll && hasMore,
+    onLoadMore: loadMore,
+  });
+
   if (emojis.length === 0) {
-    return (
-      <div className="card-surface px-6 py-12 text-center text-muted">
-        {emptyMessage}
-      </div>
-    );
+    if (!showEmptyState) {
+      return null;
+    }
+    return <EmptyState title={emptyMessage} />;
   }
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+      <div
+        className="emoji-grid"
+        role="list"
+        aria-label={`${emojis.length} emoji${emojis.length === 1 ? "" : "s"}`}
+      >
         {visibleEmojis.map((emoji) => (
-          <EmojiCard key={emoji.id} emoji={emoji} highlightQuery={highlightQuery} />
+          <div key={emoji.id} role="listitem" className="emoji-grid__item">
+            <EmojiCard
+              emoji={emoji}
+              highlightQuery={highlightQuery}
+              matchLabel={matchLabelsById?.[emoji.id]}
+              trackRelatedClick={trackRelatedClicks}
+            />
+          </div>
         ))}
       </div>
 
-      {visibleCount < emojis.length ? (
-        <div className="flex justify-center">
-          <button
-            type="button"
-            onClick={() => setVisibleCount((count) => count + pageSize)}
-            className="min-h-11 rounded-full border border-border bg-surface px-5 py-3 text-sm font-semibold transition hover:bg-surface-muted"
-            aria-label={`Load more emojis, ${emojis.length - visibleCount} remaining`}
-          >
-            Load more ({emojis.length - visibleCount} remaining)
-          </button>
-        </div>
+      {hasMore ? (
+        <>
+          <div ref={sentinelRef} className="h-1 w-full" aria-hidden="true" />
+          <div className="flex justify-center">
+            <button
+              type="button"
+              onClick={loadMore}
+              className="btn btn--secondary btn--md min-h-11"
+              aria-label={`Load more emojis, ${emojis.length - visibleCount} remaining`}
+            >
+              Load more ({emojis.length - visibleCount} remaining)
+            </button>
+          </div>
+        </>
       ) : null}
     </div>
   );

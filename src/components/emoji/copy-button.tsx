@@ -11,7 +11,8 @@ interface CopyButtonProps {
   emojiId?: string;
   trackRecent?: boolean;
   toastMessage?: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "ghost";
+  size?: "sm" | "md" | "lg";
   className?: string;
 }
 
@@ -22,6 +23,7 @@ export function CopyButton({
   trackRecent = false,
   toastMessage,
   variant = "secondary",
+  size = "md",
   className = "",
 }: CopyButtonProps) {
   const { addRecent } = useEmojiActions();
@@ -45,17 +47,23 @@ export function CopyButton({
     window.setTimeout(() => setIsCopied(false), 1600);
   };
 
-  const baseClasses =
+  const variantClass =
     variant === "primary"
-      ? "rounded-full bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition hover:bg-accent-strong"
-      : "rounded-full border border-border bg-surface px-4 py-2.5 text-sm font-semibold transition hover:bg-surface-muted";
+      ? "btn--primary"
+      : variant === "ghost"
+        ? "btn--ghost"
+        : "btn--secondary";
+
+  const ariaLabel = /^copy\b/i.test(label.trim()) ? label.trim() : `Copy ${label}`;
 
   return (
     <button
       type="button"
       onClick={handleCopy}
-      className={`min-h-11 ${baseClasses} ${className}`}
-      aria-label={`Copy ${label}`}
+      className={`btn ${variantClass} btn--${size} ${
+        isCopied ? "btn--copied" : ""
+      } ${className}`.trim()}
+      aria-label={ariaLabel}
     >
       {isCopied ? "Copied!" : label}
     </button>

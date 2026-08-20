@@ -1,0 +1,12 @@
+{
+  "phase": "8.61-B",
+  "verdict": "PASS",
+  "checks": {
+    "total6955": true,
+    "unique6955": true,
+    "preserved4486": true
+  },
+  "preserved": 4486,
+  "collisions": 216,
+  "total": 6955
+}

@@ -92,4 +92,10 @@ describe("searchEmojis", () => {
     assert.deepEqual(topResultIds("fire", 1), ["1F525"]);
     assert.deepEqual(topResultIds("flame", 1), ["1F525"]);
   });
+
+  it("ranks exact canonical slug match highly (8.62-D)", () => {
+    const results = searchEmojis(searchableEmojis, "red-heart", 5);
+    assert.equal(results[0]?.emoji.slug, "red-heart");
+    assert.ok(results[0]!.score >= 750);
+  });
 });

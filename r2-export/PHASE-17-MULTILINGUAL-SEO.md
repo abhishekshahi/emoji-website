@@ -1,0 +1,1 @@
+# Phase 17 SEO\n\n- Reciprocal hreflang EN<->localized\n- Natural localized titles\n- html lang + dir on all routes\n- Sitemap publication gate\n

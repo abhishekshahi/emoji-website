@@ -1,43 +1,52 @@
 import Link from "next/link";
-import { SITE_NAME } from "@/lib/emoji/constants";
+import { BrandLogo } from "@/components/layout/site-logo";
+import { HubFooterNavigation } from "@/components/hub/hub-nav-sections";
+import { isPublicMasterPlatformEnabled } from "@/lib/master/public/config";
 import {
   OPENMOJI_LICENSE,
   OPENMOJI_LICENSE_URL,
   OPENMOJI_PROJECT_URL,
+  SITE_NAME,
 } from "@/lib/site/config";
 
-const FOOTER_LINKS = [
-  { href: "/emoji", label: "Browse Emojis" },
-  { href: "/extras", label: "OpenMoji Extras" },
-  { href: "/search", label: "Search" },
-  { href: "/popular", label: "Popular" },
-  { href: "/category/smileys-emotion", label: "Categories" },
-  { href: "/licenses", label: "Licenses" },
-] as const;
-
 export function SiteFooter() {
+  const masterLinks = isPublicMasterPlatformEnabled()
+    ? [
+        { href: "/catalog", label: "Master Catalog" },
+        { href: "/artwork", label: "Artwork" },
+        { href: "/developers", label: "API" },
+        { href: "/data", label: "Data" },
+      ]
+    : [];
+
   return (
     <footer className="mt-auto border-t border-border bg-surface/70">
-      <div className="page-shell flex flex-col gap-6 py-10">
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <div className="page-shell flex flex-col gap-8 py-10">
+        <div className="flex flex-col gap-6">
           <div>
-            <p className="text-lg font-semibold">{SITE_NAME}</p>
-            <p className="mt-1 max-w-xl text-sm text-muted">
-              A fast, friendly emoji search experience built from Unicode and
-              Emojibase data.
+            <Link href="/" aria-label={`${SITE_NAME} home`} className="brand-logo-link inline-flex">
+              <BrandLogo variant="footer" decorative />
+            </Link>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
+              {SITE_NAME} — the fastest way to discover, understand, and copy
+              emojis. Built from Unicode and Emojibase data.
             </p>
           </div>
 
-          <nav aria-label="Footer" className="flex flex-wrap gap-2">
-            {FOOTER_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className="pill-link">
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+          <HubFooterNavigation />
+
+          {masterLinks.length > 0 ? (
+            <nav aria-label="Master platform" className="flex flex-wrap gap-2">
+              {masterLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="pill-link">
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          ) : null}
         </div>
 
-        <div className="space-y-2 text-xs text-muted">
+        <div className="space-y-2 border-t border-border pt-6 text-xs text-muted">
           <p>
             Emoji names and keywords are provided by Unicode and CLDR via
             Emojibase.

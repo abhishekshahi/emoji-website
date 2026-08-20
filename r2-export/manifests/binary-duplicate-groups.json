@@ -1,0 +1,671 @@
+[
+  {
+    "sha256": "41b3c5ff01d2055f9548e3a64258de7e3b62ae73e2825014f55a85b8dbc6b698",
+    "files": 21,
+    "bytes": 4352,
+    "providers": [
+      "openmoji"
+    ],
+    "samplePaths": [
+      "artwork/openmoji/1F46F.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FC.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FD.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FE.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1F430-200D-1F9D1-1F3FF.svg"
+    ]
+  },
+  {
+    "sha256": "261f5d88312fec912596a0f39efb96755325c146cb379f4584528bb70c72c1c8",
+    "files": 21,
+    "bytes": 4038,
+    "providers": [
+      "openmoji"
+    ],
+    "samplePaths": [
+      "artwork/openmoji/1F93C.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FC.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FD.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FE.svg",
+      "artwork/openmoji/1F9D1-1F3FB-200D-1FAEF-200D-1F9D1-1F3FF.svg"
+    ]
+  },
+  {
+    "sha256": "eb95debb1aabefca4ec89c87179d3b366096f43c51030b36513d900a3ae704ca",
+    "files": 10,
+    "bytes": 2194,
+    "providers": [
+      "twemoji"
+    ],
+    "samplePaths": [
+      "artwork/twemoji/assets/svg/1f468-200d-1f468-200d-1f466-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f468-200d-1f467-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f468-200d-1f467-200d-1f467.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f469-200d-1f466-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f469-200d-1f467-200d-1f466.svg"
+    ]
+  },
+  {
+    "sha256": "e7a20a015e4357967635035f9f78e35cdd14699288ef9ccf28e9c0e60c869010",
+    "files": 8,
+    "bytes": 1563,
+    "providers": [
+      "twemoji"
+    ],
+    "samplePaths": [
+      "artwork/twemoji/assets/svg/1f468-200d-1f468-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f468-200d-1f467.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f469-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f469-200d-1f467.svg",
+      "artwork/twemoji/assets/svg/1f469-200d-1f469-200d-1f466.svg"
+    ]
+  },
+  {
+    "sha256": "ac90dd1866de1b360f72f5203a2c7242ccc7f144ddc674c2d98d87f8ba5a573f",
+    "files": 7,
+    "bytes": 1833,
+    "providers": [
+      "twemoji"
+    ],
+    "samplePaths": [
+      "artwork/twemoji/assets/svg/1f468-200d-1f466-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f467-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f467-200d-1f467.svg",
+      "artwork/twemoji/assets/svg/1f469-200d-1f466-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f469-200d-1f467-200d-1f466.svg"
+    ]
+  },
+  {
+    "sha256": "5f488322e340c8f93bcc5e76970af8609aa2207f95b1160dfcce7f9eab2c2c44",
+    "files": 6,
+    "bytes": 8029,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f3c2.png",
+      "artwork/noto/png/128/emoji_u1f3c2_1f3fb.png",
+      "artwork/noto/png/128/emoji_u1f3c2_1f3fc.png",
+      "artwork/noto/png/128/emoji_u1f3c2_1f3fd.png",
+      "artwork/noto/png/128/emoji_u1f3c2_1f3fe.png"
+    ]
+  },
+  {
+    "sha256": "d38e9f9e486e1257f9b2592b9aa4bac16b2ed4f2ebce1060c18451e18ef56565",
+    "files": 6,
+    "bytes": 1800,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f3c2.png",
+      "artwork/noto/png/32/emoji_u1f3c2_1f3fb.png",
+      "artwork/noto/png/32/emoji_u1f3c2_1f3fc.png",
+      "artwork/noto/png/32/emoji_u1f3c2_1f3fd.png",
+      "artwork/noto/png/32/emoji_u1f3c2_1f3fe.png"
+    ]
+  },
+  {
+    "sha256": "5ef0694b5b9b491bf4735af4e06f858b8201cc2b7ecbdf102b6c43bac3b61d90",
+    "files": 6,
+    "bytes": 34808,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f3c2.png",
+      "artwork/noto/png/512/emoji_u1f3c2_1f3fb.png",
+      "artwork/noto/png/512/emoji_u1f3c2_1f3fc.png",
+      "artwork/noto/png/512/emoji_u1f3c2_1f3fd.png",
+      "artwork/noto/png/512/emoji_u1f3c2_1f3fe.png"
+    ]
+  },
+  {
+    "sha256": "bc53c2d145331a9ed11555aa027ba30666dd86deac9fcc2f8b24cd6752731353",
+    "files": 6,
+    "bytes": 4361,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f3c2.png",
+      "artwork/noto/png/72/emoji_u1f3c2_1f3fb.png",
+      "artwork/noto/png/72/emoji_u1f3c2_1f3fc.png",
+      "artwork/noto/png/72/emoji_u1f3c2_1f3fd.png",
+      "artwork/noto/png/72/emoji_u1f3c2_1f3fe.png"
+    ]
+  },
+  {
+    "sha256": "a7517a79d9d1862da8043b77d8d81e7de9020e7d7b238712011e1baee4d09bd4",
+    "files": 5,
+    "bytes": 1198,
+    "providers": [
+      "twemoji"
+    ],
+    "samplePaths": [
+      "artwork/twemoji/assets/svg/1f468-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f468-200d-1f467.svg",
+      "artwork/twemoji/assets/svg/1f469-200d-1f466.svg",
+      "artwork/twemoji/assets/svg/1f469-200d-1f467.svg",
+      "artwork/twemoji/assets/svg/1f9d1-200d-1f9d2.svg"
+    ]
+  },
+  {
+    "sha256": "fb94d82386ea3503e9aefffd9e637d7de248a94b0b8e708aa96b978531a884f7",
+    "files": 4,
+    "bytes": 11127,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/svg/emoji_u1f3c2_1f3fc.svg",
+      "artwork/noto/svg/emoji_u1f3c2_1f3fd.svg",
+      "artwork/noto/svg/emoji_u1f3c2_1f3fe.svg",
+      "artwork/noto/svg/emoji_u1f3c2_1f3ff.svg"
+    ]
+  },
+  {
+    "sha256": "b7db9a220a643d0f893e36c20b2dd57c8b63c00e9b8d1f57903b9aed544d0310",
+    "files": 3,
+    "bytes": 2642,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f468_200d_1f468_200d_1f466.png",
+      "artwork/noto/png/128/emoji_u1f46a.png",
+      "artwork/noto/png/128/emoji_u1f9d1_200d_1f9d1_200d_1f9d2.png"
+    ]
+  },
+  {
+    "sha256": "24b691c730f488a14f4f9814df55a274b1653ad231e316e0f01cd0e97caa7e50",
+    "files": 3,
+    "bytes": 747,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f468_200d_1f468_200d_1f466.png",
+      "artwork/noto/png/32/emoji_u1f46a.png",
+      "artwork/noto/png/32/emoji_u1f9d1_200d_1f9d1_200d_1f9d2.png"
+    ]
+  },
+  {
+    "sha256": "aac16b0702bf6c8670945fd8e9afe791f4b505e98e1df4721f0ce29b301b29f2",
+    "files": 3,
+    "bytes": 10725,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f468_200d_1f468_200d_1f466.png",
+      "artwork/noto/png/512/emoji_u1f46a.png",
+      "artwork/noto/png/512/emoji_u1f9d1_200d_1f9d1_200d_1f9d2.png"
+    ]
+  },
+  {
+    "sha256": "b457b9ae93885d722ce430e025acd0ced5eb59f53f38d18aa0ed30fb24ac7f22",
+    "files": 3,
+    "bytes": 1578,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f468_200d_1f468_200d_1f466.png",
+      "artwork/noto/png/72/emoji_u1f46a.png",
+      "artwork/noto/png/72/emoji_u1f9d1_200d_1f9d1_200d_1f9d2.png"
+    ]
+  },
+  {
+    "sha256": "0bd0dd752517b38a5638add0a4f0ca7e563bcb176ebb321bff2f1a1faf02b8c2",
+    "files": 3,
+    "bytes": 8832,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f468_1f3fb_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f469_1f3fb_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f9d1_1f3fb_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "d8e106c748d4d4254ceedf5b7f3a4a85511951a3ac7bcd9337e01a59b36cd10a",
+    "files": 3,
+    "bytes": 1969,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f468_1f3fb_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f469_1f3fb_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f9d1_1f3fb_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "9aecdb2d5835649134ac2aadd334ec38c110faa8f2d93872ee403121bb306dc2",
+    "files": 3,
+    "bytes": 35415,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f468_1f3fb_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f469_1f3fb_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f9d1_1f3fb_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "4a01650b9f2c86c3a9ef444f48b1a9a64013e0f3c9374e41448d0aeaa737fbd8",
+    "files": 3,
+    "bytes": 5005,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f468_1f3fb_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f469_1f3fb_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f9d1_1f3fb_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "3925791bb3e2ed63e0fb40aca548c2bd860115064278e595c46a55459c8be745",
+    "files": 3,
+    "bytes": 8872,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/svg/emoji_u1f468_1f3fb_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f469_1f3fb_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f9d1_1f3fb_200d_1f680.svg"
+    ]
+  },
+  {
+    "sha256": "2f4765e29e550351a5af5aa31b0b6ce4d71f803afae922bee27fc806ea668f9b",
+    "files": 3,
+    "bytes": 8759,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f468_1f3fc_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f469_1f3fc_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f9d1_1f3fc_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "1cc0a2bf01e5c450715a7535bb83732edc0a519366e066300155711c360267a8",
+    "files": 3,
+    "bytes": 1955,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f468_1f3fc_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f469_1f3fc_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f9d1_1f3fc_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "7b53cb154c864b84070f3d8af46e89f350cb0c2f63e774395a988783d2df2dd2",
+    "files": 3,
+    "bytes": 35454,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f468_1f3fc_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f469_1f3fc_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f9d1_1f3fc_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "53e9fcbf9ea211bdd41b45a00d9b8da50ccf1f44ea3cd94984017faac9adc3d4",
+    "files": 3,
+    "bytes": 4946,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f468_1f3fc_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f469_1f3fc_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f9d1_1f3fc_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "ff0fbfdbe74cc88154892017a4e53d137635f1c45ecc25b24a99d7c218d96715",
+    "files": 3,
+    "bytes": 8840,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/svg/emoji_u1f468_1f3fc_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f469_1f3fc_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f9d1_1f3fc_200d_1f680.svg"
+    ]
+  },
+  {
+    "sha256": "cf53b9e77cec150b4c4544787e8a86f5b0297ae00328655e13df75e487501a59",
+    "files": 3,
+    "bytes": 8691,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f468_1f3fd_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f469_1f3fd_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f9d1_1f3fd_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "ffa621bc7e9dd8026fb2f16328d02239f639846e01281c6a534ce45798e01943",
+    "files": 3,
+    "bytes": 1954,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f468_1f3fd_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f469_1f3fd_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f9d1_1f3fd_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "395403a866a9cf3058d0f66dc083a07ad1976053409874754a9f8011fe41ec21",
+    "files": 3,
+    "bytes": 35348,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f468_1f3fd_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f469_1f3fd_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f9d1_1f3fd_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "85255ee94119a043a10bd640a5fa029c254edcf168ef7c5cda207ccec19e2e0b",
+    "files": 3,
+    "bytes": 4945,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f468_1f3fd_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f469_1f3fd_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f9d1_1f3fd_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "14c0cc6609ba24de2e6b5cb06998df335b328f6b033c3d14ccac023cb35b234f",
+    "files": 3,
+    "bytes": 8858,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/svg/emoji_u1f468_1f3fd_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f469_1f3fd_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f9d1_1f3fd_200d_1f680.svg"
+    ]
+  },
+  {
+    "sha256": "1cad5b4f7b0238916188ba838cf104263d467f3f8a1ddaf877419d219d8c921a",
+    "files": 3,
+    "bytes": 8689,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f468_1f3fe_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f469_1f3fe_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f9d1_1f3fe_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "7c01b618bc4f255b14859f3df02031b488249d5c0223516a65990365938cb740",
+    "files": 3,
+    "bytes": 1943,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f468_1f3fe_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f469_1f3fe_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f9d1_1f3fe_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "1648f681403eb2211e927d8ac3881f78a32ffc52271a42699fdbeb140deaced8",
+    "files": 3,
+    "bytes": 35112,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f468_1f3fe_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f469_1f3fe_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f9d1_1f3fe_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "cc1cef32460824818e328d61a5ffffe51b4c369d6cf2d1e67a046b46446d4037",
+    "files": 3,
+    "bytes": 4911,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f468_1f3fe_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f469_1f3fe_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f9d1_1f3fe_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "3e3ae23d5b81d2e18a82762a8fade5d83635610e5b86a803cca4e1cab5d90236",
+    "files": 3,
+    "bytes": 8890,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/svg/emoji_u1f468_1f3fe_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f469_1f3fe_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f9d1_1f3fe_200d_1f680.svg"
+    ]
+  },
+  {
+    "sha256": "ecde4752205419f56636502282e81bab9ef67231ded30b2ed1c17618eed9edc1",
+    "files": 3,
+    "bytes": 8626,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f468_1f3ff_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f469_1f3ff_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f9d1_1f3ff_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "ae346b4acbb03e13267d5c6f21254d026eb0b7cbbfffc5058a96c21e4cb500e5",
+    "files": 3,
+    "bytes": 1929,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f468_1f3ff_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f469_1f3ff_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f9d1_1f3ff_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "da908f702a9f9c9646db0dd84b5ae0f0a4d96fba85762d34933227c81728786c",
+    "files": 3,
+    "bytes": 35062,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f468_1f3ff_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f469_1f3ff_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f9d1_1f3ff_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "3bdd6bd33c12e103d2452d4aefa47b48984693d3e922608ede3e9f163e743281",
+    "files": 3,
+    "bytes": 4876,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f468_1f3ff_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f469_1f3ff_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f9d1_1f3ff_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "93d7164efb7c90da2c0cb0d7958223997181dcb5e02b3ca90b5719f2c3129882",
+    "files": 3,
+    "bytes": 8911,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/svg/emoji_u1f468_1f3ff_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f469_1f3ff_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f9d1_1f3ff_200d_1f680.svg"
+    ]
+  },
+  {
+    "sha256": "5121572c52ea0ca5e5b92a92245d17623d4a22117347d5031251ca7131ab2405",
+    "files": 3,
+    "bytes": 8766,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/128/emoji_u1f468_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f469_200d_1f680.png",
+      "artwork/noto/png/128/emoji_u1f9d1_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "59c32d932e1452425d8d8961a200564e46660cf69bb154e131bc23787485bf45",
+    "files": 3,
+    "bytes": 1973,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/32/emoji_u1f468_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f469_200d_1f680.png",
+      "artwork/noto/png/32/emoji_u1f9d1_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "a4574cf5cd3691d16f493ac226632fe74719731c60c8e58b6cfa6757deec8388",
+    "files": 3,
+    "bytes": 35318,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/512/emoji_u1f468_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f469_200d_1f680.png",
+      "artwork/noto/png/512/emoji_u1f9d1_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "af66ad3f79cf67b5b0416295f13ac4cff19d653d50470b4909280e15311966c6",
+    "files": 3,
+    "bytes": 4981,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/png/72/emoji_u1f468_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f469_200d_1f680.png",
+      "artwork/noto/png/72/emoji_u1f9d1_200d_1f680.png"
+    ]
+  },
+  {
+    "sha256": "e0ff0117a7bff0e3763178d312a2aff7a27cbb8668d9ddb1f557ae4a774d58b3",
+    "files": 3,
+    "bytes": 8873,
+    "providers": [
+      "noto"
+    ],
+    "samplePaths": [
+      "artwork/noto/svg/emoji_u1f468_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f469_200d_1f680.svg",
+      "artwork/noto/svg/emoji_u1f9d1_200d_1f680.svg"
+    ]
+  },
+  {
+    "sha256": "210ca280a66313ee2d4ac0c66e024bdf06affb47133796c57ed961a8d12b299f",
+    "files": 3,
+    "bytes": 451,
+    "providers": [
+      "openmoji"
+    ],
+    "samplePaths": [
+      "artwork/openmoji/1F1E8-1F1F5.svg",
+      "artwork/openmoji/1F1EB-1F1F7.svg",
+      "artwork/openmoji/1F1F2-1F1EB.svg"
+    ]
+  },
+  {
+    "sha256": "9e54f40580cb5d352fcd2806f9f446df864685047dd07947adc851d7b72889c2",
+    "files": 3,
+    "bytes": 233,
+    "providers": [
+      "twemoji"
+    ],
+    "samplePaths": [
+      "artwork/twemoji/assets/72x72/1f1e8-1f1f5.png",
+      "artwork/twemoji/assets/72x72/1f1eb-1f1f7.png",
+      "artwork/twemoji/assets/72x72/1f1f2-1f1eb.png"
+    ]
+  },
+  {
+    "sha256": "861059eae96aea4c38466209edfad68fbd84ada37bae4ccac92d03011046a524",
+    "files": 3,
+    "bytes": 270,
+    "providers": [
+      "twemoji"
+    ],
+    "samplePaths": [
+      "artwork/twemoji/assets/svg/1f1e8-1f1f5.svg",
+      "artwork/twemoji/assets/svg/1f1eb-1f1f7.svg",
+      "artwork/twemoji/assets/svg/1f1f2-1f1eb.svg"
+    ]
+  },
+  {
+    "sha256": "a59cc25380c6d0e12ec0270c387e9a9877156c54d3988ef4ec83514e335a71a2",
+    "files": 2,
+    "bytes": 2184,
+    "providers": [
+      "fluent"
+    ],
+    "samplePaths": [
+      "artwork/fluent/assets/Angry face/High Contrast/angry_face_high_contrast.svg",
+      "artwork/fluent/assets/Pouting face/High Contrast/pouting_face_high_contrast.svg"
+    ]
+  },
+  {
+    "sha256": "eb917d09d37ef833f7fbb51eeb583f27ddfd28a7248166050e994defe2cc2ac3",
+    "files": 2,
+    "bytes": 2636,
+    "providers": [
+      "fluent"
+    ],
+    "samplePaths": [
+      "artwork/fluent/assets/Cat face/Flat/cat_face_flat.svg",
+      "artwork/fluent/assets/Grinning cat/Flat/grinning_cat_flat.svg"
+    ]
+  }
+]

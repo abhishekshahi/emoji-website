@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-08-10T19:50:17.926Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "baseUrl": "https://emoji-website.emoji-website.workers.dev",
+  "status": "PASS",
+  "containsSitemapDirective": true,
+  "bodyPreview": "User-Agent: *\nAllow: /\nAllow: /emoji/\nAllow: /category/\nAllow: /popular\nAllow: /new\nAllow: /search\nAllow: /licenses\nAllow: /extras\nDisallow: /favorites\nDisallow: /recent\n\nSitemap: https://emojiquick.com/sitemap.xml\n"
+}

@@ -1,0 +1,61 @@
+{
+  "phase": "8.40",
+  "generatedAt": "2026-08-12T04:22:36.528Z",
+  "expectedCanonicalObjects": 114498,
+  "canaryObjects": [
+    {
+      "key": "identities/unicode_1F600.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "metadata/unicode_1F600.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "semantic/unicode_1F600.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "search/unicode_1F600.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "provenance/unicode_1F600.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "artwork-records/1cd742197b9c891cea1430930e1aa4c095128e46f0b7fe94842355bc3651b811.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "artwork/f3d5483791b88975bb0f4db7dc7b81439dfe18b02123bf81ad8bc984169651c6.svg",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "artwork/cce976a0def9c94f5a81db3fdcfb46a2438b3d6852987c6b1f2d70631bed93dc.svg",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": true
+    },
+    {
+      "key": "manifests/master-manifest.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": false
+    },
+    {
+      "key": "licenses/LICENSE-MATRIX.json",
+      "status": "EXISTING_MATCH",
+      "inCanonicalManifest": false
+    }
+  ],
+  "existingMatches": 10,
+  "missingBeforeUpload": 114488,
+  "unexpectedRemote": [],
+  "totalLocalBytes": 637169080
+}

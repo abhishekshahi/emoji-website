@@ -9,6 +9,8 @@ interface EmojiArtworkProps {
   emoji: string;
   size?: "card" | "detail";
   priority?: boolean;
+  /** When true, parent control supplies the accessible name (avoids duplicate SR announcements). */
+  decorative?: boolean;
   className?: string;
 }
 
@@ -23,6 +25,7 @@ export function EmojiArtwork({
   emoji,
   size = "card",
   priority = false,
+  decorative = false,
   className = "",
 }: EmojiArtworkProps) {
   const artworkPath = getArtworkPath(hexcode);
@@ -31,8 +34,10 @@ export function EmojiArtwork({
   if (useFallback || !artworkPath) {
     return (
       <span
+        role={decorative ? undefined : "img"}
+        aria-label={decorative ? undefined : name}
+        aria-hidden={decorative ? true : undefined}
         className={`inline-flex items-center justify-center leading-none ${size === "detail" ? "text-8xl sm:text-9xl" : "text-4xl sm:text-5xl"} ${className}`}
-        aria-hidden="true"
       >
         {emoji}
       </span>
@@ -45,7 +50,8 @@ export function EmojiArtwork({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={artworkPath}
-        alt={`${name} emoji`}
+        alt={decorative ? "" : `${name} emoji`}
+        aria-hidden={decorative ? true : undefined}
         width={size === "detail" ? 176 : 64}
         height={size === "detail" ? 176 : 64}
         loading={priority ? "eager" : "lazy"}
@@ -53,7 +59,7 @@ export function EmojiArtwork({
         className="h-full w-full object-contain"
         onError={() => setUseFallback(true)}
       />
-      <span className="sr-only">{emoji}</span>
+      {!decorative ? <span className="sr-only">{emoji}</span> : null}
     </span>
   );
 }

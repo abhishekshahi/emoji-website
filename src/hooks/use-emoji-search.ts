@@ -2,10 +2,12 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { BrowsableEmoji, EmojiRecord } from "@/lib/emoji/types";
+import { fetchMasterSearch, mapMasterSearchResultToBrowsable } from "@/lib/emoji/master-search-client";
 import { searchEmojis } from "@/lib/emoji/search";
 import { SEARCH_UI_CONTRACT } from "@/lib/emoji/search-ui-contract";
 
 let emojiCache: BrowsableEmoji[] | null = null;
+let searchEnrichmentCache: Readonly<Record<string, readonly string[]>> | null = null;
 
 async function loadEmojis(): Promise<BrowsableEmoji[]> {
   if (emojiCache) {
@@ -25,9 +27,22 @@ async function loadEmojis(): Promise<BrowsableEmoji[]> {
   return emojiCache;
 }
 
-export function useEmojiSearch(query: string, limit = 120) {
+async function loadSearchEnrichment(): Promise<Readonly<Record<string, readonly string[]>>> {
+  if (searchEnrichmentCache) {
+    return searchEnrichmentCache;
+  }
+
+  const module = await import("@/data/emoji-search-enrichment.json");
+  searchEnrichmentCache = (module.default as { byId: Record<string, readonly string[]> }).byId;
+  return searchEnrichmentCache;
+}
+
+export function useEmojiSearch(query: string, limit = 120, language = "en") {
   const [emojis, setEmojis] = useState<BrowsableEmoji[]>([]);
+  const [searchEnrichment, setSearchEnrichment] = useState<Readonly<Record<string, readonly string[]>>>({});
+  const [masterResults, setMasterResults] = useState<Array<{ emoji: BrowsableEmoji; score: number }>>([]);
   const [isReady, setIsReady] = useState(false);
+  const [usesMasterSearch, setUsesMasterSearch] = useState(false);
   const latestQueryRef = useRef(query);
 
   useEffect(() => {
@@ -37,9 +52,10 @@ export function useEmojiSearch(query: string, limit = 120) {
   useEffect(() => {
     let cancelled = false;
 
-    loadEmojis().then((data) => {
+    Promise.all([loadEmojis(), loadSearchEnrichment()]).then(([data, enrichment]) => {
       if (!cancelled) {
         setEmojis(data);
+        setSearchEnrichment(enrichment);
         setIsReady(true);
       }
     });
@@ -49,8 +65,43 @@ export function useEmojiSearch(query: string, limit = 120) {
     };
   }, []);
 
-  const results = useMemo(() => {
-    if (!isReady || !query.trim()) {
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!trimmed) {
+      setMasterResults([]);
+      setUsesMasterSearch(false);
+      return;
+    }
+
+    let cancelled = false;
+    setUsesMasterSearch(true);
+
+    fetchMasterSearch(trimmed, limit, language).then((response) => {
+      if (cancelled) return;
+      if (!response) {
+        setUsesMasterSearch(false);
+        setMasterResults([]);
+        return;
+      }
+
+      const mapped = response.results
+        .map((result) => {
+          const emoji = mapMasterSearchResultToBrowsable(result);
+          if (!emoji) return null;
+          return { emoji, score: result.score };
+        })
+        .filter((entry): entry is { emoji: BrowsableEmoji; score: number } => Boolean(entry));
+
+      setMasterResults(mapped);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [language, limit, query]);
+
+  const clientResults = useMemo(() => {
+    if (!isReady || !query.trim() || usesMasterSearch) {
       return [];
     }
 
@@ -58,12 +109,13 @@ export function useEmojiSearch(query: string, limit = 120) {
       return [];
     }
 
-    return searchEmojis(emojis, query, limit);
-  }, [emojis, isReady, limit, query]);
+    return searchEmojis(emojis, query, limit, searchEnrichment);
+  }, [emojis, isReady, limit, query, searchEnrichment, usesMasterSearch]);
 
+  const results = usesMasterSearch ? masterResults : clientResults;
   const stableResults = latestQueryRef.current === query ? results : [];
 
-  return { results: stableResults, isReady };
+  return { results: stableResults, isReady: isReady || usesMasterSearch };
 }
 
 export function useEmojiDataset() {

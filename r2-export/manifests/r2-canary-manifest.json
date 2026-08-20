@@ -1,0 +1,87 @@
+{
+  "phase": "8.38",
+  "bucket": "emojiquick-master",
+  "generatedAt": "2026-08-12T00:38:09.789Z",
+  "objects": [
+    {
+      "label": "identity",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\identities\\unicode_1F600.json",
+      "objectKey": "identities/unicode_1F600.json",
+      "bytes": 13498,
+      "sha256": "46d7efd9377f119f4b358a1aa2a0f35410afc94f0bbd529043775c2d9d505b20",
+      "contentType": "application/json"
+    },
+    {
+      "label": "metadata",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\metadata\\unicode_1F600.json",
+      "objectKey": "metadata/unicode_1F600.json",
+      "bytes": 1348,
+      "sha256": "3ce30a5ecd11bfcd284ae4681fd66d46bb4ff78794fed55e3bfdcfaefb22db28",
+      "contentType": "application/json"
+    },
+    {
+      "label": "semantic",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\semantic\\unicode_1F600.json",
+      "objectKey": "semantic/unicode_1F600.json",
+      "bytes": 47069,
+      "sha256": "b5fd3bb97b92c4e8f3b64c0f0c8a89c2157d48f87e38af3c39a55a70003d0466",
+      "contentType": "application/json"
+    },
+    {
+      "label": "search",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\search\\unicode_1F600.json",
+      "objectKey": "search/unicode_1F600.json",
+      "bytes": 2659,
+      "sha256": "1dee5ce6e6f6590c8c9244a85ebd3642f50c2b2fff658c198e1b30db1fa2ec41",
+      "contentType": "application/json"
+    },
+    {
+      "label": "provenance",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\provenance\\unicode_1F600.json",
+      "objectKey": "provenance/unicode_1F600.json",
+      "bytes": 13398,
+      "sha256": "08804d51f6b62373775fe26051500c7d340f4c7b57d8d5bf63804795bf3a5562",
+      "contentType": "application/json"
+    },
+    {
+      "label": "artwork-record-openmoji",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\artwork-records\\1cd742197b9c891cea1430930e1aa4c095128e46f0b7fe94842355bc3651b811.json",
+      "objectKey": "artwork-records/1cd742197b9c891cea1430930e1aa4c095128e46f0b7fe94842355bc3651b811.json",
+      "bytes": 1017,
+      "sha256": "9ccb4fe245cdc4562e95e6b849a2c5406a57c5abf2e421c13d809d968df7d046",
+      "contentType": "application/json"
+    },
+    {
+      "label": "artwork-openmoji-svg-1",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\artwork\\f3d5483791b88975bb0f4db7dc7b81439dfe18b02123bf81ad8bc984169651c6.svg",
+      "objectKey": "artwork/f3d5483791b88975bb0f4db7dc7b81439dfe18b02123bf81ad8bc984169651c6.svg",
+      "bytes": 653,
+      "sha256": "f3d5483791b88975bb0f4db7dc7b81439dfe18b02123bf81ad8bc984169651c6",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "label": "artwork-openmoji-svg-2",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\artwork\\cce976a0def9c94f5a81db3fdcfb46a2438b3d6852987c6b1f2d70631bed93dc.svg",
+      "objectKey": "artwork/cce976a0def9c94f5a81db3fdcfb46a2438b3d6852987c6b1f2d70631bed93dc.svg",
+      "bytes": 720,
+      "sha256": "cce976a0def9c94f5a81db3fdcfb46a2438b3d6852987c6b1f2d70631bed93dc",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "label": "manifest",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\manifests\\master-manifest.json",
+      "objectKey": "manifests/master-manifest.json",
+      "bytes": 2170,
+      "sha256": "964146ab754713b6e1a2f102cbc0896e6070a4c315a20ac776529279c3ee5514",
+      "contentType": "application/json"
+    },
+    {
+      "label": "license-matrix",
+      "localPath": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website\\r2-export\\licenses\\LICENSE-MATRIX.json",
+      "objectKey": "licenses/LICENSE-MATRIX.json",
+      "bytes": 6123,
+      "sha256": "eca787f7d728c3f6e3cab623ea4ceba9545cb2834f6f86e3c2002bf284e86119",
+      "contentType": "application/json"
+    }
+  ]
+}

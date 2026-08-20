@@ -1,0 +1,12 @@
+{
+  "phase": "8.48",
+  "total": 114498,
+  "completed": 102941,
+  "pending": 11548,
+  "failed": 9,
+  "uploadRatePerMinute": 255.1,
+  "concurrency": 12,
+  "updatedAt": "2026-08-13T00:31:26.529Z",
+  "bucket": "emojiquick-master",
+  "privacy": "PRIVATE"
+}

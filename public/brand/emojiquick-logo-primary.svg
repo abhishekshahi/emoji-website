@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="EmojiQuick">
+  <defs>
+    <linearGradient id="face" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE566"/>
+      <stop offset="55%" stop-color="#FFB347"/>
+      <stop offset="100%" stop-color="#FF8A1F"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4FC3FF"/>
+      <stop offset="100%" stop-color="#1B6FD8"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#FF6B1A"/>
+      <stop offset="100%" stop-color="#FFD24A"/>
+    </linearGradient>
+    <linearGradient id="emojiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD84D"/>
+      <stop offset="100%" stop-color="#FF7A18"/>
+    </linearGradient>
+    <linearGradient id="quickGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5ED4FF"/>
+      <stop offset="100%" stop-color="#1B63D8"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0B1B33" flood-opacity="0.2"/>
+    </filter>
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0B1B33" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g transform="translate(24 18) scale(0.52)" filter="url(#soft)">
+    <path d="M72 250c18-58 62-98 118-112 8-34 36-58 74-58 44 0 80 36 80 80 0 8-1 16-4 23 50 18 86 66 86 122 0 72-66 130-147 130S72 322 72 250z" fill="url(#trail)" opacity="0.95"/>
+    <path d="M300 360c-78 0-142-58-142-130 0-48 28-90 70-112-10-18-8-40 6-58 18-22 50-28 76-14 26 14 40 44 34 72 58 20 98 74 98 132 0 78-70 142-156 142z" fill="url(#face)"/>
+    <ellipse cx="248" cy="214" rx="34" ry="40" fill="#173E7A"/>
+    <ellipse cx="352" cy="214" rx="34" ry="40" fill="#173E7A"/>
+    <ellipse cx="256" cy="206" rx="10" ry="12" fill="#FFFFFF" opacity="0.9"/>
+    <ellipse cx="360" cy="206" rx="10" ry="12" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M210 188c8-10 18-8 24 2 6-12 18-10 24 0 8-14 22-10 26 4 10-6 18 2 14 12-8 2-16-2-22-8-8 6-18 6-26 0-6 8-16 10-24 4-8 6-18 4-22-6z" fill="#58B4FF"/>
+    <path d="M228 286c34 28 88 28 122 0 10-8 24 4 16 16-20 28-58 44-98 44s-78-16-98-44c-8-12 6-24 16-16z" fill="#5E220E"/>
+    <path d="M228 286c34 20 88 20 122 0 0 14-12 26-28 32-20 8-44 8-64 0-16-6-28-18-28-32z" fill="#FFFFFF"/>
+    <path d="M286 318c-10 8-18 8-28 0 8 10 18 14 28 14s20-4 28-14c-10 8-18 8-28 0z" fill="#E85E74"/>
+    <path d="M360 300c70-36 108-108 88-176-6 58-46 108-102 132 8 18 6 40-6 58 24-8 48-2 66 14-30 18-54 46-66 80z" fill="none" stroke="url(#ring)" stroke-width="34" stroke-linecap="round"/>
+  </g>
+  <text x="300" y="210" font-family="Segoe UI, Inter, system-ui, sans-serif" font-size="148" font-weight="800" font-style="italic" letter-spacing="-2" filter="url(#textShadow)">
+    <tspan fill="url(#emojiGrad)">Emoji</tspan><tspan fill="url(#quickGrad)">Quick</tspan>
+  </text>
+</svg>

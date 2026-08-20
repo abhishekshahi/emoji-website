@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-08-10T19:48:54.797Z",
+  "phase": "8.12K",
+  "releaseId": "master-8.10-20260809",
+  "rolloutMode": "OFF",
+  "featureFlags": {
+    "masterArtworkEnabled": false,
+    "masterMetadataEnabled": false,
+    "masterSearchEnabled": false,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "workerGzipKiB": 2542.43,
+  "workerRawKiB": 27245.73,
+  "freeTierLimitKiB": 3072,
+  "withinFreeLimit": true,
+  "status": "PASS"
+}

@@ -1,0 +1,27 @@
+{
+  "phase": 16,
+  "deployedAt": "2026-08-18T15:10:00.000Z",
+  "deploymentId": "2ea5c471-7841-42b5-b876-100a109571b0",
+  "previousDeploymentId": "bf86e948-66cd-4e63-a206-2a7169153e2c",
+  "verdict": "PASS WITH WARNINGS",
+  "identities": {
+    "canonical": 6955,
+    "indexable": 6953,
+    "artwork": 40071,
+    "relationships": 65760
+  },
+  "editorial": {
+    "rich": 53,
+    "medium": 69,
+    "structuredOnly": 6831
+  },
+  "localizedPages": 34,
+  "searchCases": 2680,
+  "combinations": 15,
+  "collections": 21,
+  "faq": 36,
+  "blog": 7,
+  "staticPages": 7153,
+  "liveRankings": false,
+  "testsPass": 31
+}

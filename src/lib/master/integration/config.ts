@@ -18,6 +18,11 @@ export const SEO_MIGRATION_PHASE = "8.12A" as const;
 export const SEO_MIGRATION_REVIEW_PHASE = "8.12B" as const;
 export const SEO_MIGRATION_IMPLEMENTATION_PHASE = "8.12C" as const;
 export const SEO_MIGRATION_PRODUCTION_QA_PHASE = "8.12D" as const;
+export const SEO_CANARY_PHASE = "8.12E" as const;
+export const SEO_CANARY_PRODUCTION_PHASE = "8.12F" as const;
+export const SEO_CANARY_STAGING_PHASE = "8.12G" as const;
+export const SEO_CANARY_LIMITED_PRODUCTION_PHASE = "8.12H" as const;
+export const CLOUDFLARE_PROOF_PHASE = "8.12K" as const;
 
 export const PRODUCTION_BASELINES = {
   standardRecords: 3944,
@@ -27,9 +32,9 @@ export const PRODUCTION_BASELINES = {
 
 export const MASTER_INTEGRATION_CONFIG: MasterIntegrationConfig = {
   masterIntegrationEnabled: false,
-  masterArtworkEnabled: false,
-  masterMetadataEnabled: false,
-  masterSearchEnabled: false,
+  masterArtworkEnabled: true,
+  masterMetadataEnabled: true,
+  masterSearchEnabled: true,
   masterSEOEnabled: false,
 };
 
@@ -51,6 +56,11 @@ export function integrationDataPaths(rootDir: string): {
   seoMigrationReviewIntegrationDir: string;
   seoMigrationImplementationIntegrationDir: string;
   seoMigrationProductionQaIntegrationDir: string;
+  seoCanaryIntegrationDir: string;
+  seoCanaryProductionIntegrationDir: string;
+  seoCanaryStagingIntegrationDir: string;
+  seoCanaryLimitedProductionIntegrationDir: string;
+  cloudflareProofIntegrationDir: string;
 } {
   return {
     releaseDir: `${rootDir}/src/data/master/release/8.10`,
@@ -70,5 +80,10 @@ export function integrationDataPaths(rootDir: string): {
     seoMigrationReviewIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-review`,
     seoMigrationImplementationIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-implementation`,
     seoMigrationProductionQaIntegrationDir: `${rootDir}/src/data/master/integration/seo-migration-production-qa`,
+    seoCanaryIntegrationDir: `${rootDir}/src/data/master/integration/seo-canary`,
+    seoCanaryProductionIntegrationDir: `${rootDir}/src/data/master/integration/seo-canary-production`,
+    seoCanaryStagingIntegrationDir: `${rootDir}/src/data/master/integration/seo-canary-staging`,
+    seoCanaryLimitedProductionIntegrationDir: `${rootDir}/src/data/master/integration/seo-canary-limited-production`,
+    cloudflareProofIntegrationDir: `${rootDir}/src/data/master/integration/cloudflare-proof`,
   };
 }

@@ -1,0 +1,50 @@
+{
+  "phase": "8.54",
+  "completedAt": "2026-08-13T22:29:18.490Z",
+  "finalVerdict": "LOCAL CANARY PASS",
+  "canaryEnv": {
+    "MASTER_R2_MODE": "DATA_READY",
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterArtworkEnabled": true
+  },
+  "canary": {
+    "code": 0,
+    "pass": 68,
+    "fail": 0,
+    "ms": 20555,
+    "suites": [
+      "src/lib/master/integration/activation-integration.test.ts",
+      "src/lib/master/integration/search-ui-integration.test.ts",
+      "src/lib/master/integration/ui-integration.test.ts",
+      "src/lib/r2/master-r2.test.ts"
+    ]
+  },
+  "typecheck": 0,
+  "testRuns": [
+    {
+      "pass": 449,
+      "fail": 0,
+      "code": 0,
+      "ms": 193285
+    },
+    {
+      "pass": 449,
+      "fail": 0,
+      "code": 0,
+      "ms": 214053
+    },
+    {
+      "pass": 449,
+      "fail": 0,
+      "code": 0,
+      "ms": 188925
+    }
+  ],
+  "release": 0,
+  "build": 0,
+  "bundles": {
+    "client": "PASS",
+    "worker": "PASS"
+  }
+}

@@ -1,3 +1,4 @@
+import preferredArtworkUrls from "@/data/emoji-preferred-artwork-urls.json";
 import { getOpenMojiArtworkPath } from "@/lib/artwork/openmoji";
 
 export interface ArtworkProvider {
@@ -8,6 +9,8 @@ export interface ArtworkProvider {
 }
 
 export const OPENMOJI_PROVIDER_ID = "openmoji";
+
+const PREFERRED_URL_MAP = preferredArtworkUrls as Record<string, string>;
 
 export const openMojiProvider: ArtworkProvider = {
   id: OPENMOJI_PROVIDER_ID,
@@ -28,10 +31,15 @@ export function getArtworkProvider(
   return ARTWORK_PROVIDERS[providerId] ?? null;
 }
 
+/** Client-safe preferred artwork URL (Noto → Fluent → OpenMoji → Twemoji at build time). */
 export function getArtworkPath(
   hexcode: string,
   providerId: string = DEFAULT_ARTWORK_PROVIDER_ID,
 ): string | null {
+  const normalized = hexcode.toUpperCase();
+  const preferred = PREFERRED_URL_MAP[normalized];
+  if (preferred) return preferred;
+
   return getArtworkProvider(providerId)?.getPath(hexcode) ?? null;
 }
 

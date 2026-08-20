@@ -17,6 +17,8 @@ import {
   recentStore,
   toggleFavoriteHexcode,
 } from "@/lib/emoji/local-storage-store";
+import { trackClientEvent } from "@/lib/content/analytics/client";
+import { hexcodeToCanonicalId } from "@/lib/content/analytics/validation";
 
 interface EmojiActionsContextValue {
   favorites: readonly string[];
@@ -50,7 +52,12 @@ export function EmojiActionsProvider({ children }: { children: ReactNode }) {
   );
 
   const toggleFavorite = useCallback((hexcode: string) => {
+    const wasFavorite = favoritesStore.getSnapshot().includes(hexcode);
     toggleFavoriteHexcode(hexcode);
+    trackClientEvent(
+      wasFavorite ? "emoji_unfavorite" : "emoji_favorite",
+      hexcodeToCanonicalId(hexcode),
+    );
   }, []);
 
   const addRecent = useCallback((hexcode: string) => {
@@ -68,7 +75,8 @@ export function EmojiActionsProvider({ children }: { children: ReactNode }) {
 
       setCopiedHexcode(hexcode);
       addRecentHexcode(hexcode);
-      showToast(`Copied ${emoji}`);
+      trackClientEvent("emoji_copy", hexcodeToCanonicalId(hexcode));
+      showToast("Copied! 🚀");
       window.setTimeout(() => {
         setCopiedHexcode((current) => (current === hexcode ? null : current));
       }, 1600);

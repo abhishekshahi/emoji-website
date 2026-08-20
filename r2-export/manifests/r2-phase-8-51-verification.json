@@ -1,0 +1,67 @@
+{
+  "phase": "8.51",
+  "mode": "FAST",
+  "startedAt": "2026-08-13T19:37:00.908Z",
+  "completedAt": "2026-08-13T19:38:14.397Z",
+  "elapsedMs": 73470,
+  "elapsedSec": 73.5,
+  "method": "REST list (or cache) + list-metadata size + MASTER_R2 dot-key probe + HEAD sample + spot SHA-256",
+  "expected": 114498,
+  "restListCount": 114491,
+  "bindingAugmented": 10,
+  "dotKeysProbed": 10,
+  "canonicalPresent": 114498,
+  "remoteObjects": 114501,
+  "missing": 0,
+  "unexpected": 3,
+  "conflicts": 0,
+  "listSizeMismatches": 0,
+  "headSample": {
+    "size": 200,
+    "headOk": 55,
+    "headFailed": 145,
+    "sizeMismatches": 0,
+    "etagSamples": [
+      "artwork/107829cc0d9b64665549b05e19880bafbeff5705a248f68ca08c38afceeec9ba.svg: W/\"c199a86707219131f8bb3e91a5bdb692\"",
+      "artwork/0787cdb9b8f56c020d4220f5d93befe312ced253a3f6f96cb4fa47df56a2708d.svg: W/\"60c5854fe77ca7a4946b7c801c559f4a\"",
+      "artwork/028965896dcfcbd47ed9104616eae15fe444100a4d364e69157eebf45f839f3e.png: \"fa0b07418930b32fb57ef5fcc8a6b5e2\"",
+      "artwork/3ec8a5b870b8c5d330e87a15950a695565580f0a0be8f3b051a6fc496c6d056b.png: \"71485da5d268fbfe294e294ca9695eb2\"",
+      "artwork/26508a76b952da9c971f4a83e970ebef216270376770a9f71856cb0eb2d9ed8a.svg: W/\"f05c985baa351c3c414139e1537ff2ce\""
+    ],
+    "retries": 580,
+    "concurrencyFinal": 64
+  },
+  "spotChecks": {
+    "picked": 8,
+    "verified": 8,
+    "checksumMismatch": 0,
+    "sizeMismatches": 0,
+    "unableToVerify": 0,
+    "retries": 0
+  },
+  "checksumStrategy": {
+    "phase": "C",
+    "title": "Checksum verification strategy (FAST 8.51)",
+    "serverSha256": false,
+    "serverSha256Note": "Cloudflare R2 does not expose per-object SHA-256 checksums via the REST API.",
+    "etagIsSha256": false,
+    "etagNote": "R2 ETag values are opaque identifiers (often MD5-based for single-part uploads), not SHA-256.",
+    "fullContentSha256OnAllObjects": false,
+    "fullContentSha256Note": "Phase 8.50 performs full SHA-256 on all 114,498 objects; Phase 8.51 FAST uses list metadata size checks, HEAD sampling, and category spot checks only.",
+    "spotCheckSha256": true,
+    "spotCheckNote": "Phase D downloads ~10 representative objects and verifies SHA-256 against r2-checksums.sha256.",
+    "jsonTextNormalization": "JSON/md/txt objects strip trailing newline before SHA-256 to match export manifest conventions.",
+    "headSampleSize": 200,
+    "headConcurrency": {
+      "min": 32,
+      "start": 64,
+      "max": 128
+    }
+  },
+  "sizeMismatchesTotal": 0,
+  "checksumMismatches": 0,
+  "frozen": "PASS",
+  "r2Privacy": "PRIVATE",
+  "productionHttp": true,
+  "finalDecision": "FAIL"
+}

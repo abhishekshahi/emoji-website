@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-08-15T11:25:35.346Z",
+  "phase": "8.12G",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "decision": "C. STAGING CANARY FAIL — DO NOT PROCEED",
+  "blocker": "SEO_QA_BASE_URL is required for staging validation; SEO_CANARY_ENVIRONMENT must be set to staging; SEO_QA_OFF_BASE_URL is required for Phase 8.12G phased staging validation; SEO_QA_ROLLBACK_BASE_URL is required for Phase 8.12G phased staging validation",
+  "environment": null,
+  "baseUrl": null,
+  "outputs": {
+    "stagingDeploymentAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/staging-deployment-audit.json",
+    "httpRedirectAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/http-redirect-audit.json",
+    "preservedUrlAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/preserved-url-audit.json",
+    "excludedUrlAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/excluded-url-audit.json",
+    "canonicalAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/canonical-audit.json",
+    "sitemapAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/sitemap-audit.json",
+    "emojiMatrixAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/emoji-matrix-audit.json",
+    "securityAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/security-audit.json",
+    "performanceAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/performance-audit.json",
+    "rollbackAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/rollback-audit.json",
+    "productionSafetyAudit": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/production-safety-audit.json",
+    "stagingManifest": "C:\\Users\\abhis\\OneDrive\\Desktop\\emoji-website/src/data/master/integration/seo-canary-staging/staging-manifest.json"
+  },
+  "summary": {
+    "approvedRedirects": 2280,
+    "preservedUrls": 644,
+    "excludedUrls": 10,
+    "productionPages": 4486,
+    "httpValidationExecuted": false,
+    "masterSEOEnabled": false
+  },
+  "sections": {
+    "stagingDeploymentAudit": "FAIL",
+    "datasetAudit": "PASS",
+    "productionSafetyAudit": "PASS",
+    "redirectBundleAudit": "PASS",
+    "httpRedirectAudit": "BLOCKED",
+    "preservedUrlAudit": "BLOCKED",
+    "excludedUrlAudit": "BLOCKED",
+    "canonicalAudit": "BLOCKED",
+    "sitemapAudit": "BLOCKED",
+    "emojiMatrixAudit": "BLOCKED",
+    "securityAudit": "BLOCKED",
+    "performanceAudit": "BLOCKED",
+    "rollbackAudit": "BLOCKED"
+  },
+  "status": "FAIL"
+}

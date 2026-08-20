@@ -1,5 +1,5 @@
 export const SEARCH_UI_CONTRACT = Object.freeze({
-  debounceMs: 150,
+  debounceMs: 300,
   emptyQueryBehavior: "show-empty-state",
   maxClientEmojiRecords: 4486,
   ambiguousQueries: Object.freeze(["hot"]),

@@ -1,0 +1,1 @@
+# Phase 8.62-B Artwork\n\n**Verdict: PASS**\n\n- resolvePreferredArtwork in src/lib/artwork/resolve-preferred-artwork.ts\n- Priority: Noto, Fluent, OpenMoji, Twemoji\n

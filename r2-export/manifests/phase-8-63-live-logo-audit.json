@@ -1,0 +1,812 @@
+{
+  "phase": "8.63-live-logo-audit",
+  "auditedAt": "2026-08-16T23:07:22.605Z",
+  "production": "https://emojiquick.com",
+  "verdict": "PASS",
+  "officialLogoCharacteristics": {
+    "note": "Visual fidelity verified via official PNG source served at /brand/emojiquick-logo-primary.png (1024x558). Mascot+wordmark composite includes orange/yellow emoji, blue ring, motion elements, orange Emoji + blue Quick wordmark, 3D glossy render.",
+    "sourceAsset": "/brand/emojiquick-logo-official-source.png",
+    "servedPrimary": "/brand/emojiquick-logo-primary.png",
+    "primaryDimensions": {
+      "path": "/brand/emojiquick-logo-primary.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 456969,
+      "width": 1024,
+      "height": 558,
+      "format": "png",
+      "hasAlpha": false,
+      "cache": "public, max-age=0, must-revalidate",
+      "cfCache": "HIT",
+      "ms": 613
+    },
+    "iconDimensions": {
+      "path": "/brand/emojiquick-icon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 433319,
+      "width": 512,
+      "height": 512,
+      "format": "png",
+      "hasAlpha": false,
+      "cache": "public, max-age=0, must-revalidate",
+      "cfCache": "HIT",
+      "ms": 514
+    }
+  },
+  "branding": {
+    "assetHttp": [
+      {
+        "asset": "/brand/emojiquick-logo-primary.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 456969,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 1182
+      },
+      {
+        "asset": "/brand/emojiquick-logo-primary.webp",
+        "status": 200,
+        "contentType": "image/webp",
+        "bytes": 51746,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 186
+      },
+      {
+        "asset": "/brand/emojiquick-icon.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 433319,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 709
+      },
+      {
+        "asset": "/brand/emojiquick-og.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 437258,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 671
+      },
+      {
+        "asset": "/brand/emojiquick-logo-primary-4k.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2323146,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "MISS",
+        "ms": 3155
+      },
+      {
+        "asset": "/brand/favicon-16.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 805,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "MISS",
+        "ms": 292
+      },
+      {
+        "asset": "/brand/favicon-32.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2462,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 134
+      },
+      {
+        "asset": "/brand/favicon-48.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 5084,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "MISS",
+        "ms": 292
+      },
+      {
+        "asset": "/brand/favicon-96.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 18174,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "MISS",
+        "ms": 352
+      },
+      {
+        "asset": "/brand/favicon-180.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 60441,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 219
+      },
+      {
+        "asset": "/brand/favicon-192.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 68432,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "MISS",
+        "ms": 358
+      },
+      {
+        "asset": "/brand/favicon-256.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 117600,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "MISS",
+        "ms": 386
+      },
+      {
+        "asset": "/brand/favicon-512.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 424699,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 684
+      }
+    ],
+    "assetDimensions": [
+      {
+        "path": "/brand/emojiquick-logo-primary.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 456969,
+        "width": 1024,
+        "height": 558,
+        "format": "png",
+        "hasAlpha": false,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 613
+      },
+      {
+        "path": "/brand/emojiquick-icon.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 433319,
+        "width": 512,
+        "height": 512,
+        "format": "png",
+        "hasAlpha": false,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 514
+      },
+      {
+        "path": "/brand/emojiquick-og.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 437258,
+        "width": 1200,
+        "height": 630,
+        "format": "png",
+        "hasAlpha": true,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 654
+      },
+      {
+        "path": "/brand/favicon-32.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2462,
+        "width": 32,
+        "height": 32,
+        "format": "png",
+        "hasAlpha": false,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 217
+      },
+      {
+        "path": "/brand/favicon-180.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 60441,
+        "width": 180,
+        "height": 180,
+        "format": "png",
+        "hasAlpha": false,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 182
+      },
+      {
+        "path": "/brand/favicon-512.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 424699,
+        "width": 512,
+        "height": 512,
+        "format": "png",
+        "hasAlpha": false,
+        "cache": "public, max-age=0, must-revalidate",
+        "cfCache": "HIT",
+        "ms": 495
+      }
+    ],
+    "pageResults": [
+      {
+        "id": "homepage",
+        "path": "/",
+        "status": 200,
+        "ms": 1496,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": {
+          "hasFooter": true,
+          "hasPrimaryInFooter": true,
+          "hasEmojiQuickAlt": true,
+          "hasEmojiFind": false
+        },
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1",
+          "description": "Search, copy, and discover emojis instantly. Browse Unicode emoji meanings, names, keywords, variants, artwork, and code points on EmojiQuick.",
+          "robots": "index, follow",
+          "og:title": "Find the Perfect Emoji",
+          "og:description": "Search, copy, and discover emojis instantly. Browse Unicode emoji meanings, names, keywords, variants, artwork, and code points on EmojiQuick.",
+          "og:url": "https://emojiquick.com",
+          "og:site_name": "EmojiQuick",
+          "og:image": "https://emojiquick.com/brand/emojiquick-og.png",
+          "og:type": "website",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Find the Perfect Emoji",
+          "twitter:description": "Search, copy, and discover emojis instantly. Browse Unicode emoji meanings, names, keywords, variants, artwork, and code points on EmojiQuick.",
+          "twitter:image": "https://emojiquick.com/brand/emojiquick-og.png"
+        },
+        "jsonLd": {
+          "organizationLogo": "https://emojiquick.com/brand/emojiquick-logo-primary.png",
+          "website": {
+            "@type": "WebSite",
+            "@id": "https://emojiquick.com/#website",
+            "name": "EmojiQuick",
+            "url": "https://emojiquick.com/",
+            "description": "Search, copy, and discover emojis instantly. Browse Unicode emoji meanings, names, keywords, variants, artwork, and code points on EmojiQuick.",
+            "publisher": {
+              "@id": "https://emojiquick.com/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          "blockCount": 1
+        }
+      },
+      {
+        "id": "browse",
+        "path": "/emoji",
+        "status": 200,
+        "ms": 299,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "search",
+        "path": "/search?q=heart",
+        "status": 200,
+        "ms": 534,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "explore",
+        "path": "/explore",
+        "status": 200,
+        "ms": 494,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "popular",
+        "path": "/popular",
+        "status": 200,
+        "ms": 314,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "trending",
+        "path": "/trending",
+        "status": 200,
+        "ms": 469,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "styles",
+        "path": "/styles",
+        "status": 200,
+        "ms": 178,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "topics",
+        "path": "/topics/hearts",
+        "status": 200,
+        "ms": 291,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "context",
+        "path": "/context/discord",
+        "status": 200,
+        "ms": 388,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "emoji_fire",
+        "path": "/emoji/fire",
+        "status": 200,
+        "ms": 284,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png",
+          "https://emojiquick.com/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "emoji_grinning",
+        "path": "/emoji/grinning-face",
+        "status": 200,
+        "ms": 415,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png",
+          "https://emojiquick.com/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      },
+      {
+        "id": "emoji_noto",
+        "path": "/emoji/noto",
+        "status": 404,
+        "ms": 600,
+        "emojiQuick": true,
+        "emojiFindHits": [],
+        "oldLogoHits": [],
+        "logoRefs": [
+          "/brand/emojiquick-icon.png",
+          "https://emojiquick.com/brand/emojiquick-og.png",
+          "/favicon.ico?603d046c9a6fdfbb",
+          "/brand/favicon-16.png",
+          "/brand/favicon-32.png",
+          "/brand/favicon-48.png",
+          "/brand/favicon-96.png",
+          "/brand/favicon-180.png",
+          "/brand/favicon-192.png",
+          "/brand/favicon-256.png",
+          "/brand/favicon-512.png",
+          "/brand/emojiquick-logo-primary.png"
+        ],
+        "header": {
+          "hasPrimaryPng": true,
+          "hasPrimaryWebp": true,
+          "hasIconPng": true,
+          "hasPicture": true,
+          "primaryWidth": 1024,
+          "primaryHeight": 558,
+          "iconWidth": 40,
+          "iconHeight": 40,
+          "primaryHasAltEmojiQuick": true,
+          "iconAriaHidden": true,
+          "brandImgCount": 3
+        },
+        "footer": null
+      }
+    ],
+    "favicon": {
+      "path": "/favicon.ico",
+      "status": 200,
+      "contentType": "image/vnd.microsoft.icon"
+    },
+    "appleIcon": {
+      "path": "/apple-icon.png",
+      "status": 200,
+      "bytes": 60441
+    },
+    "appIcon": {
+      "path": "/icon.png",
+      "status": 200,
+      "bytes": 2462
+    },
+    "manifest": {
+      "name": "EmojiQuick",
+      "icons": [
+        {
+          "src": "/brand/favicon-192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/brand/favicon-512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any"
+        },
+        {
+          "src": "/brand/favicon-512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable"
+        }
+      ],
+      "theme_color": "#1B63D8"
+    },
+    "metadata": {
+      "ogImage": "https://emojiquick.com/brand/emojiquick-og.png",
+      "ogSiteName": "EmojiQuick",
+      "twitterCard": "summary_large_image",
+      "twitterImage": "https://emojiquick.com/brand/emojiquick-og.png",
+      "title": "Find the Perfect Emoji"
+    },
+    "jsonLd": {
+      "organizationLogo": "https://emojiquick.com/brand/emojiquick-logo-primary.png",
+      "website": {
+        "@type": "WebSite",
+        "@id": "https://emojiquick.com/#website",
+        "name": "EmojiQuick",
+        "url": "https://emojiquick.com/",
+        "description": "Search, copy, and discover emojis instantly. Browse Unicode emoji meanings, names, keywords, variants, artwork, and code points on EmojiQuick.",
+        "publisher": {
+          "@id": "https://emojiquick.com/#organization"
+        },
+        "inLanguage": "en-US"
+      },
+      "blockCount": 1
+    },
+    "ogImageFetch": {
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 437258
+    },
+    "oldReferenceScan": []
+  },
+  "regression": {
+    "catalogTotal": 6955,
+    "sitemapTotal": 7046,
+    "sitemapEmoji": 6953,
+    "utilityInSitemap": [],
+    "fireHero": "/api/artwork/noto/noto-artwork:1F525:emoji_u1f525.svg",
+    "firePass": true,
+    "r2Private": true
+  },
+  "checks": {
+    "homepageDesktopHeader": "PASS",
+    "homepageMobileHeader": "PASS",
+    "footer": "PASS",
+    "favicon": "PASS",
+    "appleIcon": "PASS",
+    "pwaIcons": "PASS",
+    "openGraph": "PASS",
+    "twitter": "PASS",
+    "jsonLdOrganization": "PASS",
+    "jsonLdWebsite": "PASS",
+    "emojiFindUserFacing": "PASS",
+    "oldLogoActive": "PASS"
+  },
+  "blockers": [],
+  "warnings": [],
+  "signoff": "EMOJIQUICK PHASE 8.63-LIVE = PASS"
+}

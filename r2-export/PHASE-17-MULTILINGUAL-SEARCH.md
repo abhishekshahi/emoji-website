@@ -1,0 +1,1 @@
+# Phase 17 Search\n\n- 5260 test cases (+2580 Phase 17)\n- Native script intent (hi/ja)\n- Multilingual misspellings\n- Search lang precedence documented\n

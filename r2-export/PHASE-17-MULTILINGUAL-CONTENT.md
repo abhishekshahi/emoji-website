@@ -1,0 +1,1 @@
+# Phase 17 Content\n\n- 45 localized emoji pages\n- Localized FAQ (es/fr)\n- UI strings es/fr/de/hi/ja/pt\n- Blog/collections remain EN (by design)\n

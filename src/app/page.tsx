@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryGrid } from "@/components/category/category-grid";
 import { CategoryNav } from "@/components/category/category-nav";
+import { DiscoverySection } from "@/components/discovery/discovery-section";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 import { RecentlyUsedSection } from "@/components/home/recently-used-section";
 import { SearchBar } from "@/components/search/search-bar";
-import {
-  getManifest,
-  getNewEmojis,
-  getPopularEmojis,
-} from "@/lib/emoji/data";
+import { SectionHeader } from "@/components/ui/section-header";
+import { ChipLink } from "@/components/ui/chip";
+import { getManifest, getNewEmojis } from "@/lib/emoji/data";
 import { createPageMetadata } from "@/lib/seo/metadata";
 import { SITE_DESCRIPTION } from "@/lib/site/config";
+import { MOOD_CHIPS, QUICK_SEARCHES } from "@/lib/ui/discovery-chips";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Find the Perfect Emoji",
@@ -20,120 +20,100 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default function HomePage() {
-  const popularEmojis = getPopularEmojis(12);
   const newEmojis = getNewEmojis(12);
   const manifest = getManifest();
 
   return (
-    <div className="page-shell space-y-14">
-      <section className="card-surface overflow-hidden px-6 py-10 sm:px-10 sm:py-14">
-        <div className="mx-auto max-w-3xl space-y-6 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent-strong">
+    <div className="page-shell home-page space-y-12">
+      {/* HERO — search + immediate discovery chips */}
+      <section className="hero-section">
+        <div className="hero-section__glow" aria-hidden="true" />
+        <div className="hero-section__inner mx-auto max-w-3xl space-y-5 text-center">
+          <p className="section-header__eyebrow">
             Unicode Emoji {manifest.emojiVersion}
           </p>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-            Find the Perfect Emoji
-          </h1>
-          <p className="text-lg text-muted">
-            Search, copy and discover emojis instantly.
+          <h1 className="text-display">Find the perfect emoji</h1>
+          <p className="text-lead mx-auto max-w-xl">
+            Search by name, keyword, or Unicode. Copy instantly — no account
+            needed.
           </p>
-          <div className="pt-2">
-            <SearchBar size="hero" />
+          <SearchBar size="hero" />
+          <div className="space-y-2 pt-1">
+            <div className="flex flex-wrap justify-center gap-2">
+              <span className="w-full text-xs font-semibold uppercase tracking-wide text-muted sm:w-auto">
+                Popular:
+              </span>
+              {QUICK_SEARCHES.map((item) => (
+                <ChipLink
+                  key={item.query}
+                  href={`/search?q=${encodeURIComponent(item.query)}`}
+                >
+                  <span aria-hidden="true">{item.emoji}</span>
+                  {item.label}
+                </ChipLink>
+              ))}
+            </div>
+            <div className="flex flex-wrap justify-center gap-2">
+              <span className="w-full text-xs font-semibold uppercase tracking-wide text-muted sm:w-auto">
+                Moods:
+              </span>
+              {MOOD_CHIPS.map((mood) => (
+                <ChipLink
+                  key={mood.query}
+                  href={`/search?q=${encodeURIComponent(mood.query)}`}
+                  variant="outline"
+                >
+                  <span aria-hidden="true">{mood.emoji}</span>
+                  {mood.label}
+                </ChipLink>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <RecentlyUsedSection />
 
-      <section className="space-y-4">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="section-title">Popular Emojis</h2>
-            <p className="section-subtitle">The emojis people reach for most.</p>
-          </div>
-          <Link href="/popular" className="pill-link">
-            View all
-          </Link>
-        </div>
-        <EmojiGrid emojis={popularEmojis} pageSize={12} />
-      </section>
+      {/* TRENDING / POPULAR / CONTEXT */}
+      <DiscoverySection />
 
+      {/* CATEGORIES + artwork styles + extras — contextual exploration */}
       <section className="space-y-4">
-        <div>
-          <h2 className="section-title">Categories</h2>
-          <p className="section-subtitle">Browse by the official Unicode groups.</p>
-        </div>
+        <SectionHeader
+          title="Browse emojis"
+          description="Official Unicode groups, artwork styles, and community extras."
+          action={{ href: "/emoji", label: "Open browser" }}
+        />
         <CategoryNav />
         <CategoryGrid />
-      </section>
-
-      <section className="space-y-4">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="section-title">OpenMoji Extras</h2>
-            <p className="section-subtitle">
-              Additional OpenMoji symbols beyond the standard Unicode emoji set.
-            </p>
-          </div>
-          <Link href="/extras" className="pill-link">
-            Browse extras
-          </Link>
-        </div>
-        <div className="card-surface flex flex-col items-start gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-lg font-semibold">Community-designed symbols</p>
-            <p className="mt-1 text-sm text-muted">
-              Brands, healthcare, climate, queer symbols, and more — licensed under CC BY-SA 4.0.
-            </p>
-          </div>
-          <Link
-            href="/extras"
-            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition hover:bg-accent-strong"
-          >
-            Explore OpenMoji Extras
-          </Link>
+        <div className="flex flex-wrap gap-2 pt-2">
+          <span className="w-full text-xs font-semibold uppercase tracking-wide text-muted">
+            Artwork styles
+          </span>
+          {[
+            { href: "/styles/noto", label: "Noto" },
+            { href: "/styles/fluent", label: "Fluent" },
+            { href: "/styles/openmoji", label: "OpenMoji" },
+            { href: "/styles/twemoji", label: "Twemoji" },
+          ].map((style) => (
+            <ChipLink key={style.href} href={style.href} variant="outline">
+              {style.label}
+            </ChipLink>
+          ))}
+          <ChipLink href="/extras" variant="outline">
+            OpenMoji Extras
+          </ChipLink>
         </div>
       </section>
 
+      {/* RECENTLY ADDED */}
       <section className="space-y-4">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="section-title">Recently Added</h2>
-            <p className="section-subtitle">Fresh emojis from the latest Unicode releases.</p>
-          </div>
-          <Link href="/new" className="pill-link">
-            View all
-          </Link>
-        </div>
+        <SectionHeader
+          title="Recently added"
+          description="Fresh emojis from the latest Unicode releases."
+          action={{ href: "/new", label: "View all" }}
+        />
         <EmojiGrid emojis={newEmojis} pageSize={12} />
-      </section>
-
-      <section className="space-y-4">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="section-title">Browse All Emojis</h2>
-            <p className="section-subtitle">
-              Explore all {manifest.recordCount.toLocaleString()} emojis in the collection.
-            </p>
-          </div>
-          <Link href="/emoji" className="pill-link">
-            Open browser
-          </Link>
-        </div>
-        <div className="card-surface flex flex-col items-start gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-lg font-semibold">Ready to explore?</p>
-            <p className="mt-1 text-sm text-muted">
-              Jump into the full emoji browser with fast search and one-click copy.
-            </p>
-          </div>
-          <Link
-            href="/emoji"
-            className="inline-flex min-h-11 items-center rounded-full bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition hover:bg-accent-strong"
-          >
-            Browse all emojis
-          </Link>
-        </div>
       </section>
     </div>
   );

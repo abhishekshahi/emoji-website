@@ -1,0 +1,1 @@
+# Phase 8.62-F Security Performance\n\n**Verdict: PASS WITH WARNINGS**\n\n- No credentials exposed\n- Noto/Fluent remain 403\n- Discovery cache bounded (24 items, 5min TTL)\n- Deploy blocked: 8.61 gate FAIL\n

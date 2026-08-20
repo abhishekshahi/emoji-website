@@ -1,9 +1,17 @@
 import type { MetadataRoute } from "next";
-import { getAllBrowsableSlugs } from "@/lib/emoji/browsable-data";
 import { getAllCategorySlugs, getManifest } from "@/lib/emoji/data";
 import { getOpenMojiExtrasManifest } from "@/lib/emoji/extras-data";
-import { getCanonicalEmojiSitemapSlugs } from "@/lib/master/integration/seo-migration/redirects";
-import { absoluteUrl } from "@/lib/seo/metadata";
+import { getActiveEmojiSitemapSlugs } from "@/lib/master/integration/seo-canary/active-migration";
+import { getIndexableEmojiPageSlugs } from "@/lib/master/public/identity-slug-map";
+import { getHubPagePaths } from "@/lib/hub/hub-routes";
+import { listPosts } from "@/lib/content/editorial/registry";
+import { listPublishedCombinations } from "@/lib/content/combinations/registry";
+import { listPublishedCollections } from "@/lib/content/collections/registry";
+import { listPublishedLocalizedPages } from "@/lib/content/localization/published-pages";
+import { filterPublishableLocalizedPages } from "@/lib/content/localization/publication";
+import { localizedEmojiPath, type SupportedLanguage } from "@/lib/content/localization/types";
+import { canonicalUrl } from "@/lib/seo/metadata";
+import { getAllPublicSlugs, getIndexableSlugs, kaomojiDataExists, loadCollections } from "@/lib/kaomoji/product/loader";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const manifest = getManifest();
@@ -17,43 +25,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages: MetadataRoute.Sitemap = [
     {
-      url: absoluteUrl("/"),
+      url: canonicalUrl("/"),
       lastModified: generatedAt,
       changeFrequency: "daily",
       priority: 1,
     },
     {
-      url: absoluteUrl("/emoji"),
+      url: canonicalUrl("/emoji"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: absoluteUrl("/extras"),
+      url: canonicalUrl("/extras"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.85,
     },
     {
-      url: absoluteUrl("/popular"),
+      url: canonicalUrl("/popular"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: absoluteUrl("/new"),
+      url: canonicalUrl("/new"),
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: absoluteUrl("/search"),
+      url: canonicalUrl("/search"),
       lastModified: generatedAt,
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: absoluteUrl("/licenses"),
+      url: canonicalUrl("/licenses"),
       lastModified: generatedAt,
       changeFrequency: "yearly",
       priority: 0.3,
@@ -62,21 +70,84 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const categoryPages: MetadataRoute.Sitemap = getAllCategorySlugs().map(
     (category) => ({
-      url: absoluteUrl(`/category/${category}`),
+      url: canonicalUrl(`/category/${category}`),
       lastModified: generatedAt,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     }),
   );
 
-  const emojiPages: MetadataRoute.Sitemap = getCanonicalEmojiSitemapSlugs(getAllBrowsableSlugs()).map(
+  const emojiPages: MetadataRoute.Sitemap = getActiveEmojiSitemapSlugs(getIndexableEmojiPageSlugs()).map(
     (slug) => ({
-      url: absoluteUrl(`/emoji/${slug}`),
+      url: canonicalUrl(`/emoji/${slug}`),
       lastModified: generatedAt,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }),
   );
 
-  return [...staticPages, ...categoryPages, ...emojiPages];
+  const hubPages: MetadataRoute.Sitemap = getHubPagePaths().map((path) => ({
+    url: canonicalUrl(path),
+    lastModified: generatedAt,
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  }));
+
+  const contentPages: MetadataRoute.Sitemap = [
+    ...listPosts().map((post) => ({
+      url: canonicalUrl(`/blog/${post.slug}`),
+      lastModified: new Date(post.updatedAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...listPublishedCombinations().map((combo) => ({
+      url: canonicalUrl(`/combinations/${combo.slug}`),
+      lastModified: new Date(combo.provenance.lastUpdated),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    {
+      url: canonicalUrl("/combinations/generator"),
+      lastModified: generatedAt,
+      changeFrequency: "monthly" as const,
+      priority: 0.55,
+    },
+    ...listPublishedCollections().map((collection) => ({
+      url: canonicalUrl(`/collections/${collection.slug}`),
+      lastModified: new Date(collection.provenance.lastUpdated),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
+    ...filterPublishableLocalizedPages(listPublishedLocalizedPages()).map((page) => ({
+      url: canonicalUrl(localizedEmojiPath(page.language as SupportedLanguage, page.slug)),
+      lastModified: generatedAt,
+      changeFrequency: "monthly" as const,
+      priority: 0.55,
+    })),
+  ];
+
+  const kaomojiPages: MetadataRoute.Sitemap = kaomojiDataExists()
+    ? [
+        {
+          url: canonicalUrl("/kaomoji"),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.85,
+        },
+        ...loadCollections().map((c) => ({
+          url: canonicalUrl(`/kaomoji/collections/${c.slug}`),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.7,
+        })),
+        ...getIndexableSlugs(1000).map((slug) => ({
+          url: canonicalUrl(`/kaomoji/${slug}`),
+          lastModified: generatedAt,
+          changeFrequency: "monthly" as const,
+          priority: 0.65,
+        })),
+      ]
+    : [];
+
+  return [...staticPages, ...hubPages, ...contentPages, ...categoryPages, ...emojiPages, ...kaomojiPages];
 }

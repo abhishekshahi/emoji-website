@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-08-15T11:25:33.615Z",
+  "phase": "8.12H",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "note": "Monitoring comparison not executed - limited-production canary blocked before traffic routing",
+  "canaryMonitoringAvailable": false,
+  "stableMonitoringAvailable": false,
+  "blocker": "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Cloudflare Workers does not expose automated 1% production traffic routing in this repo. Configure canary routing manually via wrangler versions or Cloudflare dashboard.",
+  "status": "BLOCKED"
+}

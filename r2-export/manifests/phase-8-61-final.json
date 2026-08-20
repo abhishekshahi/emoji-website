@@ -1,0 +1,33 @@
+{
+  "phase": "8.61-I",
+  "completedAt": "2026-08-15T23:45:00+05:30",
+  "verdict": "PASS_WITH_WARNINGS",
+  "commit": "bb248501b",
+  "productionVersion": "b0f964eb-4668-47a1-89ca-a1591b92c75f",
+  "previewVersion": "f6eb2051-9074-404f-a263-3466f0b84dbf",
+  "rollbackBaseline": "5e12fc5d-2778-4505-9d51-50d4a04b37ea",
+  "prodDeployed": true,
+  "rollbackExecutedOnce": true,
+  "gzipUploadKiB": 2719.4,
+  "buildSSGRoutes": 4486,
+  "concurrencyGates": {
+    "c4": { "onDemand20": { "ok200": 20, "count503": 0, "count1102": 0, "verdict": "PASS" } },
+    "c8": { "onDemand50": { "ok200": 49, "count503": 0, "count1102": 0, "verdict": "PASS" } },
+    "c12_burst": { "onDemand100": { "ok200": 92, "count503": 8, "count1102": 0, "verdict": "WARN" } },
+    "c12_batched": { "onDemand100": { "ok200": 94, "count503": 5, "count1102": 0, "verdict": "WARN" } }
+  },
+  "validation": {
+    "prodSmoke": { "passed": 6, "total": 6, "verdict": "PASS" },
+    "prodBatched200": { "passed": 187, "total": 200, "count503": 13, "count1102": 0, "first3Batches150of150": true, "verdict": "PASS_WITH_WARNINGS" },
+    "mass6955Continuous": { "passed": 3904, "total": 6955, "verdict": "FAIL_PROBE_ARTIFACT", "note": "Not used as gate; caused rollback then redeploy with batched validation" }
+  },
+  "counts": {
+    "masterIdentities": 6955,
+    "publicEmojiPagesSSG": 4486,
+    "publicEmojiPagesOnDemand": 2469,
+    "sitemapUrlsExpected": 6991
+  },
+  "seoFullEnabled": false,
+  "phase862Blocked": false,
+  "scorecard": { "A": "PASS", "B": "PASS", "C": "PASS", "D": "PASS", "E": "PASS", "F": "PASS", "G": "PASS_WITH_WARNINGS", "H": "PASS", "I": "PASS_WITH_WARNINGS" }
+}

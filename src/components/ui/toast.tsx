@@ -54,10 +54,8 @@ export function ToastProvider({ children }: { children: ReactNode }) {
         className="pointer-events-none fixed inset-x-0 bottom-24 z-[60] flex justify-center px-4 md:bottom-8"
       >
         {toast ? (
-          <p
-            role="status"
-            className="rounded-full bg-foreground px-4 py-2 text-sm font-semibold text-background shadow-lg"
-          >
+          <p role="status" className="toast">
+            <span aria-hidden="true">{"\u2713"}</span>
             {toast.message}
           </p>
         ) : null}

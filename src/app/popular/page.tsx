@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
+import { HubPopularSortNav } from "@/components/hub/hub-nav-sections";
 import { PageHeader } from "@/components/layout/page-header";
 import { getPopularEmojis } from "@/lib/emoji/data";
 
@@ -21,6 +22,7 @@ export default function PopularPage() {
         title="Popular Emojis"
         description="A curated set of the emojis people use most often."
       />
+      <HubPopularSortNav />
       <EmojiGrid emojis={emojis} />
     </div>
   );

@@ -1,0 +1,169 @@
+{
+  "timestamp": "2026-08-20T08:50:00.000Z",
+  "audit_type": "phase19-deep-forensic",
+  "verdict": "PASS",
+  "live_d1_counts": {
+    "category": 56,
+    "keyword": 998,
+    "kaomoji": 50979,
+    "kaomoji_category": 131314,
+    "kaomoji_keyword": 383621,
+    "collection": 20,
+    "collection_item": 4400,
+    "relationship": 392904,
+    "search_metadata": 4,
+    "kaomoji_locale": 198799,
+    "source_attribution": 60165,
+    "production_release": 1
+  },
+  "expected_counts": {
+    "category": 56,
+    "keyword": 998,
+    "kaomoji": 50979,
+    "kaomoji_category": 131314,
+    "kaomoji_keyword": 383621,
+    "collection": 20,
+    "collection_item": 4400,
+    "relationship": 392904,
+    "search_metadata": 4,
+    "kaomoji_locale": 198799,
+    "source_attribution": 60165,
+    "production_release": 1
+  },
+  "raw": {
+    "count": 236508,
+    "expected": 236508,
+    "sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+    "baseline_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+    "removed": 0,
+    "modified": 0
+  },
+  "conservation": {
+    "canonical": 63248,
+    "quality_qualified": 63181,
+    "public": 50979,
+    "duplicate_groups": 49885,
+    "variant_groups": 15143,
+    "legitimate_variants": 2533,
+    "publication_blocked": 12202,
+    "invalid_excluded": 66,
+    "fastemoji_drift_excluded": 3825,
+    "provenance_pct": 100,
+    "license": {
+      "APPROVED": 42956,
+      "ATTRIBUTION_REQUIRED": 8023
+    }
+  },
+  "d1_integrity": {
+    "duplicate_canonical_ids": 0,
+    "duplicate_relationships": 0,
+    "orphan_relationships": 0,
+    "broken_collection_items": 0,
+    "non_public_kaomoji": 0
+  },
+  "locale": {
+    "d1_total": 198799,
+    "d1_unique_keys": 198799,
+    "export_sql_value_lines": 198942,
+    "export_unique_keys": 198799,
+    "multiline_continuation_lines": 143,
+    "reconciliation": "198942 = 198799 unique + 143 multiline continuations",
+    "published_locales_in_d1": 7,
+    "supported_locales_registry": 11,
+    "by_locale": [
+      { "locale": "de", "c": 1 },
+      { "locale": "en", "c": 198793 },
+      { "locale": "es", "c": 1 },
+      { "locale": "fr", "c": 1 },
+      { "locale": "hi", "c": 1 },
+      { "locale": "ja", "c": 1 },
+      { "locale": "pt", "c": 1 }
+    ]
+  },
+  "relationships": {
+    "authoritative_total": 392904,
+    "valid_public_endpoints": 392904,
+    "d1_live": 392904,
+    "export_sql_rows": 392904,
+    "missing": 0,
+    "unexpected": 0,
+    "duplicates": 0
+  },
+  "search_index": {
+    "public_ids": 50979,
+    "index_ids": 50979,
+    "missing": 0,
+    "extra": 0,
+    "benchmark": "122/122"
+  },
+  "production_release": {
+    "version": "2026-08-19-v1",
+    "schema_version": "19.0.0",
+    "production_version": "2026-08-19-v1",
+    "record_count": 50979,
+    "relationship_count": 392904,
+    "collection_count": 20,
+    "checksum_sha256": "aa9633fe1d175656ab071cea2b886126cc1205261317ca16000ecf7edea5d915",
+    "r2_manifest_key": "emojiquick/kaomoji/production/2026-08-19-v1/manifest.json",
+    "released_at": "2026-08-20T02:12:06.288Z"
+  },
+  "gates": {
+    "integrity_audit": "PASS",
+    "canonical_audit": "PASS (0 missing, 0 unexpected)",
+    "validate_d1": "PASS",
+    "r2_verify": "4/4 PASS",
+    "worker_smoke": "13/13 PASS",
+    "search_benchmark": "122/122",
+    "phase19_tests": "61/61 PASS",
+    "typecheck": "PASS",
+    "build": "PASS"
+  },
+  "r2_objects": {
+    "pass": 4,
+    "total": 4,
+    "keys": [
+      "emojiquick/kaomoji/production/2026-08-19-v1/search-index-v2.json",
+      "emojiquick/kaomoji/production/2026-08-19-v1/locale-registry.json",
+      "emojiquick/kaomoji/production/2026-08-19-v1/manifest.json",
+      "emojiquick/kaomoji/production/2026-08-19-v1/checksums.json"
+    ]
+  },
+  "report_accuracy": {
+    "phase19_final_json_match": true,
+    "discrepancies": [
+      {
+        "severity": "INFO",
+        "note": "Initial deep-audit script wranglerScalar returned null on Windows spawnSync; FK checks re-verified via phase19-integrity-audit.ts (all 0)"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "severity": "LOW",
+      "area": "UI",
+      "message": "Detail page related-kaomoji section removed for Worker static compatibility (functional reduction, not data integrity)"
+    },
+    {
+      "severity": "INFO",
+      "area": "locale",
+      "message": "198942 export SQL value-lines = 198799 unique PK rows + 143 multiline field_value continuations"
+    },
+    {
+      "severity": "INFO",
+      "area": "locale",
+      "message": "7 published locales in D1 (en bulk + 6 registry rows); 4 review-required locales (it, ko, zh, ar) in locale-registry only per Phase 15 design"
+    },
+    {
+      "severity": "INFO",
+      "area": "ops",
+      "message": "Use phase19-run-gates-once.mjs for validation; keep phase19-fast-complete.mjs disabled"
+    }
+  ],
+  "severity_summary": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 1,
+    "INFO": 3
+  }
+}

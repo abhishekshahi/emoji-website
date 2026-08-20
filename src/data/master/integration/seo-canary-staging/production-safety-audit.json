@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-08-15T11:25:35.344Z",
+  "phase": "8.12D",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterSEOEnabled": false
+  },
+  "provenance": "production-redirect-qa",
+  "auditOnly": true,
+  "counts": {
+    "standardRecords": 3944,
+    "extrasRecords": 542,
+    "total": 4486
+  },
+  "checks": {
+    "emojisJson": true,
+    "extrasJson": true,
+    "total": true,
+    "frozenRelease": true,
+    "releaseId": "master-8.10-20260809",
+    "featureFlagsDisabled": true
+  },
+  "checksumResult": "PASS",
+  "status": "PASS"
+}

@@ -72,17 +72,6 @@ export function SourceMetadataPanel({ metadata }: SourceMetadataPanelProps) {
               )}
             </article>
           ))}
-
-          {metadata.hasSemanticSourceData ? (
-            <div className="rounded-[0.875rem] border border-dashed border-border bg-surface p-4 text-sm text-muted">
-              <p className="font-semibold text-foreground">Semantic source information</p>
-              <p className="mt-2">
-                EmojiNet source data includes {metadata.emojinetSenseCount.toLocaleString()} senses and{" "}
-                {metadata.emojinetDefinitionCount.toLocaleString()} definitions. These are preserved as source
-                semantics and are not presented as official Unicode meanings.
-              </p>
-            </div>
-          ) : null}
         </div>
       ) : null}
     </section>

@@ -1,10 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { FormEvent, KeyboardEvent, useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { FormEvent, KeyboardEvent, useEffect, useMemo, useState } from "react";
+import { buildSearchHref, resolveDocumentLang } from "@/lib/content/localization/document-lang";
+import { getUiString } from "@/lib/content/localization/ui-strings";
 import { SEARCH_UI_CONTRACT } from "@/lib/emoji/search-ui-contract";
 import { useDebouncedValue } from "@/hooks/use-debounced-value";
+import { useDesktopAutofocus } from "@/hooks/use-desktop-autofocus";
+import { useSearchParams } from "next/navigation";
 
 interface SearchBarProps {
   defaultValue?: string;
@@ -20,11 +24,19 @@ export function SearchBar({
   mode = "submit",
 }: SearchBarProps) {
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const searchLanguage = useMemo(
+    () => resolveDocumentLang(pathname, searchParams.get("lang")),
+    [pathname, searchParams],
+  );
   const [query, setQuery] = useState(defaultValue);
   const debouncedQuery = useDebouncedValue(query, SEARCH_UI_CONTRACT.debounceMs);
+  const desktopAutofocus = useDesktopAutofocus(autoFocus);
   const isHero = size === "hero";
   const isLive = mode === "live";
   const hasQuery = query.trim().length > 0;
+  const placeholder = getUiString("search.placeholder", searchLanguage);
 
   useEffect(() => {
     setQuery(defaultValue);
@@ -36,12 +48,10 @@ export function SearchBar({
     }
 
     const trimmed = debouncedQuery.trim();
-    const nextUrl = trimmed
-      ? `/search?q=${encodeURIComponent(trimmed)}`
-      : "/search";
+    const nextUrl = buildSearchHref(trimmed, searchLanguage);
 
     router.replace(nextUrl, { scroll: false });
-  }, [debouncedQuery, isLive, router]);
+  }, [debouncedQuery, isLive, router, searchLanguage]);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -53,17 +63,17 @@ export function SearchBar({
     const trimmed = query.trim();
 
     if (!trimmed) {
-      router.push("/search");
+      router.push(buildSearchHref("", searchLanguage));
       return;
     }
 
-    router.push(`/search?q=${encodeURIComponent(trimmed)}`);
+    router.push(buildSearchHref(trimmed, searchLanguage));
   };
 
   const handleClear = () => {
     setQuery("");
     if (isLive) {
-      router.replace("/search", { scroll: false });
+      router.replace(buildSearchHref("", searchLanguage), { scroll: false });
     }
   };
 
@@ -77,15 +87,11 @@ export function SearchBar({
   return (
     <form onSubmit={handleSubmit} className="w-full" role="search">
       <label htmlFor="emoji-search" className="sr-only">
-        Search emojis
+        {placeholder}
       </label>
-      <div
-        className={`flex min-h-11 items-center gap-3 rounded-[1.25rem] border border-border bg-surface px-4 shadow-[var(--shadow)] focus-within:ring-2 focus-within:ring-accent/40 ${
-          isHero ? "min-h-16 px-5" : "min-h-12"
-        }`}
-      >
-        <span aria-hidden="true" className={isHero ? "text-2xl" : "text-lg"}>
-          🔎
+      <div className={`search-bar ${isHero ? "search-bar--hero" : ""}`}>
+        <span aria-hidden="true" className={isHero ? "text-xl" : "text-lg"}>
+          {"\u{1F50E}"}
         </span>
         <input
           id="emoji-search"
@@ -94,34 +100,28 @@ export function SearchBar({
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Search by name, keyword, emoji, U+1F525, or 1F525"
-          autoFocus={autoFocus}
+          placeholder={placeholder}
+          autoFocus={desktopAutofocus}
           autoComplete="off"
           enterKeyHint="search"
-          className={`w-full bg-transparent text-foreground placeholder:text-muted focus:outline-none ${
-            isHero ? "text-lg" : "text-base"
-          }`}
+          className={`search-bar__input ${isHero ? "text-lg" : "text-base"}`}
         />
         {hasQuery ? (
           <button
             type="button"
             onClick={handleClear}
-            className="min-h-11 rounded-full px-3 py-2 text-sm font-medium text-muted transition hover:bg-surface-muted hover:text-foreground focus-visible:outline-offset-4"
+            className="btn btn--ghost btn--sm"
             aria-label="Clear search"
           >
             Clear
           </button>
         ) : null}
         {isLive ? (
-          <span className="hidden text-xs font-medium text-muted sm:inline">
-            Live
-          </span>
+          <span className="search-bar__live-badge hidden sm:inline">Live</span>
         ) : (
           <button
             type="submit"
-            className={`min-h-11 rounded-full bg-accent font-semibold text-on-accent transition hover:bg-accent-strong ${
-              isHero ? "px-5 py-3 text-sm" : "px-4 py-2 text-sm"
-            }`}
+            className={`btn btn--primary ${isHero ? "btn--md" : "btn--sm"}`}
           >
             Search
           </button>
@@ -129,9 +129,18 @@ export function SearchBar({
       </div>
       {isHero ? (
         <p className="mt-3 text-sm text-muted">
-          Try <Link href="/search?q=fire" className="underline">fire</Link>,{" "}
-          <Link href="/search?q=heart" className="underline">heart</Link>, or{" "}
-          <Link href="/search?q=U%2B1F525" className="underline">U+1F525</Link>
+          Try{" "}
+          <Link href={buildSearchHref("fire", searchLanguage)} className="underline hover:text-accent-strong">
+            fire
+          </Link>
+          ,{" "}
+          <Link href={buildSearchHref("heart", searchLanguage)} className="underline hover:text-accent-strong">
+            heart
+          </Link>
+          , or{" "}
+          <Link href={buildSearchHref("U+1F525", searchLanguage)} className="underline hover:text-accent-strong">
+            U+1F525
+          </Link>
         </p>
       ) : null}
     </form>

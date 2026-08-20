@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-08-15T11:25:35.346Z",
+  "phase": "8.12G",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "environment": null,
+  "baseUrl": null,
+  "offBaseUrl": null,
+  "rollbackBaseUrl": null,
+  "seoRolloutMode": "CANARY",
+  "masterSeoFeatureFlag": false,
+  "checks": {
+    "baseUrlConfigured": false,
+    "offBaseUrlConfigured": false,
+    "rollbackBaseUrlConfigured": false,
+    "environmentIsStaging": false,
+    "rolloutModeCanarySupported": true,
+    "masterSeoFlagFalse": true,
+    "masterArtworkFlagFalse": false,
+    "masterMetadataFlagFalse": false,
+    "masterSearchFlagFalse": false
+  },
+  "status": "FAIL"
+}

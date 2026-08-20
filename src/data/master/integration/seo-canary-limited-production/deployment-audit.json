@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-08-15T11:25:33.615Z",
+  "phase": "8.12H",
+  "releaseId": "master-8.10-20260809",
+  "featureFlags": {
+    "masterArtworkEnabled": true,
+    "masterMetadataEnabled": true,
+    "masterSearchEnabled": true,
+    "masterSEOEnabled": false
+  },
+  "auditOnly": true,
+  "commitSha": "2eae05a9615f0fd8b3146648cdbbeb346e7ab147",
+  "stableProductionUrl": "https://emojiquick.com",
+  "canaryDeploymentUrl": null,
+  "environment": "production-canary",
+  "seoRolloutMode": "CANARY",
+  "masterSeoFeatureFlag": false,
+  "infrastructure": {
+    "hostingProvider": "cloudflare",
+    "projectId": null,
+    "projectName": "emoji-website",
+    "planSupportsRollingReleases": false,
+    "rollingReleaseConfigured": false,
+    "customProductionDomain": "https://emojiquick.com",
+    "stableProductionUrl": "https://emojiquick.com",
+    "canaryDeploymentCreated": false,
+    "requestedTrafficPercentage": 1,
+    "trafficSplitEnforced": false,
+    "blocker": "LIMITED-PRODUCTION CANARY BLOCKED - TRAFFIC SPLITTING NOT AVAILABLE: Cloudflare Workers does not expose automated 1% production traffic routing in this repo. Configure canary routing manually via wrangler versions or Cloudflare dashboard."
+  },
+  "checks": {
+    "commitRecorded": true,
+    "rolloutModeCanarySupported": true,
+    "masterSeoFlagFalse": true,
+    "masterArtworkFlagFalse": false,
+    "masterMetadataFlagFalse": false,
+    "masterSearchFlagFalse": false,
+    "stableProductionIdentified": true,
+    "canaryDeploymentSafeToCreate": false
+  },
+  "status": "BLOCKED"
+}

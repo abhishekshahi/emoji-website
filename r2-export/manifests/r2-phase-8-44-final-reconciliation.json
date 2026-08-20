@@ -1,0 +1,116 @@
+{
+  "phase": "8.44",
+  "generatedAt": "2026-08-12T16:44:10.297Z",
+  "expectedObjects": 114498,
+  "remoteObjects": 0,
+  "uploaded": 18348,
+  "verified": 0,
+  "failed": 2,
+  "pending": 96148,
+  "missing": [],
+  "unexpected": [],
+  "conflicts": 0,
+  "checksumFailures": [],
+  "sizeMismatches": [],
+  "identities": {
+    "expected": 6955,
+    "verified": 6955
+  },
+  "artworkRecords": {
+    "expected": 40071,
+    "verified": 40071
+  },
+  "uniqueArtworkBinaries": {
+    "expected": 39652,
+    "verified": 39652
+  },
+  "duplicateBinaryReferences": {
+    "expected": 419,
+    "verified": 419
+  },
+  "metadata": {
+    "expected": 6955,
+    "local": 6955
+  },
+  "semantic": {
+    "expected": 6955,
+    "local": 6955
+  },
+  "search": {
+    "expected": 6955,
+    "local": 6955
+  },
+  "provenance": {
+    "expected": 6955,
+    "local": 6955
+  },
+  "license": {
+    "A": [
+      "openmoji",
+      "twemoji"
+    ],
+    "B": [
+      "noto"
+    ],
+    "C": [
+      "fluent",
+      "emojinet-unknown-artwork"
+    ]
+  },
+  "privacy": "PRIVATE",
+  "production": {
+    "checks": [
+      {
+        "url": "https://emojiquick.com/",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/fire",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/emoji/keycap",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/category/smileys-emotion",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/sitemap.xml",
+        "status": 200,
+        "location": null
+      },
+      {
+        "url": "https://emojiquick.com/robots.txt",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "keycapNoRedirect": true
+  },
+  "tests": {
+    "typecheck": {
+      "status": "PASS",
+      "detail": "verified 2026-08-12"
+    },
+    "tests": {
+      "status": "PASS",
+      "detail": "437/437 verified 2026-08-12"
+    },
+    "build": {
+      "status": "PASS",
+      "detail": "next build exit 0 verified 2026-08-12"
+    },
+    "r2ArchTests": {
+      "status": "PASS",
+      "detail": "14/14 r2-architecture tests"
+    }
+  },
+  "build": "PASS",
+  "overallStatus": "INCOMPLETE"
+}
