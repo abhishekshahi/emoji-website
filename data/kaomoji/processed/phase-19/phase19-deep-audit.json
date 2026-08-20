@@ -1,7 +1,14 @@
 {
-  "timestamp": "2026-08-20T08:50:00.000Z",
+  "timestamp": "2026-08-20T12:55:00.000Z",
   "audit_type": "phase19-deep-forensic",
   "verdict": "PASS",
+  "closure": {
+    "status": "FULLY_CLOSED",
+    "merged_to_master": true,
+    "master_head": "237259eec",
+    "pushed_origin_master": true,
+    "related_kaomoji": "RESOLVED"
+  },
   "live_d1_counts": {
     "category": 56,
     "keyword": 998,
@@ -139,9 +146,9 @@
   },
   "findings": [
     {
-      "severity": "LOW",
+      "severity": "RESOLVED",
       "area": "UI",
-      "message": "Detail page related-kaomoji section removed for Worker static compatibility (functional reduction, not data integrity)"
+      "message": "Related-kaomoji section restored at SSG build time; Worker smoke 13/13 PASS"
     },
     {
       "severity": "INFO",
@@ -163,7 +170,8 @@
     "CRITICAL": 0,
     "HIGH": 0,
     "MEDIUM": 0,
-    "LOW": 1,
-    "INFO": 3
+    "LOW": 0,
+    "INFO": 4,
+    "RESOLVED": 1
   }
 }

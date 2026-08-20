@@ -15,7 +15,7 @@ export const VALID_EVENT_KINDS: readonly AnalyticsEventKind[] = [
   "generator_use",
 ] as const;
 
-const CANONICAL_ID_RE = /^unicode:[0-9A-F-]+(?:-[0-9A-F]+)*$/i;
+const CANONICAL_ID_RE = /^(?:unicode:[0-9A-F-]+(?:-[0-9A-F]+)*|kao_[a-f0-9]{16})$/i;
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const LOCALE_RE = /^(en|es|fr|de|hi|ja|pt)$/;
 const MAX_BATCH = 20;

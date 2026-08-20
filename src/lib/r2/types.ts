@@ -3,6 +3,11 @@ import type { ArtworkProvider } from "@/lib/master/artwork/types";
 export interface R2BucketBinding {
   get(key: string): Promise<{ body: ReadableStream | null; httpMetadata?: { contentType?: string } } | null>;
   head?(key: string): Promise<{ size: number; httpMetadata?: { contentType?: string } } | null>;
+  put?(
+    key: string,
+    value: string | ArrayBuffer | ReadableStream,
+    options?: { httpMetadata?: { contentType?: string } },
+  ): Promise<void>;
 }
 
 export interface CanonicalIdentityRecord {

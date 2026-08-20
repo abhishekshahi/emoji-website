@@ -16,6 +16,11 @@ function emptyAggregated(): Record<AnalyticsEventKind, Record<string, number>> {
     emoji_favorite: {},
     emoji_unfavorite: {},
     emoji_share: {},
+    kaomoji_search: {},
+    kaomoji_view: {},
+    kaomoji_copy: {},
+    kaomoji_favorite: {},
+    kaomoji_share: {},
     related_click: {},
     collection_view: {},
     collection_click: {},
@@ -60,4 +65,9 @@ export function getTopCanonicalIds(
     .map(([canonicalId, count]) => ({ canonicalId, count }))
     .sort((a, b) => b.count - a.count)
     .slice(0, limit);
+}
+
+export function getEventCountForCanonical(kind: AnalyticsEventKind, canonicalId: string): number {
+  const snapshot = readStoredEvents();
+  return snapshot.aggregated[kind]?.[canonicalId] ?? 0;
 }

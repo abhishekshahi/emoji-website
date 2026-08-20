@@ -262,6 +262,98 @@ export function getPhase13ManifestPath(rootDir: string): string {
 
 export const PHASE13_PIPELINE_VERSION = "13.0.0-final-audit-analysis-only";
 
+export function getPhase14RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-14");
+}
+
+export function getPhase14ManifestPath(rootDir: string): string {
+  return join(getPhase14RootDir(rootDir), "manifests", "phase-14-final.json");
+}
+
+export function getPhase14SearchIndexPath(rootDir: string): string {
+  return join(getPhase14RootDir(rootDir), "search-index-v2.json");
+}
+
+export const PHASE14_PIPELINE_VERSION = "14.0.0-search-excellence";
+
+export function getPhase15RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-15");
+}
+
+export function getPhase15ManifestPath(rootDir: string): string {
+  return join(getPhase15RootDir(rootDir), "manifests", "phase-15-final.json");
+}
+
+export function getPhase15LocaleRegistryPath(rootDir: string): string {
+  return join(getPhase15RootDir(rootDir), "locale-registry.json");
+}
+
+export const PHASE15_PIPELINE_VERSION = "15.0.0-multilingual-architecture";
+
+export function getPhase16RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-16");
+}
+
+export function getPhase16ManifestPath(rootDir: string): string {
+  return join(getPhase16RootDir(rootDir), "manifests", "phase-16-final.json");
+}
+
+export const PHASE16_PIPELINE_VERSION = "16.0.0-seo-content";
+
+export function getPhase17RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-17");
+}
+
+export function getPhase17ManifestPath(rootDir: string): string {
+  return join(getPhase17RootDir(rootDir), "manifests", "phase-17-final.json");
+}
+
+export const PHASE17_PIPELINE_VERSION = "17.0.0-ui-ux";
+
+export function getPhase18RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-18");
+}
+
+export function getPhase18ManifestPath(rootDir: string): string {
+  return join(getPhase18RootDir(rootDir), "manifests", "phase-18-final.json");
+}
+
+export const PHASE18_PIPELINE_VERSION = "18.0.0-analytics-popularity";
+
 export function getImportFilePath(rootDir: string, sourceId: string): string {
   return join(getKaomojiImportsDir(rootDir), `${sourceId}.json`);
 }
+
+export function getPhase19RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-19");
+}
+
+export function getPhase19ManifestPath(rootDir: string): string {
+  return join(getPhase19RootDir(rootDir), "manifests", "phase-19-final.json");
+}
+
+export function getPhase19ExportDir(rootDir: string): string {
+  return join(getPhase19RootDir(rootDir), "export");
+}
+
+export const PHASE19_PIPELINE_VERSION = "19.0.0-cloudflare-production";
+
+export function getPhase20RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-20");
+}
+
+export function getPhase20ManifestPath(rootDir: string): string {
+  return join(getPhase20RootDir(rootDir), "manifests", "phase-20-final.json");
+}
+
+export const PHASE20_PIPELINE_VERSION = "20.0.0-production-hardening";
+
+export function getPhase21RootDir(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "phase-21");
+}
+
+export function getPhase21ManifestPath(rootDir: string): string {
+  return join(getPhase21RootDir(rootDir), "manifests", "phase-21-final.json");
+}
+
+export const PHASE21_PIPELINE_VERSION = "21.0.0-production-qa-launch";
