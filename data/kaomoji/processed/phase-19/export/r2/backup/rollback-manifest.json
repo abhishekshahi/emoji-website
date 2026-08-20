@@ -1,0 +1,14 @@
+{
+  "version": "2026-08-19-v1",
+  "schema_version": "19.0.0",
+  "cloudflare_mode": "OFF",
+  "previous_version": null,
+  "rollback_steps": [
+    "Restore prior production_release row",
+    "Re-upload rollback R2 manifest",
+    "Set KAOMOJI_CLOUDFLARE_MODE=OFF"
+  ],
+  "manifest_key": "emojiquick/kaomoji/production/2026-08-19-v1/manifest.json",
+  "checksums_key": "emojiquick/kaomoji/production/2026-08-19-v1/checksums.json",
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf"
+}

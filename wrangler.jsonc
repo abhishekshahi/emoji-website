@@ -11,7 +11,8 @@
   "vars": {
     "MASTER_R2_MODE": "ENABLED",
     "MASTER_SEO_ROLLOUT_MODE": "OFF",
-    "PUBLIC_MASTER_PLATFORM_MODE": "ENABLED"
+    "PUBLIC_MASTER_PLATFORM_MODE": "ENABLED",
+    "KAOMOJI_CLOUDFLARE_MODE": "STAGING"
   },
   "assets": {
     "directory": ".open-next/assets",
@@ -21,6 +22,14 @@
     {
       "binding": "WORKER_SELF_REFERENCE",
       "service": "emoji-website"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "KAOMOJI_D1",
+      "database_name": "emojiquick-kaomoji",
+      "database_id": "6fd4a58f-87d6-4533-aa2f-84fadc030561",
+      "migrations_dir": "migrations/kaomoji"
     }
   ],
   "r2_buckets": [

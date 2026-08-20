@@ -7,6 +7,9 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 
 interface Props { params: Promise<{ slug: string }> }
 
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   if (!kaomojiDataExists()) return [];
   return loadCollections().map((c) => ({ slug: c.slug }));

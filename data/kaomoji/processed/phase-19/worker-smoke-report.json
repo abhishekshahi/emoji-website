@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-08-20T09:10:53.603Z",
+  "worker_base": "https://emoji-website.emoji-website.workers.dev",
+  "sample_slug": "kao-00013e7cc777f411",
+  "sample_collection": "best-kaomoji",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/kaomoji",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/kaomoji/kao-00013e7cc777f411",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/kaomoji/collections/best-kaomoji",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?q=anime&limit=5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?q=&limit=5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?q=%E7%8C%AB&limit=5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?q=%F0%9F%98%80&limit=5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?limit=2&offset=0",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?q=invalid-id-test-xyz&limit=5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?q=%00%00&limit=5",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/api/kaomoji/search?limit=99999",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "path": "/kaomoji/invalid-slug-does-not-exist-xyz",
+      "status": 404,
+      "ok": true
+    }
+  ],
+  "pass": 13,
+  "total": 13,
+  "valid": true
+}

@@ -1,0 +1,26 @@
+﻿node.exe : npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm 
+help npmrc` for supported config options.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+{
+  "timestamp": "2026-08-20T08:28:02.571Z",
+  "remote": true,
+  "counts": {
+    "kaomoji": 50979,
+    "relationships": 392904,
+    "category": 56,
+    "keyword": 998,
+    "collection": 20
+  },
+  "expected": {
+    "kaomoji": 50979,
+    "relationships": 392904
+  },
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "valid": true,
+  "errors": []
+}

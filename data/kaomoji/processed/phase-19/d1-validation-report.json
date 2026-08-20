@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-08-20T08:44:43.038Z",
+  "remote": true,
+  "counts": {
+    "kaomoji": 50979,
+    "relationships": 392904,
+    "category": 56,
+    "keyword": 998,
+    "collection": 20
+  },
+  "expected": {
+    "kaomoji": 50979,
+    "relationships": 392904
+  },
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "valid": true,
+  "errors": []
+}

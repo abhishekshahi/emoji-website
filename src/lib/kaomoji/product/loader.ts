@@ -3,7 +3,10 @@ import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import type { KaomojiCollection, KaomojiEditorialRecord, Phase9Manifest } from "../processing/phase9/types";
 import type { SearchIndex } from "../processing/phase9/search-index";
+import type { SearchIndexV2 } from "../processing/phase14/types";
+import { buildSearchIndexV2 } from "../processing/phase14/search-index-v2";
 import type { KaomojiRelationship } from "../processing/phase9/types";
+import { relatedForRecord } from "../processing/phase9/relationships";
 import type { Phase12Manifest } from "../processing/phase12/types";
 import {
   getPhase9EditorialDir,
@@ -11,11 +14,14 @@ import {
   getPhase9RootDir,
   getPhase12ManifestPath,
   getPhase12PublicQualityDir,
+  getPhase14SearchIndexPath,
 } from "../storage/paths";
 
 let editorialCache: KaomojiEditorialRecord[] | null = null;
 let searchIndexCache: SearchIndex | null = null;
+let searchIndexV2Cache: SearchIndexV2 | null = null;
 let relationshipsCache: KaomojiRelationship[] | null = null;
+let relatedByFromCache: Map<string, readonly KaomojiRelationship[]> | null = null;
 let collectionsCache: KaomojiCollection[] | null = null;
 let slugMapCache: Record<string, string> | null = null;
 let manifestCache: Phase9Manifest | null = null;
@@ -82,6 +88,21 @@ export function loadSearchIndex(): SearchIndex {
   return searchIndexCache!;
 }
 
+export function phase14DataExists(): boolean {
+  return existsSync(getPhase14SearchIndexPath(rootDir()));
+}
+
+export function loadSearchIndexV2(): SearchIndexV2 {
+  if (!searchIndexV2Cache) {
+    if (phase14DataExists()) {
+      searchIndexV2Cache = loadJson(getPhase14SearchIndexPath(rootDir()));
+    } else {
+      searchIndexV2Cache = buildSearchIndexV2([...loadEditorialRecords()]);
+    }
+  }
+  return searchIndexV2Cache!;
+}
+
 export function loadRelationships(): readonly KaomojiRelationship[] {
   if (!relationshipsCache) {
     const p = phase12DataExists()
@@ -90,6 +111,43 @@ export function loadRelationships(): readonly KaomojiRelationship[] {
     relationshipsCache = loadJson(p);
   }
   return relationshipsCache!;
+}
+
+function relatedByFromIndex(): Map<string, readonly KaomojiRelationship[]> {
+  if (!relatedByFromCache) {
+    const index = new Map<string, KaomojiRelationship[]>();
+    for (const rel of loadRelationships()) {
+      const list = index.get(rel.from_canonical_id) ?? [];
+      list.push(rel);
+      index.set(rel.from_canonical_id, list);
+    }
+    relatedByFromCache = new Map(
+      [...index.entries()].map(([id, list]) => [
+        id,
+        [...list].sort(
+          (a, b) => b.score - a.score || a.to_canonical_id.localeCompare(b.to_canonical_id),
+        ),
+      ]),
+    );
+  }
+  return relatedByFromCache;
+}
+
+/** Public editorial records related to a canonical id (build-time / SSG safe). */
+export function getRelatedEditorialRecords(canonicalId: string, limit = 8): readonly KaomojiEditorialRecord[] {
+  const rels = relatedByFromIndex().get(canonicalId) ?? relatedForRecord(loadRelationships(), canonicalId, limit);
+  const byId = new Map(loadEditorialRecords().map((r) => [r.canonical_id, r]));
+  const seen = new Set<string>();
+  const out: KaomojiEditorialRecord[] = [];
+  for (const rel of rels) {
+    if (rel.to_canonical_id === canonicalId || seen.has(rel.to_canonical_id)) continue;
+    const record = byId.get(rel.to_canonical_id);
+    if (!record?.is_public) continue;
+    seen.add(rel.to_canonical_id);
+    out.push(record);
+    if (out.length >= limit) break;
+  }
+  return out;
 }
 
 export function loadCollections(): readonly KaomojiCollection[] {

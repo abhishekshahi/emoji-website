@@ -1,0 +1,52 @@
+﻿node.exe : npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm 
+help npmrc` for supported config options.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+{
+  "timestamp": "2026-08-20T08:28:15.443Z",
+  "remote": true,
+  "counts": {
+    "category": 56,
+    "keyword": 998,
+    "kaomoji": 50979,
+    "kaomoji_category": 131314,
+    "kaomoji_keyword": 383621,
+    "collection": 20,
+    "collection_item": 4400,
+    "relationship": 392904,
+    "search_metadata": 4,
+    "kaomoji_locale": 198799,
+    "source_attribution": 60165,
+    "production_release": 1
+  },
+  "expected": {
+    "category": 56,
+    "keyword": 998,
+    "kaomoji": 50979,
+    "kaomoji_category": 131314,
+    "kaomoji_keyword": 383621,
+    "collection": 20,
+    "collection_item": 4400,
+    "relationship": 392904,
+    "search_metadata": 4,
+    "kaomoji_locale": 198799,
+    "source_attribution": 60165,
+    "production_release": 1
+  },
+  "duplicate_canonical_ids": 0,
+  "duplicate_relationships": 0,
+  "broken_collection_items": 0,
+  "orphan_relationships": 0,
+  "multiline_records": {
+    "kao_45ca69b73e510a92": true,
+    "kao_45d80596a904a64c": true
+  },
+  "search_benchmark": "122/122",
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "valid": true,
+  "errors": []
+}
