@@ -3,9 +3,9 @@
   "tier_high_bytes": 1220755,
   "tier_good_bytes": 221523,
   "tier_medium_bytes": 109281,
-  "public_production_bytes": 656858956,
-  "quality_dataset_bytes": 737278221,
-  "full_processing_bytes": 3165463477,
+  "public_production_bytes": 661607835,
+  "quality_dataset_bytes": 742315008,
+  "full_processing_bytes": 3659527810,
   "full_raw_bytes": 237793446,
   "files": [
     {
@@ -14,11 +14,11 @@
     },
     {
       "path": "phase-12/public-quality/canonical-records.json",
-      "bytes": 170475987
+      "bytes": 171739184
     },
     {
       "path": "processed/phase-12/public-quality/canonical-records.json",
-      "bytes": 170475987
+      "bytes": 171739184
     },
     {
       "path": "processed/phase-12/public-library/canonical-records.json",
@@ -30,11 +30,11 @@
     },
     {
       "path": "phase-12/public-quality/provenance.json",
-      "bytes": 126989027
+      "bytes": 127946622
     },
     {
       "path": "processed/phase-12/public-quality/provenance.json",
-      "bytes": 126989027
+      "bytes": 127946622
     },
     {
       "path": "processed/phase-8/proposed-library/source-occurrences.json",
@@ -45,16 +45,16 @@
       "bytes": 123823115
     },
     {
-      "path": "processed/phase-9/editorial/editorial-records.json",
-      "bytes": 119409417
-    },
-    {
       "path": "phase-12/public-quality/scores.json",
-      "bytes": 118739307
+      "bytes": 119580305
     },
     {
       "path": "processed/phase-12/public-quality/scores.json",
-      "bytes": 118739307
+      "bytes": 119580305
+    },
+    {
+      "path": "processed/phase-9/editorial/editorial-records.json",
+      "bytes": 119409417
     },
     {
       "path": "processed/phase-7/proposed-published/records.json",
@@ -70,10 +70,14 @@
     },
     {
       "path": "phase-12/public-quality/editorial.json",
-      "bytes": 97525959
+      "bytes": 98186972
     },
     {
       "path": "processed/phase-12/public-quality/editorial.json",
+      "bytes": 98186972
+    },
+    {
+      "path": "processed/final/pre-promotion-backup/editorial.json",
       "bytes": 97525959
     },
     {
@@ -81,19 +85,31 @@
       "bytes": 91731404
     },
     {
+      "path": "processed/phase-14/search-index-v2.json",
+      "bytes": 86818750
+    },
+    {
+      "path": "processed/phase-19/export/r2/public/search-index-v2.json",
+      "bytes": 86818750
+    },
+    {
       "path": "processed/phase-7/duplicate-analysis/groups.json",
       "bytes": 85695059
+    },
+    {
+      "path": "phase-12/public-quality/relationships.json",
+      "bytes": 75428226
+    },
+    {
+      "path": "processed/phase-12/public-quality/relationships.json",
+      "bytes": 75428226
     },
     {
       "path": "processed/phase-9/editorial/relationships.json",
       "bytes": 74871891
     },
     {
-      "path": "phase-12/public-quality/relationships.json",
-      "bytes": 74870367
-    },
-    {
-      "path": "processed/phase-12/public-quality/relationships.json",
+      "path": "processed/final/pre-promotion-backup/relationships.json",
       "bytes": 74870367
     },
     {
@@ -109,16 +125,16 @@
       "bytes": 70092924
     },
     {
-      "path": "processed/phase-9/editorial/search-index.json",
-      "bytes": 66617250
-    },
-    {
       "path": "phase-12/public-quality/search-index.json",
-      "bytes": 66615591
+      "bytes": 67083808
     },
     {
       "path": "processed/phase-12/public-quality/search-index.json",
-      "bytes": 66615591
+      "bytes": 67083808
+    },
+    {
+      "path": "processed/phase-9/editorial/search-index.json",
+      "bytes": 66617250
     },
     {
       "path": "processed/phase-12/public-library/search-index.json",
@@ -174,11 +190,11 @@
     },
     {
       "path": "phase-12/public-quality/publication-gate.json",
-      "bytes": 21406773
+      "bytes": 21404619
     },
     {
       "path": "processed/phase-12/public-quality/publication-gate.json",
-      "bytes": 21406773
+      "bytes": 21404619
     },
     {
       "path": "processed/aggregated.json",
@@ -186,11 +202,11 @@
     },
     {
       "path": "phase-12/public-quality/categories.json",
-      "bytes": 18558466
+      "bytes": 18688904
     },
     {
       "path": "processed/phase-12/public-quality/categories.json",
-      "bytes": 18558466
+      "bytes": 18688904
     },
     {
       "path": "processed/phase-12/public-library/categories.json",
@@ -218,19 +234,19 @@
     },
     {
       "path": "phase-12/public-quality/names.json",
-      "bytes": 12793676
+      "bytes": 12881985
     },
     {
       "path": "processed/phase-12/public-quality/names.json",
-      "bytes": 12793676
+      "bytes": 12881985
     },
     {
       "path": "phase-12/public-quality/keywords.json",
-      "bytes": 12412439
+      "bytes": 12502018
     },
     {
       "path": "processed/phase-12/public-quality/keywords.json",
-      "bytes": 12412439
+      "bytes": 12502018
     },
     {
       "path": "processed/preservation-audit.json",
@@ -250,11 +266,11 @@
     },
     {
       "path": "phase-12/public-quality/meanings.json",
-      "bytes": 9618461
+      "bytes": 9664772
     },
     {
       "path": "processed/phase-12/public-quality/meanings.json",
-      "bytes": 9618461
+      "bytes": 9664772
     },
     {
       "path": "processed/phase-12/public-library/meanings.json",
@@ -269,8 +285,20 @@
       "bytes": 8592524
     },
     {
+      "path": "processed/final/maximum-coverage-review-queue.json",
+      "bytes": 8076947
+    },
+    {
+      "path": "processed/phase-19/d1-kaomoji-ids.json",
+      "bytes": 6813054
+    },
+    {
       "path": "processed/normalized.json",
       "bytes": 4896695
+    },
+    {
+      "path": "processed/phase-19/export/r2/rebuildable/manifest.json",
+      "bytes": 3903434
     },
     {
       "path": "processed/phase-12/public-library/excluded-manifest.json",
@@ -282,51 +310,23 @@
     },
     {
       "path": "phase-12/public-quality/excluded-records.json",
-      "bytes": 2843086
+      "bytes": 2760593
     },
     {
       "path": "processed/phase-12/public-quality/excluded-records.json",
-      "bytes": 2843086
+      "bytes": 2760593
     },
     {
       "path": "phase-12/public-quality/slug-map.json",
-      "bytes": 2548953
+      "bytes": 2566903
     },
     {
       "path": "processed/phase-12/public-quality/slug-map.json",
-      "bytes": 2548953
+      "bytes": 2566903
     },
     {
       "path": "processed/phase-12/public-library/slug-map.json",
       "bytes": 2367603
-    },
-    {
-      "path": "phase-12/public-quality/high/canonical-ids.json",
-      "bytes": 1220755
-    },
-    {
-      "path": "phase-12/public-quality/high/canonical-ids.json",
-      "bytes": 1220755
-    },
-    {
-      "path": "processed/phase-12/public-quality/high/canonical-ids.json",
-      "bytes": 1220755
-    },
-    {
-      "path": "processed/phase-12/public-library/high/canonical-ids.json",
-      "bytes": 1041069
-    },
-    {
-      "path": "phase-12/public-quality/good/canonical-ids.json",
-      "bytes": 221523
-    },
-    {
-      "path": "phase-12/public-quality/good/canonical-ids.json",
-      "bytes": 221523
-    },
-    {
-      "path": "processed/phase-12/public-quality/good/canonical-ids.json",
-      "bytes": 221523
     }
   ]
 }

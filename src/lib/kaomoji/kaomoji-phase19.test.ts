@@ -108,8 +108,8 @@ describe("phase 19 cloudflare production", () => {
   it("31 manifest exists", () => assert.ok(manifestExists));
   it("32 phase number 19", () => assert.equal(m().phase, 19));
   it("33 pipeline version", () => assert.match(m().pipeline_version, /^19\./));
-  it("34 public records 50979", () => assert.equal(m().public_records, 50979));
-  it("35 relationships 392904", () => assert.equal(m().relationships, 392904));
+  it("34 public records 51338", () => assert.equal(m().public_records, 51338));
+  it("35 relationships 395833", () => assert.equal(m().relationships, 395833));
   it("36 no broken relationships exported", () => assert.equal(m().relationships_rejected, 0));
   it("37 collections > 0", () => assert.ok(m().collections > 0));
   it("38 d1 batches >= 2000", () => assert.ok(m().d1_batches >= 2000));
@@ -118,7 +118,7 @@ describe("phase 19 cloudflare production", () => {
   it("41 validation valid", () => assert.equal(m().validation.valid, true));
   it("42 export validation helper", () => {
     const v = validatePhase19Export(root);
-    assert.equal(v.counts.public_records, 50979);
+    assert.equal(v.counts.public_records, 51338);
     assert.equal(v.valid, true);
   });
   it("43 manifest validation helper", () => assert.equal(validatePhase19Manifest(m()).valid, true));
@@ -144,8 +144,8 @@ describe("phase 19 cloudflare production", () => {
     const after = runPhase19Pipeline(root).manifest.public_records;
     assert.equal(before, after);
   });
-  it("56 d1 import expected kaomoji", () => assert.equal(EXPECTED_KAOMOJI, 50979));
-  it("57 d1 import expected relationships", () => assert.equal(EXPECTED_RELATIONSHIPS, 392904));
+  it("56 d1 import expected kaomoji", () => assert.equal(EXPECTED_KAOMOJI, 51338));
+  it("57 d1 import expected relationships", () => assert.equal(EXPECTED_RELATIONSHIPS, 396162));
   it("58 d1 import table order kaomoji before relationship", () => {
     assert.ok(IMPORT_TABLE_ORDER.indexOf("kaomoji") < IMPORT_TABLE_ORDER.indexOf("relationship"));
   });

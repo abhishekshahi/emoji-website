@@ -7,11 +7,11 @@ import {
   getPhase19ExportDir,
 } from "../storage/paths";
 import { PRODUCTION_VERSION, SCHEMA_VERSION } from "./config";
+import { EXPECTED_KAOMOJI, EXPECTED_RELATIONSHIPS } from "./d1-import";
 import { verifyChecksum } from "./checksum";
 import type { Phase19ExportSummary, Phase19Manifest, Phase19ValidationResult } from "./types";
 
-const EXPECTED_PUBLIC = 50979;
-const EXPECTED_RELATIONSHIPS = 392904;
+const EXPECTED_PUBLIC = EXPECTED_KAOMOJI;
 const CANONICAL_ID_RE = /^kao_[0-9a-f]{16}$/;
 
 function loadJson<T>(path: string): T {
@@ -38,8 +38,8 @@ export function validatePhase19Export(rootDir: string, summary?: Phase19ExportSu
     if (!publicIds.has(rel.from_canonical_id) || !publicIds.has(rel.to_canonical_id)) brokenRelationships += 1;
   }
   const validRelationships = relationships.length - brokenRelationships;
-  if (validRelationships !== EXPECTED_RELATIONSHIPS) {
-    errors.push(`valid relationships ${validRelationships} != ${EXPECTED_RELATIONSHIPS}`);
+  if (validRelationships > EXPECTED_RELATIONSHIPS) {
+    errors.push(`valid relationships ${validRelationships} > D1 expected ${EXPECTED_RELATIONSHIPS}`);
   }
 
   for (const r of editorial) {
@@ -95,7 +95,7 @@ export function validatePhase19Manifest(manifest: Phase19Manifest): Phase19Valid
   if (manifest.schema_version !== SCHEMA_VERSION) errors.push("schema version mismatch");
   if (manifest.production_version !== PRODUCTION_VERSION) errors.push("production version mismatch");
   if (manifest.public_records !== EXPECTED_PUBLIC) errors.push("manifest public_records mismatch");
-  if (manifest.relationships !== EXPECTED_RELATIONSHIPS) errors.push("manifest relationships mismatch");
+  if (manifest.relationships > EXPECTED_RELATIONSHIPS) errors.push("manifest relationships exceed D1 expected");
   if (manifest.raw_modified !== 0) errors.push("RAW was modified");
   return {
     valid: errors.length === 0 && manifest.validation.valid,

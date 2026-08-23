@@ -1,0 +1,130 @@
+{
+  "timestamp": "2026-08-23T21:05:00.000Z",
+  "mode": "359_PROMOTION_FINAL",
+  "verdict": "MAXIMUM_LEGITIMATE_PUBLIC_COVERAGE_ACHIEVED",
+  "summary": {
+    "previous_public": 50979,
+    "newly_promoted": 359,
+    "final_public": 51338,
+    "canonical": 63248,
+    "remaining_blocked": 11910,
+    "unresolved": 0
+  },
+  "baseline": {
+    "raw": 236508,
+    "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+    "raw_unchanged": true,
+    "canonical_unchanged": true
+  },
+  "promotion_breakdown": {
+    "path_a_near_duplicate_curation": 352,
+    "path_b_wikipedia_attribution": 7,
+    "independently_validated": 359,
+    "failed_validation": 0
+  },
+  "table_deltas": {
+    "kaomoji": { "before": 50979, "inserts": 359, "deletes": 0, "after": 51338 },
+    "relationship": {
+      "before": 392904,
+      "inserts": 3258,
+      "deletes": 0,
+      "after": 396162,
+      "note": "INSERT-ONLY; 329 rebuild-proposed deletes rejected (hub edge preservation on kao_643ba83911238b9b)"
+    },
+    "category": { "before": 56, "inserts": 0, "deletes": 0, "after": 56 },
+    "keyword": { "before": 998, "inserts": 0, "deletes": 0, "after": 998 },
+    "kaomoji_category": { "before": 131314, "inserts": 925, "deletes": 0, "after": 132239 },
+    "kaomoji_keyword": { "before": 383621, "inserts": 2819, "deletes": 0, "after": 386440 },
+    "kaomoji_locale": {
+      "before": 198799,
+      "inserts": 1416,
+      "deletes": 0,
+      "after": 200215,
+      "note": "Preflight projected 1419; 3 OR IGNORE duplicates + locale-repair for 19 records (73 rows inserted)"
+    },
+    "source_attribution": { "before": 60165, "inserts": 406, "deletes": 0, "after": 60571 },
+    "search_metadata": { "before": 4, "inserts": 0, "deletes": 0, "after": 4 },
+    "collection": { "before": 20, "inserts": 0, "deletes": 0, "after": 20 },
+    "collection_item": { "before": 4400, "inserts": 0, "deletes": 0, "after": 4400 },
+    "production_release": { "before": 1, "inserts": 0, "deletes": 0, "after": 1 }
+  },
+  "remote_d1_verification": {
+    "timestamp": "2026-08-23T21:02:14.882Z",
+    "verification_passes": true,
+    "public_is_public": 51338,
+    "promoted_verified": 359,
+    "promoted_missing": [],
+    "promoted_not_public": [],
+    "wikipedia_attribution_ok": 7,
+    "wikipedia_missing": [],
+    "not_searchable": [],
+    "duplicate_kaomoji": 0,
+    "orphan_relationships": 0,
+    "errors": []
+  },
+  "wikipedia_records": [
+    "kao_1c20b20807593325",
+    "kao_4ec890fc486eb81a",
+    "kao_606d42f69781fc0b",
+    "kao_969f17fb8c0d495f",
+    "kao_b8497b96e26608ca",
+    "kao_ed7fed7d4920fbe0",
+    "kao_fa2aed3d508448cc"
+  ],
+  "library_vs_d1": {
+    "library_relationships": 395833,
+    "d1_relationships": 396162,
+    "d1_preserved_hub_edges": 329
+  },
+  "search": {
+    "benchmark_local": "122/122",
+    "index_records": 51338,
+    "promoted_searchable": 359
+  },
+  "deployment": {
+    "url": "https://emoji-website.emoji-website.workers.dev",
+    "deployment_id": "ec27b790-d543-4309-86ea-02d406547130",
+    "build_id": "yFlpfotHYEMHeOyc1sjsC",
+    "r2_upload": {
+      "search_index_sha256": "91e5f93876750e3b27108dc63315314ea6b4288fc5f584b10a6e3c86a6618668",
+      "manifest_sha256": "a1547c9ba78590710057d1ec563e94c1aca0644346b499835b1f84079290950b",
+      "objects_uploaded": 5
+    }
+  },
+  "live_verification": {
+    "worker_smoke": "13/13",
+    "r2_verify": "4/4",
+    "promoted_detail_pages": [
+      { "slug": "kao-003dbccdfa4bbd4f", "status": 200, "json_ld": true, "canonical": true, "related": true },
+      { "slug": "kao-1c20b20807593325", "status": 200, "attribution": true },
+      { "slug": "kao-fa2aed3d508448cc", "status": 200 }
+    ],
+    "blocked_leak_tests": [
+      { "slug": "kao-ffffffffffffffff", "status": 404 },
+      { "slug": "kao-000c332b7e7b5b52", "status": 404, "reason": "LICENSE_UNKNOWN / REVIEW_REQUIRED" }
+    ],
+    "search_api": { "status": 200, "results_returned": true },
+    "sitemap": { "status": 200 },
+    "collections_pagination": { "path": "/kaomoji/collections/best-kaomoji/page/2", "status": 200 },
+    "security_headers": {
+      "x_frame_options": "SAMEORIGIN",
+      "referrer_policy": "strict-origin-when-cross-origin"
+    }
+  },
+  "gates": {
+    "typecheck": true,
+    "phase19_tests": "60/60",
+    "phase20_tests": "50/50",
+    "phase21_tests": "50/50",
+    "npm_build": true,
+    "npm_build_cf": true,
+    "phase22_started": false
+  },
+  "artifacts": {
+    "preflight": "data/kaomoji/processed/final/359-promotion-preflight.json",
+    "post_verify": "data/kaomoji/processed/final/359-promotion-post-verify.json",
+    "incremental_sql_dir": "data/kaomoji/processed/final/d1-incremental/",
+    "curation_resolutions": "data/kaomoji/processed/final/curation-resolutions.json",
+    "promotion_decisions": "data/kaomoji/processed/final/promotion-decisions.json"
+  }
+}

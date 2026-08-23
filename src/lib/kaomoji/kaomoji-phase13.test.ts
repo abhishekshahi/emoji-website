@@ -21,7 +21,7 @@ describe("phase 13 final audit", () => {
 
   it("1 canonical 63248", () => assert.equal(m().canonical_candidates, 63248));
   it("2 quality qualified 63181", () => assert.equal(m().quality_qualified, 63181));
-  it("3 public 50979", () => assert.equal(m().publication_eligible, 50979));
+  it("3 public 51338", () => assert.equal(m().publication_eligible, 51338));
   it("4 excellent public 3017", () => assert.equal(m().excellent_public, 3017));
   it("5 high public 40041", () => assert.equal(m().high_public, 40041));
   it("6 good public 4294", () => assert.equal(m().good_public, 4294));
@@ -38,13 +38,13 @@ describe("phase 13 final audit", () => {
   it("14 duplicate groups 49885", () => assert.equal(m().duplicate_groups, 49885));
   it("15 variant groups 15143", () => assert.equal(m().variant_groups, 15143));
   it("16 legitimate variants 2533", () => assert.equal(m().legitimate_variants, 2533));
-  it("17 relationships 392904", () => assert.equal(m().relationships, 392904));
+  it("17 relationships 395833", () => assert.equal(m().relationships, 395833));
   it("18 provenance coverage 100pct", () => assert.equal(m().provenance_coverage_pct, 100));
   it("19 license audit present", () => assert.ok(Object.keys(m().license).length > 0));
   it("20 content validation mostly valid", () => {
     const cv = m().content_validation;
     assert.ok(cv.valid >= 50000);
-    assert.equal(cv.valid + cv.review + cv.invalid, 50979);
+    assert.equal(cv.valid + cv.review + cv.invalid, 51338);
   });
   it("21 search pass rate", () => assert.ok(m().search_pass_rate >= 0.9));
   it("22 storage public production", () => assert.ok(m().storage.public_production_bytes > 1000000));
@@ -61,16 +61,16 @@ describe("phase 13 final audit", () => {
   });
   it("27 editorial all public", () => {
     const ed = JSON.parse(readFileSync(join(lib(), "editorial.json"), "utf8"));
-    assert.equal(ed.length, 50979);
+    assert.equal(ed.length, 51338);
     assert.ok(ed.every((r: { is_public: boolean }) => r.is_public));
   });
   it("28 scores unchanged from phase10", () => {
     const s = JSON.parse(readFileSync(join(lib(), "scores.json"), "utf8"));
-    assert.equal(s.length, 50979);
+    assert.equal(s.length, 51338);
   });
   it("29 relationships file size", () => {
     const r = JSON.parse(readFileSync(join(lib(), "relationships.json"), "utf8"));
-    assert.equal(r.length, 392904);
+    assert.equal(r.length, 395833);
   });
   it("30 collections exist", () => {
     const c = JSON.parse(readFileSync(join(lib(), "collections.json"), "utf8"));
@@ -78,23 +78,23 @@ describe("phase 13 final audit", () => {
   });
   it("31 search index records", () => {
     const idx = JSON.parse(readFileSync(join(lib(), "search-index.json"), "utf8"));
-    assert.equal(idx.records.length, 50979);
+    assert.equal(idx.records.length, 51338);
   });
   it("32 categories count", () => {
     const c = JSON.parse(readFileSync(join(lib(), "categories.json"), "utf8"));
-    assert.equal(c.length, 50979);
+    assert.equal(c.length, 51338);
   });
   it("33 keywords count", () => {
     const k = JSON.parse(readFileSync(join(lib(), "keywords.json"), "utf8"));
-    assert.equal(k.length, 50979);
+    assert.equal(k.length, 51338);
   });
   it("34 names count", () => {
     const n = JSON.parse(readFileSync(join(lib(), "names.json"), "utf8"));
-    assert.equal(n.length, 50979);
+    assert.equal(n.length, 51338);
   });
   it("35 meanings count", () => {
     const mn = JSON.parse(readFileSync(join(lib(), "meanings.json"), "utf8"));
-    assert.equal(mn.length, 50979);
+    assert.equal(mn.length, 51338);
   });
   it("36 content validation function", () => {
     const ed = JSON.parse(readFileSync(join(lib(), "editorial.json"), "utf8"));

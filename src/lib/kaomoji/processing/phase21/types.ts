@@ -3,8 +3,8 @@ export const PHASE21_QA_VERSION = "21.0.0";
 export const PRODUCTION_DATA_COUNTS = {
   canonical: 63_248,
   quality_qualified: 63_181,
-  public: 50_979,
-  relationships: 392_904,
+  public: 51_338,
+  relationships: 396_162,
   raw: 236_508,
   fastemoji_drift: 3_825,
   duplicate_groups: 49_885,

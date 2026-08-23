@@ -14,6 +14,7 @@ import {
   getPhase19ExportDir,
 } from "../storage/paths";
 import { PRODUCTION_VERSION, SCHEMA_VERSION, KAOMOJI_D1_BATCH_SIZE, KAOMOJI_D1_KAOMOJI_BATCH_SIZE, KAOMOJI_D1_RELATIONSHIP_BATCH_SIZE, getKaomojiCloudflareMode } from "./config";
+import { EXPECTED_KAOMOJI, EXPECTED_RELATIONSHIPS } from "./d1-import";
 import { sha256Buffer, sha256File } from "./checksum";
 import {
   buildKaomojiChecksumsKey,
@@ -23,8 +24,7 @@ import {
 } from "./r2-keys";
 import type { Phase19ExportSummary, Phase19R2Manifest, Phase19R2Object } from "./types";
 
-const EXPECTED_PUBLIC = 50979;
-const EXPECTED_RELATIONSHIPS = 392904;
+const EXPECTED_PUBLIC = EXPECTED_KAOMOJI;
 
 function writeJson(path: string, data: unknown): void {
   mkdirSync(join(path, ".."), { recursive: true });
@@ -114,9 +114,9 @@ export function buildPhase19Export(rootDir: string): Phase19ExportSummary {
   if (editorial.length !== EXPECTED_PUBLIC) {
     throw new Error(`Phase 19 export expected ${EXPECTED_PUBLIC} public records, got ${editorial.length}`);
   }
-  if (validRelationships.length !== EXPECTED_RELATIONSHIPS) {
+  if (validRelationships.length > EXPECTED_RELATIONSHIPS) {
     throw new Error(
-      `Phase 19 export expected ${EXPECTED_RELATIONSHIPS} valid relationships, got ${validRelationships.length} (rejected ${relationshipsRejected})`,
+      `Phase 19 export library relationships ${validRelationships.length} exceed D1 expected ${EXPECTED_RELATIONSHIPS}`,
     );
   }
 

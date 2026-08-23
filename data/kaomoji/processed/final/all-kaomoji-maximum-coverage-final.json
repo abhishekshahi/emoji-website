@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-23T16:20:24.256Z",
+  "mode": "MAXIMUM_COVERAGE_REVIEW",
+  "git_sha": "725f3c82e45e12227fc3c51387289d014e767abb",
+  "canonical_total": 63248,
+  "initial_public": 50979,
+  "initial_blocked": 12269,
+  "review_queue_count": 12269,
+  "promotion_decisions_count": 359,
+  "projected_public_after_promotion": 51338,
+  "remaining_blocked_after_promotion": 11910,
+  "final_classification": {
+    "PUBLIC": 51338,
+    "LICENSE_BLOCKED": 0,
+    "LICENSE_UNKNOWN": 11806,
+    "CURATION_REJECTED": 0,
+    "CURATION_NEEDS_EVIDENCE": 37,
+    "QUALITY_INVALID": 66,
+    "QUALITY_LOW": 1,
+    "PROVENANCE_BLOCKED": 0,
+    "OTHER_LEGITIMATE_BLOCK": 0
+  },
+  "priority_breakdown": {
+    "A": 359,
+    "B": 0,
+    "C": 11843,
+    "D": 67
+  },
+  "blocking_reasons": {
+    "curation_review": 12202,
+    "quality_invalid_review": 66,
+    "quality_low": 1
+  },
+  "d1_public_count": 50979,
+  "raw_count": 236508,
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "raw_unchanged": true,
+  "target_63248_achievable": false,
+  "verdict": "PROMOTION_READY"
+}

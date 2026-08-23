@@ -1,13 +1,13 @@
 {
   "phase": 21,
-  "timestamp": "2026-08-22T23:48:38.257Z",
+  "timestamp": "2026-08-23T20:51:36.090Z",
   "pipeline_version": "21.0.0-production-qa-launch",
   "qa_version": "21.0.0",
   "data_counts": {
     "canonical": 63248,
     "quality_qualified": 63181,
-    "public": 50979,
-    "relationships": 392904,
+    "public": 51338,
+    "relationships": 396162,
     "raw": 236508,
     "fastemoji_drift": 3825,
     "duplicate_groups": 49885,
@@ -35,7 +35,7 @@
     "ar"
   ],
   "seo": {
-    "sitemap_expected_urls": 50979,
+    "sitemap_expected_urls": 51338,
     "hreflang_locales": 11,
     "json_ld_routes": true
   },

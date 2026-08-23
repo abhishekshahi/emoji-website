@@ -18,7 +18,7 @@ describe("phase 16 seo content", () => {
   it("1 manifest exists", () => assert.ok(existsSync(getPhase16ManifestPath(root))));
   it("2 phase number", () => assert.equal(m().phase, 16));
   it("3 indexable rate >= 99pct", () => assert.ok(m().indexable_rate >= 0.99));
-  it("4 total public 50979", () => assert.equal(m().total_public, 50979));
+  it("4 total public 51338", () => assert.equal(m().total_public, 51338));
   it("5 sitemap slugs match indexable", () => assert.equal(m().sitemap_slugs, m().indexable_count));
   it("6 collection pages >= 5", () => assert.ok(m().collection_pages >= 5));
   it("7 structured data types", () => assert.ok(m().structured_data_types.includes("WebPage")));
@@ -118,7 +118,7 @@ describe("phase 16 seo content", () => {
     const cat = JSON.parse(readFileSync(join(getPhase16RootDir(root), "structured-data-catalog.json"), "utf8"));
     assert.ok(cat.types.includes("BreadcrumbList"));
   });
-  it("50 indexable count 50979", () => assert.equal(m().indexable_count, 50979));
+  it("50 indexable count 51338", () => assert.equal(m().indexable_count, 51338));
   it("51 kawaii collection optional", () => {
     const pages = JSON.parse(readFileSync(join(getPhase16RootDir(root), "collection-pages.json"), "utf8")) as { slug: string }[];
     assert.ok(pages.some((p) => p.slug === "kawaii") || m().collection_pages >= 5);

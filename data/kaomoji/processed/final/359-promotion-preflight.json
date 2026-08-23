@@ -1,0 +1,208 @@
+{
+  "timestamp": "2026-08-23T16:45:01.195Z",
+  "mode": "359_PROMOTION_PREFLIGHT",
+  "baseline": {
+    "canonical": 63248,
+    "public": 50979,
+    "blocked": 12269,
+    "raw": 236508,
+    "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf"
+  },
+  "newly_eligible": 359,
+  "proposed_public": 51338,
+  "remaining_blocked": 11910,
+  "tables": {
+    "kaomoji": {
+      "before": 50979,
+      "inserts": 359,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 51338
+    },
+    "relationship": {
+      "before": 392904,
+      "inserts": 3258,
+      "deletes": 0,
+      "delete_justification": "INSERT-ONLY: 329 rebuild drops NOT applied — they would remove valid existing-public hub edges (kao_643ba83911238b9b, 329 same_category/medium). D1 preserves all pre-promotion relationships.",
+      "expected_after": 396162
+    },
+    "category": {
+      "before": 56,
+      "inserts": 0,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 56
+    },
+    "keyword": {
+      "before": 998,
+      "inserts": 0,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 998
+    },
+    "kaomoji_category": {
+      "before": 131314,
+      "inserts": 925,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 132239
+    },
+    "kaomoji_keyword": {
+      "before": 383621,
+      "inserts": 2819,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 386440
+    },
+    "kaomoji_locale": {
+      "before": 198799,
+      "inserts": 1419,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 200215
+    },
+    "source_attribution": {
+      "before": 60165,
+      "inserts": 406,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 60571
+    },
+    "search_metadata": {
+      "before": 4,
+      "inserts": 0,
+      "deletes": 0,
+      "delete_justification": "UPDATE public_record_count and relationship_count only",
+      "expected_after": 4
+    },
+    "collection": {
+      "before": 20,
+      "inserts": 0,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 20
+    },
+    "collection_item": {
+      "before": 4400,
+      "inserts": 0,
+      "deletes": 0,
+      "delete_justification": null,
+      "expected_after": 4400
+    },
+    "production_release": {
+      "before": 1,
+      "inserts": 0,
+      "deletes": 0,
+      "delete_justification": "No change until next release row",
+      "expected_after": 1
+    }
+  },
+  "relationship_audit": {
+    "before": 392904,
+    "after_authoritative_json": 395833,
+    "d1_expected_after": 396162,
+    "rebuild_artifact_preserved_in_d1": 329,
+    "inserts_promoted_involved": 3258,
+    "deletes_proposed_by_rebuild": 329,
+    "deletes_applied_to_d1": 0,
+    "delete_analysis": {
+      "justified": 0,
+      "unjustified": 329,
+      "reasons": {
+        "existing_public_pair_dropped_by_rebuild": 329
+      }
+    },
+    "delete_decision": "INSERT-ONLY — 329 rebuild drops rejected (hub edge pruning on existing public kao_643ba83911238b9b)",
+    "use_deletes": false
+  },
+  "search": {
+    "benchmark": "122/122",
+    "index_records": 51338,
+    "promoted_searchable": 359,
+    "not_searchable": []
+  },
+  "wikipedia_attribution": [
+    {
+      "canonical_id": "kao_1c20b20807593325",
+      "has_attribution": true,
+      "sources": [
+        "wikipedia",
+        "wikipedia"
+      ]
+    },
+    {
+      "canonical_id": "kao_4ec890fc486eb81a",
+      "has_attribution": true,
+      "sources": [
+        "wikipedia",
+        "wikipedia"
+      ]
+    },
+    {
+      "canonical_id": "kao_606d42f69781fc0b",
+      "has_attribution": true,
+      "sources": [
+        "wikipedia",
+        "wikipedia"
+      ]
+    },
+    {
+      "canonical_id": "kao_969f17fb8c0d495f",
+      "has_attribution": true,
+      "sources": [
+        "wikipedia",
+        "wikipedia"
+      ]
+    },
+    {
+      "canonical_id": "kao_b8497b96e26608ca",
+      "has_attribution": true,
+      "sources": [
+        "wikipedia",
+        "wikipedia"
+      ]
+    },
+    {
+      "canonical_id": "kao_ed7fed7d4920fbe0",
+      "has_attribution": true,
+      "sources": [
+        "wikipedia",
+        "wikipedia"
+      ]
+    },
+    {
+      "canonical_id": "kao_fa2aed3d508448cc",
+      "has_attribution": true,
+      "sources": [
+        "wikipedia",
+        "wikipedia"
+      ]
+    }
+  ],
+  "incremental_sql": {
+    "kaomoji": 359,
+    "kaomoji_category": 925,
+    "kaomoji_keyword": 2819,
+    "kaomoji_locale": 1419,
+    "source_attribution": 406,
+    "relationship_insert": 3258,
+    "relationship_delete": 0,
+    "insert_only_relationships": true,
+    "expected_relationship_count": 396162,
+    "sql_files": 273
+  },
+  "sql_review": {
+    "issues": [],
+    "stats": {
+      "files": 273,
+      "inserts": 272,
+      "deletes": 0,
+      "kaomoji_ids": 359
+    }
+  },
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "raw_unchanged": true,
+  "preflight_passes": true,
+  "preflight_errors": [],
+  "sql_executed": false
+}

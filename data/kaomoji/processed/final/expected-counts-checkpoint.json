@@ -1,0 +1,35 @@
+{
+  "checkpoint_created": "2026-08-23T16:35:00.000Z",
+  "reason": "Pre-reconciliation backup before maximum-coverage promotion approval",
+  "previous_baseline": {
+    "EXPECTED_KAOMOJI": 50979,
+    "EXPECTED_RELATIONSHIPS": 392904,
+    "EXPECTED_TABLE_COUNTS": {
+      "category": 56,
+      "keyword": 998,
+      "kaomoji": 50979,
+      "kaomoji_category": 131314,
+      "kaomoji_keyword": 383621,
+      "collection": 20,
+      "collection_item": 4400,
+      "relationship": 392904,
+      "search_metadata": 4,
+      "kaomoji_locale": 198799,
+      "source_attribution": 60165,
+      "production_release": 1
+    }
+  },
+  "prematurely_applied_values": {
+    "EXPECTED_KAOMOJI": 51338,
+    "EXPECTED_RELATIONSHIPS": 395833,
+    "EXPECTED_TABLE_COUNTS": {
+      "kaomoji_category": 132239,
+      "kaomoji_keyword": 386440,
+      "kaomoji_locale": 200218,
+      "source_attribution": 60571
+    },
+    "note": "These were written before independent reconciliation validation — REVERTED"
+  },
+  "sql_executed": false,
+  "remote_d1_modified": false
+}
