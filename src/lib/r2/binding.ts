@@ -1,10 +1,12 @@
-import { shouldReadFromR2Binding } from "@/lib/master/r2/config";
+import { readCloudflareVar } from "@/lib/cloudflare/runtime-env";
+import { parseMasterR2Mode, shouldReadFromR2Binding } from "@/lib/master/r2/config";
 import type { R2BucketBinding } from "./types";
 
 type CloudflareEnv = { MASTER_R2?: R2BucketBinding };
 
 export async function resolveMasterR2Binding(): Promise<R2BucketBinding | null> {
-  if (!shouldReadFromR2Binding()) {
+  const runtimeMode = parseMasterR2Mode(await readCloudflareVar("MASTER_R2_MODE"));
+  if (runtimeMode !== "ENABLED" && !shouldReadFromR2Binding()) {
     return null;
   }
 

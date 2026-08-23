@@ -38,7 +38,7 @@ function run(cmd, env = {}, logPath) {
     const out = execSync(cmd, { cwd: root, encoding: "utf8", env: { ...process.env, ...env }, maxBuffer: 64 * 1024 * 1024 });
     if (logPath) fs.writeFileSync(logPath, out, "utf8");
     return { code: 0, out };
-  } catch (e) {
+} catch (e) {
     const out = String(e.stdout || "") + String(e.stderr || "");
     if (logPath) fs.writeFileSync(logPath, out, "utf8");
     return { code: e.status ?? 1, out };
@@ -139,7 +139,7 @@ function scoreFrom(verdict, passPhrases) {
 
 (async function main() {
   const startedAt = new Date().toISOString();
-  const scorecard = {};
+const scorecard = {};
   const v51 = readJson(path.join(manifestDir, "r2-phase-8-51-verification.json"));
   const r2Local = readJson(path.join(manifestDir, "master-manifest.json"));
   const p56Existing = readJson(path.join(manifestDir, "phase-8-56-production-canary.json"));
@@ -276,7 +276,7 @@ function scoreFrom(verdict, passPhrases) {
     probesDev: p56ProbesDev,
     completedAt: new Date().toISOString(),
   });
-  fs.writeFileSync(
+fs.writeFileSync(
     path.join(exportDir, "PHASE-8.56-ULTRAFAST-CANARY.md"),
     `# Phase 8.56 — Production Canary\n\n**${p56Verdict}**\n\n0% smoke via workers.dev + production probes. Flags OFF. MASTER_R2_MODE=OFF.\n\n${p56ProbesProd.map((p) => `- ${p.url}: ${p.status} (${p.ms}ms)`).join("\n")}\n`,
     "utf8",
@@ -398,19 +398,19 @@ function scoreFrom(verdict, passPhrases) {
   writeJson(path.join(manifestDir, "phase-8-60-final.json"), finalAudit);
 
   const scorecardMd = Object.entries(scorecard).map(([k, v]) => `| ${k} | ${v} |`).join("\n");
-  fs.writeFileSync(
+fs.writeFileSync(
     path.join(exportDir, "PHASE-8.60-ULTRAFAST-FINAL.md"),
     `# Phase 8.60 — Ultra-Fast Final\n\n**${p60Verdict}**\n\n## Scorecard\n\n| Phase | Status |\n|-------|--------|\n${scorecardMd}\n`,
     "utf8",
-  );
-  fs.writeFileSync(
+);
+fs.writeFileSync(
     path.join(exportDir, "FINAL-EMOJIQUICK-MASTER-DATA-AUDIT.md"),
     [
       "# Final EmojiQuick Master Data Audit",
       "",
       `Completed: ${new Date().toISOString()}`,
-      "",
-      "## Scorecard",
+    "",
+    "## Scorecard",
       ...Object.entries(scorecard).map(([k, v]) => `- ${k}: ${v}`),
       "",
       "## Data",
@@ -427,12 +427,12 @@ function scoreFrom(verdict, passPhrases) {
       `- Tests: ${testsPass ? "449/449 x3 PASS" : "CHECK LOGS"}`,
       `- Build: ${buildCode === 0 ? "PASS" : "CHECK"}`,
       `- Frozen 8.10: ${frozen.code === 0 ? "PASS" : "FAIL"}`,
-    ].join("\n"),
+  ].join("\n"),
     "utf8",
-  );
+);
 
   console.log("FINAL:", p60Verdict);
-  console.log("Scorecard:", JSON.stringify(scorecard));
+console.log("Scorecard:", JSON.stringify(scorecard));
   if (!p60Verdict.includes("PASS")) process.exit(1);
 })().catch((e) => {
   console.error(e);

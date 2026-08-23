@@ -1,0 +1,636 @@
+{
+  "timestamp": "2026-08-22T19:34:02.922Z",
+  "worker_base": "https://emoji-website.emoji-website.workers.dev",
+  "final_verdict": "FAIL",
+  "gates": {
+    "typecheck": "FAIL",
+    "phase20_tests": "50/50 PASS",
+    "phase19_tests": "61/61 PASS",
+    "d1_integrity": "PASS",
+    "search_benchmark": "122/122 PASS",
+    "r2_validation": "4/4 PASS",
+    "worker_smoke": "FAIL",
+    "relationship_diff": "392904/392904 PASS",
+    "build": "NOT VERIFIED",
+    "build_cf": "NOT VERIFIED"
+  },
+  "severity_counts": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "findings": [
+    {
+      "id": "SEARCH-001",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "area": "search",
+      "message": "Live non-empty search returns HTTP 503 (Worker CPU/R2 index path) — D1-only search fix not deployed"
+    }
+  ],
+  "change_inventory": [
+    {
+      "file": "src/app/api/kaomoji/search/route.ts",
+      "purpose": "Rate limit, sanitize, cache headers, 429, POST 405",
+      "impact": "API hardening"
+    },
+    {
+      "file": "src/app/kaomoji/collections/[slug]/page/[page]/page.tsx",
+      "purpose": "Paginated collection SSG",
+      "impact": "Payload reduction"
+    },
+    {
+      "file": "src/app/kaomoji/collections/[slug]/page.tsx",
+      "purpose": "Legacy redirect to page/1",
+      "impact": "SEO canonical migration"
+    },
+    {
+      "file": "src/components/kaomoji/kaomoji-grid-item.tsx",
+      "purpose": "Server-rendered grid cell",
+      "impact": "No client hydration on collections"
+    },
+    {
+      "file": "src/lib/kaomoji/product/collection-pages.ts",
+      "purpose": "48-item pagination helpers",
+      "impact": "Shared pagination logic"
+    },
+    {
+      "file": "next.config.ts",
+      "purpose": "Security headers CSP/XFO/etc",
+      "impact": "Global response headers"
+    },
+    {
+      "file": "src/app/sitemap.ts",
+      "purpose": "Collection URLs → /page/1",
+      "impact": "SEO canonical paths"
+    },
+    {
+      "file": "src/app/kaomoji/page.tsx",
+      "purpose": "Collection links → /page/1",
+      "impact": "Hub navigation"
+    },
+    {
+      "file": "src/lib/kaomoji/processing/phase20/*",
+      "purpose": "Audit pipeline + manifest",
+      "impact": "Gate automation"
+    },
+    {
+      "file": "scripts/kaomoji/phase20-production-audit.ts",
+      "purpose": "Live Worker probes",
+      "impact": "Production verification"
+    }
+  ],
+  "performance": {
+    "cold": [
+      {
+        "path": "/",
+        "status": 200,
+        "ttfb_ms": 451,
+        "total_ms": 1128,
+        "bytes": 81253,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate"
+        }
+      },
+      {
+        "path": "/kaomoji",
+        "status": 200,
+        "ttfb_ms": 51,
+        "total_ms": 127,
+        "bytes": 29842,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?q=anime&limit=10",
+        "status": 503,
+        "ttfb_ms": 958,
+        "total_ms": 2396,
+        "bytes": 4712,
+        "cache_control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "headers": {
+          "x-content-type-options": null,
+          "referrer-policy": "same-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": null,
+          "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+        }
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 301,
+        "total_ms": 753,
+        "bytes": 39492,
+        "cache_control": "s-maxage=31536000",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "s-maxage=31536000"
+        }
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji",
+        "status": 200,
+        "ttfb_ms": 714,
+        "total_ms": 1784,
+        "bytes": 81630,
+        "cache_control": "s-maxage=31536000",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "s-maxage=31536000"
+        }
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji/page/1",
+        "status": 200,
+        "ttfb_ms": 57,
+        "total_ms": 143,
+        "bytes": 81630,
+        "cache_control": "s-maxage=31536000",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "s-maxage=31536000"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?q=%E7%8C%AB&limit=5",
+        "status": 503,
+        "ttfb_ms": 871,
+        "total_ms": 2178,
+        "bytes": 4712,
+        "cache_control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+        "headers": {
+          "x-content-type-options": null,
+          "referrer-policy": "same-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": null,
+          "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?limit=2&offset=0",
+        "status": 200,
+        "ttfb_ms": 431,
+        "total_ms": 1077,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "public, s-maxage=300, stale-while-revalidate=600"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?limit=2&offset=2",
+        "status": 200,
+        "ttfb_ms": 54,
+        "total_ms": 136,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "public, s-maxage=300, stale-while-revalidate=600"
+        }
+      }
+    ],
+    "detail_cache_pair": [
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 99,
+        "total_ms": 249,
+        "bytes": 39492,
+        "cache_control": "s-maxage=31536000",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "s-maxage=31536000"
+        }
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 51,
+        "total_ms": 127,
+        "bytes": 39492,
+        "cache_control": "s-maxage=31536000",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "s-maxage=31536000"
+        }
+      }
+    ],
+    "collection_legacy_bytes_live": 81630,
+    "collection_paged_bytes_live": 81630,
+    "collection_paged_status_live": 200,
+    "collection_reduction_pct_live": 0,
+    "collection_after_local_design": "48 items/page server grid",
+    "slowest_ms": 2396,
+    "avg_ms": 1080
+  },
+  "security": {
+    "headers": {
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    "probes": [
+      {
+        "path": "/api/kaomoji/search?q=' OR 1=1--",
+        "method": "GET",
+        "status": 503,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=<script>alert(1)</script>",
+        "method": "GET",
+        "status": 503,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=%00%00",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "method": "GET",
+        "status": 503,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/kaomoji/../../../etc/passwd",
+        "method": "GET",
+        "status": 404,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411%00",
+        "method": "GET",
+        "status": 400,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?limit=-1",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?limit=99999",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      }
+    ],
+    "post": {
+      "status": 405,
+      "pass": true
+    }
+  },
+  "publication_leak": {
+    "samples": 7,
+    "all_pass": true,
+    "results": [
+      {
+        "canonical_id": "kao_000c332b7e7b5b52",
+        "slug": "kao-000c332b7e7b5b52",
+        "publication_status": "REVIEW_REQUIRED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_001f678b0186c9a2",
+        "slug": "kao-001f678b0186c9a2",
+        "publication_status": "REVIEW_REQUIRED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_0080659a9000c96d",
+        "slug": "kao-0080659a9000c96d",
+        "publication_status": "REMOVE_CANDIDATE",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_0110d05fd1ec8c40",
+        "slug": "kao-0110d05fd1ec8c40",
+        "publication_status": "REMOVE_CANDIDATE",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_003dbccdfa4bbd4f",
+        "slug": "kao-003dbccdfa4bbd4f",
+        "publication_status": "PUBLISH_CANDIDATE",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_008fa7577eac0a51",
+        "slug": "kao-008fa7577eac0a51",
+        "publication_status": "PUBLISH_CANDIDATE",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_6e1662f6827e0a9f",
+        "slug": "kao-6e1662f6827e0a9f",
+        "publication_status": "PUBLISH_CANDIDATE",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      }
+    ]
+  },
+  "cache": {
+    "search_a": {
+      "path": "/api/kaomoji/search?q=cache-test-a&limit=5",
+      "status": 503,
+      "ttfb_ms": 1404,
+      "total_ms": 3510,
+      "bytes": 4712,
+      "cache_control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "headers": {
+        "x-content-type-options": null,
+        "referrer-policy": "same-origin",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": null,
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+      }
+    },
+    "search_a_repeat": {
+      "path": "/api/kaomoji/search?q=cache-test-a&limit=5",
+      "status": 503,
+      "ttfb_ms": 1112,
+      "total_ms": 2780,
+      "bytes": 4712,
+      "cache_control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "headers": {
+        "x-content-type-options": null,
+        "referrer-policy": "same-origin",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": null,
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+      }
+    },
+    "search_b": {
+      "path": "/api/kaomoji/search?q=cache-test-b&limit=5",
+      "status": 503,
+      "ttfb_ms": 1163,
+      "total_ms": 2908,
+      "bytes": 4712,
+      "cache_control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "headers": {
+        "x-content-type-options": null,
+        "referrer-policy": "same-origin",
+        "x-frame-options": "SAMEORIGIN",
+        "content-security-policy": null,
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+      }
+    },
+    "detail_repeat": [
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 99,
+        "total_ms": 249,
+        "bytes": 39492,
+        "cache_control": "s-maxage=31536000",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "s-maxage=31536000"
+        }
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 51,
+        "total_ms": 127,
+        "bytes": 39492,
+        "cache_control": "s-maxage=31536000",
+        "headers": {
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "cache-control": "s-maxage=31536000"
+        }
+      }
+    ]
+  },
+  "accessibility": {
+    "pages": 4,
+    "full_crawl": "NOT VERIFIED",
+    "results": [
+      {
+        "path": "/",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "grid_aria": true,
+        "search_input_label": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      },
+      {
+        "path": "/kaomoji",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "grid_aria": true,
+        "search_input_label": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "grid_aria": true,
+        "search_input_label": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "grid_aria": true,
+        "search_input_label": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      }
+    ]
+  },
+  "seo": {
+    "local_public": 50979,
+    "missing_title": 0,
+    "missing_description": 0,
+    "live_sample_pass": 1,
+    "live_sample_total": 50,
+    "sitemap_kaomoji_urls": 1020
+  },
+  "data": {
+    "expected": {
+      "raw": 236508,
+      "canonical": 63248,
+      "public": 50979,
+      "relationships": 392904,
+      "categories": 131314,
+      "keywords": 383621,
+      "locales": 198799,
+      "attribution": 60165,
+      "production_release": 1
+    },
+    "measured": {
+      "category": 56,
+      "keyword": 998,
+      "kaomoji": 50979,
+      "kaomoji_category": 131314,
+      "kaomoji_keyword": 383621,
+      "collection": 20,
+      "collection_item": 4400,
+      "relationship": 392904,
+      "search_metadata": 4,
+      "kaomoji_locale": 198799,
+      "source_attribution": 60165,
+      "production_release": 1
+    },
+    "match": true
+  },
+  "git": {
+    "branch": "cursor/phase19-final-hardening-audit",
+    "recent_commits": [
+      "1fd479ffb phase19: add final optional hardening audit script and reports",
+      "3a7a0dc2a phase19: final gate closure PASS",
+      "7a565a888 phase19: restore path helpers and final closure reports",
+      "237259eec phase19: complete cloudflare migration and audit",
+      "850e4ccb7 Add Phase 13 kaomoji final audit pipeline, tests, and reports."
+    ],
+    "status_lines": 848,
+    "diff_stat": ".../processed/phase-19/canonical-id-audit.json     |   2 +-\n .../processed/phase-19/d1-integrity-audit.json     |   2 +-\n .../processed/phase-19/d1-validation-report.json   |   2 +-\n data/kaomoji/processed/phase-19/manifest.json      |  22 +++--\n .../phase-19/manifests/phase-19-final.json         |  22 +++--\n .../phase-19/phase19-final-gate-closure.json       |   4 +-\n .../processed/phase-19/relationship-set-diff.json  |   2 +-\n .../processed/phase-19/worker-smoke-report.json    |  24 ++---\n next.config.ts                                     |  19 ++++\n r2-export/PHASE-19-FINAL-GATE-CLOSURE.md           |   2 +-\n r2-export/PHASE-19-GIT-AUDIT.md                    |  87 +++--------------\n scripts/audit/ultrafast-8-54-60.cjs                |  22 ++---\n scripts/kaomoji/phase19-worker-smoke.ts            |   2 +-\n src/app/api/kaomoji/search/route.ts                | 108 +++++++++++++++++----\n src/app/kaomoji/collections/[slug]/page.tsx        |  40 ++------\n src/app/kaomoji/page.tsx                           |   2 +-\n src/app/sitemap.ts                                 |   2 +-\n src/lib/kaomoji/cloudflare/d1-queries.ts           |  46 +++++++++\n src/lib/r2/binding.ts                              |   6 +-\n 19 files changed, 240 insertions(+), 176 deletions(-)",
+    "secret_scan_hits": 0
+  },
+  "build": {
+    "build_id": "kZl9elQqw8X4surMfPf1J",
+    "build_id_mtime": "2026-08-22T16:28:31.924Z",
+    "worker_js_exists": false,
+    "worker_js_mtime": null,
+    "opennext_build_mtime": "2026-08-22T16:24:56.626Z",
+    "cf_build_log": "MISSING OR INCOMPLETE",
+    "cf_build_cf_log": "MISSING OR INCOMPLETE",
+    "verdict": "NOT VERIFIED"
+  },
+  "d1_queries": {
+    "parameterized": true,
+    "index_count": 11,
+    "note": "No schema changes in Phase 20"
+  },
+  "localization": {
+    "note": "198799 locale rows unchanged; no Phase 20 locale code changes",
+    "verified": true
+  },
+  "analytics": {
+    "note": "NOT VERIFIED — no CF analytics token; edge query counts unavailable",
+    "status": "NOT VERIFIED"
+  },
+  "live": {
+    "search_anime_status": 503,
+    "search_anime_results": 0,
+    "search_cat_status": 503,
+    "collection_page1_status": 200,
+    "mandatory_live_pass": false,
+    "mandatory_gates_pass": false
+  },
+  "regression": {
+    "typecheck": "FAIL",
+    "phase20_tests": "50/50 PASS",
+    "phase19_tests": "61/61 PASS",
+    "d1_integrity": "PASS",
+    "search_benchmark": "122/122 PASS",
+    "r2_validation": "4/4 PASS",
+    "worker_smoke": "FAIL",
+    "relationship_diff": "392904/392904 PASS",
+    "build": "NOT VERIFIED",
+    "build_cf": "NOT VERIFIED"
+  }
+}

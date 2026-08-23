@@ -1,0 +1,485 @@
+{
+  "timestamp": "2026-08-22T21:04:47.710Z",
+  "final_verdict": "PASS WITH WARNINGS",
+  "deployment_identity": {
+    "worker_url": "https://emoji-website.emoji-website.workers.dev",
+    "audit_timestamp": "2026-08-22T21:04:47.710Z",
+    "build_id_local": "_0UeJcGlOTGgGNCAR5ulC",
+    "worker_js_local": true,
+    "note": "Live Worker identity verified via HTTP probes; BUILD_ID on live HTML if embedded"
+  },
+  "gates": {
+    "typecheck": "PASS",
+    "phase20_tests": "50/50 PASS",
+    "phase19_tests": "61/61 PASS",
+    "d1_integrity": "PASS",
+    "search_benchmark": "122/122 PASS",
+    "r2": "4/4 PASS",
+    "worker_smoke": "13/13 PASS",
+    "relationship_diff": "392904/392904 PASS",
+    "build": "FAIL",
+    "build_cf": "FAIL"
+  },
+  "severity_counts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "findings": [],
+  "change_inventory": [
+    {
+      "file": "src/app/api/kaomoji/search/route.ts",
+      "impact": "Rate limit, sanitize, cache, POST 405"
+    },
+    {
+      "file": "src/app/kaomoji/collections/[slug]/page/[page]/page.tsx",
+      "impact": "Paginated SSG 48/page"
+    },
+    {
+      "file": "src/app/kaomoji/collections/[slug]/page.tsx",
+      "impact": "Redirect to /page/1"
+    },
+    {
+      "file": "src/components/kaomoji/kaomoji-grid-item.tsx",
+      "impact": "Server grid cell"
+    },
+    {
+      "file": "src/lib/kaomoji/product/collection-pages.ts",
+      "impact": "Pagination helpers"
+    },
+    {
+      "file": "next.config.ts",
+      "impact": "CSP, XFO, security headers"
+    },
+    {
+      "file": "src/app/sitemap.ts",
+      "impact": "Collection canonical /page/1"
+    },
+    {
+      "file": "src/app/kaomoji/page.tsx",
+      "impact": "Hub links /page/1"
+    },
+    {
+      "file": "src/lib/kaomoji/cloudflare/d1-binding.ts",
+      "impact": "D1 binding via Cloudflare var"
+    },
+    {
+      "file": "src/lib/kaomoji/cloudflare/search-loader.ts",
+      "impact": "R2 + D1 runtime search"
+    },
+    {
+      "file": "scripts/kaomoji/phase20-final-forensic-audit.ts",
+      "impact": "This audit"
+    }
+  ],
+  "live": {
+    "performance": [
+      {
+        "path": "/",
+        "status": 200,
+        "total_ms": 1603,
+        "bytes": 81253,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/kaomoji",
+        "status": 200,
+        "total_ms": 156,
+        "bytes": 29842,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "total_ms": 440,
+        "bytes": 38422,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji",
+        "status": 200,
+        "total_ms": 1584,
+        "bytes": 82354,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji/page/1",
+        "status": 200,
+        "total_ms": 213,
+        "bytes": 82354,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji/page/2",
+        "status": 200,
+        "total_ms": 228,
+        "bytes": 83841,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?q=anime&limit=10",
+        "status": 200,
+        "total_ms": 307,
+        "bytes": 2113,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?q=cat&limit=10",
+        "status": 200,
+        "total_ms": 455,
+        "bytes": 1966,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?q=%E7%8C%AB&limit=5",
+        "status": 200,
+        "total_ms": 204,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?q=%F0%9F%98%80&limit=5",
+        "status": 200,
+        "total_ms": 179,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?limit=2&offset=0",
+        "status": 200,
+        "total_ms": 128,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      {
+        "path": "/api/kaomoji/search?q=&limit=5",
+        "status": 200,
+        "total_ms": 397,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      }
+    ],
+    "collection_legacy_bytes": 82354,
+    "collection_page1_bytes": 82354,
+    "collection_reduction_pct": 0,
+    "collection_page1_status": 200,
+    "collection_grid_links": 96,
+    "collection_unique_slugs": 48,
+    "search_anime_result_count": 10,
+    "security_headers": {
+      "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+      "x-content-type-options": "nosniff",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "x-frame-options": "SAMEORIGIN",
+      "permissions-policy": "camera=(), microphone=(), geolocation=()"
+    },
+    "security_probes": [
+      {
+        "path": "/api/kaomoji/search?q=' OR 1=1--",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=<script>alert(1)</script>",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "path": "/kaomoji/../../../etc/passwd",
+        "status": 404,
+        "pass": true
+      },
+      {
+        "path": "/kaomoji/invalid-slug-does-not-exist-xyz",
+        "status": 404,
+        "pass": true
+      }
+    ],
+    "post_search_status": 405,
+    "publication_leak": [
+      {
+        "slug": "kao-000c332b7e7b5b52",
+        "detail_status": 404,
+        "in_search": false,
+        "pass": true
+      },
+      {
+        "slug": "kao-001f678b0186c9a2",
+        "detail_status": 404,
+        "in_search": false,
+        "pass": true
+      },
+      {
+        "slug": "kao-0080659a9000c96d",
+        "detail_status": 404,
+        "in_search": false,
+        "pass": true
+      },
+      {
+        "slug": "kao-0110d05fd1ec8c40",
+        "detail_status": 404,
+        "in_search": false,
+        "pass": true
+      }
+    ],
+    "cache": {
+      "search_a": {
+        "path": "/api/kaomoji/search?q=cache-forensic-a&limit=5",
+        "status": 200,
+        "total_ms": 170,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      "search_a_repeat": {
+        "path": "/api/kaomoji/search?q=cache-forensic-a&limit=5",
+        "status": 200,
+        "total_ms": 171,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      },
+      "search_b": {
+        "path": "/api/kaomoji/search?q=cache-forensic-b&limit=5",
+        "status": 200,
+        "total_ms": 177,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
+        "headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
+          "x-content-type-options": "nosniff",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "x-frame-options": "SAMEORIGIN",
+          "permissions-policy": "camera=(), microphone=(), geolocation=()"
+        }
+      }
+    }
+  },
+  "accessibility": {
+    "method": "SAMPLE (4 pages)",
+    "results": [
+      {
+        "path": "/",
+        "has_h1": true,
+        "has_lang": true,
+        "has_canonical": true,
+        "has_json_ld": true
+      },
+      {
+        "path": "/kaomoji",
+        "has_h1": true,
+        "has_lang": true,
+        "has_canonical": true,
+        "has_json_ld": true
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "has_h1": true,
+        "has_lang": true,
+        "has_canonical": true,
+        "has_json_ld": true
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji/page/1",
+        "has_h1": true,
+        "has_lang": true,
+        "has_canonical": true,
+        "has_json_ld": true
+      }
+    ],
+    "full_wcag_crawl": "NOT VERIFIED"
+  },
+  "seo": {
+    "local_public_count": 50979,
+    "live_sample_pass": 50,
+    "live_sample_total": 50,
+    "full_50979_crawl": "NOT VERIFIED"
+  },
+  "localization": {
+    "locale_rows": 198799,
+    "review_locales_public": "NOT VERIFIED (sample)"
+  },
+  "analytics": {
+    "status": "NOT VERIFIED",
+    "note": "No Cloudflare Analytics credentials"
+  },
+  "responsive_ui": {
+    "status": "NOT VERIFIED",
+    "note": "No browser automation in audit script"
+  },
+  "data": {
+    "expected": {
+      "raw": 236508,
+      "canonical": 63248,
+      "public": 50979,
+      "relationships": 392904,
+      "categories": 131314,
+      "keywords": 383621,
+      "locales": 198799,
+      "attribution": 60165,
+      "production_release": 1
+    },
+    "measured": {
+      "category": 56,
+      "keyword": 998,
+      "kaomoji": 50979,
+      "kaomoji_category": 131314,
+      "kaomoji_keyword": 383621,
+      "collection": 20,
+      "collection_item": 4400,
+      "relationship": 392904,
+      "search_metadata": 4,
+      "kaomoji_locale": 198799,
+      "source_attribution": 60165,
+      "production_release": 1
+    },
+    "conserved": true,
+    "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf"
+  },
+  "relationship_diff": {
+    "timestamp": "2026-08-22T21:09:52.133Z",
+    "local_total": 392904,
+    "local_unique": 392904,
+    "remote_unique": 392904,
+    "expected": 392904,
+    "missing_count": 0,
+    "unexpected_count": 0,
+    "local_duplicates": 0,
+    "remote_duplicates": 0,
+    "missing_sample": [],
+    "unexpected_sample": [],
+    "valid": true,
+    "errors": []
+  },
+  "git": {
+    "branch": "cursor/phase19-final-hardening-audit",
+    "recent_commits": [
+      "1fd479ffb phase19: add final optional hardening audit script and reports",
+      "3a7a0dc2a phase19: final gate closure PASS",
+      "7a565a888 phase19: restore path helpers and final closure reports",
+      "237259eec phase19: complete cloudflare migration and audit",
+      "850e4ccb7 Add Phase 13 kaomoji final audit pipeline, tests, and reports.",
+      "6b18e3ec4 Add Phase 16-17 content platform with analytics, multilingual SEO, and expanded search.",
+      "a8df0750e Deploy Phase 8.63 UI performance and accessibility hardening.",
+      "af3586f94 Complete Phase 8.62-B UI/UX polish with design system migration and discovery fixes.",
+      "570f88046 Fix global EmojiQuick logo cropping with transparent UI asset and canonical BrandLogo.",
+      "7d431cc26 Complete Phase 8.62-W warning correction and 8.63 official branding."
+    ],
+    "status_line_count": 874,
+    "diff_stat": ".../processed/phase-19/canonical-id-audit.json     |  2 +-\n .../processed/phase-19/d1-integrity-audit.json     |  2 +-\n .../processed/phase-19/d1-validation-report.json   |  2 +-\n data/kaomoji/processed/phase-19/manifest.json      | 22 +++--\n .../phase-19/manifests/phase-19-final.json         | 22 +++--\n .../phase-19/phase19-final-gate-closure.json       |  4 +-\n .../processed/phase-19/relationship-set-diff.json  |  2 +-\n .../processed/phase-19/worker-smoke-report.json    |  4 +-\n next.config.ts                                     | 20 +++++\n r2-export/PHASE-19-FINAL-GATE-CLOSURE.md           |  2 +-\n r2-export/PHASE-19-GIT-AUDIT.md                    | 87 +++----------------\n scripts/audit/ultrafast-8-54-60.cjs                | 22 ++---\n scripts/kaomoji/phase19-worker-smoke.ts            |  2 +-\n src/app/api/kaomoji/search/route.ts                | 98 ++++++++++++++++++----\n src/app/kaomoji/[slug]/page.tsx                    | 66 ++++++++++++++-\n src/app/kaomoji/collections/[slug]/page.tsx        | 40 ++-------\n src/app/kaomoji/page.tsx                           |  2 +-\n src/app/sitemap.ts                                 |  2 +-\n src/lib/kaomoji/cloudflare/d1-queries.ts           | 46 ++++++++++\n src/lib/kaomoji/product/search.ts                  | 26 +++++-\n src/lib/r2/binding.ts                              |  6 +-\n 21 files changed, 307 insertions(+), 172 deletions(-)",
+    "secret_scan_hits": 0
+  },
+  "build": {
+    "build_id": "_0UeJcGlOTGgGNCAR5ulC",
+    "worker_js_exists": true,
+    "build_in_progress": false,
+    "cf_build_log": "NOT VERIFIED",
+    "cf_build_cf_log": "NOT VERIFIED",
+    "verdict": "FAIL"
+  },
+  "mandatory_live_pass": true,
+  "mandatory_gates_pass": true
+}

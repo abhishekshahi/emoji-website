@@ -36,7 +36,7 @@ async function main(): Promise<void> {
   tests.push(await fetchStatus("/"));
   tests.push(await fetchStatus("/kaomoji"));
   tests.push(await fetchStatus(`/kaomoji/${SAMPLE_SLUG}`, true, true));
-  tests.push(await fetchStatus(`/kaomoji/collections/${SAMPLE_COLLECTION}`));
+  tests.push(await fetchStatus(`/kaomoji/collections/${SAMPLE_COLLECTION}/page/1`));
   tests.push(await fetchStatus("/api/kaomoji/search?q=anime&limit=5"));
   tests.push(await fetchStatus("/api/kaomoji/search?q=&limit=5"));
   tests.push(await fetchStatus("/api/kaomoji/search?q=%E7%8C%AB&limit=5"));

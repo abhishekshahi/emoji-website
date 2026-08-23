@@ -1,0 +1,182 @@
+{
+  "phase": 20,
+  "timestamp": "2026-08-20T21:44:43.755Z",
+  "pipeline_version": "20.0.0-production-hardening",
+  "hardening_version": "20.0.0",
+  "security": {
+    "parameterized_queries": true,
+    "rate_limit_enabled": true,
+    "search_sanitization": true,
+    "no_secrets_in_client": true,
+    "xss_controls": true
+  },
+  "performance": {
+    "schema_indexes": 11,
+    "search_benchmark_pass": true,
+    "search_benchmark_score": "122/122",
+    "cache_headers_configured": true
+  },
+  "accessibility": {
+    "semantic_html_routes": 5,
+    "aria_patterns": true,
+    "reduced_motion_support": true
+  },
+  "failure_handling": {
+    "graceful_search_empty": true,
+    "rate_limit_response": true
+  },
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "raw_unchanged": true,
+  "errors": [],
+  "warnings": [],
+  "production_audit": {
+    "timestamp": "2026-08-20T21:44:39.747Z",
+    "worker_base": "https://emoji-website.emoji-website.workers.dev",
+    "performance": {
+      "collection_legacy_redirect": {
+        "path": "/kaomoji/collections/best-kaomoji",
+        "status": 200,
+        "ms": 1016,
+        "bytes": 208129,
+        "cache_control": "s-maxage=31536000"
+      },
+      "collection_page_1": {
+        "path": "/kaomoji/collections/best-kaomoji/page/1",
+        "status": 404,
+        "ms": 259,
+        "bytes": 30336,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      "search_cold": {
+        "path": "/api/kaomoji/search?q=anime&limit=10",
+        "status": 200,
+        "ms": 133,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      },
+      "search_warm": {
+        "path": "/api/kaomoji/search?q=anime&limit=10",
+        "status": 200,
+        "ms": 131,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      },
+      "collection_bytes_before": 208129,
+      "collection_bytes_after": null,
+      "collection_reduction_pct": null,
+      "collection_pagination_live": "NOT VERIFIED — page/1 not live until deploy"
+    },
+    "security": {
+      "probes": [
+        {
+          "path": "/api/kaomoji/search?q=' OR 1=1--",
+          "status": 200,
+          "pass": true
+        },
+        {
+          "path": "/api/kaomoji/search?q=<script>alert(1)</script>",
+          "status": 200,
+          "pass": true
+        },
+        {
+          "path": "/kaomoji/../../../etc/passwd",
+          "status": 404,
+          "pass": true
+        },
+        {
+          "path": "/api/kaomoji/search",
+          "status": 405,
+          "pass": true
+        }
+      ],
+      "post_status": 405,
+      "post_pass": true
+    },
+    "cache": {
+      "search_repeat_ms_delta": -2,
+      "collection_cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    "rate_limit": {
+      "note": "429 requires burst; single probe only",
+      "probe": {
+        "path": "/api/kaomoji/search?q=phase20-rate-probe&limit=5",
+        "status": 200,
+        "ms": 122,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      }
+    }
+  },
+  "verdict": "PHASE 20 — PASS WITH WARNINGS",
+  "builds": {
+    "npm_run_build_minutes": 96,
+    "npm_run_build_cf_minutes": 97.2,
+    "total_build_wall_minutes": 193.2,
+    "static_pages": 7576,
+    "open_next_worker_js": true
+  },
+  "gate_run_at": "2026-08-20T21:56:39.144Z",
+  "gates": {
+    "typecheck": {
+      "result": "PASS",
+      "exit_code": 0
+    },
+    "phase20_tests": {
+      "result": "50/50",
+      "pass": 50,
+      "fail": 0,
+      "exit_code": 0
+    },
+    "phase19_tests": {
+      "result": "61/61",
+      "pass": 61,
+      "fail": 0,
+      "exit_code": 0
+    },
+    "d1_integrity_remote": {
+      "result": "PASS",
+      "valid": true,
+      "search_benchmark": "122/122",
+      "exit_code": 0,
+      "timestamp": "2026-08-20T21:44:21.498Z"
+    },
+    "r2_verify_remote": {
+      "result": "4/4",
+      "valid": true,
+      "exit_code": 0,
+      "timestamp": "2026-08-20T21:43:53.568Z"
+    },
+    "worker_smoke": {
+      "result": "13/13",
+      "valid": true,
+      "exit_code": 0,
+      "timestamp": "2026-08-20T21:43:21.778Z"
+    },
+    "kaomoji_phase20": {
+      "result": "PASS",
+      "search_benchmark": "122/122",
+      "schema_indexes": 11,
+      "exit_code": 0
+    },
+    "phase20_production_audit": {
+      "result": "PASS",
+      "collection_pagination_live": "NOT VERIFIED — page/1 not live until deploy",
+      "post_pass": true,
+      "exit_code": 0,
+      "timestamp": "2026-08-20T21:44:39.747Z"
+    },
+    "npm_run_build": {
+      "result": "PASS",
+      "pages": "7576/7576",
+      "duration": "89.9min",
+      "note": "not re-run this session; verified from cf-build-phase-20-log.txt"
+    },
+    "npm_run_build_cf": {
+      "result": "PASS",
+      "pages": "7576/7576",
+      "inner_next_duration": "89.1min",
+      "artifact": ".open-next/worker.js",
+      "note": "OpenNext build complete"
+    }
+  }
+}

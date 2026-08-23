@@ -1,0 +1,64 @@
+{
+  "phase": 21,
+  "timestamp": "2026-08-22T23:45:28.122Z",
+  "pipeline_version": "21.0.0-production-qa-launch",
+  "qa_version": "21.0.0",
+  "data_counts": {
+    "canonical": 63248,
+    "quality_qualified": 63181,
+    "public": 50979,
+    "relationships": 392904,
+    "raw": 236508,
+    "fastemoji_drift": 3825,
+    "duplicate_groups": 49885,
+    "variant_groups": 15143,
+    "legitimate_variants": 2533
+  },
+  "routes_audited": [
+    "/",
+    "/kaomoji",
+    "/api/kaomoji/search",
+    "/kaomoji/[slug]",
+    "/kaomoji/collections/[slug]"
+  ],
+  "locales": [
+    "en",
+    "ja",
+    "ko",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ar"
+  ],
+  "seo": {
+    "sitemap_expected_urls": 50979,
+    "hreflang_locales": 11,
+    "json_ld_routes": true
+  },
+  "analytics": {
+    "popularity_status": "INSUFFICIENT_DATA",
+    "events_wired": [
+      "kaomoji_search",
+      "kaomoji_view",
+      "kaomoji_copy",
+      "kaomoji_favorite",
+      "kaomoji_share"
+    ]
+  },
+  "rollback": {
+    "previous_release_exists": true,
+    "rollback_manifest_exists": true
+  },
+  "gates": {
+    "phase19": true,
+    "phase20": true,
+    "typecheck": true,
+    "build": true
+  },
+  "errors": [],
+  "warnings": []
+}

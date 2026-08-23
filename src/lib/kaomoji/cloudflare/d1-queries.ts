@@ -81,3 +81,49 @@ export const D1_GET_KAOMOJI_LOCALE_FIELDS = `
 export const D1_COUNT_PUBLIC_KAOMOJI = `
   SELECT COUNT(*) AS count FROM kaomoji WHERE is_public = 1
 `.trim();
+
+export const D1_SEARCH_BY_KEYWORD = `
+  SELECT k.canonical_id, k.slug, k.content, k.normalized_content, k.editorial_name,
+         k.accessible_name, k.quality_score, k.beauty_score, k.editorial_priority, k.meaning
+  FROM kaomoji k
+  WHERE k.is_public = 1
+    AND (
+      k.canonical_id IN (SELECT canonical_id FROM kaomoji_keyword WHERE keyword = ?1)
+      OR k.canonical_id IN (SELECT canonical_id FROM kaomoji_category WHERE category_slug = ?1)
+      OR LOWER(COALESCE(k.editorial_name, '')) LIKE ?2
+    )
+  ORDER BY k.quality_score DESC, k.beauty_score DESC
+  LIMIT ?3
+`.trim();
+
+/** Indexed keyword-only lookup — avoids full-table LIKE scans on Worker. */
+export const D1_SEARCH_BY_KEYWORD_FAST = `
+  SELECT k.canonical_id, k.slug, k.content, k.normalized_content, k.editorial_name,
+         k.accessible_name, k.quality_score, k.beauty_score, k.editorial_priority, k.meaning
+  FROM kaomoji_keyword kk
+  INNER JOIN kaomoji k ON k.canonical_id = kk.canonical_id
+  WHERE k.is_public = 1 AND kk.keyword = ?1
+  ORDER BY k.quality_score DESC, k.beauty_score DESC
+  LIMIT ?2
+`.trim();
+
+/** Indexed category lookup for taxonomy/synonym tokens. */
+export const D1_SEARCH_BY_CATEGORY_FAST = `
+  SELECT k.canonical_id, k.slug, k.content, k.normalized_content, k.editorial_name,
+         k.accessible_name, k.quality_score, k.beauty_score, k.editorial_priority, k.meaning
+  FROM kaomoji_category kc
+  INNER JOIN kaomoji k ON k.canonical_id = kc.canonical_id
+  WHERE k.is_public = 1 AND kc.category_slug = ?1
+  ORDER BY k.quality_score DESC, k.beauty_score DESC
+  LIMIT ?2
+`.trim();
+
+export const D1_SEARCH_BY_CONTENT = `
+  SELECT k.canonical_id, k.slug, k.content, k.normalized_content, k.editorial_name,
+         k.accessible_name, k.quality_score, k.beauty_score, k.editorial_priority, k.meaning
+  FROM kaomoji k
+  WHERE k.is_public = 1
+    AND (k.content LIKE ?1 OR k.normalized_content LIKE ?1)
+  ORDER BY k.quality_score DESC, k.beauty_score DESC
+  LIMIT ?2
+`.trim();

@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-08-20T21:44:39.747Z",
+  "worker_base": "https://emoji-website.emoji-website.workers.dev",
+  "performance": {
+    "collection_legacy_redirect": {
+      "path": "/kaomoji/collections/best-kaomoji",
+      "status": 200,
+      "ms": 1016,
+      "bytes": 208129,
+      "cache_control": "s-maxage=31536000"
+    },
+    "collection_page_1": {
+      "path": "/kaomoji/collections/best-kaomoji/page/1",
+      "status": 404,
+      "ms": 259,
+      "bytes": 30336,
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate"
+    },
+    "search_cold": {
+      "path": "/api/kaomoji/search?q=anime&limit=10",
+      "status": 200,
+      "ms": 133,
+      "bytes": 14,
+      "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+    },
+    "search_warm": {
+      "path": "/api/kaomoji/search?q=anime&limit=10",
+      "status": 200,
+      "ms": 131,
+      "bytes": 14,
+      "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+    },
+    "collection_bytes_before": 208129,
+    "collection_bytes_after": null,
+    "collection_reduction_pct": null,
+    "collection_pagination_live": "NOT VERIFIED — page/1 not live until deploy"
+  },
+  "security": {
+    "probes": [
+      {
+        "path": "/api/kaomoji/search?q=' OR 1=1--",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=<script>alert(1)</script>",
+        "status": 200,
+        "pass": true
+      },
+      {
+        "path": "/kaomoji/../../../etc/passwd",
+        "status": 404,
+        "pass": true
+      },
+      {
+        "path": "/api/kaomoji/search",
+        "status": 405,
+        "pass": true
+      }
+    ],
+    "post_status": 405,
+    "post_pass": true
+  },
+  "cache": {
+    "search_repeat_ms_delta": -2,
+    "collection_cache": "private, no-cache, no-store, max-age=0, must-revalidate"
+  },
+  "rate_limit": {
+    "note": "429 requires burst; single probe only",
+    "probe": {
+      "path": "/api/kaomoji/search?q=phase20-rate-probe&limit=5",
+      "status": 200,
+      "ms": 122,
+      "bytes": 14,
+      "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+    }
+  }
+}

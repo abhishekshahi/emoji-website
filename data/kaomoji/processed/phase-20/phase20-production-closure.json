@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-08-21T08:05:00.000Z",
+  "phase": 20,
+  "verdict": "FAIL — DEPLOY BLOCKED",
+  "verdict_detail": "Pre-deploy gates passed; production build failed 3× during SSG (last 6955/7576, ~92%). No deployable .next/.open-next artifacts remain.",
+  "worker_url": "https://emoji-website.emoji-website.workers.dev",
+  "pre_deploy": {
+    "integrity_audit_remote": {
+      "valid": true,
+      "search_benchmark": "122/122",
+      "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+      "kaomoji_count": 50979,
+      "relationship_count": 392904
+    },
+    "typecheck": "PASS",
+    "phase20_tests": "50/50",
+    "phase19_tests": "61/61"
+  },
+  "code_changes": {
+    "search_fix": "src/lib/kaomoji/cloudflare/search-loader.ts — R2-backed searchKaomojiRuntime when kaomojiDataExists() false on Worker",
+    "security_headers": "next.config.ts",
+    "collection_pagination": "src/app/kaomoji/collections/[slug]/page/[page]/page.tsx + redirect in page.tsx",
+    "worker_smoke_updated": "scripts/kaomoji/phase19-worker-smoke.ts → /page/1"
+  },
+  "build_attempts": [
+    { "log": "cf-build-phase20-deploy-log.txt", "progress": "4996/7576", "exit": "4294967295 (OOM/killed)" },
+    { "log": "cf-build-phase20-deploy-final.log", "progress": "6955/7576", "exit": "4294967295 (OOM/killed)" },
+    { "log": "cf-build-phase20-deploy-v3.log", "progress": "in_progress", "heap": "12288MB" }
+  ],
+  "live_gaps_pre_deploy": {
+    "collection_page_1": "404",
+    "security_headers": "missing on live",
+    "search_anime": "empty (14 bytes) — root cause: kaomojiDataExists() false on Worker; fix coded not deployed",
+    "legacy_collection_bytes": 208129
+  },
+  "deploy": {
+    "status": "NOT EXECUTED",
+    "reason": "No valid build artifact"
+  },
+  "post_deploy_verification": "NOT RUN",
+  "not_verified": [
+    "Security headers on / and /kaomoji",
+    "Collection /page/1 200 with 48 items",
+    "Search ?q=anime real results on live",
+    "All 16 closure criteria on production"
+  ]
+}
