@@ -6,6 +6,7 @@ import { KaomojiRelatedSection } from "@/components/kaomoji/kaomoji-related-sect
 import { KaomojiViewTracker } from "@/components/kaomoji/kaomoji-view-tracker";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
+import { getKaomojiDetailFromD1, getRelatedKaomojiFromD1 } from "@/lib/kaomoji/cloudflare/d1-pages";
 import {
   getEditorialBySlug,
   getIndexableSlugs,
@@ -20,8 +21,8 @@ const REQUIRED_STATIC_SLUGS = ["kao-00013e7cc777f411"] as const;
 
 interface PageProps { params: Promise<{ slug: string }> }
 
-export const dynamic = "force-static";
-export const dynamicParams = false;
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   if (!kaomojiDataExists()) return [];
@@ -32,6 +33,14 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const d1 = await getKaomojiDetailFromD1(slug);
+  if (d1) {
+    return createPageMetadata({
+      title: d1.seo_title ?? d1.editorial_name ?? "Kaomoji",
+      description: d1.seo_description ?? d1.accessible_name,
+      path: `/kaomoji/${slug}`,
+    });
+  }
   const record = getEditorialBySlug(slug);
   if (!record || !record.is_public) return { title: "Kaomoji Not Found" };
   return createPageMetadata({ title: record.seo_title, description: record.seo_description, path: `/kaomoji/${slug}` });
@@ -39,6 +48,59 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function KaomojiDetailPage({ params }: PageProps) {
   const { slug } = await params;
+  const d1 = await getKaomojiDetailFromD1(slug);
+  if (d1) {
+    const related = (await getRelatedKaomojiFromD1(d1.canonical_id)).map((r) => ({
+      canonical_id: r.canonical_id,
+      slug: r.slug,
+      content: r.content,
+      name: null,
+      accessible_name: r.accessible_name,
+    }));
+    return (
+      <div className="page-shell space-y-8 pb-12">
+        <KaomojiViewTracker canonicalId={d1.canonical_id} slug={d1.slug} />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: d1.seo_title ?? d1.editorial_name ?? "Kaomoji",
+            description: d1.seo_description ?? d1.accessible_name,
+            url: `https://emojiquick.com/kaomoji/${d1.slug}`,
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://emojiquick.com" },
+              { "@type": "ListItem", position: 2, name: "Kaomoji", item: "https://emojiquick.com/kaomoji" },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: d1.editorial_name ?? d1.accessible_name,
+                item: `https://emojiquick.com/kaomoji/${d1.slug}`,
+              },
+            ],
+          }}
+        />
+        <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Kaomoji", path: "/kaomoji" }, { name: d1.editorial_name ?? d1.content.slice(0, 20), path: `/kaomoji/${slug}` }]} />
+        <header className="space-y-4 text-center">
+          <div className="text-4xl sm:text-5xl break-all" aria-label={d1.accessible_name}>{d1.content}</div>
+          {d1.editorial_name ? <h1 className="text-2xl font-semibold">{d1.editorial_name}</h1> : <h1 className="sr-only">{d1.accessible_name}</h1>}
+          <KaomojiDetailActions canonicalId={d1.canonical_id} slug={d1.slug} content={d1.content} accessibleName={d1.accessible_name} />
+        </header>
+        {d1.meaning ? (
+          <section className="prose max-w-2xl mx-auto"><h2>Meaning</h2><p>{d1.meaning}</p>{d1.common_usage ? <p className="text-muted">{d1.common_usage}</p> : null}</section>
+        ) : null}
+        <KaomojiRelatedSection items={related} />
+      </div>
+    );
+  }
+
+  if (!kaomojiDataExists()) notFound();
+
   const record = getEditorialBySlug(slug);
   if (!record || !record.is_public) notFound();
   const related = getRelatedEditorialRecords(record.canonical_id).map((r) => ({

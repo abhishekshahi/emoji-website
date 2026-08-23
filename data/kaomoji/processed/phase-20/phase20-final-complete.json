@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-08-22T21:10:00.000Z",
+  "phase": 20,
+  "final_verdict": "PASS WITH WARNINGS",
+  "deployment": {
+    "worker_url": "https://emoji-website.emoji-website.workers.dev",
+    "worker_version_id": "2c8b6e19-5fef-4b32-8488-9da79adfadfa",
+    "build_id": "_0UeJcGlOTGgGNCAR5ulC",
+    "git_sha": "1fd479ffb",
+    "branch": "cursor/phase19-final-hardening-audit",
+    "deploy_method": "opennextjs-cloudflare deploy (compile + generate-env + skipNextBuild)"
+  },
+  "fixes_performed": [
+    "Search API: replaced in-memory index (Worker 1102) with D1-backed resolveKaomojiD1Binding",
+    "searchKaomojiPublic: async D1 via searchKaomojiRuntime for Worker safety",
+    "Collection/detail pages: force-dynamic D1 runtime (d1-pages.ts) after compile-only deploy regression",
+    "Invalid slug: notFound() when D1 miss and no local data (404 not 500)",
+    "next.config: output standalone + security headers",
+    "Collection legacy URL redirect to /page/1 preserved"
+  ],
+  "before_after": {
+    "search_anime": { "before": "503 error 1102", "after": "200 with results" },
+    "collection_page1": { "before_legacy_bytes": 208129, "after_bytes": 82354, "reduction_pct": 60.4 },
+    "collection_pagination": { "before": "307 redirect + static 200", "after": "200 D1 SSR 48 items/page" },
+    "invalid_slug": { "before": "500", "after": "404" }
+  },
+  "gates": {
+    "typecheck": "PASS",
+    "phase20_tests": "50/50 PASS",
+    "phase19_tests": "61/61 PASS",
+    "d1_integrity": "PASS",
+    "relationship_diff": "392904/392904 PASS",
+    "r2_remote": "4/4 PASS",
+    "search_benchmark": "122/122 PASS",
+    "worker_smoke": "13/13 PASS",
+    "live_search": "PASS",
+    "live_pagination": "PASS",
+    "security_headers": "PASS",
+    "publication_leak": "PASS",
+    "build_cf": "PASS",
+    "npm_run_build_full": "NOT VERIFIED (compile-only fast path used)"
+  },
+  "data_conservation": {
+    "raw": 236508,
+    "canonical": 63248,
+    "public": 50979,
+    "relationships": 392904,
+    "kaomoji_category": 131314,
+    "kaomoji_keyword": 383621,
+    "kaomoji_locale": 198799,
+    "source_attribution": 60165,
+    "production_release": 1,
+    "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+    "unchanged": true
+  },
+  "findings": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 1,
+    "INFO": 2
+  },
+  "not_verified": [
+    "Full 50,979 URL live SEO crawl",
+    "Full WCAG accessibility crawl",
+    "Cloudflare dashboard analytics telemetry",
+    "npm run build default mode (7576-page static generation)",
+    "Android app impact (no Android module in repo)"
+  ],
+  "recommendation": "PHASE 20 COMPLETE — READY FOR PHASE 21 REVIEW"
+}

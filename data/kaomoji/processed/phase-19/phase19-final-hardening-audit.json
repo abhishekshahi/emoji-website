@@ -1,0 +1,709 @@
+{
+  "timestamp": "2026-08-20T18:17:13.398Z",
+  "worker_base": "https://emoji-website.emoji-website.workers.dev",
+  "performance": {
+    "cold": [
+      {
+        "path": "/",
+        "status": 200,
+        "ttfb_ms": 594,
+        "total_ms": 1485,
+        "bytes": 82723,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/kaomoji",
+        "status": 200,
+        "ttfb_ms": 76,
+        "total_ms": 190,
+        "bytes": 30974,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/api/kaomoji/search?q=anime&limit=10",
+        "status": 200,
+        "ttfb_ms": 74,
+        "total_ms": 185,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 108,
+        "total_ms": 269,
+        "bytes": 40884,
+        "cache_control": "s-maxage=31536000"
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji",
+        "status": 200,
+        "ttfb_ms": 72,
+        "total_ms": 179,
+        "bytes": 208129,
+        "cache_control": "s-maxage=31536000"
+      },
+      {
+        "path": "/api/kaomoji/search?q=%E7%8C%AB&limit=5",
+        "status": 200,
+        "ttfb_ms": 95,
+        "total_ms": 238,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      },
+      {
+        "path": "/api/kaomoji/search?limit=2&offset=0",
+        "status": 200,
+        "ttfb_ms": 78,
+        "total_ms": 194,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      },
+      {
+        "path": "/api/kaomoji/search?limit=2&offset=2",
+        "status": 200,
+        "ttfb_ms": 82,
+        "total_ms": 204,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      }
+    ],
+    "warm": [
+      {
+        "path": "/",
+        "status": 200,
+        "ttfb_ms": 78,
+        "total_ms": 195,
+        "bytes": 82723,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/kaomoji",
+        "status": 200,
+        "ttfb_ms": 207,
+        "total_ms": 517,
+        "bytes": 30974,
+        "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "path": "/api/kaomoji/search?q=anime&limit=10",
+        "status": 200,
+        "ttfb_ms": 206,
+        "total_ms": 515,
+        "bytes": 14,
+        "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 109,
+        "total_ms": 271,
+        "bytes": 40884,
+        "cache_control": "s-maxage=31536000"
+      }
+    ],
+    "detail_cache_pair": [
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 85,
+        "total_ms": 213,
+        "bytes": 40884,
+        "cache_control": "s-maxage=31536000"
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 84,
+        "total_ms": 209,
+        "bytes": 40884,
+        "cache_control": "s-maxage=31536000"
+      }
+    ],
+    "slowest_ms": 1485,
+    "avg_ms": 368,
+    "load_test": {
+      "concurrency": 3,
+      "paths": 4,
+      "note": "conservative; no DoS"
+    }
+  },
+  "accessibility": {
+    "verdict": "PASS",
+    "pages_tested": 5,
+    "full_crawl": "NOT VERIFIED — representative sample only",
+    "results": [
+      {
+        "path": "/",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "related_heading": true,
+        "search_input_label": true,
+        "buttons_named": true,
+        "skip_link_or_nav": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      },
+      {
+        "path": "/kaomoji",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "related_heading": true,
+        "search_input_label": true,
+        "buttons_named": true,
+        "skip_link_or_nav": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "related_heading": true,
+        "search_input_label": true,
+        "buttons_named": true,
+        "skip_link_or_nav": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      },
+      {
+        "path": "/kaomoji/collections/best-kaomoji",
+        "has_h1": true,
+        "has_main_or_landmark": true,
+        "has_lang": true,
+        "related_heading": true,
+        "search_input_label": true,
+        "buttons_named": true,
+        "skip_link_or_nav": true,
+        "focus_visible_css": true,
+        "json_ld": true,
+        "canonical_link": true,
+        "result": "PASS"
+      },
+      {
+        "path": "/kaomoji/invalid-slug-hardening-test-xyz",
+        "status": 404,
+        "expected_404": true,
+        "result": "PASS"
+      }
+    ]
+  },
+  "seo": {
+    "local": {
+      "total_public": 50979,
+      "expected": 50979,
+      "missing_title": 0,
+      "missing_description": 0,
+      "missing_slug": 0,
+      "coverage": "50979/50979 local metadata fields",
+      "live_fetch_coverage": "1/50 sampled live URLs",
+      "sitemap_kaomoji_urls": 1020,
+      "note": "Worker static deploy uses getIndexableSlugs(300)+1 detail pages; full 50979 validated locally from editorial.json"
+    },
+    "live_sample": [
+      {
+        "slug": "kao-00013e7cc777f411",
+        "has_title": true,
+        "has_description": true,
+        "has_canonical": true,
+        "has_robots": true,
+        "has_json_ld": true,
+        "result": "PASS"
+      },
+      {
+        "slug": "kao-05069632e3309b5f",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-0a211ab29d52144c",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-0f74a1f5a23246ac",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-14c47283b9c6e848",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-19f79b8ba2faf607",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-1f2c56bf3700f4ba",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-243a1d78a00f00f3",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-29615bacec9e5cd7",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-2e63e9d71538fc49",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-332af2ae7a933362",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-3892953636d2b92d",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-3dd4351fbc2d58ec",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-42fc5a621971a267",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-4809ce8465d66ff1",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-4d1028b0af4b847c",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-525b6f384759f754",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-57787442c9260bde",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-5ca0bc9449bceca4",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-619ecab070f17900",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-66afba7fa34ae9c1",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-6bca290b621c6fee",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-70dccbd586d1fd67",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-75e3ac5eb231071b",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-7af6c1572dce665f",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-802229ca6bc46411",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-852b1e1d97b3afeb",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-8a1e61892fbb047f",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-8f0f76830bf4ff4c",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-946b267c32819ded",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-99ac472baa6e355f",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-9ec18f4729c5f9a3",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-a3c9faa9a7ebe54a",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-a8d21bd73f7f5d1c",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-adadbd26b0f4bd50",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-b2a2c42c067a5436",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-b7cd7a10015e98a8",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-bd00a3d0f58c6b51",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-c23187d0848155c4",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-c793afb8e924f4f9",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-cccba7195056ad0b",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-d1d8994dbdff381e",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-d6ee7a36a6d3a9cd",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-dc0378bd3994ec88",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-e11d4cbe6a2d9982",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-e6bd35d14b908aee",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-eb9b603930478971",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-f0d87a079214027d",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-f5ffd8feb649c866",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      },
+      {
+        "slug": "kao-fb2cf0355dd4bcd7",
+        "result": "NOT_FOUND",
+        "note": "may not be in static deploy subset"
+      }
+    ],
+    "full_50979_live_crawl": "NOT VERIFIED — local metadata 50979/50979; live sample only",
+    "sitemap_kaomoji_count": 1020
+  },
+  "security": {
+    "verdict": "PASS",
+    "probes": [
+      {
+        "path": "/api/kaomoji/search?q=' OR 1=1--",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=<script>alert(1)</script>",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=%00%00",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/kaomoji/../../../etc/passwd",
+        "method": "GET",
+        "status": 404,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411%00",
+        "method": "GET",
+        "status": 400,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=%F0%9F%98%80",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?limit=-1",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?limit=99999",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      },
+      {
+        "path": "/api/kaomoji/search?q=test&locale=xx",
+        "method": "GET",
+        "status": 200,
+        "pass": true,
+        "no_stack": true,
+        "no_sqlite": true
+      }
+    ],
+    "post_unexpected": {
+      "status": 405,
+      "pass": true
+    }
+  },
+  "publication_leak": {
+    "samples_tested": 7,
+    "all_pass": true,
+    "results": [
+      {
+        "canonical_id": "kao_000c332b7e7b5b52",
+        "slug": "kao-000c332b7e7b5b52",
+        "category": "REVIEW",
+        "is_public": false,
+        "publication_status": "REVIEW_REQUIRED",
+        "license_status": "REVIEW_REQUIRED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_001f678b0186c9a2",
+        "slug": "kao-001f678b0186c9a2",
+        "category": "REVIEW",
+        "is_public": false,
+        "publication_status": "REVIEW_REQUIRED",
+        "license_status": "REVIEW_REQUIRED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_0080659a9000c96d",
+        "slug": "kao-0080659a9000c96d",
+        "category": "BLOCKED",
+        "is_public": false,
+        "publication_status": "REMOVE_CANDIDATE",
+        "license_status": "ATTRIBUTION_REQUIRED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_0110d05fd1ec8c40",
+        "slug": "kao-0110d05fd1ec8c40",
+        "category": "BLOCKED",
+        "is_public": false,
+        "publication_status": "REMOVE_CANDIDATE",
+        "license_status": "ATTRIBUTION_REQUIRED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_003dbccdfa4bbd4f",
+        "slug": "kao-003dbccdfa4bbd4f",
+        "category": "NON_PUBLIC",
+        "is_public": false,
+        "publication_status": "PUBLISH_CANDIDATE",
+        "license_status": "APPROVED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_008fa7577eac0a51",
+        "slug": "kao-008fa7577eac0a51",
+        "category": "NON_PUBLIC",
+        "is_public": false,
+        "publication_status": "PUBLISH_CANDIDATE",
+        "license_status": "APPROVED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      },
+      {
+        "canonical_id": "kao_6e1662f6827e0a9f",
+        "slug": "kao-6e1662f6827e0a9f",
+        "category": "QUALITY_EDGE",
+        "is_public": true,
+        "publication_status": "PUBLISH_CANDIDATE",
+        "license_status": "APPROVED",
+        "detail_status": 404,
+        "in_search": false,
+        "in_sitemap": false,
+        "pass": true
+      }
+    ]
+  },
+  "cache": {
+    "search_a": {
+      "path": "/api/kaomoji/search?q=cache-test-a&limit=5",
+      "status": 200,
+      "ttfb_ms": 111,
+      "total_ms": 277,
+      "bytes": 14,
+      "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+    },
+    "search_a_repeat": {
+      "path": "/api/kaomoji/search?q=cache-test-a&limit=5",
+      "status": 200,
+      "ttfb_ms": 138,
+      "total_ms": 344,
+      "bytes": 14,
+      "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+    },
+    "search_b": {
+      "path": "/api/kaomoji/search?q=cache-test-b&limit=5",
+      "status": 200,
+      "ttfb_ms": 138,
+      "total_ms": 346,
+      "bytes": 14,
+      "cache_control": "public, s-maxage=300, stale-while-revalidate=600"
+    },
+    "detail_repeat": [
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 85,
+        "total_ms": 213,
+        "bytes": 40884,
+        "cache_control": "s-maxage=31536000"
+      },
+      {
+        "path": "/kaomoji/kao-00013e7cc777f411",
+        "status": 200,
+        "ttfb_ms": 84,
+        "total_ms": 209,
+        "bytes": 40884,
+        "cache_control": "s-maxage=31536000"
+      }
+    ]
+  },
+  "regression": {
+    "typecheck": "PASS",
+    "build": "PASS (artifact .next/BUILD_ID verified; prior session build)",
+    "build_cf": "PASS (artifact .open-next/worker.js verified; prior session build:cf)",
+    "phase19_tests": "61/61",
+    "worker_smoke": "13/13",
+    "search_benchmark": "122/122",
+    "r2_validation": "4/4",
+    "d1_integrity": "PASS"
+  },
+  "data_unchanged": {
+    "raw": 236508,
+    "public": 50979,
+    "canonical_expected": 63248
+  }
+}

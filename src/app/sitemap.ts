@@ -135,7 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           priority: 0.85,
         },
         ...loadCollections().map((c) => ({
-          url: canonicalUrl(`/kaomoji/collections/${c.slug}`),
+          url: canonicalUrl(`/kaomoji/collections/${c.slug}/page/1`),
           lastModified: generatedAt,
           changeFrequency: "weekly" as const,
           priority: 0.7,

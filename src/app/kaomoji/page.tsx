@@ -45,7 +45,7 @@ export default function KaomojiHubPage() {
         <h2 className="text-xl font-semibold">Collections</h2>
         <ul className="flex flex-wrap gap-2">
           {collections.map((c) => (
-            <li key={c.slug}><Link className="chip" href={`/kaomoji/collections/${c.slug}`}>{c.title}</Link></li>
+            <li key={c.slug}><Link className="chip" href={`/kaomoji/collections/${c.slug}/page/1`}>{c.title}</Link></li>
           ))}
         </ul>
       </section>

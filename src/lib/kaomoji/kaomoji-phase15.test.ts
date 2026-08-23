@@ -1,0 +1,82 @@
+import assert from "node:assert/strict";
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+import { describe, it } from "node:test";
+import { SUPPORTED_LANGUAGES } from "@/lib/content/localization/types";
+import { buildPhase15LocaleRegistry, getKaomojiUiStrings } from "@/lib/kaomoji/localization/registry";
+import { localizedKaomojiPath, kaomojiHreflangAlternates } from "@/lib/kaomoji/localization/paths";
+import { LOCALIZED_SEARCH_TERMS, resolveLocalizedSearchQuery, isSupportedKaomojiLocale } from "@/lib/kaomoji/localization/search-terms";
+import { runPhase15Pipeline } from "@/lib/kaomoji/processing/phase15/pipeline";
+import { searchKaomojiV2 } from "@/lib/kaomoji/processing/phase14/search-index-v2";
+import { getPhase14SearchIndexPath, getPhase15ManifestPath, getPhase15LocaleRegistryPath } from "@/lib/kaomoji/storage/paths";
+
+describe("phase 15 multilingual", () => {
+  const root = process.cwd();
+  const m = () => JSON.parse(readFileSync(getPhase15ManifestPath(root), "utf8"));
+  const idx = () => JSON.parse(readFileSync(getPhase14SearchIndexPath(root), "utf8"));
+
+  it("1 manifest exists", () => assert.ok(existsSync(getPhase15ManifestPath(root))));
+  it("2 registry file exists", () => assert.ok(existsSync(getPhase15LocaleRegistryPath(root))));
+  it("3 phase number", () => assert.equal(m().phase, 15));
+  it("4 supported locales 11", () => assert.equal(m().supported_locales, 11));
+  it("5 search terms >= 30", () => assert.ok(m().localized_search_terms >= 30));
+  it("6 hreflang routes 11", () => assert.equal(m().hreflang_routes, 11));
+  it("7 no errors", () => assert.equal(m().errors.length, 0));
+  it("8 locale version", () => assert.match(m().locale_version, /^15\./));
+  it("9 registry builds", () => assert.equal(buildPhase15LocaleRegistry().bundles.length, 11));
+  it("10 primary en", () => assert.equal(buildPhase15LocaleRegistry().primaryLocale, "en"));
+  it("11 en path canonical", () => assert.equal(localizedKaomojiPath("en", "test-slug"), "/kaomoji/test-slug"));
+  it("12 hi path localized", () => assert.equal(localizedKaomojiPath("hi"), "/hi/kaomoji"));
+  it("13 ja path slug", () => assert.equal(localizedKaomojiPath("ja", "cute-cat"), "/ja/kaomoji/cute-cat"));
+  it("14 hreflang count", () => assert.equal(kaomojiHreflangAlternates("x").length, 11));
+  it("15 hreflang en", () => assert.ok(kaomojiHreflangAlternates("x").some((h) => h.hreflang === "en")));
+  it("16 isSupported hi", () => assert.ok(isSupportedKaomojiLocale("hi")));
+  it("17 isSupported reject", () => assert.ok(!isSupportedKaomojiLocale("xx")));
+  it("18 resolve en passthrough", () => assert.equal(resolveLocalizedSearchQuery("cute", "en"), "cute"));
+  it("19 resolve es lindo", () => assert.ok(resolveLocalizedSearchQuery("lindo", "es").includes("cute")));
+  it("20 resolve ja kawaii", () => assert.ok(resolveLocalizedSearchQuery("kawaii", "ja").includes("kawaii")));
+  it("21 resolve hi pyara", () => assert.ok(resolveLocalizedSearchQuery("pyara", "hi").includes("cute")));
+  it("22 resolve de liebe", () => assert.ok(resolveLocalizedSearchQuery("liebe", "de").includes("love")));
+  it("23 resolve fr amour", () => assert.ok(resolveLocalizedSearchQuery("amour", "fr").includes("love")));
+  it("24 resolve pt gato", () => assert.ok(resolveLocalizedSearchQuery("gato", "pt").includes("cat")));
+  it("25 resolve it carino", () => assert.ok(resolveLocalizedSearchQuery("carino", "it").includes("cute")));
+  it("26 resolve ar latif", () => assert.ok(resolveLocalizedSearchQuery("latif", "ar").includes("cute")));
+  it("27 resolve ko gwiyeoun", () => assert.ok(resolveLocalizedSearchQuery("gwiyeoun", "ko").includes("cute")));
+  it("28 resolve zh keai", () => assert.ok(resolveLocalizedSearchQuery("keai", "zh").includes("cute")));
+  it("29 localized terms unique locales", () => {
+    const locales = new Set(LOCALIZED_SEARCH_TERMS.map((t) => t.locale));
+    assert.ok(locales.size >= 8);
+  });
+  it("30 all supported in registry", () => {
+    for (const l of SUPPORTED_LANGUAGES) assert.ok(buildPhase15LocaleRegistry().bundles.some((b) => b.locale === l));
+  });
+  it("31 ui strings en", () => assert.ok(getKaomojiUiStrings("en").searchPlaceholder.includes("Search")));
+  it("32 ui strings es", () => assert.ok(getKaomojiUiStrings("es").searchButton.length > 0));
+  it("33 es search via resolved", () => assert.ok(searchKaomojiV2(idx(), resolveLocalizedSearchQuery("lindo", "es"), 5).length >= 3));
+  it("34 ja kawaii search", () => assert.ok(searchKaomojiV2(idx(), resolveLocalizedSearchQuery("kawaii", "ja"), 5).length >= 3));
+  it("35 hi pyara search", () => assert.ok(searchKaomojiV2(idx(), resolveLocalizedSearchQuery("pyara", "hi"), 5).length >= 3));
+  it("36 de katze search", () => assert.ok(searchKaomojiV2(idx(), resolveLocalizedSearchQuery("katze", "de"), 5).length >= 2));
+  it("37 fr chat search", () => assert.ok(searchKaomojiV2(idx(), resolveLocalizedSearchQuery("chat", "fr"), 5).length >= 1));
+  it("38 unknown locale term passthrough", () => assert.equal(resolveLocalizedSearchQuery("happy", "es"), "happy"));
+  it("39 published locales > 0", () => assert.ok(m().published_locales > 0));
+  it("40 deterministic rerun", () => {
+    const before = m().localized_search_terms;
+    const after = runPhase15Pipeline(root).manifest.localized_search_terms;
+    assert.equal(before, after);
+  });
+  it("41 registry json valid", () => {
+    const reg = JSON.parse(readFileSync(getPhase15LocaleRegistryPath(root), "utf8"));
+    assert.equal(reg.version, "15.0.0");
+  });
+  it("42 bundle has ui", () => assert.ok(buildPhase15LocaleRegistry().bundles[0]!.ui.copy));
+  it("43 bundle category labels", () => assert.ok(Object.keys(buildPhase15LocaleRegistry().bundles[0]!.categoryLabels).length >= 5));
+  it("44 hreflang absolute url", () => assert.match(kaomojiHreflangAlternates("a")[0]!.href, /^https:\/\//));
+  it("45 es feliz resolves happy", () => assert.ok(resolveLocalizedSearchQuery("feliz", "es").includes("happy")));
+  it("46 pt amor resolves love", () => assert.ok(resolveLocalizedSearchQuery("amor", "pt").includes("love")));
+  it("47 it felice resolves happy", () => assert.ok(resolveLocalizedSearchQuery("felice", "it").includes("happy")));
+  it("48 ko sarang resolves love", () => assert.ok(resolveLocalizedSearchQuery("sarang", "ko").includes("love")));
+  it("49 zh mao resolves cat", () => assert.ok(resolveLocalizedSearchQuery("mao", "zh").includes("cat")));
+  it("50 ar qitta resolves cat", () => assert.ok(resolveLocalizedSearchQuery("qitta", "ar").includes("cat")));
+  it("51 pipeline version", () => assert.match(m().pipeline_version, /^15\./));
+  it("52 localized term confidence controlled", () => assert.ok(LOCALIZED_SEARCH_TERMS.every((t) => t.confidence === "CONTROLLED")));
+});
