@@ -297,8 +297,9 @@
   "verification": {
     "typecheck": "PASS",
     "test_kaomoji": "PENDING_full_local_artifacts",
-    "build": "PENDING",
-    "build_cf": "PENDING",
+    "test_kaomoji_note": "Cloud agent lacks data/kaomoji/raw/records.json; user machine with full artifacts must confirm 734/734",
+    "build": "PASS",
+    "build_cf": "PASS",
     "deploy": "BLOCKED"
   },
   "data_integrity_attestation": {

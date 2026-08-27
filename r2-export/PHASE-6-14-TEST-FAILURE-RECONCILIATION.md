@@ -140,9 +140,9 @@ Verified by fetching `https://raw.githubusercontent.com/w33ble/emoticon-data/mas
 
 ```bash
 npm run typecheck          # PASS (2026-08-27)
-npm run test:kaomoji       # Re-run on machine with data/kaomoji/raw/records.json
-npm run build              # Required after test pass
-npm run build:cf           # Required after test pass
+npm run test:kaomoji       # Re-run on machine with data/kaomoji/raw/records.json — target 734/734
+npm run build              # PASS (2026-08-27)
+npm run build:cf           # PASS (2026-08-27)
 ```
 
 **Target:** 734/734 pass, 0 fail.
