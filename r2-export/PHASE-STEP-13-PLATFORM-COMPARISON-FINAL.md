@@ -53,17 +53,21 @@ No mass `apple-vs-google` pair pages.
 
 ## Tests
 
-| Suite | Result |
-|-------|--------|
-| `npm run typecheck` | Pending |
-| Step 13 (10 tests) | Pending |
-| Step 12 regression | Pending |
+| `npm run typecheck` | PASS |
+| Step 13 (10 tests) | PASS |
+| Step 12 regression | PASS |
+| `npm run build` | PASS (local BUILD_ID `jx8AMGFerFoJS2L_dHzeU`) |
+| `npm run build:cf` | PASS |
 
 ---
 
 ## Live Audits
 
-Pending deploy. Run:
+**First audit (B1): FAIL** — production still on BUILD_ID `jBTM3zuDHiOQZYEJ23nV8`. Platform routes 404; expected until deploy.
+
+Deploy blocked: `CLOUDFLARE_API_TOKEN` not set.
+
+After deploy:
 
 ```bash
 npx tsx scripts/kaomoji/step13-deep-live-audit.ts

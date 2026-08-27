@@ -18,15 +18,24 @@
   "emoji_detail_integration": "EmojiPlatformComparisonSection on non-extra emoji pages",
   "kaomoji_distinction": "/emoji/platforms/emoji-vs-kaomoji",
   "live_audits": {
-    "first": "pending_deploy",
-    "second": "pending_deploy",
+    "first": {
+      "status": "FAIL",
+      "reason": "Production not deployed — platform routes 404",
+      "production_build_id": "jBTM3zuDHiOQZYEJ23nV8",
+      "local_build_id": "jx8AMGFerFoJS2L_dHzeU",
+      "findings": { "CRITICAL": 0, "HIGH": 10, "MEDIUM": 0, "LOW": 0 }
+    },
+    "second": "blocked_pending_deploy",
     "script": "scripts/kaomoji/step13-deep-live-audit.ts"
   },
-  "data_integrity": {
-    "canonical": 63248,
-    "public": 51338,
-    "blocked": 11910,
-    "raw": 236508,
-    "relationships": 396162
-  }
+  "tests": {
+    "typecheck": "PASS",
+    "step13_unit": "10/10 PASS",
+    "step12_regression": "10/10 PASS",
+    "npm_run_build": "PASS",
+    "npm_run_build_cf": "PASS"
+  },
+  "build_id": "jx8AMGFerFoJS2L_dHzeU",
+  "deployment_id": "blocked_no_cloudflare_api_token",
+  "git_sha": "079688b"
 }
