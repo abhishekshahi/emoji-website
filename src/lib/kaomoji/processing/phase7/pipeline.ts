@@ -23,7 +23,19 @@ import { createRawSnapshot, loadFastEmojiCheckpointStats, verifyRawUnchanged } f
 import { analyzeVariants } from "./variant-analyze";
 import type { Phase7CollectionManifest, Phase7ProcessedRecord, Phase7SourceStats } from "./types";
 
-export const EXPECTED_RAW_BASELINE = 232_683;
+/** Historical Phase 7/8 snapshot baseline before fastemoji collection completed (+3,825). */
+export const PHASE8_HISTORICAL_RAW_BASELINE = 232_683;
+export const PHASE8_HISTORICAL_RAW_SHA256 =
+  "d795bc676307f854ea8cfa89bc151d6364c46b052b338358d7d47f9ab8618640";
+
+/** Authoritative immutable RAW dataset verified in Phase 13/21 audits. */
+export const AUTHORITATIVE_RAW_COUNT = 236_508;
+export const AUTHORITATIVE_RAW_SHA256 =
+  "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf";
+export const FASTEMOJI_RAW_DRIFT = 3_825;
+
+/** Current RAW count expectation for pipeline immutability checks. */
+export const EXPECTED_RAW_BASELINE = AUTHORITATIVE_RAW_COUNT;
 
 function loadRaw(rootDir: string): RawKaomojiRecord[] {
   const path = getKaomojiRawRecordsPath(rootDir);

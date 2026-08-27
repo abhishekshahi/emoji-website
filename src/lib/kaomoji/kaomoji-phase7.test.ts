@@ -4,10 +4,10 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 import { analyzeDuplicates } from "@/lib/kaomoji/processing/phase7/duplicate-analyze";
 import { processRawRecord, resolvePublicationStatus } from "@/lib/kaomoji/processing/phase7/process-record";
-import { createRawSnapshot, verifyRawUnchanged } from "@/lib/kaomoji/processing/phase7/raw-snapshot";
+import { createRawSnapshot, hashRawFile, verifyRawUnchanged } from "@/lib/kaomoji/processing/phase7/raw-snapshot";
 import { analyzeUnicode } from "@/lib/kaomoji/processing/phase7/unicode-analyze";
 import { analyzeVariants } from "@/lib/kaomoji/processing/phase7/variant-analyze";
-import { EXPECTED_RAW_BASELINE } from "@/lib/kaomoji/processing/phase7/pipeline";
+import { EXPECTED_RAW_BASELINE, AUTHORITATIVE_RAW_SHA256 } from "@/lib/kaomoji/processing/phase7/pipeline";
 import type { RawKaomojiRecord } from "@/lib/kaomoji/types";
 
 function sampleRaw(overrides: Partial<RawKaomojiRecord> = {}): RawKaomojiRecord {
@@ -84,8 +84,13 @@ describe("phase 7 raw processing", () => {
     assert.equal(verify.ok, true);
   });
 
-  it("baseline raw count is 232683", () => {
+  it("baseline raw count is 236508", () => {
     const records = JSON.parse(readFileSync(join(process.cwd(), "data/kaomoji/raw/records.json"), "utf8")) as unknown[];
     assert.equal(records.length, EXPECTED_RAW_BASELINE);
+  });
+
+  it("authoritative raw sha256 stable", () => {
+    const { sha256 } = hashRawFile(join(process.cwd(), "data/kaomoji/raw/records.json"));
+    assert.equal(sha256, AUTHORITATIVE_RAW_SHA256);
   });
 });

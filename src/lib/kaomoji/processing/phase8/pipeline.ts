@@ -16,7 +16,14 @@ import {
   getPhase8RootDir,
   PHASE8_PIPELINE_VERSION,
 } from "../../storage/paths";
-import { EXPECTED_RAW_BASELINE } from "../phase7/pipeline";
+import {
+  AUTHORITATIVE_RAW_COUNT,
+  AUTHORITATIVE_RAW_SHA256,
+  EXPECTED_RAW_BASELINE,
+  FASTEMOJI_RAW_DRIFT,
+  PHASE8_HISTORICAL_RAW_BASELINE,
+  PHASE8_HISTORICAL_RAW_SHA256,
+} from "../phase7/pipeline";
 import { hashRawFile } from "../phase7/raw-snapshot";
 import { buildCanonicalLibrary } from "./canonical-build";
 import { explainProvenanceDiscrepancy, repairProvenance } from "./provenance-repair";
@@ -29,7 +36,14 @@ import type {
   RepairedProvenance,
 } from "./types";
 
-export { EXPECTED_RAW_BASELINE };
+export {
+  AUTHORITATIVE_RAW_COUNT,
+  AUTHORITATIVE_RAW_SHA256,
+  EXPECTED_RAW_BASELINE,
+  FASTEMOJI_RAW_DRIFT,
+  PHASE8_HISTORICAL_RAW_BASELINE,
+  PHASE8_HISTORICAL_RAW_SHA256,
+};
 
 function writeJson(path: string, data: unknown): void {
   mkdirSync(join(path, ".."), { recursive: true });
@@ -92,7 +106,8 @@ export function runPhase8Pipeline(rootDir: string): Phase8PipelineResult {
           validation_status: v.validation_status,
           validation_reasons: v.validation_reasons,
           content_types: v.content_types,
-          quality_score: q?.quality_score ?? 50,
+          quality_score:
+            typeof q?.quality_score === "number" && Number.isFinite(q.quality_score) ? q.quality_score : 0,
           quality_status: q?.quality_status ?? "REVIEW",
           license_status: l?.license_status ?? "UNKNOWN",
           publication_status: l?.publication_status ?? "REVIEW_REQUIRED",

@@ -4,9 +4,9 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 import { buildCanonicalId, buildCanonicalLibrary } from "@/lib/kaomoji/processing/phase8/canonical-build";
 import { repairProvenance, explainProvenanceDiscrepancy } from "@/lib/kaomoji/processing/phase8/provenance-repair";
-import { EXPECTED_RAW_BASELINE, hashCanonicalOutput, runPhase8Pipeline } from "@/lib/kaomoji/processing/phase8/pipeline";
+import { EXPECTED_RAW_BASELINE, AUTHORITATIVE_RAW_SHA256, PHASE8_HISTORICAL_RAW_BASELINE, hashCanonicalOutput, runPhase8Pipeline } from "@/lib/kaomoji/processing/phase8/pipeline";
 import { hashRawFile } from "@/lib/kaomoji/processing/phase7/raw-snapshot";
-import { getKaomojiRawRecordsPath, getPhase7RawSnapshotPath } from "@/lib/kaomoji/storage/paths";
+import { getKaomojiRawRecordsPath } from "@/lib/kaomoji/storage/paths";
 import type { RawKaomojiRecord } from "@/lib/kaomoji/types";
 
 function sampleRaw(overrides: Partial<RawKaomojiRecord> = {}): RawKaomojiRecord {
@@ -46,7 +46,7 @@ describe("phase 8 canonical library", () => {
   });
 
   it("explains Phase 7 vs Phase 8 provenance discrepancy", () => {
-    const exp = explainProvenanceDiscrepancy({ COMPLETE: 200000, PARTIAL: 32683, MISSING: 0, CONFLICTING: 0, PROVENANCE_UNRESOLVED: 0 }, 232683);
+    const exp = explainProvenanceDiscrepancy({ COMPLETE: 200000, PARTIAL: 32683, MISSING: 0, CONFLICTING: 0, PROVENANCE_UNRESOLVED: 0 }, PHASE8_HISTORICAL_RAW_BASELINE);
     assert.match(exp, /85\.6%/);
   });
 
@@ -184,14 +184,40 @@ describe("phase 8 canonical library", () => {
     assert.equal(result.rawToCanonical.size, 1);
   });
 
-  it("RAW immutability — sha256 unchanged", () => {
-    const path = getKaomojiRawRecordsPath(process.cwd());
-    const p7 = JSON.parse(readFileSync(getPhase7RawSnapshotPath(process.cwd()), "utf8")) as { file_sha256: string };
-    const now = hashRawFile(path);
-    assert.equal(now.sha256, p7.file_sha256);
+  it("representativeScore handles missing quality_score without TypeError", () => {
+    const raw = sampleRaw({ raw_id: "no-q" });
+    const result = buildCanonicalLibrary({
+      rawRecords: [raw],
+      normalizedByRawId: new Map([["no-q", "(^_^)" ]]),
+      metaByRawId: new Map([
+        [
+          "no-q",
+          {
+            validation_status: "VALID_KAOMOJI",
+            validation_reasons: [],
+            content_types: ["KAOMOJI"],
+            quality_score: undefined as unknown as number,
+            quality_status: "REVIEW",
+            license_status: "UNKNOWN",
+            publication_status: "REVIEW_REQUIRED",
+          },
+        ],
+      ]),
+      repairedByRawId: new Map([["no-q", repairProvenance(raw)]]),
+      variantGroupByRawId: new Map(),
+      nearDuplicateRawIds: new Set(),
+    });
+    assert.equal(result.canonicalRecords.length, 1);
+    assert.equal(result.canonicalRecords[0]!.curation_status, "REVIEW");
   });
 
-  it("baseline raw count 232683", () => {
+  it("RAW immutability — sha256 unchanged", () => {
+    const path = getKaomojiRawRecordsPath(process.cwd());
+    const now = hashRawFile(path);
+    assert.equal(now.sha256, AUTHORITATIVE_RAW_SHA256);
+  });
+
+  it("baseline raw count 236508", () => {
     const raw = JSON.parse(readFileSync(getKaomojiRawRecordsPath(process.cwd()), "utf8")) as unknown[];
     assert.equal(raw.length, EXPECTED_RAW_BASELINE);
   });

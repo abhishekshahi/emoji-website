@@ -15,6 +15,7 @@ describe("phase 3B discovery", () => {
     const root = join(process.cwd());
     const snap = loadCollectedSnapshot(root);
     assert.ok(snap.total_raw >= 3372);
-    assert.ok(snap.by_source["emoticon-data"]?.raw === 1562);
+    // Phase 5 tag expansion: one RAW occurrence per emoticon tag (1879), not unique emoticons (1562).
+    assert.ok(snap.by_source["emoticon-data"]?.raw === 1879);
   });
 });
