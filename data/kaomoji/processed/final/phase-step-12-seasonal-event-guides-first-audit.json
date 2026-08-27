@@ -1,0 +1,143 @@
+{
+  "step": 12,
+  "title": "Kaomoji Seasonal & Event Guides",
+  "audit_label": "B1",
+  "audited_at": "2026-08-27T04:03:22.912Z",
+  "production_url": "https://emojiquick.com",
+  "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+  "git_sha": "4c1e1edd57450916afce7e6ebbef5fb312c38225",
+  "pages_checked": 29,
+  "regression": {
+    "step_tests": "PASS"
+  },
+  "findings": [
+    {
+      "id": "B1-F1",
+      "severity": "MEDIUM",
+      "area": "discovery",
+      "message": "Kaomoji hub missing events link"
+    },
+    {
+      "id": "B1-F2",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events returned 404"
+    },
+    {
+      "id": "B1-F3",
+      "severity": "HIGH",
+      "area": "sitemap",
+      "message": "Events index missing from sitemap"
+    },
+    {
+      "id": "B1-F4",
+      "severity": "MEDIUM",
+      "area": "sitemap",
+      "message": "Event page /kaomoji/events/new-year missing from sitemap"
+    },
+    {
+      "id": "B1-F5",
+      "severity": "MEDIUM",
+      "area": "sitemap",
+      "message": "Event page /kaomoji/events/valentines-day missing from sitemap"
+    },
+    {
+      "id": "B1-F6",
+      "severity": "MEDIUM",
+      "area": "sitemap",
+      "message": "Event page /kaomoji/events/halloween missing from sitemap"
+    },
+    {
+      "id": "B1-F7",
+      "severity": "MEDIUM",
+      "area": "sitemap",
+      "message": "Event page /kaomoji/events/christmas missing from sitemap"
+    },
+    {
+      "id": "B1-F8",
+      "severity": "MEDIUM",
+      "area": "sitemap",
+      "message": "Event page /kaomoji/events/thanksgiving missing from sitemap"
+    },
+    {
+      "id": "B1-F9",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/new-year returned 404"
+    },
+    {
+      "id": "B1-F10",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/valentines-day returned 404"
+    },
+    {
+      "id": "B1-F11",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/halloween returned 404"
+    },
+    {
+      "id": "B1-F12",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/christmas returned 404"
+    },
+    {
+      "id": "B1-F13",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/thanksgiving returned 404"
+    },
+    {
+      "id": "B1-F14",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/birthday returned 404"
+    },
+    {
+      "id": "B1-F15",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/wedding returned 404"
+    },
+    {
+      "id": "B1-F16",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/graduation returned 404"
+    },
+    {
+      "id": "B1-F17",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/anniversary returned 404"
+    },
+    {
+      "id": "B1-F18",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/congratulations returned 404"
+    },
+    {
+      "id": "B1-F19",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/good-luck returned 404"
+    },
+    {
+      "id": "B1-F20",
+      "severity": "HIGH",
+      "area": "event-pages",
+      "message": "/kaomoji/events/thank-you returned 404"
+    }
+  ],
+  "counts": {
+    "CRITICAL": 0,
+    "HIGH": 14,
+    "MEDIUM": 6,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "pass": false
+}
