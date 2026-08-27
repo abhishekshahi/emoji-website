@@ -1,9 +1,11 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
+import { KaomojiCopyButton } from "@/components/kaomoji/kaomoji-copy-button";
+import { KaomojiSaveButton } from "@/components/kaomoji/kaomoji-save-button";
 import { copyText } from "@/lib/clipboard/copy-text";
-import { addRecentKaomoji, toggleKaomojiFavorite, readKaomojiIds, KAOMOJI_FAVORITES_KEY } from "@/lib/kaomoji/product/local-storage";
-import { trackKaomojiCopy, trackKaomojiFavorite, trackKaomojiShare } from "@/lib/kaomoji/analytics/client";
+import { buildSavePayload } from "@/lib/kaomoji/personal/client-store";
+import { trackKaomojiShare } from "@/lib/kaomoji/analytics/client";
 
 interface Props {
   canonicalId: string;
@@ -13,25 +15,13 @@ interface Props {
 }
 
 export function KaomojiDetailActions({ canonicalId, slug, content, accessibleName }: Props) {
-  const [copied, setCopied] = useState(false);
-  const [fav, setFav] = useState(() =>
-    typeof window !== "undefined" ? readKaomojiIds(KAOMOJI_FAVORITES_KEY).includes(canonicalId) : false,
-  );
-
-  const handleCopy = useCallback(async () => {
-    if (await copyText(content)) {
-      addRecentKaomoji(canonicalId);
-      trackKaomojiCopy(canonicalId, slug);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1600);
-    }
-  }, [canonicalId, content, slug]);
-
-  const handleFavorite = useCallback(() => {
-    const next = toggleKaomojiFavorite(canonicalId);
-    setFav(next);
-    if (next) trackKaomojiFavorite(canonicalId, slug);
-  }, [canonicalId, slug]);
+  const savePayload = buildSavePayload({
+    id: canonicalId,
+    content,
+    slug,
+    accessible_name: accessibleName,
+    source: "public",
+  });
 
   const handleShare = useCallback(async () => {
     const url = `${window.location.origin}/kaomoji/${slug}`;
@@ -49,9 +39,18 @@ export function KaomojiDetailActions({ canonicalId, slug, content, accessibleNam
 
   return (
     <div className="flex flex-wrap justify-center gap-2">
-      <button type="button" className="btn btn--primary btn--lg min-h-11" onClick={() => void handleCopy()} aria-label={`Copy ${accessibleName}`}>{copied ? "Copied!" : "Copy"}</button>
-      <button type="button" className="btn btn--secondary min-h-11" onClick={handleFavorite} aria-label={fav ? "Unfavorite" : "Favorite"}>{fav ? "Favorited" : "Favorite"}</button>
-      <button type="button" className="btn btn--ghost min-h-11" onClick={() => void handleShare()}>Share</button>
+      <KaomojiCopyButton
+        content={content}
+        accessibleName={accessibleName}
+        canonicalId={canonicalId}
+        slug={slug}
+        variant="primary"
+        size="lg"
+      />
+      <KaomojiSaveButton payload={savePayload} variant="detail" size="lg" showCollectionPicker />
+      <button type="button" className="btn btn--ghost min-h-11" onClick={() => void handleShare()}>
+        Share
+      </button>
     </div>
   );
 }
