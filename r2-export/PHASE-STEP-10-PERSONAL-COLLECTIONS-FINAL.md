@@ -3,7 +3,8 @@
 **Status:** Implementation complete — **FINAL VERIFIED blocked pending production deploy and two live audits**
 
 **Branch:** `cursor/359-kaomoji-promotion`  
-**Production (pre-deploy):** https://emojiquick.com
+**Git SHA:** `efc5a08`  
+**Production (pre-deploy BUILD_ID):** `jBTM3zuDHiOQZYEJ23nV8`
 
 ---
 

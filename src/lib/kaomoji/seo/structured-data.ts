@@ -27,18 +27,42 @@ export function buildKaomojiBreadcrumbJsonLd(record: KaomojiEditorialRecord) {
   };
 }
 
-export function buildKaomojiCollectionJsonLd(label: string, slug: string, itemCount: number) {
+export function buildKaomojiCollectionJsonLd(label: string, slug: string, itemCount: number, path?: string) {
+  const pagePath = path ?? `/kaomoji/${slug}`;
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: `${label} Kaomoji`,
-    url: `${SITE_ORIGIN}/kaomoji?category=${slug}`,
+    url: `${SITE_ORIGIN}${pagePath}`,
     description: `Browse ${itemCount.toLocaleString()} ${label.toLowerCase()} kaomoji on EmojiQuick.`,
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: itemCount,
       itemListOrder: "https://schema.org/ItemListOrderDescending",
     },
+  };
+}
+
+export function buildKaomojiIntentBreadcrumbJsonLd(label: string, slug: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
+      { "@type": "ListItem", position: 2, name: "Kaomoji", item: `${SITE_ORIGIN}/kaomoji` },
+      { "@type": "ListItem", position: 3, name: `${label} Kaomoji`, item: `${SITE_ORIGIN}/kaomoji/${slug}` },
+    ],
+  };
+}
+
+export function buildKaomojiDefinedTermJsonLd(name: string, description: string, path: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name,
+    description,
+    url: `${SITE_ORIGIN}${path}`,
+    inDefinedTermSet: { "@type": "DefinedTermSet", name: "Kaomoji Meanings", url: `${SITE_ORIGIN}/kaomoji/categories` },
   };
 }
 

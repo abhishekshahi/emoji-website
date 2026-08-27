@@ -30,6 +30,8 @@ export default async function KaomojiHubPage() {
       description="Search and copy Japanese-style text faces (kaomoji). No account required."
       links={[
         { href: "/kaomoji/search", label: "Search" },
+        { href: "/kaomoji/categories", label: "Categories" },
+        { href: "/kaomoji/collections", label: "Collections" },
         { href: "/kaomoji/my", label: "My collections" },
         { href: "/kaomoji/popular", label: "Popular" },
         { href: "/kaomoji/trending", label: "Trending" },

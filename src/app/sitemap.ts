@@ -12,6 +12,7 @@ import { filterPublishableLocalizedPages } from "@/lib/content/localization/publ
 import { localizedEmojiPath, type SupportedLanguage } from "@/lib/content/localization/types";
 import { canonicalUrl } from "@/lib/seo/metadata";
 import { getAllPublicSlugs, getIndexableSlugs, kaomojiDataExists, loadCollections } from "@/lib/kaomoji/product/loader";
+import { getIndexableSeoPages } from "@/lib/kaomoji/seo/sitemap-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const manifest = getManifest();
@@ -152,6 +153,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
           changeFrequency: "weekly" as const,
           priority: 0.82,
         },
+        {
+          url: canonicalUrl("/kaomoji/categories"),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.8,
+        },
+        {
+          url: canonicalUrl("/kaomoji/collections"),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.8,
+        },
+        ...getIndexableSeoPages()
+          .filter((p) => p.kind !== "index")
+          .map((p) => ({
+            url: canonicalUrl(p.path),
+            lastModified: generatedAt,
+            changeFrequency: "weekly" as const,
+            priority: p.kind === "intent" ? 0.78 : p.kind === "meaning" ? 0.72 : 0.74,
+          })),
         ...(["hi", "es", "fr", "de", "pt", "it", "ja", "ko", "zh", "ar"] as const).map((locale) => ({
           url: canonicalUrl(`/${locale}/kaomoji`),
           lastModified: generatedAt,
