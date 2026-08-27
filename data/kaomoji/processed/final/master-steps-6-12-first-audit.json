@@ -1,0 +1,3179 @@
+{
+  "audit": "STEPS_6_12_FIRST_FORENSIC",
+  "started": "2026-08-27T06:11:37.744Z",
+  "finished": "2026-08-27T06:13:37.834Z",
+  "production": "https://emojiquick.com",
+  "worker": "https://emoji-website.emoji-website.workers.dev",
+  "build_id": "Z0kAnJi2M_4MZvBouUPid",
+  "worker_build_id": "Z0kAnJi2M_4MZvBouUPid",
+  "baseline_expected": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "relationships": 396162
+  },
+  "source_inventory": {
+    "taxonomy_groups": 6,
+    "taxonomy_categories": 63,
+    "curated_intents": 21,
+    "events": 12,
+    "meanings": 12,
+    "use_cases": 10,
+    "localized_search_terms": 99,
+    "supported_languages": [
+      "en",
+      "hi",
+      "es",
+      "fr",
+      "de",
+      "pt",
+      "it",
+      "ja",
+      "ko",
+      "zh",
+      "ar"
+    ],
+    "analytics_maturity": {
+      "liveEventsEnabled": false,
+      "ingestEnabled": true,
+      "minimumEventsForTrending": 1000,
+      "rankingLabel": "POPULAR / CURATED"
+    }
+  },
+  "sitemap": {
+    "status": 200,
+    "url_count": 8247,
+    "unique_count": 8247,
+    "kaomoji_count": 1114,
+    "personal_my_count": 0
+  },
+  "step6": {
+    "taxonomy_groups_in_source": 6,
+    "taxonomy_categories_in_source": 63,
+    "curated_intents": 21,
+    "categories_index_status": 200,
+    "categories_index_ms": 534,
+    "categories_title": "Kaomoji Categories — Browse by Emotion, Style &amp; Theme | EmojiQuick",
+    "categories_h1": "Kaomoji Categories",
+    "categories_canonical": "https://emojiquick.com/kaomoji/categories",
+    "group_pages": [],
+    "intent_pages": [
+      {
+        "slug": "happy",
+        "status": 200,
+        "ms": 59,
+        "title": "Happy Kaomoji | EmojiQuick",
+        "h1": "Happy Kaomoji",
+        "description": "Browse and copy happy kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/happy",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34763
+      },
+      {
+        "slug": "cute",
+        "status": 200,
+        "ms": 38,
+        "title": "Cute Kaomoji | EmojiQuick",
+        "h1": "Cute Kaomoji",
+        "description": "Browse and copy cute kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/cute",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34691
+      },
+      {
+        "slug": "love",
+        "status": 200,
+        "ms": 827,
+        "title": "Love Kaomoji | EmojiQuick",
+        "h1": "Love Kaomoji",
+        "description": "Browse and copy love kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/love",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34911
+      },
+      {
+        "slug": "sad",
+        "status": 200,
+        "ms": 901,
+        "title": "Sad Kaomoji | EmojiQuick",
+        "h1": "Sad Kaomoji",
+        "description": "Browse and copy sad kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/sad",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34715
+      },
+      {
+        "slug": "hug",
+        "status": 200,
+        "ms": 860,
+        "title": "Hug Kaomoji | EmojiQuick",
+        "h1": "Hug Kaomoji",
+        "description": "Browse and copy hug kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/hug",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34592
+      },
+      {
+        "slug": "angry",
+        "status": 200,
+        "ms": 1138,
+        "title": "Angry Kaomoji | EmojiQuick",
+        "h1": "Angry Kaomoji",
+        "description": "Browse and copy angry kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/angry",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34405
+      },
+      {
+        "slug": "funny",
+        "status": 200,
+        "ms": 28,
+        "title": "Funny Kaomoji | EmojiQuick",
+        "h1": "Funny Kaomoji",
+        "description": "Browse and copy funny kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/funny",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34233
+      },
+      {
+        "slug": "shy",
+        "status": 200,
+        "ms": 45,
+        "title": "Shy Kaomoji | EmojiQuick",
+        "h1": "Shy Kaomoji",
+        "description": "Browse and copy shy kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/shy",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34291
+      },
+      {
+        "slug": "thinking",
+        "status": 200,
+        "ms": 31,
+        "title": "Thinking Kaomoji | EmojiQuick",
+        "h1": "Thinking Kaomoji",
+        "description": "Browse and copy thinking kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/thinking",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34252
+      },
+      {
+        "slug": "sleepy",
+        "status": 200,
+        "ms": 37,
+        "title": "Sleepy Kaomoji | EmojiQuick",
+        "h1": "Sleepy Kaomoji",
+        "description": "Browse and copy sleepy kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/sleepy",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34196
+      },
+      {
+        "slug": "kawaii",
+        "status": 404,
+        "ms": 229,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "description": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 15936
+      },
+      {
+        "slug": "cat",
+        "status": 200,
+        "ms": 31,
+        "title": "Cat Kaomoji | EmojiQuick",
+        "h1": "Cat Kaomoji",
+        "description": "Browse and copy cat kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/cat",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34138
+      },
+      {
+        "slug": "dog",
+        "status": 404,
+        "ms": 208,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "description": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 16016
+      },
+      {
+        "slug": "crying",
+        "status": 200,
+        "ms": 38,
+        "title": "Crying Kaomoji | EmojiQuick",
+        "h1": "Crying Kaomoji",
+        "description": "Browse and copy crying kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/crying",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34412
+      },
+      {
+        "slug": "laughing",
+        "status": 404,
+        "ms": 221,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "description": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 16026
+      },
+      {
+        "slug": "kiss",
+        "status": 404,
+        "ms": 198,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "description": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 16018
+      },
+      {
+        "slug": "sorry",
+        "status": 200,
+        "ms": 27,
+        "title": "Sorry Kaomoji | EmojiQuick",
+        "h1": "Sorry Kaomoji",
+        "description": "Browse and copy sorry kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/sorry",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34359
+      },
+      {
+        "slug": "friendship",
+        "status": 200,
+        "ms": 37,
+        "title": "Friendship Kaomoji | EmojiQuick",
+        "h1": "Friendship Kaomoji",
+        "description": "Browse and copy friendship kaomoji text faces by emotion and intent.",
+        "canonical": "https://emojiquick.com/kaomoji/friendship",
+        "robots": "index, follow",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 34532
+      },
+      {
+        "slug": "aesthetic",
+        "status": 404,
+        "ms": 216,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "description": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 16028
+      },
+      {
+        "slug": "japanese",
+        "status": 404,
+        "ms": 217,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "description": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 15940
+      },
+      {
+        "slug": "ascii",
+        "status": 404,
+        "ms": 218,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "description": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cardCount": 0,
+        "htmlLen": 15934
+      }
+    ]
+  },
+  "step7": {
+    "details_tested": 32,
+    "self_recommendations": 0,
+    "duplicate_recommendation_responses": 0,
+    "blocked_recommendations": 0,
+    "pairs_checked": 187,
+    "weak_pairs": 0,
+    "api_performance_ms": {
+      "min": 191,
+      "median": 383,
+      "p95": 410,
+      "max": 412,
+      "samples": 32
+    },
+    "samples": [
+      {
+        "slug": "kao-00013e7cc777f411",
+        "page_status": 200,
+        "page_ms": 985,
+        "api_status": 200,
+        "api_ms": 399,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "ASCII Face egao-0020 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-000231c85784b630",
+        "page_status": 200,
+        "page_ms": 956,
+        "api_status": 200,
+        "api_ms": 401,
+        "found": true,
+        "similar_count": 1,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Γ￣△￣）Γｶﾞｵｰ Kaomoji — Copy &amp; Meaning | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-000b1a777f4f1bb2",
+        "page_status": 200,
+        "page_ms": 1107,
+        "api_status": 200,
+        "api_ms": 395,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Cute Face 🎆(｡･ω･｡)ﾉ🏮 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-001698c24eb72787",
+        "page_status": 200,
+        "page_ms": 961,
+        "api_status": 200,
+        "api_ms": 409,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Unicode Face (⑉●д●⑉) 💢 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-0021939944d44c05",
+        "page_status": 200,
+        "page_ms": 981,
+        "api_status": 200,
+        "api_ms": 412,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face ⊂(^ω^)つｾﾌｾﾌ✌️ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-00455e9793fc1fb7",
+        "page_status": 200,
+        "page_ms": 939,
+        "api_status": 200,
+        "api_ms": 410,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face (；・ω・)💧 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-00687345aa1c84d4",
+        "page_status": 200,
+        "page_ms": 955,
+        "api_status": 200,
+        "api_ms": 399,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face (&amp;#x27;∀&amp;#x27;(👈 ﾑﾆﾑﾆ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-0069d4f8387094b4",
+        "page_status": 200,
+        "page_ms": 962,
+        "api_status": 200,
+        "api_ms": 383,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face 💀：(´ཀ`」 ∠):うぅ・・・ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-007156df3de39a14",
+        "page_status": 200,
+        "page_ms": 950,
+        "api_status": 200,
+        "api_ms": 389,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "ASCII Face (._.) ( l: ) ( .-. ) ( :l ) (._.) — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-00a8686d2ce1d6e0",
+        "page_status": 200,
+        "page_ms": 962,
+        "api_status": 200,
+        "api_ms": 391,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "ASCII Face ( _ _) — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-00ead39e527ec2a8",
+        "page_status": 200,
+        "page_ms": 995,
+        "api_status": 200,
+        "api_ms": 370,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "ASCII Face [[Ol Chiki (Unicode block)]] — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-018fe9a114c85b2d",
+        "page_status": 200,
+        "page_ms": 1158,
+        "api_status": 200,
+        "api_ms": 382,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "ASCII Kaomoji (o^^)oo(^^o) — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-01d1f0540e8afa01",
+        "page_status": 200,
+        "page_ms": 1148,
+        "api_status": 200,
+        "api_ms": 384,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "ASCII Kaomoji depth (solutions: reduced line spacin… — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-6718c0cf7a018b68",
+        "page_status": 200,
+        "page_ms": 1138,
+        "api_status": 200,
+        "api_ms": 381,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face Γ￣△￣)Γｶﾞｵｰ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-fc681f6ae55feb5e",
+        "page_status": 200,
+        "page_ms": 1016,
+        "api_status": 200,
+        "api_ms": 389,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face ┻━┻ ︵ ¯\\\\(ツ)/¯ ︵ ┻━┻ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-fc686c6620bbf85a",
+        "page_status": 200,
+        "page_ms": 1009,
+        "api_status": 200,
+        "api_ms": 387,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face ( ᐛ )っ🍺 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-fc6975610b550682",
+        "page_status": 200,
+        "page_ms": 1006,
+        "api_status": 200,
+        "api_ms": 361,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face (ﾐ´ᆺ｀ﾐ)🎀 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-fc69a01f224d146b",
+        "page_status": 200,
+        "page_ms": 1003,
+        "api_status": 200,
+        "api_ms": 376,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Unicode Face ( ᐛ )و👍 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-fc6ae407851a9dcf",
+        "page_status": 200,
+        "page_ms": 1006,
+        "api_status": 200,
+        "api_ms": 358,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Cute Face ฅ(｡ᵕ ω ᵕ｡ฅ) メリークリスマス — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-fcad26e7d3a423b2",
+        "page_status": 200,
+        "page_ms": 997,
+        "api_status": 200,
+        "api_ms": 378,
+        "found": true,
+        "similar_count": 1,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face §（*￣▽￣*）§ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-f9485e8981545c68",
+        "page_status": 200,
+        "page_ms": 950,
+        "api_status": 200,
+        "api_ms": 384,
+        "found": true,
+        "similar_count": 1,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face (人´∀｀)ｱﾘｶﾞﾄｰ♪ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-f37a85067ec9ce21",
+        "page_status": 200,
+        "page_ms": 916,
+        "api_status": 200,
+        "api_ms": 389,
+        "found": true,
+        "similar_count": 1,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face ( ᐛ)ﾊﾞﾅﾅ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-e970266b930d222d",
+        "page_status": 200,
+        "page_ms": 969,
+        "api_status": 200,
+        "api_ms": 408,
+        "found": true,
+        "similar_count": 1,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face (　Ꙭ　) — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-e78f168884eb0d93",
+        "page_status": 200,
+        "page_ms": 942,
+        "api_status": 200,
+        "api_ms": 375,
+        "found": true,
+        "similar_count": 1,
+        "related_count": 7,
+        "hasRelatedUi": true,
+        "title": "Crying Face |_・) ﾁﾗﾘ! — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-0081f55e2fc9e1a9",
+        "page_status": 200,
+        "page_ms": 942,
+        "api_status": 200,
+        "api_ms": 374,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Unicode Face (⁎˃ᴗ˂⁎)💌 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-008717e08a02cbf6",
+        "page_status": 200,
+        "page_ms": 948,
+        "api_status": 200,
+        "api_ms": 363,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Unicode Face ( ᐛ )🌟 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-00ac6df0f4400e03",
+        "page_status": 200,
+        "page_ms": 922,
+        "api_status": 200,
+        "api_ms": 363,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Unicode Face 🍙( ¨̮ )🍴✩ — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-01eca17f36574f9a",
+        "page_status": 200,
+        "page_ms": 919,
+        "api_status": 200,
+        "api_ms": 382,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "ASCII Kaomoji (o^^o) — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-0011a3086a5a8a47",
+        "page_status": 200,
+        "page_ms": 935,
+        "api_status": 200,
+        "api_ms": 373,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Cute Face 🎀(｡&amp;gt;﹏&amp;lt;｡)🎀 — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-0047c46c41517429",
+        "page_status": 200,
+        "page_ms": 942,
+        "api_status": 200,
+        "api_ms": 373,
+        "found": true,
+        "similar_count": 0,
+        "related_count": 6,
+        "hasRelatedUi": true,
+        "title": "Japanese Face ∧🎩∧     ∧👒∧\n(´・ω・) (・ω・`)\n||(つ☕D O☕… — Meaning &amp; Copy | EmojiQuick | EmojiQuick"
+      },
+      {
+        "slug": "kao-00c8f0a1b2c3d4e5",
+        "page_status": 404,
+        "page_ms": 220,
+        "api_status": 200,
+        "api_ms": 224,
+        "found": false,
+        "similar_count": 0,
+        "related_count": 0,
+        "hasRelatedUi": false,
+        "title": "Page not found | EmojiQuick"
+      },
+      {
+        "slug": "kao-aaaaaaaaaaaaaaaa",
+        "page_status": 404,
+        "page_ms": 206,
+        "api_status": 200,
+        "api_ms": 191,
+        "found": false,
+        "similar_count": 0,
+        "related_count": 0,
+        "hasRelatedUi": false,
+        "title": "Page not found | EmojiQuick"
+      }
+    ]
+  },
+  "step8": {
+    "analytics_liveEventsEnabled": false,
+    "analytics_ingestEnabled": true,
+    "analytics_rankingLabel": "POPULAR / CURATED",
+    "trending_status": 404,
+    "popular_status": 404,
+    "trending_title": "Page not found | EmojiQuick",
+    "popular_title": "Page not found | EmojiQuick",
+    "trending_h1": "",
+    "popular_h1": "",
+    "trending_claims_live_popularity": false,
+    "popular_claims_live_popularity": false,
+    "api": {
+      "trending": {
+        "status": 404,
+        "ms": 31,
+        "keys": []
+      },
+      "rising": {
+        "status": 404,
+        "ms": 26
+      },
+      "popular": {
+        "status": 404,
+        "ms": 51,
+        "keys": []
+      },
+      "most_copied": {
+        "status": 404,
+        "ms": 36
+      }
+    }
+  },
+  "step9": {
+    "locale_hubs": [
+      {
+        "locale": "hi",
+        "status": 404,
+        "ms": 32,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "es",
+        "status": 404,
+        "ms": 28,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "fr",
+        "status": 404,
+        "ms": 29,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "de",
+        "status": 404,
+        "ms": 29,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "pt",
+        "status": 404,
+        "ms": 90,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "it",
+        "status": 404,
+        "ms": 34,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "ja",
+        "status": 404,
+        "ms": 30,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "ko",
+        "status": 404,
+        "ms": 29,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "zh",
+        "status": 404,
+        "ms": 31,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      },
+      {
+        "locale": "ar",
+        "status": 404,
+        "ms": 27,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "canonical": ""
+      }
+    ],
+    "search_probes": [
+      {
+        "lang": "en",
+        "q": "happy",
+        "status": 200,
+        "ms": 4618,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "cute",
+        "status": 200,
+        "ms": 3687,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "love",
+        "status": 200,
+        "ms": 3971,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "sad",
+        "status": 200,
+        "ms": 4446,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "hug",
+        "status": 200,
+        "ms": 4585,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "angry",
+        "status": 200,
+        "ms": 4127,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "cat",
+        "status": 200,
+        "ms": 2541,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "kiss",
+        "status": 200,
+        "ms": 4216,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "sorry",
+        "status": 200,
+        "ms": 3807,
+        "count": 10
+      },
+      {
+        "lang": "en",
+        "q": "laugh",
+        "status": 200,
+        "ms": 4309,
+        "count": 10
+      },
+      {
+        "lang": "es",
+        "q": "feliz",
+        "status": 200,
+        "ms": 696,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "lindo",
+        "status": 200,
+        "ms": 665,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "amor",
+        "status": 200,
+        "ms": 654,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "triste",
+        "status": 200,
+        "ms": 649,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "abrazo",
+        "status": 200,
+        "ms": 654,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "enojado",
+        "status": 200,
+        "ms": 674,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "gato",
+        "status": 200,
+        "ms": 644,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "beso",
+        "status": 200,
+        "ms": 688,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "perdon",
+        "status": 200,
+        "ms": 659,
+        "count": 0
+      },
+      {
+        "lang": "es",
+        "q": "risa",
+        "status": 200,
+        "ms": 652,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "heureux",
+        "status": 200,
+        "ms": 674,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "mignon",
+        "status": 200,
+        "ms": 672,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "amour",
+        "status": 200,
+        "ms": 679,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "triste",
+        "status": 200,
+        "ms": 687,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "calin",
+        "status": 200,
+        "ms": 663,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "en colere",
+        "status": 200,
+        "ms": 1065,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "chat",
+        "status": 200,
+        "ms": 2918,
+        "count": 10
+      },
+      {
+        "lang": "fr",
+        "q": "bisou",
+        "status": 200,
+        "ms": 682,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "desole",
+        "status": 200,
+        "ms": 680,
+        "count": 0
+      },
+      {
+        "lang": "fr",
+        "q": "rire",
+        "status": 200,
+        "ms": 693,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "glücklich",
+        "status": 200,
+        "ms": 702,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "süß",
+        "status": 200,
+        "ms": 676,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "liebe",
+        "status": 200,
+        "ms": 692,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "traurig",
+        "status": 200,
+        "ms": 689,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "umarmung",
+        "status": 200,
+        "ms": 682,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "wütend",
+        "status": 200,
+        "ms": 746,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "katze",
+        "status": 200,
+        "ms": 666,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "kuss",
+        "status": 200,
+        "ms": 708,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "entschuldigung",
+        "status": 200,
+        "ms": 676,
+        "count": 0
+      },
+      {
+        "lang": "de",
+        "q": "lachen",
+        "status": 200,
+        "ms": 717,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "खुश",
+        "status": 200,
+        "ms": 776,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "प्यारा",
+        "status": 200,
+        "ms": 669,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "प्यार",
+        "status": 200,
+        "ms": 710,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "उदास",
+        "status": 200,
+        "ms": 673,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "गले",
+        "status": 200,
+        "ms": 667,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "गुस्सा",
+        "status": 200,
+        "ms": 646,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "बिल्ली",
+        "status": 200,
+        "ms": 651,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "चूमना",
+        "status": 200,
+        "ms": 667,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "माफ़",
+        "status": 200,
+        "ms": 699,
+        "count": 0
+      },
+      {
+        "lang": "hi",
+        "q": "हंसी",
+        "status": 200,
+        "ms": 677,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "嬉しい",
+        "status": 200,
+        "ms": 692,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "かわいい",
+        "status": 200,
+        "ms": 682,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "愛",
+        "status": 200,
+        "ms": 454,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "悲しい",
+        "status": 200,
+        "ms": 683,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "ハグ",
+        "status": 200,
+        "ms": 438,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "怒り",
+        "status": 200,
+        "ms": 455,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "猫",
+        "status": 200,
+        "ms": 433,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "キス",
+        "status": 200,
+        "ms": 429,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "ごめん",
+        "status": 200,
+        "ms": 655,
+        "count": 0
+      },
+      {
+        "lang": "ja",
+        "q": "笑い",
+        "status": 200,
+        "ms": 458,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "행복",
+        "status": 200,
+        "ms": 443,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "귀여운",
+        "status": 200,
+        "ms": 678,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "사랑",
+        "status": 200,
+        "ms": 441,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "슬픔",
+        "status": 200,
+        "ms": 434,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "포옹",
+        "status": 200,
+        "ms": 421,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "화난",
+        "status": 200,
+        "ms": 453,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "고양이",
+        "status": 200,
+        "ms": 675,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "키스",
+        "status": 200,
+        "ms": 432,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "미안",
+        "status": 200,
+        "ms": 429,
+        "count": 0
+      },
+      {
+        "lang": "ko",
+        "q": "웃음",
+        "status": 200,
+        "ms": 440,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "开心",
+        "status": 200,
+        "ms": 463,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "可爱",
+        "status": 200,
+        "ms": 449,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "爱",
+        "status": 200,
+        "ms": 434,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "伤心",
+        "status": 200,
+        "ms": 451,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "拥抱",
+        "status": 200,
+        "ms": 442,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "生气",
+        "status": 200,
+        "ms": 454,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "猫",
+        "status": 200,
+        "ms": 451,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "吻",
+        "status": 200,
+        "ms": 428,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "对不起",
+        "status": 200,
+        "ms": 694,
+        "count": 0
+      },
+      {
+        "lang": "zh",
+        "q": "笑",
+        "status": 200,
+        "ms": 441,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "feliz",
+        "status": 200,
+        "ms": 684,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "fofo",
+        "status": 200,
+        "ms": 700,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "amor",
+        "status": 200,
+        "ms": 664,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "triste",
+        "status": 200,
+        "ms": 679,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "abraco",
+        "status": 200,
+        "ms": 638,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "bravo",
+        "status": 200,
+        "ms": 661,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "gato",
+        "status": 200,
+        "ms": 636,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "beijo",
+        "status": 200,
+        "ms": 675,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "desculpa",
+        "status": 200,
+        "ms": 650,
+        "count": 0
+      },
+      {
+        "lang": "pt",
+        "q": "risada",
+        "status": 200,
+        "ms": 634,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "felice",
+        "status": 200,
+        "ms": 661,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "carino",
+        "status": 200,
+        "ms": 676,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "amore",
+        "status": 200,
+        "ms": 657,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "triste",
+        "status": 200,
+        "ms": 642,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "abbraccio",
+        "status": 200,
+        "ms": 653,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "arrabbiato",
+        "status": 200,
+        "ms": 641,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "gatto",
+        "status": 200,
+        "ms": 645,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "bacio",
+        "status": 200,
+        "ms": 652,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "scusa",
+        "status": 200,
+        "ms": 688,
+        "count": 0
+      },
+      {
+        "lang": "it",
+        "q": "risata",
+        "status": 200,
+        "ms": 671,
+        "count": 0
+      }
+    ],
+    "mapping_wrong": 0,
+    "suggest_status": 200
+  },
+  "step10": {
+    "my_status": 404,
+    "my_robots": "noindex",
+    "my_canonical": "",
+    "resolve_ok_status": 404,
+    "resolve_blocked_status": 404,
+    "resolve_xss_status": 404,
+    "resolve_oversize_status": 404
+  },
+  "step11": {
+    "meaning_pages": [
+      {
+        "slug": "hug",
+        "path": "/kaomoji/meaning/hug",
+        "status": 404,
+        "ms": 30,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "love",
+        "path": "/kaomoji/meaning/love",
+        "status": 404,
+        "ms": 844,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "cute",
+        "path": "/kaomoji/meaning/cute",
+        "status": 404,
+        "ms": 56,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "sad",
+        "path": "/kaomoji/meaning/sad",
+        "status": 404,
+        "ms": 843,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "crying",
+        "path": "/kaomoji/meaning/crying",
+        "status": 404,
+        "ms": 56,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "angry",
+        "path": "/kaomoji/meaning/angry",
+        "status": 404,
+        "ms": 788,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "shy",
+        "path": "/kaomoji/meaning/shy",
+        "status": 404,
+        "ms": 33,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "thinking",
+        "path": "/kaomoji/meaning/thinking",
+        "status": 404,
+        "ms": 25,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "sleepy",
+        "path": "/kaomoji/meaning/sleepy",
+        "status": 404,
+        "ms": 28,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "cat",
+        "path": "/kaomoji/meaning/cat",
+        "status": 404,
+        "ms": 24,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "dog",
+        "path": "/kaomoji/meaning/dog",
+        "status": 404,
+        "ms": 27,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "happy",
+        "path": "/kaomoji/meaning/happy",
+        "status": 404,
+        "ms": 31,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      }
+    ],
+    "use_case_pages": [
+      {
+        "slug": "texting",
+        "path": "/kaomoji/for/texting",
+        "status": 404,
+        "ms": 46,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "discord",
+        "path": "/kaomoji/for/discord",
+        "status": 404,
+        "ms": 47,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "instagram",
+        "path": "/kaomoji/for/instagram",
+        "status": 404,
+        "ms": 39,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "whatsapp",
+        "path": "/kaomoji/for/whatsapp",
+        "status": 404,
+        "ms": 47,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "friendship",
+        "path": "/kaomoji/for/friendship",
+        "status": 404,
+        "ms": 35,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "couples",
+        "path": "/kaomoji/for/couples",
+        "status": 404,
+        "ms": 28,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "gaming",
+        "path": "/kaomoji/for/gaming",
+        "status": 404,
+        "ms": 32,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "social-media",
+        "path": "/kaomoji/for/social-media",
+        "status": 404,
+        "ms": 34,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "messages",
+        "path": "/kaomoji/for/messages",
+        "status": 404,
+        "ms": 62,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      },
+      {
+        "slug": "captions",
+        "path": "/kaomoji/for/captions",
+        "status": 404,
+        "ms": 61,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "robots": "noindex",
+        "jsonLd": true,
+        "cards": 0,
+        "thin": false
+      }
+    ],
+    "seo_pages_audited": 43
+  },
+  "step12": {
+    "events_index_status": 404,
+    "event_pages": [
+      {
+        "slug": "new-year",
+        "status": 404,
+        "ms": 38,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29464
+      },
+      {
+        "slug": "valentines-day",
+        "status": 404,
+        "ms": 71,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29470
+      },
+      {
+        "slug": "halloween",
+        "status": 404,
+        "ms": 31,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29465
+      },
+      {
+        "slug": "christmas",
+        "status": 404,
+        "ms": 70,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29465
+      },
+      {
+        "slug": "thanksgiving",
+        "status": 404,
+        "ms": 38,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29468
+      },
+      {
+        "slug": "birthday",
+        "status": 404,
+        "ms": 24,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29464
+      },
+      {
+        "slug": "wedding",
+        "status": 404,
+        "ms": 66,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29463
+      },
+      {
+        "slug": "graduation",
+        "status": 404,
+        "ms": 36,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29466
+      },
+      {
+        "slug": "anniversary",
+        "status": 404,
+        "ms": 37,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29467
+      },
+      {
+        "slug": "congratulations",
+        "status": 404,
+        "ms": 38,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29471
+      },
+      {
+        "slug": "good-luck",
+        "status": 404,
+        "ms": 32,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29465
+      },
+      {
+        "slug": "thank-you",
+        "status": 404,
+        "ms": 26,
+        "title": "Page not found | EmojiQuick",
+        "h1": "",
+        "desc": "The requested emoji page could not be found.",
+        "canonical": "",
+        "jsonLd": true,
+        "cards": 0,
+        "upcomingClaim": false,
+        "yearDup": false,
+        "htmlLen": 29465
+      }
+    ]
+  },
+  "security_results": [
+    {
+      "path": "/kaomoji/categories/%3Cscript%3Ealert(1)%3C/script%3E",
+      "status": 404,
+      "ms": 64
+    },
+    {
+      "path": "/kaomoji/search?q=%3Cscript%3Ealert(1)%3C/script%3E",
+      "status": 200,
+      "ms": 215
+    },
+    {
+      "path": "/kaomoji/search?q=' OR 1=1 --",
+      "status": 200,
+      "ms": 210
+    },
+    {
+      "path": "/kaomoji/happy?page=-1",
+      "status": 200,
+      "ms": 25
+    },
+    {
+      "path": "/kaomoji/happy?page=0",
+      "status": 200,
+      "ms": 23
+    },
+    {
+      "path": "/kaomoji/happy?page=999999",
+      "status": 200,
+      "ms": 27
+    },
+    {
+      "path": "/kaomoji/happy?page=abc",
+      "status": 200,
+      "ms": 25
+    },
+    {
+      "path": "/kaomoji/../../etc/passwd",
+      "status": 404,
+      "ms": 27
+    },
+    {
+      "path": "/kaomoji/%2e%2e/%2e%2e/etc/passwd",
+      "status": 404,
+      "ms": 23
+    },
+    {
+      "path": "/api/kaomoji/search?q=__proto__[x]=1",
+      "status": 200,
+      "ms": 240
+    },
+    {
+      "path": "/api/kaomoji/related?slug=kao-00013e7cc777f411&similar_limit=99999",
+      "status": 200,
+      "ms": 378
+    },
+    {
+      "path": "/api/kaomoji/popular?kind=popular&limit=-5",
+      "status": 404,
+      "ms": 31
+    },
+    {
+      "path": "/kaomoji/events/new-year?utm=../../admin",
+      "status": 404,
+      "ms": 23
+    },
+    {
+      "path": "/xx/kaomoji",
+      "status": 404,
+      "ms": 20
+    },
+    {
+      "path": "/kaomoji/meaning/%3Cimg%20src=x%20onerror=alert(1)%3E",
+      "status": 404,
+      "ms": 23
+    },
+    {
+      "path": "/kaomoji/for/%22%3E%3Cscript%3Ealert(1)%3C/script%3E",
+      "status": 404,
+      "ms": 23
+    },
+    {
+      "path": "/kaomoji/my?collection=%3Cscript%3E",
+      "status": 404,
+      "ms": 206
+    },
+    {
+      "path": "/api/kaomoji/personal/resolve",
+      "status": 404,
+      "ms": 24
+    },
+    {
+      "path": "/api/kaomoji/search/suggest?q=%00%00",
+      "status": 200,
+      "ms": 17
+    },
+    {
+      "path": "/kaomoji/collections/love-kaomoji/page/-1",
+      "status": 404,
+      "ms": 387
+    }
+  ],
+  "severity_count": {
+    "CRITICAL": 0,
+    "HIGH": 73,
+    "MEDIUM": 18,
+    "LOW": 0,
+    "INFO": 1
+  },
+  "findings": [
+    {
+      "id": "S6-12-F1",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/happy",
+      "test": "content happy",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34763",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F2",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/cute",
+      "test": "content cute",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34691",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F3",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/love",
+      "test": "content love",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34911",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F4",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/sad",
+      "test": "content sad",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34715",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F5",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/hug",
+      "test": "content hug",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34592",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F6",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/angry",
+      "test": "content angry",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34405",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F7",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/funny",
+      "test": "content funny",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34233",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F8",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/shy",
+      "test": "content shy",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34291",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F9",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/thinking",
+      "test": "content thinking",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34252",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F10",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/sleepy",
+      "test": "content sleepy",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34196",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F11",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/kawaii",
+      "test": "intent page kawaii",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=229",
+      "recommendation": "Investigate missing category page"
+    },
+    {
+      "id": "S6-12-F12",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/cat",
+      "test": "content cat",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34138",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F13",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/dog",
+      "test": "intent page dog",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=208",
+      "recommendation": "Investigate missing category page"
+    },
+    {
+      "id": "S6-12-F14",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/crying",
+      "test": "content crying",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34412",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F15",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/laughing",
+      "test": "intent page laughing",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=221",
+      "recommendation": "Investigate missing category page"
+    },
+    {
+      "id": "S6-12-F16",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/kiss",
+      "test": "intent page kiss",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=198",
+      "recommendation": "Investigate missing category page"
+    },
+    {
+      "id": "S6-12-F17",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/sorry",
+      "test": "content sorry",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34359",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F18",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/friendship",
+      "test": "content friendship",
+      "expected": ">=1 public kaomoji cards",
+      "actual": "0",
+      "evidence": "htmlLen=34532",
+      "recommendation": "Page may be thin/empty"
+    },
+    {
+      "id": "S6-12-F19",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/aesthetic",
+      "test": "intent page aesthetic",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=216",
+      "recommendation": "Investigate missing category page"
+    },
+    {
+      "id": "S6-12-F20",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/japanese",
+      "test": "intent page japanese",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=217",
+      "recommendation": "Investigate missing category page"
+    },
+    {
+      "id": "S6-12-F21",
+      "feature": "step6",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/ascii",
+      "test": "intent page ascii",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=218",
+      "recommendation": "Investigate missing category page"
+    },
+    {
+      "id": "S6-12-F22",
+      "feature": "step6",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/happy?page=0",
+      "test": "pagination leak happy page=0",
+      "expected": "no stack/error leak",
+      "actual": "possible leak",
+      "evidence": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" data-scroll-behavior=\"smooth\" class=\"__variable_246ccd __variable_c29908 h-full antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=",
+      "recommendation": "Sanitize error pages"
+    },
+    {
+      "id": "S6-12-F23",
+      "feature": "step6",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/happy?page=-1",
+      "test": "pagination leak happy page=-1",
+      "expected": "no stack/error leak",
+      "actual": "possible leak",
+      "evidence": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" data-scroll-behavior=\"smooth\" class=\"__variable_246ccd __variable_c29908 h-full antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=",
+      "recommendation": "Sanitize error pages"
+    },
+    {
+      "id": "S6-12-F24",
+      "feature": "step6",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/happy?page=999999",
+      "test": "pagination leak happy page=999999",
+      "expected": "no stack/error leak",
+      "actual": "possible leak",
+      "evidence": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" data-scroll-behavior=\"smooth\" class=\"__variable_246ccd __variable_c29908 h-full antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=",
+      "recommendation": "Sanitize error pages"
+    },
+    {
+      "id": "S6-12-F25",
+      "feature": "step6",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/happy?page=abc",
+      "test": "pagination leak happy page=abc",
+      "expected": "no stack/error leak",
+      "actual": "possible leak",
+      "evidence": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" data-scroll-behavior=\"smooth\" class=\"__variable_246ccd __variable_c29908 h-full antialiased\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=",
+      "recommendation": "Sanitize error pages"
+    },
+    {
+      "id": "S6-12-F26",
+      "feature": "step8",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/trending",
+      "test": "trending page",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "",
+      "recommendation": "Fix trending route"
+    },
+    {
+      "id": "S6-12-F27",
+      "feature": "step8",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/popular",
+      "test": "popular page",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "",
+      "recommendation": "Fix popular route"
+    },
+    {
+      "id": "S6-12-F28",
+      "feature": "step8",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/trending",
+      "test": "fabricated popularity claims",
+      "expected": "no false live-popularity claims while liveEventsEnabled=false",
+      "actual": "possible false claim language detected",
+      "evidence": "HTML copy on trending/popular",
+      "recommendation": "Label rankings as curated/editorial until live maturity"
+    },
+    {
+      "id": "S6-12-F29",
+      "feature": "step8",
+      "severity": "INFO",
+      "url": "https://emojiquick.com/api/analytics/event",
+      "test": "analytics ingest spam probe",
+      "expected": "ingest accepts or rate-limits without corrupting live rankings",
+      "actual": "statuses=400,400,400,400,400",
+      "evidence": "liveEventsEnabled=false",
+      "recommendation": "Keep readiness gate; consider rate limits"
+    },
+    {
+      "id": "S6-12-F30",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=feliz&locale=es&limit=10",
+      "test": "empty search es:feliz",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=696",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F31",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=lindo&locale=es&limit=10",
+      "test": "empty search es:lindo",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=665",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F32",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=amor&locale=es&limit=10",
+      "test": "empty search es:amor",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=654",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F33",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=%E0%A4%96%E0%A5%81%E0%A4%B6&locale=hi&limit=10",
+      "test": "empty search hi:खुश",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=776",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F34",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=%E5%AC%89%E3%81%97%E3%81%84&locale=ja&limit=10",
+      "test": "empty search ja:嬉しい",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=692",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F35",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=%EC%82%AC%EB%9E%91&locale=ko&limit=10",
+      "test": "empty search ko:사랑",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=441",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F36",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=%E5%BC%80%E5%BF%83&locale=zh&limit=10",
+      "test": "empty search zh:开心",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=463",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F37",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=feliz&locale=pt&limit=10",
+      "test": "empty search pt:feliz",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=684",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F38",
+      "feature": "step9",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/api/kaomoji/search?q=amor&locale=pt&limit=10",
+      "test": "empty search pt:amor",
+      "expected": ">=1 results for core emotion",
+      "actual": "0",
+      "evidence": "ms=664",
+      "recommendation": "Verify synonym/mapping coverage"
+    },
+    {
+      "id": "S6-12-F39",
+      "feature": "step10",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/my",
+      "test": "/kaomoji/my",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "",
+      "recommendation": "Fix personal library page"
+    },
+    {
+      "id": "S6-12-F40",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/hug",
+      "test": "SEO page /kaomoji/meaning/hug",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=30",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F41",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/love",
+      "test": "SEO page /kaomoji/meaning/love",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=844",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F42",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/cute",
+      "test": "SEO page /kaomoji/meaning/cute",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=56",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F43",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/sad",
+      "test": "SEO page /kaomoji/meaning/sad",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=843",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F44",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/crying",
+      "test": "SEO page /kaomoji/meaning/crying",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=56",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F45",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/angry",
+      "test": "SEO page /kaomoji/meaning/angry",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=788",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F46",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/shy",
+      "test": "SEO page /kaomoji/meaning/shy",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=33",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F47",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/thinking",
+      "test": "SEO page /kaomoji/meaning/thinking",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=25",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F48",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/sleepy",
+      "test": "SEO page /kaomoji/meaning/sleepy",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=28",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F49",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/cat",
+      "test": "SEO page /kaomoji/meaning/cat",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=24",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F50",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/dog",
+      "test": "SEO page /kaomoji/meaning/dog",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=27",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F51",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/happy",
+      "test": "SEO page /kaomoji/meaning/happy",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=31",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F52",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/texting",
+      "test": "SEO page /kaomoji/for/texting",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=46",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F53",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/discord",
+      "test": "SEO page /kaomoji/for/discord",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=47",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F54",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/instagram",
+      "test": "SEO page /kaomoji/for/instagram",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=39",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F55",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/whatsapp",
+      "test": "SEO page /kaomoji/for/whatsapp",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=47",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F56",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/friendship",
+      "test": "SEO page /kaomoji/for/friendship",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=35",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F57",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/couples",
+      "test": "SEO page /kaomoji/for/couples",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=28",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F58",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/gaming",
+      "test": "SEO page /kaomoji/for/gaming",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=32",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F59",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/social-media",
+      "test": "SEO page /kaomoji/for/social-media",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=34",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F60",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/messages",
+      "test": "SEO page /kaomoji/for/messages",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=62",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F61",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/captions",
+      "test": "SEO page /kaomoji/for/captions",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=61",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F62",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/kawaii",
+      "test": "SEO page /kaomoji/kawaii",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=229",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F63",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/dog",
+      "test": "SEO page /kaomoji/dog",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=208",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F64",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/laughing",
+      "test": "SEO page /kaomoji/laughing",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=221",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F65",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/kiss",
+      "test": "SEO page /kaomoji/kiss",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=198",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F66",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/aesthetic",
+      "test": "SEO page /kaomoji/aesthetic",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=216",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F67",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/japanese",
+      "test": "SEO page /kaomoji/japanese",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=217",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F68",
+      "feature": "step11",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/ascii",
+      "test": "SEO page /kaomoji/ascii",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=218",
+      "recommendation": "Fix SEO page"
+    },
+    {
+      "id": "S6-12-F69",
+      "feature": "step11",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/meaning/hug",
+      "test": "sitemap missing https://emojiquick.com/kaomoji/meaning/hug",
+      "expected": "present in sitemap",
+      "actual": "absent",
+      "evidence": "sitemap.xml",
+      "recommendation": "Add indexable SEO URLs to sitemap"
+    },
+    {
+      "id": "S6-12-F70",
+      "feature": "step11",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/meaning/love",
+      "test": "sitemap missing https://emojiquick.com/kaomoji/meaning/love",
+      "expected": "present in sitemap",
+      "actual": "absent",
+      "evidence": "sitemap.xml",
+      "recommendation": "Add indexable SEO URLs to sitemap"
+    },
+    {
+      "id": "S6-12-F71",
+      "feature": "step11",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/meaning/cute",
+      "test": "sitemap missing https://emojiquick.com/kaomoji/meaning/cute",
+      "expected": "present in sitemap",
+      "actual": "absent",
+      "evidence": "sitemap.xml",
+      "recommendation": "Add indexable SEO URLs to sitemap"
+    },
+    {
+      "id": "S6-12-F72",
+      "feature": "step11",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/meaning/sad",
+      "test": "sitemap missing https://emojiquick.com/kaomoji/meaning/sad",
+      "expected": "present in sitemap",
+      "actual": "absent",
+      "evidence": "sitemap.xml",
+      "recommendation": "Add indexable SEO URLs to sitemap"
+    },
+    {
+      "id": "S6-12-F73",
+      "feature": "step11",
+      "severity": "MEDIUM",
+      "url": "https://emojiquick.com/kaomoji/meaning/crying",
+      "test": "sitemap missing https://emojiquick.com/kaomoji/meaning/crying",
+      "expected": "present in sitemap",
+      "actual": "absent",
+      "evidence": "sitemap.xml",
+      "recommendation": "Add indexable SEO URLs to sitemap"
+    },
+    {
+      "id": "S6-12-F74",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events",
+      "test": "events index",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "",
+      "recommendation": "Fix events index"
+    },
+    {
+      "id": "S6-12-F75",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/new-year",
+      "test": "event new-year",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=38",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F76",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/valentines-day",
+      "test": "event valentines-day",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=71",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F77",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/halloween",
+      "test": "event halloween",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=31",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F78",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/christmas",
+      "test": "event christmas",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=70",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F79",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/thanksgiving",
+      "test": "event thanksgiving",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=38",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F80",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/birthday",
+      "test": "event birthday",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=24",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F81",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/wedding",
+      "test": "event wedding",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=66",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F82",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/graduation",
+      "test": "event graduation",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=36",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F83",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/anniversary",
+      "test": "event anniversary",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=37",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F84",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/congratulations",
+      "test": "event congratulations",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=38",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F85",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/good-luck",
+      "test": "event good-luck",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=32",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F86",
+      "feature": "step12",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/thank-you",
+      "test": "event thank-you",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=26",
+      "recommendation": "Fix event page"
+    },
+    {
+      "id": "S6-12-F87",
+      "feature": "cross",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/trending",
+      "test": "walk 404 /kaomoji/trending",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=210",
+      "recommendation": "Restore missing page"
+    },
+    {
+      "id": "S6-12-F88",
+      "feature": "cross",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/popular",
+      "test": "walk 404 /kaomoji/popular",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=212",
+      "recommendation": "Restore missing page"
+    },
+    {
+      "id": "S6-12-F89",
+      "feature": "cross",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events",
+      "test": "walk 404 /kaomoji/events",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=209",
+      "recommendation": "Restore missing page"
+    },
+    {
+      "id": "S6-12-F90",
+      "feature": "cross",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/events/christmas",
+      "test": "walk 404 /kaomoji/events/christmas",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=31",
+      "recommendation": "Restore missing page"
+    },
+    {
+      "id": "S6-12-F91",
+      "feature": "cross",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/meaning/happy",
+      "test": "walk 404 /kaomoji/meaning/happy",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=24",
+      "recommendation": "Restore missing page"
+    },
+    {
+      "id": "S6-12-F92",
+      "feature": "cross",
+      "severity": "HIGH",
+      "url": "https://emojiquick.com/kaomoji/for/discord",
+      "test": "walk 404 /kaomoji/for/discord",
+      "expected": "200",
+      "actual": "404",
+      "evidence": "ms=21",
+      "recommendation": "Restore missing page"
+    }
+  ]
+}

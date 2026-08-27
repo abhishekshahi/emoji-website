@@ -162,6 +162,23 @@ export const D1_LIST_BY_CATEGORY_RANKED = `
   LIMIT ?2
 `.trim();
 
+/** Paginated category listing — LIMIT ?2 OFFSET ?3 (public only). */
+export const D1_LIST_BY_CATEGORY_RANKED_PAGE = `
+  SELECT k.canonical_id, k.slug, k.content, k.editorial_name, k.accessible_name, k.quality_score
+  FROM kaomoji_category kc
+  INNER JOIN kaomoji k ON k.canonical_id = kc.canonical_id
+  WHERE k.is_public = 1 AND kc.category_slug = ?1
+  ORDER BY k.quality_score DESC, k.slug ASC
+  LIMIT ?2 OFFSET ?3
+`.trim();
+
+export const D1_COUNT_BY_CATEGORY_PUBLIC = `
+  SELECT COUNT(*) AS cnt
+  FROM kaomoji_category kc
+  INNER JOIN kaomoji k ON k.canonical_id = kc.canonical_id
+  WHERE kc.category_slug = ?1 AND k.is_public = 1
+`.trim();
+
 export const D1_SEARCH_BY_CONTENT = `
   SELECT k.canonical_id, k.slug, k.content, k.normalized_content, k.editorial_name,
          k.accessible_name, k.quality_score, k.beauty_score, k.editorial_priority, k.meaning

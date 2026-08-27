@@ -34,17 +34,30 @@ export function countCategoryRecordsLocal(categorySlug: string): number {
 }
 
 export function getCategoryPageDataLocal(categorySlug: string, limit = 48): CategoryPageData | null {
+  return getCategoryPageDataLocalPaged(categorySlug, 1, limit);
+}
+
+/** 1-based page; returns null when category empty or page out of range. */
+export function getCategoryPageDataLocalPaged(
+  categorySlug: string,
+  page: number,
+  pageSize = 48,
+): CategoryPageData | null {
+  if (!Number.isFinite(page) || page < 1 || !Number.isFinite(pageSize) || pageSize < 1) return null;
   const records = loadEditorialRecords()
     .filter((r) => r.is_public && r.emojiquick_categories.some((c) => c.slug === categorySlug))
     .sort((a, b) => b.quality_score - a.quality_score || a.slug.localeCompare(b.slug));
   if (records.length === 0) return null;
+  const totalPages = Math.max(1, Math.ceil(records.length / pageSize));
+  if (page > totalPages) return null;
   const sample = records[0]!;
   const primary = sample.emojiquick_categories.find((c) => c.slug === categorySlug) ?? sample.emojiquick_categories[0]!;
+  const start = (page - 1) * pageSize;
   return {
     categorySlug,
     label: primary.label,
     group: primary.group,
     itemCount: records.length,
-    items: records.slice(0, limit).map(mapRecord),
+    items: records.slice(start, start + pageSize).map(mapRecord),
   };
 }
