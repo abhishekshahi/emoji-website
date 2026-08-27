@@ -4,6 +4,7 @@ import {
   HUB_GUIDE_LINKS,
   HUB_POPULAR_SORT_LINKS,
   HUB_STYLE_LINKS,
+  HUB_TOOLS_LINKS,
   HUB_TRENDING_PERIOD_LINKS,
   HUB_TOPIC_LINKS,
   type HubNavLink,
@@ -175,6 +176,16 @@ export function HubFooterNavigation() {
           <li><Link href="/emoji-unicode" className="hover:text-accent-strong">Unicode</Link></li>
           <li><Link href="/emoji-artwork" className="hover:text-accent-strong">Artwork</Link></li>
           <li><Link href="/emoji-license" className="hover:text-accent-strong">License</Link></li>
+        </ul>
+      </div>
+      <div>
+        <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">Tools</h3>
+        <ul className="mt-3 space-y-2 text-sm">
+          {HUB_TOOLS_LINKS.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="hover:text-accent-strong">{link.label}</Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div>

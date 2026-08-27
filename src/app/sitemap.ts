@@ -14,6 +14,7 @@ import { canonicalUrl } from "@/lib/seo/metadata";
 import { getAllPublicSlugs, getIndexableSlugs, kaomojiDataExists, loadCollections } from "@/lib/kaomoji/product/loader";
 import { getIndexableSeoPages } from "@/lib/kaomoji/seo/sitemap-pages";
 import { getIndexablePlatformPages } from "@/lib/emoji/platforms/sitemap-pages";
+import { getIndexableInvisibleToolPages } from "@/lib/tools/invisible-characters/sitemap-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const manifest = getManifest();
@@ -43,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: generatedAt,
       changeFrequency: "monthly",
       priority: 0.75,
+    },
+    {
+      url: canonicalUrl("/tools/invisible-characters"),
+      lastModified: generatedAt,
+      changeFrequency: "monthly",
+      priority: 0.74,
     },
     {
       url: canonicalUrl("/extras"),
@@ -172,6 +179,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
           changeFrequency: "weekly" as const,
           priority: 0.8,
         },
+        ...getIndexableInvisibleToolPages()
+          .filter((p) => p.kind !== "index")
+          .map((p) => ({
+            url: canonicalUrl(p.path),
+            lastModified: generatedAt,
+            changeFrequency: "monthly" as const,
+            priority: 0.72,
+          })),
         ...getIndexablePlatformPages()
           .filter((p) => p.kind !== "index")
           .map((p) => ({

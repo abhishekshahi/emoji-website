@@ -1,0 +1,15 @@
+{
+  "step": 14,
+  "title": "Invisible Characters Tools",
+  "status": "implementation_complete_pending_live_verification",
+  "routes": [
+    "/tools/invisible-characters",
+    "/tools/invisible-characters/generator",
+    "/tools/invisible-characters/inspector",
+    "/tools/invisible-characters/cleaner"
+  ],
+  "supported_generator_codepoints": ["U+200B", "U+200C", "U+200D", "U+2060", "U+FEFF"],
+  "privacy": "100% client-side processing — no pasted text uploaded",
+  "max_input_utf16_units": 10000,
+  "live_audits": { "first": "pending_deploy", "second": "pending_deploy" }
+}
