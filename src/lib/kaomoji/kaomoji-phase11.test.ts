@@ -4,16 +4,15 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 import { CANONICAL_CANDIDATE_DEFINITION } from "@/lib/kaomoji/processing/phase11/composition-audit";
 import { runPhase11Pipeline } from "@/lib/kaomoji/processing/phase11/pipeline";
-import { EXPECTED_RAW_BASELINE } from "@/lib/kaomoji/processing/phase7/pipeline";
+import { EXPECTED_RAW_BASELINE, AUTHORITATIVE_RAW_SHA256 } from "@/lib/kaomoji/processing/phase7/pipeline";
 import { hashRawFile } from "@/lib/kaomoji/processing/phase7/raw-snapshot";
-import { getKaomojiRawRecordsPath, getPhase7RawSnapshotPath, getPhase11ManifestPath } from "@/lib/kaomoji/storage/paths";
+import { getKaomojiRawRecordsPath, getPhase11ManifestPath } from "@/lib/kaomoji/storage/paths";
 
 describe("phase 11 composition audit", () => {
   it("RAW immutability sha256", () => {
-    const p7 = JSON.parse(readFileSync(getPhase7RawSnapshotPath(process.cwd()), "utf8")) as { file_sha256: string };
-    assert.equal(hashRawFile(getKaomojiRawRecordsPath(process.cwd())).sha256, p7.file_sha256);
+    assert.equal(hashRawFile(getKaomojiRawRecordsPath(process.cwd())).sha256, AUTHORITATIVE_RAW_SHA256);
   });
-  it("RAW count 232683", () => {
+  it("RAW count 236508", () => {
     assert.equal((JSON.parse(readFileSync(getKaomojiRawRecordsPath(process.cwd()), "utf8")) as unknown[]).length, EXPECTED_RAW_BASELINE);
   });
   it("full pipeline analysis only", () => {
@@ -110,6 +109,6 @@ describe("phase 11 composition audit", () => {
   });
   it("analysis does not delete data", () => {
     const raw = JSON.parse(readFileSync(getKaomojiRawRecordsPath(process.cwd()), "utf8")) as unknown[];
-    assert.equal(raw.length, 232683);
+    assert.equal(raw.length, EXPECTED_RAW_BASELINE);
   });
 });

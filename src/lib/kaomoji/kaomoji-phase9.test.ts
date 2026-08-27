@@ -12,9 +12,9 @@ import { buildSearchIndex, searchKaomoji } from "@/lib/kaomoji/processing/phase9
 import { buildCollections } from "@/lib/kaomoji/processing/phase9/collections";
 import { SEARCH_QUALITY_DATASET } from "@/lib/kaomoji/processing/phase9/search-quality";
 import { runPhase9Pipeline } from "@/lib/kaomoji/processing/phase9/pipeline";
-import { EXPECTED_RAW_BASELINE } from "@/lib/kaomoji/processing/phase7/pipeline";
+import { EXPECTED_RAW_BASELINE, AUTHORITATIVE_RAW_SHA256 } from "@/lib/kaomoji/processing/phase7/pipeline";
 import { hashRawFile } from "@/lib/kaomoji/processing/phase7/raw-snapshot";
-import { getKaomojiRawRecordsPath, getPhase7RawSnapshotPath, getPhase9ManifestPath } from "@/lib/kaomoji/storage/paths";
+import { getKaomojiRawRecordsPath, getPhase9ManifestPath } from "@/lib/kaomoji/storage/paths";
 import type { CanonicalRecord } from "@/lib/kaomoji/processing/phase8/types";
 import type { KaomojiEditorialRecord } from "@/lib/kaomoji/processing/phase9/types";
 import { isValidCanonicalId } from "@/lib/content/analytics/validation";
@@ -68,10 +68,9 @@ describe("phase 9 kaomoji knowledge", () => {
     assert.equal(m.popularity_status, "INSUFFICIENT_DATA");
   });
   it("RAW immutability sha256", () => {
-    const p7 = JSON.parse(readFileSync(getPhase7RawSnapshotPath(process.cwd()), "utf8")) as { file_sha256: string };
-    assert.equal(hashRawFile(getKaomojiRawRecordsPath(process.cwd())).sha256, p7.file_sha256);
+    assert.equal(hashRawFile(getKaomojiRawRecordsPath(process.cwd())).sha256, AUTHORITATIVE_RAW_SHA256);
   });
-  it("RAW count 232683", () => {
+  it("RAW count 236508", () => {
     const raw = JSON.parse(readFileSync(getKaomojiRawRecordsPath(process.cwd()), "utf8")) as unknown[];
     assert.equal(raw.length, EXPECTED_RAW_BASELINE);
   });

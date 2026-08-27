@@ -65,12 +65,17 @@ function resolveCuration(
   return "KEEP_CANDIDATE";
 }
 
+function normalizeQualityScore(score: number | undefined): number {
+  if (typeof score !== "number" || !Number.isFinite(score)) return 0;
+  return Math.max(0, Math.min(100, score));
+}
+
 function representativeScore(
   raw: RawKaomojiRecord,
   repaired: RepairedProvenance,
   meta: Phase7RecordMeta,
 ): number {
-  let score = meta.quality_score;
+  let score = normalizeQualityScore(meta.quality_score);
   if (meta.validation_status.startsWith("VALID_")) score += 100;
   if (repaired.status === "COMPLETE") score += 50;
   else if (repaired.status === "PARTIAL") score += 25;
