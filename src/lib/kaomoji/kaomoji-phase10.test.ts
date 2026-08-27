@@ -8,9 +8,9 @@ import { computeUniquenessV1 } from "@/lib/kaomoji/processing/phase10/uniqueness
 import { computeExpressivenessV1 } from "@/lib/kaomoji/processing/phase10/expressiveness-v1";
 import { computeOverallV1, scoreDistribution } from "@/lib/kaomoji/processing/phase10/overall-v1";
 import { runPhase10Pipeline } from "@/lib/kaomoji/processing/phase10/pipeline";
-import { EXPECTED_RAW_BASELINE } from "@/lib/kaomoji/processing/phase7/pipeline";
+import { EXPECTED_RAW_BASELINE, AUTHORITATIVE_RAW_SHA256 } from "@/lib/kaomoji/processing/phase7/pipeline";
 import { hashRawFile } from "@/lib/kaomoji/processing/phase7/raw-snapshot";
-import { getKaomojiRawRecordsPath, getPhase7RawSnapshotPath, getPhase10ManifestPath } from "@/lib/kaomoji/storage/paths";
+import { getKaomojiRawRecordsPath, getPhase10ManifestPath } from "@/lib/kaomoji/storage/paths";
 import type { KaomojiEditorialRecord } from "@/lib/kaomoji/processing/phase9/types";
 
 function sampleEditorial(overrides: Partial<KaomojiEditorialRecord> = {}): KaomojiEditorialRecord {
@@ -29,10 +29,9 @@ function sampleEditorial(overrides: Partial<KaomojiEditorialRecord> = {}): Kaomo
 
 describe("phase 10 scoring", () => {
   it("RAW immutability sha256", () => {
-    const p7 = JSON.parse(readFileSync(getPhase7RawSnapshotPath(process.cwd()), "utf8")) as { file_sha256: string };
-    assert.equal(hashRawFile(getKaomojiRawRecordsPath(process.cwd())).sha256, p7.file_sha256);
+    assert.equal(hashRawFile(getKaomojiRawRecordsPath(process.cwd())).sha256, AUTHORITATIVE_RAW_SHA256);
   });
-  it("RAW count 232683", () => {
+  it("RAW count 236508", () => {
     assert.equal((JSON.parse(readFileSync(getKaomojiRawRecordsPath(process.cwd()), "utf8")) as unknown[]).length, EXPECTED_RAW_BASELINE);
   });
   it("detects URL garbage", () => {

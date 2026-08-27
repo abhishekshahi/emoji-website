@@ -1,0 +1,65 @@
+{
+  "step": 14,
+  "title": "Invisible Characters Tools",
+  "audit_label": "B1",
+  "audited_at": "2026-08-27T07:11:35.606Z",
+  "production_url": "https://emojiquick.com",
+  "build_id": "Z0kAnJi2M_4MZvBouUPid",
+  "git_sha": "e3d82012f18d4378cdf33cda3de26ed2950d205c",
+  "pages_checked": 8,
+  "regression": {
+    "step_tests": "PASS"
+  },
+  "findings": [
+    {
+      "id": "B1-F1",
+      "severity": "HIGH",
+      "area": "tools",
+      "message": "/tools/invisible-characters returned 404"
+    },
+    {
+      "id": "B1-F2",
+      "severity": "HIGH",
+      "area": "tools",
+      "message": "/tools/invisible-characters/generator returned 503"
+    },
+    {
+      "id": "B1-F3",
+      "severity": "HIGH",
+      "area": "tools",
+      "message": "/tools/invisible-characters/inspector returned 404"
+    },
+    {
+      "id": "B1-F4",
+      "severity": "HIGH",
+      "area": "tools",
+      "message": "/tools/invisible-characters/cleaner returned 503"
+    },
+    {
+      "id": "B1-F5",
+      "severity": "CRITICAL",
+      "area": "blocked",
+      "message": "Blocked kaomoji returned 503"
+    },
+    {
+      "id": "B1-F6",
+      "severity": "HIGH",
+      "area": "sitemap",
+      "message": "Invisible tools missing from sitemap"
+    },
+    {
+      "id": "B1-F7",
+      "severity": "MEDIUM",
+      "area": "robots",
+      "message": "robots missing /tools/ allow"
+    }
+  ],
+  "counts": {
+    "CRITICAL": 1,
+    "HIGH": 5,
+    "MEDIUM": 1,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "pass": false
+}

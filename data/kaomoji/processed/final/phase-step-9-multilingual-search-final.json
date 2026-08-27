@@ -1,0 +1,68 @@
+{
+  "step": 9,
+  "title": "Kaomoji Multilingual Search",
+  "status": "IMPLEMENTATION_COMPLETE_PENDING_DEPLOY",
+  "verified_at": null,
+  "production_url": "https://emojiquick.com",
+  "supported_languages": ["en", "hi", "es", "fr", "de", "pt", "it", "ja", "ko", "zh", "ar"],
+  "data_integrity": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "d1_modified": false
+  },
+  "top20_research": [
+    { "name": "Kaomojis.jp", "url": "https://kaomojis.jp/en/search", "notes": "12-language keyword search + trending" },
+    { "name": "Emojipedia", "url": "https://emojipedia.org", "notes": "Localized emoji names — reference pattern" },
+    { "name": "Unicode CLDR", "url": "https://cldr.unicode.org", "notes": "Authoritative locale names" },
+    { "name": "Google Translate", "url": "https://translate.google.com", "notes": "Not used for taxonomy — reference only" },
+    { "name": "EmojiQuick emoji localization", "url": "https://emojiquick.com", "notes": "Existing SupportedLanguage + hreflang pattern" },
+    { "name": "JapaneseEmoticons.me", "url": "https://japaneseemoticons.me", "notes": "Category-first English" },
+    { "name": "Chinese kaomoji sites", "url": "https://facemoji.com", "notes": "Regional expression discovery" },
+    { "name": "Naver Korean emoticons", "url": "https://search.naver.com", "notes": "Korean search demand" },
+    { "name": "Wikipedia Kaomoji", "url": "https://en.wikipedia.org/wiki/Kaomoji", "notes": "Educational reference" },
+    { "name": "GitHub emoticon libraries", "url": "https://github.com", "notes": "English-first tags" },
+    { "name": "CopyPasteCharacter", "url": "https://copypastecharacter.com", "notes": "Static English lists" },
+    { "name": "FSymbols", "url": "https://fsymbols.com", "notes": "Multilingual copy pages" },
+    { "name": "CoolSymbol", "url": "https://coolsymbol.com", "notes": "Text art search UX" },
+    { "name": "Discord emoji picker", "url": "https://discord.com", "notes": "Search + recents UX" },
+    { "name": "Twitter/X emoji search", "url": "https://x.com", "notes": "Short-query autocomplete" },
+    { "name": "Apple emoji search", "url": "https://apple.com", "notes": "Locale-aware keyboard search" },
+    { "name": "Samsung emoji search", "url": "https://samsung.com", "notes": "Localized keyword hints" },
+    { "name": "EmojiAll", "url": "https://www.emojiall.com", "notes": "Multi-language emoji dictionary" },
+    { "name": "GetEmoji", "url": "https://getemoji.com", "notes": "Simple English search" },
+    { "name": "EmojiQuick Phase 15", "url": "https://emojiquick.com/kaomoji", "notes": "Controlled locale term registry foundation" }
+  ],
+  "translation_methodology": {
+    "policy": "Controlled locale→English taxonomy mappings only — no machine-translated meanings",
+    "term_count": 100,
+    "confidence": "CONTROLLED",
+    "fallback": "English taxonomy search with transparent fallback messaging",
+    "ranking": "semantic relevance > language match > popularity (Step 8 secondary)"
+  },
+  "architecture": {
+    "extends": "Step 1 / Phase 14 search-index-v2 + /api/kaomoji/search",
+    "new_modules": [
+      "src/lib/kaomoji/localization/language-detect.ts",
+      "src/lib/kaomoji/localization/multilingual-search.ts"
+    ],
+    "api": ["/api/kaomoji/search?locale=", "/api/kaomoji/search/suggest"],
+    "pages": ["/kaomoji/search", "/{locale}/kaomoji"],
+    "benchmark": "122/122 English benchmark preserved"
+  },
+  "tests": {
+    "step9": "18/18 PASS",
+    "step7": "11/11 PASS",
+    "step8": "12/12 PASS",
+    "typecheck": "PASS"
+  },
+  "deployment": {
+    "status": "BLOCKED",
+    "reason": "CLOUDFLARE_API_TOKEN not configured"
+  },
+  "audits": {
+    "first_live": "PENDING_DEPLOY",
+    "second_live": "PENDING_DEPLOY"
+  }
+}

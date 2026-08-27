@@ -52,3 +52,4 @@ next-env.d.ts
 /src/data/master/raw/vendor/
 # Logs
 *.log
+.wrangler/

@@ -6,8 +6,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/", "/emoji/", "/category/", "/popular", "/new", "/search", "/licenses", "/extras"],
-        disallow: ["/favorites", "/recent", "/api/*", "/catalog/", "/developers/"],
+        allow: ["/", "/emoji/", "/category/", "/kaomoji/", "/tools/", "/popular", "/new", "/search", "/licenses", "/extras"],
+        disallow: ["/favorites", "/recent", "/kaomoji/my", "/api/*", "/catalog/", "/developers/"],
       },
     ],
     sitemap: canonicalUrl("/sitemap.xml"),

@@ -35,7 +35,7 @@ describe("phase 14 search excellence", () => {
   it("16 benchmark size >= 100", () => assert.ok(SEARCH_BENCHMARK_V1.length >= 100));
   it("17 manifest exists", () => assert.ok(existsSync(getPhase14ManifestPath(root))));
   it("18 index v2 exists", () => assert.ok(existsSync(getPhase14SearchIndexPath(root))));
-  it("19 index records 50979", () => assert.equal(m().index_records, 50979));
+  it("19 index records 51338", () => assert.equal(m().index_records, 51338));
   it("20 legacy 32/32", () => assert.equal(m().legacy_pass_count, 32));
   it("21 benchmark >= 98pct", () => assert.ok(m().benchmark_pass_rate >= 0.98));
   it("22 benchmark pass count", () => assert.equal(m().benchmark_pass_count, m().benchmark_queries));
@@ -76,5 +76,5 @@ describe("phase 14 search excellence", () => {
     assert.equal(before, after);
   });
   it("41 inverted index has cute", () => assert.ok((idx().inverted.cute?.length ?? 0) > 1000));
-  it("42 v2 records count", () => assert.equal(idx().records.length, 50979));
+  it("42 v2 records count", () => assert.equal(idx().records.length, 51338));
 });

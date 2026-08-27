@@ -1,0 +1,381 @@
+{
+  "step": 9,
+  "title": "Kaomoji Multilingual Search",
+  "audit_label": "A1",
+  "audited_at": "2026-08-27T00:20:23.724Z",
+  "production_url": "https://emojiquick.com",
+  "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+  "git_sha": "1c470d130299cb07b647081c34d6d47585bd39e1",
+  "queries_tested": 110,
+  "api_performance_ms": {
+    "search": 4028,
+    "suggest": 20
+  },
+  "regression": {
+    "step_tests": "PASS"
+  },
+  "findings": [
+    {
+      "id": "A1-F1",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/खुश returned zero results"
+    },
+    {
+      "id": "A1-F2",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/प्यार returned zero results"
+    },
+    {
+      "id": "A1-F3",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/गले लगाना returned zero results"
+    },
+    {
+      "id": "A1-F4",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/उदास returned zero results"
+    },
+    {
+      "id": "A1-F5",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/pyara returned zero results"
+    },
+    {
+      "id": "A1-F6",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/khush returned zero results"
+    },
+    {
+      "id": "A1-F7",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/pyaar returned zero results"
+    },
+    {
+      "id": "A1-F8",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/udaas returned zero results"
+    },
+    {
+      "id": "A1-F9",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/billi returned zero results"
+    },
+    {
+      "id": "A1-F10",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "hi/prem returned zero results"
+    },
+    {
+      "id": "A1-F11",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "es/feliz returned zero results"
+    },
+    {
+      "id": "A1-F12",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "es/amor returned zero results"
+    },
+    {
+      "id": "A1-F13",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "es/abrazo returned zero results"
+    },
+    {
+      "id": "A1-F14",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "es/triste returned zero results"
+    },
+    {
+      "id": "A1-F15",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "es/lindo returned zero results"
+    },
+    {
+      "id": "A1-F16",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "es/gato returned zero results"
+    },
+    {
+      "id": "A1-F17",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "fr/heureux returned zero results"
+    },
+    {
+      "id": "A1-F18",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "fr/amour returned zero results"
+    },
+    {
+      "id": "A1-F19",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "fr/mignon returned zero results"
+    },
+    {
+      "id": "A1-F20",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "fr/triste returned zero results"
+    },
+    {
+      "id": "A1-F21",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "fr/calin returned zero results"
+    },
+    {
+      "id": "A1-F22",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "de/glücklich returned zero results"
+    },
+    {
+      "id": "A1-F23",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "de/liebe returned zero results"
+    },
+    {
+      "id": "A1-F24",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "de/suss returned zero results"
+    },
+    {
+      "id": "A1-F25",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "de/katze returned zero results"
+    },
+    {
+      "id": "A1-F26",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "de/traurig returned zero results"
+    },
+    {
+      "id": "A1-F27",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "de/umarmung returned zero results"
+    },
+    {
+      "id": "A1-F28",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "pt/feliz returned zero results"
+    },
+    {
+      "id": "A1-F29",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "pt/amor returned zero results"
+    },
+    {
+      "id": "A1-F30",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "pt/fofo returned zero results"
+    },
+    {
+      "id": "A1-F31",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "pt/gato returned zero results"
+    },
+    {
+      "id": "A1-F32",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "pt/triste returned zero results"
+    },
+    {
+      "id": "A1-F33",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "pt/abraco returned zero results"
+    },
+    {
+      "id": "A1-F34",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "it/felice returned zero results"
+    },
+    {
+      "id": "A1-F35",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "it/amore returned zero results"
+    },
+    {
+      "id": "A1-F36",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "it/carino returned zero results"
+    },
+    {
+      "id": "A1-F37",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "it/gatto returned zero results"
+    },
+    {
+      "id": "A1-F38",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "it/triste returned zero results"
+    },
+    {
+      "id": "A1-F39",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "it/abbraccio returned zero results"
+    },
+    {
+      "id": "A1-F40",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ja/嬉しい returned zero results"
+    },
+    {
+      "id": "A1-F41",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ja/愛 returned zero results"
+    },
+    {
+      "id": "A1-F42",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ja/ハグ returned zero results"
+    },
+    {
+      "id": "A1-F43",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ja/悲しい returned zero results"
+    },
+    {
+      "id": "A1-F44",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ja/neko returned zero results"
+    },
+    {
+      "id": "A1-F45",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ko/행복 returned zero results"
+    },
+    {
+      "id": "A1-F46",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ko/사랑 returned zero results"
+    },
+    {
+      "id": "A1-F47",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ko/포옹 returned zero results"
+    },
+    {
+      "id": "A1-F48",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ko/슬픔 returned zero results"
+    },
+    {
+      "id": "A1-F49",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ko/gwiyeoun returned zero results"
+    },
+    {
+      "id": "A1-F50",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "ko/goyangi returned zero results"
+    },
+    {
+      "id": "A1-F51",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "zh/开心 returned zero results"
+    },
+    {
+      "id": "A1-F52",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "zh/爱 returned zero results"
+    },
+    {
+      "id": "A1-F53",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "zh/拥抱 returned zero results"
+    },
+    {
+      "id": "A1-F54",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "zh/悲伤 returned zero results"
+    },
+    {
+      "id": "A1-F55",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "zh/keai returned zero results"
+    },
+    {
+      "id": "A1-F56",
+      "severity": "MEDIUM",
+      "area": "search",
+      "message": "zh/mao returned zero results"
+    },
+    {
+      "id": "A1-F57",
+      "severity": "HIGH",
+      "area": "page",
+      "message": "/hi/kaomoji 404 — deploy pending"
+    },
+    {
+      "id": "A1-F58",
+      "severity": "HIGH",
+      "area": "page",
+      "message": "/ja/kaomoji 404 — deploy pending"
+    },
+    {
+      "id": "A1-F59",
+      "severity": "HIGH",
+      "area": "page",
+      "message": "/es/kaomoji 404 — deploy pending"
+    }
+  ],
+  "counts": {
+    "CRITICAL": 0,
+    "HIGH": 3,
+    "MEDIUM": 56,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "pass": false
+}

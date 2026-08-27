@@ -250,6 +250,11 @@ export function getPhase12ManifestPath(rootDir: string): string {
   return join(getPhase12RootDir(rootDir), "manifests", "phase-12-final.json");
 }
 
+/** Evidence-based curation resolutions from maximum-coverage review (derived; phase-8 source unchanged). */
+export function getCurationResolutionsPath(rootDir: string): string {
+  return join(getKaomojiProcessedDir(rootDir), "final", "curation-resolutions.json");
+}
+
 export const PHASE12_PIPELINE_VERSION = "12.0.0-quality-library-excellent-high-good-medium";
 
 export function getPhase13RootDir(rootDir: string): string {

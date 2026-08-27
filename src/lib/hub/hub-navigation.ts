@@ -60,6 +60,13 @@ export const HUB_GUIDE_LINKS: readonly HubNavLink[] = INFO_PAGE_SLUGS.map((slug)
   label: INFO_LABELS[slug] ?? slug,
 }));
 
+export const HUB_TOOLS_LINKS: readonly HubNavLink[] = [
+  { href: "/tools/invisible-characters", label: "Invisible characters" },
+  { href: "/tools/invisible-characters/generator", label: "Character generator" },
+  { href: "/tools/invisible-characters/inspector", label: "Unicode inspector" },
+  { href: "/tools/invisible-characters/cleaner", label: "Remove invisible chars" },
+];
+
 export const HUB_EXPLORE_LINKS: readonly HubNavLink[] = [
   { href: "/explore", label: "Explore hub" },
   { href: "/explore/new", label: "New emojis" },

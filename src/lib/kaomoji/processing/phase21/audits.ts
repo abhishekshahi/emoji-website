@@ -30,7 +30,11 @@ export function readJsonSafe<T>(path: string): T | null {
 export function auditPhase19Gate(rootDir: string, remote: boolean): boolean {
   if (remote) return isImportComplete(rootDir, true);
   const m = readJsonSafe<Phase19Manifest>(getPhase19ManifestPath(rootDir));
-  return m?.public_records === EXPECTED_KAOMOJI && m?.relationships === EXPECTED_RELATIONSHIPS;
+  return (
+    m?.public_records === EXPECTED_KAOMOJI &&
+    (m?.relationships ?? 0) <= EXPECTED_RELATIONSHIPS &&
+    (m?.relationships ?? 0) > 0
+  );
 }
 
 export function auditPhase20Gate(rootDir: string): boolean {

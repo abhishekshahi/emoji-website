@@ -33,6 +33,7 @@
   "exclude": [
     "node_modules",
     "scripts/audit",
+    "scripts/kaomoji",
     "scripts/emoji/search-audit.ts",
     "scripts/emoji/seo-meta-probe.ts"
   ]

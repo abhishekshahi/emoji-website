@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { CanonicalRecord } from "../phase8/types";
 import type { KaomojiEditorialRecord } from "../phase9/types";
@@ -9,6 +9,7 @@ import { buildRelationships } from "../phase9/relationships";
 import { buildSearchIndex } from "../phase9/search-index";
 import { buildRankings } from "../phase10/rankings";
 import {
+  getCurationResolutionsPath,
   getKaomojiRawRecordsPath,
   getPhase8ProposedLibraryDir,
   getPhase9EditorialDir,
@@ -19,7 +20,7 @@ import {
 } from "../../storage/paths";
 import { evaluatePublicationGate, isQualityEligible } from "./publication-filter";
 import { measurePublicLibraryStorage } from "./storage-measure";
-import type { ExcludedRecord, Phase12Manifest, PublicLibraryRecord } from "./types";
+import type { CurationResolution, ExcludedRecord, Phase12Manifest, PublicLibraryRecord } from "./types";
 
 function writeJson(path: string, data: unknown): void {
   mkdirSync(join(path, ".."), { recursive: true });
@@ -28,6 +29,32 @@ function writeJson(path: string, data: unknown): void {
 
 function sha256File(path: string): string {
   return hashRawFile(path).sha256;
+}
+
+function loadCurationResolutions(rootDir: string): Map<string, CurationResolution> {
+  const path = getCurationResolutionsPath(rootDir);
+  if (!existsSync(path)) return new Map();
+  const rows = JSON.parse(readFileSync(path, "utf8")) as CurationResolution[];
+  return new Map(rows.map((r) => [r.canonical_id, r]));
+}
+
+function applyCurationResolution(c: CanonicalRecord, resolution: CurationResolution): CanonicalRecord {
+  return {
+    ...c,
+    curation_status: resolution.resolved_curation_status,
+    license_status: resolution.resolved_license_status as CanonicalRecord["license_status"],
+    publication_status: resolution.resolved_publication_status as CanonicalRecord["publication_status"],
+  };
+}
+
+function applyEditorialResolution(ed: KaomojiEditorialRecord, resolution: CurationResolution): KaomojiEditorialRecord {
+  return {
+    ...ed,
+    is_public: true,
+    curation_status: resolution.resolved_curation_status,
+    license_status: resolution.resolved_license_status as KaomojiEditorialRecord["license_status"],
+    publication_status: resolution.resolved_publication_status as KaomojiEditorialRecord["publication_status"],
+  };
 }
 
 export interface Phase12PipelineResult {
@@ -53,6 +80,7 @@ export function runPhase12Pipeline(rootDir: string): Phase12PipelineResult {
 
   const editorialById = new Map(editorial.map((e) => [e.canonical_id, e]));
   const scoredById = new Map(scored.map((s) => [s.canonical_id, s]));
+  const resolutions = loadCurationResolutions(rootDir);
 
   if (canonical.length !== 63248) warnings.push(`canonical count ${canonical.length} != 63248`);
   if (canonical.length !== editorial.length || canonical.length !== scored.length) {
@@ -75,7 +103,9 @@ export function runPhase12Pipeline(rootDir: string): Phase12PipelineResult {
     const sc = scoredById.get(c.canonical_id);
     if (!ed || !sc) { errors.push(`missing layer: ${c.canonical_id}`); continue; }
     qualityBuckets[sc.quality_bucket] += 1;
-    const gate = evaluatePublicationGate(c, sc);
+    const resolution = resolutions.get(c.canonical_id);
+    const gateCanonical = resolution ? applyCurationResolution(c, resolution) : c;
+    const gate = evaluatePublicationGate(gateCanonical, sc);
     gates.push(gate);
 
     if (isQualityEligible(sc.quality_bucket)) {
@@ -86,7 +116,8 @@ export function runPhase12Pipeline(rootDir: string): Phase12PipelineResult {
     }
 
     if (gate.publication_eligible) {
-      publicRecords.push({ canonical: c, editorial: ed, scores: sc });
+      const publicEd = resolution ? applyEditorialResolution(ed, resolution) : ed;
+      publicRecords.push({ canonical: gateCanonical, editorial: publicEd, scores: sc });
     } else if (gate.blocked_reason) {
       excluded.push({
         canonical_id: c.canonical_id,

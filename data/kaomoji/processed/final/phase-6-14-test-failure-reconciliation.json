@@ -1,0 +1,313 @@
+{
+  "report_id": "phase-6-14-test-failure-reconciliation",
+  "generated_at": "2026-08-27T17:30:00.000Z",
+  "branch": "cursor/359-kaomoji-promotion",
+  "deploy_status": "STOPPED",
+  "target": {
+    "tests_total": 734,
+    "tests_pass_before": 714,
+    "tests_fail_before": 20,
+    "tests_fail_target": 0
+  },
+  "authoritative_baseline": {
+    "raw_count": 236508,
+    "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+    "canonical": 63248,
+    "public": 51338,
+    "blocked_total": 11910,
+    "publication_blocked_license_curation": 11843,
+    "quality_blocked": 67,
+    "relationships_phase13": 395833,
+    "raw_immutable": true,
+    "raw_modified": 0,
+    "raw_removed": 0
+  },
+  "raw_drift": {
+    "phase8_historical_count": 232683,
+    "phase8_historical_sha256": "d795bc676307f854ea8cfa89bc151d6364c46b052b338358d7d47f9ab8618640",
+    "current_count": 236508,
+    "current_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+    "drift": 3825,
+    "added_by_source": {
+      "fastemoji": 3825
+    },
+    "records_removed": false,
+    "legitimate_existing_records": true,
+    "evidence_files": [
+      "data/kaomoji/processed/phase-13/raw-drift/drift-report.json",
+      "data/kaomoji/processed/phase-13/manifest.json",
+      "data/kaomoji/processed/phase-21/manifest.json"
+    ]
+  },
+  "publication_blocked_reconciliation": {
+    "phase11_curation_review": 12202,
+    "phase12_pre_promotion_publication_blocked": 12202,
+    "phase13_publication_blocked": 11843,
+    "curation_resolutions_promoted": 359,
+    "quality_blocked_low_invalid": 67,
+    "blocked_total_check": 11910,
+    "correct_test_metric": "publication_blocked",
+    "correct_test_value": 11843,
+    "explanation": "publication_blocked counts quality-eligible canonical records blocked by license/curation gates, not raw curation REVIEW status"
+  },
+  "quality_bucket_reconciliation": {
+    "source": "data/kaomoji/processed/phase-13/manifest.json",
+    "stale_vs_authoritative": {
+      "excellent_public": { "stale": 3017, "authoritative": 3046, "delta": 29 },
+      "high_public": { "stale": 40041, "authoritative": 40357, "delta": 316 },
+      "good_public": { "stale": 4294, "authoritative": 4306, "delta": 12 },
+      "medium_public": { "stale": 3627, "authoritative": 3629, "delta": 2 }
+    }
+  },
+  "phase3b_emoticon_data": {
+    "stale_expected": 1562,
+    "authoritative_expected": 1879,
+    "unique_upstream_emoticons": 1562,
+    "per_tag_expanded_occurrences": 1879,
+    "cause": "Phase 5 expandEmoticonDataOccurrences — one RAW row per tag",
+    "upstream_verified": "https://raw.githubusercontent.com/w33ble/emoticon-data/master/emoticons.json"
+  },
+  "classification_summary": {
+    "A_stale_historical_test_baseline": 19,
+    "B_missing_restoration_artifact": 0,
+    "C_genuine_code_defect": 1,
+    "D_genuine_data_integrity_issue": 0
+  },
+  "failures": [
+    {
+      "id": 1,
+      "area": "phase7",
+      "test": "baseline raw count is 232683",
+      "classification": "A",
+      "root_cause": "EXPECTED_RAW_BASELINE stale at 232683",
+      "action": "Updated to AUTHORITATIVE_RAW_COUNT 236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 2,
+      "area": "phase8",
+      "test": "RAW immutability sha256",
+      "classification": "A",
+      "root_cause": "Compared current RAW to Phase 7 snapshot with historical SHA",
+      "action": "Assert AUTHORITATIVE_RAW_SHA256",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 3,
+      "area": "phase8",
+      "test": "baseline raw count 232683",
+      "classification": "A",
+      "root_cause": "Stale EXPECTED_RAW_BASELINE",
+      "action": "Updated to 236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 4,
+      "area": "phase8",
+      "test": "full pipeline maps all raw records",
+      "classification": "A",
+      "root_cause": "manifest.raw_before used stale baseline",
+      "action": "Pipeline constant updated",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 5,
+      "area": "phase8",
+      "test": "source occurrence count equals raw baseline",
+      "classification": "A",
+      "root_cause": "Stale baseline denominator",
+      "action": "EXPECTED_RAW_BASELINE = 236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 6,
+      "area": "phase8",
+      "test": "provenance repair achieves near-complete coverage",
+      "classification": "A",
+      "root_cause": "Coverage ratio used 232683 denominator",
+      "action": "EXPECTED_RAW_BASELINE updated",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 7,
+      "area": "phase9",
+      "test": "RAW immutability sha256",
+      "classification": "A",
+      "root_cause": "Stale Phase 7 snapshot SHA compare",
+      "action": "Assert AUTHORITATIVE_RAW_SHA256",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 8,
+      "area": "phase9",
+      "test": "RAW count 232683",
+      "classification": "A",
+      "root_cause": "Stale baseline",
+      "action": "236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 9,
+      "area": "phase9",
+      "test": "full pipeline manifest raw_before",
+      "classification": "A",
+      "root_cause": "Stale baseline",
+      "action": "236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 10,
+      "area": "phase10",
+      "test": "RAW immutability sha256",
+      "classification": "A",
+      "root_cause": "Stale Phase 7 snapshot SHA",
+      "action": "AUTHORITATIVE_RAW_SHA256",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 11,
+      "area": "phase10",
+      "test": "RAW count 232683",
+      "classification": "A",
+      "root_cause": "Stale baseline",
+      "action": "236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 12,
+      "area": "phase10",
+      "test": "full pipeline RAW unchanged raw_before/after",
+      "classification": "A",
+      "root_cause": "Stale baseline",
+      "action": "236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 13,
+      "area": "phase11",
+      "test": "RAW immutability sha256",
+      "classification": "A",
+      "root_cause": "Stale Phase 7 snapshot SHA",
+      "action": "AUTHORITATIVE_RAW_SHA256",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 14,
+      "area": "phase11",
+      "test": "RAW count 232683",
+      "classification": "A",
+      "root_cause": "Stale baseline",
+      "action": "236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 15,
+      "area": "phase11",
+      "test": "full pipeline analysis only raw_before",
+      "classification": "A",
+      "root_cause": "Stale baseline",
+      "action": "236508",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 16,
+      "area": "phase11",
+      "test": "analysis does not delete data (232683 hardcoded)",
+      "classification": "A",
+      "root_cause": "Hardcoded stale count",
+      "action": "Use EXPECTED_RAW_BASELINE",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 17,
+      "area": "phase13",
+      "test": "4 excellent public 3017",
+      "classification": "A",
+      "root_cause": "Pre-resolution public tier counts",
+      "action": "Updated to 3046 from manifest",
+      "result": "PASS_verified_locally"
+    },
+    {
+      "id": 18,
+      "area": "phase13",
+      "test": "5 high public 40041",
+      "classification": "A",
+      "root_cause": "Pre-resolution public tier counts",
+      "action": "Updated to 40357",
+      "result": "PASS_verified_locally"
+    },
+    {
+      "id": 19,
+      "area": "phase13",
+      "test": "6 good public 4294",
+      "classification": "A",
+      "root_cause": "Pre-resolution public tier counts",
+      "action": "Updated to 4306",
+      "result": "PASS_verified_locally"
+    },
+    {
+      "id": 20,
+      "area": "phase13",
+      "test": "7 medium public 3627",
+      "classification": "A",
+      "root_cause": "Pre-resolution public tier counts",
+      "action": "Updated to 3629",
+      "result": "PASS_verified_locally"
+    },
+    {
+      "id": 21,
+      "area": "phase13",
+      "test": "10 publication blocked 12202",
+      "classification": "A",
+      "root_cause": "Asserted curation review count instead of publication_blocked policy metric",
+      "action": "Updated to 11843",
+      "result": "PASS_verified_locally"
+    },
+    {
+      "id": 22,
+      "area": "phase3b",
+      "test": "emoticon-data raw === 1562",
+      "classification": "A",
+      "root_cause": "Pre tag-expansion unique count; authoritative RAW uses per-tag expansion (1879)",
+      "action": "Updated expectation to 1879",
+      "result": "PASS_expected"
+    },
+    {
+      "id": 23,
+      "area": "phase8",
+      "test": "representativeScore() TypeError on missing quality_score",
+      "classification": "C",
+      "root_cause": "undefined quality_score caused NaN in score arithmetic during canonical representative selection",
+      "action": "Added normalizeQualityScore(); missing/invalid → 0; records stay REVIEW not promoted",
+      "result": "PASS_verified_locally"
+    }
+  ],
+  "code_changes": [
+    "src/lib/kaomoji/processing/phase7/pipeline.ts",
+    "src/lib/kaomoji/processing/phase8/canonical-build.ts",
+    "src/lib/kaomoji/processing/phase8/pipeline.ts",
+    "src/lib/kaomoji/kaomoji-phase3b.test.ts",
+    "src/lib/kaomoji/kaomoji-phase7.test.ts",
+    "src/lib/kaomoji/kaomoji-phase8.test.ts",
+    "src/lib/kaomoji/kaomoji-phase9.test.ts",
+    "src/lib/kaomoji/kaomoji-phase10.test.ts",
+    "src/lib/kaomoji/kaomoji-phase11.test.ts",
+    "src/lib/kaomoji/kaomoji-phase13.test.ts"
+  ],
+  "verification": {
+    "typecheck": "PASS",
+    "test_kaomoji": "PENDING_full_local_artifacts",
+    "test_kaomoji_note": "Cloud agent lacks data/kaomoji/raw/records.json; user machine with full artifacts must confirm 734/734",
+    "build": "PASS",
+    "build_cf": "PASS",
+    "deploy": "BLOCKED"
+  },
+  "data_integrity_attestation": {
+    "raw_modified": false,
+    "raw_deleted": false,
+    "publication_gates_bypassed": false,
+    "quality_thresholds_lowered": false,
+    "license_evidence_fabricated": false,
+    "fastemoji_drift_records_removed": false
+  }
+}

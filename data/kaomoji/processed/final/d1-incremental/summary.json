@@ -1,0 +1,12 @@
+{
+  "kaomoji": 359,
+  "kaomoji_category": 925,
+  "kaomoji_keyword": 2819,
+  "kaomoji_locale": 1419,
+  "source_attribution": 406,
+  "relationship_insert": 3258,
+  "relationship_delete": 0,
+  "insert_only_relationships": true,
+  "expected_relationship_count": 396162,
+  "sql_files": 273
+}

@@ -5,8 +5,8 @@ import { runWrangler } from "../../../../scripts/r2/wrangler-r2";
 import { getPhase19ExportDir, getPhase19RootDir } from "../storage/paths";
 
 export const D1_DB_NAME = "emojiquick-kaomoji" as const;
-export const EXPECTED_KAOMOJI = 50979 as const;
-export const EXPECTED_RELATIONSHIPS = 392904 as const;
+export const EXPECTED_KAOMOJI = 51338 as const;
+export const EXPECTED_RELATIONSHIPS = 396162 as const;
 export const BACKOFF_MS = [0, 2000, 5000, 10000, 20000, 30000, 60000] as const;
 export const KAOMOJI_ROWS_PER_BATCH = 25 as const;
 export const RELATIONSHIP_ROWS_PER_BATCH = 100 as const;
@@ -35,14 +35,14 @@ export const EXPECTED_TABLE_COUNTS: Readonly<Record<ImportTable, number>> = {
   category: 56,
   keyword: 998,
   kaomoji: EXPECTED_KAOMOJI,
-  kaomoji_category: 131_314,
-  kaomoji_keyword: 383_621,
+  kaomoji_category: 132_239,
+  kaomoji_keyword: 386_440,
   collection: 20,
   collection_item: 4400,
   relationship: EXPECTED_RELATIONSHIPS,
   search_metadata: 4,
-  kaomoji_locale: 198_799,
-  source_attribution: 60_165,
+  kaomoji_locale: 200_215,
+  source_attribution: 60_571,
   production_release: 1,
 };
 

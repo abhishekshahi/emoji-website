@@ -34,10 +34,12 @@ export function normalizeSearchQuery(query: string): NormalizedQuery {
   normalized = normalized.replace(FULLWIDTH_ASCII, toHalfWidth);
   normalized = normalized.replace(/\s+/g, " ").trim().toLowerCase();
   const tokens = normalized
-    .replace(/[^\p{L}\p{N}\s+-]/gu, " ")
     .split(/\s+/)
-    .map((t) => t.trim())
-    .filter((t) => t.length >= 2);
+    .map((t) => t.replace(/^[^\p{L}\p{N}+-]+|[^\p{L}\p{N}+-]+$/gu, "").trim())
+    .filter((t) => {
+      const core = (t.match(/[\p{L}\p{N}]/gu) ?? []).join("");
+      return core.length >= 1 && (t.length >= 2 || core.length >= 1);
+    });
   return {
     original,
     normalized,

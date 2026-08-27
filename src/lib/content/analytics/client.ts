@@ -35,8 +35,21 @@ function sendToServer(event: ReturnType<typeof createAnalyticsEvent>): void {
   }
 }
 
+const DEDUPE_MS = 30_000;
+const recentEvents = new Map<string, number>();
+
+function dedupeKey(kind: AnalyticsEventKind, canonicalId: string): string {
+  return `${kind}:${canonicalId}`;
+}
+
 export function trackClientEvent(kind: AnalyticsEventKind, canonicalId: string, slug?: string): void {
   if (typeof window === "undefined") return;
+  const key = dedupeKey(kind, canonicalId);
+  const now = Date.now();
+  const last = recentEvents.get(key);
+  if (last !== undefined && now - last < DEDUPE_MS) return;
+  recentEvents.set(key, now);
+
   const { locale, searchLanguage } = resolveClientLocale();
   const event = createAnalyticsEvent(kind, canonicalId, slug, locale, searchLanguage);
   appendStoredEvent(event);

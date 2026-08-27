@@ -1,0 +1,83 @@
+{
+  "step": 13,
+  "title": "Platform Emoji / Kaomoji Comparison",
+  "audit_label": "B1",
+  "audited_at": "2026-08-27T04:48:22.894Z",
+  "production_url": "https://emojiquick.com",
+  "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+  "git_sha": "079688b4f37d53d1eb4735a84dd848be77282212",
+  "pages_checked": 14,
+  "regression": {
+    "step_tests": "PASS"
+  },
+  "findings": [
+    {
+      "id": "B1-F1",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms returned 404"
+    },
+    {
+      "id": "B1-F2",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/emoji-vs-kaomoji returned 404"
+    },
+    {
+      "id": "B1-F3",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/open-source-styles returned 404"
+    },
+    {
+      "id": "B1-F4",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/apple returned 404"
+    },
+    {
+      "id": "B1-F5",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/google returned 404"
+    },
+    {
+      "id": "B1-F6",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/microsoft returned 404"
+    },
+    {
+      "id": "B1-F7",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/samsung returned 404"
+    },
+    {
+      "id": "B1-F8",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/whatsapp returned 404"
+    },
+    {
+      "id": "B1-F9",
+      "severity": "HIGH",
+      "area": "platform-pages",
+      "message": "/emoji/platforms/x returned 404"
+    },
+    {
+      "id": "B1-F10",
+      "severity": "HIGH",
+      "area": "sitemap",
+      "message": "Platform index missing from sitemap"
+    }
+  ],
+  "counts": {
+    "CRITICAL": 0,
+    "HIGH": 10,
+    "MEDIUM": 0,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "pass": false
+}

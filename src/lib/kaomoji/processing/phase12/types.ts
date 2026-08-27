@@ -26,6 +26,17 @@ export interface PublicationGateResult {
   readonly provenance_status: string;
 }
 
+/** Evidence-based curation resolution from maximum-coverage review. Does not modify phase-8 source. */
+export interface CurationResolution {
+  readonly canonical_id: string;
+  readonly slug: string;
+  readonly promotion_path: string;
+  readonly evidence: readonly string[];
+  readonly resolved_curation_status: "KEEP_CANDIDATE";
+  readonly resolved_license_status: string;
+  readonly resolved_publication_status: string;
+}
+
 export interface ExcludedRecord {
   readonly canonical_id: string;
   readonly quality_bucket: QualityBucket;

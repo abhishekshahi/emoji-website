@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArtworkPath } from "@/lib/artwork/providers";
 import { EmojiArtworkPanel } from "@/components/emoji/emoji-artwork-panel";
+import { EmojiPlatformComparisonSection } from "@/components/emoji/emoji-platform-comparison-section";
 import { EmojiDetailHero } from "@/components/emoji/emoji-detail-hero";
 import { EmojiMeaningSection } from "@/components/emoji/emoji-meaning-section";
 import { EmojiNamesKeywordsSection } from "@/components/emoji/emoji-names-keywords-section";
@@ -43,6 +44,7 @@ import {
   resolveActiveEmojiPageSlug,
 } from "@/lib/master/integration/seo-canary/active-migration";
 import { createMasterIdentityPageMetadata } from "@/lib/seo/metadata";
+import { buildEmojiPlatformComparisonView } from "@/lib/emoji/platforms/comparison-builder";
 
 async function resolveOnDemandEmojiPage(slug: string) {
   const { resolveEmojiPage } = await import("@/lib/master/public/identity-page-resolver");
@@ -138,6 +140,7 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
   const variantGroups = buildVariantGroups(enrichment, getBrowsableEmojiBySlug);
   const relatedGroups = getEnrichedRelatedEmojiGroups(emoji);
   const artworkPanel = buildArtworkPanelView(enrichment);
+  const platformComparison = buildEmojiPlatformComparisonView(emoji);
   const description = buildEmojiPageDescription(emoji, enrichment);
 
   const jsonLd = buildEmojiPageJsonLd({
@@ -191,6 +194,10 @@ export default async function EmojiDetailPage({ params }: EmojiPageProps) {
         artwork={artworkPanel}
         openmojiAuthor={extra ? emoji.openmojiAuthor : undefined}
       />
+
+      {!extra ? (
+        <EmojiPlatformComparisonSection comparison={platformComparison} emojiSlug={canonicalSlug} />
+      ) : null}
 
       <MasterEmojiPanelsGate emoji={emoji} />
 

@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-08-22T21:04:47.710Z",
+  "timestamp": "2026-08-23T00:25:38.135Z",
   "final_verdict": "PASS WITH WARNINGS",
   "deployment_identity": {
     "worker_url": "https://emoji-website.emoji-website.workers.dev",
-    "audit_timestamp": "2026-08-22T21:04:47.710Z",
-    "build_id_local": "_0UeJcGlOTGgGNCAR5ulC",
+    "audit_timestamp": "2026-08-23T00:25:38.135Z",
+    "build_id_local": "bJIrxXhxuv71TJFYBo2Ku",
     "worker_js_local": true,
     "note": "Live Worker identity verified via HTTP probes; BUILD_ID on live HTML if embedded"
   },
@@ -79,7 +79,7 @@
       {
         "path": "/",
         "status": 200,
-        "total_ms": 1603,
+        "total_ms": 1219,
         "bytes": 81253,
         "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "headers": {
@@ -93,7 +93,7 @@
       {
         "path": "/kaomoji",
         "status": 200,
-        "total_ms": 156,
+        "total_ms": 143,
         "bytes": 29842,
         "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "headers": {
@@ -107,7 +107,7 @@
       {
         "path": "/kaomoji/kao-00013e7cc777f411",
         "status": 200,
-        "total_ms": 440,
+        "total_ms": 166,
         "bytes": 38422,
         "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "headers": {
@@ -121,7 +121,7 @@
       {
         "path": "/kaomoji/collections/best-kaomoji",
         "status": 200,
-        "total_ms": 1584,
+        "total_ms": 1581,
         "bytes": 82354,
         "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "headers": {
@@ -135,7 +135,7 @@
       {
         "path": "/kaomoji/collections/best-kaomoji/page/1",
         "status": 200,
-        "total_ms": 213,
+        "total_ms": 187,
         "bytes": 82354,
         "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "headers": {
@@ -149,8 +149,8 @@
       {
         "path": "/kaomoji/collections/best-kaomoji/page/2",
         "status": 200,
-        "total_ms": 228,
-        "bytes": 83841,
+        "total_ms": 191,
+        "bytes": 82566,
         "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
         "headers": {
           "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'",
@@ -163,7 +163,7 @@
       {
         "path": "/api/kaomoji/search?q=anime&limit=10",
         "status": 200,
-        "total_ms": 307,
+        "total_ms": 305,
         "bytes": 2113,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -177,7 +177,7 @@
       {
         "path": "/api/kaomoji/search?q=cat&limit=10",
         "status": 200,
-        "total_ms": 455,
+        "total_ms": 141,
         "bytes": 1966,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -191,7 +191,7 @@
       {
         "path": "/api/kaomoji/search?q=%E7%8C%AB&limit=5",
         "status": 200,
-        "total_ms": 204,
+        "total_ms": 179,
         "bytes": 14,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -205,7 +205,7 @@
       {
         "path": "/api/kaomoji/search?q=%F0%9F%98%80&limit=5",
         "status": 200,
-        "total_ms": 179,
+        "total_ms": 178,
         "bytes": 14,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -219,7 +219,7 @@
       {
         "path": "/api/kaomoji/search?limit=2&offset=0",
         "status": 200,
-        "total_ms": 128,
+        "total_ms": 116,
         "bytes": 14,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -233,7 +233,7 @@
       {
         "path": "/api/kaomoji/search?q=&limit=5",
         "status": 200,
-        "total_ms": 397,
+        "total_ms": 121,
         "bytes": 14,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -317,7 +317,7 @@
       "search_a": {
         "path": "/api/kaomoji/search?q=cache-forensic-a&limit=5",
         "status": 200,
-        "total_ms": 170,
+        "total_ms": 169,
         "bytes": 14,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -331,7 +331,7 @@
       "search_a_repeat": {
         "path": "/api/kaomoji/search?q=cache-forensic-a&limit=5",
         "status": 200,
-        "total_ms": 171,
+        "total_ms": 173,
         "bytes": 14,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -345,7 +345,7 @@
       "search_b": {
         "path": "/api/kaomoji/search?q=cache-forensic-b&limit=5",
         "status": 200,
-        "total_ms": 177,
+        "total_ms": 166,
         "bytes": 14,
         "cache_control": "public, s-maxage=300, stale-while-revalidate=600",
         "headers": {
@@ -440,7 +440,7 @@
     "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf"
   },
   "relationship_diff": {
-    "timestamp": "2026-08-22T21:09:52.133Z",
+    "timestamp": "2026-08-23T00:28:56.790Z",
     "local_total": 392904,
     "local_unique": 392904,
     "remote_unique": 392904,
@@ -455,25 +455,25 @@
     "errors": []
   },
   "git": {
-    "branch": "cursor/phase19-final-hardening-audit",
+    "branch": "master",
     "recent_commits": [
+      "725f3c82e docs: add final master release certification",
+      "c8bed6764 release: merge EmojiQuick production certification to master",
+      "6b6c7ac73 docs: add final git release certification record",
+      "0e6acf345 release: finalize phases 20-21 production certification",
       "1fd479ffb phase19: add final optional hardening audit script and reports",
       "3a7a0dc2a phase19: final gate closure PASS",
       "7a565a888 phase19: restore path helpers and final closure reports",
       "237259eec phase19: complete cloudflare migration and audit",
       "850e4ccb7 Add Phase 13 kaomoji final audit pipeline, tests, and reports.",
-      "6b18e3ec4 Add Phase 16-17 content platform with analytics, multilingual SEO, and expanded search.",
-      "a8df0750e Deploy Phase 8.63 UI performance and accessibility hardening.",
-      "af3586f94 Complete Phase 8.62-B UI/UX polish with design system migration and discovery fixes.",
-      "570f88046 Fix global EmojiQuick logo cropping with transparent UI asset and canonical BrandLogo.",
-      "7d431cc26 Complete Phase 8.62-W warning correction and 8.63 official branding."
+      "6b18e3ec4 Add Phase 16-17 content platform with analytics, multilingual SEO, and expanded search."
     ],
-    "status_line_count": 874,
-    "diff_stat": ".../processed/phase-19/canonical-id-audit.json     |  2 +-\n .../processed/phase-19/d1-integrity-audit.json     |  2 +-\n .../processed/phase-19/d1-validation-report.json   |  2 +-\n data/kaomoji/processed/phase-19/manifest.json      | 22 +++--\n .../phase-19/manifests/phase-19-final.json         | 22 +++--\n .../phase-19/phase19-final-gate-closure.json       |  4 +-\n .../processed/phase-19/relationship-set-diff.json  |  2 +-\n .../processed/phase-19/worker-smoke-report.json    |  4 +-\n next.config.ts                                     | 20 +++++\n r2-export/PHASE-19-FINAL-GATE-CLOSURE.md           |  2 +-\n r2-export/PHASE-19-GIT-AUDIT.md                    | 87 +++----------------\n scripts/audit/ultrafast-8-54-60.cjs                | 22 ++---\n scripts/kaomoji/phase19-worker-smoke.ts            |  2 +-\n src/app/api/kaomoji/search/route.ts                | 98 ++++++++++++++++++----\n src/app/kaomoji/[slug]/page.tsx                    | 66 ++++++++++++++-\n src/app/kaomoji/collections/[slug]/page.tsx        | 40 ++-------\n src/app/kaomoji/page.tsx                           |  2 +-\n src/app/sitemap.ts                                 |  2 +-\n src/lib/kaomoji/cloudflare/d1-queries.ts           | 46 ++++++++++\n src/lib/kaomoji/product/search.ts                  | 26 +++++-\n src/lib/r2/binding.ts                              |  6 +-\n 21 files changed, 307 insertions(+), 172 deletions(-)",
+    "status_line_count": 777,
+    "diff_stat": "data/kaomoji/processed/phase-19/canonical-id-audit.json       | 2 +-\n data/kaomoji/processed/phase-19/d1-integrity-audit.json       | 2 +-\n data/kaomoji/processed/phase-19/manifest.json                 | 6 +++---\n data/kaomoji/processed/phase-19/manifests/phase-19-final.json | 6 +++---\n data/kaomoji/processed/phase-19/relationship-set-diff.json    | 2 +-\n data/kaomoji/processed/phase-19/worker-smoke-report.json      | 2 +-\n data/kaomoji/processed/phase-20/manifest.json                 | 2 +-\n data/kaomoji/processed/phase-20/manifests/phase-20-final.json | 2 +-\n data/kaomoji/processed/phase-21/manifest.json                 | 2 +-\n data/kaomoji/processed/phase-21/manifests/phase-21-final.json | 2 +-\n 10 files changed, 14 insertions(+), 14 deletions(-)",
     "secret_scan_hits": 0
   },
   "build": {
-    "build_id": "_0UeJcGlOTGgGNCAR5ulC",
+    "build_id": "bJIrxXhxuv71TJFYBo2Ku",
     "worker_js_exists": true,
     "build_in_progress": false,
     "cf_build_log": "NOT VERIFIED",

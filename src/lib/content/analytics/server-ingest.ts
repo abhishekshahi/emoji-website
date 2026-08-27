@@ -95,6 +95,16 @@ function dateKeysForWindow(days: number, end = new Date()): string[] {
   return keys;
 }
 
+function dateKeysForPriorWindow(days: number, skipDays: number, end = new Date()): string[] {
+  const keys: string[] = [];
+  for (let offset = skipDays; offset < skipDays + days; offset += 1) {
+    const d = new Date(end);
+    d.setUTCDate(d.getUTCDate() - offset);
+    keys.push(dayKey(d));
+  }
+  return keys;
+}
+
 /** Sum daily aggregates across a rolling window — weekly (7) or monthly (30). */
 export async function readAggregateWindowTotals(
   days: 7 | 30,
@@ -116,4 +126,31 @@ export async function readAggregateWindowTotals(
   }
 
   return { total, byKind, daysScanned: keys.length };
+}
+
+/** Per-canonical kaomoji activity counts across a rolling day window. */
+export async function readKaomojiActivityWindow(
+  days: 1 | 7 | 30,
+  skipDays = 0,
+): Promise<Map<string, Partial<Record<AnalyticsEventKind, number>>>> {
+  const bucket = await resolveMasterR2Binding();
+  const merged = new Map<string, Partial<Record<AnalyticsEventKind, number>>>();
+  if (!bucket) return merged;
+
+  const keys = skipDays > 0 ? dateKeysForPriorWindow(days, skipDays) : dateKeysForWindow(days);
+
+  for (const key of keys) {
+    const data = await readAggregate(bucket, aggregatePath(key));
+    for (const [kind, map] of Object.entries(data)) {
+      if (!kind.startsWith("kaomoji_")) continue;
+      for (const [canonicalId, count] of Object.entries(map ?? {})) {
+        if (!/^kao_[a-f0-9]{16}$/.test(canonicalId)) continue;
+        const existing = merged.get(canonicalId) ?? {};
+        const k = kind as AnalyticsEventKind;
+        existing[k] = (existing[k] ?? 0) + count;
+        merged.set(canonicalId, existing);
+      }
+    }
+  }
+  return merged;
 }

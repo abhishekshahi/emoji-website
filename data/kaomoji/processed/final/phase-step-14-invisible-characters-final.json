@@ -1,0 +1,80 @@
+{
+  "step": 14,
+  "title": "Invisible Characters Tools",
+  "status": "implementation_complete_pending_live_verification",
+  "routes": [
+    "/tools/invisible-characters",
+    "/tools/invisible-characters/generator",
+    "/tools/invisible-characters/inspector",
+    "/tools/invisible-characters/cleaner"
+  ],
+  "supported_generator_codepoints": ["U+200B", "U+200C", "U+200D", "U+2060", "U+FEFF"],
+  "top_20_research": [
+    "unicode.org/charts",
+    "unicode.org/reports/tr44",
+    "unicode.org/reports/tr15",
+    "unicode.org/reports/tr9",
+    "fileformat.info",
+    "compart.com/en/unicode",
+    "unicode-table.com",
+    "charactercodes.net",
+    "invisible-characters.com",
+    "emptycharacter.net",
+    "codepoints.net",
+    "graphemica.com",
+    "emojipedia.org",
+    "MDN Intl.Segmenter",
+    "MDN Clipboard API",
+    "OWASP XSS Prevention",
+    "W3C WCAG 2.2",
+    "schema.org WebApplication",
+    "Google Search Central",
+    "Unicode UTS #39 confusables"
+  ],
+  "architecture": {
+    "lib": "src/lib/tools/invisible-characters/",
+    "components": "src/components/tools/invisible-char-*.tsx",
+    "processing": "100% client-side",
+    "max_input_utf16": 10000
+  },
+  "privacy": "100% client-side processing — no pasted text uploaded",
+  "security": {
+    "xss_escaping": true,
+    "bidi_warnings": true,
+    "zwj_protected_default_clean": true,
+    "input_bounded": true
+  },
+  "accessibility": {
+    "name_codepoint_label_on_every_result": true,
+    "copy_button_aria": true,
+    "warnings_role_alert": true
+  },
+  "tests": {
+    "typecheck": "PASS",
+    "step14_unit": "11/11 PASS",
+    "npm_run_build": "PASS",
+    "npm_run_build_cf": "PASS"
+  },
+  "live_audits": {
+    "first": {
+      "status": "FAIL",
+      "audit_label": "B1",
+      "audited_at": "2026-08-27T07:11:35.606Z",
+      "reason": "Production not deployed — tool routes 404/503",
+      "production_build_id": "Z0kAnJi2M_4MZvBouUPid",
+      "local_build_id": "oz1xPZ2ZisDZmUm28wHr-",
+      "findings": { "CRITICAL": 1, "HIGH": 5, "MEDIUM": 1, "LOW": 0 }
+    },
+    "second": "blocked_pending_deploy"
+  },
+  "build_id": "oz1xPZ2ZisDZmUm28wHr-",
+  "production_build_id": "Z0kAnJi2M_4MZvBouUPid",
+  "deployment_id": "blocked_no_cloudflare_api_token",
+  "git_sha": "e3d82012f18d4378cdf33cda3de26ed2950d205c",
+  "data_integrity": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "note": "No D1 publication changes"
+  }
+}

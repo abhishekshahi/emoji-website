@@ -1,0 +1,100 @@
+{
+  "step": 10,
+  "title": "Kaomoji Copy, Save & Personal Collections",
+  "status": "implementation_complete_pending_deploy_and_live_audits",
+  "branch": "cursor/359-kaomoji-promotion",
+  "generated_at": "2026-08-27T00:35:00.000Z",
+  "production_url": "https://emojiquick.com",
+  "top_20_research": [
+    "Emojipedia copy UX",
+    "GetEmoji one-click copy",
+    "CopyChar clipboard fallback",
+    "Kaomoji.ru library browsing",
+    "JapaneseEmoticons.me categories",
+    "TextFancy generator saves",
+    "CoolSymbol copy feedback",
+    "FSymbols paste tools",
+    "i2Symbol favorites",
+    "UnicodeTable character copy",
+    "Emojicopy mobile UX",
+    "YayText clipboard patterns",
+    "LingoJam text tools",
+    "Pinterest-style save affordance",
+    "Browser bookmark local lists",
+    "Notion offline favorites",
+    "GitHub Gist export",
+    "Obsidian local vault",
+    "Mobile share-sheet copy",
+    "Accessibility-first copy buttons"
+  ],
+  "copy_architecture": {
+    "core": "src/lib/clipboard/copy-text.ts",
+    "ui": "src/components/kaomoji/kaomoji-copy-button.tsx",
+    "feedback": "Copied ✓",
+    "fallback": "Select & copy modal with textarea"
+  },
+  "save_architecture": {
+    "schema_version": 1,
+    "storage_key": "emojiquick-kaomoji-personal-v1",
+    "default_collection": "Favorites",
+    "modules": [
+      "src/lib/kaomoji/personal/types.ts",
+      "src/lib/kaomoji/personal/storage.ts",
+      "src/lib/kaomoji/personal/sanitize.ts",
+      "src/lib/kaomoji/personal/client-store.ts"
+    ]
+  },
+  "storage_strategy": "localStorage only; no server persistence; legacy favorites migrated",
+  "privacy": {
+    "local_only": true,
+    "no_index": true,
+    "robots_disallow": "/kaomoji/my",
+    "sitemap_excluded": true,
+    "analytics": "favorite events for public ids only; no collection content payloads"
+  },
+  "limits": {
+    "max_collections": 20,
+    "max_total_items": 500,
+    "max_items_per_collection": 200,
+    "max_collection_name_length": 40,
+    "max_import_bytes": 100000
+  },
+  "api": {
+    "resolve": "POST /api/kaomoji/personal/resolve — public ids only, blocked filtered"
+  },
+  "pages": {
+    "personal_library": "/kaomoji/my"
+  },
+  "tests": {
+    "step10": "17/17 PASS",
+    "step7": "11/11 PASS",
+    "step8": "12/12 PASS",
+    "step9": "18/18 PASS",
+    "typecheck": "PASS",
+    "npm_run_build": "PASS"
+  },
+  "data_integrity": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "personal_collections_alter_counts": false
+  },
+  "live_audits": {
+    "first": {
+      "status": "fail_expected_pre_deploy",
+      "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+      "critical": 0,
+      "high": 2,
+      "medium": 6
+    },
+    "second": "pending_deploy"
+  },
+  "deployment": {
+    "build_id": null,
+    "git_sha": "efc5a08",
+    "deployment_id": null,
+    "blocked_reason": "CLOUDFLARE_API_TOKEN not set in agent environment"
+  },
+  "final_verified": false
+}
