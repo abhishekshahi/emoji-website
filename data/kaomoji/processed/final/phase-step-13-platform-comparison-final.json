@@ -1,0 +1,32 @@
+{
+  "step": 13,
+  "title": "Platform Emoji / Kaomoji Comparison",
+  "status": "implementation_complete_pending_live_verification",
+  "branch": "cursor/359-kaomoji-promotion",
+  "platform_pages": [
+    "/emoji/platforms",
+    "/emoji/platforms/emoji-vs-kaomoji",
+    "/emoji/platforms/open-source-styles",
+    "/emoji/platforms/apple",
+    "/emoji/platforms/google",
+    "/emoji/platforms/microsoft",
+    "/emoji/platforms/samsung",
+    "/emoji/platforms/whatsapp",
+    "/emoji/platforms/x"
+  ],
+  "accuracy_methodology": "Unicode from emoji-test/emojibase; open-source artwork via master index + license gates; vendor pages metadata-only unless artworkProxy maps to served open-source set.",
+  "emoji_detail_integration": "EmojiPlatformComparisonSection on non-extra emoji pages",
+  "kaomoji_distinction": "/emoji/platforms/emoji-vs-kaomoji",
+  "live_audits": {
+    "first": "pending_deploy",
+    "second": "pending_deploy",
+    "script": "scripts/kaomoji/step13-deep-live-audit.ts"
+  },
+  "data_integrity": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "relationships": 396162
+  }
+}

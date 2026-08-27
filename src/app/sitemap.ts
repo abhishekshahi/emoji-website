@@ -13,6 +13,7 @@ import { localizedEmojiPath, type SupportedLanguage } from "@/lib/content/locali
 import { canonicalUrl } from "@/lib/seo/metadata";
 import { getAllPublicSlugs, getIndexableSlugs, kaomojiDataExists, loadCollections } from "@/lib/kaomoji/product/loader";
 import { getIndexableSeoPages } from "@/lib/kaomoji/seo/sitemap-pages";
+import { getIndexablePlatformPages } from "@/lib/emoji/platforms/sitemap-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const manifest = getManifest();
@@ -36,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: generatedAt,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: canonicalUrl("/emoji/platforms"),
+      lastModified: generatedAt,
+      changeFrequency: "monthly",
+      priority: 0.75,
     },
     {
       url: canonicalUrl("/extras"),
@@ -165,6 +172,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
           changeFrequency: "weekly" as const,
           priority: 0.8,
         },
+        ...getIndexablePlatformPages()
+          .filter((p) => p.kind !== "index")
+          .map((p) => ({
+            url: canonicalUrl(p.path),
+            lastModified: generatedAt,
+            changeFrequency: "monthly" as const,
+            priority: p.kind === "guide" ? 0.72 : 0.7,
+          })),
         ...getIndexableSeoPages()
           .filter((p) => p.kind !== "index")
           .map((p) => ({

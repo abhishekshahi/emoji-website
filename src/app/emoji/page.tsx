@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { BrowseEmojiGrid } from "@/components/emoji/browse-emoji-grid";
 import { PageHeader } from "@/components/layout/page-header";
 import { createPageMetadata } from "@/lib/seo/metadata";
@@ -19,6 +20,12 @@ export default function EmojiBrowsePage() {
         title="All Emojis"
         description={`Explore ${MASTER_IDENTITY_COUNT.toLocaleString()} emojis with pagination and instant copy.`}
       />
+      <p className="text-sm text-muted">
+        <Link href="/emoji/platforms" className="underline">
+          Platform &amp; style guide
+        </Link>{" "}
+        — Unicode vs open-source artwork reference.
+      </p>
       <BrowseEmojiGrid />
     </div>
   );
