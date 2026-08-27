@@ -146,6 +146,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
           changeFrequency: "weekly" as const,
           priority: 0.8,
         },
+        {
+          url: canonicalUrl("/kaomoji/search"),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.82,
+        },
+        ...(["hi", "es", "fr", "de", "pt", "it", "ja", "ko", "zh", "ar"] as const).map((locale) => ({
+          url: canonicalUrl(`/${locale}/kaomoji`),
+          lastModified: generatedAt,
+          changeFrequency: "weekly" as const,
+          priority: 0.78,
+        })),
         ...loadCollections().map((c) => ({
           url: canonicalUrl(`/kaomoji/collections/${c.slug}/page/1`),
           lastModified: generatedAt,

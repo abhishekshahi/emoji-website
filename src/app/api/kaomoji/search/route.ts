@@ -1,35 +1,17 @@
 import { NextResponse } from "next/server";
 import { kaomojiSearchCacheHeaders } from "@/lib/kaomoji/cloudflare/cache";
-import { resolveKaomojiD1Binding } from "@/lib/kaomoji/cloudflare/d1-binding";
-import { D1_SEARCH_BY_CATEGORY_FAST, D1_SEARCH_BY_KEYWORD_FAST } from "@/lib/kaomoji/cloudflare/d1-queries";
+import { searchKaomojiRuntime } from "@/lib/kaomoji/cloudflare/search-loader";
 import {
   checkKaomojiSearchRateLimit,
   kaomojiRateLimitKeyFromRequest,
 } from "@/lib/kaomoji/cloudflare/rate-limit";
+import { resolveMultilingualSearchQuery } from "@/lib/kaomoji/localization/multilingual-search";
+import { parseKaomojiSearchLocale } from "@/lib/kaomoji/localization/search-terms";
+import { parseKaomojiSearchFilters } from "@/lib/kaomoji/ui/filters";
 import { sanitizeSearchRequest } from "@/lib/kaomoji/processing/phase14/security";
-
-interface SearchRow {
-  canonical_id: string;
-  slug: string;
-  content: string;
-  editorial_name: string | null;
-  accessible_name: string;
-  quality_score: number;
-}
 
 function jsonResponse(body: unknown, status = 200): NextResponse {
   return NextResponse.json(body, { status, headers: kaomojiSearchCacheHeaders() });
-}
-
-function primaryToken(query: string): string {
-  const normalized = query.normalize("NFC").trim().toLowerCase();
-  if (normalized === "anime") return "japanese";
-  const token = normalized
-    .replace(/[^\p{L}\p{N}\s+-]/gu, " ")
-    .split(/\s+/)
-    .map((t) => t.trim())
-    .find((t) => t.length >= 2);
-  return token ?? normalized;
 }
 
 export async function GET(request: Request): Promise<NextResponse> {
@@ -39,6 +21,7 @@ export async function GET(request: Request): Promise<NextResponse> {
   }
 
   const url = new URL(request.url);
+  const filters = parseKaomojiSearchFilters(url.searchParams);
   const sanitized = sanitizeSearchRequest(
     url.searchParams.get("q") ?? "",
     url.searchParams.get("limit"),
@@ -54,30 +37,30 @@ export async function GET(request: Request): Promise<NextResponse> {
   }
 
   try {
-    const db = await resolveKaomojiD1Binding();
-    if (!db) return jsonResponse({ results: [] });
-
-    const token = primaryToken(sanitized.query);
-    const limit = Math.min(sanitized.limit, 10);
-    const keyword = await db.prepare(D1_SEARCH_BY_KEYWORD_FAST).bind(token, limit).all<SearchRow>();
-    let rows = keyword.results ?? [];
-    if (rows.length === 0) {
-      const category = await db.prepare(D1_SEARCH_BY_CATEGORY_FAST).bind(token, limit).all<SearchRow>();
-      rows = category.results ?? [];
-    }
+    const localeHint = parseKaomojiSearchLocale(filters.locale ?? url.searchParams.get("lang"));
+    const resolution = resolveMultilingualSearchQuery(sanitized.query, localeHint);
+    const hits = await searchKaomojiRuntime(resolution.resolvedQuery, sanitized.limit, sanitized.offset);
 
     return jsonResponse({
-      results: rows.map((row) => ({
-        canonical_id: row.canonical_id,
-        slug: row.slug,
-        content: row.content,
-        name: row.editorial_name,
-        accessible_name: row.accessible_name || "kaomoji expression",
-        score: row.quality_score,
+      results: hits.map((hit) => ({
+        canonical_id: hit.record.canonical_id,
+        slug: hit.record.slug,
+        content: hit.record.content,
+        name: hit.record.name,
+        accessible_name: hit.record.name ?? hit.record.content.slice(0, 48),
+        score: hit.score,
+        match_reason: hit.match_reason,
+        meaning: hit.record.meaning,
       })),
+      query: sanitized.query,
+      resolved_query: resolution.resolvedQuery,
+      detected_locale: resolution.detectedLocale,
+      locale_hint: resolution.localeHint,
+      language_fallback: resolution.usedFallback,
+      mapped_terms: resolution.mappedTerms,
     });
   } catch {
-    return jsonResponse({ results: [] });
+    return jsonResponse({ results: [], query: sanitized.query });
   }
 }
 
