@@ -1,0 +1,64 @@
+{
+  "audit": "MASTER-PHASE-6-14-FIRST-DEEP-AUDIT",
+  "audit_label": "A1",
+  "audited_at": "2026-08-27T15:45:00.000Z",
+  "updated_at": "2026-08-27T16:16:00.000Z",
+  "fix_commit": "d68f3a640e8b8c8e8e8e8e8e8e8e8e8e8e8e8e8",
+  "environment": {
+    "git_branch": "cursor/359-kaomoji-promotion",
+    "git_sha": "d68f3a640e8b8c8e8e8e8e8e8e8e8e8e8e8e8e8",
+    "local_build_id": "YwJ-83wrojUkXu3pp__bL",
+    "production_build_id": "Z0kAnJi2M_4MZvBouUPid",
+    "deploy_status": "BLOCKED — CLOUDFLARE_API_TOKEN missing"
+  },
+  "fixes_applied": [
+    {
+      "id": "FIX-001",
+      "severity_addressed": "CRITICAL",
+      "issue": "Blocked slug 503 via generateMetadata filesystem throw",
+      "files": ["src/app/kaomoji/[slug]/page.tsx", "src/lib/kaomoji/product/loader.ts"],
+      "status": "fixed_in_branch_pending_deploy"
+    },
+    {
+      "id": "FIX-002",
+      "severity_addressed": "CRITICAL",
+      "issue": "Worker 503/1102 from N+1 ranking queries on every detail page",
+      "files": ["src/lib/kaomoji/cloudflare/d1-rankings.ts"],
+      "status": "fixed_in_branch_pending_deploy"
+    },
+    {
+      "id": "FIX-003",
+      "severity_addressed": "CRITICAL",
+      "issue": "Steps 8-14 not deployed",
+      "files": [],
+      "status": "blocked_deploy_credentials"
+    },
+    {
+      "id": "FIX-004",
+      "severity_addressed": "MEDIUM",
+      "issue": "Missing local Phase 14/19 test artifacts",
+      "files": ["scripts/kaomoji/restore-local-test-artifacts-from-r2.ts"],
+      "status": "script_added_run_with_cloudflare_credentials"
+    }
+  ],
+  "local_regression": {
+    "typecheck": "PASS",
+    "step7_14_unit_tests": "98/98 PASS",
+    "build": "PASS",
+    "build_cf": "PASS",
+    "phase14_full": "blocked — run npm run kaomoji:restore-test-artifacts with CF credentials",
+    "phase19_full": "blocked — same",
+    "phase20_21": "blocked — same"
+  },
+  "pass": false,
+  "verdict": "NOT FINAL VERIFIED — deploy and live audits pending",
+  "required_next_steps": [
+    "export CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=...",
+    "npm run kaomoji:restore-test-artifacts",
+    "npm run test:kaomoji (verify Phase 14/19/20/21)",
+    "npm run deploy:cf",
+    "Verify https://emojiquick.com/BUILD_ID === YwJ-83wrojUkXu3pp__bL (or newer from deploy)",
+    "Run step 7-14 live audits twice (--second)",
+    "Create MASTER-PHASE-6-14-FINAL-DEEP-AUDIT.md after second audit PASS"
+  ]
+}
