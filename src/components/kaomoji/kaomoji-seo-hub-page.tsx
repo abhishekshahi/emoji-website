@@ -29,6 +29,7 @@ interface KaomojiSeoHubPageProps {
   relatedCollections?: readonly SeoHubLink[];
   relatedMeanings?: readonly SeoHubLink[];
   relatedUseCases?: readonly SeoHubLink[];
+  relatedEvents?: readonly SeoHubLink[];
   faq?: readonly SeoFaqItem[];
   extra?: ReactNode;
 }
@@ -47,6 +48,7 @@ export function KaomojiSeoHubPage({
   relatedCollections = [],
   relatedMeanings = [],
   relatedUseCases = [],
+  relatedEvents = [],
   faq = [],
   extra,
 }: KaomojiSeoHubPageProps) {
@@ -91,7 +93,7 @@ export function KaomojiSeoHubPage({
           </p>
         ) : null}
       </section>
-      {(relatedIntents.length > 0 || relatedCollections.length > 0 || relatedMeanings.length > 0 || relatedUseCases.length > 0) && (
+      {(relatedIntents.length > 0 || relatedCollections.length > 0 || relatedMeanings.length > 0 || relatedUseCases.length > 0 || relatedEvents.length > 0) && (
         <nav className="space-y-4 max-w-3xl" aria-label="Related kaomoji pages">
           {relatedIntents.length > 0 ? (
             <div className="space-y-2">
@@ -149,6 +151,20 @@ export function KaomojiSeoHubPage({
               </ul>
             </div>
           ) : null}
+          {relatedEvents.length > 0 ? (
+            <div className="space-y-2">
+              <h2 className="text-lg font-semibold">Related events</h2>
+              <ul className="flex flex-wrap gap-2">
+                {relatedEvents.map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href} className="chip">
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </nav>
       )}
       {faq.length > 0 ? (
@@ -173,6 +189,9 @@ export function KaomojiSeoHubPage({
         </Link>
         <Link href="/kaomoji/collections" className="pill-link">
           Collections
+        </Link>
+        <Link href="/kaomoji/events" className="pill-link">
+          Events
         </Link>
         <Link href="/kaomoji/search" className="pill-link">
           Search

@@ -1,0 +1,97 @@
+{
+  "step": 12,
+  "title": "Kaomoji Seasonal & Event Guides",
+  "status": "implementation_complete_pending_live_verification",
+  "branch": "cursor/359-kaomoji-promotion",
+  "implemented_at": "2026-08-27T00:00:00.000Z",
+  "event_taxonomy": {
+    "seasonal": ["new-year", "valentines-day", "halloween", "christmas", "thanksgiving"],
+    "evergreen": ["birthday", "wedding", "graduation", "anniversary", "congratulations", "good-luck", "thank-you"]
+  },
+  "pages_created": {
+    "index": "/kaomoji/events",
+    "event_pages": [
+      "/kaomoji/events/new-year",
+      "/kaomoji/events/valentines-day",
+      "/kaomoji/events/halloween",
+      "/kaomoji/events/christmas",
+      "/kaomoji/events/thanksgiving",
+      "/kaomoji/events/birthday",
+      "/kaomoji/events/wedding",
+      "/kaomoji/events/graduation",
+      "/kaomoji/events/anniversary",
+      "/kaomoji/events/congratulations",
+      "/kaomoji/events/good-luck",
+      "/kaomoji/events/thank-you"
+    ]
+  },
+  "top20_research_sources": [
+    "Emojipedia holiday hubs",
+    "Kaomoji.ru seasonal categories",
+    "JapaneseEmoticons.me occasion lists",
+    "GetEmoji copy collections",
+    "Unicode emoji calendar references",
+    "CoolSymbol event text art",
+    "FSymbols seasonal ASCII",
+    "TextFancy greeting templates",
+    "LingoJam generator presets",
+    "i2Symbol symbol browsers",
+    "Pinterest seasonal kaomoji boards",
+    "Wikipedia movable holiday articles",
+    "Google SERP intent for holiday kaomoji",
+    "EmojiQuick Step 3 collections",
+    "EmojiQuick Step 6 categories",
+    "Schema.org CollectionPage patterns",
+    "Canonical evergreen URL guidance",
+    "Mobile copy-button UX benchmarks",
+    "Accessibility breadcrumb patterns",
+    "Internal linking hub-and-spoke models"
+  ],
+  "content_methodology": "Curated registry with intro, context, usage, FAQ; public kaomoji via bounded D1/search + category fallback; no fabricated statistics or cultural claims; religious/lunar events omitted when dates cannot be verified.",
+  "date_handling": {
+    "fixed_dates": "Gregorian month/day with current year in display text only",
+    "movable_us": "Fourth Thursday of November computed via usThanksgivingDate()",
+    "lunar_varies": "Omitted from registry; helper exists for future use",
+    "url_policy": "Stable slugs without year suffixes"
+  },
+  "seo": {
+    "unique_titles": true,
+    "unique_descriptions": true,
+    "canonical_paths": "/kaomoji/events/{slug}",
+    "structured_data": ["CollectionPage", "BreadcrumbList", "WebPage index"],
+    "sitemap_includes_events": true
+  },
+  "discovery": {
+    "kaomoji_hub": "KaomojiEventsDiscovery near-term + evergreen chips",
+    "events_index": "In season now + seasonal + evergreen sections"
+  },
+  "integrations": {
+    "collections": "collectionSlug links on each event page",
+    "categories": "intentSlugs link to Step 11 intent pages",
+    "search": "Existing /kaomoji/search unchanged",
+    "meanings": "No invented meanings; optional future links only from Step 2 registry",
+    "personal_collections": "Excluded from event content and sitemap"
+  },
+  "tests": {
+    "typecheck": "PASS",
+    "step12_unit": "10/10 PASS",
+    "step11_regression": "9/9 PASS",
+    "step10_regression": "17/17 PASS"
+  },
+  "data_integrity": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "relationships": 396162,
+    "publication_gates_unchanged": true
+  },
+  "live_audits": {
+    "first": "pending_deploy",
+    "second": "pending_deploy",
+    "script": "scripts/kaomoji/step12-deep-live-audit.ts"
+  },
+  "build_id": "pending_deploy",
+  "deployment_id": "pending_deploy",
+  "git_sha": "pending_commit"
+}

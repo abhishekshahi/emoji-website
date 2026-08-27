@@ -171,7 +171,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: canonicalUrl(p.path),
             lastModified: generatedAt,
             changeFrequency: "weekly" as const,
-            priority: p.kind === "intent" ? 0.78 : p.kind === "meaning" ? 0.72 : 0.74,
+            priority: p.kind === "intent" ? 0.78 : p.kind === "meaning" ? 0.72 : p.kind === "event" ? 0.76 : 0.74,
           })),
         ...(["hi", "es", "fr", "de", "pt", "it", "ja", "ko", "zh", "ar"] as const).map((locale) => ({
           url: canonicalUrl(`/${locale}/kaomoji`),

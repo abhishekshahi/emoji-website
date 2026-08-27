@@ -73,3 +73,31 @@ export function buildKaomojiHreflangLinkTags(slug: string) {
     href: alt.href,
   }));
 }
+
+export function buildKaomojiEventBreadcrumbJsonLd(eventLabel: string, slug: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_ORIGIN },
+      { "@type": "ListItem", position: 2, name: "Kaomoji", item: `${SITE_ORIGIN}/kaomoji` },
+      { "@type": "ListItem", position: 3, name: "Events", item: `${SITE_ORIGIN}/kaomoji/events` },
+      { "@type": "ListItem", position: 4, name: eventLabel, item: `${SITE_ORIGIN}/kaomoji/events/${slug}` },
+    ],
+  };
+}
+
+export function buildKaomojiEventCollectionJsonLd(name: string, slug: string, itemCount: number, description: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    url: `${SITE_ORIGIN}/kaomoji/events/${slug}`,
+    description,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: itemCount,
+      itemListOrder: "https://schema.org/ItemListOrderDescending",
+    },
+  };
+}

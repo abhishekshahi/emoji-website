@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { HubLayout } from "@/components/hub/hub-layout";
+import { KaomojiEventsDiscovery } from "@/components/kaomoji/kaomoji-events-discovery";
 import { KaomojiHubRankings } from "@/components/kaomoji/kaomoji-hub-rankings";
 import { KaomojiSearchPanel } from "@/components/kaomoji/kaomoji-search-panel";
 import { KaomojiCard } from "@/components/kaomoji/kaomoji-card";
@@ -32,6 +33,7 @@ export default async function KaomojiHubPage() {
         { href: "/kaomoji/search", label: "Search" },
         { href: "/kaomoji/categories", label: "Categories" },
         { href: "/kaomoji/collections", label: "Collections" },
+        { href: "/kaomoji/events", label: "Events" },
         { href: "/kaomoji/my", label: "My collections" },
         { href: "/kaomoji/popular", label: "Popular" },
         { href: "/kaomoji/trending", label: "Trending" },
@@ -40,6 +42,7 @@ export default async function KaomojiHubPage() {
       ]}
     >
       <KaomojiSearchPanel />
+      <KaomojiEventsDiscovery />
       <KaomojiHubRankings />
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">Featured</h2>
