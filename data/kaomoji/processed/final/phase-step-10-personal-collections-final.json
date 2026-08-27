@@ -70,7 +70,8 @@
     "step7": "11/11 PASS",
     "step8": "12/12 PASS",
     "step9": "18/18 PASS",
-    "typecheck": "PASS"
+    "typecheck": "PASS",
+    "npm_run_build": "PASS"
   },
   "data_integrity": {
     "canonical": 63248,
@@ -80,13 +81,20 @@
     "personal_collections_alter_counts": false
   },
   "live_audits": {
-    "first": "pending_deploy",
+    "first": {
+      "status": "fail_expected_pre_deploy",
+      "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+      "critical": 0,
+      "high": 2,
+      "medium": 6
+    },
     "second": "pending_deploy"
   },
   "deployment": {
     "build_id": null,
-    "git_sha": null,
-    "deployment_id": null
+    "git_sha": "efc5a08",
+    "deployment_id": null,
+    "blocked_reason": "CLOUDFLARE_API_TOKEN not set in agent environment"
   },
   "final_verified": false
 }

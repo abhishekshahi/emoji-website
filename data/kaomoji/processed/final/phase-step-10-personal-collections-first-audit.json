@@ -1,0 +1,72 @@
+{
+  "step": 10,
+  "title": "Kaomoji Copy, Save & Personal Collections",
+  "audit_label": "B1",
+  "audited_at": "2026-08-27T01:04:08.430Z",
+  "production_url": "https://emojiquick.com",
+  "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+  "git_sha": "efc5a0852a4fd7e9ddc9c9a8f65ae8e024192ccb",
+  "pages_checked": 8,
+  "api_checks": 5,
+  "regression": {
+    "step_tests": "PASS"
+  },
+  "findings": [
+    {
+      "id": "B1-F1",
+      "severity": "HIGH",
+      "area": "pages",
+      "message": "/kaomoji/my returned 404"
+    },
+    {
+      "id": "B1-F2",
+      "severity": "MEDIUM",
+      "area": "pages",
+      "message": "/kaomoji/popular returned 404"
+    },
+    {
+      "id": "B1-F3",
+      "severity": "MEDIUM",
+      "area": "pages",
+      "message": "/kaomoji/trending returned 404"
+    },
+    {
+      "id": "B1-F4",
+      "severity": "MEDIUM",
+      "area": "seo",
+      "message": "robots.txt does not disallow /kaomoji/my"
+    },
+    {
+      "id": "B1-F5",
+      "severity": "HIGH",
+      "area": "api",
+      "message": "Personal resolve API not deployed"
+    },
+    {
+      "id": "B1-F6",
+      "severity": "MEDIUM",
+      "area": "regression",
+      "message": "/api/kaomoji/popular?limit=3 returned 404"
+    },
+    {
+      "id": "B1-F7",
+      "severity": "MEDIUM",
+      "area": "regression",
+      "message": "/api/kaomoji/trending?limit=3 returned 404"
+    },
+    {
+      "id": "B1-F8",
+      "severity": "MEDIUM",
+      "area": "regression",
+      "message": "Step 9 Hindi search regression on production"
+    }
+  ],
+  "counts": {
+    "CRITICAL": 0,
+    "HIGH": 2,
+    "MEDIUM": 6,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "pass": false
+}

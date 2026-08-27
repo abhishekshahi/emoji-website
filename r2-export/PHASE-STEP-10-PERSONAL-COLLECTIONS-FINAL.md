@@ -113,10 +113,24 @@ Personal library page: **`/kaomoji/my`**
 
 ## Live Audits
 
+### First audit (pre-deploy baseline) — FAIL (expected)
+
+| Severity | Count |
+|----------|------:|
+| CRITICAL | 0 |
+| HIGH | 2 |
+| MEDIUM | 6 |
+
+Key findings (all expected before deploy):
+- `/kaomoji/my` → 404
+- Resolve API not deployed
+- Steps 7–9 pages/APIs not on production yet
+- `robots.txt` missing `/kaomoji/my` disallow (fixed in code)
+
+Artifact: `data/kaomoji/processed/final/phase-step-10-personal-collections-first-audit.json`
+
 | Audit | Status |
 |-------|--------|
-| First deep live audit | Pending deploy |
-| Fixes + redeploy | Pending |
 | Second independent audit | Pending deploy |
 
 Run: `npx tsx scripts/kaomoji/step10-deep-live-audit.ts`  
