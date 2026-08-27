@@ -3,7 +3,6 @@ import { evaluateLiveRankingReadiness } from "@/lib/content/analytics/readiness-
 import { readKaomojiActivityWindow } from "@/lib/content/analytics/server-ingest";
 import { resolveKaomojiD1Binding } from "./d1-binding";
 import {
-  D1_GET_KAOMOJI_PUBLIC_BY_ID,
   D1_LIST_BY_CATEGORY_RANKED,
   D1_LIST_EDITORIAL_FEATURED,
 } from "./d1-queries";
@@ -24,14 +23,45 @@ interface D1RankRow {
   quality_score: number;
 }
 
+const RANKING_CACHE_TTL_MS = 60_000;
+const rankingResultCache = new Map<string, { expiresAt: number; result: KaomojiRankingResult }>();
+
+function getCachedRanking(
+  key: string,
+  loader: () => Promise<KaomojiRankingResult>,
+): Promise<KaomojiRankingResult> {
+  const hit = rankingResultCache.get(key);
+  const now = Date.now();
+  if (hit && hit.expiresAt > now) return Promise.resolve(hit.result);
+  return loader().then((result) => {
+    rankingResultCache.set(key, { expiresAt: now + RANKING_CACHE_TTL_MS, result });
+    return result;
+  });
+}
+
+function buildPublicByIdsQuery(count: number): string {
+  const placeholders = Array.from({ length: count }, (_, i) => `?${i + 1}`).join(", ");
+  return `
+  SELECT canonical_id, slug, content, editorial_name, accessible_name, quality_score
+  FROM kaomoji
+  WHERE is_public = 1 AND canonical_id IN (${placeholders})
+`.trim();
+}
+
 async function resolvePublicRows(ids: readonly string[]): Promise<Map<string, D1RankRow>> {
   const db = await resolveKaomojiD1Binding();
   const map = new Map<string, D1RankRow>();
-  if (!db) return map;
-  for (const id of ids) {
-    const row = await db.prepare(D1_GET_KAOMOJI_PUBLIC_BY_ID).bind(id).all<D1RankRow>();
-    const hit = row.results?.[0];
-    if (hit) map.set(id, hit);
+  if (!db || ids.length === 0) return map;
+
+  const unique = [...new Set(ids)];
+  const chunkSize = 50;
+  for (let i = 0; i < unique.length; i += chunkSize) {
+    const chunk = unique.slice(i, i + chunkSize);
+    const query = buildPublicByIdsQuery(chunk.length);
+    const row = await db.prepare(query).bind(...chunk).all<D1RankRow>();
+    for (const hit of row.results ?? []) {
+      map.set(hit.canonical_id, hit);
+    }
   }
   return map;
 }
@@ -151,12 +181,14 @@ export async function getKaomojiPopularRanking(
   window: KaomojiRankingWindow = "30d",
   limit = 24,
 ): Promise<KaomojiRankingResult> {
-  return liveRanking({
-    window,
-    limit,
-    label: window === "7d" ? "Popular This Week" : "Popular Kaomoji",
-    description: "Ranked by real copy, view, favorite, and share activity. Counts are not displayed.",
-  });
+  return getCachedRanking(`popular:${window}:${limit}`, () =>
+    liveRanking({
+      window,
+      limit,
+      label: window === "7d" ? "Popular This Week" : "Popular Kaomoji",
+      description: "Ranked by real copy, view, favorite, and share activity. Counts are not displayed.",
+    }),
+  );
 }
 
 export async function getKaomojiMostCopiedRanking(
@@ -173,12 +205,14 @@ export async function getKaomojiMostCopiedRanking(
 }
 
 export async function getKaomojiTrendingRanking(limit = 24): Promise<KaomojiRankingResult> {
-  return liveRanking({
-    window: "7d",
-    limit,
-    label: "Trending Kaomoji",
-    description: "Strongest recent activity in the last 7 days.",
-  });
+  return getCachedRanking(`trending:${limit}`, () =>
+    liveRanking({
+      window: "7d",
+      limit,
+      label: "Trending Kaomoji",
+      description: "Strongest recent activity in the last 7 days.",
+    }),
+  );
 }
 
 export async function getKaomojiRisingRanking(limit = 24): Promise<KaomojiRankingResult> {
@@ -263,8 +297,11 @@ export async function getKaomojiRecordRank(canonicalId: string): Promise<{
   if (!readiness.ready) {
     return { popularRank: null, trendingRank: null, status: "INSUFFICIENT_DATA" };
   }
-  const popular = await getKaomojiPopularRanking("30d", 100);
-  const trending = await getKaomojiTrendingRanking(100);
+  // Badge only surfaces top 50 popular / top 20 trending — avoid recomputing full lists per page view.
+  const [popular, trending] = await Promise.all([
+    getKaomojiPopularRanking("30d", 50),
+    getKaomojiTrendingRanking(20),
+  ]);
   const popularRank = popular.items.find((i) => i.canonical_id === canonicalId)?.rank ?? null;
   const trendingRank = trending.items.find((i) => i.canonical_id === canonicalId)?.rank ?? null;
   return {

@@ -130,6 +130,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       path: `/kaomoji/${slug}`,
     });
   }
+  if (!kaomojiDataExists()) return { title: "Kaomoji Not Found" };
   const record = getEditorialBySlug(slug);
   if (!record || !record.is_public) return { title: "Kaomoji Not Found" };
   return createPageMetadata({ title: record.seo_title, description: record.seo_description, path: `/kaomoji/${slug}` });

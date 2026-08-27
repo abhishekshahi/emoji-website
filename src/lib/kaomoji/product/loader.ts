@@ -36,6 +36,11 @@ function loadJson<T>(path: string): T {
   return JSON.parse(readFileSync(path, "utf8")) as T;
 }
 
+function loadJsonIfExists<T>(path: string): T | null {
+  if (!existsSync(path)) return null;
+  return loadJson<T>(path);
+}
+
 function publicLibDir(): string {
   return getPhase12PublicQualityDir(rootDir());
 }
@@ -168,7 +173,7 @@ export function loadCollections(): readonly KaomojiCollection[] {
     const p = phase12DataExists()
       ? join(publicLibDir(), "collections.json")
       : join(getPhase9EditorialDir(rootDir()), "collections.json");
-    collectionsCache = loadJson(p);
+    collectionsCache = loadJsonIfExists<KaomojiCollection[]>(p) ?? [];
   }
   return collectionsCache!;
 }
@@ -178,12 +183,13 @@ export function loadSlugMap(): Record<string, string> {
     const p = phase12DataExists()
       ? join(publicLibDir(), "slug-map.json")
       : join(getPhase9EditorialDir(rootDir()), "slug-map.json");
-    slugMapCache = loadJson(p);
+    slugMapCache = loadJsonIfExists<Record<string, string>>(p) ?? {};
   }
   return slugMapCache!;
 }
 
 export function getEditorialBySlug(slug: string): KaomojiEditorialRecord | null {
+  if (!kaomojiDataExists()) return null;
   const map = loadSlugMap();
   const id = map[slug];
   if (!id) return null;
