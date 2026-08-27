@@ -82,16 +82,18 @@ Patterns avoided: calendar spam, year-suffixed URLs, thin keyword grids, unverif
 
 | Suite | Result |
 |-------|--------|
-| `npm run typecheck` | PASS |
-| Step 12 (10 tests) | PASS |
-| Step 11 regression | PASS |
-| Step 10 regression | PASS |
+| `npm run build` | PASS (local BUILD_ID `POybcuPIuK1-POi0R_znP`) |
+| `npm run build:cf` | PASS |
 
 ---
 
 ## Live Audits
 
-Pending deploy. Run:
+**First audit (B1): FAIL** — production still on BUILD_ID `jBTM3zuDHiOQZYEJ23nV8` (pre-Step-12). All 13 event routes return 404; sitemap lacks event URLs. Expected until deploy.
+
+Deploy blocked: `CLOUDFLARE_API_TOKEN` not set in this environment.
+
+After deploy, run:
 
 ```bash
 npx tsx scripts/kaomoji/step12-deep-live-audit.ts

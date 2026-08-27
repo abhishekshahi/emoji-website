@@ -76,7 +76,9 @@
     "typecheck": "PASS",
     "step12_unit": "10/10 PASS",
     "step11_regression": "9/9 PASS",
-    "step10_regression": "17/17 PASS"
+    "step10_regression": "17/17 PASS",
+    "npm_run_build": "PASS",
+    "npm_run_build_cf": "PASS"
   },
   "data_integrity": {
     "canonical": 63248,
@@ -87,11 +89,17 @@
     "publication_gates_unchanged": true
   },
   "live_audits": {
-    "first": "pending_deploy",
-    "second": "pending_deploy",
+    "first": {
+      "status": "FAIL",
+      "reason": "Production not deployed — all event routes 404; BUILD_ID unchanged",
+      "production_build_id": "jBTM3zuDHiOQZYEJ23nV8",
+      "local_build_id": "POybcuPIuK1-POi0R_znP",
+      "findings": { "CRITICAL": 0, "HIGH": 14, "MEDIUM": 6, "LOW": 0 }
+    },
+    "second": "blocked_pending_deploy",
     "script": "scripts/kaomoji/step12-deep-live-audit.ts"
   },
-  "build_id": "pending_deploy",
-  "deployment_id": "pending_deploy",
-  "git_sha": "pending_commit"
+  "build_id": "POybcuPIuK1-POi0R_znP",
+  "deployment_id": "blocked_no_cloudflare_api_token",
+  "git_sha": "4c1e1edd57450916afce7e6ebbef5fb312c38225"
 }
