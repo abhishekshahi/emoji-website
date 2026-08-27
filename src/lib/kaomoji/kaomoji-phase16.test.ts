@@ -101,7 +101,7 @@ describe("phase 16 seo content", () => {
   it("42 open graph path", () => assert.match(buildKaomojiOpenGraph(sample()).path, /^\/kaomoji\//));
   it("43 open graph site", () => assert.equal(buildKaomojiOpenGraph(sample()).siteName, "EmojiQuick"));
   it("44 webPage inLanguage", () => assert.equal(buildKaomojiWebPageJsonLd(sample()).inLanguage, "en"));
-  it("45 collection url query", () => assert.match(String(buildKaomojiCollectionJsonLd("Cute", "cute", 1).url), /category=cute/));
+  it("45 collection url uses intent path", () => assert.match(String(buildKaomojiCollectionJsonLd("Cute", "cute", 1, "/kaomoji/cute").url), /\/kaomoji\/cute$/));
   it("46 indexable equals public filter", () => {
     const pub = editorial().filter((r) => r.is_public);
     assert.equal(countIndexableKaomoji(pub), pub.length);
