@@ -3,8 +3,8 @@ import {
   D1_GET_COLLECTION,
   D1_GET_COLLECTION_ITEMS,
   D1_GET_KAOMOJI_BY_SLUG,
-  D1_GET_RELATED_KAOMOJI,
 } from "./d1-queries";
+import { getRelatedKaomojiBundleFromD1 } from "./d1-related";
 import { resolveKaomojiD1Binding } from "./d1-binding";
 import { KAOMOJI_COLLECTION_PAGE_SIZE } from "../product/collection-pages";
 
@@ -88,10 +88,19 @@ export async function getKaomojiDetailFromD1(slug: string): Promise<D1KaomojiDet
 }
 
 export async function getRelatedKaomojiFromD1(canonicalId: string, limit = 12): Promise<D1RelatedKaomoji[]> {
-  const db = await resolveKaomojiD1Binding();
-  if (!db) return [];
-  const rows = await db.prepare(D1_GET_RELATED_KAOMOJI).bind(canonicalId, limit).all<D1RelatedKaomoji>();
-  return rows.results ?? [];
+  const similarLimit = Math.min(8, limit);
+  const relatedLimit = Math.max(0, limit - similarLimit);
+  const bundle = await getRelatedKaomojiBundleFromD1(canonicalId, { similarLimit, relatedLimit });
+  return [...bundle.similar, ...bundle.related].slice(0, limit).map((r) => ({
+    canonical_id: r.canonical_id,
+    slug: r.slug,
+    content: r.content,
+    accessible_name: r.accessible_name,
+  }));
+}
+
+export async function getRelatedKaomojiBundleForPageFromD1(canonicalId: string) {
+  return getRelatedKaomojiBundleFromD1(canonicalId, { similarLimit: 8, relatedLimit: 12 });
 }
 
 /** Count items for collections that lack item_count sync (fallback). */

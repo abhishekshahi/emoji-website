@@ -1,0 +1,218 @@
+{
+  "step": 7,
+  "title": "Kaomoji Related / Similar",
+  "audited_at": "2026-08-26T23:36:40.565Z",
+  "production_url": "https://emojiquick.com",
+  "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+  "git_sha": "040b339ee9b6a4a374d5fe4380c892a60ec0e055",
+  "quality_audit": {
+    "pairs_checked": 0,
+    "weak_pairs": 0
+  },
+  "api_performance_ms": {
+    "count": 30,
+    "min": 30,
+    "median": 36,
+    "p95": 57,
+    "max": 65
+  },
+  "regression": {
+    "phase_tests": "FAIL"
+  },
+  "findings": [
+    {
+      "id": "A1-F1",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-00013e7cc777f411 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F2",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-000231c85784b630 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F3",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-000b1a777f4f1bb2 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F4",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-001698c24eb72787 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F5",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-0021939944d44c05 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F6",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-00455e9793fc1fb7 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F7",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-00687345aa1c84d4 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F8",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-0069d4f8387094b4 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F9",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-007156df3de39a14 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F10",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-00a8686d2ce1d6e0 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F11",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-00ead39e527ec2a8 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F12",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-018fe9a114c85b2d related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F13",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-01d1f0540e8afa01 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F14",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-6718c0cf7a018b68 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F15",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-fc681f6ae55feb5e related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F16",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-fc686c6620bbf85a related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F17",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-fc6975610b550682 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F18",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-fc69a01f224d146b related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F19",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-fc6ae407851a9dcf related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F20",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-fcad26e7d3a423b2 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F21",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-f9485e8981545c68 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F22",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-f37a85067ec9ce21 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F23",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-e970266b930d222d related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F24",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-e78f168884eb0d93 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F25",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-0081f55e2fc9e1a9 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F26",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-008717e08a02cbf6 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F27",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-00ac6df0f4400e03 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F28",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-01eca17f36574f9a related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F29",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-0011a3086a5a8a47 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F30",
+      "severity": "MEDIUM",
+      "area": "api",
+      "message": "kao-0047c46c41517429 related API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F99",
+      "severity": "HIGH",
+      "area": "regression",
+      "message": "Phase tests failed"
+    }
+  ],
+  "counts": {
+    "CRITICAL": 0,
+    "HIGH": 1,
+    "MEDIUM": 30,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "pass": false
+}

@@ -1,0 +1,68 @@
+{
+  "step": 8,
+  "title": "Kaomoji Trending / Popular Rankings",
+  "audit_label": "A1",
+  "audited_at": "2026-08-27T00:07:09.914Z",
+  "production_url": "https://emojiquick.com",
+  "build_id": "jBTM3zuDHiOQZYEJ23nV8",
+  "git_sha": "040b339ee9b6a4a374d5fe4380c892a60ec0e055",
+  "quality_audit": {
+    "records_checked": 0,
+    "blocked_leaks": 0
+  },
+  "api_performance_ms": {
+    "popular": 35,
+    "trending": 27,
+    "rising": 28,
+    "most_copied": 26
+  },
+  "regression": {
+    "phase_tests": "FAIL"
+  },
+  "findings": [
+    {
+      "id": "A1-F1",
+      "severity": "HIGH",
+      "area": "page",
+      "message": "/kaomoji/popular status 404"
+    },
+    {
+      "id": "A1-F2",
+      "severity": "HIGH",
+      "area": "page",
+      "message": "/kaomoji/trending status 404"
+    },
+    {
+      "id": "A1-F3",
+      "severity": "HIGH",
+      "area": "api",
+      "message": "Popular API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F4",
+      "severity": "HIGH",
+      "area": "api",
+      "message": "Trending API 404 — deploy pending"
+    },
+    {
+      "id": "A1-F5",
+      "severity": "MEDIUM",
+      "area": "regression",
+      "message": "Step 7 related API still 404"
+    },
+    {
+      "id": "A1-F99",
+      "severity": "HIGH",
+      "area": "regression",
+      "message": "Phase tests failed"
+    }
+  ],
+  "counts": {
+    "CRITICAL": 0,
+    "HIGH": 5,
+    "MEDIUM": 1,
+    "LOW": 0,
+    "INFO": 0
+  },
+  "pass": false
+}

@@ -1,0 +1,112 @@
+{
+  "step": 8,
+  "title": "Kaomoji Trending / Popular Rankings",
+  "status": "IMPLEMENTATION_COMPLETE_PENDING_DEPLOY",
+  "verified_at": null,
+  "production_url": "https://emojiquick.com",
+  "data_integrity": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "relationships": 396162,
+    "d1_modified": false
+  },
+  "top20_research": [
+    { "name": "Kaomojis.jp", "url": "https://kaomojis.jp/en/ranking", "signals": ["copy events", "7-day rolling", "monthly reports"], "notes": "Real copy counts with methodology disclosure; editorial + live hybrid" },
+    { "name": "Kaomojis.jp Search", "url": "https://kaomojis.jp/en/search", "signals": ["search", "trending strip", "popular terms"], "notes": "Trending section on search hub" },
+    { "name": "Emojipedia", "url": "https://emojipedia.org", "signals": ["editorial curation"], "notes": "No kaomoji popularity counts" },
+    { "name": "Unicode.org", "url": "https://unicode.org", "signals": [], "notes": "Standard reference only" },
+    { "name": "GetEmoji", "url": "https://getemoji.com", "signals": ["copy UX"], "notes": "Emoji-focused" },
+    { "name": "EmojiCopy", "url": "https://www.emojicopy.com", "signals": ["category browse"], "notes": "No kaomoji trending" },
+    { "name": "Emoticons.net", "url": "https://www.emoticons.net", "signals": ["static lists"], "notes": "Legacy emoticon lists" },
+    { "name": "JapaneseEmoticons.me", "url": "https://japaneseemoticons.me", "signals": ["category pages"], "notes": "Category-first discovery" },
+    { "name": "Font4Social", "url": "https://font4social.com", "signals": ["editorial trends"], "notes": "Aesthetic trend articles" },
+    { "name": "Discord Emoji.gg", "url": "https://emoji.gg", "signals": ["downloads"], "notes": "Custom emoji not kaomoji text" },
+    { "name": "Tenor/GIPHY", "url": "https://tenor.com", "signals": ["search volume"], "notes": "GIF not text faces" },
+    { "name": "Google Trends", "url": "https://trends.google.com", "signals": ["search interest"], "notes": "Macro signal only" },
+    { "name": "CopyPasteCharacter", "url": "https://copypastecharacter.com", "signals": ["static popular"], "notes": "No live analytics" },
+    { "name": "Symbols & Emoticons (FSymbols)", "url": "https://fsymbols.com", "signals": ["static lists"], "notes": "Reference lists" },
+    { "name": "CoolSymbol", "url": "https://coolsymbol.com", "signals": ["popular generators"], "notes": "Text art focus" },
+    { "name": "LingoJam", "url": "https://lingojam.com", "signals": ["generator usage"], "notes": "Transform tools" },
+    { "name": "EmojiQuick (self)", "url": "https://emojiquick.com/kaomoji", "signals": ["R2 daily aggregates", "editorial P0/P1"], "notes": "Phase 18 analytics foundation" },
+    { "name": "GitHub kaomoji repos", "url": "https://github.com/search?q=kaomoji", "signals": ["stars"], "notes": "Repo popularity not item popularity" },
+    { "name": "Wikipedia Kaomoji", "url": "https://en.wikipedia.org/wiki/Kaomoji", "signals": [], "notes": "Educational reference" },
+    { "name": "Reddit r/kaomoji", "url": "https://www.reddit.com/r/kaomoji/", "signals": ["community posts"], "notes": "Informal trend signal" }
+  ],
+  "available_signals": {
+    "implemented_events": ["kaomoji_copy", "kaomoji_view", "kaomoji_favorite", "kaomoji_share", "kaomoji_search"],
+    "storage": "R2 private/analytics/v1/daily/{date}.json",
+    "readiness_gate": {
+      "liveEventsEnabled": false,
+      "minimumEventsForTrending": 1000,
+      "current_status": "INSUFFICIENT_DATA"
+    },
+    "anti_manipulation": [
+      "30s client dedupe per kind+canonical",
+      "server-side daily aggregation",
+      "rate limits on ranking APIs",
+      "public-only D1 resolution",
+      "no fabricated view/copy counts in UI"
+    ]
+  },
+  "ranking_methodology": {
+    "popular": {
+      "window": "30d default, 7d for weekly",
+      "score": "weighted sum: copy×3, favorite×2, share×2, view×1, search×0.5",
+      "fallback": "editorial P0/P1 featured by quality_score"
+    },
+    "trending": {
+      "window": "7d",
+      "definition": "strongest recent weighted activity",
+      "fallback": "editorial featured (labeled honestly)"
+    },
+    "rising": {
+      "window": "7d vs prior 7d",
+      "definition": "positive delta in activity score",
+      "requires_live": true
+    },
+    "most_copied": {
+      "metric": "kaomoji_copy only",
+      "window": "7d default"
+    },
+    "category": {
+      "method": "filter live activity to category members; fallback editorial within category",
+      "minimum_live_items": 3
+    }
+  },
+  "time_windows": ["24h", "7d", "30d", "all"],
+  "routes": {
+    "pages": ["/kaomoji/popular", "/kaomoji/trending"],
+    "api": ["/api/kaomoji/popular", "/api/kaomoji/trending"]
+  },
+  "integrations": {
+    "hub": "/kaomoji — popular, trending, category featured sections",
+    "homepage": "KaomojiHomeDiscovery compact section",
+    "detail": "KaomojiRankingBadge (rank labels only, top 20 trending / top 50 popular)",
+    "search": "unchanged — semantic relevance primary; no popularity boost while INSUFFICIENT_DATA",
+    "related": "unchanged from Step 7",
+    "sitemap": ["/kaomoji/popular", "/kaomoji/trending"]
+  },
+  "tests": {
+    "step8": "12/12 PASS",
+    "step7": "11/11 PASS",
+    "typecheck": "PASS",
+    "phase19_21": "BLOCKED — processed data artifacts absent in cloud workspace",
+    "search_benchmark": "122/122 when phase-14 index present"
+  },
+  "build": {
+    "npm_run_build": "IN_PROGRESS",
+    "npm_run_build_cf": "PENDING",
+    "local_build_id": null
+  },
+  "deployment": {
+    "status": "BLOCKED",
+    "reason": "CLOUDFLARE_API_TOKEN not configured in environment",
+    "production_build_id_before": "jBTM3zuDHiOQZYEJ23nV8"
+  },
+  "audits": {
+    "first_live": "PENDING_DEPLOY",
+    "second_live": "PENDING_DEPLOY"
+  }
+}

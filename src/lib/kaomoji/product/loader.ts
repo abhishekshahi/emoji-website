@@ -6,7 +6,8 @@ import type { SearchIndex } from "../processing/phase9/search-index";
 import type { SearchIndexV2 } from "../processing/phase14/types";
 import { buildSearchIndexV2 } from "../processing/phase14/search-index-v2";
 import type { KaomojiRelationship } from "../processing/phase9/types";
-import { relatedForRecord } from "../processing/phase9/relationships";
+import { resolveEditorialRelatedBundle } from "../related/resolve-editorial";
+import type { RelatedKaomojiBundle } from "../related/types";
 import type { Phase12Manifest } from "../processing/phase12/types";
 import {
   getPhase9EditorialDir,
@@ -135,19 +136,31 @@ function relatedByFromIndex(): Map<string, readonly KaomojiRelationship[]> {
 
 /** Public editorial records related to a canonical id (build-time / SSG safe). */
 export function getRelatedEditorialRecords(canonicalId: string, limit = 8): readonly KaomojiEditorialRecord[] {
-  const rels = relatedByFromIndex().get(canonicalId) ?? relatedForRecord(loadRelationships(), canonicalId, limit);
-  const byId = new Map(loadEditorialRecords().map((r) => [r.canonical_id, r]));
-  const seen = new Set<string>();
+  const bundle = getRelatedEditorialBundle(canonicalId, limit);
+  const records = loadEditorialRecords();
+  const byId = new Map(records.map((r) => [r.canonical_id, r]));
   const out: KaomojiEditorialRecord[] = [];
-  for (const rel of rels) {
-    if (rel.to_canonical_id === canonicalId || seen.has(rel.to_canonical_id)) continue;
-    const record = byId.get(rel.to_canonical_id);
-    if (!record?.is_public) continue;
-    seen.add(rel.to_canonical_id);
-    out.push(record);
+  for (const hit of [...bundle.similar, ...bundle.related]) {
+    const record = byId.get(hit.canonical_id);
+    if (record?.is_public) out.push(record);
     if (out.length >= limit) break;
   }
   return out;
+}
+
+export function getRelatedEditorialBundle(
+  canonicalId: string,
+  limit = 12,
+): RelatedKaomojiBundle {
+  const records = loadEditorialRecords();
+  const source = records.find((r) => r.canonical_id === canonicalId);
+  if (!source) return { similar: [], related: [] };
+  const similarLimit = Math.min(8, limit);
+  const relatedLimit = Math.max(0, limit - similarLimit);
+  return resolveEditorialRelatedBundle(source, loadRelationships(), new Map(records.map((r) => [r.canonical_id, r])), {
+    similarLimit,
+    relatedLimit,
+  });
 }
 
 export function loadCollections(): readonly KaomojiCollection[] {

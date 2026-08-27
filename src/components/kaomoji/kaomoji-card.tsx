@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useState } from "react";
 import { copyText } from "@/lib/clipboard/copy-text";
 import { addRecentKaomoji, toggleKaomojiFavorite, readKaomojiIds, KAOMOJI_FAVORITES_KEY } from "@/lib/kaomoji/product/local-storage";
+import { trackKaomojiCopy, trackKaomojiFavorite } from "@/lib/kaomoji/analytics/client";
 
 export interface KaomojiCardData {
   canonical_id: string;
@@ -11,6 +12,7 @@ export interface KaomojiCardData {
   content: string;
   name: string | null;
   accessible_name: string;
+  reason?: string | null;
 }
 
 interface KaomojiCardProps {
@@ -29,6 +31,7 @@ export function KaomojiCard({ item }: KaomojiCardProps) {
     const ok = await copyText(item.content);
     if (ok) {
       addRecentKaomoji(item.canonical_id);
+      trackKaomojiCopy(item.canonical_id, item.slug);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1600);
     }
@@ -37,14 +40,17 @@ export function KaomojiCard({ item }: KaomojiCardProps) {
   const handleFavorite = useCallback((e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    setFav(toggleKaomojiFavorite(item.canonical_id));
-  }, [item.canonical_id]);
+    const next = toggleKaomojiFavorite(item.canonical_id);
+    setFav(next);
+    if (next) trackKaomojiFavorite(item.canonical_id, item.slug);
+  }, [item.canonical_id, item.slug]);
 
   return (
     <article className="emoji-card group p-2 sm:p-3">
       <Link href={`/kaomoji/${item.slug}`} className="block space-y-2 text-center" aria-label={item.accessible_name}>
         <div className="text-2xl sm:text-3xl leading-none break-all px-1" aria-hidden="true">{item.content}</div>
         {item.name ? <p className="text-xs text-muted truncate">{item.name}</p> : null}
+        {item.reason ? <p className="text-[11px] text-muted/80 truncate">{item.reason}</p> : null}
       </Link>
       <div className="mt-2 flex gap-1 justify-center">
         <button type="button" className="btn btn--secondary btn--sm min-h-9" onClick={handleCopy} aria-label={`Copy ${item.accessible_name}`}>

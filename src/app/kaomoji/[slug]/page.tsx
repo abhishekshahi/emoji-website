@@ -2,15 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { KaomojiDetailActions } from "@/components/kaomoji/kaomoji-detail-actions";
+import { KaomojiRankingBadge } from "@/components/kaomoji/kaomoji-ranking-badge";
 import { KaomojiRelatedSection } from "@/components/kaomoji/kaomoji-related-section";
 import { KaomojiViewTracker } from "@/components/kaomoji/kaomoji-view-tracker";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { JsonLd } from "@/components/seo/json-ld";
-import { getKaomojiDetailFromD1, getRelatedKaomojiFromD1 } from "@/lib/kaomoji/cloudflare/d1-pages";
+import { getKaomojiDetailFromD1, getRelatedKaomojiBundleForPageFromD1 } from "@/lib/kaomoji/cloudflare/d1-pages";
+import { getKaomojiRecordRank } from "@/lib/kaomoji/cloudflare/d1-rankings";
 import {
   getEditorialBySlug,
   getIndexableSlugs,
-  getRelatedEditorialRecords,
+  getRelatedEditorialBundle,
   kaomojiDataExists,
 } from "@/lib/kaomoji/product/loader";
 import { buildKaomojiBreadcrumbJsonLd, buildKaomojiWebPageJsonLd } from "@/lib/kaomoji/seo/structured-data";
@@ -50,13 +52,10 @@ export default async function KaomojiDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const d1 = await getKaomojiDetailFromD1(slug);
   if (d1) {
-    const related = (await getRelatedKaomojiFromD1(d1.canonical_id)).map((r) => ({
-      canonical_id: r.canonical_id,
-      slug: r.slug,
-      content: r.content,
-      name: null,
-      accessible_name: r.accessible_name,
-    }));
+    const [relatedBundle, recordRank] = await Promise.all([
+      getRelatedKaomojiBundleForPageFromD1(d1.canonical_id),
+      getKaomojiRecordRank(d1.canonical_id),
+    ]);
     return (
       <div className="page-shell space-y-8 pb-12">
         <KaomojiViewTracker canonicalId={d1.canonical_id} slug={d1.slug} />
@@ -89,12 +88,19 @@ export default async function KaomojiDetailPage({ params }: PageProps) {
         <header className="space-y-4 text-center">
           <div className="text-4xl sm:text-5xl break-all" aria-label={d1.accessible_name}>{d1.content}</div>
           {d1.editorial_name ? <h1 className="text-2xl font-semibold">{d1.editorial_name}</h1> : <h1 className="sr-only">{d1.accessible_name}</h1>}
+          <div className="flex flex-wrap justify-center gap-2">
+            <KaomojiRankingBadge
+              popularRank={recordRank.popularRank}
+              trendingRank={recordRank.trendingRank}
+              status={recordRank.status}
+            />
+          </div>
           <KaomojiDetailActions canonicalId={d1.canonical_id} slug={d1.slug} content={d1.content} accessibleName={d1.accessible_name} />
         </header>
         {d1.meaning ? (
           <section className="prose max-w-2xl mx-auto"><h2>Meaning</h2><p>{d1.meaning}</p>{d1.common_usage ? <p className="text-muted">{d1.common_usage}</p> : null}</section>
         ) : null}
-        <KaomojiRelatedSection items={related} />
+        <KaomojiRelatedSection similar={relatedBundle.similar} related={relatedBundle.related} />
       </div>
     );
   }
@@ -103,13 +109,7 @@ export default async function KaomojiDetailPage({ params }: PageProps) {
 
   const record = getEditorialBySlug(slug);
   if (!record || !record.is_public) notFound();
-  const related = getRelatedEditorialRecords(record.canonical_id).map((r) => ({
-    canonical_id: r.canonical_id,
-    slug: r.slug,
-    content: r.canonical_content,
-    name: r.editorial_name,
-    accessible_name: r.accessible_name,
-  }));
+  const relatedBundle = getRelatedEditorialBundle(record.canonical_id);
   return (
     <div className="page-shell space-y-8 pb-12">
       <KaomojiViewTracker canonicalId={record.canonical_id} slug={record.slug} />
@@ -136,7 +136,7 @@ export default async function KaomojiDetailPage({ params }: PageProps) {
           <Link key={c.slug} href={`/kaomoji?category=${c.slug}`} className="chip">{c.label}</Link>
         ))}
       </nav>
-      <KaomojiRelatedSection items={related} />
+      <KaomojiRelatedSection similar={relatedBundle.similar} related={relatedBundle.related} />
     </div>
   );
 }

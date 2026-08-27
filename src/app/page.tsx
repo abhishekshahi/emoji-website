@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CategoryGrid } from "@/components/category/category-grid";
 import { CategoryNav } from "@/components/category/category-nav";
 import { DiscoverySection } from "@/components/discovery/discovery-section";
+import { KaomojiHomeDiscovery } from "@/components/kaomoji/kaomoji-home-discovery";
 import { EmojiGrid } from "@/components/emoji/emoji-grid";
 import { RecentlyUsedSection } from "@/components/home/recently-used-section";
 import { SearchBar } from "@/components/search/search-bar";
@@ -76,6 +77,8 @@ export default function HomePage() {
 
       {/* TRENDING / POPULAR / CONTEXT */}
       <DiscoverySection />
+
+      <KaomojiHomeDiscovery />
 
       {/* CATEGORIES + artwork styles + extras — contextual exploration */}
       <section className="space-y-4">

@@ -1,0 +1,49 @@
+{
+  "step": 7,
+  "title": "Kaomoji Related / Similar",
+  "status": "IMPLEMENTATION_COMPLETE_DEPLOY_PENDING",
+  "generated_at": "2026-08-26T23:40:00Z",
+  "git_sha_local": "040b339ee9b6a4a374d5fe4380c892a60ec0e055",
+  "build_id_local": "1dJYVl-BnSARxRaHq-TEc",
+  "build_id_production_before_deploy": "jBTM3zuDHiOQZYEJ23nV8",
+  "data_integrity": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "relationships": 396162,
+    "relationship_delta": { "before": 396162, "inserted": 0, "deleted": 0, "after": 396162 }
+  },
+  "algorithm": {
+    "primary": "Precomputed relationship table (396,162 edges) with bounded D1 fetch (max 48)",
+    "fallback": "Same primary category peers (max 24) when sparse",
+    "partition": "Similar = variant | similar_expression; Related = same_category | alternative | opposite_emotion | …",
+    "dedupe": ["canonical_id", "slug", "normalized_content"],
+    "self_exclusion": "SQL to_canonical_id != source AND partition filter",
+    "public_only": "k.is_public = 1 on all joins"
+  },
+  "ranking_signals": {
+    "relationship_score": "Primary ORDER BY r.score DESC",
+    "quality_score": "Secondary k.quality_score DESC",
+    "confidence_boost": "high +5, medium +2",
+    "quality_boost": "min(10, quality_score/10)"
+  },
+  "api": {
+    "route": "GET|POST /api/kaomoji/related",
+    "params": ["canonical_id", "slug", "similar_limit", "related_limit"],
+    "max_limit": 24
+  },
+  "tests": {
+    "step7": "11/11 PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "build_cf": "PASS",
+    "deploy": "BLOCKED — CLOUDFLARE_API_TOKEN not set in CI environment"
+  },
+  "first_live_audit": {
+    "note": "Production still on Step 6 BUILD_ID; /api/kaomoji/related returns 404 until deploy",
+    "related_api": "404 (route not deployed)",
+    "detail_related_section": "Present on existing pages via legacy query"
+  },
+  "second_live_audit": "PENDING — requires production deploy with CLOUDFLARE_API_TOKEN"
+}
