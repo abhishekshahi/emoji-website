@@ -117,11 +117,27 @@ Independent forensic audit of Phases 6–14 confirms:
 
 ---
 
+## Fix phase (commit `d68f3a6`)
+
+| Fix | Issue | Status |
+|-----|-------|--------|
+| `generateMetadata` + loader guards | Blocked slug returned **503** (filesystem throw on D1-only Worker) | Fixed in branch |
+| `d1-rankings.ts` batch IN + 60s cache | **503/1102** from N+1 ranking queries per detail page | Fixed in branch |
+| `npm run deploy:cf` | Steps 8–14 not on production | **Blocked** — no `CLOUDFLARE_API_TOKEN` |
+| `npm run kaomoji:restore-test-artifacts` | Phase 14/19 local artifacts missing | Script added; needs CF credentials |
+
+**Local build:** PASS — BUILD_ID `YwJ-83wrojUkXu3pp__bL`  
+**Production BUILD_ID:** still `Z0kAnJi2M_4MZvBouUPid` (unchanged)
+
+---
+
 ## Fix plan (blocked on deploy)
 
 ```bash
 export CLOUDFLARE_API_TOKEN=...
 export CLOUDFLARE_ACCOUNT_ID=...
+npm run kaomoji:restore-test-artifacts
+npm run test:kaomoji
 npm run deploy:cf
 curl -s https://emojiquick.com/BUILD_ID   # must change
 for n in 7 8 9 10 11 12 13 14; do
@@ -143,11 +159,12 @@ done
 |-------------|--------|
 | Initial forensic audit | ✅ Complete |
 | Findings documented | ✅ This report |
-| CRITICAL fixed | ❌ Blocked on deploy + Worker stability |
-| HIGH fixed | ❌ Blocked on deploy |
-| MEDIUM fixed | ❌ Blocked on deploy |
-| Regression PASS | ⚠️ Step tests PASS; Phase 19–21 incomplete locally |
-| Build / build:cf | ✅ PASS (prior session) |
+| CRITICAL code fixes | ✅ In branch (`d68f3a6`) — pending deploy verification |
+| CRITICAL deploy (Steps 8–14 live) | ❌ Blocked — no CF token |
+| HIGH fixed on production | ❌ Pending deploy + live audit |
+| MEDIUM fixed on production | ❌ Pending deploy + live audit |
+| Regression PASS | ⚠️ Step 7–14 **98/98**; Phase 19–21 need `restore-test-artifacts` |
+| Build / build:cf | ✅ PASS (BUILD_ID `YwJ-83wrojUkXu3pp__bL`) |
 | Production deployed | ❌ |
 | First post-fix live audit | ❌ |
 | Second independent live audit | ❌ |
