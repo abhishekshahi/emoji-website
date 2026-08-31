@@ -11,18 +11,20 @@ import { getKaomojiUiStrings } from "@/lib/kaomoji/localization/registry";
 import { kaomojiDataExists } from "@/lib/kaomoji/product/loader";
 import { createPageMetadata } from "@/lib/seo/metadata";
 
+// The locale is carried in the shared root-level `[slug]` dynamic segment so it
+// does not collide with the sibling `[slug]` content-platform route. URLs stay `/{locale}/kaomoji`.
 interface PageProps {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ slug: string }>;
 }
 
 const LOCALIZED_LOCALES = SUPPORTED_LANGUAGES.filter((l) => l !== PRIMARY_LANGUAGE);
 
 export function generateStaticParams() {
-  return LOCALIZED_LOCALES.map((locale) => ({ locale }));
+  return LOCALIZED_LOCALES.map((locale) => ({ slug: locale }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale } = await params;
+  const { slug: locale } = await params;
   if (!LOCALIZED_LOCALES.includes(locale as SupportedLanguage)) return { title: "Kaomoji" };
   const lang = locale as SupportedLanguage;
   const ui = getKaomojiUiStrings(lang);
@@ -34,7 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function LocalizedKaomojiHubPage({ params }: PageProps) {
-  const { locale } = await params;
+  const { slug: locale } = await params;
   if (!LOCALIZED_LOCALES.includes(locale as SupportedLanguage)) notFound();
   if (!kaomojiDataExists()) notFound();
 

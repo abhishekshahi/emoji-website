@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Popular Kaomoji",
   description:
-    "Discover popular kaomoji text faces ranked by real copy and activity signals — or editorial featured picks when live data is still gathering.",
+    "Discover popular kaomoji text faces. Rankings use real copy and activity signals when mature; otherwise editorial featured picks — never fabricated popularity counts.",
   path: "/kaomoji/popular",
 });
 

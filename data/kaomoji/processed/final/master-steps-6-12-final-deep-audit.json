@@ -1,0 +1,39 @@
+{
+  "audit": "STEPS_6_12_FINAL_DEEP",
+  "finished": "2026-08-27T07:03:47.103264+00:00",
+  "verdict": "NOT_FINAL_VERIFIED",
+  "reason": "deploy_blocked_no_cloudflare_api_token",
+  "production_build_id": "Z0kAnJi2M_4MZvBouUPid",
+  "deployment_id": null,
+  "git_sha": "8d8c753741214baa8018d0e120f2a1d75fd98790",
+  "local_gates": {
+    "typecheck": "PASS",
+    "steps_6_12_unit_tests": "82/82 PASS",
+    "npm_run_build": "PASS",
+    "npm_run_build_cf": "PASS",
+    "deploy_cf": "FAIL_NO_TOKEN"
+  },
+  "first_live_audit": "COMPLETE_SEE_FIRST_AUDIT_ARTIFACTS",
+  "second_live_audit": "NOT_RUN",
+  "expected_baseline": {
+    "canonical": 63248,
+    "public": 51338,
+    "blocked": 11910,
+    "raw": 236508,
+    "relationships": 396162
+  },
+  "blocker": {
+    "need": [
+      "CLOUDFLARE_API_TOKEN",
+      "CLOUDFLARE_ACCOUNT_ID",
+      "production_deploy_authorization"
+    ],
+    "next": [
+      "deploy",
+      "first_post_deploy_live_audit",
+      "fix_live_issues",
+      "redeploy_if_needed",
+      "second_independent_live_audit"
+    ]
+  }
+}

@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Trending Kaomoji",
   description:
-    "See trending and rising kaomoji text faces based on recent real activity — never fabricated popularity counts.",
+    "See trending and rising kaomoji text faces. Rankings use real activity when available, otherwise editorial featured picks — never fabricated popularity counts.",
   path: "/kaomoji/trending",
 });
 
