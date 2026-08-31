@@ -1,6 +1,6 @@
 {
   "phase": 13,
-  "timestamp": "2026-08-23T18:44:35.517Z",
+  "timestamp": "2026-08-31T05:20:04.995Z",
   "pipeline_version": "13.0.0-final-audit-analysis-only",
   "raw_before": 236508,
   "raw_after": 236508,
@@ -15,8 +15,8 @@
   "medium_public": 3629,
   "low_excluded": 1,
   "invalid_excluded": 66,
-  "duplicate_groups": 49885,
-  "variant_groups": 15143,
+  "duplicate_groups": 52066,
+  "variant_groups": 15146,
   "legitimate_variants": 2533,
   "relationships": 395833,
   "provenance_coverage_pct": 100,
@@ -41,12 +41,12 @@
     "tier_medium_bytes": 109281,
     "public_production_bytes": 661607835,
     "quality_dataset_bytes": 742315008,
-    "full_processing_bytes": 3659527810,
+    "full_processing_bytes": 3707696985,
     "full_raw_bytes": 237793446,
     "files": [
       {
         "path": "processed/phase-8/proposed-library/canonical-records.json",
-        "bytes": 208758998
+        "bytes": 211845283
       },
       {
         "path": "phase-12/public-quality/canonical-records.json",
@@ -62,7 +62,11 @@
       },
       {
         "path": "processed/phase-10/scored-records.json",
-        "bytes": 147693450
+        "bytes": 149057345
+      },
+      {
+        "path": "processed/phase-8/proposed-library/source-occurrences.json",
+        "bytes": 129125034
       },
       {
         "path": "phase-12/public-quality/provenance.json",
@@ -73,12 +77,12 @@
         "bytes": 127946622
       },
       {
-        "path": "processed/phase-8/proposed-library/source-occurrences.json",
-        "bytes": 126945167
-      },
-      {
         "path": "processed/phase-12/public-library/provenance.json",
         "bytes": 123823115
+      },
+      {
+        "path": "processed/phase-9/editorial/editorial-records.json",
+        "bytes": 120388395
       },
       {
         "path": "phase-12/public-quality/scores.json",
@@ -89,20 +93,16 @@
         "bytes": 119580305
       },
       {
-        "path": "processed/phase-9/editorial/editorial-records.json",
-        "bytes": 119409417
+        "path": "processed/phase-7/proposed-published/records.json",
+        "bytes": 118953469
       },
       {
-        "path": "processed/phase-7/proposed-published/records.json",
-        "bytes": 116860012
+        "path": "processed/phase-8/proposed-library/provenance-audit.json",
+        "bytes": 111775092
       },
       {
         "path": "processed/phase-12/public-library/scores.json",
         "bytes": 110310251
-      },
-      {
-        "path": "processed/phase-8/proposed-library/provenance-audit.json",
-        "bytes": 109852235
       },
       {
         "path": "phase-12/public-quality/editorial.json",
@@ -122,15 +122,15 @@
       },
       {
         "path": "processed/phase-14/search-index-v2.json",
-        "bytes": 86818750
+        "bytes": 91347758
       },
       {
         "path": "processed/phase-19/export/r2/public/search-index-v2.json",
-        "bytes": 86818750
+        "bytes": 91347758
       },
       {
         "path": "processed/phase-7/duplicate-analysis/groups.json",
-        "bytes": 85695059
+        "bytes": 87843432
       },
       {
         "path": "phase-12/public-quality/relationships.json",
@@ -142,7 +142,7 @@
       },
       {
         "path": "processed/phase-9/editorial/relationships.json",
-        "bytes": 74871891
+        "bytes": 74893227
       },
       {
         "path": "processed/final/pre-promotion-backup/relationships.json",
@@ -150,15 +150,15 @@
       },
       {
         "path": "processed/phase-7/normalized/records.json",
-        "bytes": 71442273
+        "bytes": 72519398
+      },
+      {
+        "path": "processed/phase-7/quality/records.json",
+        "bytes": 71248012
       },
       {
         "path": "processed/phase-12/public-library/relationships.json",
         "bytes": 70690168
-      },
-      {
-        "path": "processed/phase-7/quality/records.json",
-        "bytes": 70092924
       },
       {
         "path": "phase-12/public-quality/search-index.json",
@@ -170,7 +170,7 @@
       },
       {
         "path": "processed/phase-9/editorial/search-index.json",
-        "bytes": 66617250
+        "bytes": 66637092
       },
       {
         "path": "processed/phase-12/public-library/search-index.json",
@@ -178,47 +178,47 @@
       },
       {
         "path": "processed/phase-11/composition/canonical-inventory.json",
-        "bytes": 54270490
+        "bytes": 54778862
       },
       {
         "path": "processed/phase-7/validation/records.json",
-        "bytes": 50526766
-      },
-      {
-        "path": "processed/phase-7/licensing/records.json",
-        "bytes": 40265203
+        "bytes": 51395209
       },
       {
         "path": "processed/phase-8/proposed-library/review-records.json",
-        "bytes": 38116767
+        "bytes": 41096119
+      },
+      {
+        "path": "processed/phase-7/licensing/records.json",
+        "bytes": 40938403
       },
       {
         "path": "processed/phase-10/beauty-v1/records.json",
-        "bytes": 33448457
+        "bytes": 33745747
       },
       {
         "path": "processed/phase-10/review-queues/records.json",
-        "bytes": 28951781
-      },
-      {
-        "path": "processed/phase-10/overall-v1/records.json",
-        "bytes": 28904339
-      },
-      {
-        "path": "processed/phase-10/quality-v2/records.json",
-        "bytes": 28543279
+        "bytes": 30283189
       },
       {
         "path": "processed/phase-8/proposed-library/duplicate-groups.json",
-        "bytes": 28251968
+        "bytes": 29180371
+      },
+      {
+        "path": "processed/phase-10/overall-v1/records.json",
+        "bytes": 29161630
+      },
+      {
+        "path": "processed/phase-10/quality-v2/records.json",
+        "bytes": 28794974
       },
       {
         "path": "processed/phase-10/duplicate-audit/groups.json",
-        "bytes": 27656135
+        "bytes": 28558398
       },
       {
         "path": "processed/phase-8/proposed-library/raw-to-canonical-map.json",
-        "bytes": 21872205
+        "bytes": 22231755
       },
       {
         "path": "processed/phase-12/public-library/publication-gate.json",
@@ -245,16 +245,16 @@
         "bytes": 18688904
       },
       {
+        "path": "processed/phase-10/expressiveness-v1/records.json",
+        "bytes": 17931602
+      },
+      {
         "path": "processed/phase-12/public-library/categories.json",
         "bytes": 17808752
       },
       {
-        "path": "processed/phase-10/expressiveness-v1/records.json",
-        "bytes": 17773399
-      },
-      {
         "path": "processed/phase-10/uniqueness-v1/records.json",
-        "bytes": 17035893
+        "bytes": 17187319
       },
       {
         "path": "processed/validation.json",
@@ -262,11 +262,15 @@
       },
       {
         "path": "processed/phase-7/variant-analysis/groups.json",
-        "bytes": 14057401
+        "bytes": 14072587
       },
       {
         "path": "processed/phase-8/proposed-library/variant-groups.json",
-        "bytes": 14057401
+        "bytes": 14072587
+      },
+      {
+        "path": "processed/final/final-11910-maximum-coverage.json",
+        "bytes": 13177851
       },
       {
         "path": "phase-12/public-quality/names.json",
@@ -298,7 +302,7 @@
       },
       {
         "path": "processed/phase-10/publication-gate/records.json",
-        "bytes": 10257002
+        "bytes": 10343802
       },
       {
         "path": "phase-12/public-quality/meanings.json",
@@ -318,7 +322,7 @@
       },
       {
         "path": "processed/phase-8/proposed-library/license-gate.json",
-        "bytes": 8592524
+        "bytes": 8670218
       },
       {
         "path": "processed/final/maximum-coverage-review-queue.json",
@@ -342,7 +346,7 @@
       },
       {
         "path": "processed/phase-9/editorial/slug-map.json",
-        "bytes": 3162403
+        "bytes": 3190553
       },
       {
         "path": "phase-12/public-quality/excluded-records.json",
@@ -359,10 +363,6 @@
       {
         "path": "processed/phase-12/public-quality/slug-map.json",
         "bytes": 2566903
-      },
-      {
-        "path": "processed/phase-12/public-library/slug-map.json",
-        "bytes": 2367603
       }
     ]
   },
@@ -372,1412 +372,9 @@
     "drift": 3825,
     "phase8_baseline_sha256": "d795bc676307f854ea8cfa89bc151d6364c46b052b338358d7d47f9ab8618640",
     "current_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
-    "added_by_source": {
-      "fastemoji": 3825
-    },
-    "added_records_sample": [
-      {
-        "raw_id": "000581c4366a702a0c7a4f2898b9879298385d710be78bbfa12570eba4130be8",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0010260cbfa9a8455aa3842cbbeae8662b46a7a44c3992f534f209c283a02806",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "00121fd0afac89a39de4b03a20a54b5254219d5321824c9373fcd92db28494cc",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "001291a615bc1a33f2a3e4bbd53705c8f9c063b515f735c677b28a13efe6ad34",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "001ea9ca84d002cb96b01463261973d6a1708d166fa54611c9d45f4feead1192",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "001f0bce2436247cf53f9cf0386f198ee149b6db7cf1b39c97c2683a3417528f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0024d77d786d04520ab1a3c6c720c342663322e3bb3e93737381b0089c030b04",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "003407040c22182857db7907d09b73b675a196691f641a7bc872ab238a8fa244",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "003654a00abaa82f3c29080c79636dc37e7a1fe91118e8628b578d6af8dab73f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "003f0165fec2eb869f5718c28dfe78771e0c259dfc27f19e182a71d85966521d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "006bbf3d23e1d03de2eb6bb1d45cb934bff8694d6a2174eba72bb4cbedcca691",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "006d161ea66a855228347d47fcd0df35394bfdec1c29787ee3d8a65f25d99fe2",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0071160eb3076361a26923dfb4bed8cfb2a2acc7c5eb667cc2ed3624147997ae",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "00727dcc2d65cea09ffac752413820f00093ae9ec80feb0965bff01fe99f8812",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0098e3b4cea998acb2404bac36dfb9d6109ecc4afa486836e9abe29180dfb545",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "00ba3b189add895a7f63f4927accf659cdbf75e0fbcc717e179a03cb594830ca",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "00e748996d639f17147b76840d7d5fba0daa3d53244f9d7d3a827aea2446467e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "00f0c4b6c2f4fc5fad1f0910ae0dca8a8069485a1e551c64604536175067db86",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "00f680c8974592462354906c1c578893cbfe492bf50e1b43f81de326b209db86",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01218be7f9723d2fced179fa0e9a0400e8a6c186c23b399a0dc28da2df9f396b",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "012364bb7d8605ffa82f53cbaedb073315a4263446934235aa158a6b0ad10eab",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0131576eef052da332a4dc61a086e86150dc24f42c7945b78156ed7e2b7b330d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "013baebd619b9057553fb91e901f3049350710f0f949313843912d2d0d156121",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01444429cae2b6dd7011911d2ad24bfceb331a4ccf9c12339e1a9e55def94d07",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "015c345f87352f634c27e71195420b8eeb9238a8d3e9d4c3b9ba7233e80678ad",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "016356e683e53c91bc075878721d9e9bb6f7312ed3174f57a0d93ac8518c41ad",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0196cd163f578c5b5e118da1e96a3a080f5cf01a339fca66209da014f6f6fdbf",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01a2d6dd9ef2440acc9be1d20ea6894d9353df50e257a7d442ed2af57e7ac76c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01a672b96fcc895b20cc1bcd1d1989fbf4a4f20e7d467dea5b6196de148ef65e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01ad0e4723e095b85b955fcc286afe21fa1f7610978df040fff58a64716795eb",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01b268dcbc15e7669f4d0ca39269098c8e0e66e0ace51f6ee22ef8503ebedb3e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01b99ed488c4a8143a03025d790930f24a9eb260e7b723dc1ffe9820ab346659",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01cefe533baa072c544e8f26a272a3d8ce09cc5d27c019faf08026c073f28d31",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01da65daece5951c7b5b574bd9b74310cc64ce314b550c92ef833e89a03cf990",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01e7ba4254f6fd69a31b23149a54e0ca3138be02fb6c49e7390a0ebe87a298a8",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01e88d42d16662bb58e3a73603794497ef9486424fe757c96d2e24905a1be82e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01eaa56f471e77e04565b7a3ca9e74a92a1146418e8bb8da5f95a30036f68499",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "01f6505408ae4982f3b14ec7b2cef854926af22f870bc1246ddf17f62d33fd55",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02245e448f9bf7cccaf43347a24458b9835294e7d152ca151d5721300a78e656",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "023be35ae3c3980dedb5b9e2dc4c8b1caae22076f168529b7075e7d585940f05",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "023dd3d0fb7e981735a2e9d73b069bfd1fd127f18c95a6149505dcc08b7fed19",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0247c7118305a84ec694f400e8b2b75c2ed73cc23b1d81ea2e7a8e01f3d8dd6f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02591ca03bd219da90cd0c61ab871dcd49bef215b2205c58e45ae3ed2a95b63e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02798f5658da4a4a9b3a362d1055aab1aa924d1fb6889dddfcac7ce5a0a6d729",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02806dfc7deb2418f414a9e519d6007c7dee6e5c0381eb2b83cdc03d68b74486",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "028247c8c45fc53206b7f6805eac1c7fdbb73e8f32ad743f9a0f2f69c859cb6f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "028399f86eec43906ff5f2583c4bf0ce940fdb53d9a16e353cc2863c874459ae",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02950cbcd65101ed3210e89d035dc6cec9a2dc62d867d22d827a986b0a8f9ffd",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02d5cacfc90f7c1d657a0254c785176fc6a331ccbe634fff3075c135f28a7b4c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02e78c60215768b7beeb21c5312563379d9efefd29329fb0daba3a0348440de2",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "02f71cf81547c5931fc1bcf2beed1f018810975df23238bbcfee3d63158a85b7",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "030aeb760606233f62459777f0374846e256cab2e5be3041612adabfa42df81f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "031e2b9ce03cad52d74495a76f0af5715c1d57a31ea288fac794d5d2dec714dc",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "033660b30a9ae4c874091e808a5fd43158205019a3193f52a0e6be095b637a8d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "03384a2e0b5d656013f943347a8df5140f5763422357cce1128a3784808ba5ed",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "033f08ecc457b0c3be01709cc14d49f49d9ef17fc47abe177c61d0b2c737c478",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "034a801da1ed0e3604b75b257d920e68eef738b3e2ddda6a72075518a2f1b6ec",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "03503acb3fbca293171fe113314b1d596e71ec0bd00bb30324f90f159b096dcf",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0371ad08b6c6474eac17a7e7c5465d704bec12473dc9fb3012b6f16043d4e583",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "037c80d8002e6d4ce3916427c9cd44dd06165d641a8d0913e999a607c9f4d036",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "037f10d508dcd1a208ab6a2bafe258ae0f8c303c24dc79e28e9f8e556a06edbc",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "03a230093f0c126674bbd5b4e691b2a97e1c51271e55e01cdd35a560deba1def",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "03ad44192dbe9d5f0adff1d2c03a18341a45b042708e4e8627b10c241536cc50",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "03efb55078dc0471ce7ff65746e5a6af39cbd60f6ef3aefde7b86676c40ebf84",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04299b910eaa6e21ec573a1a632ac7b107d63f87e9254fcbcdeec2426ca7ea40",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0432d855d631c12d429b18dd14dfa25561258464d24a7dc225f7afa3fccbf169",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0438bafc0a582bad6d99d4a488364fc159039e1e32e4b4b0394ba983731209f4",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0465314cf8e345ae9c21f20581de7fb5e290d87d5920f0c4415399d0cef930b0",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "046e0b878c0c7d0c515f2476affca5c366eb1948bcfa522e6dd628c8a69576d0",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "047e3f350116a04c75318136d01d503a1e899fc7a0871f3fd80d021e05d83d41",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "048abcc73171efcb8b5a63f36cfb411626880398b9acfeba32df4d215de1b433",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "048b3aa027e4af1876b21fe02f71295623156cf7eeba90f64636269c42798ee3",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "048ea372552171e9ff87049ddf42e47469b4d031fec684d4c84940a7af0ca955",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04928553036dbc64d60dac9c3e69e6a7bd5e58605ea4b6582764853531788b4a",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "049c2b43be2763e11430dd14db051f491b516074832e90259fcbcbf5d6197ddd",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04a2ec334f76b2db9376d338fa9b7a9bdcb18fd78373f94c0a0fa116147f853c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04a9733c8613b7ecd52c24a135702766806dcf1e3c5bd4a65b6f101adc099101",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04b5ace789e1b416f7591f4f2cf620011fb87235856ba0d029a2eb241e48cd52",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04ba766cdaee731d7e9759b97cffc56647c04207457b270a49e95940f5c10eb3",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04c1a85fed75c409f5be69d8a1b082566853a5452765b12352839d4177e53c16",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04cbd2ab7f9740d1496e9d5adfc14a44b65d7648c77c8f61ad39b6828c819f31",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04d2365c7a37232c25fc35feda314257811e54e3461d9c5ffd74d11b766ef913",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04d26f1fc529831ecbd9be98587651afe3d1b6d0f319f78856db71b078a36fe0",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04e6c34ebdb1a9a2e8ede2869c832f8a7835c424e8ff73414ee11e9c40a8b043",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04e8ebed1697389c478e8b49478a334a7fdcc3f8149872ce1910498849d03510",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04f221521d0bbd44ea755afc5dbad68f9e61900bb796a937fe965b21eb5afb42",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "04f535d32c52c0856dccdaebb119e9d1fb0cd856193d76cc4991ff5c47fe6652",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "050a0be66373232b098b43e8f2c4211c63c7aa816beb7741c923359014a029af",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05240d99515800db48560ac9bb46be49cc3c7832ba7d3d3519d6ed05732cc500",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "053c86b6481761078d1f3d82a553c8ce6ef5c3db650f57289dc3e69c54952018",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05589a91302f57eda89f9912812e888787a762998f8eaf65272adce3ffa39add",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "055c98b25f090f3e189793b12909f348d3e5e1cefb24e8f2db2c327f1075ca0f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0583d9874238c40c43506d6e0c90de2295fbf943a956625988e86fbded5be0d8",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05844429a0e023968888d35b28c85864d0e924b2638a7d15aa4129bd14261bd8",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05845a1ca85479026895aab5498fa579aa62ef48d7d99426bd81d2aec31b08fa",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05a9b2d05a7ec216e11dfc3f4914579e5e54af057303acae36e1aa8baa5d2b91",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05b50a4bd8397030bb0bbaacfae1cb26ce6d169d35f2f5de56b1e321d5f94aba",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05c43f1b29b2c341d6fd774b81e61901bc7364c1791633e7798862c420b161ce",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05cc5cca3d9826d235d459efff5629fcf3313d2c0a0bdcb239fe8ac521d95d93",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05d145fbaacd265cc6f2e9a91f69806d651f2decbd81a060369903a36cfebdc4",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05f3b6613d1f6167bdeedd5107686fd81df986283dddb45bffb3f5fb75e04176",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "05fc6e42e933f993363c1633bcc122713e7bb470fa7e4d4bc4547b942b4d1e93",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0605b812e37c00674e2ba3ada077a6ed09157fe6f8e72b0af9bfd8afe6d101f5",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "060d5e9e653800eeb3eacadc2a116390a1719546e714ca4427eaafa9372cd112",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0617abba24e6c94215ca3d8071ecc905e99eb84fa890c4da6872e0ef17ac8fd1",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0642d9fccc3bebebd03fea4a5dcbdb5406c64a6d37030db97458f8b1f65799cd",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "064defd000ae348e404e7c621565b6a8384f345f7353032ec6a7b850f79694a0",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0658c8d6cf5097d421c1a7cbd79c2275328a756a22b3a9e9bcb726f3af5bdbd5",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "066a5323a0c7c617a7602b48e5d3294fe0fa07b5a0165d3a8003980c4259f564",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "067bb2facb0f5b41690652edbe370d081c4ce1f0fcc6d4454fc7c60fdc23a407",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "06858e9d3bff4fcf0946dbd088754379377277df452a7dd051efb05ffef1b36c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "06869daac72687980667934ed67e281ffdf41fe435807db9ab8988e0180f6e7b",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0692237e0c1a4f5f73161f4726fbad8f5477f972cd553b0f8a4a6588c65ef979",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "06bdf673cbfbcb7b6f2a5566158a33b0bd22b050d5d6a87cc3cd384f6d0b8189",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "06fffb3a38c23738e281121e4605a9d75a8aa729957cd2d78c05625e55f6a9a9",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0702fc7c35f61dbcb2634aec8ad602230ff74af08340d7d40e353b737f1e2d78",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0706d3044493bb836abfa1de7403677fd0b1ecdd32dabe4af6cec54dcc315e05",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0716f4c3fa6adb2a26a1820a3398d27a535fa76325ffea595cbab1c04fdaec2d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07171a8c61ec6dae9c9a102ac2dcf06d3b542f8bdac38bd75aea13c5e5c5a473",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07172b4c90fbb7652f14e7ccacb4f4e721b24e759b8de7b0db19d4bab1e9a3a0",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07211f5e5afe9a6a30259a02b140b20b40c9e772a3c934b4015cfd3830ae865c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07312b710c9ab98d73069e72a712823f23bb2cc87f0a780502d6de035352b0ed",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0743890304a03d42cef004faf6ba6c1103d8f13fc89c676a418c449cff62b1ef",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07513f55f5b6dc31698f2ba0e289c9fe420ab7ce01f1d4d9d07a04ad731c09f5",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0758106a61d55d8cc7e7cf475a9363279f79969f15db1cbd4a04b4c6f80f0793",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0776d044838a7c1630e9343eaa18c7e52933334951190cce0663ae685241ed56",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0790f8727cb6605d411bb3bc6631ae8c4a179be8a973dea12909975d563ec05a",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07960f1d6f98c0cf8e8e9737b4a9a2a70a911bacb73b38e81e1287c0eabfdf03",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "079c54a41e999223e859390172fa09fb8b8d8ce06cd78ce44521d7ab145895d6",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07b17f5fd6c1bf81a0bfec391200adf59e04d43e82d081ecb9ac4b08dd22c0ca",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07bf5d9fb073271573e98d6217faa99e3f6adabbfb0f96584fff05910fb8bf83",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07d0307f55312eb9b6f31aa4062a6af863407d33284eee10c96ea66ff5387c40",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07edeef9a9671e5e227de72393985100a1defeff600e0308179e3df7250183f5",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07f2651cec258577f5220bb3a2321b219e783071b5d28bb177562bf113ef6b88",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07f4a9bdd8b9fc78adb46898ca2516e9a6917ea439c93c685389ed70e6c46d3c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07f98496fac721aaf78a42e321babf79ff24c91e0887df608bfe2ef5e63fe186",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "07feb2b41070d926a5806b759a94a1953bb41fa530c2cd6685e5125836c355e0",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "08382c832338a94dee7cbdb57742149590fb6d6b0087722aa235961344e77b5e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "084438645de57668fd369db50af23d122b3eb80e8eb30fbe7be64d5714d9d8e5",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0849e73ecb916e78181b7fd9ae2a417fa9df6d5d584bcea8b70a6d5224b35ba2",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "085259391787a2042b6a4181bfbdb33006c9b3cdd42b14a53a7f9f17ab085912",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "086669c99483e72f6754f390da2a222f1d8d9aaf82cbbf5ced8e7e8060a9601d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "08675c7d8238c7c4aeee5edaa9de1e8fc3f28bc1f1f034f0a674bb78147dc452",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "086acf26073c0a08d479d0e9ad07579931e4e085bd107032c4f104feb7ff4c9a",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "088d7635da37177a0825cdbdc11eafc7648750feb302877ed7d658b807bc6a5d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "088eebed4530e5428589f22208ffd879a8f98284a2b2d0cb08ec528036262d52",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "089bb95c67f332260bc14ed2d70a01afdd2a8dac45e7fcbeb6f244fc4c940d74",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "089f207cf6efaf8dbb7edf1731e47a181e145318d7c26726d626432d208d2d35",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "08ea706362140ad54a50348846646910a623041adee05b16f0071dde84fb4a97",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "08ec5a3c95080ae208d04f7200a178bd94abf80744d710298e8c940d51ac151d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "08f2d2d147feb7bc63ca7f83951bf1dd54e558fc33b9ce2124a572ea430128ea",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "08f3afae86c5fef679f5cb6aa9149899210426f975de48b982e4e99fbb71cd7c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "090d3bdb60533ffac23085a4f29ef52a8813f6eb2bc9d6c3f4cbe9385c064567",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "090e698bd28d47da52a5ef217eb4de965dfa804e3ab171da47486868ef991ad2",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "09323fa6cdf9dd208c26f803215cb2c8677029f0bd0e16efda00cd4cd94f0f32",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "095cee680a25c467d3a46fe7f1c78b791d52b3242ddb4a2f0424a1f469713c0d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0961c50c39f415800c2d285d8f1184ecdba95d9522e5ebc435d6253e59929ed9",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0969bdf6302cb92319a111f4700a976cada4abbd824347eb424f3b381913426a",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "096a12f55c53cddccee9050eae535625fb30f5e595f84424989d0a7083fa4e2f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "099092f6a19cec6fa0aab3f08b0d1ad85586a11104af982927a052ca52545bb7",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0991acd5f916ff7c98c2d43fac07b7815d06f1fc0efb876fd3465cf24eaf2259",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "09b5213ab93ba5afc1c8891b3d7bcc77e1ed7d36fb62fbe28fcc2568550e0b03",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "09c4cd97ac16ef08b2f2a5d168693c9126bd2a113af61dddbe262ab8ac467160",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "09d0961226eb1f7acf82d17cb6f05c5936d218071424d63eb4e5390a35d613c8",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "09f0bc5fc828b4d3bfbbf0ad1faf829bf50f641cb9922dfaea62aca5f2867627",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a0989bbe3d656ba08b7994ad992d3f94b1c06f90b7467ef0e8172cc58d70011",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a1affbdeef94dd42375102b1140e0a60d3c90b5436ff321baf7d7c87c6eeb6a",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a2061b7ecd394fd69ef4d70cb7b06072a533629a7b86df2fcc993baa6807fec",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a2de895585906bd1720a8214738d43248ce7e1374afd400e7536b191364abb1",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a2f077ddb245abff5a816ea2334048104b27e94b4cfee8b7bcf3b42f3c89b66",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a465f08b7b64d8a83b8af04a45f8583b61215d742a4c73e44a97e028ee09163",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a556b9e2fb23f1423be46c3f4b8b572832f96cda4f4f4489092ea0086147d66",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a583ba7e2e0581571fbcf4003b8eee86d415439caec68f3d21ccfa67eb5be8b",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a6b9a8b6a39fc39d1d4a47b736d2fea94ff5944d59dd3bfa3ca375a1e0ea27f",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0a6c1b47dac12a9d574f8cb1f62914c101a19635eca2e9fd3fe81758970cfaa3",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0aaf83b7d5c9efa9d2e66b7d02821efadd23f83820a403a94aad09fb5736bc75",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0ac3cc8bd557682cfaf2404b3413b096c8fad853af8302abc84415dc4e0cdf8e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0adb6c5f13c114e07c46cf9b9c75d9eeedd93bf5d409a1eaefa1abb26235e94e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0ae7eb77e67b4f72bd898a1ccb99b760d087ec075d9bb6a886c0496c510d94e1",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0aeeb9e005d7f92d4bd4ef84cffd86cebcaad8c570c48a0dc3fc749fb20fbada",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0afafcea509dba308c72681f7fd197cf52ec4f021b286395fbd13d34f5182a23",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b02bf04a39e0812ec93b6506edb679df4cd299da14b7b6dfd55f7f028ba003d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b05d458082f15f0eef571afeb24fd16ec33f78cbe1c967aa34e18fe226f953a",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b36e97777027c46c09749f525cc3acd2cbd9ae997b9e7401efdb7f8329d0277",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b53f1ca983c1de64a0e9aaca9bc848aa28dcaca34ba3ac96cfbe4912949910c",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b540b9bbca62f9e7e7cb5b25b49bfc30b044847874bb344590b8f162f588c1d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b71274fc133fa3fb93ff4736eef10eaf3532359efb3b3878594f205160b07f2",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b72d9021928e02240b485daba2c99b2ff45da57b2bd95caf44cb707a2ce3cba",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b7f73386e0ff9d204ae2adc963aa35d5243c2f339d7bd47930b6c48989d1c84",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0b9427ded2673ea96c7177365add286ace2d5b7ab56ea50b04b3cb1a90e928f4",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0ba6260056197ca917dbe183915b3ce7484b63b1b87512aa7f36ad834093c500",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0bc2b540004ed115a0c04f2fd2b01f7d8c3b3a2d9c399ed690b8989be307d09d",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0bd4a796f6a970a4690cd294fa34d44fd6c9025beafd3245b936c2cf5d183b73",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0c15b89780a9948131102fa714db152808d2345fd63a81f932b965c95a8df100",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0c375963c2244fd537bd064ecd1e41b5cacb4e3ed4085d077cb96d6e30f4a0bd",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0c389d95e318d1f048150dd8b77a47cdad35a1e1e291934075a01764ce7a2b27",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0c62a49a127657fb8751031b543234fbd958443cdda0086741150ef22b183d64",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0c697dd42309cce0493bc7958b4857770f4dc77fead85295e4b6369cd27a44ea",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0c82c86aede942e7e8cb3451cd214dc5acd84fa23fabfe80995078ae8dad034e",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      },
-      {
-        "raw_id": "0c84dd0142266768bc0dbe11919bb683762b6bd861c266ac8c7288d2b1ca5bf0",
-        "source_id": "fastemoji",
-        "source_url": "https://www.fastemoji.com",
-        "collection_timestamp": "2026-08-18T23:28:52.298Z",
-        "in_phase8_canonical": false
-      }
-    ],
-    "outside_canonical_layer": 3825
+    "added_by_source": {},
+    "added_records_sample": [],
+    "outside_canonical_layer": 0
   },
   "errors": [],
   "warnings": []

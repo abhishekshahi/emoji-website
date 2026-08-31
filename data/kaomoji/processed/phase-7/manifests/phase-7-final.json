@@ -1,0 +1,488 @@
+{
+  "phase": 7,
+  "timestamp": "2026-08-31T04:26:57.480Z",
+  "pipeline_version": "7.0.0-raw-processing-analysis",
+  "raw_before": 236508,
+  "raw_after": 236508,
+  "raw_removed": 0,
+  "raw_modified": 0,
+  "raw_new": 0,
+  "total_normalized": 236508,
+  "content_type_counts": {
+    "KAOMOJI": 142528,
+    "EMOJI_SEQUENCE": 1145,
+    "TEXT_FACE": 181150,
+    "EMOTICON": 7755,
+    "ZWJ_SEQUENCE": 160,
+    "FLAG": 30,
+    "KEYCAP": 3
+  },
+  "validation_counts": {
+    "VALID_KAOMOJI": 142450,
+    "VALID_TEXT_FACE": 88848,
+    "VALID_EMOTICON": 4568,
+    "VALID_EMOJI": 470,
+    "INVALID_CANDIDATE": 134,
+    "REVIEW": 38
+  },
+  "duplicate_counts": {
+    "EXACT": 224675,
+    "UNICODE_EQUIVALENT": 19013,
+    "NORMALIZED": 1843,
+    "FORMATTING": 15274,
+    "CROSS_SOURCE": 56508,
+    "SAME_SOURCE": 168167,
+    "CATEGORY_DUPLICATE": 105411,
+    "NEAR_DUPLICATE": 80192
+  },
+  "variant_count": 15146,
+  "quality_buckets": {
+    "81-100": 23109,
+    "61-80": 211816,
+    "41-60": 1426,
+    "0-20": 134,
+    "21-40": 23
+  },
+  "license_counts": {
+    "APPROVED": 152244,
+    "ATTRIBUTION_REQUIRED": 13662,
+    "REVIEW_REQUIRED": 56079,
+    "UNKNOWN": 14523
+  },
+  "publication_counts": {
+    "PUBLISH_CANDIDATE": 152223,
+    "PUBLISH_WITH_ATTRIBUTION": 13540,
+    "REVIEW_REQUIRED": 70611,
+    "INVALID_CANDIDATE": 134
+  },
+  "provenance_coverage": 0.857848360309165,
+  "source_stats": [
+    {
+      "source_id": "emoticon-data",
+      "raw_occurrences": 6617,
+      "content_types": {
+        "KAOMOJI": 3902,
+        "EMOTICON": 5560
+      },
+      "validation": {
+        "VALID_KAOMOJI": 3899,
+        "VALID_EMOTICON": 2713,
+        "INVALID_CANDIDATE": 5
+      },
+      "quality_buckets": {
+        "61-80": 6482,
+        "81-100": 130,
+        "0-20": 5
+      },
+      "license": {
+        "APPROVED": 6617
+      },
+      "publication": {
+        "PUBLISH_CANDIDATE": 6612,
+        "INVALID_CANDIDATE": 5
+      },
+      "duplicate_groups": 5188,
+      "variant_groups": 873
+    },
+    {
+      "source_id": "emoticon-wooorm",
+      "raw_occurrences": 49,
+      "content_types": {
+        "TEXT_FACE": 49
+      },
+      "validation": {
+        "VALID_TEXT_FACE": 48,
+        "INVALID_CANDIDATE": 1
+      },
+      "quality_buckets": {
+        "41-60": 35,
+        "0-20": 1,
+        "61-80": 13
+      },
+      "license": {
+        "APPROVED": 49
+      },
+      "publication": {
+        "PUBLISH_CANDIDATE": 48,
+        "INVALID_CANDIDATE": 1
+      },
+      "duplicate_groups": 39,
+      "variant_groups": 5
+    },
+    {
+      "source_id": "emoticonstext",
+      "raw_occurrences": 1835,
+      "content_types": {
+        "EMOTICON": 1577,
+        "KAOMOJI": 253,
+        "EMOJI_SEQUENCE": 5
+      },
+      "validation": {
+        "VALID_EMOTICON": 1577,
+        "VALID_KAOMOJI": 253,
+        "VALID_EMOJI": 5
+      },
+      "quality_buckets": {
+        "61-80": 1762,
+        "81-100": 73
+      },
+      "license": {
+        "REVIEW_REQUIRED": 1835
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 1835
+      },
+      "duplicate_groups": 3329,
+      "variant_groups": 235
+    },
+    {
+      "source_id": "fastemoji",
+      "raw_occurrences": 9138,
+      "content_types": {
+        "KAOMOJI": 3825,
+        "TEXT_FACE": 9138
+      },
+      "validation": {
+        "VALID_KAOMOJI": 3817,
+        "VALID_TEXT_FACE": 5298,
+        "REVIEW": 23
+      },
+      "quality_buckets": {
+        "61-80": 9097,
+        "21-40": 23,
+        "41-60": 18
+      },
+      "license": {
+        "REVIEW_REQUIRED": 9138
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 9138
+      },
+      "duplicate_groups": 5791,
+      "variant_groups": 44
+    },
+    {
+      "source_id": "generate-kaomoji",
+      "raw_occurrences": 757,
+      "content_types": {
+        "KAOMOJI": 757,
+        "TEXT_FACE": 600
+      },
+      "validation": {
+        "VALID_KAOMOJI": 757
+      },
+      "quality_buckets": {
+        "61-80": 748,
+        "81-100": 9
+      },
+      "license": {
+        "REVIEW_REQUIRED": 757
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 757
+      },
+      "duplicate_groups": 2552,
+      "variant_groups": 105
+    },
+    {
+      "source_id": "japaneseemoticons-org",
+      "raw_occurrences": 207,
+      "content_types": {
+        "KAOMOJI": 207,
+        "EMOJI_SEQUENCE": 3
+      },
+      "validation": {
+        "VALID_KAOMOJI": 207
+      },
+      "quality_buckets": {
+        "61-80": 199,
+        "81-100": 8
+      },
+      "license": {
+        "REVIEW_REQUIRED": 207
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 207
+      },
+      "duplicate_groups": 147,
+      "variant_groups": 8
+    },
+    {
+      "source_id": "kaomoji-caption",
+      "raw_occurrences": 12221,
+      "content_types": {
+        "KAOMOJI": 12221,
+        "TEXT_FACE": 9787,
+        "EMOJI_SEQUENCE": 3,
+        "EMOTICON": 7
+      },
+      "validation": {
+        "VALID_KAOMOJI": 12221
+      },
+      "quality_buckets": {
+        "61-80": 11897,
+        "81-100": 319,
+        "41-60": 5
+      },
+      "license": {
+        "ATTRIBUTION_REQUIRED": 12221
+      },
+      "publication": {
+        "PUBLISH_WITH_ATTRIBUTION": 12221
+      },
+      "duplicate_groups": 16755,
+      "variant_groups": 1078
+    },
+    {
+      "source_id": "kaomoji-collection",
+      "raw_occurrences": 124557,
+      "content_types": {
+        "KAOMOJI": 87620,
+        "EMOJI_SEQUENCE": 1089,
+        "TEXT_FACE": 109233,
+        "ZWJ_SEQUENCE": 144,
+        "EMOTICON": 318,
+        "FLAG": 24,
+        "KEYCAP": 3
+      },
+      "validation": {
+        "VALID_KAOMOJI": 87614,
+        "VALID_TEXT_FACE": 36411,
+        "VALID_EMOJI": 411,
+        "VALID_EMOTICON": 106,
+        "REVIEW": 9,
+        "INVALID_CANDIDATE": 6
+      },
+      "quality_buckets": {
+        "81-100": 19866,
+        "61-80": 104685,
+        "0-20": 6
+      },
+      "license": {
+        "APPROVED": 124557
+      },
+      "publication": {
+        "PUBLISH_CANDIDATE": 124542,
+        "REVIEW_REQUIRED": 9,
+        "INVALID_CANDIDATE": 6
+      },
+      "duplicate_groups": 81995,
+      "variant_groups": 4519
+    },
+    {
+      "source_id": "kaomoji-json",
+      "raw_occurrences": 14181,
+      "content_types": {
+        "KAOMOJI": 5419,
+        "TEXT_FACE": 12797
+      },
+      "validation": {
+        "VALID_KAOMOJI": 5419,
+        "VALID_TEXT_FACE": 8762
+      },
+      "quality_buckets": {
+        "61-80": 14059,
+        "41-60": 120,
+        "81-100": 2
+      },
+      "license": {
+        "UNKNOWN": 14181
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 14181
+      },
+      "duplicate_groups": 8692,
+      "variant_groups": 366
+    },
+    {
+      "source_id": "kaomoji-tagged",
+      "raw_occurrences": 19863,
+      "content_types": {
+        "KAOMOJI": 19843,
+        "EMOJI_SEQUENCE": 25
+      },
+      "validation": {
+        "VALID_KAOMOJI": 19843,
+        "VALID_EMOJI": 20
+      },
+      "quality_buckets": {
+        "61-80": 18040,
+        "81-100": 1763,
+        "41-60": 60
+      },
+      "license": {
+        "APPROVED": 19863
+      },
+      "publication": {
+        "PUBLISH_CANDIDATE": 19863
+      },
+      "duplicate_groups": 7423,
+      "variant_groups": 1850
+    },
+    {
+      "source_id": "kaomoji-vaneenige",
+      "raw_occurrences": 342,
+      "content_types": {
+        "KAOMOJI": 342,
+        "TEXT_FACE": 239
+      },
+      "validation": {
+        "VALID_KAOMOJI": 342
+      },
+      "quality_buckets": {
+        "61-80": 235,
+        "41-60": 103,
+        "81-100": 4
+      },
+      "license": {
+        "UNKNOWN": 342
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 342
+      },
+      "duplicate_groups": 87,
+      "variant_groups": 11
+    },
+    {
+      "source_id": "kawaii-faces",
+      "raw_occurrences": 379,
+      "content_types": {
+        "KAOMOJI": 379,
+        "TEXT_FACE": 348
+      },
+      "validation": {
+        "VALID_KAOMOJI": 379
+      },
+      "quality_buckets": {
+        "41-60": 140,
+        "61-80": 234,
+        "81-100": 5
+      },
+      "license": {
+        "APPROVED": 379
+      },
+      "publication": {
+        "PUBLISH_CANDIDATE": 379
+      },
+      "duplicate_groups": 441,
+      "variant_groups": 28
+    },
+    {
+      "source_id": "messletters",
+      "raw_occurrences": 44112,
+      "content_types": {
+        "TEXT_FACE": 37096,
+        "KAOMOJI": 6924,
+        "EMOJI_SEQUENCE": 16,
+        "FLAG": 6,
+        "EMOTICON": 54,
+        "ZWJ_SEQUENCE": 16
+      },
+      "validation": {
+        "VALID_TEXT_FACE": 37096,
+        "VALID_KAOMOJI": 6924,
+        "VALID_EMOJI": 32,
+        "REVIEW": 6,
+        "VALID_EMOTICON": 54
+      },
+      "quality_buckets": {
+        "61-80": 42311,
+        "81-100": 901,
+        "41-60": 900
+      },
+      "license": {
+        "REVIEW_REQUIRED": 44112
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 44112
+      },
+      "duplicate_groups": 21398,
+      "variant_groups": 5796
+    },
+    {
+      "source_id": "node-kaomoji",
+      "raw_occurrences": 779,
+      "content_types": {
+        "TEXT_FACE": 681,
+        "KAOMOJI": 98
+      },
+      "validation": {
+        "VALID_TEXT_FACE": 681,
+        "VALID_KAOMOJI": 98
+      },
+      "quality_buckets": {
+        "61-80": 761,
+        "81-100": 17,
+        "41-60": 1
+      },
+      "license": {
+        "APPROVED": 779
+      },
+      "publication": {
+        "PUBLISH_CANDIDATE": 779
+      },
+      "duplicate_groups": 2362,
+      "variant_groups": 223
+    },
+    {
+      "source_id": "random-kaomoji",
+      "raw_occurrences": 30,
+      "content_types": {
+        "TEXT_FACE": 26,
+        "KAOMOJI": 4
+      },
+      "validation": {
+        "VALID_TEXT_FACE": 26,
+        "VALID_KAOMOJI": 4
+      },
+      "quality_buckets": {
+        "61-80": 30
+      },
+      "license": {
+        "REVIEW_REQUIRED": 30
+      },
+      "publication": {
+        "REVIEW_REQUIRED": 30
+      },
+      "duplicate_groups": 12,
+      "variant_groups": 1
+    },
+    {
+      "source_id": "wikipedia",
+      "raw_occurrences": 1441,
+      "content_types": {
+        "EMOTICON": 239,
+        "TEXT_FACE": 1156,
+        "KAOMOJI": 734,
+        "EMOJI_SEQUENCE": 4
+      },
+      "validation": {
+        "VALID_EMOTICON": 118,
+        "VALID_TEXT_FACE": 526,
+        "VALID_KAOMOJI": 673,
+        "INVALID_CANDIDATE": 122,
+        "VALID_EMOJI": 2
+      },
+      "quality_buckets": {
+        "61-80": 1263,
+        "0-20": 122,
+        "41-60": 44,
+        "81-100": 12
+      },
+      "license": {
+        "ATTRIBUTION_REQUIRED": 1441
+      },
+      "publication": {
+        "PUBLISH_WITH_ATTRIBUTION": 1319,
+        "INVALID_CANDIDATE": 122
+      },
+      "duplicate_groups": 1463,
+      "variant_groups": 4
+    }
+  ],
+  "fastemoji_collected": 5869,
+  "fastemoji_remaining": 11263,
+  "deterministic": true,
+  "errors": [],
+  "warnings": []
+}

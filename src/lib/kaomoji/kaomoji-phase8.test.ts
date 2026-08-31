@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, it } from "node:test";
-import { buildCanonicalId, buildCanonicalLibrary } from "@/lib/kaomoji/processing/phase8/canonical-build";
+import { buildCanonicalId, buildCanonicalLibrary, normalizeQualityScore, representativeScore } from "@/lib/kaomoji/processing/phase8/canonical-build";
 import { repairProvenance, explainProvenanceDiscrepancy } from "@/lib/kaomoji/processing/phase8/provenance-repair";
 import { EXPECTED_RAW_BASELINE, AUTHORITATIVE_RAW_SHA256, PHASE8_HISTORICAL_RAW_BASELINE, hashCanonicalOutput, runPhase8Pipeline } from "@/lib/kaomoji/processing/phase8/pipeline";
 import { hashRawFile } from "@/lib/kaomoji/processing/phase7/raw-snapshot";
@@ -55,6 +55,99 @@ describe("phase 8 canonical library", () => {
     const b = buildCanonicalId("(｡♥‿♥｡)");
     assert.equal(a, b);
     assert.match(a, /^kao_[a-f0-9]{16}$/);
+  });
+
+  it("representativeScore never throws on missing/invalid meta or quality_score", () => {
+    const raw = sampleRaw();
+    const repaired = repairProvenance(raw);
+    const cases: Array<{ meta: Parameters<typeof representativeScore>[2]; label: string }> = [
+      { label: "undefined meta", meta: undefined },
+      { label: "null meta", meta: null },
+      {
+        label: "missing quality_score",
+        meta: {
+          validation_status: "REVIEW",
+          validation_reasons: [],
+          content_types: ["KAOMOJI"],
+          quality_score: undefined as unknown as number,
+          quality_status: "REVIEW",
+          license_status: "UNKNOWN",
+          publication_status: "REVIEW_REQUIRED",
+        },
+      },
+      {
+        label: "NaN",
+        meta: {
+          validation_status: "REVIEW",
+          validation_reasons: [],
+          content_types: ["KAOMOJI"],
+          quality_score: Number.NaN,
+          quality_status: "REVIEW",
+          license_status: "UNKNOWN",
+          publication_status: "REVIEW_REQUIRED",
+        },
+      },
+      {
+        label: "Infinity",
+        meta: {
+          validation_status: "REVIEW",
+          validation_reasons: [],
+          content_types: ["KAOMOJI"],
+          quality_score: Number.POSITIVE_INFINITY,
+          quality_status: "REVIEW",
+          license_status: "UNKNOWN",
+          publication_status: "REVIEW_REQUIRED",
+        },
+      },
+      {
+        label: "negative",
+        meta: {
+          validation_status: "REVIEW",
+          validation_reasons: [],
+          content_types: ["KAOMOJI"],
+          quality_score: -12,
+          quality_status: "REVIEW",
+          license_status: "UNKNOWN",
+          publication_status: "REVIEW_REQUIRED",
+        },
+      },
+      {
+        label: "out of range",
+        meta: {
+          validation_status: "REVIEW",
+          validation_reasons: [],
+          content_types: ["KAOMOJI"],
+          quality_score: 250,
+          quality_status: "REVIEW",
+          license_status: "UNKNOWN",
+          publication_status: "REVIEW_REQUIRED",
+        },
+      },
+    ];
+    for (const c of cases) {
+      assert.doesNotThrow(() => representativeScore(raw, repaired, c.meta), c.label);
+      assert.doesNotThrow(() => representativeScore(raw, null, c.meta), `${c.label} + null repaired`);
+    }
+    assert.equal(normalizeQualityScore(undefined), 0);
+    assert.equal(normalizeQualityScore(null), 0);
+    assert.equal(normalizeQualityScore(Number.NaN), 0);
+    assert.equal(normalizeQualityScore(72), 72);
+    assert.equal(normalizeQualityScore(-5), 0);
+    assert.equal(normalizeQualityScore(150), 100);
+  });
+
+  it("buildCanonicalLibrary tolerates missing meta entries", () => {
+    const raw1 = sampleRaw({ raw_id: "missing-meta" });
+    const result = buildCanonicalLibrary({
+      rawRecords: [raw1],
+      normalizedByRawId: new Map([["missing-meta", "(｡♥‿♥｡)"]]),
+      metaByRawId: new Map(),
+      repairedByRawId: new Map([["missing-meta", repairProvenance(raw1)]]),
+      variantGroupByRawId: new Map(),
+      nearDuplicateRawIds: new Set(),
+    });
+    assert.equal(result.canonicalRecords.length, 1);
+    assert.equal(result.canonicalRecords[0]!.quality_score, 0);
   });
 
   it("merges exact duplicates into one canonical with all occurrences", () => {

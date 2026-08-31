@@ -1,0 +1,225 @@
+{
+  "phase": 11,
+  "timestamp": "2026-08-31T05:19:46.253Z",
+  "pipeline_version": "11.0.0-composition-audit-analysis-only",
+  "raw_before": 236508,
+  "raw_after": 236508,
+  "raw_removed": 0,
+  "raw_modified": 0,
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "phase8_baseline_raw_count": 236508,
+  "phase8_baseline_raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "raw_baseline_mismatch": false,
+  "canonical_candidates": 63811,
+  "canonical_definition": {
+    "term": "canonical candidate",
+    "definition": "One Phase 8 canonical-records.json entry keyed by canonical_id, representing a single deduplicated normalized_content cluster with all source_occurrences and created_from_raw_ids preserved. It is an analytical library unit, not a deleted/raw record and not necessarily public.",
+    "source_of_truth": "data/kaomoji/processed/phase-8/proposed-library/canonical-records.json",
+    "count": 63811
+  },
+  "public_candidates": 50994,
+  "review": 12751,
+  "remove_candidates": 66,
+  "duplicate_groups": 52066,
+  "variant_groups": 15146,
+  "legitimate_variants": 2533,
+  "unique_records": 11745,
+  "primary_content_type": {
+    "KAOMOJI": 53890,
+    "TEXT_FACE": 8426,
+    "EMOTICON": 1477,
+    "EMOJI_SEQUENCE": 15,
+    "ZWJ_SEQUENCE": 2,
+    "FLAG": 1
+  },
+  "secondary_content_type_labels": 42566,
+  "style_primary": {
+    "japanese": 35108,
+    "western": 0,
+    "ascii": 4500,
+    "unicode": 20214,
+    "minimal": 139,
+    "decorative": 1,
+    "aesthetic": 3465,
+    "classic": 0,
+    "complex": 79,
+    "simple": 32,
+    "funny": 140,
+    "cute": 0,
+    "extreme": 0,
+    "other": 0,
+    "review": 133
+  },
+  "style_multi_label_records": 38893,
+  "emotion": {
+    "happy": 5842,
+    "sad": 0,
+    "angry": 837,
+    "crying": 5565,
+    "laughing": 11,
+    "excited": 56,
+    "surprised": 208,
+    "scared": 14,
+    "confused": 48,
+    "worried": 20,
+    "embarrassed": 0,
+    "shy": 0,
+    "blushing": 76,
+    "tired": 63,
+    "sleepy": 150,
+    "bored": 40,
+    "shocked": 87,
+    "disappointed": 101,
+    "proud": 0,
+    "other": 0,
+    "unclassified": 50693
+  },
+  "emotion_confidence": {
+    "CONFIRMED": 4069,
+    "INFERRED": 9049,
+    "REVIEW": 50693
+  },
+  "relationship": {
+    "love": 3449,
+    "romantic": 0,
+    "kiss": 174,
+    "hug": 76,
+    "flirty": 0,
+    "crush": 0,
+    "friendship": 167,
+    "thank-you": 91,
+    "sorry": 83,
+    "greeting": 350,
+    "goodbye": 162,
+    "other": 0,
+    "unclassified": 59259
+  },
+  "cute_kawaii": {
+    "cute": 9288,
+    "kawaii": 5933,
+    "adorable": 40,
+    "sweet": 40,
+    "baby": 0,
+    "other_cute": 0,
+    "not_classified": 54459
+  },
+  "animals": {
+    "cat": 1107,
+    "dog": 150,
+    "bear": 107,
+    "bunny": 188,
+    "bird": 258,
+    "fox": 0,
+    "wolf": 0,
+    "mouse": 40,
+    "pig": 26,
+    "other-animals": 2151,
+    "other_animal": 0,
+    "animal_unclassified": 60283
+  },
+  "actions": {
+    "shrug": 155,
+    "facepalm": 40,
+    "fighting": 210,
+    "dancing": 464,
+    "sleeping": 358,
+    "running": 188,
+    "waving": 187,
+    "thinking": 130,
+    "other_action": 0,
+    "no_action": 62650
+  },
+  "variant_composition": {
+    "total_groups": 15146,
+    "legitimate_variants": 2533,
+    "review_variants": 12613,
+    "duplicate_like_variants": 469
+  },
+  "unique_composition": {
+    "total": 11745,
+    "unique_legitimate": 8862,
+    "unique_review": 2879,
+    "unique_remove_candidate": 4,
+    "by_content_type": {
+      "KAOMOJI": 9795,
+      "TEXT_FACE": 1485,
+      "EMOTICON": 460,
+      "EMOJI_SEQUENCE": 5
+    },
+    "by_license": {
+      "APPROVED": 3898,
+      "ATTRIBUTION_REQUIRED": 4982,
+      "REVIEW_REQUIRED": 2326,
+      "UNKNOWN": 539
+    },
+    "by_quality": {
+      "MEDIUM": 3591,
+      "GOOD": 2447,
+      "HIGH": 5323,
+      "EXCELLENT": 380,
+      "INVALID_REVIEW": 4
+    },
+    "by_provenance": {
+      "COMPLETE": 11744,
+      "MISSING": 1
+    }
+  },
+  "quality_buckets": {
+    "MEDIUM": 4208,
+    "GOOD": 9071,
+    "HIGH": 46959,
+    "EXCELLENT": 3506,
+    "INVALID_REVIEW": 66,
+    "LOW": 1
+  },
+  "beauty_distribution": {
+    "40-59": 45637,
+    "60-69": 17046,
+    "70-79": 1112,
+    "80-89": 16
+  },
+  "uniqueness_distribution": {
+    "60-69": 16287,
+    "80-89": 10933,
+    "70-79": 17744,
+    "40-59": 15138,
+    "90-100": 3708,
+    "0-39": 1
+  },
+  "expressiveness_distribution": {
+    "40-59": 42199,
+    "60-69": 19876,
+    "70-79": 1723,
+    "80-89": 13
+  },
+  "overall_distribution": {
+    "60-69": 36708,
+    "70-79": 25370,
+    "40-59": 1530,
+    "80-89": 203
+  },
+  "publication": {
+    "PUBLISH_CANDIDATE": 43309,
+    "REVIEW_REQUIRED": 12369,
+    "PUBLISH_WITH_ATTRIBUTION": 8067,
+    "REMOVE_CANDIDATE": 66
+  },
+  "curation": {
+    "KEEP_CANDIDATE": 50994,
+    "REVIEW": 12751,
+    "REMOVE_CANDIDATE": 66
+  },
+  "license": {
+    "APPROVED": 43314,
+    "REVIEW_REQUIRED": 8315,
+    "ATTRIBUTION_REQUIRED": 8128,
+    "UNKNOWN": 4054
+  },
+  "provenance": {
+    "COMPLETE": 63810,
+    "MISSING": 1
+  },
+  "popularity_status": "INSUFFICIENT_DATA",
+  "errors": [],
+  "warnings": []
+}

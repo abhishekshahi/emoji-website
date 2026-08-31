@@ -35,8 +35,8 @@ describe("phase 13 final audit", () => {
     assert.equal(m().raw_removed, 0);
     assert.equal(m().raw_modified, 0);
   });
-  it("14 duplicate groups 49885", () => assert.equal(m().duplicate_groups, 49885));
-  it("15 variant groups 15143", () => assert.equal(m().variant_groups, 15143));
+  it("14 duplicate groups 52066", () => assert.equal(m().duplicate_groups, 52066));
+  it("15 variant groups 15146", () => assert.equal(m().variant_groups, 15146));
   it("16 legitimate variants 2533", () => assert.equal(m().legitimate_variants, 2533));
   it("17 relationships 395833", () => assert.equal(m().relationships, 395833));
   it("18 provenance coverage 100pct", () => assert.equal(m().provenance_coverage_pct, 100));
@@ -56,8 +56,11 @@ describe("phase 13 final audit", () => {
   });
   it("26 raw drift audit function", () => {
     const d = auditRawDrift(root);
+    // Historical FastEmoji drift vs Phase 8 freeze (232683 → 236508).
     assert.equal(d.drift, 3825);
-    assert.equal(d.outside_canonical_layer, 3825);
+    assert.equal(d.phase8_baseline_count, 232683);
+    // After regenerating Phase 8 against authoritative RAW, every RAW id is mapped.
+    assert.equal(d.outside_canonical_layer, 0);
   });
   it("27 editorial all public", () => {
     const ed = JSON.parse(readFileSync(join(lib(), "editorial.json"), "utf8"));

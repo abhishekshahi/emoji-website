@@ -120,7 +120,9 @@ describe("phase 9 kaomoji knowledge", () => {
   });
   it("phase 9 manifest canonical count", () => {
     const m = JSON.parse(readFileSync(getPhase9ManifestPath(process.cwd()), "utf8")) as { canonical_candidates: number };
-    assert.equal(m.canonical_candidates, 63248);
+    // Live Phase 9 editorial layer tracks regenerated Phase 8 proposed library (236508 RAW).
+    // Frozen Phase 12/13 publication set remains 63248 / 51338.
+    assert.equal(m.canonical_candidates, 63811);
   });
   it("search quality dataset has 30+ cases", () => {
     assert.ok(SEARCH_QUALITY_DATASET.length >= 30);
@@ -183,11 +185,11 @@ describe("phase 9 kaomoji knowledge", () => {
   });
   it("variant preservation — phase 8 unchanged", () => {
     const p8 = JSON.parse(readFileSync(join(process.cwd(), "data/kaomoji/processed/phase-8/manifests/phase-8-final.json"), "utf8")) as { variant_groups: number };
-    assert.equal(p8.variant_groups, 15143);
+    assert.equal(p8.variant_groups, 15146);
   });
   it("duplicate preservation — phase 8 unchanged", () => {
     const p8 = JSON.parse(readFileSync(join(process.cwd(), "data/kaomoji/processed/phase-8/manifests/phase-8-final.json"), "utf8")) as { exact_groups: number };
-    assert.equal(p8.exact_groups, 49885);
+    assert.equal(p8.exact_groups, 52066);
   });
   it("review records not in public index count", () => {
     const m = JSON.parse(readFileSync(getPhase9ManifestPath(process.cwd()), "utf8")) as { review: number; public_candidates: number };

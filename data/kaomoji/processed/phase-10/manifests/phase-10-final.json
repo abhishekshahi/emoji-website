@@ -1,0 +1,66 @@
+{
+  "phase": 10,
+  "timestamp": "2026-08-31T05:04:38.713Z",
+  "pipeline_version": "10.0.0-scoring-curation",
+  "raw_before": 236508,
+  "raw_after": 236508,
+  "raw_removed": 0,
+  "raw_modified": 0,
+  "raw_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "canonical_candidates": 63811,
+  "duplicate_groups": 52066,
+  "variant_groups": 15146,
+  "legitimate_variants": 2533,
+  "unique_records": 11745,
+  "low_quality": 67,
+  "review": 12751,
+  "remove_candidates": 66,
+  "quality_buckets": {
+    "EXCELLENT": 3506,
+    "HIGH": 46959,
+    "GOOD": 9071,
+    "MEDIUM": 4208,
+    "LOW": 1,
+    "INVALID_REVIEW": 66
+  },
+  "beauty_distribution": {
+    "40-59": 45637,
+    "60-69": 17046,
+    "70-79": 1112,
+    "80-89": 16
+  },
+  "uniqueness_distribution": {
+    "60-69": 16287,
+    "80-89": 10933,
+    "70-79": 17744,
+    "40-59": 15138,
+    "90-100": 3708,
+    "0-39": 1
+  },
+  "expressiveness_distribution": {
+    "40-59": 42199,
+    "60-69": 19876,
+    "70-79": 1723,
+    "80-89": 13
+  },
+  "overall_distribution": {
+    "60-69": 36708,
+    "70-79": 25370,
+    "40-59": 1530,
+    "80-89": 203
+  },
+  "score_confidence": {
+    "HIGH": 7271,
+    "MEDIUM": 56474,
+    "LOW": 66
+  },
+  "publication": {
+    "PUBLISH_CANDIDATE": 43309,
+    "REVIEW_REQUIRED": 12369,
+    "PUBLISH_WITH_ATTRIBUTION": 8067,
+    "REMOVE_CANDIDATE": 66
+  },
+  "popularity_status": "INSUFFICIENT_DATA",
+  "errors": [],
+  "warnings": []
+}

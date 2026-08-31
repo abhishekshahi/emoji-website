@@ -65,25 +65,41 @@ function resolveCuration(
   return "KEEP_CANDIDATE";
 }
 
-function normalizeQualityScore(score: number | undefined): number {
+/** Clamp/normalize quality_score; missing or non-finite => 0. */
+export function normalizeQualityScore(score: unknown): number {
   if (typeof score !== "number" || !Number.isFinite(score)) return 0;
   return Math.max(0, Math.min(100, score));
 }
 
-function representativeScore(
+const MISSING_PHASE7_META: Phase7RecordMeta = {
+  validation_status: "REVIEW",
+  validation_reasons: ["missing_phase7_meta"],
+  content_types: ["OTHER"],
+  quality_score: 0,
+  quality_status: "REVIEW",
+  license_status: "UNKNOWN",
+  publication_status: "REVIEW_REQUIRED",
+};
+
+/**
+ * Rank candidates for canonical representative selection.
+ * Never throws on undefined/null/malformed meta or quality_score.
+ */
+export function representativeScore(
   raw: RawKaomojiRecord,
-  repaired: RepairedProvenance,
-  meta: Phase7RecordMeta,
+  repaired: RepairedProvenance | null | undefined,
+  meta: Phase7RecordMeta | null | undefined,
 ): number {
-  let score = normalizeQualityScore(meta.quality_score);
-  if (meta.validation_status.startsWith("VALID_")) score += 100;
-  if (repaired.status === "COMPLETE") score += 50;
-  else if (repaired.status === "PARTIAL") score += 25;
-  if (meta.license_status === "APPROVED") score += 40;
-  else if (meta.license_status === "ATTRIBUTION_REQUIRED") score += 30;
+  let score = normalizeQualityScore(meta?.quality_score);
+  if (meta?.validation_status?.startsWith("VALID_")) score += 100;
+  if (repaired?.status === "COMPLETE") score += 50;
+  else if (repaired?.status === "PARTIAL") score += 25;
+  if (meta?.license_status === "APPROVED") score += 40;
+  else if (meta?.license_status === "ATTRIBUTION_REQUIRED") score += 30;
   if (raw.source_record_id) score += 10;
   if (raw.source_page) score += 5;
-  score -= new Date(raw.collection_timestamp).getTime() / 1e15;
+  const ts = Date.parse(raw.collection_timestamp);
+  if (Number.isFinite(ts)) score -= ts / 1e15;
   return score;
 }
 
@@ -146,8 +162,8 @@ export function buildCanonicalLibrary(input: BuildCanonicalInput): BuildCanonica
     let best = members[0]!;
     let bestScore = -Infinity;
     for (const m of members) {
-      const repaired = input.repairedByRawId.get(m.raw_id)!;
-      const meta = input.metaByRawId.get(m.raw_id)!;
+      const repaired = input.repairedByRawId.get(m.raw_id);
+      const meta = input.metaByRawId.get(m.raw_id);
       const s = representativeScore(m, repaired, meta);
       if (s > bestScore || (s === bestScore && m.raw_id < best.raw_id)) {
         bestScore = s;
@@ -155,12 +171,21 @@ export function buildCanonicalLibrary(input: BuildCanonicalInput): BuildCanonica
       }
     }
 
-    const repMeta = input.metaByRawId.get(best.raw_id)!;
-    const repRepaired = input.repairedByRawId.get(best.raw_id)!;
+    const repMeta = input.metaByRawId.get(best.raw_id) ?? MISSING_PHASE7_META;
+    const repRepaired =
+      input.repairedByRawId.get(best.raw_id) ??
+      ({
+        raw_id: best.raw_id,
+        status: "MISSING",
+        repaired_provenance: [],
+        repair_method: null,
+        missing_fields: ["provenance"],
+        conflict_notes: ["missing_repaired_provenance"],
+      } satisfies RepairedProvenance);
     const variantInfo = input.variantGroupByRawId.get(best.raw_id);
 
     const sourceOccurrences: SourceOccurrence[] = members.map((m) => {
-      const repaired = input.repairedByRawId.get(m.raw_id)!;
+      const repaired = input.repairedByRawId.get(m.raw_id);
       return {
         raw_id: m.raw_id,
         source_id: m.source_id,
@@ -171,7 +196,7 @@ export function buildCanonicalLibrary(input: BuildCanonicalInput): BuildCanonica
         source_file: null,
         collection_timestamp: m.collection_timestamp,
         license_status: m.license_status,
-        provenance_status: repaired.status,
+        provenance_status: repaired?.status ?? "MISSING",
       };
     });
 
@@ -181,7 +206,7 @@ export function buildCanonicalLibrary(input: BuildCanonicalInput): BuildCanonica
     const curation = resolveCuration(repMeta.validation_status, publication, repRepaired.status, nearDup);
 
     const worstProv = members.reduce<RepairedProvenance["status"]>((worst, m) => {
-      const s = input.repairedByRawId.get(m.raw_id)!.status;
+      const s = input.repairedByRawId.get(m.raw_id)?.status ?? "MISSING";
       const order = ["MISSING", "PROVENANCE_UNRESOLVED", "CONFLICTING", "PARTIAL", "COMPLETE"];
       return order.indexOf(s) < order.indexOf(worst) ? s : worst;
     }, "COMPLETE");

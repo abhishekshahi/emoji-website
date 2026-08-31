@@ -1,0 +1,29 @@
+{
+  "raw": {
+    "count": 236508,
+    "sha": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf"
+  },
+  "manifest": {
+    "raw_before": 236508,
+    "raw_after": 236508,
+    "mapped": 236508,
+    "canonical": 63811,
+    "sha_before": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf"
+  },
+  "occurrences": 236508,
+  "provenance_covered": 236507,
+  "provenance_stats": {
+    "COMPLETE": 236507,
+    "PARTIAL": 0,
+    "MISSING": 1,
+    "CONFLICTING": 0,
+    "PROVENANCE_UNRESOLVED": 0
+  },
+  "canonical": 63811,
+  "file_hashes": {
+    "data/kaomoji/processed/phase-8/manifests/phase-8-final.json": "fafd71cb1c7769a6aee5f82caae6d38c8f5f8b6522e0eb4ea1c34ee6e3dc1740",
+    "data/kaomoji/processed/phase-8/proposed-library/source-occurrences.json": "b5197c59ca1742aa79a2aae7e132717e8bc35498ed4c98b4fcc73e9bbd83513e",
+    "data/kaomoji/processed/phase-8/proposed-library/provenance-audit.json": "6475a4f97322dad76676377f34fd0e722525edfb7577cfe5f8206b997066e6f0",
+    "data/kaomoji/processed/phase-8/proposed-library/canonical-records.json": "61c860e42c6e1ec038240ea99c21282e97f7b3e4476ee8241cd45ff73818e88a"
+  }
+}

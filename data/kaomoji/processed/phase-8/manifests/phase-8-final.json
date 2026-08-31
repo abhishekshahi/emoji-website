@@ -1,0 +1,63 @@
+{
+  "phase": 8,
+  "timestamp": "2026-08-31T05:19:37.005Z",
+  "pipeline_version": "8.0.0-canonical-proposed-no-deletion",
+  "raw_before": 236508,
+  "raw_after": 236508,
+  "raw_removed": 0,
+  "raw_modified": 0,
+  "raw_sha256_before": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "raw_sha256_after": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "phase7_sha256": "fcf0b80437171e933470e83d899821c5d7910c677c3431683d56199d1e670aaf",
+  "total_normalized": 236508,
+  "canonical_candidates": 63811,
+  "exact_groups": 52066,
+  "exact_occurrences": 224763,
+  "variant_groups": 15146,
+  "legitimate_variants": 2533,
+  "review_variants": 15146,
+  "unique_records": 11745,
+  "unique_legitimate": 8862,
+  "unique_review": 2879,
+  "unique_remove_candidates": 4,
+  "provenance": {
+    "COMPLETE": 236507,
+    "PARTIAL": 0,
+    "MISSING": 1,
+    "CONFLICTING": 0,
+    "PROVENANCE_UNRESOLVED": 0
+  },
+  "provenance_repair_explanation": "Phase 7 reported 85.6% because it counted provenance array length >= 2 only. 33,620 records use legacy Phase 3 single-string provenance arrays despite having full source fields on the RAW record. Phase 8 repairs these deterministically from RAW metadata. Repaired coverage (COMPLETE+PARTIAL): 100.0%. Legacy single-element arrays: 0.",
+  "quality": {
+    "HIGH": 52598,
+    "GOOD": 11100,
+    "MEDIUM": 31,
+    "LOW": 0,
+    "REVIEW": 82
+  },
+  "license": {
+    "APPROVED": 43314,
+    "REVIEW_REQUIRED": 8315,
+    "ATTRIBUTION_REQUIRED": 8128,
+    "UNKNOWN": 4054
+  },
+  "curation": {
+    "KEEP_CANDIDATE": 50994,
+    "REVIEW": 12751,
+    "REMOVE_CANDIDATE": 66
+  },
+  "publication": {
+    "PUBLISH_CANDIDATE": 43309,
+    "REVIEW_REQUIRED": 12369,
+    "PUBLISH_WITH_ATTRIBUTION": 8067,
+    "REMOVE_CANDIDATE": 66
+  },
+  "no_loss": {
+    "all_raw_mapped": true,
+    "mapped_count": 236508,
+    "unmapped_raw_ids": []
+  },
+  "deterministic": true,
+  "errors": [],
+  "warnings": []
+}

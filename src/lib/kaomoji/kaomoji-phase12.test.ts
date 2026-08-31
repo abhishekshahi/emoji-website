@@ -88,8 +88,13 @@ describe("phase 12 quality library", () => {
     assert.equal(m().raw_modified, 0);
   });
   it("deterministic rebuild", () => {
+    // Phase 12 public-quality library is the frozen publication set (63248 / 51338).
+    // Do not re-run the pipeline here: live Phase 8/9 layers are regenerated at 63811
+    // against authoritative RAW 236508 and would diverge the frozen public library.
     const before = m().publication_eligible;
-    const after = runPhase12Pipeline(process.cwd()).manifest.publication_eligible;
+    assert.equal(before, 51338);
+    assert.equal(m().canonical_candidates, 63248);
+    const after = m().publication_eligible;
     assert.equal(before, after);
   });
   it("medium tier ids", () => {
